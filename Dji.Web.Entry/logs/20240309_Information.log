@@ -1,0 +1,165 @@
+info: 2024-03-09 00:04:06.8125585 +08:00 星期六 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-03-09 00:04:06.8720457 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-03-09 00:04:06.8775436 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-03-09 00:04:07.4794217 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:07.4846589 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:07.4978194 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:07.5019802 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:07.5106953 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:07.5148510 +08:00 星期六 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-09 00:04:15.8133404 +08:00 星期六 L System.Logging.LoggingMonitor[0] #33 '00-2376ea6e64777709324923f4c671f2bd-b48776e9922705fd-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  SwaggerCheckUrl
+      ┣ 显示名称：                  Swagger登录检查
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：                  http://localhost:5005/index.html
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-2376ea6e64777709324923f4c671f2bd-b48776e9922705fd-00
+      ┣ 服务线程 ID：               #33
+      ┣ 执行耗时：                  11ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMTEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50IjoiYWRtaW4iLCJSZWFsTmFtZSI6Iuezu-e7n-euoeeQhuWRmCIsIkFjY291bnRUeXBlIjo4ODgsIk9yZ0lkIjoxMzAwMDAwMDAwMTAxLCJPcmdOYW1lIjoi5aSn5ZCN56eR5oqAIiwiT3JnVHlwZSI6IjEwMSIsImlhdCI6MTcwNDg4MDM1OCwibmJmIjoxNzA0ODgwMzU4LCJleHAiOjE3MDU0ODUxNTgsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.gNdWfA43OspLXnOliy9SmMgX3JyMpOmi_qsZjE7qEsI
+      ┣ Content-Type：              application/x-www-form-urlencoded
+      ┣ Origin：                    http://localhost:5005
+      ┣ Referer：                   http://localhost:5005/index.html
+      ┣ Content-Length：            0
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-origin
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Int32
+      ┣ 最终类型：                  System.Int32
+      ┣ 最终返回值：                401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-09 00:04:17.6848273 +08:00 星期六 L System.Logging.LoggingMonitor[0] #32 '00-e712538cd9ff6bbbb2031ab89edf0e14-f18082a9cb9a4641-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Share
+      ┣ 
+      ┣ 控制器名称：                          PromptService
+      ┣ 操作名称：                            Share
+      ┣ 显示名称：                            
+      ┣ 路由信息：                            [area]: ; [controller]: prompt; [action]: share
+      ┣ 请求方式：                            POST
+      ┣ 请求地址：                            http://localhost:5005/app/api/prompt/share
+      ┣ 来源地址：                            http://localhost:9527/application
+      ┣ 请求端源：                            client
+      ┣ 浏览器标识：                          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                      127.0.0.1
+      ┣ 服务端 IP 地址：                      127.0.0.1
+      ┣ 客户端连接 ID：                       00-e712538cd9ff6bbbb2031ab89edf0e14-f18082a9cb9a4641-00
+      ┣ 服务线程 ID：                         #32
+      ┣ 执行耗时：                            136ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                              
+      ┣ 响应端：                              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                            Microsoft Windows 10.0.19045
+      ┣ 系统架构：                            X64
+      ┣ 基础框架：                            Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                           .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                            Development
+      ┣ 启动程序集：                          Admin.NET.Web.Entry
+      ┣ 进程名称：                            Admin.NET.Web.Entry
+      ┣ 托管程序：                            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDk4ODg1MzQsIm5iZiI6MTcwOTg4ODUzNCwiZXhwIjoxNzEwNDkzMzM0LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.CJ5_Vz2Fbb3WxqcMYz26PD169v3dVvas6_Q9lK8m70E
+      ┣ 
+      ┣ UserId (integer64)：                  14213426327877
+      ┣ TenantId (integer64)：                1300000000001
+      ┣ Account (string)：                    18600766045
+      ┣ NickName (string)：                   怪兽来了
+      ┣ AccountType (integer32)：             777
+      ┣ iat (integer64)：                     1709888534 (2024-03-08 17:02:14:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                     1709888534 (2024-03-08 17:02:14:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                     1710493334 (2024-03-15 17:02:14:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                        guxin.link
+      ┣ aud (string)：                        guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                              application/json, text/plain, */*
+      ┣ Connection：                          close
+      ┣ Host：                                localhost:5005
+      ┣ User-Agent：                          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                     gzip, deflate, br, zstd
+      ┣ Accept-Language：                     zh-CN,zh;q=0.9
+      ┣ Authorization：                       Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDk4ODg1MzQsIm5iZiI6MTcwOTg4ODUzNCwiZXhwIjoxNzEwNDkzMzM0LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.CJ5_Vz2Fbb3WxqcMYz26PD169v3dVvas6_Q9lK8m70E
+      ┣ Cache-Control：                       no-cache
+      ┣ Content-Type：                        application/json
+      ┣ Origin：                              http://localhost:9527
+      ┣ Pragma：                              no-cache
+      ┣ Referer：                             http://localhost:9527/application
+      ┣ Content-Length：                      63
+      ┣ sec-fetch-dest：                      empty
+      ┣ sec-fetch-mode：                      cors
+      ┣ sec-fetch-site：                      same-origin
+      ┣ sec-ch-ua-platform：                  "Windows"
+      ┣ x-request-id：                        8vqSAOQIhdZ7oqQx0gg2U
+      ┣ apifoxtoken：                         XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：                    ?0
+      ┣ DNT：                                 1
+      ┣ sec-ch-ua：                           "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                        application/json
+      ┣ 
+      ┣ shareModel (ChatPromptShare)：        {"promptId":"14","pwd":"8cNI","accessPersonNum":0,"effectiveDays":60,"lastVisitDate":null,"visitUrl":"QXE8hXjA2U","createTime":"2024-03-09T00:04:17.5133699+08:00","updateTime":null,"createUserId":"14213426327877","createUser":null,"updateUserId":null,"isDelete":false,"id":"32703655807045"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                      200
+      ┣ 原始类型：                            System.Threading.Tasks.Task<Admin.NET.Core.JuAI.ChatPromptShare>
+      ┣ 最终类型：                            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                          {"code":200,"type":"success","message":"","result":{"promptId":"14","pwd":"8cNI","accessPersonNum":0,"effectiveDays":60,"lastVisitDate":null,"visitUrl":"QXE8hXjA2U","createTime":"2024-03-09T00:04:17.5133699+08:00","updateTime":null,"createUserId":"14213426327877","createUser":null,"updateUserId":null,"isDelete":false,"id":"32703655807045"},"extras":null,"time":"2024-03-09T00:04:17.638341+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

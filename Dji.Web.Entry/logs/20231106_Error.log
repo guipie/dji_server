@@ -1,0 +1,88 @@
+fail: 2023-11-06 20:22:03.6472574 +08:00 星期一 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #19 '00-d9412e360f51b5028b9565c6e879943f-471b614a649de7bf-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+      
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-06 20:22:03.7143422 +08:00 星期一 L Microsoft.AspNetCore.Server.Kestrel[13] #19 '00-d9412e360f51b5028b9565c6e879943f-471b614a649de7bf-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUUKK8H2N1H", Request id "0HMUUKK8H2N1H:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+      
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-06 20:22:03.7442789 +08:00 星期一 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #38 '00-6f99c6c213169ca8820da0538b548a4a-956dd472b318050c-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+      
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-06 20:22:03.7492380 +08:00 星期一 L Microsoft.AspNetCore.Server.Kestrel[13] #38 '00-6f99c6c213169ca8820da0538b548a4a-956dd472b318050c-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUUKK8H2N1J", Request id "0HMUUKK8H2N1J:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+      
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+      Admin.NET.Web.Entry.Controllers.ChatGPTController.GetNextChat (Admin.NET.Web.Entry)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+         at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+         at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

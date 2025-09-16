@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dji.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Admin.NET.Application.Const.ApplicationConst">
+            <summary>
+            业务应用相关常量
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Const.ApplicationConst.DjiCloud">
+            <summary>
+            API分组名称
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserService">
+            <summary>
+            聚AI用户服务
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserDto">
+            <summary>
+            聚AI用户输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.TokenNum">
+            <summary>
+            AI值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Tokenlastusedate">
+            <summary>
+            AI最后使用时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.AccountType">
+            <summary>
+            账号类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.LastLoginIp">
+            <summary>
+            最新登录Ip
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.LastLoginAddress">
+            <summary>
+            最新登录地点
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.LastLoginTime">
+            <summary>
+            最新登录时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.LastLoginDevice">
+            <summary>
+            最新登录设备
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserDto.Vcode">
+            <summary>
+            邀请码
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserBaseInput">
+            <summary>
+            聚AI用户基础输入参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.TokenNum">
+            <summary>
+            AI值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Tokenlastusedate">
+            <summary>
+            AI最后使用时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.AccountType">
+            <summary>
+            账号类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.LastLoginIp">
+            <summary>
+            最新登录Ip
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.LastLoginAddress">
+            <summary>
+            最新登录地点
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.LastLoginTime">
+            <summary>
+            最新登录时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.LastLoginDevice">
+            <summary>
+            最新登录设备
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserBaseInput.Vcode">
+            <summary>
+            邀请码
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserInput">
+            <summary>
+            聚AI用户分页查询输入参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserInput.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserInput.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserInput.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserInput.TokenNum">
+            <summary>
+            AI值
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.DeleteAppUserInput">
+            <summary>
+            聚AI用户删除输入参数
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.QueryByIdAppUserInput">
+            <summary>
+            聚AI用户主键查询输入参数
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserOutput">
+            <summary>
+            聚AI用户输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.TokenNum">
+            <summary>
+            AI值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.TokenLastUseDate">
+            <summary>
+            AI最后使用时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.AccountType">
+            <summary>
+            账号类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.LastLoginIp">
+            <summary>
+            最新登录Ip
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.LastLoginAddress">
+            <summary>
+            最新登录地点
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.LastLoginTime">
+            <summary>
+            最新登录时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserOutput.LastLoginDevice">
+            <summary>
+            最新登录设备
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserPayedOutput">
+            <summary>
+            聚AI用户输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserPayedOutput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserPayedOutput.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserPayedOutput.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.AppUserResetPwdInput">
+            <summary>
+            聚AI重置密码输入参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserResetPwdInput.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.JuAI.AppUserResetPwdInput.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.JuAI.QiNiuFileService">
+            <summary>
+            七牛文件服务扩展
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.JuAI.EntityAppBase">
+            <summary>
+            框架实体基类
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.CreateUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.CreateUser">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.UpdateUserId">
+            <summary>
+            修改者Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.UpdateUser">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBase.IsDelete">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBaseIgnoreUpdate.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBaseIgnoreUpdate.CreateUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBaseIgnoreUpdate.CreateUser">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppBaseIgnoreUpdate.IsDelete">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppTenant.TenantId">
+            <summary>
+            租户Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.EntityAppTenantIgnoreUpdate.TenantId">
+            <summary>
+            租户Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.Entity.Base.EntityBaseIgnoreID.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.Entity.Base.EntityBaseIgnoreID.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.Entity.Base.EntityBaseIgnoreID.CreateUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.Entity.Base.EntityBaseIgnoreID.UpdateUserId">
+            <summary>
+            修改者Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.JuAI.Entity.Base.EntityBaseIgnoreID.IsDelete">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.JuAI.Feedback">
+            <summary>
+            用户反馈表
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.JuAI.PayTypeEnum">
+            <summary>
+            付费类型枚举
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Core.JuAI.PayTypeEnum.MonthPayed">
+            <summary>
+            月付会员用户
+            </summary>
+        </member>
+        <member name="T:SuperAdminService">
+            <summary>
+            超级管理员相关服务
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,26 @@
+fail: 2024-04-06 20:31:29.4338773 +08:00 星期六 L System.Logging.UnitOfWork[0] #6 '00-0d74c3fe64d1804a850cf2a50f84dbe0-048f2015328160b8-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      Transaction Failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Furion.FriendlyException.AppFriendlyException: 今日已签到
+       ---> System.ComponentModel.DataAnnotations.ValidationException: 今日已签到
+         --- End of inner exception stack trace ---
+         at Admin.NET.Core.JuAI.Service.UserService.PostQianDaoToday()
+         at lambda_method239(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-04-06 20:31:37.8461531 +08:00 星期六 L System.Logging.UnitOfWork[0] #6 '00-d3833dcf3f96893859708625825644f1-ccebc117a33db728-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      Transaction Failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Furion.FriendlyException.AppFriendlyException: 今日已签到
+       ---> System.ComponentModel.DataAnnotations.ValidationException: 今日已签到
+         --- End of inner exception stack trace ---
+         at Admin.NET.Core.JuAI.Service.UserService.PostQianDaoToday()
+         at lambda_method239(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

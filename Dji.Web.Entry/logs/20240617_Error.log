@@ -1,0 +1,572 @@
+fail: 2024-06-17 21:01:45.0223367 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:01:45.1102996 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 103
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:01:45.1685090 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 103
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:01:45.4031282 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #21
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:12:46.3039738 +08:00 星期一 L System.Logging.LoggingMonitor[0] #32 '00-b489c89fa170e789d8329590005dafe7-59ee3e06d828df3c-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:19993/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-b489c89fa170e789d8329590005dafe7-59ee3e06d828df3c-00
+      ┣ 服务线程 ID：               #38
+      ┣ 执行耗时：                  210ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Cache-Control：             no-cache
+      ┣ Content-Type：              application/json-patch+json
+      ┣ Origin：                    http://localhost:19993
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:19993/
+      ┣ Content-Length：            81
+      ┣ sec-ch-ua：                 "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"34934978285125","code":"5"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentException
+      ┣ 消息：                      Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+      ┣ 错误堆栈：                  at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:13:48.4674920 +08:00 星期一 L System.Logging.LoggingMonitor[0] #36 '00-9e3798e8e6adb1accf663138de72561e-08eb5b91f7d7d87d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:19993/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-9e3798e8e6adb1accf663138de72561e-08eb5b91f7d7d87d-00
+      ┣ 服务线程 ID：               #36
+      ┣ 执行耗时：                  197ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Cache-Control：             no-cache
+      ┣ Content-Type：              application/json-patch+json
+      ┣ Origin：                    http://localhost:19993
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:19993/
+      ┣ Content-Length：            82
+      ┣ sec-ch-ua：                 "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"34934993733445","code":"92"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentException
+      ┣ 消息：                      Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+      ┣ 错误堆栈：                  at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:30:00.5462675 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #41
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:30:00.6265046 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #41
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 103
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:30:00.6865997 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #41
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 103
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:30:00.8508096 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #41
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:58:50.1345327 +08:00 星期一 L System.Logging.ScheduleService[0] #19
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 21:59:17.0857125 +08:00 星期一 L System.Logging.LoggingMonitor[0] #48 '00-43f089e5c8659537fb5d1356e99e680a-d1f1364b10890d25-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:8888/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-cn
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-43f089e5c8659537fb5d1356e99e680a-d1f1364b10890d25-00
+      ┣ 服务线程 ID：               #44
+      ┣ 执行耗时：                  205ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-cn
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxODYyOTUwNSwibmJmIjoxNzE4NjI5NTA1LCJleHAiOjE3MTkyMzQzMDUsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.QxTkWEhYULja1P38hhfhlduZbD4GWf360sasPI02bBY
+      ┣ Content-Type：              application/json-patch+json
+      ┣ Origin：                    http://localhost:8888
+      ┣ Referer：                   http://localhost:8888/
+      ┣ Content-Length：            82
+      ┣ sec-ch-ua：                 "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"34935692369733","code":"33"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentException
+      ┣ 消息：                      Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+      ┣ 错误堆栈：                  at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method87(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:00:39.7496773 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #5
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:01:19.8308248 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #5
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 103
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:02:29.5363708 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:02:29.9143781 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:04:36.8425009 +08:00 星期一 L System.Logging.LoggingMonitor[0] #32 '00-57d154adc342bf82a66b37977a90ed88-9926bee2b95547d4-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:8888/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-cn
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-57d154adc342bf82a66b37977a90ed88-9926bee2b95547d4-00
+      ┣ 服务线程 ID：               #31
+      ┣ 执行耗时：                  14241ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-cn
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxODYyOTUwNSwibmJmIjoxNzE4NjI5NTA1LCJleHAiOjE3MTkyMzQzMDUsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.QxTkWEhYULja1P38hhfhlduZbD4GWf360sasPI02bBY
+      ┣ Cache-Control：             no-cache
+      ┣ Content-Type：              application/json-patch+json
+      ┣ Origin：                    http://localhost:8888
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:8888/
+      ┣ Content-Length：            82
+      ┣ sec-ch-ua：                 "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"34935770806853","code":"13"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentException
+      ┣ 消息：                      Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+      ┣ 错误堆栈：                  at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method118(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 129
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method118(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:22:24.3571472 +08:00 星期一 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:24:54.1416752 +08:00 星期一 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:30:00.4120867 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #32
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-17 22:30:00.7346920 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #42
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

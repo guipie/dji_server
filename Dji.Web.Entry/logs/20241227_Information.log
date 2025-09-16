@@ -1,0 +1,2258 @@
+info: 2024-12-27 20:26:39.3991476 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2024-12-27 20:26:39.4433202 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2024-12-27 20:26:39.4464188 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2024-12-27 20:26:41.7977077 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-12-27 20:26:41.8001774 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-12-27 20:26:41.8105591 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-12-27 20:26:41.8119443 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-12-27 20:27:15.5153461 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-0469d768eec3aaa285248e35db80437e-4f4b8ac7f45dbac6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-0469d768eec3aaa285248e35db80437e-4f4b8ac7f45dbac6-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               166ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM0MDk2MTk4LCJuYmYiOjE3MzQwOTYxOTgsImV4cCI6MTczNDcwMDk5OCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.7DcLo9nNptm4A6fRvvQxZh_ZTH0OtMAnRZFqwDRU7ag
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:27:36.6971412 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-059c31d1f17c8de3ad336c7f6136d716-1be17f284d8537a3-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-059c31d1f17c8de3ad336c7f6136d716-1be17f284d8537a3-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               10079ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:29:49.4924614 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-d7e275ff81e4ed86a4bcf9610b94c41a-f00de30e028b7eae-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-d7e275ff81e4ed86a4bcf9610b94c41a-f00de30e028b7eae-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               124ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM0MDk2MTk4LCJuYmYiOjE3MzQwOTYxOTgsImV4cCI6MTczNDcwMDk5OCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.7DcLo9nNptm4A6fRvvQxZh_ZTH0OtMAnRZFqwDRU7ag
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:30:10.3286508 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-f85ef722435c7a349068c9783861e7b1-0ae76d6b96b1f2ef-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-f85ef722435c7a349068c9783861e7b1-0ae76d6b96b1f2ef-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               10108ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:37:29.6122213 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21 '00-cc634e500cc7033ccd32d1a80c11bb5a-6b7e6ff43a52ae12-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-cc634e500cc7033ccd32d1a80c11bb5a-6b7e6ff43a52ae12-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               2042ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM0MDk2MTk4LCJuYmYiOjE3MzQwOTYxOTgsImV4cCI6MTczNDcwMDk5OCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.7DcLo9nNptm4A6fRvvQxZh_ZTH0OtMAnRZFqwDRU7ag
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:37:48.1429048 +08:00 星期五 L System.Logging.LoggingMonitor[0] #31 '00-50fb504079314aadae666a2464371889-b5e9174270305e7b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-50fb504079314aadae666a2464371889-b5e9174270305e7b-00
+      ┣ 服务线程 ID：            #31
+      ┣ 执行耗时：               10100ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:43:31.3631227 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-a485e4df39df4ff3647e03c7320d2a57-98161135a7095479-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-a485e4df39df4ff3647e03c7320d2a57-98161135a7095479-00
+      ┣ 服务线程 ID：            #31
+      ┣ 执行耗时：               1358ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM0MDk2MTk4LCJuYmYiOjE3MzQwOTYxOTgsImV4cCI6MTczNDcwMDk5OCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.7DcLo9nNptm4A6fRvvQxZh_ZTH0OtMAnRZFqwDRU7ag
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 20:44:34.9927621 +08:00 星期五 L System.Logging.LoggingMonitor[0] #33 '00-f76ce73d84a4878a5a4f8b5e19345122-1c2672a6c2ef21e5-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-f76ce73d84a4878a5a4f8b5e19345122-1c2672a6c2ef21e5-00
+      ┣ 服务线程 ID：            #33
+      ┣ 执行耗时：               10094ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:10:18.1899604 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-81b7c2aba7d46a8d68bbcde84bd4aed1-3e3cf211ec30dcf6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-81b7c2aba7d46a8d68bbcde84bd4aed1-3e3cf211ec30dcf6-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               1814ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM0MDk2MTk4LCJuYmYiOjE3MzQwOTYxOTgsImV4cCI6MTczNDcwMDk5OCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.7DcLo9nNptm4A6fRvvQxZh_ZTH0OtMAnRZFqwDRU7ag
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:16:30.5152567 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-8f8f4499312f3b63a58f9298d4822114-776393c8f265037d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-8f8f4499312f3b63a58f9298d4822114-776393c8f265037d-00
+      ┣ 服务线程 ID：            #3
+      ┣ 执行耗时：               10068ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:16:53.6741189 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-f200be6e5d4c8d7755b8988cb133630b-fed951a4269f4831-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-f200be6e5d4c8d7755b8988cb133630b-fed951a4269f4831-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               10081ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:19:45.5141757 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-97e59dde9cb92d4db303bd270d0f0a96-2666c570d98ef0c2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-97e59dde9cb92d4db303bd270d0f0a96-2666c570d98ef0c2-00
+      ┣ 服务线程 ID：            #3
+      ┣ 执行耗时：               10072ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:20:29.1260589 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21 '00-2e9993764d4c9fc8670850feeaa79a79-594447d101c42bc5-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-2e9993764d4c9fc8670850feeaa79a79-594447d101c42bc5-00
+      ┣ 服务线程 ID：            #21
+      ┣ 执行耗时：               10107ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:22:32.9661522 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-bf6b1ea23ea1228e2536383deb58cec8-4c312d5dcb60f770-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-bf6b1ea23ea1228e2536383deb58cec8-4c312d5dcb60f770-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               10081ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:40:42.1327661 +08:00 星期五 L System.Logging.LoggingMonitor[0] #31 '00-5bf90fbdf905dbaa9ab505612af2fc16-5fd7d2fc056396e0-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-5bf90fbdf905dbaa9ab505612af2fc16-5fd7d2fc056396e0-00
+      ┣ 服务线程 ID：            #31
+      ┣ 执行耗时：               10116ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:44:27.8545243 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-888a1ec4cbe2f4d550008fdd4ba5ebc5-f1ae53107fc43520-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-888a1ec4cbe2f4d550008fdd4ba5ebc5-f1ae53107fc43520-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               10103ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:47:10.7235957 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-0db5f9ade36914ba3c5684a4fb9a3ed2-6d8922f617da5f69-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-0db5f9ade36914ba3c5684a4fb9a3ed2-6d8922f617da5f69-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               10083ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:47:51.5099820 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-a8392b17fb3f5abfeade6fcae0a2fcbd-999af5e4c27c61ac-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-a8392b17fb3f5abfeade6fcae0a2fcbd-999af5e4c27c61ac-00
+      ┣ 服务线程 ID：            #3
+      ┣ 执行耗时：               10113ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:50:08.9401516 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-43a978df39a70023bb3cf6f72a59353c-1d26058f6a12940b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-43a978df39a70023bb3cf6f72a59353c-1d26058f6a12940b-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               10070ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:52:23.4606416 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-33041766c85ef44bf0209907c199e63e-3979ff2a8a8e62af-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-33041766c85ef44bf0209907c199e63e-3979ff2a8a8e62af-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               10090ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 21:53:13.4627735 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-83de3557396c06540dcccad3eef83cec-9ff08f779c04f026-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-83de3557396c06540dcccad3eef83cec-9ff08f779c04f026-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               10123ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:11:11.4118677 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-d614fa4d59ad0457c031a5ab9094e7d3-dd0c4de060072639-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-d614fa4d59ad0457c031a5ab9094e7d3-dd0c4de060072639-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               10142ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:12:57.9253509 +08:00 星期五 L System.Logging.LoggingMonitor[0] #23 '00-b75ca2ef7fe42d057dee218c36919b19-0f42ee9b8c829c05-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-b75ca2ef7fe42d057dee218c36919b19-0f42ee9b8c829c05-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               10103ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:13:33.2479064 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-d4754daa6a3f01f710f71568d0cc8d05-ef439e12b351b3a7-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-d4754daa6a3f01f710f71568d0cc8d05-ef439e12b351b3a7-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               2626ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:13:58.4789883 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-e5b8403c11228332ebdc8c9271eb302e-e84a8f03b55d23eb-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-e5b8403c11228332ebdc8c9271eb302e-e84a8f03b55d23eb-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               10047ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:19:35.1123141 +08:00 星期五 L System.Logging.LoggingMonitor[0] #32 '00-28db85de73c4ffe41bd805aa8ea1856a-a3a3cf4c6796b40f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-28db85de73c4ffe41bd805aa8ea1856a-a3a3cf4c6796b40f-00
+      ┣ 服务线程 ID：            #32
+      ┣ 执行耗时：               10085ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:28:56.2686325 +08:00 星期五 L System.Logging.LoggingMonitor[0] #23 '00-e88d77036d3f0947d1e872f97b04bea8-66470dc05bfd401b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Get
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt?Page=1&PageSize=10&LastCreate&SearchKey&Category=all
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-e88d77036d3f0947d1e872f97b04bea8-66470dc05bfd401b-00
+      ┣ 服务线程 ID：                    #23
+      ┣ 执行耗时：                       2821ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ req (ChatPromptPageReq)：        {"pageSize":10,"lastCreate":null,"searchKey":null,"category":0}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.PromptReponse>>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":[{"id":"42","type":"system","title":"起名大师","prompt":"请给我提供的信息如姓氏，性别，出生日期等信息，结合五行八卦，诗词歌赋，为我取五个名字，要求名字要文雅，符合中国姓氏的基本规范。输出格式请按照以下格式：\n- 姓名：姓名的典故来源，解释","maxContext":6,"promptExtend":"每个名字都是一个故事，热衷于寻找最佳的名字，以期让每个故事更加生动和有趣。","avatar":"https://ssl.aicode.cc/ai-server/assets/avatar/ava-20230724-13.jpeg","file":null,"initMessage":"请告诉我姓氏、性别、出生年月等信息。\n\n让我为你寻找一个与众不同的名字，开启一段独一无二的故事！","tags":"创意生活","model":"gpt-3.5-turbo","vendor":"openai","isGroup":null,"cre
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:32:45.5625287 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-95158617194cf59930ce6c840afdac70-ccb146d98341f5f3-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-95158617194cf59930ce6c840afdac70-ccb146d98341f5f3-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               3399ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:41:04.0171527 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-0913704ce24437724692ac8f5e7d9380-bb28e7423b79a3e8-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Get
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt?Page=1&PageSize=10&LastCreate&SearchKey&Category=all
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-0913704ce24437724692ac8f5e7d9380-bb28e7423b79a3e8-00
+      ┣ 服务线程 ID：                    #23
+      ┣ 执行耗时：                       2501ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ req (ChatPromptPageReq)：        {"pageSize":10,"lastCreate":null,"searchKey":null,"category":0}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.PromptReponse>>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":[{"id":"42","type":"system","title":"起名大师","prompt":"请给我提供的信息如姓氏，性别，出生日期等信息，结合五行八卦，诗词歌赋，为我取五个名字，要求名字要文雅，符合中国姓氏的基本规范。输出格式请按照以下格式：\n- 姓名：姓名的典故来源，解释","maxContext":6,"promptExtend":"每个名字都是一个故事，热衷于寻找最佳的名字，以期让每个故事更加生动和有趣。","avatar":"https://ssl.aicode.cc/ai-server/assets/avatar/ava-20230724-13.jpeg","file":null,"initMessage":"请告诉我姓氏、性别、出生年月等信息。\n\n让我为你寻找一个与众不同的名字，开启一段独一无二的故事！","tags":"创意生活","model":"gpt-3.5-turbo","vendor":"openai","isGroup":null,"cre
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:49:45.3076970 +08:00 星期五 L System.Logging.LoggingMonitor[0] #32 '00-e3d4b17b9eedf7cee1eddf370875bf61-75f74135ff4fad9a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-e3d4b17b9eedf7cee1eddf370875bf61-75f74135ff4fad9a-00
+      ┣ 服务线程 ID：            #32
+      ┣ 执行耗时：               10137ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:50:47.2956722 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-ec63874f9cec53218c841519d744f3e4-b29d502d2e5c6312-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-ec63874f9cec53218c841519d744f3e4-b29d502d2e5c6312-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               2180ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:51:01.9027934 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-f330266b712bf7c7399edd8f90a6b6a1-288093571a18c1ad-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-f330266b712bf7c7399edd8f90a6b6a1-288093571a18c1ad-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               10093ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:53:46.8359800 +08:00 星期五 L System.Logging.LoggingMonitor[0] #32 '00-c2fb2be87e7e4ddd5f600a88441f0df2-0be23606fd0f0f30-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-c2fb2be87e7e4ddd5f600a88441f0df2-0be23606fd0f0f30-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               74ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:54:07.5917220 +08:00 星期五 L System.Logging.LoggingMonitor[0] #31 '00-019a8785b229abc01b052a049f9d6297-dd7c5708a859ab72-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-019a8785b229abc01b052a049f9d6297-dd7c5708a859ab72-00
+      ┣ 服务线程 ID：            #31
+      ┣ 执行耗时：               10090ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:56:36.9744227 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-771d23885f9ae4df4197e0bd4d70e80a-2c90cb988db746fd-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-771d23885f9ae4df4197e0bd4d70e80a-2c90cb988db746fd-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               129ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:56:53.2561486 +08:00 星期五 L System.Logging.LoggingMonitor[0] #31 '00-7507660cbeece9eb4e211b448a4306e3-7ea8997c81016bc6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-7507660cbeece9eb4e211b448a4306e3-7ea8997c81016bc6-00
+      ┣ 服务线程 ID：            #31
+      ┣ 执行耗时：               10074ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 22:59:59.9966368 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-ce473840bc60c37a2171645b63ee2e54-867c2558ed5895fd-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-ce473840bc60c37a2171645b63ee2e54-867c2558ed5895fd-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               185ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:00:13.6741243 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-8247627a5efe7c70d7150de8e6528ae0-36981fab0d09c52a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-8247627a5efe7c70d7150de8e6528ae0-36981fab0d09c52a-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               10100ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:01:32.0198111 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6 '00-bf98f546d7d100e88fd78c70b89647dc-25ad5506109bf84b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-bf98f546d7d100e88fd78c70b89647dc-25ad5506109bf84b-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               7077ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:04:53.4455957 +08:00 星期五 L System.Logging.LoggingMonitor[0] #31 '00-171a7d8af11bc2bc565e1b2b1ed015e2-9e61f82f556fabe7-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-171a7d8af11bc2bc565e1b2b1ed015e2-9e61f82f556fabe7-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               1977ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:06:06.8368552 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-5c1a9cbb25f6b9a727858a98de3a5447-3ca28195ffdde3a2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-5c1a9cbb25f6b9a727858a98de3a5447-3ca28195ffdde3a2-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               124ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:06:21.5380135 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-97b52d3e336ee97a4f66a516167b13b8-51b7a07f7bd94c8c-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-97b52d3e336ee97a4f66a516167b13b8-51b7a07f7bd94c8c-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               6085ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:38:00.2493228 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-48e8549434748c7ad9eca1a82f7ec6f6-1448a85d8edbc472-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-48e8549434748c7ad9eca1a82f7ec6f6-1448a85d8edbc472-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               3346ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:38:02.2578526 +08:00 星期五 L System.Logging.LoggingMonitor[0] #23 '00-2228c560b4ad2c2d6e298def268ee5e3-ac11e545d4c0d04b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-2228c560b4ad2c2d6e298def268ee5e3-ac11e545d4c0d04b-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               78ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838502469","modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"id":"31022838589253","modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"cate
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:38:12.1940980 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-87f825231df07f1bcda8ed51a0e782db-4946803ab694eda5-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-87f825231df07f1bcda8ed51a0e782db-4946803ab694eda5-00
+      ┣ 服务线程 ID：            #25
+      ┣ 执行耗时：               4057ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:42:57.3751602 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-1f56871aa4df02973494a17abf15baf3-97fdee1913d6c57f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-1f56871aa4df02973494a17abf15baf3-97fdee1913d6c57f-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               4074ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:44:12.0864345 +08:00 星期五 L System.Logging.LoggingMonitor[0] #23 '00-89e06dcbda19e28184c571dd875ae4db-d1526c8a74770774-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-89e06dcbda19e28184c571dd875ae4db-d1526c8a74770774-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               3014ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:45:53.4990102 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-099f53c78e6d566676b48ed9e0a79614-16a364d7e69400a5-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-099f53c78e6d566676b48ed9e0a79614-16a364d7e69400a5-00
+      ┣ 服务线程 ID：            #3
+      ┣ 执行耗时：               10105ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-12-27 23:46:13.5177705 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21 '00-282328605831e23404b2fc4559e234bf-81659783fea31384-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatController.CreateSseDemo
+      ┣ 
+      ┣ 控制器名称：             ChatController
+      ┣ 操作名称：               CreateSseDemo
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: Chat; [action]: CreateSseDemo
+      ┣ 请求方式：               POST
+      ┣ 请求地址：               http://localhost:5005/app/api/base/chat
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-282328605831e23404b2fc4559e234bf-81659783fea31384-00
+      ┣ 服务线程 ID：            #21
+      ┣ 执行耗时：               2023ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 text/event-stream
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Content-Length：         0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

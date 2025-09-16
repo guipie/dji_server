@@ -1,0 +1,642 @@
+fail: 2023-11-22 17:56:33.9751164 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #25 '00-4ee890a4d269723d1a55f7e449cc408d-bad7f6931d2fb5e1-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 17:56:35.5589010 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #25 '00-4ee890a4d269723d1a55f7e449cc408d-bad7f6931d2fb5e1-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB85337OIJ", Request id "0HMVB85337OIJ:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 17:58:53.6900134 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #45 '00-ef4e631454723785a8533930953e9f52-c83682988bf8228d-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 17:58:55.2767149 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #45 '00-ef4e631454723785a8533930953e9f52-c83682988bf8228d-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB85337OIL", Request id "0HMVB85337OIL:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:08:04.2216764 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #44 '00-c0a65a939e9e434fddf1107e75a1d0e2-a06b5d427ce23351-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:08:04.2457467 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #44 '00-c0a65a939e9e434fddf1107e75a1d0e2-a06b5d427ce23351-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB85337OIN", Request id "0HMVB85337OIN:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:08:49.9756525 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #50 '00-4d77f6608b9b62f6436968338cfdefaf-bc38d66a65e1f92a-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:08:49.9963305 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #50 '00-4d77f6608b9b62f6436968338cfdefaf-bc38d66a65e1f92a-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB85337OIO", Request id "0HMVB85337OIO:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:09:41.5388179 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #4 '00-f2725686220d8ffad5080b3722903566-fa95cc14b0bd3492-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:09:41.5698405 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #4 '00-f2725686220d8ffad5080b3722903566-fa95cc14b0bd3492-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB8CCS5IKM", Request id "0HMVB8CCS5IKM:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:10:52.3057084 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #6 '00-29c1ede5403a74d27079ab578e9091a3-b63fccb0e19df4b4-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:10:52.3262457 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #6 '00-29c1ede5403a74d27079ab578e9091a3-b63fccb0e19df4b4-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB8CCS5IKN", Request id "0HMVB8CCS5IKN:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:11:08.5059223 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #42 '00-59e7b59e3cd3645669b07e73d6c49a79-007843886a433e1b-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:11:09.9880703 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #42 '00-59e7b59e3cd3645669b07e73d6c49a79-007843886a433e1b-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB8CCS5IKO", Request id "0HMVB8CCS5IKO:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:12:01.4680948 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #19 '00-d4ab3235404de3fc0ea0d81415ba0c21-5265cbdc66024ef5-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 18:12:01.4931580 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #19 '00-d4ab3235404de3fc0ea0d81415ba0c21-5265cbdc66024ef5-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMVB8CCS5IKP", Request id "0HMVB8CCS5IKP:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-22 22:35:32.2427990 +08:00 星期三 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      Fetch同步文件出错478
+fail: 2023-11-22 22:35:35.1177433 +08:00 星期三 L System.Logging.ScheduleService[0] #7
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogError(Exception ex, string message, params object[] args)
+      Error occurred executing in <job_ossAsync> 同步绘画图片... [S] <job_ossAsync trigger_ossAsync> 59min 同步绘画图片... 1ts 2023-11-22 22:35:28.408 -> 2023-11-22 23:34:29.436.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.AggregateException: One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-8vd0HUNNEDpZuR0WNjApolrr.png?st=2023-11-18T14%3A31%3A55Z&se=2023-11-18T16%3A31%3A55Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-17T20%3A08%3A27Z&ske=2023-11-18T20%3A08%3A27Z&sks=b&skv=2021-08-06&sig=gQgQHJXdAA%2B69PIv2nXOoQ2NhdnS0lPs9HHZNTUBmkk%3D)
+       ---> Flurl.Http.FlurlHttpException: Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-8vd0HUNNEDpZuR0WNjApolrr.png?st=2023-11-18T14%3A31%3A55Z&se=2023-11-18T16%3A31%3A55Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-17T20%3A08%3A27Z&ske=2023-11-18T20%3A08%3A27Z&sks=b&skv=2021-08-06&sig=gQgQHJXdAA%2B69PIv2nXOoQ2NhdnS0lPs9HHZNTUBmkk%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         --- End of inner exception stack trace ---
+         at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at System.Threading.Tasks.Task`1.get_Result()
+         at Admin.NET.Core.JuAI.Service.JuFileService.GptImageAsyncToOss(String path) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 101
+         at Admin.NET.Core.JuAI.OssAsyncJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\OssAsyncJob.cs:line 38
+         at Furion.Schedule.ScheduleHostedService.<>c__DisplayClass24_3.<<BackgroundProcessing>b__3>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Furion.FriendlyException.Retry.InvokeAsync(Func`1 action, Int32 numRetries, Int32 retryTimeout, Boolean finalThrow, Type[] exceptionTypes, Func`2 fallbackPolicy, Action`2 retryAction)
+         at Furion.Schedule.ScheduleHostedService.<>c__DisplayClass24_2.<<BackgroundProcessing>b__2>d.MoveNext()
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

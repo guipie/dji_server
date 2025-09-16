@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>让 .NET 开发更简单，更通用，更流行。</Description>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+		<TargetFramework>net8.0</TargetFramework>
+		<NoWarn>1701;1702;1591;8632</NoWarn>
+		<DocumentationFile></DocumentationFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="FriendlyException\Assets\error.html" />
+		<None Remove="Schedule\Dashboard\frontend\**\*" />
+		<None Remove="SpecificationDocument\Assets\index-mini-profiler.html" />
+		<None Remove="SpecificationDocument\Assets\index.html" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="FriendlyException\Assets\error.html" />
+		<EmbeddedResource Include="Schedule\Dashboard\frontend\**\*" />
+		<EmbeddedResource Include="SpecificationDocument\Assets\index-mini-profiler.html" />
+		<EmbeddedResource Include="SpecificationDocument\Assets\index.html" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.2.22" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' != 'net5.0' ">
+		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.3.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Furion.Pure.Extras.DependencyModel.CodeAnalysis\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj" />
+	</ItemGroup>
+
+</Project>

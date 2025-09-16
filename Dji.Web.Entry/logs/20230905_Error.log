@@ -1,0 +1,336 @@
+fail: 2023-09-05 20:00:34.7177569 +08:00 星期二 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #51
+      [Microsoft.Extensions.Logging.Abstractions.dll] Action<ILogger, Exception> Microsoft.Extensions.Logging.LoggerMessage.Define(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions options)+(ILogger logger, T1 arg1, Exception exception) => { }
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:38:54.6975990 +08:00 星期二 L System.Logging.LoggingMonitor[0] #35
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetNewest
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/newest
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=app
+      ┣ 请求端源：         swagger
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-bd9fa1a83063bf5e5b7e33e2eeb49ec1-59e39571684849fe-00
+      ┣ 服务线程 ID：      #35
+      ┣ 执行耗时：         439ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.42
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.MissingMethodException
+      ┣ 消息：             Attempted to access a missing method.
+      ┣ 错误堆栈：         at Admin.NET.Core.JuAI.Service.ArticleOutput.set_Html(String value)
+         at lambda_method185(Closure , Article )
+         at lambda_method184(Closure , Object )
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId)
+         at lambda_method171(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.set_Html(String value)
+         at lambda_method185(Closure , Article )
+         at lambda_method184(Closure , Object )
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId)
+         at lambda_method171(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:39:01.1789929 +08:00 星期二 L System.Logging.LoggingMonitor[0] #33
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetNewest
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/newest
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=app
+      ┣ 请求端源：         swagger
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-f54f28277c36cf08b4ba90b7aad77c64-af9cf6f0ef9d6a44-00
+      ┣ 服务线程 ID：      #33
+      ┣ 执行耗时：         391ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.42
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.MissingMethodException
+      ┣ 消息：             Attempted to access a missing method.
+      ┣ 错误堆栈：         at Admin.NET.Core.JuAI.Service.ArticleOutput.set_Html(String value)
+         at lambda_method185(Closure , Article )
+         at lambda_method184(Closure , Object )
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId)
+         at lambda_method171(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.set_Html(String value)
+         at lambda_method185(Closure , Article )
+         at lambda_method184(Closure , Object )
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId)
+         at lambda_method171(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:50:53.3470803 +08:00 星期二 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #3
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Error getting value from 'User' on 'Admin.NET.Core.JuAI.Service.ArticleOutput'.
+       ---> System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.get_User()
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:50:53.4581591 +08:00 星期二 L Microsoft.AspNetCore.Server.Kestrel[13] #3
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMTE3RL1A1TA", Request id "0HMTE3RL1A1TA:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> Newtonsoft.Json.JsonSerializationException: Error getting value from 'User' on 'Admin.NET.Core.JuAI.Service.ArticleOutput'.
+       ---> System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.get_User()
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:50:58.5505368 +08:00 星期二 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #27
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Error getting value from 'User' on 'Admin.NET.Core.JuAI.Service.ArticleOutput'.
+       ---> System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.get_User()
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-05 22:50:58.6365077 +08:00 星期二 L Microsoft.AspNetCore.Server.Kestrel[13] #27
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMTE3RL1A1TB", Request id "0HMTE3RL1A1TB:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> Newtonsoft.Json.JsonSerializationException: Error getting value from 'User' on 'Admin.NET.Core.JuAI.Service.ArticleOutput'.
+       ---> System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.ArticleOutput.get_User()
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

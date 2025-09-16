@@ -1,0 +1,1375 @@
+fail: 2024-06-30 17:15:03.7909589 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:15:04.0582887 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #4
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:16:06.3241576 +08:00 星期日 L System.Logging.LoggingMonitor[0] #21 '00-dc5c2d6feaeb084078c1c3fee390a65d-46d8570995f0a1c6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:8888/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-cn
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-dc5c2d6feaeb084078c1c3fee390a65d-46d8570995f0a1c6-00
+      ┣ 服务线程 ID：               #24
+      ┣ 执行耗时：                  242ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-cn
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTQ4ODg0NSwibmJmIjoxNzE5NDg4ODQ1LCJleHAiOjE3MjAwOTM2NDUsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.E5kDohDeKJMdQy2ZDGoMz-qktLscBYHkDjkpAM9hEqY
+      ┣ Content-Type：              application/json-patch+json
+      ┣ Origin：                    http://localhost:8888
+      ┣ Referer：                   http://localhost:8888/
+      ┣ Content-Length：            280
+      ┣ sec-ch-ua：                 "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"0406f1538a1b75ec7c02e6d63edf16fc9960b80e95939def64785e4bb2ea3d15072dcff219a5485ee2943eaac5e0a528b2ed1b5df7f393cf0853b67cc43251772392890bf0603e98b35928c148c125c79add81c0cd771617955ec6f6b8e462d5d83e4407740c","codeId":"35218871089733","code":"97"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentException
+      ┣ 消息：                      Invalid point coordinates
+      ┣ 错误堆栈：                  at Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint(BigInteger x, BigInteger y)
+         at Org.BouncyCastle.Math.EC.ECCurve.DecodePoint(ReadOnlySpan`1 encoded)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.Decrypt(ReadOnlySpan`1 input)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.ProcessBlock(ReadOnlySpan`1 input)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.ProcessBlock(Byte[] input, Int32 inOff, Int32 inLen)
+         at Admin.NET.Core.GM.Sm2DecryptOld(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 184
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method85(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Invalid point coordinates
+         at Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint(BigInteger x, BigInteger y)
+         at Org.BouncyCastle.Math.EC.ECCurve.DecodePoint(ReadOnlySpan`1 encoded)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.Decrypt(ReadOnlySpan`1 input)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.ProcessBlock(ReadOnlySpan`1 input)
+         at Org.BouncyCastle.Crypto.Engines.SM2Engine.ProcessBlock(Byte[] input, Int32 inOff, Int32 inLen)
+         at Admin.NET.Core.GM.Sm2DecryptOld(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 184
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\work\juai\api\Admin.NET.Core\Util\GM\GM.cs:line 144
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\work\juai\api\Admin.NET.Core\Util\GM\GMUtil.cs:line 65
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\work\juai\api\Admin.NET.Core\Util\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.Service.SysAuthService.Login(LoginInput input) in D:\work\juai\api\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 84
+         at lambda_method85(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:30:00.2395814 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #36
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:30:00.4107776 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #4
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:43:09.3939014 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 17:44:04.2749693 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 445
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 18:01:00.3186030 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #3
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 18:01:00.4802291 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #47
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 18:30:00.3159565 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #61
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 18:30:00.4837296 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #55
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 19:01:00.3883877 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #49
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 19:01:00.5713578 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #51
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 19:30:00.5170603 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #26
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 19:30:00.6877519 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #26
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 20:01:00.3026824 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #71
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 20:01:00.4777917 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #39
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 20:30:00.3090996 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 20:30:00.4858046 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #65
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 21:01:00.3203158 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #54
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 21:01:00.4795312 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #53
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 21:29:24.2693635 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 21:30:00.3135856 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #50
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 21:30:00.4741186 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #36
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:01:00.3079737 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:01:00.4787619 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #50
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:30:00.5102741 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:30:00.6845620 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #50
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:49:56.8817568 +08:00 星期日 L System.Logging.LoggingMonitor[0] #41 '00-ac7aa5356eba877efe40ba9818d1f33b-b2bb3b7923671439-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/app
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ac7aa5356eba877efe40ba9818d1f33b-b2bb3b7923671439-00
+      ┣ 服务线程 ID：                    #41
+      ┣ 执行耗时：                       194ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              app
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:50:02.1173042 +08:00 星期日 L System.Logging.LoggingMonitor[0] #48 '00-696b2a7fd9caefaabb657ee6828e34c9-59754e87f1fe0f1e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000002
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-696b2a7fd9caefaabb657ee6828e34c9-59754e87f1fe0f1e-00
+      ┣ 服务线程 ID：                    #48
+      ┣ 执行耗时：                       8ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000002
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:50:07.2152309 +08:00 星期日 L System.Logging.LoggingMonitor[0] #36 '00-6c4dce7b51e1a9c864155fc255bb76de-b4d0bc65eb1b4a66-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000001
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-6c4dce7b51e1a9c864155fc255bb76de-b4d0bc65eb1b4a66-00
+      ┣ 服务线程 ID：                    #36
+      ┣ 执行耗时：                       91ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000001
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:50:17.2988691 +08:00 星期日 L System.Logging.LoggingMonitor[0] #27 '00-ed5fe97b8ec81ef36f25214a58cf5d24-6bc3a0a83d5e765b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/app
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ed5fe97b8ec81ef36f25214a58cf5d24-6bc3a0a83d5e765b-00
+      ┣ 服务线程 ID：                    #27
+      ┣ 执行耗时：                       56ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              app
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:50:21.4532725 +08:00 星期日 L System.Logging.LoggingMonitor[0] #36 '00-bca4774f84d56f502fa15af637666f12-d762a6b470fd208f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000002
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-bca4774f84d56f502fa15af637666f12-d762a6b470fd208f-00
+      ┣ 服务线程 ID：                    #36
+      ┣ 执行耗时：                       16ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000002
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:50:23.5465409 +08:00 星期日 L System.Logging.LoggingMonitor[0] #9 '00-b0cc38fe6ab66190903ff46e06988bd8-0d94fbbf68389528-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/app
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-b0cc38fe6ab66190903ff46e06988bd8-0d94fbbf68389528-00
+      ┣ 服务线程 ID：                    #9
+      ┣ 执行耗时：                       61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              app
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:57:12.3032362 +08:00 星期日 L System.Logging.LoggingMonitor[0] #37 '00-9efdfb550623a21442cc212a6ccf3a03-bc863bf18c1bbdbb-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000002
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-9efdfb550623a21442cc212a6ccf3a03-bc863bf18c1bbdbb-00
+      ┣ 服务线程 ID：                    #37
+      ┣ 执行耗时：                       15ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000002
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method2048(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 22:59:42.5072088 +08:00 星期日 L System.Logging.LoggingMonitor[0] #25 '00-b5ed2f8ce4f31857e139cb7abe69cfc6-5220b7b72244e4b2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000001
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-b5ed2f8ce4f31857e139cb7abe69cfc6-5220b7b72244e4b2-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       30773ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000001
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method117(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method117(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-30 23:00:39.8878821 +08:00 星期日 L System.Logging.LoggingMonitor[0] #23 '00-33ad7e4cc879461536b75afc477880b1-39dd6366a3cd6d06-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysCodeGenService.GetTableList
+      ┣ 
+      ┣ 控制器名称：                     SysCodeGenService
+      ┣ 操作名称：                       GetTableList
+      ┣ 显示名称：                       获取数据库表(实体)集合
+      ┣ 路由信息：                       [area]: ; [controller]: sysCodeGen; [action]: tableList
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/api/sysCodeGen/tableList/1300000000002
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-33ad7e4cc879461536b75afc477880b1-39dd6366a3cd6d06-00
+      ┣ 服务线程 ID：                    #23
+      ┣ 执行耗时：                       53240ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1719758547 (2024-06-30 22:42:27:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1720363347 (2024-07-07 22:42:27:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTcxOTc1ODU0NywibmJmIjoxNzE5NzU4NTQ3LCJleHAiOjE3MjAzNjMzNDcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.S6ZDmE6skXsYBkJDYjq6wPD0K1Cd4E-UxydKHLrmE0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Origin：                         http://localhost:8888
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:8888/
+      ┣ sec-ch-ua：                      "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ configId (String)：              1300000000002
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.TableOutput>>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.IO.FileNotFoundException
+      ┣ 消息：                           Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      ┣ 错误堆栈：                       at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method117(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.FileNotFoundException: Could not load file or assembly 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+      File name: 'Admin.NET.Application.JuAi, Culture=neutral, PublicKeyToken=null'
+         at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+         at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+         at System.Reflection.Assembly.Load(String assemblyString)
+         at Admin.NET.Core.Service.SysCodeGenService.GetEntityInfos() in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 251
+         at Admin.NET.Core.Service.SysCodeGenService.GetTableList(String configId) in D:\work\juai\api\Admin.NET.Core\Service\CodeGen\SysCodeGenService.cs:line 143
+         at lambda_method117(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

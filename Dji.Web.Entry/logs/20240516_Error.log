@@ -1,0 +1,243 @@
+fail: 2024-05-16 23:30:33.3959102 +08:00 星期四 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_ossAsync> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-16 23:40:23.6621862 +08:00 星期四 L System.Logging.LoggingMonitor[0] #24 '00-2d38731d73689854e4d5a6306a0be2ca-791216b6ce7d547b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync
+      ┣ 
+      ┣ 控制器名称：                           DrawingOpenAIService
+      ┣ 操作名称：                             DrawingAsync
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: drawingOpenAI; [action]: drawing
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/app/api/drawingOpenAI/drawing
+      ┣ 来源地址：                             http://localhost:9527/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       127.0.0.1
+      ┣ 服务端 IP 地址：                       127.0.0.1
+      ┣ 客户端连接 ID：                        00-2d38731d73689854e4d5a6306a0be2ca-791216b6ce7d547b-00
+      ┣ 服务线程 ID：                          #24
+      ┣ 执行耗时：                             92701ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19045
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                            .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Development
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE1OTU4MTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.1_eVPWJ7hHZLm6fhdfNrb_07t_2NzG_2UDC4X6YXiUg
+      ┣ 
+      ┣ UserId (integer64)：                   14213426327877
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     18600766045
+      ┣ NickName (string)：                    怪兽来了
+      ┣ AccountType (integer32)：              777
+      ┣ iat (integer64)：                      1715353316 (2024-05-10 23:01:56:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                      1715353316 (2024-05-10 23:01:56:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                      1715958116 (2024-05-17 23:01:56:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         guxin.link
+      ┣ aud (string)：                         guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                               application/json, text/plain, */*
+      ┣ Connection：                           keep-alive
+      ┣ Host：                                 localhost:5005
+      ┣ User-Agent：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                      gzip, deflate, br, zstd
+      ┣ Accept-Language：                      zh-CN,zh;q=0.9
+      ┣ Authorization：                        Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE1OTU4MTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.1_eVPWJ7hHZLm6fhdfNrb_07t_2NzG_2UDC4X6YXiUg
+      ┣ Cache-Control：                        no-cache
+      ┣ Content-Type：                         application/json
+      ┣ Origin：                               http://localhost:9527
+      ┣ Pragma：                               no-cache
+      ┣ Referer：                              http://localhost:9527/
+      ┣ Content-Length：                       105
+      ┣ sec-ch-ua：                            "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ DNT：                                  1
+      ┣ sec-ch-ua-mobile：                     ?0
+      ┣ X-Authorization：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjFfZVZQV0o3aEhaTG02ZmhkZk5yYl8wN3RfMk56R18yVURDNFg2WVhpVWciLCJzIjo1NCwibCI6NywiayI6IkF3TURBd00iLCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE2NTYyOTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.-vh5Ht_71f0Je_62FRcFYl3kFNX_yfIuGnhXP0u9WyM
+      ┣ X-Request-Id：                         0JFRh2hK2OGpdMo_YdgbY
+      ┣ sec-ch-ua-platform：                   "Windows"
+      ┣ Sec-Fetch-Site：                       same-site
+      ┣ Sec-Fetch-Mode：                       cors
+      ┣ Sec-Fetch-Dest：                       empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ drawingReq (DrawingOpenAiReq)：        {"id":null,"isOpt":false,"drawingType":null,"prompt":"一个亚洲婴儿在妈妈的怀里安静的入睡。","quality":null,"style":null,"n":null,"size":"1024x1024","responseFormat":null,"user":null,"model":"dall-e-3"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ChatgptImageDetailRes>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 WRONGTYPE Operation against a key holding the wrong kind of value
+      ┣ 错误堆栈：                             at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.RedisHash`2.<>c__DisplayClass13_0.<Add>b__0(RedisClient r, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisBase.Execute[T](Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.Add(TKey key, TValue value)
+         at Admin.NET.Core.Service.SysCacheService.HashAdd[T](String key, String hashKey, T value) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 190
+         at Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync(DrawingOpenAiReq drawingReq) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingOpenAIService.cs:line 28
+         at lambda_method115(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: WRONGTYPE Operation against a key holding the wrong kind of value
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.RedisHash`2.<>c__DisplayClass13_0.<Add>b__0(RedisClient r, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisBase.Execute[T](Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.Add(TKey key, TValue value)
+         at Admin.NET.Core.Service.SysCacheService.HashAdd[T](String key, String hashKey, T value) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 190
+         at Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync(DrawingOpenAiReq drawingReq) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingOpenAIService.cs:line 28
+         at lambda_method115(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-16 23:50:01.4914934 +08:00 星期四 L System.Logging.LoggingMonitor[0] #28 '00-0183feb2b1ec3c6eb73cfaae77eef0a4-65cafd8becfde253-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync
+      ┣ 
+      ┣ 控制器名称：                           DrawingOpenAIService
+      ┣ 操作名称：                             DrawingAsync
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: drawingOpenAI; [action]: drawing
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/app/api/drawingOpenAI/drawing
+      ┣ 来源地址：                             http://localhost:9527/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       127.0.0.1
+      ┣ 服务端 IP 地址：                       127.0.0.1
+      ┣ 客户端连接 ID：                        00-0183feb2b1ec3c6eb73cfaae77eef0a4-65cafd8becfde253-00
+      ┣ 服务线程 ID：                          #28
+      ┣ 执行耗时：                             30608ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19045
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                            .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Development
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE1OTU4MTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.1_eVPWJ7hHZLm6fhdfNrb_07t_2NzG_2UDC4X6YXiUg
+      ┣ 
+      ┣ UserId (integer64)：                   14213426327877
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     18600766045
+      ┣ NickName (string)：                    怪兽来了
+      ┣ AccountType (integer32)：              777
+      ┣ iat (integer64)：                      1715353316 (2024-05-10 23:01:56:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                      1715353316 (2024-05-10 23:01:56:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                      1715958116 (2024-05-17 23:01:56:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         guxin.link
+      ┣ aud (string)：                         guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                               application/json, text/plain, */*
+      ┣ Connection：                           keep-alive
+      ┣ Host：                                 localhost:5005
+      ┣ User-Agent：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                      gzip, deflate, br, zstd
+      ┣ Accept-Language：                      zh-CN,zh;q=0.9
+      ┣ Authorization：                        Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE1OTU4MTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.1_eVPWJ7hHZLm6fhdfNrb_07t_2NzG_2UDC4X6YXiUg
+      ┣ Cache-Control：                        no-cache
+      ┣ Content-Type：                         application/json
+      ┣ Origin：                               http://localhost:9527
+      ┣ Pragma：                               no-cache
+      ┣ Referer：                              http://localhost:9527/
+      ┣ Content-Length：                       105
+      ┣ sec-ch-ua：                            "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ DNT：                                  1
+      ┣ sec-ch-ua-mobile：                     ?0
+      ┣ X-Authorization：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjFfZVZQV0o3aEhaTG02ZmhkZk5yYl8wN3RfMk56R18yVURDNFg2WVhpVWciLCJzIjo1NCwibCI6NywiayI6IkF3TURBd00iLCJpYXQiOjE3MTUzNTMzMTYsIm5iZiI6MTcxNTM1MzMxNiwiZXhwIjoxNzE2NTYyOTE2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.-vh5Ht_71f0Je_62FRcFYl3kFNX_yfIuGnhXP0u9WyM
+      ┣ X-Request-Id：                         M0B2SDhxkC97oDXlXcp4J
+      ┣ sec-ch-ua-platform：                   "Windows"
+      ┣ Sec-Fetch-Site：                       same-site
+      ┣ Sec-Fetch-Mode：                       cors
+      ┣ Sec-Fetch-Dest：                       empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ drawingReq (DrawingOpenAiReq)：        {"id":null,"isOpt":false,"drawingType":null,"prompt":"一个亚洲婴儿在妈妈的怀里安静的入睡。","quality":null,"style":null,"n":null,"size":"1024x1024","responseFormat":null,"user":null,"model":"dall-e-3"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ChatgptImageDetailRes>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 WRONGTYPE Operation against a key holding the wrong kind of value
+      ┣ 错误堆栈：                             at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.RedisHash`2.<>c__DisplayClass13_0.<Add>b__0(RedisClient r, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisBase.Execute[T](Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.Add(TKey key, TValue value)
+         at Admin.NET.Core.Service.SysCacheService.HashAdd[T](String key, String hashKey, T value)
+         at Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync(DrawingOpenAiReq drawingReq) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingOpenAIService.cs:line 28
+         at lambda_method115(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: WRONGTYPE Operation against a key holding the wrong kind of value
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.RedisHash`2.<>c__DisplayClass13_0.<Add>b__0(RedisClient r, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisBase.Execute[T](Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.Add(TKey key, TValue value)
+         at Admin.NET.Core.Service.SysCacheService.HashAdd[T](String key, String hashKey, T value)
+         at Admin.NET.Core.JuAI.Service.DrawingOpenAIService.DrawingAsync(DrawingOpenAiReq drawingReq) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingOpenAIService.cs:line 28
+         at lambda_method115(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

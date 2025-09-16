@@ -1,0 +1,27 @@
+fail: 2023-12-27 21:01:06.2749339 +08:00 星期三 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_ossAsync> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.FullRedis.<>c__DisplayClass41_1.<Search>b__0(RedisClient r)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

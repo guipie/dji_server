@@ -1,0 +1,1047 @@
+info: 2024-03-05 16:51:58.1237526 +08:00 星期二 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-03-05 16:51:58.1494074 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-03-05 16:51:58.1515424 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-03-05 16:51:58.7424965 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-05 16:51:58.7438590 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-05 16:51:58.7510181 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-05 16:51:58.7522166 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-05 16:51:58.7571342 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-05 16:51:58.7582991 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-05 17:00:46.7768230 +08:00 星期二 L System.Logging.LoggingMonitor[0] #14 '00-91f589c9277127363b2a0fe354793ddf-0ebbe73a5ff717b0-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-91f589c9277127363b2a0fe354793ddf-0ebbe73a5ff717b0-00
+      ┣ 服务线程 ID：               #14
+      ┣ 执行耗时：                  179ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              -alRtqbzq9IhTSZHAlSVi
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:01:46.0589192 +08:00 星期二 L System.Logging.LoggingMonitor[0] #36 '00-c74f2d26dafaa998d2259c96a602c8f1-7949dab105e48569-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-c74f2d26dafaa998d2259c96a602c8f1-7949dab105e48569-00
+      ┣ 服务线程 ID：               #36
+      ┣ 执行耗时：                  62ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              AZBnAvUMKcb3BDBADU26-
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:02:02.3136672 +08:00 星期二 L System.Logging.LoggingMonitor[0] #34 '00-e70302580553a5e103b3d451d4972f7f-1a84979889b1eaef-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-e70302580553a5e103b3d451d4972f7f-1a84979889b1eaef-00
+      ┣ 服务线程 ID：               #34
+      ┣ 执行耗时：                  60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              UMeikhU3zwL630cbDP2T1
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:03:23.5114003 +08:00 星期二 L System.Logging.LoggingMonitor[0] #3 '00-c21f19f45d05ab8b18f6b1d38730a376-db21225005c41271-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-c21f19f45d05ab8b18f6b1d38730a376-db21225005c41271-00
+      ┣ 服务线程 ID：               #3
+      ┣ 执行耗时：                  59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              g7Wt5C3B_B6qfPfAed62k
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:03:34.1180414 +08:00 星期二 L System.Logging.LoggingMonitor[0] #34 '00-5635360a3023ec4f5464096f14dde431-a3a14174622c98c0-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-5635360a3023ec4f5464096f14dde431-a3a14174622c98c0-00
+      ┣ 服务线程 ID：               #34
+      ┣ 执行耗时：                  56ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              8Gj8F27tfW97AHaV2jye7
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:03:39.7035473 +08:00 星期二 L System.Logging.LoggingMonitor[0] #3 '00-dde3cddb47d7374dba7cc862e7deaac5-d016987f23218f6a-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-dde3cddb47d7374dba7cc862e7deaac5-d016987f23218f6a-00
+      ┣ 服务线程 ID：               #3
+      ┣ 执行耗时：                  60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              GH3mv_7Pkp16DxvyybtQF
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:04:45.9792338 +08:00 星期二 L System.Logging.LoggingMonitor[0] #34 '00-355d069f565dbc22afb9190c2463abd1-0f0f8a848ba3b691-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-355d069f565dbc22afb9190c2463abd1-0f0f8a848ba3b691-00
+      ┣ 服务线程 ID：               #3
+      ┣ 执行耗时：                  128ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              ppVAbAVqreeeHkVDOBtHZ
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:25:44.2142376 +08:00 星期二 L System.Logging.LoggingMonitor[0] #33 '00-bb1d695bc5d2bae686d8fcd1747995c7-fcb687935868388c-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-bb1d695bc5d2bae686d8fcd1747995c7-fcb687935868388c-00
+      ┣ 服务线程 ID：               #33
+      ┣ 执行耗时：                  157ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              H3Z_k3tExt3EeEEqaPGr2
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:26:44.4778536 +08:00 星期二 L System.Logging.LoggingMonitor[0] #36 '00-b7c2c694b3e2dcdbdeedbb413d050cd7-9def4add44cc191f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-b7c2c694b3e2dcdbdeedbb413d050cd7-9def4add44cc191f-00
+      ┣ 服务线程 ID：               #36
+      ┣ 执行耗时：                  96ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              c5h_smFYRe1AeX_bu7DtW
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:29:25.6839056 +08:00 星期二 L System.Logging.LoggingMonitor[0] #31 '00-63ec3f147e0d9d300bd0d26160fdc9d9-468ca617b712e4cd-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-63ec3f147e0d9d300bd0d26160fdc9d9-468ca617b712e4cd-00
+      ┣ 服务线程 ID：               #31
+      ┣ 执行耗时：                  61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              PueVcazkWqwtSoi44t1GJ
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:55:54.7635971 +08:00 星期二 L System.Logging.LoggingMonitor[0] #32 '00-71198a625b5df2dce5a5652d63ac9564-d27c3d419d194494-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-71198a625b5df2dce5a5652d63ac9564-d27c3d419d194494-00
+      ┣ 服务线程 ID：               #33
+      ┣ 执行耗时：                  559ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              xDyob6wom7d46-DI4SS-g
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:56:28.3475277 +08:00 星期二 L System.Logging.LoggingMonitor[0] #31 '00-c19918bc31273e63c1d64c003dacdedc-585fe8fd5587a103-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-c19918bc31273e63c1d64c003dacdedc-585fe8fd5587a103-00
+      ┣ 服务线程 ID：               #31
+      ┣ 执行耗时：                  77ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              QJGOFsIhrhcg438T876Gg
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:56:41.4486985 +08:00 星期二 L System.Logging.LoggingMonitor[0] #32 '00-d48d610a4f8f5af07f669f35f6101c23-8f0dce043099aefc-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-d48d610a4f8f5af07f669f35f6101c23-8f0dce043099aefc-00
+      ┣ 服务线程 ID：               #32
+      ┣ 执行耗时：                  77ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              XDWQCPu8Cqcso1yF-8WKm
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:58:44.3847912 +08:00 星期二 L System.Logging.LoggingMonitor[0] #32 '00-31efb932271f032629e42f37deed5dde-a4212f2e473fc9a7-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-31efb932271f032629e42f37deed5dde-a4212f2e473fc9a7-00
+      ┣ 服务线程 ID：               #32
+      ┣ 执行耗时：                  53ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              1z_JsMMSVyMRtDzvMbUJw
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 17:59:55.2017398 +08:00 星期二 L System.Logging.LoggingMonitor[0] #23 '00-69ff1f32ca89a831419724344d322c18-8fe7cd1eca4cfc9d-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-69ff1f32ca89a831419724344d322c18-8fe7cd1eca4cfc9d-00
+      ┣ 服务线程 ID：               #23
+      ┣ 执行耗时：                  53ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              d9mPn71k5KDi0cx5ABxCf
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 18:00:12.9862471 +08:00 星期二 L System.Logging.LoggingMonitor[0] #32 '00-fdaf1b91105ba1609a3895e21542bd64-748a7dd57192470d-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-fdaf1b91105ba1609a3895e21542bd64-748a7dd57192470d-00
+      ┣ 服务线程 ID：               #32
+      ┣ 执行耗时：                  60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              RYTo1txmjT5VLXNwHo8W1
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-05 18:00:42.7452649 +08:00 星期二 L System.Logging.LoggingMonitor[0] #10 '00-34b70f942f374dc7aa34e31f11404a63-fcafc18c8c65d6a4-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-34b70f942f374dc7aa34e31f11404a63-fcafc18c8c65d6a4-00
+      ┣ 服务线程 ID：               #10
+      ┣ 执行耗时：                  60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDkxMjE4ODYsIm5iZiI6MTcwOTEyMTg4NiwiZXhwIjoxNzA5NzI2Njg2LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.4bWI0nWlGyH0Denu21CQqVn-s4QKY2srLUFHGZmoxtM
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              mUJiu0ZAHueRTzA_9kF_o
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

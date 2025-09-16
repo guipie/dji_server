@@ -1,0 +1,221 @@
+fail: 2023-12-30 00:00:06.2436720 +08:00 星期六 L System.Logging.ScheduleService[0] #36
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Error occurred executing in <job_log> 清理操作日志 [S] <job_log trigger_log> 0 0 * * * 清理操作日志 5ts 2023-12-30 00:00:00.000 -> 2023-12-31 00:00:00.000.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.DeleteableProvider`1.<RemoveDataCache>b__66_0()
+         at SqlSugar.DeleteableProvider`1.After(String sql)
+         at SqlSugar.DeleteableProvider`1.ExecuteCommandAsync()
+         at Admin.NET.Core.LogJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core\Job\LogJob.cs:line 35
+         at Furion.Schedule.ScheduleHostedService.<>c__DisplayClass25_3.<<BackgroundProcessing>b__3>d.MoveNext() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\HostedServices\ScheduleHostedService.cs:line 252
+      --- End of stack trace from previous location ---
+         at Furion.FriendlyException.Retry.InvokeAsync(Func`1 action, Int32 numRetries, Int32 retryTimeout, Boolean finalThrow, Type[] exceptionTypes, Func`2 fallbackPolicy, Action`2 retryAction) in D:\work\juai\api\Plugins\Furion.Pure\FriendlyException\Retry.cs:line 79
+         at Furion.Schedule.ScheduleHostedService.<>c__DisplayClass25_2.<<BackgroundProcessing>b__2>d.MoveNext() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\HostedServices\ScheduleHostedService.cs:line 250
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 00:00:06.2487534 +08:00 星期六 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_log> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 00:00:12.3216734 +08:00 星期六 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_log> trigger of <job_log> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 14:01:06.2198751 +08:00 星期六 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_ossAsync> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.FullRedis.<>c__DisplayClass41_1.<Search>b__0(RedisClient r)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 14:01:12.2947212 +08:00 星期六 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_ossAsync> trigger of <job_ossAsync> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.FullRedis.<>c__DisplayClass41_1.<Search>b__0(RedisClient r)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 15:42:37.4753435 +08:00 星期六 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #6 '00-28532a4d1193b377fcdfbe83d43535a8-7f06a9453d7c5c52-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<ContainsKey>b__106_0(RedisClient rds, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Web.Core.JwtHandler.HandleAsync(AuthorizationHandlerContext context) in D:\work\juai\api\Admin.NET.Web.Core\Handlers\JwtHandler.cs:line 44
+         at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+         at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+         at Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-30 15:42:37.4962145 +08:00 星期六 L Microsoft.AspNetCore.Server.Kestrel[13] #6 '00-28532a4d1193b377fcdfbe83d43535a8-7f06a9453d7c5c52-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN090M5EMK4L", Request id "0HN090M5EMK4L:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<ContainsKey>b__106_0(RedisClient rds, String k)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Web.Core.JwtHandler.HandleAsync(AuthorizationHandlerContext context) in D:\work\juai\api\Admin.NET.Web.Core\Handlers\JwtHandler.cs:line 44
+         at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+         at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+         at Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\juai\api\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

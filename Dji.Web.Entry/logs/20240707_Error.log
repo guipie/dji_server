@@ -1,0 +1,463 @@
+fail: 2024-07-07 14:01:29.9429586 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 14:01:30.1948807 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 14:30:00.9429343 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 14:30:01.3694877 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 14:30:06.1949298 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_ossAsync> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 15:01:00.2850609 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 15:01:00.4541581 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 15:30:00.5601392 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #53
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 15:30:00.7954594 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #43
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 16:01:00.4752963 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 16:01:00.6394028 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 16:16:20.1112772 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 16:30:00.2865739 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 16:30:00.4575009 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 17:01:00.3038351 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 17:01:00.4630963 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 17:30:00.2721434 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 17:30:00.4319838 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 18:01:00.5183044 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #21
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 18:01:00.6698371 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 18:30:00.4683533 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 18:30:00.6271733 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 19:01:00.3346972 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #21
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 19:01:00.5129048 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #3
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 19:30:00.3142421 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 19:30:00.4705767 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 20:30:59.6641309 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #3
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 20:30:59.8153006 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 20:31:15.1414824 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 21:01:00.6134224 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #23
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 21:01:00.8789377 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #36
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 21:30:00.3190664 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 21:30:00.4887542 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 22:01:00.3355849 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 22:01:00.4911411 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #21
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 22:12:25.0976794 +08:00 星期日 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 448
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 22:30:00.3453792 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #21
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/viapi-video/2024-06-09/de21161e-98ca-44f5-98cb-f544b0829f92/20240609233755274209_1_xb1wuhvdyj.jpg?Expires=1718033882&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=vpVFECottTyillB9f3qkjYskkzw%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-07-07 22:30:00.5074321 +08:00 星期日 L Admin.NET.Core.JuAI.Service.JuFileService[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 111
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,1142 @@
+fail: 2024-12-29 01:23:56.5939684 +08:00 星期日 L System.Logging.LoggingMonitor[0] #24 '00-67f468581bbe1e9e855d80bbbf19330a-77fa481de5bfff96-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiAzureService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAiAzure; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAiAzure/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-67f468581bbe1e9e855d80bbbf19330a-77fa481de5bfff96-00
+      ┣ 服务线程 ID：                    #24
+      ┣ 执行耗时：                       1838ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Nullable object must have a value.
+      ┣ 错误堆栈：                       at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 17:10:47.9749871 +08:00 星期日 L System.Logging.LoggingMonitor[0] #5 '00-53d29ad1a82232812f14570547d9c040-2a0dc5ed4b5a62b4-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiAzureService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAiAzure; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAiAzure/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-53d29ad1a82232812f14570547d9c040-2a0dc5ed4b5a62b4-00
+      ┣ 服务线程 ID：                    #5
+      ┣ 执行耗时：                       298ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Nullable object must have a value.
+      ┣ 错误堆栈：                       at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 17:11:29.6603850 +08:00 星期日 L System.Logging.LoggingMonitor[0] #22 '00-c7bb57dd46febf5aa1a6d25e11970506-035a559a600a5328-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiAzureService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAiAzure; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAiAzure/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-c7bb57dd46febf5aa1a6d25e11970506-035a559a600a5328-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       16819ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Nullable object must have a value.
+      ┣ 错误堆栈：                       at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 17:12:37.7045094 +08:00 星期日 L System.Logging.LoggingMonitor[0] #21 '00-ae248dc91cdf1afb5e504daf8604d7ef-6967a54f5188ead2-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiAzureService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAiAzure; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAiAzure/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ae248dc91cdf1afb5e504daf8604d7ef-6967a54f5188ead2-00
+      ┣ 服务线程 ID：                    #21
+      ┣ 执行耗时：                       44216ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Nullable object must have a value.
+      ┣ 错误堆栈：                       at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 17:13:31.6293883 +08:00 星期日 L System.Logging.LoggingMonitor[0] #9 '00-ba898d480cc25154cb6dc88caa751a7d-8bcd7c337e494dfb-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiAzureService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAiAzure; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAiAzure/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ba898d480cc25154cb6dc88caa751a7d-8bcd7c337e494dfb-00
+      ┣ 服务线程 ID：                    #9
+      ┣ 执行耗时：                       33063ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Nullable object must have a value.
+      ┣ 错误堆栈：                       at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Core.JuAI.Service.ChatgptService.GetConversationChatGpt(ChatReq chatPromptReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\ChatgptService.cs:line 93
+         at Admin.NET.Core.JuAI.ChatOpenAiAzureService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiAzureService.cs:line 39
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:55:08.2879553 +08:00 星期日 L System.Logging.LoggingMonitor[0] #22 '00-0a255ff4673dffd14bea97093c7a85ad-16e5d0ff05206e09-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAi; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAi/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-0a255ff4673dffd14bea97093c7a85ad-16e5d0ff05206e09-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       2069ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Headers are read-only, response has already started.
+      ┣ 错误堆栈：                       at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+         at Microsoft.AspNetCore.Http.ParsingHelpers.AppendHeaderUnmodified(IHeaderDictionary headers, String key, StringValues values)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 97
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+         at Microsoft.AspNetCore.Http.ParsingHelpers.AppendHeaderUnmodified(IHeaderDictionary headers, String key, StringValues values)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq openAiPrompts) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 97
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:55:08.3660596 +08:00 星期日 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #22 '00-0a255ff4673dffd14bea97093c7a85ad-16e5d0ff05206e09-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:55:08.3778294 +08:00 星期日 L Microsoft.AspNetCore.Server.Kestrel[13] #22 '00-0a255ff4673dffd14bea97093c7a85ad-16e5d0ff05206e09-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN981SIC5MM4", Request id "0HN981SIC5MM4:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\chenyanyi\server\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:58:35.1077509 +08:00 星期日 L System.Logging.LoggingMonitor[0] #7 '00-ede96beb6149577bff841304933d05b4-b719c76c5d403f5d-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAi; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAi/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ede96beb6149577bff841304933d05b4-b719c76c5d403f5d-00
+      ┣ 服务线程 ID：                    #7
+      ┣ 执行耗时：                       1252ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Headers are read-only, response has already started.
+      ┣ 错误堆栈：                       at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+         at Microsoft.AspNetCore.Http.ParsingHelpers.AppendHeaderUnmodified(IHeaderDictionary headers, String key, StringValues values)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq openAiPrompts)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+         at Microsoft.AspNetCore.Http.ParsingHelpers.AppendHeaderUnmodified(IHeaderDictionary headers, String key, StringValues values)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq openAiPrompts)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:58:35.1247733 +08:00 星期日 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #7 '00-ede96beb6149577bff841304933d05b4-b719c76c5d403f5d-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 21:58:35.1299042 +08:00 星期日 L Microsoft.AspNetCore.Server.Kestrel[13] #7 '00-ede96beb6149577bff841304933d05b4-b719c76c5d403f5d-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN981SIC5MM5", Request id "0HN981SIC5MM5:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\chenyanyi\server\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:11:31.9392977 +08:00 星期日 L System.Logging.LoggingMonitor[0] #7 '00-8127dc39663a1999267343b76dbc9840-d9b088ff8970783e-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAi; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAi/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-8127dc39663a1999267343b76dbc9840-d9b088ff8970783e-00
+      ┣ 服务线程 ID：                    #7
+      ┣ 执行耗时：                       13ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ openAiPrompts (ChatReq)：        {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.Collections.Generic.KeyNotFoundException
+      ┣ 消息：                           The given key 'chatPrompts' was not present in the dictionary.
+      ┣ 错误堆栈：                       at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+         at Admin.NET.Core.JuAI.TokenUsageFilter.OnActionExecuting(ActionExecutingContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Collections.Generic.KeyNotFoundException: The given key 'chatPrompts' was not present in the dictionary.
+         at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+         at Admin.NET.Core.JuAI.TokenUsageFilter.OnActionExecuting(ActionExecutingContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:22:57.3611958 +08:00 星期日 L System.Logging.LoggingMonitor[0] #7 '00-9986b6cfefe17fb6b928e3ca27ea66bc-e0f9f881fcad543e-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAi; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAi/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-9986b6cfefe17fb6b928e3ca27ea66bc-e0f9f881fcad543e-00
+      ┣ 服务线程 ID：                    #7
+      ┣ 执行耗时：                       1303ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatReq (ChatReq)：              {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Headers are read-only, response has already started.
+      ┣ 错误堆栈：                       at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, JsonSerializerOptions options, String contentType, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, CancellationToken cancellationToken)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 100
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, JsonSerializerOptions options, String contentType, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, CancellationToken cancellationToken)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 100
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:22:57.4282674 +08:00 星期日 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #7 '00-9986b6cfefe17fb6b928e3ca27ea66bc-e0f9f881fcad543e-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:22:57.6000037 +08:00 星期日 L Microsoft.AspNetCore.Server.Kestrel[13] #7 '00-9986b6cfefe17fb6b928e3ca27ea66bc-e0f9f881fcad543e-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN982H4PKSNV", Request id "0HN982H4PKSNV:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\chenyanyi\server\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:25:32.2182383 +08:00 星期日 L System.Logging.LoggingMonitor[0] #25 '00-ec9c61bc63bd406a9f896c5ddc95a505-b1eb6d46dcda3665-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync
+      ┣ 
+      ┣ 控制器名称：                     ChatOpenAiService
+      ┣ 操作名称：                       ChatAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: chatOpenAi; [action]: chat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/chatOpenAi/chat
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-ec9c61bc63bd406a9f896c5ddc95a505-b1eb6d46dcda3665-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       1227ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1735402545 (2024-12-29 00:15:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1736007345 (2025-01-05 00:15:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzM1NDAyNTQ1LCJuYmYiOjE3MzU0MDI1NDUsImV4cCI6MTczNjAwNzM0NSwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.UwdG-VVTJHngcu6qSoLwz8nNceNpYt7N2_rTFZgjArI
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 143
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatReq (ChatReq)：              {"conversationId":"1","chatDbId":null,"rolePrompt":null,"maxContext":null,"useAsyncDb":false,"message":"","options":null,"model":"gpt-3.5-turbo"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Headers are read-only, response has already started.
+      ┣ 错误堆栈：                       at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, JsonSerializerOptions options, String contentType, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, CancellationToken cancellationToken)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, JsonSerializerOptions options, String contentType, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync[TValue](HttpResponse response, TValue value, CancellationToken cancellationToken)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:25:32.2641416 +08:00 星期日 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #25 '00-ec9c61bc63bd406a9f896c5ddc95a505-b1eb6d46dcda3665-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-12-29 22:25:32.3968487 +08:00 星期日 L Microsoft.AspNetCore.Server.Kestrel[13] #25 '00-ec9c61bc63bd406a9f896c5ddc95a505-b1eb6d46dcda3665-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN982H4PKSO0", Request id "0HN982H4PKSO0:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAlwaysRunResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\chenyanyi\server\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

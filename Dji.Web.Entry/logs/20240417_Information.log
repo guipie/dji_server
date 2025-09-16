@@ -1,0 +1,383 @@
+info: 2024-04-17 21:58:34.4549905 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-04-17 21:58:34.4840477 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-04-17 21:58:34.4869372 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-04-17 21:58:34.9920782 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-04-17 21:58:34.9934852 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-04-17 21:58:35.0009132 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-04-17 21:58:35.0022789 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-04-17 22:00:15.8177445 +08:00 星期三 L System.Logging.LoggingMonitor[0] #24 '00-bfbe5009b0890a992d74a103936124da-960a4b4bcabe4b5f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.JuAIService.GetSysNoticeCount
+      ┣ 
+      ┣ 控制器名称：                     JuAIService
+      ┣ 操作名称：                       GetSysNoticeCount
+      ┣ 显示名称：                       系统消息数量
+      ┣ 路由信息：                       [area]: ; [controller]: juAI; [action]: sysNoticeCount
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/app/api/juai/SysNoticeCount
+      ┣ 来源地址：                       http://localhost:9527/home
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-bfbe5009b0890a992d74a103936124da-960a4b4bcabe4b5f-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       70ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj6HBN1mNRsXiM-eJCE0Nu7EcieMQ6h6ARZXRkvobASoz0Kdg0-cTuKIhtNjXFGzxve05TM-9klPzgSCJwXmFyPuWbFo65oDUFsUAMJjtZ2Iqg6W5wBDGNC9gKQT6wG5P3bXEXks9fPixaY4bbYEVchZybN5FxQUd16JR8bQZP8kNztwNsBM9U6exUSGAJTFhKgU0zgG8dWPVWWcpNd_BvJj2jZSxNpIy0WFZWYQwJ3H-qYoNMiLlG_4Up33ykPJXwiWFd-KdRi4_7EolCs23nKx0Uws2vzX6BFFowJ1GrH8t6C9mOlGrjWcSR6fkyok01EMOhRpSVO72ol8baNW0hMGH65KnHjkpzuLjJP9mXN0QAFT4P0Ji2ETiZZUVxEffTlmGbC8APLRt_caCun9jUAibMKWz36CbzmuvBQjxQRkchY1V48F6M3EWoJVkCQx0uWI9Y9AJbvEGCjXEdPwUbU7QM85lpBdpEcZbG9duwJJOO03hOR8QLkiZ6IopBRsReuAMjhsVVMvekuPxbpw-wvT5Smm7LJFSIY72qWyOWDKTabaLkr4dCszadOk3aDURcSdklSHc8TH5TO6-ScHiTQKxrbu4CUU5Fepp02p-_2NeNTbw-uZMlUkx4aAfO0frTfagE5TQlDm632Fi0W5MdPhKeM2JtIHQFFS7E_c-ymcUGc5awuFpcEfAqWT3QvoBEaetRKoH6gP8-LiGzqtQrkg9-DQvzEP9Bb9MpSRUihUezj-00ukuoS-OZhhXq9lQ5uUj0C1iJwWfxNxYpQqrOGzGIcZpG8t0J5agYBO_mL7cFsCQj8rVSco9OSj0fUqvpk_T4GaG5I3qHONKBdexTRSRyTRTxhhtMcJUE6DWBS47-Zsn-J75NFjAZlUwhfJ1EAoQ7grrSQsFNcs3xV80x1iQu2unnJzsGUuR7m4OzLG03oiOWBUMP3Sz0V8NbvKlG3Z-94NfArrCb6uz-HhLqrATSJR6CG6F11VFIStwVH0LtOUojI8aStEpyKVSNSIngCL1FCFEsU3S6MbNtUp_M9rsXlgN1SzuQ3lzk3IB0WCu9WWx_4bSD2NrhUKQLRvuQMr8-e0i5iVX0nwVTOG_XOs; path=/; secure; samesite=none; httponly
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJleHAiOjE3MTM5NjcyMTUsIm5iZiI6MTcxMzM2MjQxNSwiaWF0IjoxNzEzMzYyNDE1LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.dlL2yspRWrYtE9rNuuge_1csrLWnRZadEgt-8xE_pB0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ exp (integer64)：                1713967215 (2024-04-24 22:00:15:0000(+08:00) 星期三 L)
+      ┣ nbf (integer64)：                1713362415 (2024-04-17 22:00:15:0000(+08:00) 星期三 L)
+      ┣ iat (integer64)：                1713362415 (2024-04-17 22:00:15:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTI0OTgzNjIsIm5iZiI6MTcxMjQ5ODM2MiwiZXhwIjoxNzEzMTAzMTYyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.iKKEqI5x5FuuceU7WS5lA_1CRobyj_gV9ESEGZGhV0Y
+      ┣ Referer：                        http://localhost:9527/home
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ x-request-id：                   jOQY4NL6Vs3DP3k1M3fsL
+      ┣ x-authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImlLS0VxSTV4NUZ1dWNlVTdXUzVsQV8xQ1JvYnlqX2dWOUVTRUdaR2hWMFkiLCJzIjozMCwibCI6MTEsImsiOiJjM0xDSlVaVzVoYiIsImlhdCI6MTcxMjQ5ODM2MiwibmJmIjoxNzEyNDk4MzYyLCJleHAiOjE3MTM3MDc5NjIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.peEgq34nj8fATe-6GJ3Pnb5DcHOwJjuwYINy5MxBc5c
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":0,"extras":null,"time":"2024-04-17T22:00:15.7764952+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-04-17 22:00:15.9338128 +08:00 星期三 L System.Logging.LoggingMonitor[0] #25 '00-7f9aad35a96dbfc78c7616a6fe3757d7-ec243aa81e4ac5d0-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.JuAIService.GetMyStatistics
+      ┣ 
+      ┣ 控制器名称：                     JuAIService
+      ┣ 操作名称：                       GetMyStatistics
+      ┣ 显示名称：                       我的统计
+      ┣ 路由信息：                       [area]: ; [controller]: juAI; [action]: myStatistics
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://localhost:5005/app/api/juai/MyStatistics
+      ┣ 来源地址：                       http://localhost:9527/home
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-7f9aad35a96dbfc78c7616a6fe3757d7-ec243aa81e4ac5d0-00
+      ┣ 服务线程 ID：                    #24
+      ┣ 执行耗时：                       221ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS; path=/; secure; samesite=none; httponly
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJleHAiOjE3MTM5NjcyMTUsIm5iZiI6MTcxMzM2MjQxNSwiaWF0IjoxNzEzMzYyNDE1LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.dlL2yspRWrYtE9rNuuge_1csrLWnRZadEgt-8xE_pB0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ exp (integer64)：                1713967215 (2024-04-24 22:00:15:0000(+08:00) 星期三 L)
+      ┣ nbf (integer64)：                1713362415 (2024-04-17 22:00:15:0000(+08:00) 星期三 L)
+      ┣ iat (integer64)：                1713362415 (2024-04-17 22:00:15:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTI0OTgzNjIsIm5iZiI6MTcxMjQ5ODM2MiwiZXhwIjoxNzEzMTAzMTYyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.iKKEqI5x5FuuceU7WS5lA_1CRobyj_gV9ESEGZGhV0Y
+      ┣ Referer：                        http://localhost:9527/home
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ x-request-id：                   O9bUph40yUwzki3PR-4_v
+      ┣ x-authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImlLS0VxSTV4NUZ1dWNlVTdXUzVsQV8xQ1JvYnlqX2dWOUVTRUdaR2hWMFkiLCJzIjozMCwibCI6MTEsImsiOiJjM0xDSlVaVzVoYiIsImlhdCI6MTcxMjQ5ODM2MiwibmJmIjoxNzEyNDk4MzYyLCJleHAiOjE3MTM3MDc5NjIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.peEgq34nj8fATe-6GJ3Pnb5DcHOwJjuwYINy5MxBc5c
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":{"chatCount":9,"drawingCount":45,"jifenCount":"1949622","visitCount":0},"extras":null,"time":"2024-04-17T22:00:15.9278819+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-04-17 22:02:09.8908558 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-0947d6c1fa2796233a27d616a16d1efa-9b75fa5a20af0fcd-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：                AiModelService
+      ┣ 操作名称：                  GetModels
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/aimodel/models
+      ┣ 来源地址：                  http://localhost:9527/chat
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-0947d6c1fa2796233a27d616a16d1efa-9b75fa5a20af0fcd-00
+      ┣ 服务线程 ID：               #9
+      ┣ 执行耗时：                  52ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTI0OTgzNjIsIm5iZiI6MTcxMjQ5ODM2MiwiZXhwIjoxNzEzMTAzMTYyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.iKKEqI5x5FuuceU7WS5lA_1CRobyj_gV9ESEGZGhV0Y
+      ┣ Cookie：                    .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ Referer：                   http://localhost:9527/chat
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              LaCJWzQBoqkoMK8Ib98oh
+      ┣ x-authorization：           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImlLS0VxSTV4NUZ1dWNlVTdXUzVsQV8xQ1JvYnlqX2dWOUVTRUdaR2hWMFkiLCJzIjozMCwibCI6MTEsImsiOiJjM0xDSlVaVzVoYiIsImlhdCI6MTcxMjQ5ODM2MiwibmJmIjoxNzEyNDk4MzYyLCJleHAiOjE3MTM3MDc5NjIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.peEgq34nj8fATe-6GJ3Pnb5DcHOwJjuwYINy5MxBc5c
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatModel>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"GPT-3.5","shortName":"GPT-3.5","avatarUrl":"http://filetest.guxin.link/init/gpt35.png","modelType":0,"category":"openai","url":"/app/api/chatOpenai/chat","maxToken":0,"thousandTokenCoin":0.0,"desc":"速度快，成本低","createTime":"2023-12-24T00:16:05","updateTime":null,"createUserId":"1300000000111","createUser":null,"updateUserId":null,"isDelete":false,"id":"31022838502469"},{"modelId":"openai:gpt-3.5-turbo-16k
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-04-17 22:02:47.9972365 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-157ca5996e4e49a226ddb6e7ba1f8507-984e88ec8f1b62e6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/home
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-157ca5996e4e49a226ddb6e7ba1f8507-984e88ec8f1b62e6-00
+      ┣ 服务线程 ID：               #9
+      ┣ 执行耗时：                  57ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTI0OTgzNjIsIm5iZiI6MTcxMjQ5ODM2MiwiZXhwIjoxNzEzMTAzMTYyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.iKKEqI5x5FuuceU7WS5lA_1CRobyj_gV9ESEGZGhV0Y
+      ┣ Cookie：                    .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ Referer：                   http://localhost:9527/drawing/home
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              Q3xKQfiX1XY_x3XLWV2Il
+      ┣ x-authorization：           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImlLS0VxSTV4NUZ1dWNlVTdXUzVsQV8xQ1JvYnlqX2dWOUVTRUdaR2hWMFkiLCJzIjozMCwibCI6MTEsImsiOiJjM0xDSlVaVzVoYiIsImlhdCI6MTcxMjQ5ODM2MiwibmJmIjoxNzEyNDk4MzYyLCJleHAiOjE3MTM3MDc5NjIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.peEgq34nj8fATe-6GJ3Pnb5DcHOwJjuwYINy5MxBc5c
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"DALL-E","drawingType":"openai","desc":"DALL-E 是当今市场上最强大的人工智能绘画工具，它是由 ChatGPT 背后的同一组织 OpenAI 开发的人工智能图像生成器，目前已经升级到DALL-E三代。它利用一种被称为 “生成式人工智能” 的技术，根据文本提示从零开始创建原始图像。","tags":"OpenAI,DALL-E,ChatGPT,文生图","request":{"model":"dall-e-3","size":"1024x1024"},"api":"https://juai.link","example":{"prompt":"荔枝纹风格的球形椅子，具有凹凸不平的白色外观和豪华的内部，衬托着热带壁纸。","url":"http://oss.juai.link/juai/drawing/openai.jpeg"},"sequence":1,"createTime":null,"createUserId":null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-04-17 23:13:11.0748068 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-04-17 23:13:11.1063247 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-04-17 23:13:11.1084892 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-04-17 23:13:11.6727902 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-04-17 23:13:11.6741695 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-04-17 23:13:11.6921710 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-04-17 23:13:11.6934145 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-04-17 23:13:59.7932098 +08:00 星期三 L System.Logging.LoggingMonitor[0] #27 '00-0a7cf23abd44dfd6bdf6b3c39ca02ff8-75a7537e6dad15ee-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:9527/chat
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-0a7cf23abd44dfd6bdf6b3c39ca02ff8-75a7537e6dad15ee-00
+      ┣ 服务线程 ID：                    #27
+      ┣ 执行耗时：                       139ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ 响应端：                         .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj5NdeH-xBdH3B4zuDs_3WUulYm0yoi6SfxjdZozIU2LlUb11jIakhNVDkiVIH1SjJ4F20leVTnbVEYzoo4nCJUbY-0MQazbZugQVc8fn93aO6sngwTMKgaqVL_v_ZuDnPkkpFtG6R8yD17BMcJfwBN6jp4QgJibTZwwTEBqr02DdX9Am3E_rtsIJgrfYKKp6JDaWoLFHp1oMFLny3rNj28Q5GCbcX936DJVE1D6VvCdQ0fj2tzCmFXx-t-uvt9wQTt2fkhB2xaBR3lb82BhwlP6VLJ2iYmX_kdEU0JG3yMHYV-GB0rnzDLAtRevOU-uZodmorAl9V2_BRcb4WCEtQqUEMpYmxkrlEber99VsQVhqxJwsogi-U4r6HYP4CvbBhlN1It4jZs6-hsEQsk2b4ia6NNtxRDwCwLZnL_I1vLfChVNbhVGn7wNv823Ox8vp_HXMcLU7YZRpQ84olI92GfaQIFnOkjs_Sq0veXHePwoRMlJlpFZVW5qcmaQOY8GLQ7NKMxOYSJNZma0sJwokLJ5wR-_vMxyjZfA7j7VNC4FoCohXciGXN5hw3_hC7iEy3ER_omjDS4K1EZJWnTZDaERhQW8YfPDeqyJsyzGtsOS6mOH4Iva45EJy-UvjoBBcJW44ETnDQ7NZEMq7qvdkr29z-b5863t_DKkZ8XDv5DKCFJ3pOI_cl_NCIzyEgAXMsfTOa2xsl9pCxWaCQnN_MPJ0EXGliGznwkP-kiYMR0Fr8RuxLP7prS1AnH6tn3HEIGN_mi2ySLJr05kGyG5bIwDnUopCooPx-r7Qa_dUJxq8U5qPpag0X6k2BX-pxaW3cHzKE7pk7AerNvHZEZ1gfQgdbbBGVj9jZ6zQKh4J235KcjCACgGTAO2BQkTYdEMXE4jte7xbyRof-1qyui7cp0MfR8e559bx0VhvJJx2Y07_LIKbyEr4aXxBaWk8UPYwSrv9C-p5Aa7bBjg5hszSPEw501JCAsKye5LeLjAWZy5h0bRgcCe4S28ioPmT-kO5bbPmivmjM0uqJuI5EGaVuUco6baeuLBQ_oVYtgVYY_LdFl4Wbg2DQm1_CCshFHIKLZFANlizu-aHWJA-sA9JPM7; path=/; secure; samesite=none; httponly
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJleHAiOjE3MTM5NzE2MzksIm5iZiI6MTcxMzM2NjgzOSwiaWF0IjoxNzEzMzY2ODM5LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.JZjg_q8C3eMe_vqhJwRmJY3eGCz1q1ROu6tPX1uiXdY
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ exp (integer64)：                1713971639 (2024-04-24 23:13:59:0000(+08:00) 星期三 L)
+      ┣ nbf (integer64)：                1713366839 (2024-04-17 23:13:59:0000(+08:00) 星期三 L)
+      ┣ iat (integer64)：                1713366839 (2024-04-17 23:13:59:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTI0OTgzNjIsIm5iZiI6MTcxMjQ5ODM2MiwiZXhwIjoxNzEzMTAzMTYyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.iKKEqI5x5FuuceU7WS5lA_1CRobyj_gV9ESEGZGhV0Y
+      ┣ Cache-Control：                  no-cache
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary9v0niSqWR9HsEddX
+      ┣ Cookie：                         .AspNetCore.Cookies=CfDJ8AguP0NU2cdGihUZwsLzpj7B8SVUfuxULxcPheQ6uo1AiV46tdNIbQYHnT6at5EUtPWURAfrYySbHhyKpuP2KFfXP0e7XffAE64lDDpJFVoo6OMDCoWIdjNiD5A3REPJrWzQLIpmt-jQWEQ9B9RSRnhnXPAlJTQdz6xGcpyv7aLrAEiBvxrmPYTwHYnlmCal_O3Dpk5PrsjEVZE1zV7B_8jAFTBbExE27bD7uUvnxxUzZ8Froz7owpCfSzxPDd-Omv9_sr7pMRkxpMYa-Fuavb50VgB5RDrqX8NLjmZe-jGRHjZ-JwAyFc9usimA8yz8mAFuUlKprft2ZbibItkWeTXZ4jKmUa61Z4S6jSTrcC_0geRnj9cQtNetANJGy3jf7DtS9UfjBa4KzqP-2tDYmEYT4OdQsAn2O3nMgChX5A_4sx5u8iS3olN_91LuTUf2aosWUKCnBNqyBILqw8DR9-NUcAt0obHNVPFtQ_p36ecEX2h24jlec1dNPxOk4y9VkKJpkfPEkajHMkY1udkYW2iJtHLJfaYtshS-znCEvnRqgj55pH3gBdG0LLJFzmDTF8nFqV_59nN-12Ixdse2NKZNF9admDJVjw8MT9hAAVRf6D2gy-2sa6OA1SeWiFwFTB0G6nellEmwBKrgrVA2NvJs_rAjkICW5JOgoxAXOL9q_gWvh0GW17RAXDgswurqSO4GeKLql1OFrdkBLhkU2N0pfn6wuWm4ZyBW0dH7diWwMczwlbQVS7On8sy_o3Y9cacMy6k0W1snU5e50jlmZ4uyRAbXLlj6vNIAYxHb4o6cs9y0gnqvMTeLAunPsnsw_XJN_u1RRFSXGrEA3lz2L805T8CVYzvGdMINCb5C27YR5URDT6Fyu2fDbUmgBygXv1Jx2-96TISa6_4ke2wi4PkRbqwnr9JJvZWR-gDXWeVgGHtd0gVUzv3Jb_XtxIKaks_esseCjQQtCaAbhj5bFKGEuFzDrSC-GZ7QnxHxIC6ciTMVxBpOCMhQn_PEOSk4IhbOyCIq9TJAnK-wsUZdRF64iLOXleC0FZccMGxeX6-q3uFnIQDOn3GSZzjkYXGZ5RVUApVNbFek-3gkc9D-P_19gVxp8GJ4FpLS4Kl2MHZS
+      ┣ Origin：                         http://localhost:9527
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:9527/chat
+      ┣ Content-Length：                 1228
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ x-request-id：                   PAg3zJ9H2wdb474W7wmdt
+      ┣ x-authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImlLS0VxSTV4NUZ1dWNlVTdXUzVsQV8xQ1JvYnlqX2dWOUVTRUdaR2hWMFkiLCJzIjozMCwibCI6MTEsImsiOiJjM0xDSlVaVzVoYiIsImlhdCI6MTcxMjQ5ODM2MiwibmJmIjoxNzEyNDk4MzYyLCJleHAiOjE3MTM3MDc5NjIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.peEgq34nj8fATe-6GJ3Pnb5DcHOwJjuwYINy5MxBc5c
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary9v0niSqWR9HsEddX
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":null,"type":"user","title":"测试蝦和","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\r\n","maxContext":3,"promptExtend":null,"avatar":"","file":null,"initMessage":null,"tags":null,"model":"gpt-3.5-turbo","vendor":"openai"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.PromptReponse>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":{"id":"33587619234373","type":"user","title":"测试蝦和","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\r\n","maxContext":3,"promptExtend":null,"avatar":"","file":null,"initMessage":null,"tags":null,"model":"gpt-3.5-turbo","vendor":"openai"},"extras":null,"time":"2024-04-17T23:13:59.7555247+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

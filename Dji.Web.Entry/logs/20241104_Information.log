@@ -1,0 +1,573 @@
+info: 2024-11-04 21:16:03.9334243 +08:00 星期一 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2024-11-04 21:16:03.9714082 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2024-11-04 21:16:03.9749977 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2024-11-04 21:16:10.4445549 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4476229 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4554037 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4568371 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4619810 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4639016 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4664080 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_realtime> trigger for scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-04 21:16:10.4677752 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-04 22:30:11.3958147 +08:00 星期一 L System.Logging.LoggingMonitor[0] #46 '00-a7f0deea132bb9a766e164667ef9c52b-ca63688b758d8589-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-a7f0deea132bb9a766e164667ef9c52b-ca63688b758d8589-00
+      ┣ 服务线程 ID：            #46
+      ┣ 执行耗时：               3001ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 22:36:22.6508652 +08:00 星期一 L System.Logging.LoggingMonitor[0] #39 '00-cc56ece34c36a926a6935d05703ee869-93152f874052bd5c-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-cc56ece34c36a926a6935d05703ee869-93152f874052bd5c-00
+      ┣ 服务线程 ID：            #39
+      ┣ 执行耗时：               2795ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 22:38:09.1235224 +08:00 星期一 L System.Logging.LoggingMonitor[0] #48 '00-44040aaab6401c985d69cf319e9fceb6-cff4c71fe54daafc-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-44040aaab6401c985d69cf319e9fceb6-cff4c71fe54daafc-00
+      ┣ 服务线程 ID：            #48
+      ┣ 执行耗时：               46ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 22:38:30.8907447 +08:00 星期一 L System.Logging.LoggingMonitor[0] #36 '00-6bef64f0c044089e95ff7dedf89367ff-a7cf94965dd53694-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-6bef64f0c044089e95ff7dedf89367ff-a7cf94965dd53694-00
+      ┣ 服务线程 ID：            #36
+      ┣ 执行耗时：               44ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 22:40:32.1852535 +08:00 星期一 L System.Logging.LoggingMonitor[0] #37 '00-354adb6034d3e2064ea001e184512a36-1e4dd5bb66c009ca-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-354adb6034d3e2064ea001e184512a36-1e4dd5bb66c009ca-00
+      ┣ 服务线程 ID：            #37
+      ┣ 执行耗时：               61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:13:12.4981928 +08:00 星期一 L System.Logging.LoggingMonitor[0] #51 '00-fed24d68a3a0499ee18e23ffd9957304-198ed3818990e6f6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-fed24d68a3a0499ee18e23ffd9957304-198ed3818990e6f6-00
+      ┣ 服务线程 ID：            #51
+      ┣ 执行耗时：               5479ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:16:01.9072906 +08:00 星期一 L System.Logging.LoggingMonitor[0] #55 '00-64614931e4ce49ee93c5f61d1315423c-ec6edf3c94e692c8-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-64614931e4ce49ee93c5f61d1315423c-ec6edf3c94e692c8-00
+      ┣ 服务线程 ID：            #55
+      ┣ 执行耗时：               52ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:17:13.7984109 +08:00 星期一 L System.Logging.LoggingMonitor[0] #50 '00-64ecb6e658ea9f954b67cc2f34036d6c-931215ab4324d5e7-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-64ecb6e658ea9f954b67cc2f34036d6c-931215ab4324d5e7-00
+      ┣ 服务线程 ID：            #50
+      ┣ 执行耗时：               44ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:26:38.8613245 +08:00 星期一 L System.Logging.LoggingMonitor[0] #60 '00-e6a767d710104417534bc36fec56e1d3-5317ca291eebbc1b-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-e6a767d710104417534bc36fec56e1d3-5317ca291eebbc1b-00
+      ┣ 服务线程 ID：            #46
+      ┣ 执行耗时：               3053ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:28:05.5071097 +08:00 星期一 L System.Logging.LoggingMonitor[0] #9 '00-14884b092dc1acf24b52e7d6966b568d-b44c3be5c5d06e8e-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-14884b092dc1acf24b52e7d6966b568d-b44c3be5c5d06e8e-00
+      ┣ 服务线程 ID：            #56
+      ┣ 执行耗时：               44ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:30:32.4101288 +08:00 星期一 L System.Logging.LoggingMonitor[0] #56 '00-b229a06f3a01b89bed267bb9ac5c7afb-e6a77898b4c2e21a-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-b229a06f3a01b89bed267bb9ac5c7afb-e6a77898b4c2e21a-00
+      ┣ 服务线程 ID：            #56
+      ┣ 执行耗时：               49ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-04 23:33:39.5987710 +08:00 星期一 L System.Logging.LoggingMonitor[0] #12 '00-efb2aada6164e1048cdf8c3c46dfc0e1-39507b35f7725ad6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-efb2aada6164e1048cdf8c3c46dfc0e1-39507b35f7725ad6-00
+      ┣ 服务线程 ID：            #12
+      ┣ 执行耗时：               66ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

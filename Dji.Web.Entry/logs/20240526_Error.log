@@ -1,0 +1,579 @@
+fail: 2024-05-26 16:09:16.4018811 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:16:30.3829339 +08:00 星期日 L System.Logging.LoggingMonitor[0] #28 '00-79f8eb189ebd7f99ffde226248b33dcd-63f3d53a908c7068-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll
+      ┣ 
+      ┣ 控制器名称：                      DrawingImageService
+      ┣ 操作名称：                        GetMyAll
+      ┣ 显示名称：                        
+      ┣ 路由信息：                        [area]: ; [controller]: drawingImage; [action]: myAll
+      ┣ 请求方式：                        GET
+      ┣ 请求地址：                        http://localhost:5005/app/api/DrawingImage/MyALl?drawingType=aliwanx&minId=
+      ┣ 来源地址：                        http://localhost:9527/
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  127.0.0.1
+      ┣ 服务端 IP 地址：                  127.0.0.1
+      ┣ 客户端连接 ID：                   00-79f8eb189ebd7f99ffde226248b33dcd-63f3d53a908c7068-00
+      ┣ 服务线程 ID：                     #3
+      ┣ 执行耗时：                        416ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19045
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                       .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                       Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ 
+      ┣ UserId (integer64)：              14213426327877
+      ┣ TenantId (integer64)：            1300000000001
+      ┣ Account (string)：                18600766045
+      ┣ NickName (string)：               怪兽来了
+      ┣ AccountType (integer32)：         777
+      ┣ iat (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ nbf (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ exp (integer64)：                 1717211222 (2024-06-01 11:07:02:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                    guxin.link
+      ┣ aud (string)：                    guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                          application/json, text/plain, */*
+      ┣ Connection：                      keep-alive
+      ┣ Host：                            localhost:5005
+      ┣ User-Agent：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                 gzip, deflate, br, zstd
+      ┣ Accept-Language：                 zh-CN,zh;q=0.9
+      ┣ Authorization：                   Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ Cache-Control：                   no-cache
+      ┣ Origin：                          http://localhost:9527
+      ┣ Pragma：                          no-cache
+      ┣ Referer：                         http://localhost:9527/
+      ┣ sec-ch-ua：                       "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+      ┣ DNT：                             1
+      ┣ sec-ch-ua-mobile：                ?0
+      ┣ X-Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImQ1TWlTbERjbmUwRk5kbWNTY1lQT18za1pBV3RMc1FubzNJeGQ3Rk1oTnciLCJzIjoxMDMsImwiOjcsImsiOiJqYTA1aGJXIiwiaWF0IjoxNzE2NjA2NDIzLCJuYmYiOjE3MTY2MDY0MjMsImV4cCI6MTcxNzgxNjAyMywiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Z1doovpUGywC9Ds-I03WWpfj8Iy0O2bmiYEEo_tOtUU
+      ┣ X-Request-Id：                    jvRjuuvQmco2iEJwRhsl1
+      ┣ sec-ch-ua-platform：              "Windows"
+      ┣ Sec-Fetch-Site：                  same-site
+      ┣ Sec-Fetch-Mode：                  cors
+      ┣ Sec-Fetch-Dest：                  empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    
+      ┣ 
+      ┣ drawingType (Nullable`1)：        1
+      ┣ minId (Nullable`1)：              
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.DrawingImageRes>>
+      ┣ 最终类型：                        
+      ┣ 最终返回值：                      null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                            System.TypeInitializationException
+      ┣ 消息：                            The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+      ┣ 错误堆栈：                        at lambda_method78(Closure, DrawingImage)
+         at lambda_method77(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method64(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+       ---> Mapster.CompileException: Error while compiling
+      source=Newtonsoft.Json.Linq.JObject
+      destination=Newtonsoft.Json.Linq.JObject
+      type=Map
+       ---> System.ArgumentException: Instance property 'Key' is not defined for type 'Newtonsoft.Json.Linq.JToken' (Parameter 'propertyName')
+         at System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+         at Mapster.Adapters.DictionaryAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         --- End of inner exception stack trace ---
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+         at Mapster.TypeAdapterConfig.<GetMapFunction>b__59_0(TypeTuple tuple)
+         at Mapster.TypeAdapterConfig.<>c__DisplayClass56_0`1.<AddToHash>b__0(TypeTuple types)
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+         at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+         at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+         at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+         at Mapster.TypeAdapter`2..cctor()
+         --- End of inner exception stack trace ---
+         at lambda_method78(Closure, DrawingImage)
+         at lambda_method77(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method64(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:18:03.4932333 +08:00 星期日 L System.Logging.LoggingMonitor[0] #29 '00-f0f782b77de3209b60a6f9715df846cf-7f2c4e0a3b8c1240-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll
+      ┣ 
+      ┣ 控制器名称：                      DrawingImageService
+      ┣ 操作名称：                        GetMyAll
+      ┣ 显示名称：                        
+      ┣ 路由信息：                        [area]: ; [controller]: drawingImage; [action]: myAll
+      ┣ 请求方式：                        GET
+      ┣ 请求地址：                        http://localhost:5005/app/api/DrawingImage/MyALl?drawingType=aliwanx&minId=
+      ┣ 来源地址：                        http://localhost:9527/
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  127.0.0.1
+      ┣ 服务端 IP 地址：                  127.0.0.1
+      ┣ 客户端连接 ID：                   00-f0f782b77de3209b60a6f9715df846cf-7f2c4e0a3b8c1240-00
+      ┣ 服务线程 ID：                     #29
+      ┣ 执行耗时：                        68ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19045
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                       .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                       Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ 
+      ┣ UserId (integer64)：              14213426327877
+      ┣ TenantId (integer64)：            1300000000001
+      ┣ Account (string)：                18600766045
+      ┣ NickName (string)：               怪兽来了
+      ┣ AccountType (integer32)：         777
+      ┣ iat (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ nbf (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ exp (integer64)：                 1717211222 (2024-06-01 11:07:02:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                    guxin.link
+      ┣ aud (string)：                    guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                          application/json, text/plain, */*
+      ┣ Connection：                      keep-alive
+      ┣ Host：                            localhost:5005
+      ┣ User-Agent：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                 gzip, deflate, br, zstd
+      ┣ Accept-Language：                 zh-CN,zh;q=0.9
+      ┣ Authorization：                   Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ Cache-Control：                   no-cache
+      ┣ Origin：                          http://localhost:9527
+      ┣ Pragma：                          no-cache
+      ┣ Referer：                         http://localhost:9527/
+      ┣ sec-ch-ua：                       "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+      ┣ DNT：                             1
+      ┣ sec-ch-ua-mobile：                ?0
+      ┣ X-Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImQ1TWlTbERjbmUwRk5kbWNTY1lQT18za1pBV3RMc1FubzNJeGQ3Rk1oTnciLCJzIjoxMDMsImwiOjcsImsiOiJqYTA1aGJXIiwiaWF0IjoxNzE2NjA2NDIzLCJuYmYiOjE3MTY2MDY0MjMsImV4cCI6MTcxNzgxNjAyMywiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Z1doovpUGywC9Ds-I03WWpfj8Iy0O2bmiYEEo_tOtUU
+      ┣ X-Request-Id：                    M5Iu9hS1QwJutG8l6heki
+      ┣ sec-ch-ua-platform：              "Windows"
+      ┣ Sec-Fetch-Site：                  same-site
+      ┣ Sec-Fetch-Mode：                  cors
+      ┣ Sec-Fetch-Dest：                  empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    
+      ┣ 
+      ┣ drawingType (Nullable`1)：        1
+      ┣ minId (Nullable`1)：              
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.DrawingImageRes>>
+      ┣ 最终类型：                        
+      ┣ 最终返回值：                      null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                            System.TypeInitializationException
+      ┣ 消息：                            The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+      ┣ 错误堆栈：                        at lambda_method78(Closure, DrawingImage)
+         at lambda_method77(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method64(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+       ---> Mapster.CompileException: Error while compiling
+      source=Newtonsoft.Json.Linq.JObject
+      destination=Newtonsoft.Json.Linq.JObject
+      type=Map
+       ---> System.ArgumentException: Instance property 'Key' is not defined for type 'Newtonsoft.Json.Linq.JToken' (Parameter 'propertyName')
+         at System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+         at Mapster.Adapters.DictionaryAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         --- End of inner exception stack trace ---
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+         at Mapster.TypeAdapterConfig.<GetMapFunction>b__59_0(TypeTuple tuple)
+         at Mapster.TypeAdapterConfig.<>c__DisplayClass56_0`1.<AddToHash>b__0(TypeTuple types)
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+         at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+         at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+         at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+         at Mapster.TypeAdapter`2..cctor()
+         --- End of inner exception stack trace ---
+         at lambda_method78(Closure, DrawingImage)
+         at lambda_method77(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method64(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:21:06.9910219 +08:00 星期日 L System.Logging.LoggingMonitor[0] #5 '00-beda3fe0596f05a46bd5f4a8b90c45f2-03e1fa9d213c923a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll
+      ┣ 
+      ┣ 控制器名称：                      DrawingImageService
+      ┣ 操作名称：                        GetMyAll
+      ┣ 显示名称：                        
+      ┣ 路由信息：                        [area]: ; [controller]: drawingImage; [action]: myAll
+      ┣ 请求方式：                        GET
+      ┣ 请求地址：                        http://localhost:5005/app/api/DrawingImage/MyALl?drawingType=aliwanx&minId=
+      ┣ 来源地址：                        http://localhost:9527/
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  127.0.0.1
+      ┣ 服务端 IP 地址：                  127.0.0.1
+      ┣ 客户端连接 ID：                   00-beda3fe0596f05a46bd5f4a8b90c45f2-03e1fa9d213c923a-00
+      ┣ 服务线程 ID：                     #23
+      ┣ 执行耗时：                        372ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19045
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                       .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                       Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ 
+      ┣ UserId (integer64)：              14213426327877
+      ┣ TenantId (integer64)：            1300000000001
+      ┣ Account (string)：                18600766045
+      ┣ NickName (string)：               怪兽来了
+      ┣ AccountType (integer32)：         777
+      ┣ iat (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ nbf (integer64)：                 1716606422 (2024-05-25 11:07:02:0000(+08:00) 星期六 L)
+      ┣ exp (integer64)：                 1717211222 (2024-06-01 11:07:02:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                    guxin.link
+      ┣ aud (string)：                    guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                          application/json, text/plain, */*
+      ┣ Connection：                      keep-alive
+      ┣ Host：                            localhost:5005
+      ┣ User-Agent：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                 gzip, deflate, br, zstd
+      ┣ Accept-Language：                 zh-CN,zh;q=0.9
+      ┣ Authorization：                   Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTY2MDY0MjIsIm5iZiI6MTcxNjYwNjQyMiwiZXhwIjoxNzE3MjExMjIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.d5MiSlDcne0FNdmcScYPO_3kZAWtLsQno3Ixd7FMhNw
+      ┣ Cache-Control：                   no-cache
+      ┣ Origin：                          http://localhost:9527
+      ┣ Pragma：                          no-cache
+      ┣ Referer：                         http://localhost:9527/
+      ┣ sec-ch-ua：                       "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+      ┣ DNT：                             1
+      ┣ sec-ch-ua-mobile：                ?0
+      ┣ X-Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImQ1TWlTbERjbmUwRk5kbWNTY1lQT18za1pBV3RMc1FubzNJeGQ3Rk1oTnciLCJzIjoxMDMsImwiOjcsImsiOiJqYTA1aGJXIiwiaWF0IjoxNzE2NjA2NDIzLCJuYmYiOjE3MTY2MDY0MjMsImV4cCI6MTcxNzgxNjAyMywiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Z1doovpUGywC9Ds-I03WWpfj8Iy0O2bmiYEEo_tOtUU
+      ┣ X-Request-Id：                    aU0egorC-4_ojkZyXRTHo
+      ┣ sec-ch-ua-platform：              "Windows"
+      ┣ Sec-Fetch-Site：                  same-site
+      ┣ Sec-Fetch-Mode：                  cors
+      ┣ Sec-Fetch-Dest：                  empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    
+      ┣ 
+      ┣ drawingType (Nullable`1)：        1
+      ┣ minId (Nullable`1)：              
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.DrawingImageRes>>
+      ┣ 最终类型：                        
+      ┣ 最终返回值：                      null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                            System.TypeInitializationException
+      ┣ 消息：                            The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+      ┣ 错误堆栈：                        at lambda_method132(Closure, DrawingImage)
+         at lambda_method131(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method121(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeInitializationException: The type initializer for 'Mapster.TypeAdapter`2' threw an exception.
+       ---> Mapster.CompileException: Error while compiling
+      source=Newtonsoft.Json.Linq.JObject
+      destination=Newtonsoft.Json.Linq.JObject
+      type=Map
+       ---> System.ArgumentException: Instance property 'Key' is not defined for type 'Newtonsoft.Json.Linq.JToken' (Parameter 'propertyName')
+         at System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+         at Mapster.Adapters.DictionaryAdapter.CreateBlockExpression(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateBlockExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateExpressionBody(Expression source, Expression destination, CompileArgument arg)
+         at Mapster.Adapters.BaseAdapter.CreateAdaptFunc(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         --- End of inner exception stack trace ---
+         at Mapster.TypeAdapterConfig.CreateMapExpression(CompileArgument arg)
+         at Mapster.TypeAdapterConfig.CreateMapExpression(TypeTuple tuple, MapType mapType)
+         at Mapster.TypeAdapterConfig.<GetMapFunction>b__59_0(TypeTuple tuple)
+         at Mapster.TypeAdapterConfig.<>c__DisplayClass56_0`1.<AddToHash>b__0(TypeTuple types)
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+         at Mapster.TypeAdapterConfig.AddToHash[T](ConcurrentDictionary`2 hash, TypeTuple key, Func`2 func)
+         at Mapster.TypeAdapterConfig.GetMapFunction(Type sourceType, Type destinationType)
+         at Mapster.TypeAdapterConfig.GetMapFunction[TSource,TDestination]()
+         at Mapster.TypeAdapter`2..cctor()
+         --- End of inner exception stack trace ---
+         at lambda_method132(Closure, DrawingImage)
+         at lambda_method131(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.AIDrawing.DrawingImageService.GetMyAll(Nullable`1 drawingType, Nullable`1 minId) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingImageService.cs:line 52
+         at lambda_method121(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:33:15.5111538 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:36:00.1939328 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 16:55:48.2510458 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 21:36:47.3740440 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 21:41:27.1135951 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 22:46:47.3089169 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-26 22:57:57.3317244 +08:00 星期日 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

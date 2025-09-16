@@ -1,0 +1,70 @@
+fail: 2023-10-25 13:55:33.6261947 +08:00 星期三 L System.Logging.LoggingMonitor[0] #49 '00-bccf055ef6f73dc9ae226cbcea0c685b-c1f935325b9484fd-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-bccf055ef6f73dc9ae226cbcea0c685b-c1f935325b9484fd-00
+      ┣ 服务线程 ID：                   #40
+      ┣ 执行耗时：                      642ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"044570E908A2BC78C217074EC06EAA5168BAEE1F3A16433A75D45949325413F73A500430CB0AD1214BBEF11A323C7257C43C086D411A373A4A612A94DF17F7A473F3D247F394203A58333EA74D1ADAC8AFD9D37454B0B03CAE4B397BE9E76E27474B48D05B76AC","code":"1933","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Data too long for column 'phone' at row 1
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister(AppLoginInput input, Nullable`1 isRefresh) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\User\UserLoginService.cs:line 89
+         at lambda_method152(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Data too long for column 'phone' at row 1
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister(AppLoginInput input, Nullable`1 isRefresh) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\User\UserLoginService.cs:line 89
+         at lambda_method152(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

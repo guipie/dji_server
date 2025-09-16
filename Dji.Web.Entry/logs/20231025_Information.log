@@ -1,0 +1,663 @@
+info: 2023-10-25 13:42:21.5994460 +08:00 星期三 L System.Logging.LoggingMonitor[0] #37 '00-d8b947d8e17d04b9992a94ceccf62546-710d30175069c184-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-d8b947d8e17d04b9992a94ceccf62546-710d30175069c184-00
+      ┣ 服务线程 ID：                   #63
+      ┣ 执行耗时：                      894ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:42:21.5953682+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:45:29.2935051 +08:00 星期三 L System.Logging.LoggingMonitor[0] #95 '00-4ac4e529b8333816c9954a16b3f4421a-24dc37bc96cd987b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.PostEmailVcode
+      ┣ 
+      ┣ 控制器名称：            UserLoginService
+      ┣ 操作名称：              PostEmailVcode
+      ┣ 显示名称：              app邮箱验证码登录注册
+      ┣ 路由信息：              [area]: ; [controller]: userLogin; [action]: emailVcode
+      ┣ 请求方式：              POST
+      ┣ 请求地址：              http://localhost:5005/app/api/userLogin/emailVcode/chenwei_zq@163.com
+      ┣ 来源地址：              http://localhost:3000/u_register
+      ┣ 请求端源：              client
+      ┣ 浏览器标识：            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：        zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：        0.0.0.1
+      ┣ 服务端 IP 地址：        0.0.0.1
+      ┣ 客户端连接 ID：         00-4ac4e529b8333816c9954a16b3f4421a-24dc37bc96cd987b-00
+      ┣ 服务线程 ID：           #95
+      ┣ 执行耗时：              1179ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                
+      ┣ 响应端：                
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：              Microsoft Windows 10.0.19045
+      ┣ 系统架构：              X64
+      ┣ 基础框架：              Furion.Pure v4.8.8.44
+      ┣ .NET 架构：             .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：              Production
+      ┣ 启动程序集：            Admin.NET.Web.Entry
+      ┣ 进程名称：              Admin.NET.Web.Entry
+      ┣ 托管程序：              Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：          
+      ┣ 
+      ┣ email (String)：        chenwei_zq@163.com
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：        200
+      ┣ 原始类型：              System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：              Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：            {"code":200,"type":"success","message":"","result":true,"extras":null,"time":"2023-10-25T13:45:29.2907302+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:46:11.3956560 +08:00 星期三 L System.Logging.LoggingMonitor[0] #95 '00-8ad90de4b445b454e6a0e99b6a98e907-f51277425180150b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.PostEmailVcode
+      ┣ 
+      ┣ 控制器名称：            UserLoginService
+      ┣ 操作名称：              PostEmailVcode
+      ┣ 显示名称：              app邮箱验证码登录注册
+      ┣ 路由信息：              [area]: ; [controller]: userLogin; [action]: emailVcode
+      ┣ 请求方式：              POST
+      ┣ 请求地址：              http://localhost:5005/app/api/userLogin/emailVcode/chenwei_zq@163.com
+      ┣ 来源地址：              http://localhost:3000/u_register
+      ┣ 请求端源：              client
+      ┣ 浏览器标识：            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：        zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：        0.0.0.1
+      ┣ 服务端 IP 地址：        0.0.0.1
+      ┣ 客户端连接 ID：         00-8ad90de4b445b454e6a0e99b6a98e907-f51277425180150b-00
+      ┣ 服务线程 ID：           #95
+      ┣ 执行耗时：              0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                
+      ┣ 响应端：                
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：              Microsoft Windows 10.0.19045
+      ┣ 系统架构：              X64
+      ┣ 基础框架：              Furion.Pure v4.8.8.44
+      ┣ .NET 架构：             .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：              Production
+      ┣ 启动程序集：            Admin.NET.Web.Entry
+      ┣ 进程名称：              Admin.NET.Web.Entry
+      ┣ 托管程序：              Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：          
+      ┣ 
+      ┣ email (String)：        chenwei_zq@163.com
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：        200
+      ┣ 原始类型：              System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：              Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：            {"code":400,"type":"error","message":"验证码已发送，请稍后再试","result":null,"extras":null,"time":"2023-10-25T13:46:11.3934915+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                
+      ┣ 业务码（原）：          
+      ┣ 业务消息：              验证码已发送，请稍后再试
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:46:23.9065032 +08:00 星期三 L System.Logging.LoggingMonitor[0] #70 '00-3408772066d579ca34779d16dd41c4d7-17339be09b00dec9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-3408772066d579ca34779d16dd41c4d7-17339be09b00dec9-00
+      ┣ 服务线程 ID：                   #86
+      ┣ 执行耗时：                      230ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:46:23.9043891+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:47:06.0002134 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-10-25 13:47:06.0691864 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-10-25 13:47:06.0717840 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-10-25 13:47:06.5433695 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:47:06.5445050 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:47:06.5461734 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:47:06.5470419 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:47:22.0005514 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-0bad00b604b41843f9d8b79029d8eca9-4710b1bfe37916d2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-0bad00b604b41843f9d8b79029d8eca9-4710b1bfe37916d2-00
+      ┣ 服务线程 ID：                   #4
+      ┣ 执行耗时：                      177ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:47:21.9481879+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:50:47.1763119 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-10363502b897e3f873d6426e463dd404-ac8cc17470cd7ee5-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-10363502b897e3f873d6426e463dd404-ac8cc17470cd7ee5-00
+      ┣ 服务线程 ID：                   #3
+      ┣ 执行耗时：                      87ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:50:47.1739135+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:51:36.8328361 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-10-25 13:51:36.8956693 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2023-10-25 13:51:36.9010282 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2023-10-25 13:51:37.3662068 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:51:37.3700506 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:51:37.4089364 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:51:37.4422099 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:51:45.9359161 +08:00 星期三 L System.Logging.LoggingMonitor[0] #3 '00-ebf7d197b2a44ae378a492b7ca622adc-d7481e7d311d3634-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-ebf7d197b2a44ae378a492b7ca622adc-d7481e7d311d3634-00
+      ┣ 服务线程 ID：      #3
+      ┣ 执行耗时：         13ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:51:58.9330083 +08:00 星期三 L System.Logging.LoggingMonitor[0] #25 '00-96d8d8dcf49759a59cfb6e39314a10db-2967442329710f43-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-96d8d8dcf49759a59cfb6e39314a10db-2967442329710f43-00
+      ┣ 服务线程 ID：                   #8
+      ┣ 执行耗时：                      388ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:51:58.8949185+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:52:30.0655082 +08:00 星期三 L System.Logging.LoggingMonitor[0] #7 '00-d08a8c41f800eeb4029e13162f7c1c9c-380fcdf46942ce18-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-d08a8c41f800eeb4029e13162f7c1c9c-380fcdf46942ce18-00
+      ┣ 服务线程 ID：                   #9
+      ┣ 执行耗时：                      5372ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0009] 账号不存在","result":null,"extras":null,"time":"2023-10-25T13:52:30.0604157+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0009
+      ┣ 业务码（原）：                  D0009
+      ┣ 业务消息：                      [D0009] 账号不存在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:55:04.1465655 +08:00 星期三 L System.Logging.LoggingMonitor[0] #43 '00-8e98342eff59f2f139ea608d28b834f7-5af50f9b0a6647f9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-8e98342eff59f2f139ea608d28b834f7-5af50f9b0a6647f9-00
+      ┣ 服务线程 ID：                   #43
+      ┣ 执行耗时：                      9002ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":"9520","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0008] 验证码错误","result":null,"extras":null,"time":"2023-10-25T13:55:04.1268129+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0008
+      ┣ 业务码（原）：                  D0008
+      ┣ 业务消息：                      [D0008] 验证码错误
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:55:11.5367091 +08:00 星期三 L System.Logging.LoggingMonitor[0] #47 '00-5f05f3db1245c7efa4db8c4ddbb8e48c-35003b8a535abf77-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.PostEmailVcode
+      ┣ 
+      ┣ 控制器名称：            UserLoginService
+      ┣ 操作名称：              PostEmailVcode
+      ┣ 显示名称：              app邮箱验证码登录注册
+      ┣ 路由信息：              [area]: ; [controller]: userLogin; [action]: emailVcode
+      ┣ 请求方式：              POST
+      ┣ 请求地址：              http://localhost:5005/app/api/userLogin/emailVcode/chenwei_zq@163.com
+      ┣ 来源地址：              http://localhost:3000/u_register
+      ┣ 请求端源：              client
+      ┣ 浏览器标识：            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：        zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：        0.0.0.1
+      ┣ 服务端 IP 地址：        0.0.0.1
+      ┣ 客户端连接 ID：         00-5f05f3db1245c7efa4db8c4ddbb8e48c-35003b8a535abf77-00
+      ┣ 服务线程 ID：           #46
+      ┣ 执行耗时：              1383ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                
+      ┣ 响应端：                
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：              Microsoft Windows 10.0.19045
+      ┣ 系统架构：              X64
+      ┣ 基础框架：              Furion.Pure v4.8.8.44
+      ┣ .NET 架构：             .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：              Development
+      ┣ 启动程序集：            Admin.NET.Web.Entry
+      ┣ 进程名称：              Admin.NET.Web.Entry
+      ┣ 托管程序：              Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：          
+      ┣ 
+      ┣ email (String)：        chenwei_zq@163.com
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：        200
+      ┣ 原始类型：              System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：              Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：            {"code":200,"type":"success","message":"","result":true,"extras":null,"time":"2023-10-25T13:55:11.4973046+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:57:21.3050089 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-10-25 13:57:21.3964963 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-10-25 13:57:21.3988530 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-10-25 13:57:21.9013111 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:57:21.9032057 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-10-25 13:57:21.9055536 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:57:21.9068112 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-10-25 13:59:06.3127602 +08:00 星期三 L System.Logging.LoggingMonitor[0] #19 '00-5864ec5e77fa2c8ab2b2e178ddd7395a-ba130c6877d90e78-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-5864ec5e77fa2c8ab2b2e178ddd7395a-ba130c6877d90e78-00
+      ┣ 服务线程 ID：                   #19
+      ┣ 执行耗时：                      79ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"123456","code":"1933","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":400,"type":"error","message":"[D0008] 验证码错误","result":null,"extras":null,"time":"2023-10-25T13:59:06.2554298+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                        D0008
+      ┣ 业务码（原）：                  D0008
+      ┣ 业务消息：                      [D0008] 验证码错误
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-25 13:59:14.0636721 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-4ef5e9f68424b596eb0fa1dc64db2989-e14f517350295fa8-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_register
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-4ef5e9f68424b596eb0fa1dc64db2989-e14f517350295fa8-00
+      ┣ 服务线程 ID：                   #19
+      ┣ 执行耗时：                      653ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"chenwei_zq@163.com","password":"04958443A114E9C966B8C0C6BC565E9C7291FDD1B9CB7BC6710054718DF5E270A55344552E3ADF251978B5048AABD1A4C7B5C5FC1564C5E9CDE287F942F5CA7341F8A8145517B9149622D02DA04D1CC2F0D9DB9DC200857E4820C797B9032C8C257E3FF3EB47A9","code":"716716","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6InJvMG42M094TDlWUXY1ZzRBcHFDR1N6VHRfTWplMjFyUFN3NENVR01udTAiLCJzIjoyNywibCI6NiwiayI6InhNVGN6TCIsImlhdCI6MTY5ODIxMzU1NCwibmJmIjoxNjk4MjEzNTU0LCJleHAiOjE2OTk0MjMxNTQsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.khAywb9ntMLPWl4xkc2ST-HEz0M4i8RigwF5Xt8R-wI","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0ODU0M
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

@@ -1,0 +1,924 @@
+fail: 2023-09-14 16:05:16.2263595 +08:00 星期四 L System.Logging.LoggingMonitor[0] #52
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.StatisticsService.GetHomePay
+      ┣ 
+      ┣ 控制器名称：                   StatisticsService
+      ┣ 操作名称：                     GetHomePay
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: statistics; [action]: homePay
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/statistics/homePay
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-88df7a08a6805b4ea64d1794171326b9-9c70bd95bacf212f-00
+      ┣ 服务线程 ID：                  #97
+      ┣ 执行耗时：                     862ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<System.String, System.Double>>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.InvalidOperationException
+      ┣ 消息：                         Nullable object must have a value.
+      ┣ 错误堆栈：                     at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 99
+         at lambda_method371(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 99
+         at lambda_method371(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 16:08:44.0760329 +08:00 星期四 L System.Logging.LoggingMonitor[0] #40
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.StatisticsService.GetHomePay
+      ┣ 
+      ┣ 控制器名称：                   StatisticsService
+      ┣ 操作名称：                     GetHomePay
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: statistics; [action]: homePay
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/statistics/homePay
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-2fa72a5890fede2b59f7c5a0049c6c75-b9f151de271bcdb7-00
+      ┣ 服务线程 ID：                  #22
+      ┣ 执行耗时：                     12459ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<System.String, System.Double>>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.InvalidOperationException
+      ┣ 消息：                         Nullable object must have a value.
+      ┣ 错误堆栈：                     at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 100
+         at lambda_method308(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 100
+         at lambda_method308(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 16:14:14.4857220 +08:00 星期四 L System.Logging.LoggingMonitor[0] #34
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.StatisticsService.GetHomePay
+      ┣ 
+      ┣ 控制器名称：                   StatisticsService
+      ┣ 操作名称：                     GetHomePay
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: statistics; [action]: homePay
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/statistics/homePay
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-b435e7dc32f3323a177bcc324ee60573-df0a8994d82def07-00
+      ┣ 服务线程 ID：                  #20
+      ┣ 执行耗时：                     41915ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.InvalidOperationException
+      ┣ 消息：                         Nullable object must have a value.
+      ┣ 错误堆栈：                     at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 104
+         at lambda_method285(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Nullable object must have a value.
+         at System.Nullable`1.get_Value()
+         at Admin.NET.Application.StatisticsService.GetHomePay() in C:\work\juai\api\Admin.NET.Application\Service\Home\StatisticsService.cs:line 104
+         at lambda_method285(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:19:38.6755762 +08:00 星期四 L System.Logging.LoggingMonitor[0] #19
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-0885657b53880d6f6334a0500e2d1ab1-9feb24818ba1b0ef-00
+      ┣ 服务线程 ID：                          #19
+      ┣ 执行耗时：                             54ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 当前表达式FromUnixTimeMilliseconds(n.SubmitTime.Value).ToLocalTime().DateTime 不支持，查看导航是否配置正确等 
+      English Message : FromUnixTimeMilliseconds(n.SubmitTime.Value).ToLocalTime().DateTimeno support
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.MapperExpressionResolve.Error01()
+         at SqlSugar.MapperExpressionResolve..ctor(Expression expression, InvalidOperationException ex)
+         at SqlSugar.ExpressionTool.DynamicInvoke(Expression expression, MemberExpression memberExpression)
+         at SqlSugar.ExpressionTool.GetMemberValue(MemberInfo member, Expression expression)
+         at SqlSugar.MemberExpressionResolve.ResolveMemberValue(ExpressionParameter parameter, ExpressionParameter baseParameter, Nullable`1 isLeft, Boolean isSetTempData, MemberExpression expression)
+         at SqlSugar.MemberExpressionResolve.ResolveMemberValue(ExpressionParameter parameter, ExpressionParameter baseParameter, MemberExpression expression, Nullable`1 isLeft, Boolean isSetTempData)
+         at SqlSugar.MemberExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.BaseResolve.ResolveMemberOther(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 25
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 当前表达式FromUnixTimeMilliseconds(n.SubmitTime.Value).ToLocalTime().DateTime 不支持，查看导航是否配置正确等 
+      English Message : FromUnixTimeMilliseconds(n.SubmitTime.Value).ToLocalTime().DateTimeno support
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.MapperExpressionResolve.Error01()
+         at SqlSugar.MapperExpressionResolve..ctor(Expression expression, InvalidOperationException ex)
+         at SqlSugar.ExpressionTool.DynamicInvoke(Expression expression, MemberExpression memberExpression)
+         at SqlSugar.ExpressionTool.GetMemberValue(MemberInfo member, Expression expression)
+         at SqlSugar.MemberExpressionResolve.ResolveMemberValue(ExpressionParameter parameter, ExpressionParameter baseParameter, Nullable`1 isLeft, Boolean isSetTempData, MemberExpression expression)
+         at SqlSugar.MemberExpressionResolve.ResolveMemberValue(ExpressionParameter parameter, ExpressionParameter baseParameter, MemberExpression expression, Nullable`1 isLeft, Boolean isSetTempData)
+         at SqlSugar.MemberExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.BaseResolve.ResolveMemberOther(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 25
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:22:37.5368653 +08:00 星期四 L System.Logging.LoggingMonitor[0] #39
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-c01c1576aa2f40087749b34a323714c7-dd8bebe2b1b50ee5-00
+      ┣ 服务线程 ID：                          #4
+      ┣ 执行耗时：                             129ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+      ┣ 错误堆栈：                             at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+         at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:22:41.6414006 +08:00 星期四 L System.Logging.LoggingMonitor[0] #39
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-519bdc8b104b262a2bdeb6c209818972-823e14a26775df17-00
+      ┣ 服务线程 ID：                          #26
+      ┣ 执行耗时：                             127ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+      ┣ 错误堆栈：                             at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+         at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:22:45.5415761 +08:00 星期四 L System.Logging.LoggingMonitor[0] #39
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-21bff7b77f595c734dd1bfd71620db0a-591e1de0533311c9-00
+      ┣ 服务线程 ID：                          #9
+      ┣ 执行耗时：                             136ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+      ┣ 错误堆栈：                             at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+         at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method414(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:23:05.4704683 +08:00 星期四 L System.Logging.LoggingMonitor[0] #38
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-18fa45e76f7af07a38195617231cf782-a293cf2bd29a8956-00
+      ┣ 服务线程 ID：                          #8
+      ┣ 执行耗时：                             129ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 System.Exception
+      ┣ 消息：                                 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+      ┣ 错误堆栈：                             at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method426(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Exception: 中文提示 : SubmitTime绑定到MidjourneyNotifyOutput失败,可以试着换一个类型，或者使用ORM自定义类型实现
+      English Message : MidjourneyNotifyOutput SubmitTime bind error
+         at SqlSugarEntity(IDataRecord )
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method426(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:23:40.5066473 +08:00 星期四 L System.Logging.LoggingMonitor[0] #39
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-9a7cfd6e81c3e416d115d68624328088-1fa3a0d9fd662499-00
+      ┣ 服务线程 ID：                          #26
+      ┣ 执行耗时：                             128ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 SubmitTime can't  convert string to datetime
+      ┣ 错误堆栈：                             at SqlSugar.IDataReaderEntityBuilder`1.CheckType(List`1 invalidTypes, String bindProperyTypeName, String validPropertyType, String propertyName)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindMethod(ILGenerator generator, EntityColumnInfo columnInfo, Int32 ordinal)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindField(ILGenerator generator, LocalBuilder result, EntityColumnInfo columnInfo, String fieldName)
+         at SqlSugar.IDataReaderEntityBuilder`1.CreateBuilder(Type type)
+         at SqlSugar.DbBindAccessory.<>c__DisplayClass5_0`1.<GetEntityListAsync>b__0()
+         at SqlSugar.ReflectionInoCore`1.GetOrCreate(String cacheKey, Func`1 create)
+         at SqlSugar.ReflectionInoCacheService.GetOrCreate[V](String cacheKey, Func`1 create, Int32 cacheDurationInSeconds)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method435(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: SubmitTime can't  convert string to datetime
+         at SqlSugar.IDataReaderEntityBuilder`1.CheckType(List`1 invalidTypes, String bindProperyTypeName, String validPropertyType, String propertyName)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindMethod(ILGenerator generator, EntityColumnInfo columnInfo, Int32 ordinal)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindField(ILGenerator generator, LocalBuilder result, EntityColumnInfo columnInfo, String fieldName)
+         at SqlSugar.IDataReaderEntityBuilder`1.CreateBuilder(Type type)
+         at SqlSugar.DbBindAccessory.<>c__DisplayClass5_0`1.<GetEntityListAsync>b__0()
+         at SqlSugar.ReflectionInoCore`1.GetOrCreate(String cacheKey, Func`1 create)
+         at SqlSugar.ReflectionInoCacheService.GetOrCreate[V](String cacheKey, Func`1 create, Int32 cacheDurationInSeconds)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method435(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-14 21:23:44.5225109 +08:00 星期四 L System.Logging.LoggingMonitor[0] #39
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-9ba3c171507caad1c8306862273f4ed4-2850f8f0d240f8a8-00
+      ┣ 服务线程 ID：                          #26
+      ┣ 执行耗时：                             124ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDY2MTk2OSwibmJmIjoxNjk0NjYxOTY5LCJleHAiOjE2OTUyNjY3NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.qBagp8t47v-Olhh6l-pYKG-JHV0WXY-7Dft20MYOp8k
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                        1694661969 (2023-09-14 11:26:09:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                        1695266769 (2023-09-21 11:26:09:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":null,"promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 SubmitTime can't  convert string to datetime
+      ┣ 错误堆栈：                             at SqlSugar.IDataReaderEntityBuilder`1.CheckType(List`1 invalidTypes, String bindProperyTypeName, String validPropertyType, String propertyName)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindMethod(ILGenerator generator, EntityColumnInfo columnInfo, Int32 ordinal)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindField(ILGenerator generator, LocalBuilder result, EntityColumnInfo columnInfo, String fieldName)
+         at SqlSugar.IDataReaderEntityBuilder`1.CreateBuilder(Type type)
+         at SqlSugar.DbBindAccessory.<>c__DisplayClass5_0`1.<GetEntityListAsync>b__0()
+         at SqlSugar.ReflectionInoCore`1.GetOrCreate(String cacheKey, Func`1 create)
+         at SqlSugar.ReflectionInoCacheService.GetOrCreate[V](String cacheKey, Func`1 create, Int32 cacheDurationInSeconds)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method435(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: SubmitTime can't  convert string to datetime
+         at SqlSugar.IDataReaderEntityBuilder`1.CheckType(List`1 invalidTypes, String bindProperyTypeName, String validPropertyType, String propertyName)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindMethod(ILGenerator generator, EntityColumnInfo columnInfo, Int32 ordinal)
+         at SqlSugar.IDataReaderEntityBuilder`1.BindField(ILGenerator generator, LocalBuilder result, EntityColumnInfo columnInfo, String fieldName)
+         at SqlSugar.IDataReaderEntityBuilder`1.CreateBuilder(Type type)
+         at SqlSugar.DbBindAccessory.<>c__DisplayClass5_0`1.<GetEntityListAsync>b__0()
+         at SqlSugar.ReflectionInoCore`1.GetOrCreate(String cacheKey, Func`1 create)
+         at SqlSugar.ReflectionInoCacheService.GetOrCreate[V](String cacheKey, Func`1 create, Int32 cacheDurationInSeconds)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method435(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

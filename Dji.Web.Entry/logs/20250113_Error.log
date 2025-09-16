@@ -1,0 +1,435 @@
+fail: 2025-01-13 22:14:41.5253046 +08:00 星期一 L System.Logging.LoggingMonitor[0] #4 '00-97f7d9789afbff195b6d4917c16377dc-bbcbbed184fc1426-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.ChatModelOptionsService.Add
+      ┣ 
+      ┣ 控制器名称：                              ChatModelOptionsService
+      ┣ 操作名称：                                Add
+      ┣ 显示名称：                                
+      ┣ 路由信息：                                [area]: ; [controller]: chatModelOptions; [action]: add
+      ┣ 请求方式：                                POST
+      ┣ 请求地址：                                http://localhost:5005/api/chatModelOptions/add
+      ┣ 来源地址：                                http://localhost:8888/
+      ┣ 请求端源：                                client
+      ┣ 浏览器标识：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                          zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                          127.0.0.1
+      ┣ 服务端 IP 地址：                          127.0.0.1
+      ┣ 客户端连接 ID：                           00-97f7d9789afbff195b6d4917c16377dc-bbcbbed184fc1426-00
+      ┣ 服务线程 ID：                             #4
+      ┣ 执行耗时：                                138ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                  
+      ┣ 响应端：                                  
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                Microsoft Windows 10.0.19045
+      ┣ 系统架构：                                X64
+      ┣ 基础框架：                                Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                               .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                Production
+      ┣ 启动程序集：                              Admin.NET.Web.Entry
+      ┣ 进程名称：                                Admin.NET.Web.Entry
+      ┣ 托管程序：                                Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                               Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ 
+      ┣ UserId (integer64)：                      1300000000101
+      ┣ TenantId (integer64)：                    1300000000001
+      ┣ Account (string)：                        superadmin
+      ┣ RealName (string)：                       超级管理员
+      ┣ AccountType (integer32)：                 999
+      ┣ OrgId (integer32)：                       0
+      ┣ OrgName (JSON_NULL)：                     
+      ┣ OrgType (JSON_NULL)：                     
+      ┣ iat (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                         1737378430 (2025-01-20 21:07:10:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                            guxin.link
+      ┣ aud (string)：                            guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                                  application/json, text/plain, */*
+      ┣ Connection：                              keep-alive
+      ┣ Host：                                    localhost:5005
+      ┣ User-Agent：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                         gzip, deflate, br, zstd
+      ┣ Accept-Language：                         zh-CN,zh;q=0.9
+      ┣ Authorization：                           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ Cache-Control：                           no-cache
+      ┣ Content-Type：                            application/json
+      ┣ Origin：                                  http://localhost:8888
+      ┣ Pragma：                                  no-cache
+      ┣ Referer：                                 http://localhost:8888/
+      ┣ Content-Length：                          313
+      ┣ sec-ch-ua-platform：                      "Windows"
+      ┣ sec-ch-ua：                               "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+      ┣ sec-ch-ua-mobile：                        ?0
+      ┣ DNT：                                     1
+      ┣ Sec-Fetch-Site：                          same-site
+      ┣ Sec-Fetch-Mode：                          cors
+      ┣ Sec-Fetch-Dest：                          empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                            application/json
+      ┣ 
+      ┣ input (AddChatModelOptionsInput)：        {"name":"温度","optionType":1,"field":"temperature","modelId":null,"modelService":"百度","maxNum":1.0,"minNum":0.01,"selectedValues":null,"desc":"说明： （1）较高的数值会使输出更加随机，而较低的数值会使其更加集中和确定 （2）默认0.8，范围 (0, 1.0]，不能为0。","defaultVal":"0.8","extends":null,"createTime":null,"updateTime":null,"createUserId":null,"updateUserId":null,"isDelete":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                          200
+      ┣ 原始类型：                                System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                                
+      ┣ 最终返回值：                              null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                    MySqlConnector.MySqlException
+      ┣ 消息：                                    Column 'model_server' cannot be null
+      ┣ 错误堆栈：                                at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input)
+         at lambda_method52(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'model_server' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input)
+         at lambda_method52(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-13 22:15:28.0980217 +08:00 星期一 L System.Logging.LoggingMonitor[0] #27 '00-cc5ec5541744c047010a974a5fdaf620-679037d8f2a17d0c-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.ChatModelOptionsService.Add
+      ┣ 
+      ┣ 控制器名称：                              ChatModelOptionsService
+      ┣ 操作名称：                                Add
+      ┣ 显示名称：                                
+      ┣ 路由信息：                                [area]: ; [controller]: chatModelOptions; [action]: add
+      ┣ 请求方式：                                POST
+      ┣ 请求地址：                                http://localhost:5005/api/chatModelOptions/add
+      ┣ 来源地址：                                http://localhost:8888/
+      ┣ 请求端源：                                client
+      ┣ 浏览器标识：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                          zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                          127.0.0.1
+      ┣ 服务端 IP 地址：                          127.0.0.1
+      ┣ 客户端连接 ID：                           00-cc5ec5541744c047010a974a5fdaf620-679037d8f2a17d0c-00
+      ┣ 服务线程 ID：                             #27
+      ┣ 执行耗时：                                2ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                  
+      ┣ 响应端：                                  
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                Microsoft Windows 10.0.19045
+      ┣ 系统架构：                                X64
+      ┣ 基础框架：                                Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                               .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                Production
+      ┣ 启动程序集：                              Admin.NET.Web.Entry
+      ┣ 进程名称：                                Admin.NET.Web.Entry
+      ┣ 托管程序：                                Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                               Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ 
+      ┣ UserId (integer64)：                      1300000000101
+      ┣ TenantId (integer64)：                    1300000000001
+      ┣ Account (string)：                        superadmin
+      ┣ RealName (string)：                       超级管理员
+      ┣ AccountType (integer32)：                 999
+      ┣ OrgId (integer32)：                       0
+      ┣ OrgName (JSON_NULL)：                     
+      ┣ OrgType (JSON_NULL)：                     
+      ┣ iat (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                         1737378430 (2025-01-20 21:07:10:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                            guxin.link
+      ┣ aud (string)：                            guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                                  application/json, text/plain, */*
+      ┣ Connection：                              keep-alive
+      ┣ Host：                                    localhost:5005
+      ┣ User-Agent：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                         gzip, deflate, br, zstd
+      ┣ Accept-Language：                         zh-CN,zh;q=0.9
+      ┣ Authorization：                           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ Cache-Control：                           no-cache
+      ┣ Content-Type：                            application/json
+      ┣ Origin：                                  http://localhost:8888
+      ┣ Pragma：                                  no-cache
+      ┣ Referer：                                 http://localhost:8888/
+      ┣ Content-Length：                          313
+      ┣ sec-ch-ua-platform：                      "Windows"
+      ┣ sec-ch-ua：                               "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+      ┣ sec-ch-ua-mobile：                        ?0
+      ┣ DNT：                                     1
+      ┣ Sec-Fetch-Site：                          same-site
+      ┣ Sec-Fetch-Mode：                          cors
+      ┣ Sec-Fetch-Dest：                          empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                            application/json
+      ┣ 
+      ┣ input (AddChatModelOptionsInput)：        {"name":"温度","optionType":1,"field":"temperature","modelId":null,"modelService":"百度","maxNum":1.0,"minNum":0.01,"selectedValues":null,"desc":"说明： （1）较高的数值会使输出更加随机，而较低的数值会使其更加集中和确定 （2）默认0.8，范围 (0, 1.0]，不能为0。","defaultVal":"0.8","extends":null,"createTime":null,"updateTime":null,"createUserId":null,"updateUserId":null,"isDelete":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                          200
+      ┣ 原始类型：                                System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                                
+      ┣ 最终返回值：                              null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                    System.Reflection.TargetInvocationException
+      ┣ 消息：                                    Exception has been thrown by the target of an invocation.
+      ┣ 错误堆栈：                                at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+         at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+         at SqlSugar.InsertableProvider`1.DataAop(T item)
+         at SqlSugar.InsertableProvider`1.Init()
+         at SqlSugar.SqlSugarProvider.CreateInsertable[T](T[] insertObjs)
+         at SqlSugar.SqlSugarProvider.Insertable[T](T[] insertObjs)
+         at SqlSugar.SqlSugarProvider.Insertable[T](T insertObj)
+         at SqlSugar.SqlSugarScopeProvider.Insertable[T](T insertObj)
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input)
+         at lambda_method162(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> System.MissingMethodException: 已尝试调用已删除的方法实现。在应用程序运行时删除方法或更改其名称或签名就可能会发生这种情况。
+         at Admin.NET.Core.JuAI.ChatModelOptions.get_ModelServer()
+         at InvokeStub_ChatModelOptions.get_ModelServer(Object, Object, IntPtr*)
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+         --- End of inner exception stack trace ---
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+         at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+         at SqlSugar.InsertableProvider`1.DataAop(T item)
+         at SqlSugar.InsertableProvider`1.Init()
+         at SqlSugar.SqlSugarProvider.CreateInsertable[T](T[] insertObjs)
+         at SqlSugar.SqlSugarProvider.Insertable[T](T[] insertObjs)
+         at SqlSugar.SqlSugarProvider.Insertable[T](T insertObj)
+         at SqlSugar.SqlSugarScopeProvider.Insertable[T](T insertObj)
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input)
+         at lambda_method162(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-13 22:16:40.4380124 +08:00 星期一 L System.Logging.LoggingMonitor[0] #4 '00-505067a28b6cfcd252b60a72626d0573-b60b65f67fe20b4d-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.ChatModelOptionsService.Add
+      ┣ 
+      ┣ 控制器名称：                              ChatModelOptionsService
+      ┣ 操作名称：                                Add
+      ┣ 显示名称：                                
+      ┣ 路由信息：                                [area]: ; [controller]: chatModelOptions; [action]: add
+      ┣ 请求方式：                                POST
+      ┣ 请求地址：                                http://localhost:5005/api/chatModelOptions/add
+      ┣ 来源地址：                                http://localhost:8888/
+      ┣ 请求端源：                                client
+      ┣ 浏览器标识：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                          zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                          127.0.0.1
+      ┣ 服务端 IP 地址：                          127.0.0.1
+      ┣ 客户端连接 ID：                           00-505067a28b6cfcd252b60a72626d0573-b60b65f67fe20b4d-00
+      ┣ 服务线程 ID：                             #20
+      ┣ 执行耗时：                                86ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                  
+      ┣ 响应端：                                  
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                Microsoft Windows 10.0.19045
+      ┣ 系统架构：                                X64
+      ┣ 基础框架：                                Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                               .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                Production
+      ┣ 启动程序集：                              Admin.NET.Web.Entry
+      ┣ 进程名称：                                Admin.NET.Web.Entry
+      ┣ 托管程序：                                Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                               Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ 
+      ┣ UserId (integer64)：                      1300000000101
+      ┣ TenantId (integer64)：                    1300000000001
+      ┣ Account (string)：                        superadmin
+      ┣ RealName (string)：                       超级管理员
+      ┣ AccountType (integer32)：                 999
+      ┣ OrgId (integer32)：                       0
+      ┣ OrgName (JSON_NULL)：                     
+      ┣ OrgType (JSON_NULL)：                     
+      ┣ iat (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                         1737378430 (2025-01-20 21:07:10:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                            guxin.link
+      ┣ aud (string)：                            guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                                  application/json, text/plain, */*
+      ┣ Connection：                              keep-alive
+      ┣ Host：                                    localhost:5005
+      ┣ User-Agent：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                         gzip, deflate, br, zstd
+      ┣ Accept-Language：                         zh-CN,zh;q=0.9
+      ┣ Authorization：                           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ Cache-Control：                           no-cache
+      ┣ Content-Type：                            application/json
+      ┣ Origin：                                  http://localhost:8888
+      ┣ Pragma：                                  no-cache
+      ┣ Referer：                                 http://localhost:8888/
+      ┣ Content-Length：                          313
+      ┣ sec-ch-ua-platform：                      "Windows"
+      ┣ sec-ch-ua：                               "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+      ┣ sec-ch-ua-mobile：                        ?0
+      ┣ DNT：                                     1
+      ┣ Sec-Fetch-Site：                          same-site
+      ┣ Sec-Fetch-Mode：                          cors
+      ┣ Sec-Fetch-Dest：                          empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                            application/json
+      ┣ 
+      ┣ input (AddChatModelOptionsInput)：        {"name":"温度","optionType":1,"field":"temperature","modelService":"百度","modelId":null,"maxNum":1.0,"minNum":0.01,"selectedValues":null,"desc":"说明： （1）较高的数值会使输出更加随机，而较低的数值会使其更加集中和确定 （2）默认0.8，范围 (0, 1.0]，不能为0。","defaultVal":"0.8","extends":null,"createTime":null,"updateTime":null,"createUserId":null,"updateUserId":null,"isDelete":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                          200
+      ┣ 原始类型：                                System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                                
+      ┣ 最终返回值：                              null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                    MySqlConnector.MySqlException
+      ┣ 消息：                                    Column 'selected_values' cannot be null
+      ┣ 错误堆栈：                                at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input) in D:\work\chenyanyi\server\Admin.NET.Application\Service\ChatModelOptions\ChatModelOptionsService.cs:line 52
+         at lambda_method58(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'selected_values' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input) in D:\work\chenyanyi\server\Admin.NET.Application\Service\ChatModelOptions\ChatModelOptionsService.cs:line 52
+         at lambda_method58(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-13 22:19:00.1507275 +08:00 星期一 L System.Logging.LoggingMonitor[0] #12 '00-ab0b83c201da7fc002f0026db0ecd9a7-128779d38ee7cea0-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.ChatModelOptionsService.Add
+      ┣ 
+      ┣ 控制器名称：                              ChatModelOptionsService
+      ┣ 操作名称：                                Add
+      ┣ 显示名称：                                
+      ┣ 路由信息：                                [area]: ; [controller]: chatModelOptions; [action]: add
+      ┣ 请求方式：                                POST
+      ┣ 请求地址：                                http://localhost:5005/api/chatModelOptions/add
+      ┣ 来源地址：                                http://localhost:8888/
+      ┣ 请求端源：                                client
+      ┣ 浏览器标识：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                          zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                          127.0.0.1
+      ┣ 服务端 IP 地址：                          127.0.0.1
+      ┣ 客户端连接 ID：                           00-ab0b83c201da7fc002f0026db0ecd9a7-128779d38ee7cea0-00
+      ┣ 服务线程 ID：                             #12
+      ┣ 执行耗时：                                87ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                  
+      ┣ 响应端：                                  
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                Microsoft Windows 10.0.19045
+      ┣ 系统架构：                                X64
+      ┣ 基础框架：                                Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                               .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                Production
+      ┣ 启动程序集：                              Admin.NET.Web.Entry
+      ┣ 进程名称：                                Admin.NET.Web.Entry
+      ┣ 托管程序：                                Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                               Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ 
+      ┣ UserId (integer64)：                      1300000000101
+      ┣ TenantId (integer64)：                    1300000000001
+      ┣ Account (string)：                        superadmin
+      ┣ RealName (string)：                       超级管理员
+      ┣ AccountType (integer32)：                 999
+      ┣ OrgId (integer32)：                       0
+      ┣ OrgName (JSON_NULL)：                     
+      ┣ OrgType (JSON_NULL)：                     
+      ┣ iat (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                         1736773630 (2025-01-13 21:07:10:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                         1737378430 (2025-01-20 21:07:10:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                            guxin.link
+      ┣ aud (string)：                            guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                                  application/json, text/plain, */*
+      ┣ Connection：                              keep-alive
+      ┣ Host：                                    localhost:5005
+      ┣ User-Agent：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                         gzip, deflate, br, zstd
+      ┣ Accept-Language：                         zh-CN,zh;q=0.9
+      ┣ Authorization：                           Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTczNjc3MzYzMCwibmJmIjoxNzM2NzczNjMwLCJleHAiOjE3MzczNzg0MzAsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.7yghNabJaXKI2uA1Ntrw8zMcPGWCeTTjXE-UINFnf5o
+      ┣ Cache-Control：                           no-cache
+      ┣ Content-Type：                            application/json
+      ┣ Origin：                                  http://localhost:8888
+      ┣ Pragma：                                  no-cache
+      ┣ Referer：                                 http://localhost:8888/
+      ┣ Content-Length：                          313
+      ┣ sec-ch-ua-platform：                      "Windows"
+      ┣ sec-ch-ua：                               "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+      ┣ sec-ch-ua-mobile：                        ?0
+      ┣ DNT：                                     1
+      ┣ Sec-Fetch-Site：                          same-site
+      ┣ Sec-Fetch-Mode：                          cors
+      ┣ Sec-Fetch-Dest：                          empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                            application/json
+      ┣ 
+      ┣ input (AddChatModelOptionsInput)：        {"name":"温度","optionType":1,"field":"temperature","modelService":"百度","modelId":null,"maxNum":1.0,"minNum":0.01,"selectedValues":null,"desc":"说明： （1）较高的数值会使输出更加随机，而较低的数值会使其更加集中和确定 （2）默认0.8，范围 (0, 1.0]，不能为0。","defaultVal":"0.8","extends":null,"createTime":null,"updateTime":null,"createUserId":null,"updateUserId":null,"isDelete":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                          200
+      ┣ 原始类型：                                System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                                
+      ┣ 最终返回值：                              null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                    MySqlConnector.MySqlException
+      ┣ 消息：                                    Column 'selected_values' cannot be null
+      ┣ 错误堆栈：                                at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input) in D:\work\chenyanyi\server\Admin.NET.Application\Service\ChatModelOptions\ChatModelOptionsService.cs:line 52
+         at lambda_method58(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'selected_values' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.ChatModelOptionsService.Add(AddChatModelOptionsInput input) in D:\work\chenyanyi\server\Admin.NET.Application\Service\ChatModelOptions\ChatModelOptionsService.cs:line 52
+         at lambda_method58(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

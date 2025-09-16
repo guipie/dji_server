@@ -1,0 +1,999 @@
+info: 2023-11-07 08:49:12.7859346 +08:00 星期二 L System.Logging.LoggingMonitor[0] #62 '00-7293824f5e7d1313d246ae1728d384c6-ed066ce9ccf9e9ff-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-7293824f5e7d1313d246ae1728d384c6-ed066ce9ccf9e9ff-00
+      ┣ 服务线程 ID：         #76
+      ┣ 执行耗时：            701ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14957872105541","title":"这是一个草稿箱，我试试上传吧","text":"Using Quivr fully locallUsing Quivr fully locallyy\n\nHeaders​\n\nThe following is a guide to setasasdddd3\n\nup everything for using Quivr locally:\n\nTable of Contents​\n\nDatabase\n\nEmbeddings\n\nLLM for inference\n\nIt is a first, working setup, but a lot of work has to be done to e.g. find the appropriate settings for the model.\n\nImportantly, this will currently only work on tag v0
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 20:49:15.9868395 +08:00 星期二 L System.Logging.LoggingMonitor[0] #40 '00-195e50fe5c1909f0ad5182b4c6b0e5b3-bbd7a7e499a210c0-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-195e50fe5c1909f0ad5182b4c6b0e5b3-bbd7a7e499a210c0-00
+      ┣ 服务线程 ID：         #94
+      ┣ 执行耗时：            483ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"1694959079220","title":"11111","text":"1111111111111111111","image":null,"homeType":"Image"},{"id":"14376994108229","title":"由于本届美国男篮在男篮世界杯的表现不够理想，詹姆斯计划征战2024年奥运会，并已经与库里、杜兰特、戴维斯、塔图姆和追梦等人进行了交流，他们也准备好做出承诺。美记Frank Michael Smith随后发推晒出了美国男篮奥运会总得分TOP10榜单，详情如下：\n\n1、杜兰特 435分\n\n2、安东尼 336分\n\n3、詹姆斯 273分\n\n4、大卫-罗宾逊 270分\n\n5、乔丹 256分\n\n6、巴克利 231分\n\n7、克里斯-穆林 196分\n\n8、韦德 186分\n\n9、卡尔-马龙 171分\n\n10、皮蓬 170分","text":"詹姆斯计划参加2024年奥运会，并已与库里、杜兰特、戴维斯、塔
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 20:58:22.0404550 +08:00 星期二 L System.Logging.LoggingMonitor[0] #40 '00-e749e6700ed99afe9e7b4870601a321b-a0956d80c4f5a80b-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-e749e6700ed99afe9e7b4870601a321b-a0956d80c4f5a80b-00
+      ┣ 服务线程 ID：         #105
+      ┣ 执行耗时：            434ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14366079235269","title":"每日AI资讯09-11","text":"1.联合国教科文组织发布全球首份生成式AI在教育和研究领域的使用指南\r\n\r\n联合国教科文组织发布全球首份关于在教育和研究领域使用生成式人工智能的指南，并呼吁各国政府尽快实施适当的管制和教师培训，以确保这项技术在教育中的运用遵循以人为中心的方法。该指南旨在回应今年5月全球教育部长会议提出的关切，帮助政策制定者和教师最大限度地利用人工智能的潜力，以服务于学习者的根本利益。指南强调在教育中运用人工智能应遵循一种以人为中心的方法，并提出了七个关键步骤用以管制生成式AI，同时要求各国政府加强治理，以保障人工智能运用的透明度和公共问责。此外，教科文组织还特别提出在课堂上使用人工智能工具的年龄限制应设在13岁，并呼吁全球教育部门加强准备，制定相关政策和指导，以规范生成式AI在教育中的使用。\r\n\r\n2.《时代》2023 AI百大人物名单发布：领导者包括OpenAI联合创始人等思想
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 20:59:37.5102943 +08:00 星期二 L System.Logging.LoggingMonitor[0] #26 '00-a96e0101f05ef089677dd969fabc0fc5-f036fd9747e4a0ba-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-a96e0101f05ef089677dd969fabc0fc5-f036fd9747e4a0ba-00
+      ┣ 服务线程 ID：         #74
+      ┣ 执行耗时：            259ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14647136065349","title":"1+1","text":"1 + 1 等于 2。","image":null,"homeType":"Chat"},{"id":"14372523817029","title":"中国教师2022年平均工资","text":"根据最新公开的数据，中国教师的2022年平均工资会受到多个因素的影响，包括地区、学历、工作经验和职位等。因此，具体的平均工资数值可能会因地区和其他因素而有所差异。\n\n根据一些统计数据，中国各地的教师平均工资范围大约在5000元人民币到1万元人民币之间。这仅是一个大致的范围，并不适用于所有教师。在一线城市和发达地区，教师的平均工资可能会更高，而在农村和欠发达地区，工资可能会相对较低。\n\n需要注意的是，以上数据只是作为参考，并且可能会随时间的推移而有所变化。最准确的数据可以从相关教育部门或教师工会处获得。","image":null,"homeType":"Chat"},{"id":"16944
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:00:11.3830092 +08:00 星期二 L System.Logging.LoggingMonitor[0] #99 '00-01b1544a91b641093719ff79dddf9cee-7d2b066a15a4a8ab-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-01b1544a91b641093719ff79dddf9cee-7d2b066a15a4a8ab-00
+      ┣ 服务线程 ID：         #113
+      ┣ 执行耗时：            254ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14647107310149","title":"今天有什么新闻","text":"作为一个语言模型，我无法实时获取最新的新闻。建议您通过新闻媒体、手机应用程序或互联网搜索引擎来查阅当天的新闻。最常见的新闻来源包括BBC、CNN、纽约时报等。您可以使用关键词搜索相关的新闻，例如\"今天的新闻\"或者指定您感兴趣的领域，比如\"科技新闻\"或\"体育新闻\"等。这样您将能够获取到最新的新闻报道。","image":null,"homeType":"Chat"},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个强大的辅助工具，帮助你完成各种工作。以下是一些使用ChatGPT辅助工作的建议：\r\n写作助手生成创意理解复杂的主题生成代码和调试代码翻译助手制作视频脚本-自媒体应用\r\n写作助手\r\n提供主题和结构建议：告诉ChatGPT你的写作主题和目的，它可以为你提供相关的主题和结构建
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:10:46.0102996 +08:00 星期二 L System.Logging.LoggingMonitor[0] #22 '00-470f5b7b34b1a8fc54799674c0a64d3d-f528bb3f4866032b-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-470f5b7b34b1a8fc54799674c0a64d3d-f528bb3f4866032b-00
+      ┣ 服务线程 ID：         #28
+      ┣ 执行耗时：            684ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14380163261637","title":"什么是解引用","text":"在计算机编程中，解引用（Dereferencing）是指通过指针访问到它所指向的值。特别是在C++等静态类型的编程语言中，这是一个非常常见的操作。\n\n假设我们有一个指针变量 `p`，它指向一个整数变量 `a`，我们可以通过 `*p` 来访问 `a` 的值，这就是解引用的操作。\n\n```c++\nint a = 10;\nint* p = &a; // p 是一个指向 a 的指针\nint b = *p;  // 通过解引用 p 获取 a 的值，将其赋给 b，现在 b 的值为 10\n```\n\n需要注意的是，只有当指针指向一个有效的内存地址时，才能对其进行解引用操作。如果指针是空的（即 `nullptr` 或 `NULL`），或者指向的内存已经被释放，那么尝试去解引用这个指针就会导致未定义行为，通常会引发程序崩溃。","image":null,"homeType":"Chat"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:11:49.8766110 +08:00 星期二 L System.Logging.LoggingMonitor[0] #104 '00-55cf676215320f8452003123c0df7865-00dd80b43bb2c271-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-55cf676215320f8452003123c0df7865-00dd80b43bb2c271-00
+      ┣ 服务线程 ID：         #28
+      ┣ 执行耗时：            277ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14958263896133","title":"测试以下吧111111","text":"The following is a guide to setasasdddd3\n\nup everything for using Quivr locally:\n\nRemove any existing data from the postgres database:\n\nsupabase/docker $ docker compose down -v\n\nsupabase/docker $ rm -rf volumes/db/data/\n\nsupabase/docker $ docker compose up -d\n\nChange the vector dimensions in the necessary Quivr SQL files:\n\nReplace all occurrences of 1536 by 768, in Quivr's scrip
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:11:54.1655288 +08:00 星期二 L System.Logging.LoggingMonitor[0] #27 '00-c3f20ef7a7c7c89cf0b7104f116fcc9f-a3ee3a5e0609ed87-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-c3f20ef7a7c7c89cf0b7104f116fcc9f-a3ee3a5e0609ed87-00
+      ┣ 服务线程 ID：         #73
+      ┣ 执行耗时：            254ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross axis.\n\n​\n\nQuick reference\n\nClass\n\nProperties\n\nitems-start\n\nalign-items: flex-start;\n\nitems-end\n\nalign-items: flex-end;\n\nitems-center\n\nalign-items: center;\n\nitems-baseline\n\nalign-items: baseline;\n\nitems-stretch\n\nalign-items: stretch;\n\n​\n\nB
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:13:31.9563630 +08:00 星期二 L System.Logging.LoggingMonitor[0] #50 '00-ce0a02d5caec37180c925d4340b9a10b-1d6b09b28d0c3aa6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-ce0a02d5caec37180c925d4340b9a10b-1d6b09b28d0c3aa6-00
+      ┣ 服务线程 ID：         #73
+      ┣ 执行耗时：            276ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个强大的辅助工具，帮助你完成各种工作。以下是一些使用ChatGPT辅助工作的建议：\r\n写作助手生成创意理解复杂的主题生成代码和调试代码翻译助手制作视频脚本-自媒体应用\r\n写作助手\r\n提供主题和结构建议：告诉ChatGPT你的写作主题和目的，它可以为你提供相关的主题和结构建议，帮助你更好地组织你的思路。\r\n提供参考资料：ChatGPT可以为你提供相关的参考资料，如文章、研究报告、统计数据等，帮助你支持你的观点和论点。\r\n提供语言和语法建议：告诉ChatGPT你的写作风格和受众，它可以为你提供相应的语言和语法建议，帮助你更好地表达你的思想，并吸引你的受众。\r\n检查拼写和语法错误：ChatGPT可以检查你的文档中的拼写和语法错误，并提供修正建议，帮助你确保你的文档的准确性和流畅性。\r\n提供反馈和评价：ChatGPT可以为你提供反馈
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:13:54.1781910 +08:00 星期二 L System.Logging.LoggingMonitor[0] #94 '00-3a4e6b174b65ee3b5bb7e880d6196722-9241785f6d45f4a2-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-3a4e6b174b65ee3b5bb7e880d6196722-9241785f6d45f4a2-00
+      ┣ 服务线程 ID：         #87
+      ┣ 执行耗时：            272ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14647136065349","title":"1+1","text":"1 + 1 等于 2。","image":null,"homeType":"Chat"},{"id":"1694805178834452","title":"The primeval forest, incredibly frightful.","text":"The primeval forest, incredibly frightful.","image":"http://3.96.174.56:3004/attachments/1125349599578689568/1152321330348314675/juai_link_The_primeval_forest_incredibly_frightful._6508e8a5-6ffe-4ef4-902a-3113f34ec718.png","homeType":"Image"},{"id":"1694804644690477","tit
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:17:48.9912763 +08:00 星期二 L System.Logging.LoggingMonitor[0] #87 '00-dd20650646af1c816b3d3056da6082b6-aa480064b64ea58b-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-dd20650646af1c816b3d3056da6082b6-aa480064b64ea58b-00
+      ┣ 服务线程 ID：         #18
+      ┣ 执行耗时：            419ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"1694805641212806","title":"Under the iconic Eiffel Tower, the blissful couple passionately embraces.","text":"Under the iconic Eiffel Tower, the blissful couple passionately embraces.","image":"http://3.96.174.56:3004/attachments/1125349599578689568/1152323268393578676/juai_link_Under_the_iconic_Eiffel_Tower_the_blissful_couple_pas_c7a8906e-2352-426b-b479-a8d6a34108b2.png","homeType":"Image"},{"id":"14380163261637","title":"什么是解引用","text
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:17:54.1621376 +08:00 星期二 L System.Logging.LoggingMonitor[0] #43 '00-015bc22640ab7cc1c338cbda123076fd-90a90699adbc66bc-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-015bc22640ab7cc1c338cbda123076fd-90a90699adbc66bc-00
+      ┣ 服务线程 ID：         #71
+      ┣ 执行耗时：            254ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"1694805477502947","title":"Terrifying Bride","text":"Terrifying Bride","image":"http://filetest.guxin.link/Mid/juai_link_Terrifying_Bride_100b1a6c-5fb9-43a7-b938-a553c376b7d7.png","homeType":"Image"},{"id":"14380356407493","title":"UE的UObject可以在场景中存在吗","text":"在 Unreal Engine（UE）中，`UObject` 本身并不能直接存在于场景中。这是因为 `UObject` 是所有 `UE` 对象的基础，它只包含了一些基础的功能，例如序列化、反射和垃圾回收等。\n\n如果你想要在场景中使用一个对象，那么你可能需要使用 `UObject` 的派生类 `AActor` 或者 `UActorComponent`。\n
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:21:01.3271949 +08:00 星期二 L System.Logging.LoggingMonitor[0] #76 '00-d4f8c0da1d9bd7e2517f0f372284ab25-7526d4a6513675c8-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juai/home/2?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-d4f8c0da1d9bd7e2517f0f372284ab25-7526d4a6513675c8-00
+      ┣ 服务线程 ID：         #73
+      ┣ 执行耗时：            464ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        2
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14361506650437","title":"也就是说优秀的人大多数依靠的天赋","text":"天赋确实是一个人在某个领域取得卓越成就的重要因素之一。优秀的人往往在某些方面具备一定的天赋，这使得他们更容易在该领域中取得成功。然而，天赋并不是唯一的决定因素，还有其他方面同样重要。\n\n除了天赋，以下因素也对一个人的成功起着重要作用：\n\n**1. 努力和专注：** 优秀的人通常具备努力和专注的品质。他们为了追求自己的目标，愿意付出额外的努力，并持续专注于他们所追求的领域。努力和专注可以弥补天赋的不足，并帮助一个人在某个领域中取得突出的成就。\n\n**2. 学习和积累：** 优秀的人通常是积极学习和不断积累知识和经验的人。他们通过学习、实践和不断的反思来提高自己的能力，并在实践中不断发展自己的技能和才能。\n\n**3. 持久和毅力：** 优秀的人往往具备持久和毅力的品质。他们能够克服困难和挫折，坚持不懈地追求自己的目标。这种持久和毅力是取得成功所必需的，即使在
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:22:26.5123778 +08:00 星期二 L System.Logging.LoggingMonitor[0] #104 '00-393d2734502bb95f3d121613f1a5fad4-306f67533d02d3b8-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetMy
+      ┣ 
+      ┣ 控制器名称：                   SpecialService
+      ┣ 操作名称：                     GetMy
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: special; [action]: my
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/special/my
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-393d2734502bb95f3d121613f1a5fad4-306f67533d02d3b8-00
+      ┣ 服务线程 ID：                  #104
+      ┣ 执行耗时：                     80ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I; path=/; secure; samesite=none; httponly
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJleHAiOjE2OTk5NjgxNDUsIm5iZiI6MTY5OTM2MzM0NSwiaWF0IjoxNjk5MzYzMzQ1LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.HEkwDe63PAKUXr_EhyW81IddSsuOym9nOvXnmH8864Y
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ exp (integer)：                1699968145 (2023-11-14 21:22:25:0000(+08:00) 星期二 L)
+      ┣ nbf (integer)：                1699363345 (2023-11-07 21:22:25:0000(+08:00) 星期二 L)
+      ┣ iat (integer)：                1699363345 (2023-11-07 21:22:25:0000(+08:00) 星期二 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14966133084613","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg","coverFileId":"0"},{"id":"14966133086405","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://file
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:28:49.1793132 +08:00 星期二 L System.Logging.LoggingMonitor[0] #43 '00-9f353e19a2a6d49f90cbf131d6199ec6-9d4046d46084703d-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/u_login?s=/publish
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-9f353e19a2a6d49f90cbf131d6199ec6-9d4046d46084703d-00
+      ┣ 服务线程 ID：                   #87
+      ┣ 执行耗时：                      919ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"123456","code":"","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjZFVWxHN2MxV3hBNG9fYXgya1dJVW8zN2xoODZ0RElpemNXMk5YSFdBN28iLCJzIjo5NywibCI6NywiayI6Iml3aVRtbGoiLCJpYXQiOjE2OTkzNjM3MjksIm5iZiI6MTY5OTM2MzcyOSwiZXhwIjoxNzAwNTczMzI5LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.4i8JN8e3O3usZJ0_MEOeWHVcX8wiQpOyH1qJt3IO7gw","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjE
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:28:49.6212123 +08:00 星期二 L System.Logging.LoggingMonitor[0] #54 '00-9f2ea94087f9b0b444dbbac2c7de7482-dfd3008755248a69-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetMy
+      ┣ 
+      ┣ 控制器名称：                   SpecialService
+      ┣ 操作名称：                     GetMy
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: special; [action]: my
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/special/my
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-9f2ea94087f9b0b444dbbac2c7de7482-dfd3008755248a69-00
+      ┣ 服务线程 ID：                  #94
+      ┣ 执行耗时：                     66ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTkzNjM3MjksIm5iZiI6MTY5OTM2MzcyOSwiZXhwIjoxNjk5OTY4NTI5LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.6EUlG7c1WxA4o_ax2kWIUo37lh86tDIizcW2NXHWA7o
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ nbf (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ exp (integer)：                1699968529 (2023-11-14 21:28:49:0000(+08:00) 星期二 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14966133084613","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg","coverFileId":"0"},{"id":"14966133086405","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://file
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:29:29.5505056 +08:00 星期二 L System.Logging.LoggingMonitor[0] #54 '00-ca204ac9ad84117326572617595cb5b0-fb7d8b06e25fcd04-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-ca204ac9ad84117326572617595cb5b0-fb7d8b06e25fcd04-00
+      ┣ 服务线程 ID：         #94
+      ┣ 执行耗时：            77ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg","coverFileId":"0"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/Special/2023-08/14222051872837.jpg","coverFileId":"0"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:29:29.8012938 +08:00 星期二 L System.Logging.LoggingMonitor[0] #94 '00-7cfb7fb2cabe69f0a96fbf083213acb9-8cebb2152dff9917-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-7cfb7fb2cabe69f0a96fbf083213acb9-8cebb2152dff9917-00
+      ┣ 服务线程 ID：               #50
+      ┣ 执行耗时：                  321ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross ","cover":"http://filetest.guxin.link/article/14968137614405.png","specialId":"14288367223493","specialName":"midjourney","createTime":"2023-11-04","status":1,"createUser":{"id":"14213426327877","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg"},"viewCount":
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:29:39.1272784 +08:00 星期二 L System.Logging.LoggingMonitor[0] #54 '00-9e675a18fd3324cc9b6d0902457cd5b1-c5a5626a70ce5178-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetMy
+      ┣ 
+      ┣ 控制器名称：                   SpecialService
+      ┣ 操作名称：                     GetMy
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: special; [action]: my
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/special/my
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-9e675a18fd3324cc9b6d0902457cd5b1-c5a5626a70ce5178-00
+      ┣ 服务线程 ID：                  #50
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTkzNjM3MjksIm5iZiI6MTY5OTM2MzcyOSwiZXhwIjoxNjk5OTY4NTI5LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.6EUlG7c1WxA4o_ax2kWIUo37lh86tDIizcW2NXHWA7o
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ nbf (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ exp (integer)：                1699968529 (2023-11-14 21:28:49:0000(+08:00) 星期二 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14966133084613","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg","coverFileId":"0"},{"id":"14966133086405","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://file
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:29:55.5699443 +08:00 星期二 L System.Logging.LoggingMonitor[0] #87 '00-56406d4cbe85928ce5109ce6b712b304-1c7f91fd4d495468-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetMy
+      ┣ 
+      ┣ 控制器名称：                   SpecialService
+      ┣ 操作名称：                     GetMy
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: special; [action]: my
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/special/my
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-56406d4cbe85928ce5109ce6b712b304-1c7f91fd4d495468-00
+      ┣ 服务线程 ID：                  #43
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTkzNjM3MjksIm5iZiI6MTY5OTM2MzcyOSwiZXhwIjoxNjk5OTY4NTI5LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.6EUlG7c1WxA4o_ax2kWIUo37lh86tDIizcW2NXHWA7o
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ nbf (integer)：                1699363729 (2023-11-07 21:28:49:0000(+08:00) 星期二 L)
+      ┣ exp (integer)：                1699968529 (2023-11-14 21:28:49:0000(+08:00) 星期二 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14966133084613","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg","coverFileId":"0"},{"id":"14966133086405","title":"再来一个专栏吧。。。","text":"vvvvvvvvvvvvvvvvvvvvvvvd2131你还发是3反对法4而大师傅士大呃呃夫水水水水烦烦烦付费3333威威仍然哇哇哇哇哇哇哇哇发的地方额付费2223信息传递纷纷我当时333344411233215555656664","cover":"http://file
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:30:01.5288119 +08:00 星期二 L System.Logging.LoggingMonitor[0] #54 '00-376230c82cb3a1f6e936074a7e06e9ea-4e36f431135328ec-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juai/home/1?size=10
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-376230c82cb3a1f6e936074a7e06e9ea-4e36f431135328ec-00
+      ┣ 服务线程 ID：         #62
+      ┣ 执行耗时：            361ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14958263896133","title":"测试以下吧111111","text":"The following is a guide to setasasdddd3\n\nup everything for using Quivr locally:\n\nRemove any existing data from the postgres database:\n\nsupabase/docker $ docker compose down -v\n\nsupabase/docker $ rm -rf volumes/db/data/\n\nsupabase/docker $ docker compose up -d\n\nChange the vector dimensions in the necessary Quivr SQL files:\n\nReplace all occurrences of 1536 by 768, in Quivr's scrip
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-07 21:30:31.4273000 +08:00 星期二 L System.Logging.LoggingMonitor[0] #50 '00-8c55e4df473e4016fad9cd744898d5d2-bcf67197fd0cc588-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetDetail
+      ┣ 
+      ┣ 控制器名称：          ArticleService
+      ┣ 操作名称：            GetDetail
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: article; [action]: detail
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/article/detail/14376775403077
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-8c55e4df473e4016fad9cd744898d5d2-bcf67197fd0cc588-00
+      ┣ 服务线程 ID：         #43
+      ┣ 执行耗时：            89ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              .AspNetCore.Cookies=CfDJ8N9QyIVY3xNIt_WzWdIIlmjZArYILsbmbO61_kMkKARmBykiCVQUv-SdlQZQ3b5SCCDFw6NjmcfWab7WIseMckePZDFot6B8jZehfe3J9ZvKpSlti1b9L9G3R5nx3bGHxNx7fS97rleo61c_qeAwUHptA14jP7QnEmDGS0UuE-GR7LogLDWrE-BJ2frZVG890Y_xbf0wcD5okUER05wkqfcE5NqCHOZ-RrTIEirw-5qo9XaIu46CMgmAsel_4iXa7rZy8NT6GIPVtTl6OvjO_5RaFkwCUyxl0DilA8wQF4FWaP7V11qc94sEPTDX3ckB83N2NA5YyDQaGRis9-5xowk5vCNb6i-8wr71PIA-vegnNuihJ25w-Nd0fpYBkrL_OzXmRuSgV2ZS6T-Tkxc1E97Bg5-jav7DuI5YmniYzZnTWdKFqJj8FBOLBVvF9N7mcHOvbT9zQxlH-7RRkxIItY2KwIwTktrpSbpNWhVzsb51_DcXZmXaAzp4QO4-l8HHVDAxYZ-P4Mt_kNHAd6lv8fErLnXCr4av5oQsZYBRk75ERPhHNBRyBVsjrD7Djt0Bk9QHsAm-L3mpAli1Zlt30_pZeV6bCY0QeFfJBNQqk-xBRQM-w3-miLWepJ3U2H6f89Q_oWs9_t4rT7gQPagU4Epgm6cuMttEi8db2AcraHXVsKnHmWEIPydQy28bq122H-XH5ii_XGzB_7LN_AC4qlE9eyHqmiePcZcBbgdVframBvH0jlT2UukBY1cU7FHmebocNeYOSBnxF0uk5L1rGscPTAPTglqXOqUxu_Jx5zQBuYn5eQOzi3NnDD013_6Rptkk3-YCmCm6oOggBRtmv63ko71kdZ2lmqMmi1khgmt9mdfD3aRlu1W43is5ub8ypL5qtLCbNAR8B6LhFXDw_pcbfJWPeisu8LVpJAowulMrloLyhyJ3l8kosW75hJRRoFXrOHkooR4eUeeQWh4w0vfZDbpCrajh1fDFrRSOwxVaUu_1v8DJUtvG_6xy0J_kRVU1k-E7Fv2YM8En3rhxwqbQoPxbM3qwivCvE9WfHyUZAicQsTac8p72RrZzIHvbREJqcLRG6sG2hopfa_czL4I
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ id (Int64)：          14376775403077
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ArticleOutputHtml>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":{"html":"<blockquote style=\"text-align: start;\">算力时代是指以数据为新生产资料，算力为新生产力，算法为新生产关系的数字经济时代。在算力时代，网络无所不达、算力无所不在、智能无所不及，谁拥有了强大的算力，谁就拥有了决胜未来的密码。</blockquote><h5 style=\"text-align: start; line-height: 1.5;\"></h5><p><img src=\"http://appui.guxin.link/Upload/2023/09/14376771051845.png\" alt=\"14376771051845\" data-href=\"http://appui.guxin.link/Upload/2023/09/14376771051845.png\" style=\"\"/></p><h5 style=\"text-align: start; line-height: 1.5;\"><str
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

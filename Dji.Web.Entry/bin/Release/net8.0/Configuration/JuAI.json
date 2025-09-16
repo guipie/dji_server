@@ -1,0 +1,44 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+  "ChatGPT": {
+    "ApiKey": "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",
+    "BaseDomain": "http://3.96.174.56:3003/",
+    "Organization": "Your Organization Id goes here (optional)"
+  },
+  "AzureOpenAIService": {
+    "ApiKey": "f8f27b5ca89d42dbaa6b3a71d024416e", //How can I get an app key? https://azure.microsoft.com/en-us/products/cognitive-services/openai-service
+    "DeploymentId": "juai_azure", // marked as 2 in the above screenshot
+    "ResourceName": "juai", // marked as 1 in the above screenshot
+    "ProviderType": "Azure", //Important, don't forget to add this if you want to use Azure OpenAI
+    "ApiVersion": "2022-12-01" //optional
+  },
+  // API 申请：https://xinghuo.xfyun.cn/
+  "XunFei": {
+    "AppId": "6960b4c6",
+    "ApiKey": "bcdeb54955f6389dc07789da3eba279b",
+    "ApiSecret": "ZmMyOTA2Y2EwMmI0MGUwNmNhZGM3YjIw"
+  },
+  // 百度文心一言 申请：https://cloud.baidu.com/product/wenxinworkshop
+  "BaiDu": {
+    "ApiKey": "jrQe4DBIK1W3PCvhsGUMAEnM",
+    "ApiSecret": "Q9hp7nvaOoM1PDpYYPBqNTzkmGiYPNEA"
+  },
+  // 阿里巴巴 千问 申请：https://help.aliyun.com/zh/dashscope/developer-reference/api-details
+  "Alibaba": {
+    "DashscopeKey": "sk-32f48c79b9c34ba9be5c87ed1b64a254"
+  },
+  // 腾讯混元 申请：https://cloud.tencent.com/document/product/1729/101836
+  "Tencent": {
+    "SecretId": "AKIDMcgXPSL0ReeS3QYjmbBcxOfiPvEI9nHX",
+    "SecretKey": "71iDXgfTEn8GDxXu79xXt54pKa4KMAl9"
+  },
+  //lepton.ai 的模型用来为 艺术字、艺术二维码 提供服务 申请：https://www.lepton.ai/
+  "Leptonai": {
+    "Servers": [ "https://aiqr.lepton.run/generate" ],
+    "Keys": [ "b7da2s9yx2z46ksb609ladmakrc9tv21" ]
+  },
+  "Midjourney": {
+    "ApiDomain": "https://midjourney-proxy-production-8bcc.up.railway.app",
+    "NotifyHookUrl": "http://guxin.link:5006/app/api/mid/notify/hook"
+  }
+}

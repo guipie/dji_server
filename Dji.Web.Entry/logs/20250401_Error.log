@@ -1,0 +1,355 @@
+fail: 2025-04-01 16:28:58.5959413 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      Schedule hosted service preload failed, and a total of <0> schedulers are appended.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.Any()
+         at SqlSugar.SimpleClient`1.IsAny(Expression`1 whereExpression)
+         at Admin.NET.Core.Service.DbJobPersistence.Preload() in D:\work\chenyanyi\server\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 38
+         at Furion.Schedule.SchedulerFactory.Preload() in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 16:32:31.4563778 +08:00 星期二 L System.Logging.LoggingMonitor[0] #21 '00-f62ba78c45aaba0664c4d9ae4fe99735-608116da39e07fcd-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://192.168.31.39:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         192.168.31.39
+      ┣ 服务端 IP 地址：         192.168.31.39
+      ┣ 客户端连接 ID：          00-f62ba78c45aaba0664c4d9ae4fe99735-608116da39e07fcd-00
+      ┣ 服务线程 ID：            #21
+      ┣ 执行耗时：               66255ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   192.168.31.39:5005
+      ┣ User-Agent：             Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQxNTA1NjcyLCJuYmYiOjE3NDE1MDU2NzIsImV4cCI6MTc0MjExMDQ3MiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.K9M0cwTbtrkEs3TMhfmbTjQQ6igIfGca1bOi_ZU9tD4
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   System.AggregateException
+      ┣ 消息：                   One or more errors occurred. (由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)
+      ┣ 错误堆栈：               at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.AggregateException: One or more errors occurred. (由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at System.Net.Sockets.TcpClient.CompleteConnectAsync(Task task)
+         at NewLife.Caching.RedisClient.GetStreamAsync(Boolean create)
+         at NewLife.Caching.RedisClient.ExecuteCommandAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 16:49:16.5698538 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      Schedule hosted service preload failed, and a total of <0> schedulers are appended.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.Any()
+         at SqlSugar.SimpleClient`1.IsAny(Expression`1 whereExpression)
+         at Admin.NET.Core.Service.DbJobPersistence.Preload() in D:\work\chenyanyi\server\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 38
+         at Furion.Schedule.SchedulerFactory.Preload() in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 16:56:33.7193452 +08:00 星期二 L System.Logging.LoggingMonitor[0] #23 '00-3b1410f6528e7659bd74469c1eb1408d-c36ed5ec52a2936c-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://192.168.31.39:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         192.168.31.39
+      ┣ 服务端 IP 地址：         192.168.31.39
+      ┣ 客户端连接 ID：          00-3b1410f6528e7659bd74469c1eb1408d-c36ed5ec52a2936c-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               66478ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   192.168.31.39:5005
+      ┣ User-Agent：             Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQxNTA1NjcyLCJuYmYiOjE3NDE1MDU2NzIsImV4cCI6MTc0MjExMDQ3MiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.K9M0cwTbtrkEs3TMhfmbTjQQ6igIfGca1bOi_ZU9tD4
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   System.AggregateException
+      ┣ 消息：                   One or more errors occurred. (由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)
+      ┣ 错误堆栈：               at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.AggregateException: One or more errors occurred. (由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at System.Net.Sockets.TcpClient.CompleteConnectAsync(Task task)
+         at NewLife.Caching.RedisClient.GetStreamAsync(Boolean create)
+         at NewLife.Caching.RedisClient.ExecuteCommandAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 17:09:27.7415559 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      Schedule hosted service preload failed, and a total of <0> schedulers are appended.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.Any()
+         at SqlSugar.SimpleClient`1.IsAny(Expression`1 whereExpression)
+         at Admin.NET.Core.Service.DbJobPersistence.Preload() in D:\work\chenyanyi\server\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 38
+         at Furion.Schedule.SchedulerFactory.Preload() in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 17:22:38.0165594 +08:00 星期二 L System.Logging.LoggingMonitor[0] #24 '00-6b2c062171a754cde74ddf51550b951d-e7d320dfc09cb055-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://192.168.31.39:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         192.168.31.39
+      ┣ 服务端 IP 地址：         192.168.31.39
+      ┣ 客户端连接 ID：          00-6b2c062171a754cde74ddf51550b951d-e7d320dfc09cb055-00
+      ┣ 服务线程 ID：            #24
+      ┣ 执行耗时：               3483ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   192.168.31.39:5005
+      ┣ User-Agent：             Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQxNTA1NjcyLCJuYmYiOjE3NDE1MDU2NzIsImV4cCI6MTc0MjExMDQ3MiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.K9M0cwTbtrkEs3TMhfmbTjQQ6igIfGca1bOi_ZU9tD4
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   System.AggregateException
+      ┣ 消息：                   One or more errors occurred. (ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?)
+      ┣ 错误堆栈：               at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method55(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.AggregateException: One or more errors occurred. (ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?)
+       ---> NewLife.Caching.RedisException: ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?
+         at NewLife.Caching.RedisClient.GetResponseAsync(Stream ns, Int32 count, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteCommandAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync[TResult](String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync[TResult](String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Auth(String username, String password)
+         at NewLife.Caching.RedisClient.CheckLogin(String cmd)
+         at NewLife.Caching.RedisClient.ExecuteCommandAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         at NewLife.Caching.RedisClient.ExecuteAsync(String cmd, Object[] args, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+         at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.<>c.<GetInfo>b__109_1(RedisClient rds)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.Redis.GetInfo(Boolean all)
+         at NewLife.Caching.Redis.get_Info()
+         at NewLife.Caching.FullRedis.InitCluster()
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.Redis.ContainsKey(String key)
+         at Admin.NET.Core.Service.SysCacheService.ExistKey(String key) in D:\work\chenyanyi\server\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 100
+         at Admin.NET.Core.JuAI.AiModelService.GetModels() in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AICommon\AiModelService.cs:line 21
+         at lambda_method55(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-04-01 17:53:29.6283009 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      Schedule hosted service preload failed, and a total of <0> schedulers are appended.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unknown database 'juai.admin'DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.Any()
+         at SqlSugar.SimpleClient`1.IsAny(Expression`1 whereExpression)
+         at Admin.NET.Core.Service.DbJobPersistence.Preload() in D:\work\chenyanyi\server\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 38
+         at Furion.Schedule.SchedulerFactory.Preload() in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

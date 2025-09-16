@@ -1,0 +1,367 @@
+info: 2023-12-18 00:15:17.4211437 +08:00 星期一 L System.Logging.LoggingMonitor[0] #64 '00-0ad946f9a5904da41fd385bbac720d89-6001e9ed5ecaff2f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：             SpecialService
+      ┣ 操作名称：               GetRecommand
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             node
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-0ad946f9a5904da41fd385bbac720d89-6001e9ed5ecaff2f-00
+      ┣ 服务线程 ID：            #72
+      ┣ 执行耗时：               1045ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             node
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg","coverFileId":"0"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/Special/2023-08/14222051872837.jpg","coverFileId":"0"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-12-18 00:15:17.7558853 +08:00 星期一 L System.Logging.LoggingMonitor[0] #73 '00-957067e1212cd532eaebda444dd92933-9d938e00a7576080-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                node
+      ┣ 客户端区域语言：            *
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-957067e1212cd532eaebda444dd92933-9d938e00a7576080-00
+      ┣ 服务线程 ID：               #73
+      ┣ 执行耗时：                  1410ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                 .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                node
+      ┣ Accept-Encoding：           gzip, deflate
+      ┣ Accept-Language：           *
+      ┣ client：                    web
+      ┣ sec-fetch-mode：            cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross ","cover":"http://filetest.guxin.link/article/14968137614405.png","specialId":"14288367223493","specialName":"midjourney","createTime":"2023-11-04","status":1,"createUser":{"id":"14213426327877","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png"},"viewCount":
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-12-18 00:15:36.0069902 +08:00 星期一 L System.Logging.LoggingMonitor[0] #62 '00-94fb115af3a0466a320872c5e87fcb01-df14263e084f99da-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：                SpecialService
+      ┣ 操作名称：                  GetRecommand
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-94fb115af3a0466a320872c5e87fcb01-df14263e084f99da-00
+      ┣ 服务线程 ID：               #88
+      ┣ 执行耗时：                  397ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                 .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Origin：                    http://localhost:3000
+      ┣ Referer：                   http://localhost:3000/
+      ┣ sec-ch-ua：                 "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ client：                    web
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ page (Int32)：              1
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg","coverFileId":"0"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/Special/2023-08/14222051872837.jpg","coverFileId":"0"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-12-18 00:15:36.2677805 +08:00 星期一 L System.Logging.LoggingMonitor[0] #88 '00-df6407d65b95b79e5b5e3f17dfb8ef1e-dfb6ca6a08c1512b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-df6407d65b95b79e5b5e3f17dfb8ef1e-dfb6ca6a08c1512b-00
+      ┣ 服务线程 ID：               #80
+      ┣ 执行耗时：                  665ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                 .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Origin：                    http://localhost:3000
+      ┣ Referer：                   http://localhost:3000/
+      ┣ sec-ch-ua：                 "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ client：                    web
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross ","cover":"http://filetest.guxin.link/article/14968137614405.png","specialId":"14288367223493","specialName":"midjourney","createTime":"2023-11-04","status":1,"createUser":{"id":"14213426327877","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png"},"viewCount":
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-12-18 19:08:25.2125028 +08:00 星期一 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-12-18 19:08:25.2875613 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-12-18 19:08:25.2900074 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-12-18 19:08:26.8692538 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-12-18 19:08:26.8707750 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-12-18 19:08:26.8727555 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-12-18 19:08:26.8738695 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-12-18 19:08:26.8762045 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2023-12-18 19:08:26.8773424 +08:00 星期一 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2023-12-18 19:09:05.0499293 +08:00 星期一 L System.Logging.LoggingMonitor[0] #21 '00-1cbf2135e2d745e5d571244156187106-c3ae7a50268594bb-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                node
+      ┣ 客户端区域语言：            *
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-1cbf2135e2d745e5d571244156187106-c3ae7a50268594bb-00
+      ┣ 服务线程 ID：               #23
+      ┣ 执行耗时：                  850ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                 .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                node
+      ┣ Accept-Encoding：           gzip, deflate
+      ┣ Accept-Language：           *
+      ┣ client：                    web
+      ┣ sec-fetch-mode：            cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross ","cover":"http://filetest.guxin.link/article/14968137614405.png","specialId":"14288367223493","specialName":"midjourney","createTime":"2023-11-04","status":1,"createUser":{"id":"14213426327877","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png"},"viewCount":
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-12-18 19:09:05.0442806 +08:00 星期一 L System.Logging.LoggingMonitor[0] #26 '00-182b065691ff8d35fa64a0418c4e82c0-6a8cac964b678722-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：             SpecialService
+      ┣ 操作名称：               GetRecommand
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             node
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-182b065691ff8d35fa64a0418c4e82c0-6a8cac964b678722-00
+      ┣ 服务线程 ID：            #21
+      ┣ 执行耗时：               793ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             node
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg","coverFileId":"0"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/Special/2023-08/14222051872837.jpg","coverFileId":"0"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

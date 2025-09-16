@@ -1,0 +1,42 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "SpecificationDocumentSettings": {
+    "DocumentTitle": "聚AI后端接口",
+    "GroupOpenApiInfos": [
+      {
+        "Group": "Default",
+        "Title": "大疆后端管理接口",
+        "Description": "聚AI，您的生活工作的必备助手。<br/><a href='https://https://juai.link/'>https://https://juai.link</a>",
+        "Version": "1.0.0",
+        "TermsOfService": "https://dotnetchina.gitee.io/furion/",
+        "Contact": {
+          "Name": "juai.link",
+          "Email": "15100305@qq.com",
+          "Url": "https://juai.link"
+        }
+      },
+      {
+        "Group": "All Groups",
+        "Title": "所有接口",
+        "Description": "聚AI，您的生活工作的必备助手。<br/><a href='https://https://juai.link/'>https://https://juai.link</a>",
+        "Version": "1.0.0",
+        "TermsOfService": "https://juai.link",
+        "Contact": {
+          "Name": "juai.link",
+          "Email": "15100305@qq.com",
+          "Url": "https://juai.link"
+        }
+      }
+    ],
+    "DefaultGroupName": "Default", // 默认分组名
+    "DocExpansionState": "List", // List、Full、None
+    "EnableAllGroups": true,
+    "LoginInfo": {
+      "Enabled": true, // 是否开启Swagger登录
+      "CheckUrl": "/swagger/checkUrl",
+      "SubmitUrl": "/swagger/submitUrl"
+    },
+    "EnumToNumber": true // 枚举类型生成值类型
+  }
+}

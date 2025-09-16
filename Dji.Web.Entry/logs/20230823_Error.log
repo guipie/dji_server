@@ -1,0 +1,78 @@
+fail: 2023-08-23 22:42:28.8641992 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #8
+      [Microsoft.Extensions.Logging.Abstractions.dll] Action<ILogger, Exception> Microsoft.Extensions.Logging.LoggerMessage.Define(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions options)+(ILogger logger, T1 arg1, Exception exception) => { }
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-23 22:44:05.0181062 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #8
+      [Microsoft.Extensions.Logging.Abstractions.dll] Action<ILogger, Exception> Microsoft.Extensions.Logging.LoggerMessage.Define(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions options)+(ILogger logger, T1 arg1, Exception exception) => { }
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-23 22:48:30.6965997 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #42
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-23 22:49:16.6072630 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #39
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-23 23:00:09.5828973 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #49
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-23 23:14:35.7335853 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #39
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 40
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,586 @@
+info: 2023-09-28 14:12:49.9627437 +08:00 星期四 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-09-28 14:12:50.1015769 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2023-09-28 14:12:50.1077069 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2023-09-28 14:12:50.9153108 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-09-28 14:12:50.9182635 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-09-28 14:12:50.9222954 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-09-28 14:12:50.9244619 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-09-28 14:12:58.9949232 +08:00 星期四 L System.Logging.LoggingMonitor[0] #18 '00-1c30ea33cbf9401233a3f01c37776921-0ab915507b39ecbf-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-1c30ea33cbf9401233a3f01c37776921-0ab915507b39ecbf-00
+      ┣ 服务线程 ID：      #18
+      ┣ 执行耗时：         14ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:13:01.7578909 +08:00 星期四 L System.Logging.LoggingMonitor[0] #28 '00-525c1214dac900c5fa5561cbcebb437d-7d5bebab65e08f8a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerSubmitUrl
+      ┣ 
+      ┣ 控制器名称：                      SysAuthService
+      ┣ 操作名称：                        SwaggerSubmitUrl
+      ┣ 显示名称：                        Swagger登录提交
+      ┣ 路由信息：                        [area]: ; [controller]: sysAuth; [action]: swaggerSubmitUrl
+      ┣ 请求方式：                        POST
+      ┣ 请求地址：                        http://localhost:5005/swagger/submitUrl
+      ┣ 来源地址：                        http://localhost:5005/index.html
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  0.0.0.1
+      ┣ 服务端 IP 地址：                  0.0.0.1
+      ┣ 客户端连接 ID：                   00-525c1214dac900c5fa5561cbcebb437d-7d5bebab65e08f8a-00
+      ┣ 服务线程 ID：                     #8
+      ┣ 执行耗时：                        294ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19044
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                       .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ 
+      ┣ auth (SpecificationAuth)：        {"userName":"admin","password":"123456"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Int32>
+      ┣ 最终类型：                        System.Int32
+      ┣ 最终返回值：                      401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:13:07.6929284 +08:00 星期四 L System.Logging.LoggingMonitor[0] #6 '00-84d824cb474ffcfdeea1eadb8677caac-8a642ec74652b8dd-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerSubmitUrl
+      ┣ 
+      ┣ 控制器名称：                      SysAuthService
+      ┣ 操作名称：                        SwaggerSubmitUrl
+      ┣ 显示名称：                        Swagger登录提交
+      ┣ 路由信息：                        [area]: ; [controller]: sysAuth; [action]: swaggerSubmitUrl
+      ┣ 请求方式：                        POST
+      ┣ 请求地址：                        http://localhost:5005/swagger/submitUrl
+      ┣ 来源地址：                        http://localhost:5005/index.html
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  0.0.0.1
+      ┣ 服务端 IP 地址：                  0.0.0.1
+      ┣ 客户端连接 ID：                   00-84d824cb474ffcfdeea1eadb8677caac-8a642ec74652b8dd-00
+      ┣ 服务线程 ID：                     #5
+      ┣ 执行耗时：                        129ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19044
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                       .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ 
+      ┣ auth (SpecificationAuth)：        {"userName":"admin","password":"123456"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Int32>
+      ┣ 最终类型：                        System.Int32
+      ┣ 最终返回值：                      401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:13:30.4250942 +08:00 星期四 L System.Logging.LoggingMonitor[0] #28 '00-2a8eccc3fff905b995c4aebac95c5224-bf0df1ee30d9ca17-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerSubmitUrl
+      ┣ 
+      ┣ 控制器名称：                      SysAuthService
+      ┣ 操作名称：                        SwaggerSubmitUrl
+      ┣ 显示名称：                        Swagger登录提交
+      ┣ 路由信息：                        [area]: ; [controller]: sysAuth; [action]: swaggerSubmitUrl
+      ┣ 请求方式：                        POST
+      ┣ 请求地址：                        http://localhost:5005/swagger/submitUrl
+      ┣ 来源地址：                        http://localhost:5005/index.html
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  0.0.0.1
+      ┣ 服务端 IP 地址：                  0.0.0.1
+      ┣ 客户端连接 ID：                   00-2a8eccc3fff905b995c4aebac95c5224-bf0df1ee30d9ca17-00
+      ┣ 服务线程 ID：                     #31
+      ┣ 执行耗时：                        173ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19044
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                       .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ 
+      ┣ auth (SpecificationAuth)：        {"userName":"superadmin","password":"123456"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Int32>
+      ┣ 最终类型：                        System.Int32
+      ┣ 最终返回值：                      401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:15:02.2344437 +08:00 星期四 L System.Logging.LoggingMonitor[0] #28 '00-8c1f1b7f6fc8caf6df2ceea1a2f7cb5e-111b5c2b4162ec2b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerSubmitUrl
+      ┣ 
+      ┣ 控制器名称：                      SysAuthService
+      ┣ 操作名称：                        SwaggerSubmitUrl
+      ┣ 显示名称：                        Swagger登录提交
+      ┣ 路由信息：                        [area]: ; [controller]: sysAuth; [action]: swaggerSubmitUrl
+      ┣ 请求方式：                        POST
+      ┣ 请求地址：                        http://localhost:5005/swagger/submitUrl
+      ┣ 来源地址：                        http://localhost:5005/index.html
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  0.0.0.1
+      ┣ 服务端 IP 地址：                  0.0.0.1
+      ┣ 客户端连接 ID：                   00-8c1f1b7f6fc8caf6df2ceea1a2f7cb5e-111b5c2b4162ec2b-00
+      ┣ 服务线程 ID：                     #22
+      ┣ 执行耗时：                        140ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19044
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                       .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Development
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ 
+      ┣ auth (SpecificationAuth)：        {"userName":"admin","password":"123456"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Int32>
+      ┣ 最终类型：                        System.Int32
+      ┣ 最终返回值：                      401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:35:38.0319484 +08:00 星期四 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-09-28 14:35:38.1161697 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2023-09-28 14:35:38.1225902 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2023-09-28 14:35:38.6116407 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-09-28 14:35:38.6504228 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-09-28 14:35:38.6566173 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-09-28 14:35:38.6610261 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-09-28 14:35:44.9161208 +08:00 星期四 L System.Logging.LoggingMonitor[0] #6 '00-1f2e2c47c47569437486bf048a9c0171-923d1f0ca3278089-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-1f2e2c47c47569437486bf048a9c0171-923d1f0ca3278089-00
+      ┣ 服务线程 ID：      #6
+      ┣ 执行耗时：         16ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:02.9502134 +08:00 星期四 L System.Logging.LoggingMonitor[0] #30 '00-b51ced9e59e032f2cea4e61f72ed5ff8-5e0d0011d78696b4-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:8888/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-cn
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-b51ced9e59e032f2cea4e61f72ed5ff8-5e0d0011d78696b4-00
+      ┣ 服务线程 ID：               #6
+      ┣ 执行耗时：                  336ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"14555856377797","code":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":400,"type":"error","message":"[D0008] 验证码错误","result":null,"extras":null,"time":"2023-09-28T14:36:02.9265616+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                    D0008
+      ┣ 业务码（原）：              D0008
+      ┣ 业务消息：                  [D0008] 验证码错误
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:17.5153995 +08:00 星期四 L System.Logging.LoggingMonitor[0] #22 '00-bb11a94602af32d35c7ea791362d7e37-c5341ebcf1ba4aff-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.Login
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  Login
+      ┣ 显示名称：                  账号密码登录
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: login
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/api/sysAuth/login
+      ┣ 来源地址：                  http://localhost:8888/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-cn
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-bb11a94602af32d35c7ea791362d7e37-c5341ebcf1ba4aff-00
+      ┣ 服务线程 ID：               #14
+      ┣ 执行耗时：                  479ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              application/json-patch+json
+      ┣ 
+      ┣ input (LoginInput)：        {"account":"superadmin","password":"123456","codeId":"14555874574917","code":"44"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginOutput>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NTg4Mjk3NywibmJmIjoxNjk1ODgyOTc3LCJleHAiOjE2OTY0ODc3NzcsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.xeIJKSLtYOcmoiYsR6uStJntyG3EWxpgyNZyM8l_HXc","refreshToken":"eyJhbG
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:18.6322319 +08:00 星期四 L System.Logging.LoggingMonitor[0] #30 '00-b16d70b1ef9c8e869f00aa82c02a9e41-ddb54e575c5d5748-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.GetUserInfo
+      ┣ 
+      ┣ 控制器名称：                   SysAuthService
+      ┣ 操作名称：                     GetUserInfo
+      ┣ 显示名称：                     获取登录账号
+      ┣ 路由信息：                     [area]: ; [controller]: sysAuth; [action]: userInfo
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/sysAuth/userInfo
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-cn
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-b16d70b1ef9c8e869f00aa82c02a9e41-ddb54e575c5d5748-00
+      ┣ 服务线程 ID：                  #6
+      ┣ 执行耗时：                     263ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NTg4Mjk3NywibmJmIjoxNjk1ODgyOTc3LCJleHAiOjE2OTY0ODc3NzcsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.xeIJKSLtYOcmoiYsR6uStJntyG3EWxpgyNZyM8l_HXc
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1696487777 (2023-10-05 14:36:17:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.Service.LoginUserOutput>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"superadmin","realName":"超级管理员","avatar":null,"introduction":null,"address":null,"signature":null,"orgId":"0","orgName":null,"orgType":null,"posName":null,"buttons":["sysUser:page","sysUser:update","sysUser:add","sysUser:delete","sysUser:detail","sysUser:grantRole","sysUser:resetPwd","sysUser:setStatus","sysOnlineUser:forceOffline","sysRole:page","sysRole:update","sysRole:add","sysRole:delete","sysRole:grantMenu","sysRole:grantDataSco
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:21.0458054 +08:00 星期四 L System.Logging.LoggingMonitor[0] #6 '00-85a4f0ea3fec3ad3f8552a6b7f72b291-327f8a2b3fc4d0a2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysConstService.GetList
+      ┣ 
+      ┣ 控制器名称：       SysConstService
+      ┣ 操作名称：         GetList
+      ┣ 显示名称：         获取所有常量列表
+      ┣ 路由信息：         [area]: ; [controller]: sysConst; [action]: list
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/sysConst/list
+      ┣ 来源地址：         http://localhost:8888/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-cn
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-85a4f0ea3fec3ad3f8552a6b7f72b291-327f8a2b3fc4d0a2-00
+      ┣ 服务线程 ID：      #6
+      ┣ 执行耗时：         1828ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.ConstOutput>>
+      ┣ 最终类型：         Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：       {"code":200,"type":"success","message":"","result":[{"name":"平台配置","code":"CommonConst","data":{"result":[{"name":"SysSensitiveDetection","code":false,"data":null},{"name":"SysDemoEnv","code":"sys_demo","data":null},{"name":"SysPassword","code":"sys_password","data":null},{"name":"SysSecondVer","code":"sys_second_ver","data":null},{"name":"SysCaptcha","code":"sys_captcha","data":null},{"name":"SysWatermark","code":"sys_watermark","data":null},{"name":"SysOpLog","code":"sys_oplog","data":null},{"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:21.2378797 +08:00 星期四 L System.Logging.LoggingMonitor[0] #22 '00-6f2b3e63b4d4bb2baac3ae9fc8875fc6-85b1c56eb4a4fdd4-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysMenuService.GetLoginMenuTree
+      ┣ 
+      ┣ 控制器名称：                   SysMenuService
+      ┣ 操作名称：                     GetLoginMenuTree
+      ┣ 显示名称：                     获取登录菜单树
+      ┣ 路由信息：                     [area]: ; [controller]: sysMenu; [action]: loginMenuTree
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/sysMenu/loginMenuTree
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-cn
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-6f2b3e63b4d4bb2baac3ae9fc8875fc6-85b1c56eb4a4fdd4-00
+      ┣ 服务线程 ID：                  #6
+      ┣ 执行耗时：                     109ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NTg4Mjk3NywibmJmIjoxNjk1ODgyOTc3LCJleHAiOjE2OTY0ODc3NzcsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.xeIJKSLtYOcmoiYsR6uStJntyG3EWxpgyNZyM8l_HXc
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1696487777 (2023-10-05 14:36:17:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.Service.MenuOutput>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"1300000000101","pid":"0","type":1,"name":"dashboard","path":"/dashboard","component":"Layout","permission":null,"redirect":null,"orderNo":0,"status":1,"remark":null,"meta":{"title":"工作台","icon":"ele-HomeFilled","isIframe":false,"isLink":null,"isHide":false,"isKeepAlive":true,"isAffix":false},"children":[{"id":"1300000000111","pid":"1300000000101","type":2,"name":"home","path":"/dashboard/home","component":"/home/index","permission":null,
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-09-28 14:36:23.2794190 +08:00 星期四 L System.Logging.LoggingMonitor[0] #16 '00-06ba16c66232e3e2db606e49b702de55-b81fe16131b5bf4e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysNoticeService.GetUnReadList
+      ┣ 
+      ┣ 控制器名称：                   SysNoticeService
+      ┣ 操作名称：                     GetUnReadList
+      ┣ 显示名称：                     获取未读的通知公告
+      ┣ 路由信息：                     [area]: ; [controller]: sysNotice; [action]: unReadList
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/api/sysNotice/unReadList
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-cn
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-06ba16c66232e3e2db606e49b702de55-b81fe16131b5bf4e-00
+      ┣ 服务线程 ID：                  #6
+      ┣ 执行耗时：                     67ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NTg4Mjk3NywibmJmIjoxNjk1ODgyOTc3LCJleHAiOjE2OTY0ODc3NzcsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.xeIJKSLtYOcmoiYsR6uStJntyG3EWxpgyNZyM8l_HXc
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ nbf (integer)：                1695882977 (2023-09-28 14:36:17:0000(+08:00) 星期四 L)
+      ┣ exp (integer)：                1696487777 (2023-10-05 14:36:17:0000(+08:00) 星期四 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.SysNotice>>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[],"extras":null,"time":"2023-09-28T14:36:23.2735352+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

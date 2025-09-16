@@ -1,0 +1,636 @@
+fail: 2023-11-25 16:52:04.9717159 +08:00 星期六 L System.Logging.LoggingMonitor[0] #25 '00-595df33ac8b2d7b6fc933497b8abfe4d-619b3ab3399218cf-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：                FeedbackService
+      ┣ 操作名称：                  GetFeedbacks
+      ┣ 显示名称：                  反馈列表
+      ┣ 路由信息：                  [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-595df33ac8b2d7b6fc933497b8abfe4d-619b3ab3399218cf-00
+      ┣ 服务线程 ID：               #27
+      ┣ 执行耗时：                  868ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                 .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjMyNjIzODUyMjI5LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ0IiwiTmlja05hbWUiOiLlroflrpnlpKfniIbngrgiLCJBY2NvdW50VHlwZSI6MCwiaWF0IjoxNzAwNzQzODYzLCJuYmYiOjE3MDA3NDM4NjMsImV4cCI6MTcwMTM0ODY2MywiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.4SqL2oqiF2q8NFZEnFe-BHL6BK79QYezJ_D4pccb6Xs
+      ┣ Origin：                    http://localhost:3000
+      ┣ Referer：                   http://localhost:3000/
+      ┣ sec-ch-ua：                 "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ client：                    web
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-site
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ page (Int32)：              1
+      ┣ size (Int32)：              10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.Reflection.TargetInvocationException
+      ┣ 消息：                      Exception has been thrown by the target of an invocation.
+      ┣ 错误堆栈：                  at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at SqlSugar.QueryableProvider`1.SelectNavQuery[TResult](List`1 result, List`1 managers)
+         at SqlSugar.QueryableProvider`1._InitNavigat[TResult](List`1 result)
+         at SqlSugar.QueryableProvider`1.<>c__DisplayClass196_0`1.<_InitNavigatAsync>b__0()
+         at System.Threading.Tasks.Task.InnerInvoke()
+         at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+         at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at SqlSugar.QueryableProvider`1._InitNavigatAsync[TResult](List`1 result)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method177(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+       ---> MySqlConnector.MySqlException (0x80004005): Table 'juai.app.sys_file' doesn't exist
+         at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+         at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+         at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+         at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+         at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+         at MySqlConnector.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in /_/src/MySqlConnector/MySqlCommand.cs:line 278
+         at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.<>c__29`2.<_Includes>b__29_0(ISugarQueryable`1 it)
+         at SqlSugar.NavigatManager`1.ManyToMany(List`1 list, Func`2 selector, EntityInfo listItemEntity, PropertyInfo navObjectNamePropety, EntityColumnInfo navObjectNameColumnInfo)
+         at SqlSugar.NavigatManager`1.<>c__DisplayClass62_0.<ExecuteByLay>b__5(List`1 pageList)
+         at SqlSugar.ContextMethods.PageEach[T](IEnumerable`1 pageItems, Int32 pageSize, Action`1 action)
+         at SqlSugar.NavigatManager`1.ExecuteByLay(Expression expression, List`1 list, Func`2 selector)
+         at SqlSugar.NavigatManager`1.ExecuteByLay(Int32 i, Expression item)
+         at SqlSugar.NavigatManager`1.Execute()
+         --- End of inner exception stack trace ---
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+         at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+         at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+         at SqlSugar.QueryableProvider`1.SelectNavQuery[TResult](List`1 result, List`1 managers)
+         at SqlSugar.QueryableProvider`1._InitNavigat[TResult](List`1 result)
+         at SqlSugar.QueryableProvider`1.<>c__DisplayClass196_0`1.<_InitNavigatAsync>b__0()
+         at System.Threading.Tasks.Task.InnerInvoke()
+         at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+         at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+      --- End of stack trace from previous location ---
+         at SqlSugar.QueryableProvider`1._InitNavigatAsync[TResult](List`1 result)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method177(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 17:06:45.1282625 +08:00 星期六 L System.Logging.LoggingMonitor[0] #19 '00-a8efb5167b6cf8b1af9ffa0f583675a6-84f80376681cae27-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：             FeedbackService
+      ┣ 操作名称：               GetFeedbacks
+      ┣ 显示名称：               反馈列表
+      ┣ 路由信息：               [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             undici
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-a8efb5167b6cf8b1af9ffa0f583675a6-84f80376681cae27-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               399ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             undici
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   MySqlConnector.MySqlException
+      ┣ 消息：                   Unknown column 'Avatar' in 'field list'
+      ┣ 错误堆栈：               at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'Avatar' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 17:09:39.9595808 +08:00 星期六 L System.Logging.LoggingMonitor[0] #7 '00-a32a004447c689aba47ba074c496caf0-1833dde719635959-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：             FeedbackService
+      ┣ 操作名称：               GetFeedbacks
+      ┣ 显示名称：               反馈列表
+      ┣ 路由信息：               [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             undici
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-a32a004447c689aba47ba074c496caf0-1833dde719635959-00
+      ┣ 服务线程 ID：            #6
+      ┣ 执行耗时：               330ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             undici
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   MySqlConnector.MySqlException
+      ┣ 消息：                   Unknown column 'Avatar' in 'field list'
+      ┣ 错误堆栈：               at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'Avatar' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 17:11:00.4609870 +08:00 星期六 L System.Logging.LoggingMonitor[0] #41 '00-4fdcafe032a58f3ae997a604ebae2867-ae9a98642cfc1b4d-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：             FeedbackService
+      ┣ 操作名称：               GetFeedbacks
+      ┣ 显示名称：               反馈列表
+      ┣ 路由信息：               [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             undici
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-4fdcafe032a58f3ae997a604ebae2867-ae9a98642cfc1b4d-00
+      ┣ 服务线程 ID：            #39
+      ┣ 执行耗时：               217ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             undici
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   MySqlConnector.MySqlException
+      ┣ 消息：                   Unknown column 'Avatar' in 'field list'
+      ┣ 错误堆栈：               at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'Avatar' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 17:12:46.5009152 +08:00 星期六 L System.Logging.LoggingMonitor[0] #25 '00-41eae6164a312020aca34c89d6eb5898-688b0c76ed333878-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：             FeedbackService
+      ┣ 操作名称：               GetFeedbacks
+      ┣ 显示名称：               反馈列表
+      ┣ 路由信息：               [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             undici
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-41eae6164a312020aca34c89d6eb5898-688b0c76ed333878-00
+      ┣ 服务线程 ID：            #4
+      ┣ 执行耗时：               372ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             undici
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   MySqlConnector.MySqlException
+      ┣ 消息：                   Unknown column 'NickName' in 'field list'
+      ┣ 错误堆栈：               at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method57(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'NickName' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method57(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 17:15:10.5220943 +08:00 星期六 L System.Logging.LoggingMonitor[0] #24 '00-a81d5b86852afbf090bdd52ea7d6ffd4-f03e89b4051bcd17-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks
+      ┣ 
+      ┣ 控制器名称：             FeedbackService
+      ┣ 操作名称：               GetFeedbacks
+      ┣ 显示名称：               反馈列表
+      ┣ 路由信息：               [area]: ; [controller]: feedback; [action]: feedbacks
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/feedback/feedbacks/1?size=10
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             undici
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-a81d5b86852afbf090bdd52ea7d6ffd4-f03e89b4051bcd17-00
+      ┣ 服务线程 ID：            #21
+      ┣ 执行耗时：               303ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v4.9.1.4
+      ┣ .NET 架构：              .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             undici
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ page (Int32)：           1
+      ┣ size (Int32)：           10
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Object>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   MySqlConnector.MySqlException
+      ┣ 消息：                   Unknown column 'Avatar' in 'field list'
+      ┣ 错误堆栈：               at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'Avatar' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in D:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Core.JuAI.Service.FeedbackService.GetFeedbacks(Int32 page, Int32 size) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Settings\FeedbackService.cs:line 47
+         at lambda_method118(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 22:31:03.2646281 +08:00 星期六 L Admin.NET.Core.JuAI.Service.JuFileService[0] #8
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      Fetch同步文件出错504
+fail: 2023-11-25 22:35:01.0226190 +08:00 星期六 L System.Logging.LoggingMonitor[0] #19 '00-89b746f8cda515a84f98aec69d80d0a6-af27ef2bfb213521-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.DrawingController.ChatImage
+      ┣ 
+      ┣ 控制器名称：                                     DrawingController
+      ┣ 操作名称：                                       ChatImage
+      ┣ 显示名称：                                       
+      ┣ 路由信息：                                       [area]: ; [controller]: Drawing; [action]: ChatImage
+      ┣ 请求方式：                                       POST
+      ┣ 请求地址：                                       http://127.0.0.1:5005/app/api/Drawing/gptImage/create
+      ┣ 来源地址：                                       http://localhost:3001/drawing?theme=dark
+      ┣ 请求端源：                                       client
+      ┣ 浏览器标识：                                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                                 127.0.0.1
+      ┣ 服务端 IP 地址：                                 127.0.0.1
+      ┣ 客户端连接 ID：                                  00-89b746f8cda515a84f98aec69d80d0a6-af27ef2bfb213521-00
+      ┣ 服务线程 ID：                                    #19
+      ┣ 执行耗时：                                       102ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                         userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6InB1dk9hTndXTDc0ZmZ3ZExUQ1Y4aXJqTXpfV3Bnd1M1Y29JUHpBZlE4YmciLCJzIjoxMjAsImwiOjksImsiOiJiM1Z1ZEZSNWMiLCJpYXQiOjE3MDA5MjA5NzYsIm5iZiI6MTcwMDkyMDk3NiwiZXhwIjoxNzAyMTMwNTc2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.Cglcb31NC6BZi5_PwKU4RlwVZLv0jgAls-q97wH_2ws","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwOTIwOTc2LCJuYmYiOjE3MDA5MjA5NzYsImV4cCI6MTcwMTUyNTc3NiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.puvOaNwWL74ffwdLTCV8irjMz_WpgwS5coIPzAfQ8bg","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":10707843,"payType":222}
+      ┣ 响应端：                                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                                       X64
+      ┣ 基础框架：                                       Furion.Pure v4.9.1.4
+      ┣ .NET 架构：                                      .NET 6.0.25
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                       Production
+      ┣ 启动程序集：                                     Admin.NET.Web.Entry
+      ┣ 进程名称：                                       Admin.NET.Web.Entry
+      ┣ 托管程序：                                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwOTIwOTc2LCJuYmYiOjE3MDA5MjA5NzYsImV4cCI6MTcwMTUyNTc3NiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.puvOaNwWL74ffwdLTCV8irjMz_WpgwS5coIPzAfQ8bg
+      ┣ 
+      ┣ UserId (integer64)：                             14213426327877
+      ┣ TenantId (integer64)：                           1300000000001
+      ┣ Account (string)：                               a1114
+      ┣ NickName (string)：                              a123
+      ┣ AccountType (integer)：                          777
+      ┣ iat (integer)：                                  1700920976 (2023-11-25 22:02:56:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                                  1700920976 (2023-11-25 22:02:56:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                                  1701525776 (2023-12-02 22:02:56:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                                   Admin.NET
+      ┣ aud (string)：                                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                                         application/json, text/plain, */*
+      ┣ Connection：                                     close
+      ┣ Host：                                           127.0.0.1:5005
+      ┣ User-Agent：                                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                                gzip, deflate, br
+      ┣ Accept-Language：                                zh-CN,zh;q=0.9
+      ┣ Authorization：                                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwOTIwOTc2LCJuYmYiOjE3MDA5MjA5NzYsImV4cCI6MTcwMTUyNTc3NiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.puvOaNwWL74ffwdLTCV8irjMz_WpgwS5coIPzAfQ8bg
+      ┣ Content-Type：                                   application/json
+      ┣ Cookie：                                         userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6InB1dk9hTndXTDc0ZmZ3ZExUQ1Y4aXJqTXpfV3Bnd1M1Y29JUHpBZlE4YmciLCJzIjoxMjAsImwiOjksImsiOiJiM1Z1ZEZSNWMiLCJpYXQiOjE3MDA5MjA5NzYsIm5iZiI6MTcwMDkyMDk3NiwiZXhwIjoxNzAyMTMwNTc2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.Cglcb31NC6BZi5_PwKU4RlwVZLv0jgAls-q97wH_2ws%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwOTIwOTc2LCJuYmYiOjE3MDA5MjA5NzYsImV4cCI6MTcwMTUyNTc3NiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.puvOaNwWL74ffwdLTCV8irjMz_WpgwS5coIPzAfQ8bg%22%2C%22account%22%3A%22a1114%22%2C%22nickName%22%3A%22a123%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F15029096932037.png%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22chenwei_zq%40163.com%22%2C%22remark%22%3Anull%2C%22sex%22%3A2%2C%22tokenNum%22%3A10707843%2C%22payType%22%3A222%7D
+      ┣ Origin：                                         http://localhost:3001
+      ┣ Referer：                                        http://localhost:3001/drawing?theme=dark
+      ┣ Content-Length：                                 138
+      ┣ sec-fetch-dest：                                 empty
+      ┣ sec-fetch-mode：                                 cors
+      ┣ sec-fetch-site：                                 same-origin
+      ┣ sec-ch-ua-platform：                             "Windows"
+      ┣ sec-ch-ua-mobile：                               ?0
+      ┣ DNT：                                            1
+      ┣ sec-ch-ua：                                      "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                                   application/json
+      ┣ 
+      ┣ imageCreateRequest (ChatImagePromptReq)：        {"id":null,"promptEn":"The busiest street in Shanghai, China","prompt":"中国上海最繁华的街道","quality":null,"style":null,"n":1,"size":"1024x1024","responseFormat":null,"user":null,"model":"dall-e-3"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                                 200
+      ┣ 原始类型：                                       System.Threading.Tasks.Task
+      ┣ 最终类型：                                       
+      ┣ 最终返回值：                                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                           System.MissingMethodException
+      ┣ 消息：                                           Method not found: 'System.Threading.Tasks.Task`1<Boolean> Admin.NET.Core.JuAI.Service.JuFileService.AddFileToDb(Int64, System.String[], Admin.NET.Core.JuAI.FileRelationEnum)'.
+      ┣ 错误堆栈：                                       at Admin.NET.Web.Entry.Controllers.DrawingController.ChatImage(ChatImagePromptReq imageCreateRequest)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at Admin.NET.Web.Entry.Controllers.DrawingController.ChatImage(ChatImagePromptReq imageCreateRequest)
+         at lambda_method155(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.MissingMethodException: Method not found: 'System.Threading.Tasks.Task`1<Boolean> Admin.NET.Core.JuAI.Service.JuFileService.AddFileToDb(Int64, System.String[], Admin.NET.Core.JuAI.FileRelationEnum)'.
+         at Admin.NET.Web.Entry.Controllers.DrawingController.ChatImage(ChatImagePromptReq imageCreateRequest)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at Admin.NET.Web.Entry.Controllers.DrawingController.ChatImage(ChatImagePromptReq imageCreateRequest)
+         at lambda_method155(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-25 23:02:00.7282615 +08:00 星期六 L Admin.NET.Core.JuAI.Service.JuFileService[0] #28
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GptImageAsyncToOss(string ossPath)
+      Fetch同步文件出错504

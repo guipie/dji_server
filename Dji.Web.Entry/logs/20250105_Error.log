@@ -1,0 +1,49 @@
+fail: 2025-01-05 19:01:25.4057491 +08:00 星期日 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #22 '00-4a04420c03615eb4db6819cfc4ea3c06-b18ee569747ae453-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息Value cannot be null. (Parameter 'source')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 54
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 51
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-05 19:15:35.2458769 +08:00 星期日 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #23 '00-e38cecd67f918d4dbab94cf2f3a18b66-cbce576a6253e1eb-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息Value cannot be null. (Parameter 'source')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 54
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 51
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-05 19:16:11.3027906 +08:00 星期日 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #28 '00-7a0ce8577ec6152136823676538dca94-88a3f00f30e32917-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息Value cannot be null. (Parameter 'source')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 54
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 51
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-05 19:32:03.2669550 +08:00 星期日 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #6 '00-ecd3300d7c5bfdbaa8fae3bbd373b15c-cbd4ce4ab43b5a8b-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-01-05 19:33:11.3491758 +08:00 星期日 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #22 '00-9e3c4c7ab8554f93908c23aeafbdf92a-fdcc1a42e0b235de-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,13 @@
+{
+  "MqttOptions": {
+    "ClientId": "webapp_client_01",
+    "Server": "broker.hivemq.com",
+    "Port": 1883,
+    "UseTls": false,
+    "Username": null,
+    "Password": null,
+    "KeepAliveSeconds": 60,
+    "CleanSession": true,
+    "SubscribedTopics": [ "sensor/+/data", "commands/#" ]
+  }
+}

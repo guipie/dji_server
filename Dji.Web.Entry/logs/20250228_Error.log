@@ -1,0 +1,477 @@
+fail: 2025-02-28 16:10:04.7314710 +08:00 星期五 L System.Logging.LoggingMonitor[0] #28 '00-d9764c193ea55251691143b86a63be73-3c21b3f20e8dba29-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-d9764c193ea55251691143b86a63be73-3c21b3f20e8dba29-00
+      ┣ 服务线程 ID：                    #28
+      ┣ 执行耗时：                       28ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNDg5MTIyLCJuYmYiOjE3NDA0ODkxMjIsImV4cCI6MTc0MTA5MzkyMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Pr0bIBUnGJPFbsXfbu3AiIHuIfZemYGkqPYVUCPw858
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740489122 (2025-02-25 21:12:02:0000(+08:00) 星期二 L)
+      ┣ nbf (integer64)：                1740489122 (2025-02-25 21:12:02:0000(+08:00) 星期二 L)
+      ┣ exp (integer64)：                1741093922 (2025-03-04 21:12:02:0000(+08:00) 星期二 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNDg5MTIyLCJuYmYiOjE3NDA0ODkxMjIsImV4cCI6MTc0MTA5MzkyMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Pr0bIBUnGJPFbsXfbu3AiIHuIfZemYGkqPYVUCPw858
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Unable to activate type 'Admin.NET.Core.JuAI.Service.ChatAlibabaService'. The following constructors are ambiguous:
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Admin.NET.Core.JuAI.ChatOpenAiService, Admin.NET.Core.JuAI.Service.UserTokenService)
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Microsoft.AspNetCore.Http.IHttpContextAccessor)
+      ┣ 错误堆栈：                       at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat(ChatReq chatPrompts) in D:\work\chenyanyi\server\Admin.NET.Web.Entry\Controllers\BaseChatController.cs:line 29
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Unable to activate type 'Admin.NET.Core.JuAI.Service.ChatAlibabaService'. The following constructors are ambiguous:
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Admin.NET.Core.JuAI.ChatOpenAiService, Admin.NET.Core.JuAI.Service.UserTokenService)
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Microsoft.AspNetCore.Http.IHttpContextAccessor)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat(ChatReq chatPrompts) in D:\work\chenyanyi\server\Admin.NET.Web.Entry\Controllers\BaseChatController.cs:line 29
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:12:20.9369626 +08:00 星期五 L System.Logging.LoggingMonitor[0] #29 '00-14a1fdf63036ef35b0f0517b68405e71-503950a264aa5f2a-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-14a1fdf63036ef35b0f0517b68405e71-503950a264aa5f2a-00
+      ┣ 服务线程 ID：                    #29
+      ┣ 执行耗时：                       0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           System.InvalidOperationException
+      ┣ 消息：                           Unable to activate type 'Admin.NET.Core.JuAI.Service.ChatAlibabaService'. The following constructors are ambiguous:
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Admin.NET.Core.JuAI.ChatOpenAiService, Admin.NET.Core.JuAI.Service.UserTokenService)
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Microsoft.AspNetCore.Http.IHttpContextAccessor)
+      ┣ 错误堆栈：                       at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat(ChatReq chatPrompts) in D:\work\chenyanyi\server\Admin.NET.Web.Entry\Controllers\BaseChatController.cs:line 29
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Unable to activate type 'Admin.NET.Core.JuAI.Service.ChatAlibabaService'. The following constructors are ambiguous:
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Admin.NET.Core.JuAI.ChatOpenAiService, Admin.NET.Core.JuAI.Service.UserTokenService)
+      Void .ctor(Microsoft.Extensions.Options.IOptions`1[Admin.NET.Core.JuAI.AlibabaOptions], Microsoft.Extensions.Logging.ILogger`1[Admin.NET.Core.JuAI.Service.ChatAlibabaService], Admin.NET.Core.JuAI.Service.ChatgptService, Microsoft.AspNetCore.Http.IHttpContextAccessor)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat(ChatReq chatPrompts) in D:\work\chenyanyi\server\Admin.NET.Web.Entry\Controllers\BaseChatController.cs:line 29
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:18:55.7863832 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #25 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 53
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:25:27.9984834 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #25 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 58
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:32:25.5487143 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #22 '00-84265f6a0b47be53793d6a86b4393b5a-2fa7096ed75112ea-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000118' from assembly 'Admin.NET.Web.Entry, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Runtime.CompilerServices.RuntimeHelpers.CompileMethod(RuntimeMethodHandleInternal method)
+         at System.Reflection.Emit.DynamicMethod.CreateDelegate(Type delegateType, Object target)
+         at System.Linq.Expressions.Compiler.LambdaCompiler.Compile(LambdaExpression lambda)
+         at System.Linq.Expressions.Expression`1.Compile()
+         at Microsoft.Extensions.Internal.ObjectMethodExecutor..ctor(MethodInfo methodInfo, TypeInfo targetTypeInfo, Object[] parameterDefaultValues)
+         at Microsoft.Extensions.Internal.ObjectMethodExecutor.Create(MethodInfo methodInfo, TypeInfo targetTypeInfo, Object[] parameterDefaultValues)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:32:25.5714766 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #22 '00-84265f6a0b47be53793d6a86b4393b5a-2fa7096ed75112ea-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HNANQ9MRSC1A", Request id "0HNANQ9MRSC1A:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000118' from assembly 'Admin.NET.Web.Entry, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Runtime.CompilerServices.RuntimeHelpers.CompileMethod(RuntimeMethodHandleInternal method)
+         at System.Reflection.Emit.DynamicMethod.CreateDelegate(Type delegateType, Object target)
+         at System.Linq.Expressions.Compiler.LambdaCompiler.Compile(LambdaExpression lambda)
+         at System.Linq.Expressions.Expression`1.Compile()
+         at Microsoft.Extensions.Internal.ObjectMethodExecutor..ctor(MethodInfo methodInfo, TypeInfo targetTypeInfo, Object[] parameterDefaultValues)
+         at Microsoft.Extensions.Internal.ObjectMethodExecutor.Create(MethodInfo methodInfo, TypeInfo targetTypeInfo, Object[] parameterDefaultValues)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\chenyanyi\server\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\chenyanyi\server\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:35:54.9529237 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Object reference not set to an instance of an object.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 53
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 16:50:34.7213439 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Admin.NET.Core.JuAI.Service.AI.Dto.ChatAlibabaRes' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+      To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+      Path '', line 1, position 2.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Admin.NET.Core.JuAI.Service.AI.Dto.ChatAlibabaRes' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+      To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+      Path '', line 1, position 2.
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 56
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:15:12.4002530 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #7 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Unexpected character encountered while parsing value: i. Path '', line 0, position 0.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: i. Path '', line 0, position 0.
+         at Newtonsoft.Json.JsonTextReader.ParseValue()
+         at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+         at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:16:47.6418961 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #29 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Unexpected character encountered while parsing value: i. Path '', line 0, position 0.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: i. Path '', line 0, position 0.
+         at Newtonsoft.Json.JsonTextReader.ParseValue()
+         at Newtonsoft.Json.JsonTextReader.Read()
+         at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+         at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 57
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:19:45.6425793 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #27 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Unexpected character encountered while parsing value: i. Path '', line 0, position 0.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: i. Path '', line 0, position 0.
+         at Newtonsoft.Json.JsonTextReader.ParseValue()
+         at Newtonsoft.Json.JsonTextReader.Read()
+         at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+         at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:20:47.4299589 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #12 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Unexpected character encountered while parsing value: i. Path '', line 0, position 0.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: i. Path '', line 0, position 0.
+         at Newtonsoft.Json.JsonTextReader.ParseValue()
+         at Newtonsoft.Json.JsonTextReader.Read()
+         at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+         at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 57
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:21:41.1722133 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Unexpected character encountered while parsing value: i. Path '', line 0, position 0.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: i. Path '', line 0, position 0.
+         at Newtonsoft.Json.JsonTextReader.ParseValue()
+         at Newtonsoft.Json.JsonTextReader.Read()
+         at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+         at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 57
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:23:50.9043583 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #4 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Error converting value "1" to type 'System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText]'. Path 'output.choices[0].message.content', line 1, position 47.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Error converting value "1" to type 'System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText]'. Path 'output.choices[0].message.content', line 1, position 47.
+       ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText].
+         at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+         at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-02-28 17:39:16.8328670 +08:00 星期五 L Admin.NET.Core.JuAI.Service.ChatAlibabaService[0] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      阿里聊天出错,错误信息Error converting value "1" to type 'System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText]'. Path 'output.choices[0].message.content', line 1, position 47.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Error converting value "1" to type 'System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText]'. Path 'output.choices[0].message.content', line 1, position 47.
+       ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.List`1[Admin.NET.Core.JuAI.Service.AI.Dto.MessageContentText].
+         at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+         at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+         --- End of inner exception stack trace ---
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at Admin.NET.Core.NewtonsoftJsonSerializerProvider.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Admin.NET.Core\Util\NewtonsoftJsonSerializerProvider.cs:line 37
+         at Furion.JsonSerialization.JSON.Deserialize[T](String json, Object jsonSerializerOptions) in D:\work\chenyanyi\server\Plugins\Furion.Pure\JsonSerialization\JSON.cs:line 54
+         at Admin.NET.Core.JuAI.Service.ChatAlibabaService.ChatStreamAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatAlibabaService.cs:line 57
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

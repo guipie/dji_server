@@ -1,0 +1,276 @@
+info: 2024-11-03 00:03:01.6058954 +08:00 星期日 L System.Logging.LoggingMonitor[0] #47 '00-c016ad30540a9e4ba0f9fb886363fb19-8f160b3ae3fffbe1-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-c016ad30540a9e4ba0f9fb886363fb19-8f160b3ae3fffbe1-00
+      ┣ 服务线程 ID：            #9
+      ┣ 执行耗时：               4387ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-03 21:37:33.2598698 +08:00 星期日 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2024-11-03 21:37:33.2853485 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2024-11-03 21:37:33.2877685 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2024-11-03 21:37:38.9971017 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:38.9986144 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0055261 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0067163 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0113837 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0125695 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0146224 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_realtime> trigger for scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 21:37:39.0157588 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 21:38:02.8023693 +08:00 星期日 L System.Logging.LoggingMonitor[0] #23 '00-9b45d56ea6da114267bedbb970c7a4e2-48ddf9e81f71400b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-9b45d56ea6da114267bedbb970c7a4e2-48ddf9e81f71400b-00
+      ┣ 服务线程 ID：            #23
+      ┣ 执行耗时：               3115ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-03 22:01:29.9208008 +08:00 星期日 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2024-11-03 22:01:29.9487533 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2024-11-03 22:01:29.9509197 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2024-11-03 22:01:34.9537680 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9557528 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9635390 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9648350 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9694708 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9706658 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9729988 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_realtime> trigger for scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:34.9743876 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 22:01:50.5451077 +08:00 星期日 L System.Logging.LoggingMonitor[0] #23 '00-0531f7f3335f178b34fe06b5c60e40c9-fcbf136215e54ab3-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-0531f7f3335f178b34fe06b5c60e40c9-fcbf136215e54ab3-00
+      ┣ 服务线程 ID：            #19
+      ┣ 执行耗时：               4274ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-11-03 22:46:00.6334909 +08:00 星期日 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2024-11-03 22:46:00.6703491 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2024-11-03 22:46:00.6729026 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2024-11-03 22:46:04.5368451 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5388691 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5457323 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5470894 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5516160 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5529120 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5548544 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_realtime> trigger for scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 22:46:04.5561042 +08:00 星期日 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_realtime> successfully appended and updated to the schedule.
+info: 2024-11-03 22:50:22.5177106 +08:00 星期日 L System.Logging.LoggingMonitor[0] #4 '00-3c2c942b13fb19b9792169447ff18d53-c83ca4871cf1f341-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.5 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         127.0.0.1
+      ┣ 服务端 IP 地址：         127.0.0.1
+      ┣ 客户端连接 ID：          00-3c2c942b13fb19b9792169447ff18d53-c83ca4871cf1f341-00
+      ┣ 服务线程 ID：            #26
+      ┣ 执行耗时：               4689ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             Dart/3.5 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"modelId":"openai:gpt-3.5-turbo","name":"gpt-3.5-turbo","shortName":"GPT-3.5","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc":"速度快，成本低","settings":""},{"modelId":"openai:gpt-3.5-turbo-16k","name":"gpt-3.5-turbo-16k","shortName":"GPT-3.5 16K","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt35.png","modelType":0,"category":"openai","maxToken":0,"tags":"","desc"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

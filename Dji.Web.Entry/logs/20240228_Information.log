@@ -1,0 +1,1248 @@
+info: 2024-02-28 16:08:37.2567003 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-02-28 16:08:37.2943557 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-02-28 16:08:37.2965246 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-02-28 16:08:37.8159093 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-02-28 16:08:37.8172299 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-02-28 16:08:37.8248082 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-02-28 16:08:37.8259690 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-02-28 16:08:37.8306767 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-02-28 16:08:37.8317978 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-02-28 16:14:04.5478275 +08:00 星期三 L System.Logging.LoggingMonitor[0] #37 '00-7962bbe7ae4e17aa121de5793bf77491-84b6bce54438b600-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  SwaggerCheckUrl
+      ┣ 显示名称：                  Swagger登录检查
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：                  http://localhost:5005/index.html?urls.primaryName=app
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-7962bbe7ae4e17aa121de5793bf77491-84b6bce54438b600-00
+      ┣ 服务线程 ID：               #37
+      ┣ 执行耗时：                  8ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMTEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50IjoiYWRtaW4iLCJSZWFsTmFtZSI6Iuezu-e7n-euoeeQhuWRmCIsIkFjY291bnRUeXBlIjo4ODgsIk9yZ0lkIjoxMzAwMDAwMDAwMTAxLCJPcmdOYW1lIjoi5aSn5ZCN56eR5oqAIiwiT3JnVHlwZSI6IjEwMSIsImlhdCI6MTcwNDIwNzc2OSwibmJmIjoxNzA0MjA3NzY5LCJleHAiOjE3MDQ4MTI1NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.-Z5Zan4cKaijwIjd6TWVnNG6JRmW0dxTIe4pjXy5bOs
+      ┣ Content-Type：              application/x-www-form-urlencoded
+      ┣ Origin：                    http://localhost:5005
+      ┣ Referer：                   http://localhost:5005/index.html?urls.primaryName=app
+      ┣ Content-Length：            0
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ DNT：                       1
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-origin
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Int32
+      ┣ 最终类型：                  System.Int32
+      ┣ 最终返回值：                401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:14:06.9568849 +08:00 星期三 L System.Logging.LoggingMonitor[0] #13 '00-4be78812f6296d1c1eab624472a3ed65-902061e7f0f535f7-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerSubmitUrl
+      ┣ 
+      ┣ 控制器名称：                      SysAuthService
+      ┣ 操作名称：                        SwaggerSubmitUrl
+      ┣ 显示名称：                        Swagger登录提交
+      ┣ 路由信息：                        [area]: ; [controller]: sysAuth; [action]: swaggerSubmitUrl
+      ┣ 请求方式：                        POST
+      ┣ 请求地址：                        http://localhost:5005/swagger/submitUrl
+      ┣ 来源地址：                        http://localhost:5005/index.html?urls.primaryName=app
+      ┣ 请求端源：                        client
+      ┣ 浏览器标识：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                  zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                  127.0.0.1
+      ┣ 服务端 IP 地址：                  127.0.0.1
+      ┣ 客户端连接 ID：                   00-4be78812f6296d1c1eab624472a3ed65-902061e7f0f535f7-00
+      ┣ 服务线程 ID：                     #38
+      ┣ 执行耗时：                        594ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                          
+      ┣ 响应端：                          
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                        Microsoft Windows 10.0.19045
+      ┣ 系统架构：                        X64
+      ┣ 基础框架：                        Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                       .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                        Production
+      ┣ 启动程序集：                      Admin.NET.Web.Entry
+      ┣ 进程名称：                        Admin.NET.Web.Entry
+      ┣ 托管程序：                        Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                          */*
+      ┣ Connection：                      keep-alive
+      ┣ Host：                            localhost:5005
+      ┣ User-Agent：                      Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                 gzip, deflate, br, zstd
+      ┣ Accept-Language：                 zh-CN,zh;q=0.9
+      ┣ Authorization：                   Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMTEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50IjoiYWRtaW4iLCJSZWFsTmFtZSI6Iuezu-e7n-euoeeQhuWRmCIsIkFjY291bnRUeXBlIjo4ODgsIk9yZ0lkIjoxMzAwMDAwMDAwMTAxLCJPcmdOYW1lIjoi5aSn5ZCN56eR5oqAIiwiT3JnVHlwZSI6IjEwMSIsImlhdCI6MTcwNDIwNzc2OSwibmJmIjoxNzA0MjA3NzY5LCJleHAiOjE3MDQ4MTI1NjksImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.-Z5Zan4cKaijwIjd6TWVnNG6JRmW0dxTIe4pjXy5bOs
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ Origin：                          http://localhost:5005
+      ┣ Referer：                         http://localhost:5005/index.html?urls.primaryName=app
+      ┣ Content-Length：                  30
+      ┣ sec-ch-ua：                       "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ DNT：                             1
+      ┣ sec-ch-ua-mobile：                ?0
+      ┣ sec-ch-ua-platform：              "Windows"
+      ┣ Sec-Fetch-Site：                  same-origin
+      ┣ Sec-Fetch-Mode：                  cors
+      ┣ Sec-Fetch-Dest：                  empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                    application/x-www-form-urlencoded
+      ┣ 
+      ┣ auth (SpecificationAuth)：        {"userName":"admin","password":"123456"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                  200
+      ┣ 原始类型：                        System.Threading.Tasks.Task<System.Int32>
+      ┣ 最终类型：                        System.Int32
+      ┣ 最终返回值：                      200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:28:48.0102496 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-02-28 16:28:48.0396679 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-02-28 16:28:48.0419717 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-02-28 16:28:48.6872079 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-02-28 16:28:48.6885862 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-02-28 16:28:48.6960764 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-02-28 16:28:48.6974048 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-02-28 16:28:48.7023080 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-02-28 16:28:48.7036084 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-02-28 16:29:00.3901473 +08:00 星期三 L System.Logging.LoggingMonitor[0] #23 '00-6c7fc125186c2e47e9d4695b01d9ae0f-ffa8223ea099b0d3-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-6c7fc125186c2e47e9d4695b01d9ae0f-ffa8223ea099b0d3-00
+      ┣ 服务线程 ID：                   #23
+      ┣ 执行耗时：                      460ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  ynivBJrQhTdU9OSNCz1NW
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04e8a24759eb465de771e4c1a7c9e5fb71be496a9e88ee821633a66c6b5a75f19a1622623ecaa30cb66027d4eac5018a1f26ae51d4a89c10c1424612abbd256efa9c44b6ae65d217195e69579cde7aa49a09c315b9b634fc184234e6466f0546275185e7005e36","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6Imw0MGp2S1VtS0UzMXJkNG9uNmlKYU9QNnB2RjBpQUlRZGpBYU91YU4xM2ciLCJzIjo2NCwibCI6MTAsImsiOiJNU3dpUVdOamIzIiwiaWF0IjoxNzA5MTA4OTQwLCJuYmYiOjE3MDkxMDg5NDAsImV4cCI6MTcxMDMxODU0MCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.sF1KSU0UXu-5vFbVwL-gtGj1n9Lte6rr-9vyljvkV_4","accessToken":"eyJhbGciOiJIUzI1NiIsIn
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:29:56.9795820 +08:00 星期三 L System.Logging.LoggingMonitor[0] #31 '00-e855ccac6a5561c55cd1be597dc8b1d8-9d0b65ec672a606f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-e855ccac6a5561c55cd1be597dc8b1d8-9d0b65ec672a606f-00
+      ┣ 服务线程 ID：                   #33
+      ┣ 执行耗时：                      333ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  vT71ZZD1AqExN5zwCeKZM
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04961ed687a685a603a2755c809b58ac7631416d3e4f6d548851ffae6fce71b298bffc04a869ee7b4a3fb78b0e3aac6c821af719fe672ce5a6e23ed232403ca1eba63025c064f8bed762153467fb1405d8bcfecb3c817aa494d38cf8eca41d2e364e4b7f52a843","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlQ4U2pjSlZrYnJYVnhYb0NtY2VJczhzUzlIaVZGU3VEeUNBdnZqanFsQnMiLCJzIjo1OCwibCI6MTAsImsiOiJBd01EQXdNU3dpIiwiaWF0IjoxNzA5MTA4OTk2LCJuYmYiOjE3MDkxMDg5OTYsImV4cCI6MTcxMDMxODU5NiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.VP23q8r5rqGoCtlkVIrDkl38cjCWJjhd1tB1XRQMdR4","accessToken":"eyJhbGciOiJIUzI1NiIsIn
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:30:30.9913205 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-1075b2814454cc7560a986464932f8ec-e9957709f08e25c4-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-1075b2814454cc7560a986464932f8ec-e9957709f08e25c4-00
+      ┣ 服务线程 ID：                   #7
+      ┣ 执行耗时：                      340ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  GEOSv91QZO_Qq09RSWYyr
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"044d4283310a06d3b41313182f920c99aff5b387a1622c05e62229c11c5ee665562e4240f3bef9fbd6e76970d20cd9f07a3460304c52d80904cb4f35322052fa55c47621384707c8b2dba937ee4fe2e115a2c80e296c9393a04d94f5a806358a55d1f8f1d2a510","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjZacXFZSFpwMVNsU2hzYmZ6eldCTWhwTzc1S2JzXzl0bVkxN0NKNTJhVWMiLCJzIjoxMTcsImwiOjQsImsiOiJLcmxoIiwiaWF0IjoxNzA5MTA5MDMwLCJuYmYiOjE3MDkxMDkwMzAsImV4cCI6MTcxMDMxODYzMCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.yE5jjOh7X4IsmZGBQY2MF93FNn71w7MISPRnqeamzS8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6Ik
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:31:06.3997446 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-fb9ed5583312cfdaa2e17b7c9b626ad8-2458990618b1d287-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-fb9ed5583312cfdaa2e17b7c9b626ad8-2458990618b1d287-00
+      ┣ 服务线程 ID：                   #9
+      ┣ 执行耗时：                      366ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  QOebHYqa4aGR7WqWwMqsx
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"0489545b04faf5284e0d54da808096cd4ded4ef9fac730754f528b98bf69a7492899643c30fdfc8e28f5a67dea2e06b83c131b06fe611cd3b2ed363da206ed232e2ebfbb148116bf8580cdfca05e77572409cf71213901a88d654cfbad482f8a450051b2604a49","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IkhEb3ZBdEJ0SGEyLTZtOHVkdHJBcFpHRTdUWGQzbHYwU1h2VWJqUlVkNWMiLCJzIjoxMDMsImwiOjgsImsiOiJqYTA1aGJXVSIsImlhdCI6MTcwOTEwOTA2NiwibmJmIjoxNzA5MTA5MDY2LCJleHAiOjE3MTAzMTg2NjYsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.d7oq200QXOlUz-dWkFURhBQxNlpLT-BnwBjuA5ZvuxU","accessToken":"eyJhbGciOiJIUzI1NiIsInR5c
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:32:02.3604713 +08:00 星期三 L System.Logging.LoggingMonitor[0] #13 '00-ea747f1433196d81bc71c030bacde298-adcd9f15f47fb757-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-ea747f1433196d81bc71c030bacde298-adcd9f15f47fb757-00
+      ┣ 服务线程 ID：                   #13
+      ┣ 执行耗时：                      467ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  7TwvXK3Saz71OUinx7z5Q
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"0434697673bfd178e3ee6b6da9b9d08ba7f614f765ff28f70f55e14484ea4ccffc307c9ecec7254013293dfc64588f43c84ffb800058d46b35585c474a49590bbce1611ec8c7040d4d73c794f5d30e5ff00e19c3369a7c8164027b365e07b472e125fa9d763822","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IkdJRThlTU4tLWZESHU5ekhleGY3OXhLb0w3UVVxRFJJQ3lfQXJ1X1pTQm8iLCJzIjoxMTQsImwiOjksImsiOiJMbWdLcmxoYjMiLCJpYXQiOjE3MDkxMDkxMjIsIm5iZiI6MTcwOTEwOTEyMiwiZXhwIjoxNzEwMzE4NzIyLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.CPr3_pRT6WRsey5CT0cTkWRqyY3wOqVZ5cWPhmczlzs","accessToken":"eyJhbGciOiJIUzI1NiIsInR5
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:32:21.4517478 +08:00 星期三 L System.Logging.LoggingMonitor[0] #9 '00-7f644ccd704876b7743ae8c62688fc75-77227a5a10d11ee4-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-7f644ccd704876b7743ae8c62688fc75-77227a5a10d11ee4-00
+      ┣ 服务线程 ID：                   #9
+      ┣ 执行耗时：                      343ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  _gitwkFQNtt8k0MreJ-67
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"042dd0ab6af231229242eb230b25228e3f7aee9d9fa1ae7a443e16c69d83abdfc70404bbef2a1aab054d1e2958cd9df4bd550ca90b497026484edf4db5c79599af712cdc0e9a08c30c1f44804d4fbbf5db22ea6c0d6acb7cdb3b8296c0dc92714bfd1a561a8960","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImhpUklKb1doOE1OeGlkdC1JRjNsOXRUUXJIRDVNVjRCT0hvNnBSTTkzV00iLCJzIjo0OSwibCI6MywiayI6IlRNdyIsImlhdCI6MTcwOTEwOTE0MSwibmJmIjoxNzA5MTA5MTQxLCJleHAiOjE3MTAzMTg3NDEsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.uA3C_GaDNSARQa_EeMUA66IUFGeK5FFLjKbTtvPAKSY","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:35:31.3172669 +08:00 星期三 L System.Logging.LoggingMonitor[0] #33 '00-93a5a39b50252222f950b1dd133546d0-202de830507d24f7-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-93a5a39b50252222f950b1dd133546d0-202de830507d24f7-00
+      ┣ 服务线程 ID：                   #33
+      ┣ 执行耗时：                      650ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  Imszmyi9UeBFIyCkjD3zB
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"040ae4c016cac932ea90a1ef91d9ac9e7d12ee41f9fda23310b5458eeb041d08ce42ce7fda0780f9aa214d69f29e30d3429ad0fd5978b0864963de90e8f067d9e5d1e246612b97c688b2590190a166c6e755d34b6586e20c1337ed5c4d1fabea757b7902cee3b9","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImI2d29QZGNOSmpNdFJ3UF9DMmNJd2o1MXdaN1h4anRuZTJFNmxiamNnVlEiLCJzIjo0NSwibCI6OSwiayI6IkNJNk1UTXdNRCIsImlhdCI6MTcwOTEwOTMzMSwibmJmIjoxNzA5MTA5MzMxLCJleHAiOjE3MTAzMTg5MzEsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.5qQCXPxRATix-TsUgIhdMYtIeF9X8Hsm3zWRJL-eLV0","accessToken":"eyJhbGciOiJIUzI1NiIsInR5c
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:38:19.5935449 +08:00 星期三 L System.Logging.LoggingMonitor[0] #33 '00-22a048b05bc16d824e0e88421f213c0d-d1fd44d894cb11ed-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-22a048b05bc16d824e0e88421f213c0d-d1fd44d894cb11ed-00
+      ┣ 服务线程 ID：                   #33
+      ┣ 执行耗时：                      419ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  -dtwlKV35qxgRSN6_h7Xh
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"0428a7991f66c132711f08fd3866c462c7ffce04a44184231569d5ee8bab835d85ce7f29703096d122392e5d051bc992d94479c300081a8f2bfbfa8ad009ad783b70b2b8a4ddae90df79ecdeca728fb6f5903eab18148d4172525f47aec282a75018f09fb2350e","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVZQnV6VUpIcmNocENuRVM1aGxsZ1Q2cC00ejMwMlQwak15ckZGOWNZaUkiLCJzIjo3MCwibCI6NiwiayI6Ik5qYjNWdSIsImlhdCI6MTcwOTEwOTQ5OSwibmJmIjoxNzA5MTA5NDk5LCJleHAiOjE3MTAzMTkwOTksImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.6aBD323hCMeg2FfEjQwWzdZS2OKhuiFQq0F5MA99ELU","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6I
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:43:43.8332634 +08:00 星期三 L System.Logging.LoggingMonitor[0] #33 '00-25a3e9598f7465c6acbfc883d9251193-3e0136d0dfbd66d9-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-25a3e9598f7465c6acbfc883d9251193-3e0136d0dfbd66d9-00
+      ┣ 服务线程 ID：                   #3
+      ┣ 执行耗时：                      754ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  W-EUufxK86i5HHHWFN7Eg
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04ec472bad853b85d6aedd4dc89174de79975c2e5e63716e7eaebd341c9779cb97ebf2e877c39e4de48c064eaded5e66000f78639aece5bb1df32d88d375b64b06d08032529166da8cf6852c850baccdb3e47ac23abe29159f9ff0d7a8c133de00c1852c5a0cf2","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6Im9QcTVGOTA4aGZGSEppbF82XzVzVFo0TFVQd1o4UGJQaG5LWmQwUHJhRFkiLCJzIjo1MiwibCI6NywiayI6Ik1EQXdNREEiLCJpYXQiOjE3MDkxMDk4MjMsIm5iZiI6MTcwOTEwOTgyMywiZXhwIjoxNzEwMzE5NDIzLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.Mev0imnhlFDjeOzplN0J44dnwVDhLuRPABxJUg1L4J4","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:52:24.5199173 +08:00 星期三 L System.Logging.LoggingMonitor[0] #4 '00-8521613f82c77c5a8423902b81b2eaca-46434ffcdc59a1e9-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-8521613f82c77c5a8423902b81b2eaca-46434ffcdc59a1e9-00
+      ┣ 服务线程 ID：                   #4
+      ┣ 执行耗时：                      612ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  HdjW4tPpTMOeRxncgs1AX
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04d0bb253426d036ae74a5d89d220ea47581ea6f1aeb61260f41cbd92df0a818a1e371ef790a37484ce5cbfd65ad5ae281a53646fc6ab311d5543bc712ed1c627f72ba2fe08c6c1e103614a96fdf7dc48b291eb1a5a71cb5a78f38c5da580bd36e19ed3771d75c","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlpGZ2lYbVcya1ozdzE1YUNQNzBiek9HUlF3Zm1DM09MN1Mxek5sNy1zd0kiLCJzIjoxMSwibCI6MTIsImsiOiJpT2pFME1qRXpOREkiLCJpYXQiOjE3MDkxMTAzNDQsIm5iZiI6MTcwOTExMDM0NCwiZXhwIjoxNzEwMzE5OTQ0LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.SPnQz8Vw3a5k49E16WvtklF3dJkkYE6dVHK-xQTVXiY","accessToken":"eyJhbGciOiJIUzI1NiIs
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:53:35.5699140 +08:00 星期三 L System.Logging.LoggingMonitor[0] #36 '00-fdf8dd9e6d66215616c09448c11c4910-1e5d00a32844dccb-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-fdf8dd9e6d66215616c09448c11c4910-1e5d00a32844dccb-00
+      ┣ 服务线程 ID：                   #36
+      ┣ 执行耗时：                      382ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  hGXPQw1uNWPz6bfBnxuOF
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04ba9c52e0a971319b9026aa28a011fd2606a9b4f2eddda6d123f0f5f2e1cedbc5fcd675577066fa0d81b233fff38f9a4f26769125c5ce0d38d1aa6cd7b99a75b4de54082bf7e209d2628ebe6d52ebfa8537e427c0e45658127c75009e8bfe934b5c164be4958c","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6InVjT08wOEY5STF3NXd1cXJ0Mkg5OVNERG1nYVhjQ2k5dzBlRkpxclduSTAiLCJzIjoxNiwibCI6NywiayI6Ik1qRXpOREkiLCJpYXQiOjE3MDkxMTA0MTUsIm5iZiI6MTcwOTExMDQxNSwiZXhwIjoxNzEwMzIwMDE1LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.dI2DYB9BAOLvkmPtiaT5nwS7OuRuA4TQMzad9uXNgBM","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:54:24.3938398 +08:00 星期三 L System.Logging.LoggingMonitor[0] #4 '00-6f6f2253c10484a83da61bbef8a1f6ea-9d9a99c065164e01-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-6f6f2253c10484a83da61bbef8a1f6ea-9d9a99c065164e01-00
+      ┣ 服务线程 ID：                   #4
+      ┣ 执行耗时：                      374ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  OpEPSr4eUfz1ThDzEOf0g
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04e0e23cf9c56563a9cfe6151580feabb8163b2adbe03582f6c9e749ef558f99f2b012b4849dfb7ec955d851e137cabb2f88be07c10afb238718a400e3e5346203bd315a1b5b944b048900d23870989538c1fa539f660bd576d31abfaa7ad9ab1aa0e671ad93e1","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImZIci1GdWM5cEcyREJsRFJHUVk0V3oyT0J6cGpvS01FX1R4ejRnU3RVYzAiLCJzIjoxMjgsImwiOjQsImsiOiJ1b1lpIiwiaWF0IjoxNzA5MTEwNDY0LCJuYmYiOjE3MDkxMTA0NjQsImV4cCI6MTcxMDMyMDA2NCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.z2kz5FoSEJG_Qz0QA3Ji4lJdYieSeZ0DcrwyXMopZGQ","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6Ik
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 16:55:32.6065511 +08:00 星期三 L System.Logging.LoggingMonitor[0] #36 '00-e00ec2202353c03a69de185a49d8fd83-afa1c4096e08ebd1-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-e00ec2202353c03a69de185a49d8fd83-afa1c4096e08ebd1-00
+      ┣ 服务线程 ID：                   #36
+      ┣ 执行耗时：                      370ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  svhzSfCsUbPKQ_lkLxsCg
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"0433e956fb6a999fe72dfe8cffe021f61634f0da23b32c5ba064218f563793855edbb4c5bd30d35ac8e600dd5141840f2392a29ae39db0491b33598400a381aeb0ccea3dc56c7e02e9b16148658035faeb088095c3989357d017b314f67c60f53b191c5abfa4d5","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlRFQ3c2T004dkM2UGRYUkxuS3c0OFU0SnRsX1l2ZEp0ZWVncWxiTWZBeWciLCJzIjoxMTEsImwiOjEwLCJrIjoiaU9pTG1nS3JsaCIsImlhdCI6MTcwOTExMDUzMiwibmJmIjoxNzA5MTEwNTMyLCJleHAiOjE3MTAzMjAxMzIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.ncCTpP_UwEMw-nxUJ5ATEFRxUYuOmRzHf3T0lhbJdF0","accessToken":"eyJhbGciOiJIUzI1NiIsI
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 19:55:39.2488692 +08:00 星期三 L System.Logging.LoggingMonitor[0] #49 '00-7f4b770b5aa802bb9153eb9f2d4bac57-92e3823a2629b5b8-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-7f4b770b5aa802bb9153eb9f2d4bac57-92e3823a2629b5b8-00
+      ┣ 服务线程 ID：                   #54
+      ┣ 执行耗时：                      874ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  3r01aLAPO8tQZRSjSFmYT
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"04ca15d1c6a9317c66c63f06a4255b7db1b0d89b95c6556e43a8eb4d215416b243ee360df5ba45d61da8ddc6541b1a69782dc14bbb59abdb177652a1e9a92e9d289dbdeebd0132132f543b41f6162b17380b7d2ddcb785a19a7d6626273c0e2e569a2abc6025f4","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImxpaWJrT0dvbDhqM3FkVnMyNEdZMEV6YnZrRHRiZkw5UkFjSnlXXzM0Q3MiLCJzIjoxMTQsImwiOjEwLCJrIjoiTG1nS3JsaGIzbSIsImlhdCI6MTcwOTEyMTMzOSwibmJmIjoxNzA5MTIxMzM5LCJleHAiOjE3MTAzMzA5MzksImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.Mv9UhTj1Rkvy3u61yb_oWqtlPqtddo6xNxC48sK7xdE","accessToken":"eyJhbGciOiJIUzI1NiIsI
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 20:03:48.6403218 +08:00 星期三 L System.Logging.LoggingMonitor[0] #41 '00-40c1bc272d86649083b93542cd8672ed-c49b4fec68eaa1e6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-40c1bc272d86649083b93542cd8672ed-c49b4fec68eaa1e6-00
+      ┣ 服务线程 ID：                   #49
+      ┣ 执行耗时：                      358ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  d0VKO8OIKakgoKVoul8D6
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"046edab54f576828315b3168c38fd21123cdf6e56f4c292800bc4176c870025163453b11d625929670a33269377339d27dc0fc3b6e59c73621ffe6c0a1a737eb889c701e9aa1586add56d412bf85c401f2d3e7f70264cc9db36900fabb368671c7c6d1dcd45c56","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlhPSURPNXRrN05fdkZxb3FYbURLMGNsSHFMaUU5ZFRTX21Mc1ZvdEJpVFUiLCJzIjo3OSwibCI6MTAsImsiOiI2SWpFNE5qQXdOIiwiaWF0IjoxNzA5MTIxODI4LCJuYmYiOjE3MDkxMjE4MjgsImV4cCI6MTcxMDMzMTQyOCwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IZvf7lYLMShuDDAsxNvoRB9dlmnOT6-ax5E6uCwILZw","accessToken":"eyJhbGciOiJIUzI1NiIsIn
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-02-28 20:04:46.5643172 +08:00 星期三 L System.Logging.LoggingMonitor[0] #41 '00-0a345b3314684090e53c180a4bc6157b-0b10fd6721c93019-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-0a345b3314684090e53c180a4bc6157b-0b10fd6721c93019-00
+      ┣ 服务线程 ID：                   #49
+      ┣ 执行耗时：                      288ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          localhost:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br, zstd
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Cache-Control：                 no-cache
+      ┣ Content-Type：                  application/json
+      ┣ Origin：                        http://localhost:9527
+      ┣ Pragma：                        no-cache
+      ┣ Referer：                       http://localhost:9527/login/pwd-login?redirect=/home
+      ┣ Content-Length：                243
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ x-request-id：                  G0lH6jtTWYA8SSsTVBfsx
+      ┣ apifoxtoken：                   XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"0498c562740ac80a9f5eff4853a3bb434b1497079a682e65803d1c84e0f9c9401136e45de456fb526cda5e0c2379819384a6187c4bf17c94a964228aea96114dac78b585bcd75419f1128522c24fe4bd3868825362d2c941e8d8b0479cf7aaaf8bf58fe19f04db","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjRiV0kwbldsR3lIMERlbnUyMUNRcVZuLXM0UUtZMnNyTFVGSEdabW94dE0iLCJzIjo5NywibCI6MywiayI6Iml3aSIsImlhdCI6MTcwOTEyMTg4NiwibmJmIjoxNzA5MTIxODg2LCJleHAiOjE3MTAzMzE0ODYsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.t-D2iKvLzck3wY1HaSZiy965h0i-2_SCMLjhD-Qw_g4","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

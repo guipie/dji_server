@@ -1,0 +1,36 @@
+fail: 2025-01-06 21:07:22.7095427 +08:00 星期一 L Admin.NET.Core.JuAI.ChatOpenAiService[0] #43 '00-8341c5c2979330eecefd4ecbdb13456e-7d47ad723b5881c6-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      chatgpt聊天出错,错误信息The SSL connection could not be established, see inner exception.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+       ---> System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+         at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+         at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+         at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+         at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellation(CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at System.Net.Http.Metrics.MetricsHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<>n__1(HttpRequestMessage request, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<>n__1(HttpRequestMessage request, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+         at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+         at Betalgo.Ranul.OpenAI.Extensions.HttpClientExtensions.PostAsStreamAsync(HttpClient client, String uri, Object requestModel, CancellationToken cancellationToken)
+         at Betalgo.Ranul.OpenAI.Managers.OpenAIService.CreateCompletionAsStream(ChatCompletionCreateRequest chatCompletionCreateRequest, String modelId, Boolean justDataMode, CancellationToken cancellationToken)+MoveNext()
+         at Betalgo.Ranul.OpenAI.Managers.OpenAIService.CreateCompletionAsStream(ChatCompletionCreateRequest chatCompletionCreateRequest, String modelId, Boolean justDataMode, CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 51
+         at Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatReq chatReq) in D:\work\chenyanyi\server\Admin.NET.Core.JuAi\Service\AIChat\ChatOpenAiService.cs:line 51
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

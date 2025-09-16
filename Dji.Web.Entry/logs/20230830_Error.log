@@ -1,0 +1,1597 @@
+fail: 2023-08-30 10:40:47.5523570 +08:00 星期三 L System.Logging.LoggingMonitor[0] #63
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-8746d90ba3dab2c5efbb4765d8d879b8-a6663ae5e1958d42-00
+      ┣ 服务线程 ID：      #39
+      ┣ 执行耗时：         43922ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             Connect Timeout expired.
+      ┣ 错误堆栈：         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 10:40:50.6084522 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #38
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 10:46:20.7018398 +08:00 星期三 L System.Logging.LoggingMonitor[0] #42
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers
+      ┣ 
+      ┣ 控制器名称：       UserService
+      ┣ 操作名称：         GetActiveUsers
+      ┣ 显示名称：         活跃用户
+      ┣ 路由信息：         [area]: ; [controller]: user; [action]: activeUsers
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/User/ActiveUsers
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-51e68da8bf53a4d4937cf58ea734f78a-b49eb6a800f78012-00
+      ┣ 服务线程 ID：      #42
+      ┣ 执行耗时：         58294ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.UserInfoOutput>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+      ┣ 错误堆栈：         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 17
+         at lambda_method169(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 17
+         at lambda_method169(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 10:46:20.7010338 +08:00 星期三 L System.Logging.LoggingMonitor[0] #68
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UpgradeService.GetNewst
+      ┣ 
+      ┣ 控制器名称：       UpgradeService
+      ┣ 操作名称：         GetNewst
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: upgrade; [action]: newst
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/upgrade/newst
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-0aa99cb697e16123d7834e08387cd876-dc7708a4adf1863d-00
+      ┣ 服务线程 ID：      #68
+      ┣ 执行耗时：         55514ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         Admin.NET.Core.JuAI.AppUpgrade
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+      ┣ 错误堆栈：         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.First()
+         at Admin.NET.Core.JuAI.Service.UpgradeService.GetNewst() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Settings\UpgradeService.cs:line 14
+         at lambda_method170(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.First()
+         at Admin.NET.Core.JuAI.Service.UpgradeService.GetNewst() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Settings\UpgradeService.cs:line 14
+         at lambda_method170(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 10:46:20.8014095 +08:00 星期三 L System.Logging.LoggingMonitor[0] #61
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-12c00af93f7a7ee41522a9518473243f-227e76b033eb21c1-00
+      ┣ 服务线程 ID：               #63
+      ┣ 执行耗时：                  58370ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      SqlSugar.SqlSugarException
+      ┣ 消息：                      Connect Timeout expired.
+      ┣ 错误堆栈：                  at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 57
+         at lambda_method192(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 57
+         at lambda_method192(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 10:46:20.8000385 +08:00 星期三 L System.Logging.LoggingMonitor[0] #51
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-7fc0f6ba711b9a9c63d62619d54af4dc-c5f7658b895902e0-00
+      ┣ 服务线程 ID：      #62
+      ┣ 执行耗时：         58369ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             Connect Timeout expired.
+      ┣ 错误堆栈：         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 11:18:44.2972982 +08:00 星期三 L System.Logging.LoggingMonitor[0] #66
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers
+      ┣ 
+      ┣ 控制器名称：       UserService
+      ┣ 操作名称：         GetActiveUsers
+      ┣ 显示名称：         活跃用户
+      ┣ 路由信息：         [area]: ; [controller]: user; [action]: activeUsers
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/User/ActiveUsers
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-e4f95a546eb394990b93f51d789d941d-fe8d7b7d65dc28e6-00
+      ┣ 服务线程 ID：      #66
+      ┣ 执行耗时：         129445ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.UserInfoOutput>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+      ┣ 错误堆栈：         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 17
+         at lambda_method169(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Connect Timeout expired.DbType="MySql";ConfigId="app".
+      English Message : Connection open error . Connect Timeout expired.DbType="MySql";ConfigId="app"
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.AdoProvider.CheckConnection()
+         at SqlSugar.MySqlProvider.GetCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at Admin.NET.Core.JuAI.Service.UserService.GetActiveUsers() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 17
+         at lambda_method169(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 11:18:44.3032614 +08:00 星期三 L System.Logging.LoggingMonitor[0] #35
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-08142cc933be2211182bda891841c0e3-73f89016df265e9d-00
+      ┣ 服务线程 ID：      #32
+      ┣ 执行耗时：         129488ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             SqlSugar.SqlSugarException
+      ┣ 消息：             Connect Timeout expired.
+      ┣ 错误堆栈：         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 64
+         at lambda_method189(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 20:44:45.4428605 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #18
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 20:44:50.5716509 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #18
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 20:48:03.1918553 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #37
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:08:58.5143810 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #5
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:09:04.0077672 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #3
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidCastException: Unable to cast object of type 'Admin.NET.Web.Core.JwtHandler' to type 'Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata'.
+         at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+         at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+         at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+         at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+         at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:19:28.3893804 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #18
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:28:49.1040993 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #5
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\admin.net\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:32:20.2494467 +08:00 星期三 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #46
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:32:21.9527640 +08:00 星期三 L Microsoft.AspNetCore.Server.Kestrel[13] #46
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMT9BK36CUJD", Request id "0HMT9BK36CUJD:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Headers are read-only, response has already started.
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+         at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+         at Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 112
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:58:09.3811655 +08:00 星期三 L System.Logging.LoggingMonitor[0] #20
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-02d99c055d6e7fc641b3799e15fdbdc5-3c6d5674937b9df4-00
+      ┣ 服务线程 ID：               #20
+      ┣ 执行耗时：                  362ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:58:09.3808537 +08:00 星期三 L System.Logging.LoggingMonitor[0] #19
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                SpecialService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: special; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/special/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-6ff0f0a56eda33ecd81799242e77a427-f1724e54f14b5cca-00
+      ┣ 服务线程 ID：               #19
+      ┣ 执行耗时：                  362ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 21:58:09.3485646 +08:00 星期三 L System.Logging.LoggingMonitor[0] #44
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-fd9ea6fb04a22267252e5e38d70dede9-b2a08e94d28371c8-00
+      ┣ 服务线程 ID：      #8
+      ┣ 执行耗时：         414ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.ArgumentNullException
+      ┣ 消息：             Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:00:41.2197976 +08:00 星期三 L System.Logging.LoggingMonitor[0] #19
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-e2ea68cb8ecc8f69f7de09ae8e9a1792-348dfe6e6dc71248-00
+      ┣ 服务线程 ID：               #19
+      ┣ 执行耗时：                  53ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:00:41.2219144 +08:00 星期三 L System.Logging.LoggingMonitor[0] #23
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                SpecialService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: special; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/special/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-fec72d41bad347d81c2311a5d1e0fe17-3269571c6ebdfa3d-00
+      ┣ 服务线程 ID：               #23
+      ┣ 执行耗时：                  52ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:00:41.4277494 +08:00 星期三 L System.Logging.LoggingMonitor[0] #50
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-917293fb85bdf70745feb6173332a4bd-4283ce5d0976dcb9-00
+      ┣ 服务线程 ID：      #51
+      ┣ 执行耗时：         208ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.ArgumentNullException
+      ┣ 消息：             Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:01:07.6092514 +08:00 星期三 L System.Logging.LoggingMonitor[0] #23
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-3e3b72be40ed440cee3b07605a5992c4-90c42143f9a94f3b-00
+      ┣ 服务线程 ID：               #23
+      ┣ 执行耗时：                  101ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:01:07.6385296 +08:00 星期三 L System.Logging.LoggingMonitor[0] #5
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                SpecialService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: special; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/special/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-11bc85b29d2e0821210ee7bbbf93e590-402ff481300f1a42-00
+      ┣ 服务线程 ID：               #5
+      ┣ 执行耗时：                  101ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:01:07.8267327 +08:00 星期三 L System.Logging.LoggingMonitor[0] #8
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-7536835ce298a4fe8d438c993aacfb03-fd7a89cb0ca61703-00
+      ┣ 服务线程 ID：      #51
+      ┣ 执行耗时：         317ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.ArgumentNullException
+      ┣ 消息：             Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:02:54.9739772 +08:00 星期三 L System.Logging.LoggingMonitor[0] #52
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-cdd573504f1e16dde4e944a183b1d04b-d957036397ce1617-00
+      ┣ 服务线程 ID：               #52
+      ┣ 执行耗时：                  61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:02:55.0428121 +08:00 星期三 L System.Logging.LoggingMonitor[0] #19
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                SpecialService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: special; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/special/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-9212cfce6c2e6f81ab98e30dc30ef725-40f24847ae10e19a-00
+      ┣ 服务线程 ID：               #19
+      ┣ 执行耗时：                  14578ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.SpecialService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\SpecialService.cs:line 68
+         at lambda_method187(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:02:55.2581513 +08:00 星期三 L System.Logging.LoggingMonitor[0] #38
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：       ArticleService
+      ┣ 操作名称：         GetRecommend
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: article; [action]: recommend
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://localhost:5005/api/article/recommend
+      ┣ 来源地址：         http://localhost:19991/
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-c657b844a6ab875781293496fc46f206-98341092c3afd210-00
+      ┣ 服务线程 ID：      #23
+      ┣ 执行耗时：         14796ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19044
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.41
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleSiderOutput>>
+      ┣ 最终类型：         
+      ┣ 最终返回值：       null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：             System.ArgumentNullException
+      ┣ 消息：             Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetRecommend() in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 69
+         at lambda_method188(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:03:17.2926077 +08:00 星期三 L System.Logging.LoggingMonitor[0] #6
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/api/article/newest?minId=
+      ┣ 来源地址：                  http://localhost:19991/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-1d9627d21b339c0801c711b460b2643f-1c18df915c8d0312-00
+      ┣ 服务线程 ID：               #6
+      ┣ 执行耗时：                  92ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleOutput>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.ArgumentNullException
+      ┣ 消息：                      Value cannot be null. (Parameter 's')
+      ┣ 错误堆栈：                  at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId() in C:\work\juai\admin.net\Admin.NET.Core\Service\User\UserManager.cs:line 22
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 's')
+         at System.Int64.Parse(String s)
+         at Admin.NET.Core.UserManager.get_UserId()
+         at Admin.NET.Core.JuAI.Service.ArticleService.GetNewest(Nullable`1 minId) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 55
+         at lambda_method201(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 22:04:29.2116365 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #19
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:15:42.5326654 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #65
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:15:50.1449720 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #65
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:16:04.4587849 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #60
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:16:39.5495146 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #60
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:17:52.4834460 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #19
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:17:55.1052153 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #24
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:18:05.9807026 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #8
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:19:42.2196767 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #60
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-30 23:19:53.4058886 +08:00 星期三 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #8
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync()
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

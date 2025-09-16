@@ -1,0 +1,127 @@
+fail: 2024-01-02 23:08:22.1027733 +08:00 星期二 L System.Logging.LoggingMonitor[0] #7 '00-cae6498c9b3f3c497970bc60c4cc4d66-23e84e7129f84d7f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetRecommend
+      ┣ 
+      ┣ 控制器名称：                          DrawingImageService
+      ┣ 操作名称：                            GetRecommend
+      ┣ 显示名称：                            
+      ┣ 路由信息：                            [area]: ; [controller]: drawingImage; [action]: recommend
+      ┣ 请求方式：                            GET
+      ┣ 请求地址：                            http://127.0.0.1:5005/app/api/DrawingImage/recommend/0?minDate=
+      ┣ 来源地址：                            http://localhost:3001/drawing
+      ┣ 请求端源：                            client
+      ┣ 浏览器标识：                          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                      127.0.0.1
+      ┣ 服务端 IP 地址：                      127.0.0.1
+      ┣ 客户端连接 ID：                       00-cae6498c9b3f3c497970bc60c4cc4d66-23e84e7129f84d7f-00
+      ┣ 服务线程 ID：                         #7
+      ┣ 执行耗时：                            15ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                              userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":993895,"payType":111}
+      ┣ 响应端：                              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                            Microsoft Windows 10.0.19045
+      ┣ 系统架构：                            X64
+      ┣ 基础框架：                            Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                           .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                            Production
+      ┣ 启动程序集：                          Admin.NET.Web.Entry
+      ┣ 进程名称：                            Admin.NET.Web.Entry
+      ┣ 托管程序：                            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                              application/json, text/plain, */*
+      ┣ Connection：                          close
+      ┣ Host：                                127.0.0.1:5005
+      ┣ User-Agent：                          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                     gzip, deflate, br
+      ┣ Accept-Language：                     zh-CN,zh;q=0.9
+      ┣ Authorization：                       Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Cookie：                              userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A993895%2C%22payType%22%3A111%7D
+      ┣ Referer：                             http://localhost:3001/drawing
+      ┣ sec-fetch-dest：                      empty
+      ┣ sec-fetch-mode：                      cors
+      ┣ sec-fetch-site：                      same-origin
+      ┣ sec-ch-ua-platform：                  "Windows"
+      ┣ x-authorization：                     Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis
+      ┣ sec-ch-ua-mobile：                    ?0
+      ┣ DNT：                                 1
+      ┣ sec-ch-ua：                           "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                        
+      ┣ 
+      ┣ imageType (DrawingImageType)：        0
+      ┣ minDate (Nullable`1)：                
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                      200
+      ┣ 原始类型：                            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.ChatgptImageRes>>
+      ┣ 最终类型：                            
+      ┣ 最终返回值：                          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                SqlSugar.SqlSugarException
+      ┣ 消息：                                中文提示 : 当前表达式m.OssUrl.IsNullOrWhiteSpace() 不支持，查看导航是否配置正确等或者缺少Includes() 
+      English Message : m.OssUrl.IsNullOrWhiteSpace()no support Check if the navigation is configured correctly or Includes() is missing
+      ┣ 错误堆栈：                            at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.MethodCallExpressionResolve.CusMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+         at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+         at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.BaseResolve.GetMethodCallArgs(ExpressionParameter parameter, Expression item, String name)
+         at SqlSugar.MethodCallExpressionResolve.AppendItem(ExpressionParameter parameter, String name, IEnumerable`1 args, MethodCallExpressionModel model, Expression item)
+         at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+         at SqlSugar.ConditionalExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.BaseResolve.ResloveOtherMUC(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.QueryableProvider`1.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.GetRecommend(DrawingImageType imageType, Nullable`1 minDate)
+         at lambda_method244(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 当前表达式m.OssUrl.IsNullOrWhiteSpace() 不支持，查看导航是否配置正确等或者缺少Includes() 
+      English Message : m.OssUrl.IsNullOrWhiteSpace()no support Check if the navigation is configured correctly or Includes() is missing
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.MethodCallExpressionResolve.CusMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+         at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+         at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.BaseResolve.GetMethodCallArgs(ExpressionParameter parameter, Expression item, String name)
+         at SqlSugar.MethodCallExpressionResolve.AppendItem(ExpressionParameter parameter, String name, IEnumerable`1 args, MethodCallExpressionModel model, Expression item)
+         at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+         at SqlSugar.ConditionalExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.BaseResolve.ResloveOtherMUC(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+         at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.QueryableProvider`1.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.GetRecommend(DrawingImageType imageType, Nullable`1 minDate)
+         at lambda_method244(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

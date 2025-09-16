@@ -1,0 +1,1606 @@
+info: 2023-11-02 09:30:05.6426653 +08:00 星期四 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-02 09:30:05.7623559 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-11-02 09:30:05.7648247 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-11-02 09:30:07.6144399 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-02 09:30:07.6160409 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-02 09:30:07.6178211 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-02 09:30:07.6188878 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-02 10:02:40.7964072 +08:00 星期四 L System.Logging.LoggingMonitor[0] #63 '00-0577a2a6cecde25d8dcfb3a20ae6d4b5-6f56e9b3d0bd22a0-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-0577a2a6cecde25d8dcfb3a20ae6d4b5-6f56e9b3d0bd22a0-00
+      ┣ 服务线程 ID：               #69
+      ┣ 执行耗时：                  683ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:04:40.1884599 +08:00 星期四 L System.Logging.LoggingMonitor[0] #59 '00-51ffe48071f4e73ddb92b222b210b5dd-a0f4078a95644d5e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-51ffe48071f4e73ddb92b222b210b5dd-a0f4078a95644d5e-00
+      ┣ 服务线程 ID：               #59
+      ┣ 执行耗时：                  267ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:07:25.6640328 +08:00 星期四 L System.Logging.LoggingMonitor[0] #56 '00-6e3a036720327878183bed3e943fb9dc-d0ecde0d5ea02cbd-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-6e3a036720327878183bed3e943fb9dc-d0ecde0d5ea02cbd-00
+      ┣ 服务线程 ID：               #56
+      ┣ 执行耗时：                  239ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:08:14.3341882 +08:00 星期四 L System.Logging.LoggingMonitor[0] #72 '00-b210cbbcf8f06eac8570b5def9e5deeb-010e7eeed2d21e13-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-b210cbbcf8f06eac8570b5def9e5deeb-010e7eeed2d21e13-00
+      ┣ 服务线程 ID：               #72
+      ┣ 执行耗时：                  237ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:12:39.5965511 +08:00 星期四 L System.Logging.LoggingMonitor[0] #63 '00-bfbb12ddea322b7983e47b7f11537913-92f0a36284971db3-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-bfbb12ddea322b7983e47b7f11537913-92f0a36284971db3-00
+      ┣ 服务线程 ID：               #63
+      ┣ 执行耗时：                  383ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:12:39.9491193 +08:00 星期四 L System.Logging.LoggingMonitor[0] #63 '00-af2bb3682592a68ac944d4101ab744c9-c77e5930ce3d75db-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-af2bb3682592a68ac944d4101ab744c9-c77e5930ce3d75db-00
+      ┣ 服务线程 ID：               #63
+      ┣ 执行耗时：                  246ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:13:19.3467046 +08:00 星期四 L System.Logging.LoggingMonitor[0] #70 '00-fea202772f0d8ce9cafbe78ca1ef045c-dba78ab2e017b1c7-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-fea202772f0d8ce9cafbe78ca1ef045c-dba78ab2e017b1c7-00
+      ┣ 服务线程 ID：               #67
+      ┣ 执行耗时：                  266ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:13:19.5720991 +08:00 星期四 L System.Logging.LoggingMonitor[0] #56 '00-6afda98cf7bb369da9fb2762694b6ee8-16efcb5fe99348dd-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-6afda98cf7bb369da9fb2762694b6ee8-16efcb5fe99348dd-00
+      ┣ 服务线程 ID：         #70
+      ┣ 执行耗时：            486ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:14:02.9548285 +08:00 星期四 L System.Logging.LoggingMonitor[0] #68 '00-986bf135e2bd6229d4ced2d4a49c5fde-e7d63f60e003e6ee-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-986bf135e2bd6229d4ced2d4a49c5fde-e7d63f60e003e6ee-00
+      ┣ 服务线程 ID：         #9
+      ┣ 执行耗时：            68ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:14:03.1210583 +08:00 星期四 L System.Logging.LoggingMonitor[0] #69 '00-2a83e76b021b0ddab11a22316e3382ba-70a32172831d22f9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-2a83e76b021b0ddab11a22316e3382ba-70a32172831d22f9-00
+      ┣ 服务线程 ID：               #69
+      ┣ 执行耗时：                  233ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:14:12.1695469 +08:00 星期四 L System.Logging.LoggingMonitor[0] #56 '00-5ac65649a4251e715e64f074f19e9a6a-6596e7f8cbdc07f9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-5ac65649a4251e715e64f074f19e9a6a-6596e7f8cbdc07f9-00
+      ┣ 服务线程 ID：         #9
+      ┣ 执行耗时：            60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:14:12.3350708 +08:00 星期四 L System.Logging.LoggingMonitor[0] #9 '00-bda582ac77f1840cf0dafa5298563bd9-8329fad4cdf0b1fe-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-bda582ac77f1840cf0dafa5298563bd9-8329fad4cdf0b1fe-00
+      ┣ 服务线程 ID：               #44
+      ┣ 执行耗时：                  227ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:19:05.8931873 +08:00 星期四 L System.Logging.LoggingMonitor[0] #41 '00-132af3959746bd6305b225a555b7f089-9c283472c31b3e28-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-132af3959746bd6305b225a555b7f089-9c283472c31b3e28-00
+      ┣ 服务线程 ID：         #43
+      ┣ 执行耗时：            1217ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 10:19:06.0707571 +08:00 星期四 L System.Logging.LoggingMonitor[0] #45 '00-6e030ad8ef09954933ea91b469be9e4c-462adb50c46e2894-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-6e030ad8ef09954933ea91b469be9e4c-462adb50c46e2894-00
+      ┣ 服务线程 ID：               #45
+      ┣ 执行耗时：                  1396ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":29},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 13:49:56.0476401 +08:00 星期四 L System.Logging.LoggingMonitor[0] #41 '00-f9ef066f07af320d33dd48ddd74d8cff-68059eb3e65bdd6c-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-f9ef066f07af320d33dd48ddd74d8cff-68059eb3e65bdd6c-00
+      ┣ 服务线程 ID：                  #41
+      ┣ 执行耗时：                     137ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T13:49:56.013628+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 13:49:58.7947709 +08:00 星期四 L System.Logging.LoggingMonitor[0] #98 '00-5ae126c0513f862b843157d765c2a9bf-d1b165e7c102e2cf-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: files
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/files?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-5ae126c0513f862b843157d765c2a9bf-d1b165e7c102e2cf-00
+      ┣ 服务线程 ID：                  #98
+      ┣ 执行耗时：                     61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14346060228805","url":"http://filetest.guxin.link/upload/Cover/14346060228805.jpg"},{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null}],"extras":null,"time":"2023-11-02T13:49:58
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 13:51:33.3107882 +08:00 星期四 L System.Logging.LoggingMonitor[0] #96 '00-09ecc4e5a56ca15ef2125f37ab78ef51-0c592dccfb06ca30-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-09ecc4e5a56ca15ef2125f37ab78ef51-0c592dccfb06ca30-00
+      ┣ 服务线程 ID：                  #96
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T13:51:33.307637+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 13:53:13.4614551 +08:00 星期四 L System.Logging.LoggingMonitor[0] #96 '00-7b09cd7b46d43b453f4868843de2cea5-a3aa898fabc7cebc-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-7b09cd7b46d43b453f4868843de2cea5-a3aa898fabc7cebc-00
+      ┣ 服务线程 ID：                  #96
+      ┣ 执行耗时：                     59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T13:53:13.4591995+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 13:54:47.5629930 +08:00 星期四 L System.Logging.LoggingMonitor[0] #38 '00-ce5ffc4591f22b10a797968ab164410b-c5fb8676218ba2e9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: files
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/files?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-ce5ffc4591f22b10a797968ab164410b-c5fb8676218ba2e9-00
+      ┣ 服务线程 ID：                  #38
+      ┣ 执行耗时：                     61ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14346060228805","url":"http://filetest.guxin.link/upload/Cover/14346060228805.jpg"},{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null}],"extras":null,"time":"2023-11-02T13:54:47
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 15:25:36.6531730 +08:00 星期四 L System.Logging.LoggingMonitor[0] #46 '00-3f4e9d752f7b54d41d7a614cb5ef9d09-3e37c90e9cf88198-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-3f4e9d752f7b54d41d7a614cb5ef9d09-3e37c90e9cf88198-00
+      ┣ 服务线程 ID：                  #46
+      ┣ 执行耗时：                     280ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T15:25:36.6470223+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 15:29:37.7336803 +08:00 星期四 L System.Logging.LoggingMonitor[0] #56 '00-5c9eb0c8fc7faa7b8a43d42be60c4768-bf6c5c2c2819b72d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-5c9eb0c8fc7faa7b8a43d42be60c4768-bf6c5c2c2819b72d-00
+      ┣ 服务线程 ID：                  #56
+      ┣ 执行耗时：                     235ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T15:29:37.7278444+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 15:57:15.1723994 +08:00 星期四 L System.Logging.LoggingMonitor[0] #9 '00-1ebd263eca73b90b302f60d038a01469-23735c5a75b1e5a6-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-1ebd263eca73b90b302f60d038a01469-23735c5a75b1e5a6-00
+      ┣ 服务线程 ID：                  #9
+      ┣ 执行耗时：                     422ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T15:57:14.7311235+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:24:33.3692782 +08:00 星期四 L System.Logging.LoggingMonitor[0] #49 '00-ca646f2a5cf14b7252d3fed653a7b7d3-e70a5798e8b8821a-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-ca646f2a5cf14b7252d3fed653a7b7d3-e70a5798e8b8821a-00
+      ┣ 服务线程 ID：                  #49
+      ┣ 执行耗时：                     738ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T22:24:33.25433+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:25:07.1498112 +08:00 星期四 L System.Logging.LoggingMonitor[0] #71 '00-9e82f8214ca26f1588c66868524907e7-bd6e2f118ddd6ee7-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: files
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/files?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-9e82f8214ca26f1588c66868524907e7-bd6e2f118ddd6ee7-00
+      ┣ 服务线程 ID：                  #71
+      ┣ 执行耗时：                     62ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14346060228805","url":"http://filetest.guxin.link/upload/Cover/14346060228805.jpg"},{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null}],"extras":null,"time":"2023-11-02T22:25:07
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:49:01.7622635 +08:00 星期四 L System.Logging.LoggingMonitor[0] #69 '00-9d74706f57891bee21b62b00baece0b3-a67637ce7395ec56-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-9d74706f57891bee21b62b00baece0b3-a67637ce7395ec56-00
+      ┣ 服务线程 ID：                  #69
+      ┣ 执行耗时：                     1327ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T22:49:01.7474948+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:51:11.0817333 +08:00 星期四 L System.Logging.LoggingMonitor[0] #74 '00-40f07a8d3efc52b641afd6c1d249318f-88c6182e098502d2-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-40f07a8d3efc52b641afd6c1d249318f-88c6182e098502d2-00
+      ┣ 服务线程 ID：                  #74
+      ┣ 执行耗时：                     74ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T22:51:11.0772633+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:51:30.9136415 +08:00 星期四 L System.Logging.LoggingMonitor[0] #79 '00-e141d02a37576bbeef95d2d990f0305d-27d7e609509811a3-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: files
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/files?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-e141d02a37576bbeef95d2d990f0305d-27d7e609509811a3-00
+      ┣ 服务线程 ID：                  #79
+      ┣ 执行耗时：                     80ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14346060228805","url":"http://filetest.guxin.link/upload/Cover/14346060228805.jpg"},{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null}],"extras":null,"time":"2023-11-02T22:51:30
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:57:49.6923053 +08:00 星期四 L System.Logging.LoggingMonitor[0] #63 '00-0d80946149fc0d3fce2650b426b48e60-5249111f06b8e628-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-0d80946149fc0d3fce2650b426b48e60-5249111f06b8e628-00
+      ┣ 服务线程 ID：                  #63
+      ┣ 执行耗时：                     225ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T22:57:49.6901452+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 22:59:22.1127422 +08:00 星期四 L System.Logging.LoggingMonitor[0] #69 '00-4cdcb2af9674c7c899a806696cb810b3-99b39a0ee1d1b151-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-4cdcb2af9674c7c899a806696cb810b3-99b39a0ee1d1b151-00
+      ┣ 服务线程 ID：                  #69
+      ┣ 执行耗时：                     67ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T22:59:22.1072698+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 23:00:46.1868231 +08:00 星期四 L System.Logging.LoggingMonitor[0] #63 '00-f527a1385f8eaf97871e826d0a7b81fb-e8f7fbe5064eef38-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetMyFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetMyFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: myFiles
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/myFiles?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-f527a1385f8eaf97871e826d0a7b81fb-e8f7fbe5064eef38-00
+      ┣ 服务线程 ID：                  #63
+      ┣ 执行耗时：                     60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null},{"id":"14293865574469","url":null}],"extras":null,"time":"2023-11-02T23:00:46.1817928+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-02 23:02:09.0026864 +08:00 星期四 L System.Logging.LoggingMonitor[0] #47 '00-f02f2f60f9de8985eda78ccd762a01df-7a5ec844cf1e0038-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuFileService.GetFiles
+      ┣ 
+      ┣ 控制器名称：                   JuFileService
+      ┣ 操作名称：                     GetFiles
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: juFile; [action]: files
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/juFile/files?size=5
+      ┣ 来源地址：                     http://localhost:3000/publish
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-f02f2f60f9de8985eda78ccd762a01df-7a5ec844cf1e0038-00
+      ┣ 服务线程 ID：                  #47
+      ┣ 执行耗时：                     59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            怪兽来了
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 
+      ┣ 
+      ┣ lastId (Nullable`1)：          
+      ┣ size (Int32)：                 5
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Object
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":[{"id":"14346060228805","url":"http://filetest.guxin.link/upload/Cover/14346060228805.jpg"},{"id":"14315599530821","url":"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg"},{"id":"14305610107589","url":"http://filetest.guxin.link/Upload/2023/09/14305610107589.png"},{"id":"14301316318021","url":"http://filetest.guxin.link/Upload/2023/09/14301316318021.jpg"},{"id":"14301182433733","url":null}],"extras":null,"time":"2023-11-02T23:02:08
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

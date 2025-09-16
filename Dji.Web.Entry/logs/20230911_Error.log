@@ -1,0 +1,78 @@
+fail: 2023-09-11 21:20:44.9405613 +08:00 星期一 L System.Logging.LoggingMonitor[0] #30
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysDatabaseExtendService.PostExecute
+      ┣ 
+      ┣ 控制器名称：                   SysDatabaseExtendService
+      ┣ 操作名称：                     PostExecute
+      ┣ 显示名称：                     查询sql
+      ┣ 路由信息：                     [area]: ; [controller]: sysDatabaseExtend; [action]: execute
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/sysDatabaseExtend/execute/1300000000001
+      ┣ 来源地址：                     http://localhost:5005/index.html?urls.primaryName=Admin.NET
+      ┣ 请求端源：                     swagger
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-16a2fcd07b7764e138589cd1c48372c5-ca0532f509e02255-00
+      ┣ 服务线程 ID：                  #30
+      ┣ 执行耗时：                     17820ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDQzNzI0MCwibmJmIjoxNjk0NDM3MjQwLCJleHAiOjE2OTUwNDIwNDAsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.hqbIVT2GzvRMCrtEfznhAgzSFMtit8Wqk6cvCrMe8go
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDQzODI0MiwibmJmIjoxNjk0NDM4MjQyLCJleHAiOjE2OTUwNDMwNDIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.F-uUiM-zue5K8J3zdL-hmsafPVVvAn2pt-oPqmv9oLM
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694438242 (2023-09-11 21:17:22:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                1694438242 (2023-09-11 21:17:22:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                1695043042 (2023-09-18 21:17:22:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json-patch+json
+      ┣ 
+      ┣ configId (String)：            1300000000001
+      ┣ sql (String)：                 INSERT INTO `sys_menu` VALUES ('1300000000101', '0', '1', 'dashboard', '/dashboard', 'Layout', null, null, '工作台', 'ele-HomeFilled', '0', null, '0', '1', '0', '0', '1', null, '2023-08-06 16:05:57', '2023-09-06 21:06:17', null, null, '0') 
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Int32
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         MySqlConnector.MySqlException
+      ┣ 消息：                         Duplicate entry '1300000000101' for key 'sys_menu.PRIMARY'
+      ┣ 错误堆栈：                     at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at Admin.NET.Core.Service.SysDatabaseExtendService.PostExecute(String configId, String sql) in C:\work\juai\api\Admin.NET.Core\Service\DataBase\SysDatabaseExtendService.cs:line 57
+         at lambda_method160(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Duplicate entry '1300000000101' for key 'sys_menu.PRIMARY'
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at Admin.NET.Core.Service.SysDatabaseExtendService.PostExecute(String configId, String sql) in C:\work\juai\api\Admin.NET.Core\Service\DataBase\SysDatabaseExtendService.cs:line 57
+         at lambda_method160(Closure , Object , Object[] )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,949 @@
+fail: 2023-09-15 20:22:17.5212734 +08:00 星期五 L Admin.NET.Application.QiNiuFileService[0] #3
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错0
+fail: 2023-09-15 20:23:54.8624956 +08:00 星期五 L Admin.NET.Application.QiNiuFileService[0] #43
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错0
+fail: 2023-09-15 20:36:28.3257896 +08:00 星期五 L System.Logging.LoggingMonitor[0] #36
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.AdminMidController.PostMidUrlsToQiniu
+      ┣ 
+      ┣ 控制器名称：                   AdminMidController
+      ┣ 操作名称：                     PostMidUrlsToQiniu
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: AdminMid; [action]: PostMidUrlsToQiniu
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/adminMid/fetchToDb
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-845b0b521c4f9f91c63ec4af562aa046-e557108843f1812a-00
+      ┣ 服务线程 ID：                  #25
+      ┣ 执行耗时：                     5571ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         MySqlConnector.MySqlException
+      ┣ 消息：                         Field 'ContentStatus' doesn't have a default value
+      ┣ 错误堆栈：                     at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.MidjourneyService.UpdateOrInsertByTaskRes(MidjourneyTaskRes res, String qnUrl) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Midjourney\MidjourneyService.cs:line 29
+         at Admin.NET.Web.Entry.Controllers.MidController.PostMidUrlsToQiniu() in C:\work\juai\api\Admin.NET.Web.Entry\Controllers\MidjourneyController.cs:line 238
+         at Admin.NET.Web.Entry.Controllers.AdminMidController.PostMidUrlsToQiniu() in C:\work\juai\api\Admin.NET.Web.Entry\Controllers\Admin\MidjourneyController.cs:line 34
+         at lambda_method362(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Field 'ContentStatus' doesn't have a default value
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.MidjourneyService.UpdateOrInsertByTaskRes(MidjourneyTaskRes res, String qnUrl) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Midjourney\MidjourneyService.cs:line 29
+         at Admin.NET.Web.Entry.Controllers.MidController.PostMidUrlsToQiniu() in C:\work\juai\api\Admin.NET.Web.Entry\Controllers\MidjourneyController.cs:line 238
+         at Admin.NET.Web.Entry.Controllers.AdminMidController.PostMidUrlsToQiniu() in C:\work\juai\api\Admin.NET.Web.Entry\Controllers\Admin\MidjourneyController.cs:line 34
+         at lambda_method362(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:03:36.3103247 +08:00 星期五 L System.Logging.LoggingMonitor[0] #45
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-3b78c9c2e86754ac4f828cb5974b48e0-6f9218e4aee55179-00
+      ┣ 服务线程 ID：                          #45
+      ┣ 执行耗时：                             16ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:03:40.4402052 +08:00 星期五 L System.Logging.LoggingMonitor[0] #38
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-bfba62a20858f4340b83d02a0011f6e3-bc1bbe5f549c4116-00
+      ┣ 服务线程 ID：                          #38
+      ┣ 执行耗时：                             0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:07:36.9461954 +08:00 星期五 L System.Logging.LoggingMonitor[0] #36
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-8ef3d2fbf95f5f6022d70c6de5fcfd27-c3c9a4cf2ebaabb1-00
+      ┣ 服务线程 ID：                          #36
+      ┣ 执行耗时：                             0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method276(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:08:35.3149583 +08:00 星期五 L System.Logging.LoggingMonitor[0] #9
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-40e6b009446c22a1e90813343eb34d7f-141fe0d80726958d-00
+      ┣ 服务线程 ID：                          #9
+      ┣ 执行耗时：                             42ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method90(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method90(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:08:39.3688220 +08:00 星期五 L System.Logging.LoggingMonitor[0] #20
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-75fb6883aeb0f82c6ffa86673c9bb380-ca39eeed67b4743a-00
+      ┣ 服务线程 ID：                          #20
+      ┣ 执行耗时：                             0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method90(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method90(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:09:16.4016778 +08:00 星期五 L System.Logging.LoggingMonitor[0] #6
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-f02768903b403347b6e5b91fbf7baff4-acc6108410787616-00
+      ┣ 服务线程 ID：                          #6
+      ┣ 执行耗时：                             2ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method200(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method200(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:09:20.7276202 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-ef92ec28bcb1d6312dd5e2e0447042de-a1ea7960f7eccbbb-00
+      ┣ 服务线程 ID：                          #21
+      ┣ 执行耗时：                             0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method200(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input)
+         at lambda_method200(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:10:10.0435240 +08:00 星期五 L System.Logging.LoggingMonitor[0] #9
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-09b3c0fca338a89b838af3f3434148d4-22d966fcc31166ac-00
+      ┣ 服务线程 ID：                          #9
+      ┣ 执行耗时：                             44ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Where中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Where u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Where(Expression expression)
+         at SqlSugar.QueryableProvider`2.WhereIF(Boolean isWhere, Expression`1 expression)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:29:29.1073511 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-9aa2d5a3a92f7e89e52a3b14ef485f24-e7c8465f3420cbac-00
+      ┣ 服务线程 ID：                          #26
+      ┣ 执行耗时：                             38ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Select中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Select u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Select[TResult](Expression expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Select中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Select u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Select[TResult](Expression expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:29:33.2662065 +08:00 星期五 L System.Logging.LoggingMonitor[0] #30
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Page
+      ┣ 
+      ┣ 控制器名称：                           MidjourneyNotifyService
+      ┣ 操作名称：                             Page
+      ┣ 显示名称：                             
+      ┣ 路由信息：                             [area]: ; [controller]: midjourneyNotify; [action]: page
+      ┣ 请求方式：                             POST
+      ┣ 请求地址：                             http://localhost:5005/api/midjourneyNotify/page
+      ┣ 来源地址：                             http://localhost:8888/
+      ┣ 请求端源：                             client
+      ┣ 浏览器标识：                           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                       zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                       0.0.0.1
+      ┣ 服务端 IP 地址：                       0.0.0.1
+      ┣ 客户端连接 ID：                        00-c1aef80f3b193715e0f7bd6e4025b917-ad816ded9ea6fe25-00
+      ┣ 服务线程 ID：                          #30
+      ┣ 执行耗时：                             0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                               
+      ┣ 响应端：                               
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                             Microsoft Windows 10.0.19044
+      ┣ 系统架构：                             X64
+      ┣ 基础框架：                             Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                            .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                             Production
+      ┣ 启动程序集：                           Admin.NET.Web.Entry
+      ┣ 进程名称：                             Admin.NET.Web.Entry
+      ┣ 托管程序：                             Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                            Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDc3NTg3MiwibmJmIjoxNjk0Nzc1ODcyLCJleHAiOjE2OTUzODA2NzIsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.6RUmEN9vDAo4WsI59Z3hTWdiXNTyhpx5oMhOoiZEsow
+      ┣ 
+      ┣ UserId (integer64)：                   1300000000101
+      ┣ TenantId (integer64)：                 1300000000001
+      ┣ Account (string)：                     superadmin
+      ┣ RealName (string)：                    超级管理员
+      ┣ AccountType (integer)：                999
+      ┣ OrgId (integer)：                      0
+      ┣ OrgName (JSON_NULL)：                  
+      ┣ OrgType (JSON_NULL)：                  
+      ┣ iat (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ nbf (integer)：                        1694775872 (2023-09-15 19:04:32:0000(+08:00) 星期五 L)
+      ┣ exp (integer)：                        1695380672 (2023-09-22 19:04:32:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                         Admin.NET
+      ┣ aud (string)：                         Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                         application/json
+      ┣ 
+      ┣ input (MidjourneyNotifyInput)：        {"action":null,"prompt":"我画一个朋克少女","promptEn":null,"submitTime":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                       200
+      ┣ 原始类型：                             System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.MidjourneyNotifyOutput>>
+      ┣ 最终类型：                             
+      ┣ 最终返回值：                           null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                 SqlSugar.SqlSugarException
+      ┣ 消息：                                 中文提示 : 多表查询存在别名不一致,请把Select中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Select u
+      ┣ 错误堆栈：                             at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Select[TResult](Expression expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 : 多表查询存在别名不一致,请把Select中的u改成n就可以了，特殊需求可以使用.Select((x,y)=>new{ id=x.id,name=y.name}).MergeTable().Orderby(xxx=>xxx.Id)功能将Select中的多表结果集变成单表，这样就可以不限制别名一样
+      English Message : Join n needs to be the same as Select u
+         at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+         at SqlSugar.QueryBuilder.CheckExpression(Expression expression, String methodName)
+         at SqlSugar.QueryableProvider`1._Select[TResult](Expression expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression)
+         at SqlSugar.QueryableProvider`2.Select[TResult](Expression`1 expression, Boolean isAutoFill)
+         at Admin.NET.Application.MidjourneyNotifyService.Page(MidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 33
+         at lambda_method108(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-15 21:32:49.0067640 +08:00 星期五 L Admin.NET.Application.QiNiuFileService[0] #24
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错504
+fail: 2023-09-15 21:33:58.3909371 +08:00 星期五 L Admin.NET.Application.QiNiuFileService[0] #24
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错504

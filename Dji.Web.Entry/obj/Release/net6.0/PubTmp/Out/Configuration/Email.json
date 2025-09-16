@@ -1,0 +1,15 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Email": {
+    "Host": "smtp.qq.com", // 主机
+    "Port": 25, // 端口 465、994、25
+    "DefaultFromEmail": "15100305@qq.com", // 默认发件者邮箱: null,
+    "DefaultToEmail": "15100305@qq.com", // 默认接收人邮箱
+    "EnableSsl": true, // 启用SSL
+    "UseDefaultCredentials": false, //是否使用默认凭据
+    "UserName": "15100305@qq.com", // 邮箱账号
+    "Password": "nlyamgdysveybgdh", // 邮箱授权码
+    "DefaultFromName": "聚AI(juai.link)" // 默认邮件标题
+  }
+}

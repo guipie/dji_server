@@ -1,0 +1,58 @@
+info: 2024-05-17 00:00:19.0927273 +08:00 星期五 L System.Logging.LoggingMonitor[0] #7 '00-7ccfc064320bd03a1dcd5d6a3cdcac73-9768c272ba149f01-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：                SysAuthService
+      ┣ 操作名称：                  SwaggerCheckUrl
+      ┣ 显示名称：                  Swagger登录检查
+      ┣ 路由信息：                  [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：                  POST
+      ┣ 请求地址：                  http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：                  http://localhost:5005/index.html
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-7ccfc064320bd03a1dcd5d6a3cdcac73-9768c272ba149f01-00
+      ┣ 服务线程 ID：               #7
+      ┣ 执行耗时：                  13ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    */*
+      ┣ Connection：                keep-alive
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMTEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50IjoiYWRtaW4iLCJSZWFsTmFtZSI6Iuezu-e7n-euoeeQhuWRmCIsIkFjY291bnRUeXBlIjo4ODgsIk9yZ0lkIjoxMzAwMDAwMDAwMTAxLCJPcmdOYW1lIjoi5aSn5ZCN56eR5oqAIiwiT3JnVHlwZSI6IjEwMSIsImlhdCI6MTcxNDMxNDIyNywibmJmIjoxNzE0MzE0MjI3LCJleHAiOjE3MTQ5MTkwMjcsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.oaaOqB__UFfH9mt6Mx86-tKH8t2ByHlAFaTEAW15Xgk
+      ┣ Content-Type：              application/x-www-form-urlencoded
+      ┣ Origin：                    http://localhost:5005
+      ┣ Referer：                   http://localhost:5005/index.html
+      ┣ Content-Length：            0
+      ┣ sec-ch-ua：                 "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ Sec-Fetch-Site：            same-origin
+      ┣ Sec-Fetch-Mode：            cors
+      ┣ Sec-Fetch-Dest：            empty
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Int32
+      ┣ 最终类型：                  System.Int32
+      ┣ 最终返回值：                401
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

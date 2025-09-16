@@ -1,0 +1,352 @@
+info: 2023-10-18 19:05:39.2698507 +08:00 星期三 L System.Logging.LoggingMonitor[0] #82 '00-5ee4310c4e95780e91062937bc4d7bcd-c76125a4f24bad69-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-5ee4310c4e95780e91062937bc4d7bcd-c76125a4f24bad69-00
+      ┣ 服务线程 ID：               #82
+      ┣ 执行耗时：                  964ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":27},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 19:05:39.2067539 +08:00 星期三 L System.Logging.LoggingMonitor[0] #26 '00-6f6e8feb201a827111db0d7c02253fdd-3fdd2067baba34a1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-6f6e8feb201a827111db0d7c02253fdd-3fdd2067baba34a1-00
+      ┣ 服务线程 ID：         #55
+      ┣ 执行耗时：            835ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 20:36:22.8214045 +08:00 星期三 L System.Logging.LoggingMonitor[0] #7 '00-9fc4267e2631b714027a7bfc3a519e1d-b0f6689bd89f35a2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3001/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-9fc4267e2631b714027a7bfc3a519e1d-b0f6689bd89f35a2-00
+      ┣ 服务线程 ID：               #94
+      ┣ 执行耗时：                  982ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":27},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 20:36:22.7569530 +08:00 星期三 L System.Logging.LoggingMonitor[0] #73 '00-59d1a111499989aff4065f27d9ec1783-29242390f9e1207f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3001/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-59d1a111499989aff4065f27d9ec1783-29242390f9e1207f-00
+      ┣ 服务线程 ID：         #7
+      ┣ 执行耗时：            851ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 20:36:23.2071209 +08:00 星期三 L System.Logging.LoggingMonitor[0] #26 '00-c25e55e5d5ff15eb45b4d0c932c0c6d7-d828a84e185c5ba7-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3001/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-c25e55e5d5ff15eb45b4d0c932c0c6d7-d828a84e185c5ba7-00
+      ┣ 服务线程 ID：         #94
+      ┣ 执行耗时：            64ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 20:36:23.2789287 +08:00 星期三 L System.Logging.LoggingMonitor[0] #94 '00-4bf3979048f6cbd3de109fb8b63b0246-006342ff50e89728-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  IPv4://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3001/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-4bf3979048f6cbd3de109fb8b63b0246-006342ff50e89728-00
+      ┣ 服务线程 ID：               #85
+      ┣ 执行耗时：                  175ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":27},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 21:23:04.8500203 +08:00 星期三 L System.Logging.LoggingMonitor[0] #35 '00-fb768e2997e857666bb6368d2aeafa9e-88235cc4ffca466f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3001/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-fb768e2997e857666bb6368d2aeafa9e-88235cc4ffca466f-00
+      ┣ 服务线程 ID：               #60
+      ┣ 执行耗时：                  1529ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19044
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14378287464261","title":"茅台原董事长袁仁国去世","text":"茅台集团、贵州茅台（600519.SH）原董事长袁仁国已去世。贵阳市某殡仪馆的相关工作人员告诉，袁仁国的遗体现停放在殡仪馆，暂未火化，遗体是从贵州省某监狱运来的。\r\n\r\n有相关情况的接近人士还告诉，火化后，袁仁国的骨灰将送回家乡并举行告别仪","cover":null,"specialId":"0","specialName":null,"createTime":"2023-09-12","status":3,"createUser":{"id":"14228591813061","nickName":"联合创始人","avatar":"Upload/Avatar/14314053753669.png"},"viewCount":27},{"id":"14377558788037","title":"ChatGPT如何辅助工作","text":"ChatGPT可以作为一个
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-10-18 21:23:04.7749931 +08:00 星期三 L System.Logging.LoggingMonitor[0] #92 '00-70c9f2efa6ee2c0d9ab30b4e5885ddc5-bc8dff5418b787a8-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3001/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-70c9f2efa6ee2c0d9ab30b4e5885ddc5-bc8dff5418b787a8-00
+      ┣ 服务线程 ID：         #35
+      ┣ 执行耗时：            1384ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能。","cover":"http://appui.guxin.link/Special/2023-09/14288367202117.jpg"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

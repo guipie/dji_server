@@ -1,0 +1,1141 @@
+fail: 2023-12-29 01:18:26.6762639 +08:00 星期五 L System.Logging.LoggingMonitor[0] #9 '00-c80f69086122e4dff2d625c3cd6ec21a-90924e21fa0ea287-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.GetExamples
+      ┣ 
+      ┣ 控制器名称：                PromptService
+      ┣ 操作名称：                  GetExamples
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: prompt; [action]: examples
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://127.0.0.1:5005/app/api/prompt/examples
+      ┣ 来源地址：                  http://localhost:3001/person
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-c80f69086122e4dff2d625c3cd6ec21a-90924e21fa0ea287-00
+      ┣ 服务线程 ID：               #9
+      ┣ 执行耗时：                  13ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      127.0.0.1:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Cookie：                    userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Referer：                   http://localhost:3001/person
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.ChatPromptExample>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      System.NullReferenceException
+      ┣ 消息：                      Object reference not set to an instance of an object.
+      ┣ 错误堆栈：                  at Admin.NET.Core.JuAI.Service.PromptService.GetExamples() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 40
+         at lambda_method206(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at Admin.NET.Core.JuAI.Service.PromptService.GetExamples() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 40
+         at lambda_method206(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 01:19:31.6614708 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #4 '00-dedc2c6f627a7e4c09ac27ad988e75b9-a9759a7b5f0effc8-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'Admin.NET.Core.JuAI.Service.PromptService'. There should only be one applicable constructor.
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 01:19:31.6732277 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #4 '00-dedc2c6f627a7e4c09ac27ad988e75b9-a9759a7b5f0effc8-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] async Task Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests<TContext>(IHttpApplication<TContext> application)
+      Connection id "0HN07P2JCMLJV", Request id "0HN07P2JCMLJV:00000001": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'Admin.NET.Core.JuAI.Service.PromptService'. There should only be one applicable constructor.
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext() in D:\work\juai\api\Plugins\Furion.Pure\App\Filters\StartupFilter.cs:line 57
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 01:51:16.9361229 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-1996dee46b5619a750c4eaaa8c0c619c-e2589992228f9f1e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-1996dee46b5619a750c4eaaa8c0c619c-e2589992228f9f1e-00
+      ┣ 服务线程 ID：                   #26
+      ┣ 执行耗时：                      18709ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                  application/json
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                553
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ prompt (PromptReponse)：        {}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          System.MissingMethodException
+      ┣ 消息：                          Attempted to access a missing method.
+      ┣ 错误堆栈：                      at Admin.NET.Core.JuAI.Service.PromptReponse.get_Id()
+         at lambda_method216(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt)
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.MissingMethodException: Attempted to access a missing method.
+         at Admin.NET.Core.JuAI.Service.PromptReponse.get_Id()
+         at lambda_method216(Closure, Object)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source, TypeAdapterConfig config)
+         at Mapster.TypeAdapter.Adapt[TDestination](Object source)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt)
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 01:52:38.9258670 +08:00 星期五 L System.Logging.LoggingMonitor[0] #10 '00-969c9a55812ff9f5fea0ac403c738055-bd1bbc1635a4f668-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-969c9a55812ff9f5fea0ac403c738055-bd1bbc1635a4f668-00
+      ┣ 服务线程 ID：                   #10
+      ┣ 执行耗时：                      2839ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                  application/json
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                553
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ prompt (PromptReponse)：        {"id":null,"type":"system","title":"测试一个数字人。哈哈","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\n","maxContext":3,"promptExtend":"","avatar":"","initMessage":"","tags":null,"model":"gpt-3.5-turbo","vendor":"openai"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Column 'tags' cannot be null
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 22
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'tags' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 22
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:00:26.7288472 +08:00 星期五 L System.Logging.LoggingMonitor[0] #35 '00-c9bb1160da11d1e319fe4cdfd03525fd-06a576a19f6b146d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-c9bb1160da11d1e319fe4cdfd03525fd-06a576a19f6b146d-00
+      ┣ 服务线程 ID：                   #15
+      ┣ 执行耗时：                      26723ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryfBhaHxp9F3dk6VfL
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                128070
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryfBhaHxp9F3dk6VfL
+      ┣ 
+      ┣ prompt (PromptReponse)：        {"id":null,"type":"system","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Column 'title' cannot be null
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:01:42.8444612 +08:00 星期五 L System.Logging.LoggingMonitor[0] #24 '00-a5a8675c3c70cb4dc34bb4e79a314266-d13db99b6067ac55-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-a5a8675c3c70cb4dc34bb4e79a314266-d13db99b6067ac55-00
+      ┣ 服务线程 ID：                   #36
+      ┣ 执行耗时：                      50922ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryoPVNBuj2A26lV0am
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                128070
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryoPVNBuj2A26lV0am
+      ┣ 
+      ┣ prompt (PromptReponse)：        {"id":null,"type":"system","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Column 'title' cannot be null
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:03:04.7242662 +08:00 星期五 L System.Logging.LoggingMonitor[0] #23 '00-94e47f73a7623e5675516582fbb39edc-1fa302c10324766c-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-94e47f73a7623e5675516582fbb39edc-1fa302c10324766c-00
+      ┣ 服务线程 ID：                   #37
+      ┣ 执行耗时：                      21318ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundary3yKB0yJwLHPOnlKq
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                942
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundary3yKB0yJwLHPOnlKq
+      ┣ 
+      ┣ prompt (PromptReponse)：        {"id":null,"type":"system","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Column 'title' cannot be null
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:07:50.8789105 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-8e2725372ee9da2c9e5432816a92a11e-949d8f838686f8a1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                    PromptService
+      ┣ 操作名称：                      Post
+      ┣ 显示名称：                      
+      ┣ 路由信息：                      [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                      http://localhost:3001/person
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                127.0.0.1
+      ┣ 服务端 IP 地址：                127.0.0.1
+      ┣ 客户端连接 ID：                 00-8e2725372ee9da2c9e5432816a92a11e-949d8f838686f8a1-00
+      ┣ 服务线程 ID：                   #23
+      ┣ 执行耗时：                      6897ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":1015217,"payType":111}
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Development
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                        application/json, text/plain, */*
+      ┣ Connection：                    close
+      ┣ Host：                          127.0.0.1:5005
+      ┣ User-Agent：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：               gzip, deflate, br
+      ┣ Accept-Language：               zh-CN,zh;q=0.9
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryAxmrKwpnWU3zFVM1
+      ┣ Cookie：                        userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A1015217%2C%22payType%22%3A111%7D
+      ┣ Origin：                        http://localhost:3001
+      ┣ Referer：                       http://localhost:3001/person
+      ┣ Content-Length：                128184
+      ┣ sec-fetch-dest：                empty
+      ┣ sec-fetch-mode：                cors
+      ┣ sec-fetch-site：                same-origin
+      ┣ sec-ch-ua-platform：            "Windows"
+      ┣ sec-ch-ua-mobile：              ?0
+      ┣ DNT：                           1
+      ┣ sec-ch-ua：                     "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  multipart/form-data; boundary=----WebKitFormBoundaryAxmrKwpnWU3zFVM1
+      ┣ 
+      ┣ prompt (PromptReponse)：        {"id":null,"type":"system","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                      
+      ┣ 最终返回值：                    null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                          MySqlConnector.MySqlException
+      ┣ 消息：                          Column 'title' cannot be null
+      ┣ 错误堆栈：                      at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(PromptReponse prompt) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 31
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:15:54.7772752 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #25 '00-c478fc24e6346ded69be0e3fe3694e6e-df5ca4199927e86c-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - Admin.NET.Core.JuAI.Service.PromptService.Post (Admin.NET.Core.JuAI). See inner exception
+       ---> System.ArgumentException: An item with the same key has already been added. Key: title
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchemaFromFormParameters(IEnumerable`1 formParameters, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBodyFromFormParameters(ApiDescription apiDescription, SchemaRepository schemaRepository, IEnumerable`1 formParameters)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBody(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         --- End of inner exception stack trace ---
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 18:16:03.4970515 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1] #7 '00-f0fa1ac01c8d2a9b19a6253af8dd5b9d-4f7e54502a407426-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - Admin.NET.Core.JuAI.Service.PromptService.Post (Admin.NET.Core.JuAI). See inner exception
+       ---> System.ArgumentException: An item with the same key has already been added. Key: title
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchemaFromFormParameters(IEnumerable`1 formParameters, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBodyFromFormParameters(ApiDescription apiDescription, SchemaRepository schemaRepository, IEnumerable`1 formParameters)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBody(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         --- End of inner exception stack trace ---
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Dashboard\backend\ScheduleUIMiddleware.cs:line 77
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext httpContext, Boolean retry)
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context) in D:\work\juai\api\Plugins\Furion.Pure\UnifyResult\Middlewares\UnifyResultStatusCodesMiddleware.cs:line 48
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 19:01:06.8075517 +08:00 星期五 L System.Logging.LoggingMonitor[0] #37 '00-3f950901a4bec52a7274b2dfbf60edb6-4287fb783751fa16-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       PostInsertOrUpdate
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: insertOrUpdate
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://127.0.0.1:5005/app/api/prompt/InsertOrUpdate
+      ┣ 来源地址：                       http://localhost:3001/person
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-3f950901a4bec52a7274b2dfbf60edb6-4287fb783751fa16-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       276448ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":993952,"payType":111}
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                1704123836 (2024-01-01 23:43:56:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           127.0.0.1:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary0NXlOt0xSQXSzjzN
+      ┣ Cookie：                         userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A993952%2C%22payType%22%3A111%7D
+      ┣ Origin：                         http://localhost:3001
+      ┣ Referer：                        http://localhost:3001/person
+      ┣ Content-Length：                 929
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary0NXlOt0xSQXSzjzN
+      ┣ 
+      ┣ prompt (ChatPromptPost)：        {"id":null,"type":"system","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'title' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate(ChatPromptPost prompt)
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate(ChatPromptPost prompt)
+         at lambda_method116(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 19:01:38.4309674 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-b2ec9f9c5486a20a3ec672a86fec1eb2-c5010b3cdb230869-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       PostInsertOrUpdate
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: insertOrUpdate
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://127.0.0.1:5005/app/api/prompt/InsertOrUpdate
+      ┣ 来源地址：                       http://localhost:3001/person
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-b2ec9f9c5486a20a3ec672a86fec1eb2-c5010b3cdb230869-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       8067ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":993952,"payType":111}
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                1704123836 (2024-01-01 23:43:56:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           127.0.0.1:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary4LtxIShfGCqsVS5b
+      ┣ Cookie：                         userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A993952%2C%22payType%22%3A111%7D
+      ┣ Origin：                         http://localhost:3001
+      ┣ Referer：                        http://localhost:3001/person
+      ┣ Content-Length：                 965
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundary4LtxIShfGCqsVS5b
+      ┣ 
+      ┣ prompt (ChatPromptPost)：        {"id":null,"type":"user","title":null,"prompt":null,"maxContext":0,"promptExtend":"","avatar":"","file":null,"initMessage":"","tags":null,"model":"","vendor":""}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'title' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate(ChatPromptPost prompt)
+         at lambda_method264(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'title' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.PostInsertOrUpdate(ChatPromptPost prompt)
+         at lambda_method264(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 21:06:14.5300056 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-71fc76d158b5de2dd89a1e2dcddbed2d-996c0357b4f03868-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:3001/person
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-71fc76d158b5de2dd89a1e2dcddbed2d-996c0357b4f03868-00
+      ┣ 服务线程 ID：                    #24
+      ┣ 执行耗时：                       34653ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":993952,"payType":111}
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                1704123836 (2024-01-01 23:43:56:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           127.0.0.1:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryS2FmvenfY83WhEuC
+      ┣ Cookie：                         userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A993952%2C%22payType%22%3A111%7D
+      ┣ Origin：                         http://localhost:3001
+      ┣ Referer：                        http://localhost:3001/person
+      ┣ Content-Length：                 1378
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryS2FmvenfY83WhEuC
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":null,"type":"user","title":"测试一个没图片的","prompt":"我希望你能担任英语翻译、拼写校对和修辞改进的角色。我会用任何语言和你交流，你会识别语言，将其翻译并用更为优美和精炼的英语回答我。请将我简单的词汇和句子替换成更为优美和高雅的表达方式，确保意思不变，但使其更具文学性。请仅回答更正和改进的部分，不要写解释。我的第一句话是“how are you ?”，请翻译它。\r\n","maxContext":6,"promptExtend":null,"avatar":null,"file":null,"initMessage":null,"tags":null,"model":"gpt-3.5-turbo","vendor":"openai"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'prompt_extend' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 47
+         at lambda_method229(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'prompt_extend' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 47
+         at lambda_method229(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-12-29 21:08:01.4750788 +08:00 星期五 L System.Logging.LoggingMonitor[0] #37 '00-4f21c5f75696fd7a8f336ee6d09b3ed8-9467b20169710d13-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:3001/person
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-4f21c5f75696fd7a8f336ee6d09b3ed8-9467b20169710d13-00
+      ┣ 服务线程 ID：                    #37
+      ┣ 执行耗时：                       2095ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":993952,"payType":111}
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ nbf (integer64)：                1703519036 (2023-12-25 23:43:56:0000(+08:00) 星期一 L)
+      ┣ exp (integer64)：                1704123836 (2024-01-01 23:43:56:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     close
+      ┣ Host：                           127.0.0.1:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryMaW0rdj0WBreyIan
+      ┣ Cookie：                         userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlA3eVEyeV96ejR3S0Q5b1hVLTVoMjltSzhTdW4xZkIweU45UWJHRUgwRzQiLCJzIjoxMDEsImwiOjcsImsiOiJtbGphMDVoIiwiaWF0IjoxNzAzNTE5MDM2LCJuYmYiOjE3MDM1MTkwMzYsImV4cCI6MTcwNDcyODYzNiwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.dqCTokIUMIvtF8iBR6jfQU_FxDA6CFPy6iAy_QXwzis%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDM1MTkwMzYsIm5iZiI6MTcwMzUxOTAzNiwiZXhwIjoxNzA0MTIzODM2LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.P7yQ2y_zz4wKD9oXU-5h29mK8Sun1fB0yN9QbGEH0G4%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A993952%2C%22payType%22%3A111%7D
+      ┣ Origin：                         http://localhost:3001
+      ┣ Referer：                        http://localhost:3001/person
+      ┣ Content-Length：                 1378
+      ┣ sec-fetch-dest：                 empty
+      ┣ sec-fetch-mode：                 cors
+      ┣ sec-fetch-site：                 same-origin
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ DNT：                            1
+      ┣ sec-ch-ua：                      "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryMaW0rdj0WBreyIan
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":null,"type":"user","title":"测试一个没图片的","prompt":"我希望你能担任英语翻译、拼写校对和修辞改进的角色。我会用任何语言和你交流，你会识别语言，将其翻译并用更为优美和精炼的英语回答我。请将我简单的词汇和句子替换成更为优美和高雅的表达方式，确保意思不变，但使其更具文学性。请仅回答更正和改进的部分，不要写解释。我的第一句话是“how are you ?”，请翻译它。\r\n","maxContext":6,"promptExtend":null,"avatar":null,"file":null,"initMessage":null,"tags":null,"model":"gpt-3.5-turbo","vendor":"openai"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'avatar' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 47
+         at lambda_method229(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'avatar' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 47
+         at lambda_method229(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

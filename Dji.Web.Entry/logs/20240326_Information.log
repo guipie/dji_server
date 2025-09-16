@@ -1,0 +1,147 @@
+info: 2024-03-26 19:46:19.8990053 +08:00 星期二 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-03-26 19:46:19.9247363 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-03-26 19:46:19.9269991 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-03-26 19:46:24.0404831 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:24.0419951 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:24.0499686 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:24.0512946 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:24.0562955 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:24.0576201 +08:00 星期二 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-26 19:46:46.0825056 +08:00 星期二 L System.Logging.LoggingMonitor[0] #9 '00-f10f22a66d86a763c81c595558de39bc-7d0f8040552bc452-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/home
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-f10f22a66d86a763c81c595558de39bc-7d0f8040552bc452-00
+      ┣ 服务线程 ID：               #9
+      ┣ 执行耗时：                  178ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTA3NTE5OTAsIm5iZiI6MTcxMDc1MTk5MCwiZXhwIjoxNzExMzU2NzkwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.mYnJ6R_Shm0Fj4OhU8adLfsnv07hwXYMEaHai622gok
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/home
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              wlc0N-MvZ-pr9r6A8HitE
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"DALL-E","drawingType":"openai","desc":"DALL-E 是当今市场上最强大的人工智能绘画工具，它是由 ChatGPT 背后的同一组织 OpenAI 开发的人工智能图像生成器，目前已经升级到DALL-E三代。它利用一种被称为 “生成式人工智能” 的技术，根据文本提示从零开始创建原始图像。","tags":"OpenAI,DALL-E,ChatGPT,文生图","request":{"model":"dall-e-3","size":"1024x1024"},"api":"https://juai.link","example":{"prompt":"荔枝纹风格的球形椅子，具有凹凸不平的白色外观和豪华的内部，衬托着热带壁纸。","url":"http://oss.juai.link/juai/drawing/openai.jpeg"},"sequence":1,"createTime":null,"createUserId":null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-26 19:48:38.5046431 +08:00 星期二 L System.Logging.LoggingMonitor[0] #25 '00-76c14b49130c57f46857aad9ea19cb7e-be24056352f11b8a-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                PromptService
+      ┣ 操作名称：                  Get
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/prompt
+      ┣ 来源地址：                  http://localhost:9527/application
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-76c14b49130c57f46857aad9ea19cb7e-be24056352f11b8a-00
+      ┣ 服务线程 ID：               #25
+      ┣ 执行耗时：                  121ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTA3NTE5OTAsIm5iZiI6MTcxMDc1MTk5MCwiZXhwIjoxNzExMzU2NzkwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.mYnJ6R_Shm0Fj4OhU8adLfsnv07hwXYMEaHai622gok
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/application
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              uzNUy1FHkSOd0W6CjKReP
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.PromptReponse>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"11","type":"system","title":"会议纪要","prompt":"请根据我提供的信息，按照会议纪要的格式要求，如标题、会议目的、参会人员、正文内容、决策和行动事项等格式输出一份会议纪要，内容通过包含会议背景，议程安排，内容及结论，来清晰准确的记录会议内容，以便于后期查阅和理解。","maxContext":6,"promptExtend":"可靠的会议伙伴，会议无压力！","avatar":"https://ssl.aicode.cc/ai-server/assets/avatar/meeting-report.jpeg","file":null,"initMessage":"向我提供会议的主题、目的、议程，及达成的共识等详细信息，将能为你制作出井井有条的会议纪要。我已准备好为你提供全力支持！","tags":"职场","model":"gpt-3.5-turbo","vendor":"openai"},{"id":"12","type":"sy
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

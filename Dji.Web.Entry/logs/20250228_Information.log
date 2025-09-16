@@ -1,0 +1,2018 @@
+info: 2025-02-28 15:47:52.1897861 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 15:47:52.2230257 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 15:47:52.2256443 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 15:47:52.7865397 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 15:47:52.7881239 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 15:47:52.7960292 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 15:47:52.7976390 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 15:51:41.8046133 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-06afa0ccd54bc6fd7cc87e7b6ea7fd7e-9bbb69e15d53c2a1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://192.168.31.39:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         192.168.31.39
+      ┣ 服务端 IP 地址：         192.168.31.39
+      ┣ 客户端连接 ID：          00-06afa0ccd54bc6fd7cc87e7b6ea7fd7e-9bbb69e15d53c2a1-00
+      ┣ 服务线程 ID：            #3
+      ┣ 执行耗时：               346ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   192.168.31.39:5005
+      ┣ User-Agent：             Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNDg5MTIyLCJuYmYiOjE3NDA0ODkxMjIsImV4cCI6MTc0MTA5MzkyMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Pr0bIBUnGJPFbsXfbu3AiIHuIfZemYGkqPYVUCPw858
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838834501","modelId":"gpt-4o","name":"GPT-4o","shortName":"GPT-4o","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt4.png","modelType":0,"url":"/app/api/chatOpenai/chat","desc":"GPT-4o 是我们最先进的多模态模型，比 GPT-4 Turbo 更快、更便宜，具有更强的视觉功能。该型号有 128K 上下文，知识截止日期为 2023 年 10 月。","createTime":"2023-12-24T00:16:06","updateTime":"2025-01-15T20:49:13","createUserId":"1300000000111","updateUserId":"1300000000101","isDelete":false,"inputToken":128
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 15:51:43.8122942 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-210727e191aab8037cf4e918c346837a-9f10f7b5c899ebf6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Get
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/prompt?page=1&pageSize=10&lastCreate&searchKey&category=all
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-210727e191aab8037cf4e918c346837a-9f10f7b5c899ebf6-00
+      ┣ 服务线程 ID：                    #26
+      ┣ 执行耗时：                       60ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNDg5MTIyLCJuYmYiOjE3NDA0ODkxMjIsImV4cCI6MTc0MTA5MzkyMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Pr0bIBUnGJPFbsXfbu3AiIHuIfZemYGkqPYVUCPw858
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ req (ChatPromptPageReq)：        {"pageSize":10,"lastCreate":null,"searchKey":null,"category":0}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ChatPromptRes>>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":[{"id":"42","type":"system","title":"起名大师","prompt":"请给我提供的信息如姓氏，性别，出生日期等信息，结合五行八卦，诗词歌赋，为我取五个名字，要求名字要文雅，符合中国姓氏的基本规范。输出格式请按照以下格式：\n- 姓名：姓名的典故来源，解释","maxContext":6,"promptExtend":"每个名字都是一个故事，热衷于寻找最佳的名字，以期让每个故事更加生动和有趣。","avatar":"https://ssl.aicode.cc/ai-server/assets/avatar/ava-20230724-13.jpeg","initMessage":"请告诉我姓氏、性别、出生年月等信息。\n\n让我为你寻找一个与众不同的名字，开启一段独一无二的故事！","tags":"创意生活","model":"gpt-3.5-turbo-0125","vendor":"openai","isGroup":null,"createTime
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:12:12.6614217 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-9dd193426f009dd9d991f73cad0fd5ed-781adb016c19e22f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://192.168.31.39:5005/app/api/userLogin/loginRegister/false
+      ┣ 来源地址：                      
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                
+      ┣ 客户端 IP 地址：                192.168.31.39
+      ┣ 服务端 IP 地址：                192.168.31.39
+      ┣ 客户端连接 ID：                 00-9dd193426f009dd9d991f73cad0fd5ed-781adb016c19e22f-00
+      ┣ 服务线程 ID：                   #4
+      ┣ 执行耗时：                      761ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                     .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                          192.168.31.39:5005
+      ┣ User-Agent：                    Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：               gzip
+      ┣ Authorization：                 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNDg5MTIyLCJuYmYiOjE3NDA0ODkxMjIsImV4cCI6MTc0MTA5MzkyMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.Pr0bIBUnGJPFbsXfbu3AiIHuIfZemYGkqPYVUCPw858
+      ┣ Content-Type：                  application/json
+      ┣ Content-Length：                264
+      ┣ version：                       1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"045ce3bcc5544e6be2816ef2126dd8da1e3bb38fcd94a533b9f4f1b7ba04081af8d4c2f15cb7fa7260c12e62f5ea8089e3702bb11360020ecb357456ed63253842ec06f2006ad3a996611b4d5888bd331df47ce47db4d675fed8d37d690fd2f6a36dba3dc90305","code":null,"u":null}
+      ┣ isRefresh (Nullable`1)：        false
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6Ikl5ZnpoY1VMQVFybTZJNWtKNFVlT2ZaWjd2Tlp4MmVvbzJuZEVjYnV2bDAiLCJzIjo2NywibCI6OSwiayI6ImlRV05qYjNWdSIsImlhdCI6MTc0MDczMDMzMiwibmJmIjoxNzQwNzMwMzMyLCJleHAiOjE3NDE5Mzk5MzIsImlzcyI6Imd1eGluLmxpbmsiLCJhdWQiOiJndXhpbi5saW5rIn0.10Hwo2UoW-J5JlvU8Jq6v-tnFjBXwDf7RrV9KGgf4d0","accessToken":"eyJhbGciOiJIUzI1NiIsInR5c
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:13:53.6174636 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-83020c2178dd5fbd809604a97f6e3cb1-caadc60fdb5f496b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-83020c2178dd5fbd809604a97f6e3cb1-caadc60fdb5f496b-00
+      ┣ 服务线程 ID：                    #26
+      ┣ 执行耗时：                       1747ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 211
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740485927177","chatDbId":"1740730431790","rolePrompt":null,"useAsyncDb":false,"message":"再见，我要走了。","options":null,"model":"hunyuan-lite","modelService":"腾讯","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:17:43.0817821 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:17:43.1617303 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:17:43.1658429 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:18:32.6324121 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #21 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:18:32.6935912 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #21 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:18:33.0208370 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #25 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 269.7643ms - 400
+info: 2025-02-28 16:18:33.0495125 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #25 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 423.0359ms - 400
+info: 2025-02-28 16:18:55.8799954 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-04f4dbc1b32dd7feeb8122397fce7011-277b2c8a66493733-00
+      ┣ 服务线程 ID：                    #21
+      ┣ 执行耗时：                       54637ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:19:24.1388853 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #25 '00-5a7f47b753ca3df17d27da6ea5727c51-a50963f623b534ab-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:19:24.1944577 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #25 '00-5a7f47b753ca3df17d27da6ea5727c51-a50963f623b534ab-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:19:24.2846223 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #25 '00-5a7f47b753ca3df17d27da6ea5727c51-a50963f623b534ab-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 32.176ms - 400
+info: 2025-02-28 16:19:24.3048109 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #25 '00-5a7f47b753ca3df17d27da6ea5727c51-a50963f623b534ab-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 166.0698ms - 400
+info: 2025-02-28 16:24:33.2300789 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:24:33.2834717 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:24:33.2878080 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:24:52.3261856 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #13 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:24:52.3961152 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #13 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:24:52.6563721 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #25 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 199.0724ms - 400
+info: 2025-02-28 16:24:52.6862415 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #25 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 366.0154ms - 400
+info: 2025-02-28 16:25:28.0920397 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-8f442251d34d0c4645cd993d2c915ff1-906faeb6738783aa-00
+      ┣ 服务线程 ID：                    #13
+      ┣ 执行耗时：                       40446ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:25:54.5047221 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #25 '00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:25:54.5539301 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #25 '00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:25:54.6596063 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #25 '00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 53.3041ms - 400
+info: 2025-02-28 16:25:54.7714158 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #25 '00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 266.8024ms - 400
+info: 2025-02-28 16:26:31.8927966 +08:00 星期五 L System.Logging.LoggingMonitor[0] #25 '00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-d1c70bba196f8c3da30e909f042cd9da-b18fcce732c12dd2-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       37414ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:26:49.3388732 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #33 '00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:26:49.3887227 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #33 '00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:26:49.4725784 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #33 '00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 35.471ms - 400
+info: 2025-02-28 16:26:49.4927410 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #33 '00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 153.1488ms - 400
+info: 2025-02-28 16:26:49.5190790 +08:00 星期五 L System.Logging.LoggingMonitor[0] #33 '00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChat
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChat
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChat
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-38974d9b6687e59482aaf47e3a1e7808-6af400d903e25e9d-00
+      ┣ 服务线程 ID：                    #33
+      ┣ 执行耗时：                       203ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:31:57.3523631 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:31:57.3844072 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:31:57.3869778 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:31:57.9785667 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:31:57.9800029 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:31:57.9875186 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:31:57.9888615 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:33:58.7313796 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:33:58.7475173 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:33:58.7493609 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:33:59.2574812 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:33:59.2589029 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:33:59.2651768 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:33:59.2664946 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:35:53.6441634 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:35:53.6713054 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:35:54.2393956 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 549.0366ms - 200
+info: 2025-02-28 16:35:54.2504100 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 610.9716ms - 200
+info: 2025-02-28 16:35:54.9927314 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-8ee81b8058436e3273d0f3edf1d2e414-0d9a8905008807d3-00
+      ┣ 服务线程 ID：                    #26
+      ┣ 执行耗时：                       1404ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 16:44:11.0439087 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:44:11.0715198 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:44:11.0736051 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:44:11.6102388 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:44:11.6115521 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:44:11.6175674 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:44:11.6187384 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:47:44.8792848 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 16:47:44.9049205 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 16:47:44.9070858 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 16:47:45.4801395 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:47:45.4815281 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 16:47:45.4882105 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:47:45.4894023 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 16:50:33.6807560 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:50:33.7077291 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+info: 2025-02-28 16:50:34.3420553 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 613.5167ms - 200
+info: 2025-02-28 16:50:34.3551395 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 679.2785ms - 200
+info: 2025-02-28 16:50:34.7665328 +08:00 星期五 L System.Logging.LoggingMonitor[0] #3 '00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-4c12e2aa0546f14927bda37393b06d26-daf7f44f0373923b-00
+      ┣ 服务线程 ID：                    #3
+      ┣ 执行耗时：                       1141ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:12:38.4286317 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:12:38.4623076 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:12:38.4643342 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:12:39.0385613 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:12:39.0413361 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:12:39.0502556 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:12:39.0516131 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:12:47.1217925 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #22 '00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:12:47.1492895 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #22 '00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:12:47.3622844 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #22 '00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 194.2258ms - 400
+info: 2025-02-28 17:12:47.3720027 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #22 '00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 255.2199ms - 400
+info: 2025-02-28 17:12:47.4257558 +08:00 星期五 L System.Logging.LoggingMonitor[0] #22 '00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-d0f417da28bde05124ca7b779340363c-a7eb3d66ddcc71de-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       359ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:13:52.3954135 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #26 '00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:13:52.4093643 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #26 '00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:13:52.5057693 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #26 '00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 82.0507ms - 400
+info: 2025-02-28 17:13:52.5161198 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #26 '00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 120.7654ms - 400
+info: 2025-02-28 17:13:52.5228974 +08:00 星期五 L System.Logging.LoggingMonitor[0] #26 '00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-a0dcbf242cd42c509705d60d83a050ff-e91daca3e1ac0702-00
+      ┣ 服务线程 ID：                    #26
+      ┣ 执行耗时：                       141ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:15:11.2914810 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #25 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:15:11.3043913 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #25 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:15:11.8237334 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #23 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 506.2726ms - 200
+info: 2025-02-28 17:15:11.8380387 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #23 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 546.5863ms - 200
+info: 2025-02-28 17:15:12.4098898 +08:00 星期五 L System.Logging.LoggingMonitor[0] #7 '00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-b052271fbc9eef396fd41a1ed6f9e7e8-7ccfb811b579d4e1-00
+      ┣ 服务线程 ID：                    #25
+      ┣ 执行耗时：                       1131ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:16:15.4908573 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:16:15.5244402 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:16:15.5264776 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:16:16.0983511 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:16:16.0997666 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:16:16.1064852 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:16:16.1077353 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:16:46.1633855 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #26 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:16:46.1902582 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #26 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:16:47.1171371 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #29 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 907.1177ms - 200
+info: 2025-02-28 17:16:47.1272837 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #29 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 968.7745ms - 200
+info: 2025-02-28 17:16:47.6787231 +08:00 星期五 L System.Logging.LoggingMonitor[0] #29 '00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-97dc3adb8802636fe922014da85627e0-55d370d336fb9c44-00
+      ┣ 服务线程 ID：                    #26
+      ┣ 执行耗时：                       1573ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:19:44.3066610 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #3 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:19:44.3169538 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #3 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:19:44.8824716 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #27 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 554.9326ms - 200
+info: 2025-02-28 17:19:44.8875701 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #27 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 581.0198ms - 200
+info: 2025-02-28 17:19:45.6506140 +08:00 星期五 L System.Logging.LoggingMonitor[0] #27 '00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-236d62b006b3ee21e2b143b1f2fa0fb7-e7a9f320ac514893-00
+      ┣ 服务线程 ID：                    #3
+      ┣ 执行耗时：                       1359ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:20:05.9055008 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:20:05.9215791 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:20:05.9233984 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:20:06.4618847 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:20:06.4634373 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:20:06.4698361 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:20:06.4711221 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:20:45.9080966 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #22 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:20:45.9267426 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #22 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:20:46.5339121 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #12 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 588.8934ms - 200
+info: 2025-02-28 17:20:46.5400411 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #12 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 636.5265ms - 200
+info: 2025-02-28 17:20:47.4663064 +08:00 星期五 L System.Logging.LoggingMonitor[0] #12 '00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-6607b2ab6674fbe33ed1e68128151276-1ddba22115977631-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       1590ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:21:32.7263014 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:21:32.7426250 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:21:32.7444750 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:21:33.3228556 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:21:33.3249056 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:21:33.3316069 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:21:33.3328752 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:21:40.2233812 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:21:40.2420841 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:21:40.6842414 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 424.2294ms - 200
+info: 2025-02-28 17:21:40.6900830 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 471.2952ms - 200
+info: 2025-02-28 17:21:41.2079799 +08:00 星期五 L System.Logging.LoggingMonitor[0] #9 '00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-5f6f8c0e8d17f1188f0757e77bcc6cb2-cd25aa7987a2f1d9-00
+      ┣ 服务线程 ID：                    #9
+      ┣ 执行耗时：                       1019ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:23:49.9478875 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #6 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:23:49.9607971 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #6 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:23:50.5153253 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #7 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 540.5919ms - 200
+info: 2025-02-28 17:23:50.5273513 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #7 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 579.6054ms - 200
+info: 2025-02-28 17:23:50.9178113 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-ecf69e1228099e3e22772e6ab557261f-7a8c3381dd098341-00
+      ┣ 服务线程 ID：                    #6
+      ┣ 执行耗时：                       984ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:25:29.8430421 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:25:29.8967253 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:25:29.9014710 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:38:49.7749381 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:38:49.8397565 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:38:50.5127503 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 614.2098ms - 200
+info: 2025-02-28 17:38:50.5426823 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 773.9149ms - 200
+info: 2025-02-28 17:39:16.9054371 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21 '00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-caeb42a8af76c44fe6e064332b5b8d45-13bd9757afcd5548-00
+      ┣ 服务线程 ID：                    #21
+      ┣ 执行耗时：                       27208ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:39:20.8426684 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #30 '00-c1284867ddaede32c9459073e11f754c-d4510b439dda6cb9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:39:20.8882297 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #30 '00-c1284867ddaede32c9459073e11f754c-d4510b439dda6cb9-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:39:21.3426467 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #30 '00-c1284867ddaede32c9459073e11f754c-d4510b439dda6cb9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 396.3572ms - 200
+info: 2025-02-28 17:39:21.3656713 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #30 '00-c1284867ddaede32c9459073e11f754c-d4510b439dda6cb9-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 523.1757ms - 200
+info: 2025-02-28 17:44:31.9507368 +08:00 星期五 L System.Logging.TaskQueueService[0] #1
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, string message, params object[] args)
+      TaskQueue hosted service is running.
+info: 2025-02-28 17:44:31.9749621 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2025-02-28 17:44:31.9768284 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2025-02-28 17:44:32.5555975 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:44:32.5570043 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2025-02-28 17:44:32.5636788 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:44:32.5648537 +08:00 星期五 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2025-02-28 17:55:59.8363655 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #22 '00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:55:59.8916743 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #22 '00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 17:56:00.4985305 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #4 '00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 587.1191ms - 200
+info: 2025-02-28 17:56:00.5108273 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #4 '00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 679.3284ms - 200
+info: 2025-02-28 17:56:01.1959133 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-c61d5376bb2aec494d0f6bcce6294583-89a21aa12eacfce1-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       1422ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 17:58:11.6398216 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-29768f90d5c180f8a363978018b233ed-6637b814166acd13-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.GetMy
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       GetMy
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: my
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/prompt/my?page=1&pageSize=10&lastCreate&searchKey&category=my
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-29768f90d5c180f8a363978018b233ed-6637b814166acd13-00
+      ┣ 服务线程 ID：                    #4
+      ┣ 执行耗时：                       133ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ req (ChatPromptPageReq)：        {"pageSize":10,"lastCreate":null,"searchKey":null,"category":1}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ChatPromptRes>>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":[{"id":"34583000543493","type":"user","title":"群聊大模型","prompt":"这是一个大模型群聊","maxContext":3,"promptExtend":"gpt-3.5-turbo:gpt-3.5-turbo-16k:gpt-4:gpt-4-1106-preview:gpt-4-vision-preview:general:generalv2:generalv3:model_ernie_bot_turbo:model_ernie_bot:model_ernie_bot_4:model_badiu_llama2_70b:model_baidu_llama2_13b:model_baidu_llama2_7b_cn:model_baidu_chatglm2_6b_32k:model_baidu_aquila_chat7b:model_baidu_bloomz_7b:qwen-turbo:qwen-plus:qwen-max:qwen
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 18:15:08.9592852 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[100] #22 '00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineStart(ILogger logger, HttpRequestMessage request, Func<string, bool> shouldRedactHeaderValue)
+      Start processing HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 18:15:09.0112518 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[100] #22 '00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00'
+      [Microsoft.Extensions.Http.dll] async Task<HttpResponseMessage> Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, bool useAsync, CancellationToken cancellationToken)+Core(?)
+      Sending HTTP request POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+info: 2025-02-28 18:15:09.5712690 +08:00 星期五 L System.Net.Http.HttpClient.Default.ClientHandler[101] #27 '00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler+Log.RequestEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      Received HTTP response headers after 536.059ms - 200
+info: 2025-02-28 18:15:09.5788475 +08:00 星期五 L System.Net.Http.HttpClient.Default.LogicalHandler[101] #27 '00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00'
+      [Microsoft.Extensions.Http.dll] void Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler+Log.RequestPipelineEnd(ILogger logger, HttpResponseMessage response, TimeSpan duration, Func<string, bool> shouldRedactHeaderValue)
+      End processing HTTP request after 621.0081ms - 200
+info: 2025-02-28 18:15:10.0486636 +08:00 星期五 L System.Logging.LoggingMonitor[0] #27 '00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.BaseChatController.BaseChatStreamAsync
+      ┣ 
+      ┣ 控制器名称：                     BaseChatController
+      ┣ 操作名称：                       BaseChatStreamAsync
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: BaseChat; [action]: BaseChatStream
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/BaseChat/chatStream
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-0fb73acb9d7f0c0ee2c6bca70446f0dc-59671bf61e376d3e-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       1141ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (JSON_NULL)：            
+      ┣ RealName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ nbf (integer64)：                1740730332 (2025-02-28 16:12:12:0000(+08:00) 星期五 L)
+      ┣ exp (integer64)：                1741335132 (2025-03-07 16:12:12:0000(+08:00) 星期五 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         text/event-stream
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ Content-Type：                   application/json
+      ┣ Content-Length：                 186
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json
+      ┣ 
+      ┣ chatPrompts (ChatReq)：          {"conversationId":"1740729126875","chatDbId":"1740730203715","rolePrompt":null,"useAsyncDb":false,"message":"1+2","options":null,"model":"qwen-max","modelService":"阿里","hisChatList":[]}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 18:17:00.0106663 +08:00 星期五 L System.Logging.LoggingMonitor[0] #34 '00-bb26df2815576e41e7044fb924cd1e79-93046de8f1442b2d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.AiModelService.GetModels
+      ┣ 
+      ┣ 控制器名称：             AiModelService
+      ┣ 操作名称：               GetModels
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: aiModel; [action]: models
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://192.168.31.39:5005/app/api/aiModel/models
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：         
+      ┣ 客户端 IP 地址：         192.168.31.39
+      ┣ 服务端 IP 地址：         192.168.31.39
+      ┣ 客户端连接 ID：          00-bb26df2815576e41e7044fb924cd1e79-93046de8f1442b2d-00
+      ┣ 服务线程 ID：            #34
+      ┣ 执行耗时：               126ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                   192.168.31.39:5005
+      ┣ User-Agent：             Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：        gzip
+      ┣ Authorization：          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ version：                1.0.0
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ModelRes>>
+      ┣ 最终类型：               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：             {"code":200,"type":"success","message":"","result":[{"id":"31022838834501","modelId":"gpt-4o","name":"GPT-4o","shortName":"GPT-4o","avatarUrl":"https://oss.juai.link/juai/juai/prompt/gpt4.png","modelType":0,"url":"/app/api/chatOpenai/chat","desc":"GPT-4o 是我们最先进的多模态模型，比 GPT-4 Turbo 更快、更便宜，具有更强的视觉功能。该型号有 128K 上下文，知识截止日期为 2023 年 10 月。","createTime":"2023-12-24T00:16:06+08:00","updateTime":"2025-01-15T20:49:13+08:00","createUserId":"1300000000111","updateUserId":"1300000000101","isDelete":false,"inp
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2025-02-28 18:17:00.4363386 +08:00 星期五 L System.Logging.LoggingMonitor[0] #34 '00-13e770a3f1474af1c84811b22382256c-0d29538fd558ae60-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Get
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       GET
+      ┣ 请求地址：                       http://192.168.31.39:5005/app/api/prompt?page=1&pageSize=10&lastCreate&searchKey&category=all
+      ┣ 来源地址：                       
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Dart/3.6 (dart:io)
+      ┣ 客户端区域语言：                 
+      ┣ 客户端 IP 地址：                 192.168.31.39
+      ┣ 服务端 IP 地址：                 192.168.31.39
+      ┣ 客户端连接 ID：                  00-13e770a3f1474af1c84811b22382256c-0d29538fd558ae60-00
+      ┣ 服务线程 ID：                    #34
+      ┣ 执行耗时：                       213ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.6
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Production
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Host：                           192.168.31.39:5005
+      ┣ User-Agent：                     Dart/3.6 (dart:io)
+      ┣ Accept-Encoding：                gzip
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6bnVsbCwiUmVhbE5hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6OTk5LCJPcmdJZCI6MCwiT3JnTmFtZSI6bnVsbCwiT3JnVHlwZSI6bnVsbCwiaWF0IjoxNzQwNzMwMzMyLCJuYmYiOjE3NDA3MzAzMzIsImV4cCI6MTc0MTMzNTEzMiwiaXNzIjoiZ3V4aW4ubGluayIsImF1ZCI6Imd1eGluLmxpbmsifQ.IyfzhcULAQrm6I5kJ4UeOfZZ7vNZx2eoo2ndEcbuvl0
+      ┣ version：                        1.0.0
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   
+      ┣ 
+      ┣ req (ChatPromptPageReq)：        {"pageSize":10,"lastCreate":null,"searchKey":null,"category":0}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.AICommon.Dto.ChatPromptRes>>
+      ┣ 最终类型：                       Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                     {"code":200,"type":"success","message":"","result":[{"id":"42","type":"system","title":"起名大师","prompt":"请给我提供的信息如姓氏，性别，出生日期等信息，结合五行八卦，诗词歌赋，为我取五个名字，要求名字要文雅，符合中国姓氏的基本规范。输出格式请按照以下格式：\n- 姓名：姓名的典故来源，解释","maxContext":6,"promptExtend":"每个名字都是一个故事，热衷于寻找最佳的名字，以期让每个故事更加生动和有趣。","avatar":"https://ssl.aicode.cc/ai-server/assets/avatar/ava-20230724-13.jpeg","initMessage":"请告诉我姓氏、性别、出生年月等信息。\n\n让我为你寻找一个与众不同的名字，开启一段独一无二的故事！","tags":"创意生活","model":"gpt-3.5-turbo-0125","vendor":"openai","isGroup":null,"createTime
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

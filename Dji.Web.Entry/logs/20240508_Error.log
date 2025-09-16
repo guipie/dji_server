@@ -1,0 +1,26 @@
+fail: 2024-05-08 19:16:22.2309902 +08:00 星期三 L System.Logging.UnitOfWork[0] #34 '00-33c3f96d041cff5cfa6b157cfc2d64bb-f62cc332440efbb2-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      Transaction Failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Furion.FriendlyException.AppFriendlyException: 今日已签到
+       ---> System.ComponentModel.DataAnnotations.ValidationException: 今日已签到
+         --- End of inner exception stack trace ---
+         at Admin.NET.Core.JuAI.Service.UserService.PostQianDaoToday() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 36
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-08 19:16:24.6642284 +08:00 星期三 L System.Logging.UnitOfWork[0] #28 '00-3c04f8537421e63ba84f67ff77e2ce65-d8874513ba60a562-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      Transaction Failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Furion.FriendlyException.AppFriendlyException: 今日已签到
+       ---> System.ComponentModel.DataAnnotations.ValidationException: 今日已签到
+         --- End of inner exception stack trace ---
+         at Admin.NET.Core.JuAI.Service.UserService.PostQianDaoToday() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\User\UserService.cs:line 36
+         at lambda_method57(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

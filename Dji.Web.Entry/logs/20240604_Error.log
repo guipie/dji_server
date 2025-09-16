@@ -1,0 +1,59 @@
+fail: 2024-06-04 22:32:17.0724410 +08:00 星期二 L Admin.NET.Core.JuAI.Service.JuFileService[0] #22
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-04 23:01:00.6279948 +08:00 星期二 L Admin.NET.Core.JuAI.Service.JuFileService[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-04 23:30:00.2271897 +08:00 星期二 L Admin.NET.Core.JuAI.Service.JuFileService[0] #31
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss()
+      同步ChatgptImage任务出错,Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Flurl.Http.FlurlHttpException: Call failed with status code 403 (Forbidden): GET https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1d/12/20240530/1b61f1c0/234120cb-44c4-455f-b81e-ee26ea88d3f4-1.png?Expires=1717168386&OSSAccessKeyId=LTAI5tQZd8AEcZX6KZV4G8qL&Signature=T7Hirrtl%2FQDT21%2BU9tcNPvtTMcQ%3D
+         at Flurl.Http.FlurlRequest.HandleExceptionAsync(FlurlCall call, Exception ex, CancellationToken token)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.FlurlRequest.SendAsync(HttpMethod verb, HttpContent content, CancellationToken cancellationToken, HttpCompletionOption completionOption)
+         at Flurl.Http.ResponseExtensions.ReceiveStream(Task`1 response)
+         at Admin.NET.Core.JuAI.Service.JuFileService.ImageAsyncToOss() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\Files\JuFileService.cs:line 106
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-06-04 23:42:02.1852509 +08:00 星期二 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

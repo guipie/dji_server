@@ -1,0 +1,560 @@
+fail: 2023-11-03 09:53:04.6677179 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #97 '00-a99347aecae7346fe4b61dd54cb4a6f3-79f542e321b64c61-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 09:53:04.9102909 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #97 '00-a99347aecae7346fe4b61dd54cb4a6f3-79f542e321b64c61-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU2", Request id "0HMUR8V5DNIU2:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 09:53:04.9688223 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #97 '00-ff6df4cebad60ce42b64e5c7f2dd9fe2-76ae2142186d1552-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 09:53:04.9796510 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #97 '00-ff6df4cebad60ce42b64e5c7f2dd9fe2-76ae2142186d1552-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU3", Request id "0HMUR8V5DNIU3:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:03:48.4315566 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #97 '00-6e1ad50127d9d32964bd0964b1e99f95-dfb3e1c1bdf11461-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:03:48.4387472 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #97 '00-6e1ad50127d9d32964bd0964b1e99f95-dfb3e1c1bdf11461-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU4", Request id "0HMUR8V5DNIU4:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:03:48.4507188 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #3 '00-666f60f85e7adceb6d78ee8b9822cf33-3a9750ec680feca5-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:03:48.4714233 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #3 '00-666f60f85e7adceb6d78ee8b9822cf33-3a9750ec680feca5-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU5", Request id "0HMUR8V5DNIU5:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:08:03.8975027 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #3 '00-f60d1dea03552c66bb7046260d071322-717c322af3170872-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:08:03.9574234 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #3 '00-f60d1dea03552c66bb7046260d071322-717c322af3170872-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU6", Request id "0HMUR8V5DNIU6:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:08:03.9888927 +08:00 星期五 L Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1] #60 '00-0ac4104bb235951e8782ba12f12bfc1a-6c40ee3e87a3d31a-00'
+      [Microsoft.AspNetCore.Diagnostics.dll] void Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException(ILogger logger, Exception exception)
+      An unhandled exception has occurred while executing the request.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 10:08:04.0022717 +08:00 星期五 L Microsoft.AspNetCore.Server.Kestrel[13] #60 '00-0ac4104bb235951e8782ba12f12bfc1a-6c40ee3e87a3d31a-00'
+      [Microsoft.AspNetCore.Server.Kestrel.Core.dll] void Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ReportApplicationError(Exception ex)
+      Connection id "0HMUR8V5DNIU7", Request id "0HMUR8V5DNIU7:00000002": An unhandled exception was thrown by the application.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.InvalidOperationException: The exception handler configured on ExceptionHandlerOptions produced a 404 status response. This InvalidOperationException containing the original exception was thrown since this is often due to a misconfigured ExceptionHandlingPath. If the exception handler is expected to return 404 status responses then set AllowStatusCode404Response to true.
+       ---> System.TypeLoadException: Could not load type 'Invalid_Token.0x02000105' from assembly 'Admin.NET.Core.JuAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+         at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+         at System.Reflection.RuntimeConstructorInfo.<get_Signature>g__LazyCreateSignature|19_0()
+         at System.Reflection.RuntimeConstructorInfo.GetParameters()
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+         at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+      --- End of stack trace from previous location ---
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at IGeekFan.AspNetCore.Knife4jUI.Knife4jUIMiddleware.Invoke(HttpContext httpContext)
+         at Furion.Schedule.ScheduleUIMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+         at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+         at Furion.UnifyResult.UnifyResultStatusCodesMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         --- End of inner exception stack trace ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+         at Furion.StartupFilter.<>c__DisplayClass0_1.<<Configure>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 22:53:58.0791372 +08:00 星期五 L System.Logging.LoggingMonitor[0] #4 '00-016be17359677a8cfab489cfdce86fb8-b48493287e708559-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.Post
+      ┣ 
+      ┣ 控制器名称：                         ArticleService
+      ┣ 操作名称：                           Post
+      ┣ 显示名称：                           
+      ┣ 路由信息：                           [area]: ; [controller]: article; [action]: 
+      ┣ 请求方式：                           POST
+      ┣ 请求地址：                           http://localhost:5005/app/api/article
+      ┣ 来源地址：                           http://localhost:3000/publish
+      ┣ 请求端源：                           client
+      ┣ 浏览器标识：                         Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                     zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                     0.0.0.1
+      ┣ 服务端 IP 地址：                     0.0.0.1
+      ┣ 客户端连接 ID：                      00-016be17359677a8cfab489cfdce86fb8-b48493287e708559-00
+      ┣ 服务线程 ID：                        #27
+      ┣ 执行耗时：                           381ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                             
+      ┣ 响应端：                             
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                           Microsoft Windows 10.0.19045
+      ┣ 系统架构：                           X64
+      ┣ 基础框架：                           Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                          .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                           Production
+      ┣ 启动程序集：                         Admin.NET.Web.Entry
+      ┣ 进程名称：                           Admin.NET.Web.Entry
+      ┣ 托管程序：                           Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：                 14213426327877
+      ┣ TenantId (integer64)：               1300000000001
+      ┣ Account (string)：                   18600766045
+      ┣ NickName (string)：                  怪兽来了
+      ┣ AccountType (integer)：              777
+      ┣ iat (integer)：                      1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                      1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                      1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                       Admin.NET
+      ┣ aud (string)：                       Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                       application/json
+      ┣ 
+      ┣ articleInput (ArticleInput)：        {"id":null,"title":"这是一个草稿箱，我试试上传吧","html":"<h1>Using Quivr fully locallUsing Quivr fully locallyy</h1><h2>Headers<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#headers\">​</a></h2><p>The following is a guide to setasasdddd3</p><img src=\"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg?id=14315599530821\"><p>up everything for using Quivr locally:</p><p></p><h5>Table of Contents<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#table-of-contents\">​</a></h5><ul><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#database\">Database</a></p></li><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#embeddings\">Embeddings</a></p></li><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#llm\">LLM for inference</a></p></li></ul><p>It is a first, working setup, but a lot of work has to be done to e.g. find the appropriate settings for the model.</p><p>Importantly, this will currently only work on tag v0.0.46.</p><p>111111</p><p>The guide was put together in collaboration with members of the Quivr Discord, <strong>Using Quivr fully locally</strong> thread. That is a good place to discuss it.</p><p>This worked for me, but I sometimes got strange results (the output contains repeating answers/questions). Maybe because <code>stopping_criteria=stopping_criteria</code> must be uncommented in <code>transformers.pipeline</code>. Will update this page as I continue learning.</p><h2>Local Supabase<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-supabase\">​</a></h2><p>Instead of relying on a remote Supabase instance, we have to set it up locally. Follow the instructions on <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://supabase.com/docs/guides/self-hosting/docker\">https://supabase.com/docs/guides/self-hosting/docker</a>.</p><p>Troubleshooting:</p><ul><li><p>If the Quivr backend container cannot reach Supabase on port 8000, change the Quivr backend container to use the host network.</p></li><li><p>If email service does not work, add a user using the supabase web ui, and check \"Auto Confirm User?\".</p><ul><li><p>http://localhost:8000/project/default/auth/users</p></li></ul></li></ul><h2>Local embeddings<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-embeddings\">​</a></h2><p>First, let's get local embeddings to work with GPT4All. Instead of relying on OpenAI for generating embeddings of both the prompt and the documents we upload, we will use a local LLM for this.</p><p>Remove any existing data from the postgres database:</p><ul><li><p><code>supabase/docker $ docker compose down -v</code></p></li><li><p><code>supabase/docker $ rm -rf volumes/db/data/</code></p></li><li><p><code>supabase/docker $ docker compose up -d</code></p></li></ul><p>Change the vector dimensions in the necessary Quivr SQL files:</p><ul><li><p>Replace all occurrences of 1536 by 768, in Quivr's <code>scripts\\tables.sql</code></p></li><li><p>Run tables.sql in the Supabase web ui SQL editor: http://localhost:8000</p></li></ul><p>Change the Quivr code to use local LLMd (GPT4All) and local embeddings:</p><ul><li><p>add code to <code>backend\\core\\llm\\private_gpt4all.py234</code></p></li></ul><pre><code>    from langchain.embeddings import HuggingFaceEmbeddings\n    ...\n    def embeddings(self) -&gt; HuggingFaceEmbeddings:\n        emb = HuggingFaceEmbeddings(\n            model_name=\"sentence-transformers/all-mpnet-base-v2\",\n            model_kwargs={'device': 'cuda'},\n            encode_kwargs={'normalize_embeddings': False}\n        )\n        return emb\n</code></pre><p>Note that there may be better models out there for generating the embeddings: <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://huggingface.co/spaces/mteb/leaderboard\">https://huggingface.co/spaces/mteb/leaderboard</a></p><p>Update Quivr <code>backend/core/.env</code>'s Private LLM Variables:</p><pre><code>    #Private LLM Variables\n    PRIVATE=True\n    MODEL_PATH=./local_models/ggml-gpt4all-j-v1.3-groovy.bin\n</code></pre><p>Download GPT4All model:</p><ul><li><p><code>$ cd backend/core/local_models/</code></p></li><li><p><code>wget https://gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin</code></p></li></ul><p>Ensure the Quivr backend docker container has CUDA and the GPT4All package:</p><pre><code>    FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel\n    #FROM python:3.11-bullseye\n    \n    ARG DEBIAN_FRONTEND=noninteractive\n    ENV DEBIAN_FRONTEND=noninteractive\n    \n    RUN pip install gpt4all\n</code></pre><p>Modify the docker-compose yml file (for backend container). The following example is for using 2 GPUs:</p><pre><code>    ...\n    network_mode: host\n    deploy:\n      resources:\n        reservations:\n          devices:\n            - driver: nvidia\n              count: 2\n              capabilities: [gpu]\n</code></pre><p>Install nvidia container toolkit on the host, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html\">https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html</a>:</p><pre><code>$ wget https://nvidia.github.io/nvidia-docker/gpgkey --no-check-certificate\n$ sudo apt-key add gpgkey\n$ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)\n$ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list\n$ sudo apt-get update\n\n$ sudo apt-get install -y nvidia-container-toolkit\n    \n$ nvidia-ctk --version\n    \n$ sudo systemctl restart docker\n</code></pre><p>At this moment, if we try to upload a pdf, we get an error:</p><pre><code>backend-core  | 1989-01-01 21:51:41,211 [ERROR] utils.vectors: Error creating vector for document {'code': '22000', 'details': None, 'hint': None, 'message': 'expected 768 dimensions, not 1536'}\n</code></pre><p>This can be remedied by using local embeddings for document embeddings. In backend/core/utils/vectors.py, replace:</p><pre><code>    # def create_vector(self, doc, user_openai_api_key=None):\n    #     logger.info(\"Creating vector for document\")\n    #     logger.info(f\"Document: {doc}\")\n    #     if user_openai_api_key:\n    #         self.commons[\"documents_vector_store\"]._embedding = OpenAIEmbeddings(\n    #             openai_api_key=user_openai_api_key\n    #         )  # pyright: ignore reportPrivateUsage=none\n    #     try:\n    #         sids = self.commons[\"documents_vector_store\"].add_documents([doc])\n    #         if sids and len(sids) &gt; 0:\n    #             return sids\n\n    #     except Exception as e:\n    #         logger.error(f\"Error creating vector for document {e}\")\n\n    def create_vector(self, doc, user_openai_api_key=None):\n        logger.info(\"Creating vector for document\")\n        logger.info(f\"Document: {doc}\")\n        self.commons[\"documents_vector_store\"]._embedding = HuggingFaceEmbeddings(\n        model_name=\"sentence-transformers/all-mpnet-base-v2\",\n        model_kwargs={'device': 'cuda'},\n        encode_kwargs={'normalize_embeddings': False}\n        )  # pyright: ignore reportPrivateUsage=none\n        logger.info('||| creating emedding')\n        try:\n            sids = self.commons[\"documents_vector_store\"].add_documents([doc])\n            if sids and len(sids) &gt; 0:\n                return sids\n\n        except Exception as e:\n            logger.error(f\"Error creating vector for document {e}\")\n</code></pre><h2>Local LLM<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-llm\">​</a></h2><p>The final step is to use a local model from HuggingFace for inference. (The HF token is optional, only required for certain models on HF.)</p><p>Update the Quivr backend dockerfile:</p><pre><code>    ENV HUGGINGFACEHUB_API_TOKEN=hf_XXX\n    \n    RUN pip install accelerate\n</code></pre><p>Update the <code>private_gpt4all.py</code> file as follows:</p><pre><code>    import langchain\n    langchain.debug = True\n    langchain.verbose = True\n\n    import os\n    import transformers\n    from langchain.llms import HuggingFacePipeline\n    from langchain.embeddings import HuggingFaceEmbeddings\n    ...\n    \n    model_id = \"stabilityai/StableBeluga-13B\"    \n    ...\n    \n    def _create_llm(\n        self,\n        model,\n        streaming=False,\n        callbacks=None,\n    ) -&gt; BaseLLM:\n        \"\"\"\n        Override the _create_llm method to enforce the use of a private model.\n        :param model: Language model name to be used.\n        :param streaming: Whether to enable streaming of the model\n        :param callbacks: Callbacks to be used for streaming\n        :return: Language model instance\n        \"\"\"\n\n        model_path = self.model_path\n\n        logger.info(\"Using private model: %s\", model)\n        logger.info(\"Streaming is set to %s\", streaming)\n        logger.info(\"--- model  %s\",model)\n\n        logger.info(\"--- model path %s\",model_path)\n\n        model_id = \"stabilityai/StableBeluga-13B\"\n        \n        llm = transformers.AutoModelForCausalLM.from_pretrained(\n            model_id,\n            use_cache=True,\n            load_in_4bit=True,\n            device_map='auto',\n            #use_auth_token=hf_auth\n        )\n        logger.info('&lt;&lt;&lt; transformers.AutoModelForCausalLM.from_pretrained')\n\n        llm.eval()\n        logger.info('&lt;&lt;&lt; eval')\n\n        tokenizer = transformers.AutoTokenizer.from_pretrained(\n            model_id,\n            use_auth_token=hf_auth\n        )\n        logger.info('&lt;&lt;&lt; transformers.AutoTokenizer.from_pretrained')\n\n        generate_text = transformers.pipeline(\n            model=llm, tokenizer=tokenizer,\n            return_full_text=True,  # langchain expects the full text\n            task='text-generation',\n            # we pass model parameters here too\n            #stopping_criteria=stopping_criteria,  # without this model rambles during chat\n            temperature=0.5,  # 'randomness' of outputs, 0.0 is the min and 1.0 the max\n            max_new_tokens=512,  # mex number of tokens to generate in the output\n            repetition_penalty=1.1  # without this output begins repeating\n        )\n        logger.info('&lt;&lt;&lt; generate_text = transformers.pipeline(')\n\n        result = HuggingFacePipeline(pipeline=generate_text)\n\n        logger.info('&lt;&lt;&lt; generate_text = transformers.pipeline(')\n\n        logger.info(\"&lt;&lt;&lt; created llm HuggingFace\")\n        return result\n</code></pre><p><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"theme-edit-this-page\" href=\"https://github.com/StanGirard/quivr/tree/main/docs/docs/User_Guide/run_fully_local.md\">Edit this page</a></p><img src=\"http://filetest.guxin.link/Upload/Avatar/14194583407941.jpg?id=14194583407941\"><p>hah真的好漂亮从案件立刻搭街坊卡拉。。。</p><p>顶顶顶</p><img src=\"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg?id=14953503254725\"><p>解开了士大夫sdfffffs</p><p></p>","text":null,"fileIds":["14315599530821","14194583407941","14953503254725","14953503254725"],"coverUrl":null,"specialId":null,"specialName":null}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                     200
+      ┣ 原始类型：                           System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                           
+      ┣ 最终返回值：                         null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                               MySqlConnector.MySqlException
+      ┣ 消息：                               Column 'text' cannot be null
+      ┣ 错误堆栈：                           at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.ArticleService.Post(ArticleInput articleInput) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 45
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'text' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.ArticleService.Post(ArticleInput articleInput) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 45
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-11-03 22:53:58.0793874 +08:00 星期五 L System.Logging.LoggingMonitor[0] #21 '00-4b89231a8eef44f76c17026fc952a595-d4296236e4c2c71d-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.Post
+      ┣ 
+      ┣ 控制器名称：                         ArticleService
+      ┣ 操作名称：                           Post
+      ┣ 显示名称：                           
+      ┣ 路由信息：                           [area]: ; [controller]: article; [action]: 
+      ┣ 请求方式：                           POST
+      ┣ 请求地址：                           http://localhost:5005/app/api/article
+      ┣ 来源地址：                           http://localhost:3000/publish
+      ┣ 请求端源：                           client
+      ┣ 浏览器标识：                         Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                     zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                     0.0.0.1
+      ┣ 服务端 IP 地址：                     0.0.0.1
+      ┣ 客户端连接 ID：                      00-4b89231a8eef44f76c17026fc952a595-d4296236e4c2c71d-00
+      ┣ 服务线程 ID：                        #19
+      ┣ 执行耗时：                           381ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                             
+      ┣ 响应端：                             
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                           Microsoft Windows 10.0.19045
+      ┣ 系统架构：                           X64
+      ┣ 基础框架：                           Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                          .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                           Production
+      ┣ 启动程序集：                         Admin.NET.Web.Entry
+      ┣ 进程名称：                           Admin.NET.Web.Entry
+      ┣ 托管程序：                           Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                          Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE2OTg2NzYxNjgsIm5iZiI6MTY5ODY3NjE2OCwiZXhwIjoxNjk5MjgwOTY4LCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.nvhYf9WqnW8andFlZwO8m1zgUFpdE6dp35CYP3hDr28
+      ┣ 
+      ┣ UserId (integer64)：                 14213426327877
+      ┣ TenantId (integer64)：               1300000000001
+      ┣ Account (string)：                   18600766045
+      ┣ NickName (string)：                  怪兽来了
+      ┣ AccountType (integer)：              777
+      ┣ iat (integer)：                      1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ nbf (integer)：                      1698676168 (2023-10-30 22:29:28:0000(+08:00) 星期一 L)
+      ┣ exp (integer)：                      1699280968 (2023-11-06 22:29:28:0000(+08:00) 星期一 L)
+      ┣ iss (string)：                       Admin.NET
+      ┣ aud (string)：                       Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                       application/json
+      ┣ 
+      ┣ articleInput (ArticleInput)：        {"id":null,"title":"这是一个草稿箱，我试试上传吧","html":"<h1>Using Quivr fully locallUsing Quivr fully locallyy</h1><h2>Headers<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#headers\">​</a></h2><p>The following is a guide to setasasdddd3</p><img src=\"http://filetest.guxin.link/Special/2023/09/14315599530821.jpg?id=14315599530821\"><p>up everything for using Quivr locally:</p><p></p><h5>Table of Contents<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#table-of-contents\">​</a></h5><ul><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#database\">Database</a></p></li><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#embeddings\">Embeddings</a></p></li><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#llm\">LLM for inference</a></p></li></ul><p>It is a first, working setup, but a lot of work has to be done to e.g. find the appropriate settings for the model.</p><p>Importantly, this will currently only work on tag v0.0.46.</p><p>111111</p><p>The guide was put together in collaboration with members of the Quivr Discord, <strong>Using Quivr fully locally</strong> thread. That is a good place to discuss it.</p><p>This worked for me, but I sometimes got strange results (the output contains repeating answers/questions). Maybe because <code>stopping_criteria=stopping_criteria</code> must be uncommented in <code>transformers.pipeline</code>. Will update this page as I continue learning.</p><h2>Local Supabase<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-supabase\">​</a></h2><p>Instead of relying on a remote Supabase instance, we have to set it up locally. Follow the instructions on <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://supabase.com/docs/guides/self-hosting/docker\">https://supabase.com/docs/guides/self-hosting/docker</a>.</p><p>Troubleshooting:</p><ul><li><p>If the Quivr backend container cannot reach Supabase on port 8000, change the Quivr backend container to use the host network.</p></li><li><p>If email service does not work, add a user using the supabase web ui, and check \"Auto Confirm User?\".</p><ul><li><p>http://localhost:8000/project/default/auth/users</p></li></ul></li></ul><h2>Local embeddings<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-embeddings\">​</a></h2><p>First, let's get local embeddings to work with GPT4All. Instead of relying on OpenAI for generating embeddings of both the prompt and the documents we upload, we will use a local LLM for this.</p><p>Remove any existing data from the postgres database:</p><ul><li><p><code>supabase/docker $ docker compose down -v</code></p></li><li><p><code>supabase/docker $ rm -rf volumes/db/data/</code></p></li><li><p><code>supabase/docker $ docker compose up -d</code></p></li></ul><p>Change the vector dimensions in the necessary Quivr SQL files:</p><ul><li><p>Replace all occurrences of 1536 by 768, in Quivr's <code>scripts\\tables.sql</code></p></li><li><p>Run tables.sql in the Supabase web ui SQL editor: http://localhost:8000</p></li></ul><p>Change the Quivr code to use local LLMd (GPT4All) and local embeddings:</p><ul><li><p>add code to <code>backend\\core\\llm\\private_gpt4all.py234</code></p></li></ul><pre><code>    from langchain.embeddings import HuggingFaceEmbeddings\n    ...\n    def embeddings(self) -&gt; HuggingFaceEmbeddings:\n        emb = HuggingFaceEmbeddings(\n            model_name=\"sentence-transformers/all-mpnet-base-v2\",\n            model_kwargs={'device': 'cuda'},\n            encode_kwargs={'normalize_embeddings': False}\n        )\n        return emb\n</code></pre><p>Note that there may be better models out there for generating the embeddings: <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://huggingface.co/spaces/mteb/leaderboard\">https://huggingface.co/spaces/mteb/leaderboard</a></p><p>Update Quivr <code>backend/core/.env</code>'s Private LLM Variables:</p><pre><code>    #Private LLM Variables\n    PRIVATE=True\n    MODEL_PATH=./local_models/ggml-gpt4all-j-v1.3-groovy.bin\n</code></pre><p>Download GPT4All model:</p><ul><li><p><code>$ cd backend/core/local_models/</code></p></li><li><p><code>wget https://gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin</code></p></li></ul><p>Ensure the Quivr backend docker container has CUDA and the GPT4All package:</p><pre><code>    FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel\n    #FROM python:3.11-bullseye\n    \n    ARG DEBIAN_FRONTEND=noninteractive\n    ENV DEBIAN_FRONTEND=noninteractive\n    \n    RUN pip install gpt4all\n</code></pre><p>Modify the docker-compose yml file (for backend container). The following example is for using 2 GPUs:</p><pre><code>    ...\n    network_mode: host\n    deploy:\n      resources:\n        reservations:\n          devices:\n            - driver: nvidia\n              count: 2\n              capabilities: [gpu]\n</code></pre><p>Install nvidia container toolkit on the host, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html\">https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html</a>:</p><pre><code>$ wget https://nvidia.github.io/nvidia-docker/gpgkey --no-check-certificate\n$ sudo apt-key add gpgkey\n$ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)\n$ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list\n$ sudo apt-get update\n\n$ sudo apt-get install -y nvidia-container-toolkit\n    \n$ nvidia-ctk --version\n    \n$ sudo systemctl restart docker\n</code></pre><p>At this moment, if we try to upload a pdf, we get an error:</p><pre><code>backend-core  | 1989-01-01 21:51:41,211 [ERROR] utils.vectors: Error creating vector for document {'code': '22000', 'details': None, 'hint': None, 'message': 'expected 768 dimensions, not 1536'}\n</code></pre><p>This can be remedied by using local embeddings for document embeddings. In backend/core/utils/vectors.py, replace:</p><pre><code>    # def create_vector(self, doc, user_openai_api_key=None):\n    #     logger.info(\"Creating vector for document\")\n    #     logger.info(f\"Document: {doc}\")\n    #     if user_openai_api_key:\n    #         self.commons[\"documents_vector_store\"]._embedding = OpenAIEmbeddings(\n    #             openai_api_key=user_openai_api_key\n    #         )  # pyright: ignore reportPrivateUsage=none\n    #     try:\n    #         sids = self.commons[\"documents_vector_store\"].add_documents([doc])\n    #         if sids and len(sids) &gt; 0:\n    #             return sids\n\n    #     except Exception as e:\n    #         logger.error(f\"Error creating vector for document {e}\")\n\n    def create_vector(self, doc, user_openai_api_key=None):\n        logger.info(\"Creating vector for document\")\n        logger.info(f\"Document: {doc}\")\n        self.commons[\"documents_vector_store\"]._embedding = HuggingFaceEmbeddings(\n        model_name=\"sentence-transformers/all-mpnet-base-v2\",\n        model_kwargs={'device': 'cuda'},\n        encode_kwargs={'normalize_embeddings': False}\n        )  # pyright: ignore reportPrivateUsage=none\n        logger.info('||| creating emedding')\n        try:\n            sids = self.commons[\"documents_vector_store\"].add_documents([doc])\n            if sids and len(sids) &gt; 0:\n                return sids\n\n        except Exception as e:\n            logger.error(f\"Error creating vector for document {e}\")\n</code></pre><h2>Local LLM<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"hash-link\" href=\"https://brain.quivr.app/docs/User_Guide/run_fully_local#local-llm\">​</a></h2><p>The final step is to use a local model from HuggingFace for inference. (The HF token is optional, only required for certain models on HF.)</p><p>Update the Quivr backend dockerfile:</p><pre><code>    ENV HUGGINGFACEHUB_API_TOKEN=hf_XXX\n    \n    RUN pip install accelerate\n</code></pre><p>Update the <code>private_gpt4all.py</code> file as follows:</p><pre><code>    import langchain\n    langchain.debug = True\n    langchain.verbose = True\n\n    import os\n    import transformers\n    from langchain.llms import HuggingFacePipeline\n    from langchain.embeddings import HuggingFaceEmbeddings\n    ...\n    \n    model_id = \"stabilityai/StableBeluga-13B\"    \n    ...\n    \n    def _create_llm(\n        self,\n        model,\n        streaming=False,\n        callbacks=None,\n    ) -&gt; BaseLLM:\n        \"\"\"\n        Override the _create_llm method to enforce the use of a private model.\n        :param model: Language model name to be used.\n        :param streaming: Whether to enable streaming of the model\n        :param callbacks: Callbacks to be used for streaming\n        :return: Language model instance\n        \"\"\"\n\n        model_path = self.model_path\n\n        logger.info(\"Using private model: %s\", model)\n        logger.info(\"Streaming is set to %s\", streaming)\n        logger.info(\"--- model  %s\",model)\n\n        logger.info(\"--- model path %s\",model_path)\n\n        model_id = \"stabilityai/StableBeluga-13B\"\n        \n        llm = transformers.AutoModelForCausalLM.from_pretrained(\n            model_id,\n            use_cache=True,\n            load_in_4bit=True,\n            device_map='auto',\n            #use_auth_token=hf_auth\n        )\n        logger.info('&lt;&lt;&lt; transformers.AutoModelForCausalLM.from_pretrained')\n\n        llm.eval()\n        logger.info('&lt;&lt;&lt; eval')\n\n        tokenizer = transformers.AutoTokenizer.from_pretrained(\n            model_id,\n            use_auth_token=hf_auth\n        )\n        logger.info('&lt;&lt;&lt; transformers.AutoTokenizer.from_pretrained')\n\n        generate_text = transformers.pipeline(\n            model=llm, tokenizer=tokenizer,\n            return_full_text=True,  # langchain expects the full text\n            task='text-generation',\n            # we pass model parameters here too\n            #stopping_criteria=stopping_criteria,  # without this model rambles during chat\n            temperature=0.5,  # 'randomness' of outputs, 0.0 is the min and 1.0 the max\n            max_new_tokens=512,  # mex number of tokens to generate in the output\n            repetition_penalty=1.1  # without this output begins repeating\n        )\n        logger.info('&lt;&lt;&lt; generate_text = transformers.pipeline(')\n\n        result = HuggingFacePipeline(pipeline=generate_text)\n\n        logger.info('&lt;&lt;&lt; generate_text = transformers.pipeline(')\n\n        logger.info(\"&lt;&lt;&lt; created llm HuggingFace\")\n        return result\n</code></pre><p><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"theme-edit-this-page\" href=\"https://github.com/StanGirard/quivr/tree/main/docs/docs/User_Guide/run_fully_local.md\">Edit this page</a></p><img src=\"http://filetest.guxin.link/Upload/Avatar/14194583407941.jpg?id=14194583407941\"><p>hah真的好漂亮从案件立刻搭街坊卡拉。。。</p><p>顶顶顶</p><img src=\"http://filetest.guxin.link/Upload/2023/11/14953503254725.jpg?id=14953503254725\"><p>解开了士大夫sdfffffs</p><p></p>","text":null,"fileIds":["14315599530821","14194583407941","14953503254725","14953503254725"],"coverUrl":null,"specialId":null,"specialName":null}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                     200
+      ┣ 原始类型：                           System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                           
+      ┣ 最终返回值：                         null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                               MySqlConnector.MySqlException
+      ┣ 消息：                               Column 'text' cannot be null
+      ┣ 错误堆栈：                           at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.ArticleService.Post(ArticleInput articleInput) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 45
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'text' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.Storageable`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertOrUpdateAsync(T data)
+         at Admin.NET.Core.JuAI.Service.ArticleService.Post(ArticleInput articleInput) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\Contents\ArticleService.cs:line 45
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

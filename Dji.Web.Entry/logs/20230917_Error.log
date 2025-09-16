@@ -1,0 +1,356 @@
+fail: 2023-09-17 16:10:24.1670348 +08:00 星期日 L System.Logging.LoggingMonitor[0] #9
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.MidjourneyNotifyService.Add
+      ┣ 
+      ┣ 控制器名称：                              MidjourneyNotifyService
+      ┣ 操作名称：                                Add
+      ┣ 显示名称：                                
+      ┣ 路由信息：                                [area]: ; [controller]: midjourneyNotify; [action]: add
+      ┣ 请求方式：                                POST
+      ┣ 请求地址：                                http://localhost:5005/api/midjourneyNotify/add
+      ┣ 来源地址：                                http://localhost:8888/
+      ┣ 请求端源：                                client
+      ┣ 浏览器标识：                              Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                          zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                          0.0.0.1
+      ┣ 服务端 IP 地址：                          0.0.0.1
+      ┣ 客户端连接 ID：                           00-08b6f4be64b09e059d151eab23967142-13bc43108937f581-00
+      ┣ 服务线程 ID：                             #29
+      ┣ 执行耗时：                                152ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                  
+      ┣ 响应端：                                  
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                                Microsoft Windows 10.0.19044
+      ┣ 系统架构：                                X64
+      ┣ 基础框架：                                Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                               .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                                Production
+      ┣ 启动程序集：                              Admin.NET.Web.Entry
+      ┣ 进程名称：                                Admin.NET.Web.Entry
+      ┣ 托管程序：                                Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                               Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDkzNzEwNSwibmJmIjoxNjk0OTM3MTA1LCJleHAiOjE2OTU1NDE5MDUsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.E6JbiJgdkROH4jqVs8AhJzRtQwjHdAzPShvAUo_a4VI
+      ┣ 
+      ┣ UserId (integer64)：                      1300000000101
+      ┣ TenantId (integer64)：                    1300000000001
+      ┣ Account (string)：                        superadmin
+      ┣ RealName (string)：                       超级管理员
+      ┣ AccountType (integer)：                   999
+      ┣ OrgId (integer)：                         0
+      ┣ OrgName (JSON_NULL)：                     
+      ┣ OrgType (JSON_NULL)：                     
+      ┣ iat (integer)：                           1694937105 (2023-09-17 15:51:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer)：                           1694937105 (2023-09-17 15:51:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer)：                           1695541905 (2023-09-24 15:51:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                            Admin.NET
+      ┣ aud (string)：                            Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                            application/json
+      ┣ 
+      ┣ input (AddMidjourneyNotifyInput)：        {"action":null,"prompt":"333","promptEn":"444","description":null,"state":null,"submitTime":null,"startTime":null,"finishTime":null,"imageUrl":null,"status":null,"progress":null,"failReason":null,"properties":null,"ossUrl":null}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                          200
+      ┣ 原始类型：                                System.Threading.Tasks.Task
+      ┣ 最终类型：                                
+      ┣ 最终返回值：                              null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                                    MySqlConnector.MySqlException
+      ┣ 消息：                                    Duplicate entry '' for key 'midjourney_notify.PRIMARY'
+      ┣ 错误堆栈：                                at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.MidjourneyNotifyService.Add(AddMidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 71
+         at lambda_method255(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Duplicate entry '' for key 'midjourney_notify.PRIMARY'
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Application.MidjourneyNotifyService.Add(AddMidjourneyNotifyInput input) in C:\work\juai\api\Admin.NET.Application\Service\MidjourneyNotify\MidjourneyNotifyService.cs:line 71
+         at lambda_method255(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 21:49:00.5990583 +08:00 星期日 L Admin.NET.Application.QiNiuFileService[0] #28
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错504
+fail: 2023-09-17 21:54:02.3853881 +08:00 星期日 L Admin.NET.Application.QiNiuFileService[0] #9
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, string message, params object[] args)
+      同步文件出错504
+fail: 2023-09-17 22:40:55.9630881 +08:00 星期日 L System.Logging.LoggingMonitor[0] #3
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Application.ChatGPTService.Page
+      ┣ 
+      ┣ 控制器名称：                   ChatGPTService
+      ┣ 操作名称：                     Page
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: chatGPT; [action]: page
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/chatGPT/page
+      ┣ 来源地址：                     http://localhost:8888/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-463b03dbae11683b728dda0934efedaf-60ed3c11661828bb-00
+      ┣ 服务线程 ID：                  #30
+      ┣ 执行耗时：                     134ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.42
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTY5NDkzNzEwNSwibmJmIjoxNjk0OTM3MTA1LCJleHAiOjE2OTU1NDE5MDUsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.E6JbiJgdkROH4jqVs8AhJzRtQwjHdAzPShvAUo_a4VI
+      ┣ 
+      ┣ UserId (integer64)：           1300000000101
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             superadmin
+      ┣ RealName (string)：            超级管理员
+      ┣ AccountType (integer)：        999
+      ┣ OrgId (integer)：              0
+      ┣ OrgName (JSON_NULL)：          
+      ┣ OrgType (JSON_NULL)：          
+      ┣ iat (integer)：                1694937105 (2023-09-17 15:51:45:0000(+08:00) 星期日 L)
+      ┣ nbf (integer)：                1694937105 (2023-09-17 15:51:45:0000(+08:00) 星期日 L)
+      ┣ exp (integer)：                1695541905 (2023-09-24 15:51:45:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ input (ChatGPTInput)：         {"question":null,"answer":null,"reqNum":0,"resNum":0,"model":null,"page":1,"pageSize":10,"field":null,"order":null,"descStr":"descending"}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.SqlSugarPagedList<Admin.NET.Application.ChatGPTOutput>>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         MySqlConnector.MySqlException
+      ┣ 消息：                         Unknown column 'status' in 'field list'
+      ┣ 错误堆栈：                     at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.ChatGPTService.Page(ChatGPTInput input) in C:\work\juai\api\Admin.NET.Application\Service\ChatGPT\ChatGPTService.cs:line 37
+         at lambda_method391(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'status' in 'field list'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.ToPageListAsync(Int32 pageIndex, Int32 pageSize, RefAsync`1 totalNumber)
+         at Admin.NET.Core.SqlSugarPagedExtensions.ToPagedListAsync[TEntity](ISugarQueryable`1 query, Int32 pageIndex, Int32 pageSize) in C:\work\juai\api\Admin.NET.Core\SqlSugar\SqlSugarPagedList.cs:line 115
+         at Admin.NET.Application.ChatGPTService.Page(ChatGPTInput input) in C:\work\juai\api\Admin.NET.Application\Service\ChatGPT\ChatGPTService.cs:line 37
+         at lambda_method391(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:13:31.3757755 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #4
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:18:28.1680288 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #37
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:18:45.1078768 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #51
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:18:57.4824737 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #49
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:20:51.0532691 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #44
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:22:20.0865291 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #51
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:22:55.5567130 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #7
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:24:41.6474774 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #44
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:25:32.3163202 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #49
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:27:35.6804450 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #49
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:28:38.3407166 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #42
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:28:46.8404460 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #60
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:29:12.3805985 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #38
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-09-17 23:29:46.7369535 +08:00 星期日 L Microsoft.AspNetCore.SignalR.HubConnectionHandler[1] #37
+      [Microsoft.AspNetCore.SignalR.Core.dll] async Task Microsoft.AspNetCore.SignalR.HubConnectionHandler<THub>.RunHubAsync(HubConnectionContext connection)
+      Error when dispatching 'OnConnectedAsync' on hub.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+         at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+         at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+         at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+         at Admin.NET.Core.OnlineUserHub.OnConnectedAsync() in C:\work\juai\api\Admin.NET.Core\Hub\OnlineUserHub.cs:line 49
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+         at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

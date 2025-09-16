@@ -1,0 +1,324 @@
+fail: 2024-04-23 21:07:41.2616775 +08:00 星期二 L System.Logging.LoggingMonitor[0] #32 '00-8c89eddb7dae07864ff672433d99c6f6-3b3c2560082cda33-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:9527/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-8c89eddb7dae07864ff672433d99c6f6-3b3c2560082cda33-00
+      ┣ 服务线程 ID：                    #37
+      ┣ 执行耗时：                       10256ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1714271200 (2024-04-28 10:26:40:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ Cache-Control：                  no-cache
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryYcc6NUr3kLBj1jIk
+      ┣ Origin：                         http://localhost:9527
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:9527/
+      ┣ Content-Length：                 1892
+      ┣ sec-ch-ua：                      "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ X-Authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImFQZDFOWnlOWEEzMFJ6d3RLcVRQdGVyOXBIRkpyYlBQeElmMVQxZ1UwSEEiLCJzIjo4MywibCI6NywiayI6IjROakF3TnoiLCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0ODc2MDAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.G62KA75K4a0mGzD6p8zeSWsxaS-S6_6A_Hn6veaYkNM
+      ┣ X-Request-Id：                   qrTf4mon876u-Y0Q78Je3
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryYcc6NUr3kLBj1jIk
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":"32745915778117","type":"user","title":"测试237777","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\r\n","maxContext":0,"promptExtend":null,"avatar":"https://oss.juai.link/juai.test/person/202403/32745914256709.jpg","file":null,"initMessage":null,"tags":"null","model":"讯飞星火:general","vendor":"讯飞星火","isGroup":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.PromptReponse>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-04-23 21:07:49.8754946 +08:00 星期二 L System.Logging.LoggingMonitor[0] #37 '00-8678e3c8cad84e5b69e835c9e48826fd-b5113b5df2a45345-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:9527/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-8678e3c8cad84e5b69e835c9e48826fd-b5113b5df2a45345-00
+      ┣ 服务线程 ID：                    #39
+      ┣ 执行耗时：                       88ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1714271200 (2024-04-28 10:26:40:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ Cache-Control：                  no-cache
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryKaFet9rfTMHAE0BX
+      ┣ Origin：                         http://localhost:9527
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:9527/
+      ┣ Content-Length：                 1892
+      ┣ sec-ch-ua：                      "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ X-Authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImFQZDFOWnlOWEEzMFJ6d3RLcVRQdGVyOXBIRkpyYlBQeElmMVQxZ1UwSEEiLCJzIjo4MywibCI6NywiayI6IjROakF3TnoiLCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0ODc2MDAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.G62KA75K4a0mGzD6p8zeSWsxaS-S6_6A_Hn6veaYkNM
+      ┣ X-Request-Id：                   7g2QLVVKWY6r5rF1gA8eh
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryKaFet9rfTMHAE0BX
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":"32745915778117","type":"user","title":"测试237777","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\r\n","maxContext":0,"promptExtend":null,"avatar":"https://oss.juai.link/juai.test/person/202403/32745914256709.jpg","file":null,"initMessage":null,"tags":"null","model":"讯飞星火:general","vendor":"讯飞星火","isGroup":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.PromptReponse>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-04-23 21:10:22.7829473 +08:00 星期二 L System.Logging.LoggingMonitor[0] #3 '00-71f1ac47f4d9f3ea2c0139025d25b15f-2bbfbe116b678306-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Post
+      ┣ 
+      ┣ 控制器名称：                     PromptService
+      ┣ 操作名称：                       Post
+      ┣ 显示名称：                       
+      ┣ 路由信息：                       [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/app/api/prompt
+      ┣ 来源地址：                       http://localhost:9527/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                 zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                 127.0.0.1
+      ┣ 服务端 IP 地址：                 127.0.0.1
+      ┣ 客户端连接 ID：                  00-71f1ac47f4d9f3ea2c0139025d25b15f-2bbfbe116b678306-00
+      ┣ 服务线程 ID：                    #39
+      ┣ 执行耗时：                       88ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.19045
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                      .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ 
+      ┣ UserId (integer64)：             14213426327877
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               18600766045
+      ┣ NickName (string)：              怪兽来了
+      ┣ AccountType (integer32)：        777
+      ┣ iat (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ nbf (integer64)：                1713666400 (2024-04-21 10:26:40:0000(+08:00) 星期日 L)
+      ┣ exp (integer64)：                1714271200 (2024-04-28 10:26:40:0000(+08:00) 星期日 L)
+      ┣ iss (string)：                   guxin.link
+      ┣ aud (string)：                   guxin.link
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-CN,zh;q=0.9
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0MjcxMjAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.aPd1NZyNXA30RzwtKqTPter9pHFJrbPPxIf1T1gU0HA
+      ┣ Cache-Control：                  no-cache
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryd8pghh3CMRhdhBZL
+      ┣ Origin：                         http://localhost:9527
+      ┣ Pragma：                         no-cache
+      ┣ Referer：                        http://localhost:9527/
+      ┣ Content-Length：                 1892
+      ┣ sec-ch-ua：                      "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+      ┣ DNT：                            1
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ X-Authorization：                Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6ImFQZDFOWnlOWEEzMFJ6d3RLcVRQdGVyOXBIRkpyYlBQeElmMVQxZ1UwSEEiLCJzIjo4MywibCI6NywiayI6IjROakF3TnoiLCJpYXQiOjE3MTM2NjY0MDAsIm5iZiI6MTcxMzY2NjQwMCwiZXhwIjoxNzE0ODc2MDAwLCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.G62KA75K4a0mGzD6p8zeSWsxaS-S6_6A_Hn6veaYkNM
+      ┣ X-Request-Id：                   Lg5WO9w69MDhoS2QUtCaW
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   multipart/form-data; boundary=----WebKitFormBoundaryd8pghh3CMRhdhBZL
+      ┣ 
+      ┣ post (ChatPromptPost)：          {"id":"32745915778117","type":"user","title":"测试237777","prompt":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd\r\n","maxContext":0,"promptExtend":null,"avatar":"https://oss.juai.link/juai.test/person/202403/32745914256709.jpg","file":null,"initMessage":null,"tags":"null","model":"讯飞星火:general","vendor":"讯飞星火","isGroup":false}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.PromptReponse>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Duplicate entry '32745915778117' for key 'chat_prompt.PRIMARY'
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteCommandIdentityIntoEntityAsync()
+         at SqlSugar.InsertableProvider`1.ExecuteReturnEntityAsync()
+         at SqlSugar.SimpleClient`1.InsertReturnEntityAsync(T insertObj)
+         at Admin.NET.Core.JuAI.Service.PromptService.Post(ChatPromptPost post) in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 53
+         at lambda_method114(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

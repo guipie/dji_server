@@ -1,0 +1,651 @@
+fail: 2024-05-28 21:08:49.2943682 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:25:14.3136940 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:20.6113604 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:25.4238155 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:30.8360618 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #14
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:35.3540058 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:40.3391062 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #23
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:45.3184031 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:50.2893800 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #5
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:41:55.2799286 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #5
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:42:00.2527086 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:42:05.2322946 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:42:10.2130211 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #9
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:42:15.1836192 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:42:20.1557901 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #7
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错Value cannot be null. (Parameter 'ApiKey')      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentNullException: Value cannot be null. (Parameter 'ApiKey')
+         at OpenAI.OpenAiOptions.Validate()
+         at OpenAI.Managers.OpenAIService..ctor(OpenAiOptions settings, HttpClient httpClient)
+         at lambda_method11(Closure, IServiceProvider, Object[])
+         at Microsoft.Extensions.Http.DefaultTypedHttpClientFactory`1.CreateClient(HttpClient httpClient)
+         at Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTransientHelper[TClient,TImplementation](IServiceProvider s, IHttpClientBuilder builder)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 30
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 21:51:00.3009767 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:45.1987731 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:47.1792720 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错套接字操作尝试一个无法连接的主机。      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Net.Sockets.SocketException (10065): 套接字操作尝试一个无法连接的主机。
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+         at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+         at NewLife.Caching.RedisClient.GetStream(Boolean create)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.GetAll()
+         at Admin.NET.Core.Service.SysCacheService.HashGetAll[T](String key) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 234
+         at Admin.NET.Core.JuAI.Service.DrawingAlibabaService.AlibabaTaskFetchTask() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingAlibabaService.cs:line 54
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 32
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:52.1025925 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #39
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错套接字操作尝试一个无法连接的主机。      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Net.Sockets.SocketException (10065): 套接字操作尝试一个无法连接的主机。
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+         at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+         at NewLife.Caching.RedisClient.GetStream(Boolean create)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.GetAll()
+         at Admin.NET.Core.Service.SysCacheService.HashGetAll[T](String key) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 234
+         at Admin.NET.Core.JuAI.Service.DrawingAlibabaService.AlibabaTaskFetchTask() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingAlibabaService.cs:line 54
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 32
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.6859641 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7024355 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7199566 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7384972 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7545976 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7727548 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.7885733 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.8048868 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.8211561 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.8358411 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.8529956 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:54.8685959 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:57.1194885 +08:00 星期二 L Admin.NET.Core.JuAI.OssAsyncJob[0] #39
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
+      实时任务出错向一个无法连接的网络尝试了一个套接字操作。      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Net.Sockets.SocketException (10051): 向一个无法连接的网络尝试了一个套接字操作。
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+         at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+         at NewLife.Caching.RedisClient.GetStream(Boolean create)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.Redis.Execute[TResult](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.FullRedis.Execute[T](String key, Func`3 func, Boolean write)
+         at NewLife.Caching.RedisHash`2.GetAll()
+         at Admin.NET.Core.Service.SysCacheService.HashGetAll[T](String key) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 234
+         at Admin.NET.Core.JuAI.Service.DrawingAlibabaService.AlibabaTaskFetchTask() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AIDrawing\DrawingAlibabaService.cs:line 54
+         at Admin.NET.Core.JuAI.RealtimeJob.ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken) in D:\work\juai\api\Admin.NET.Core.JuAi\Job\RealtimeJob.cs:line 32
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:57.3603827 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_realtime> trigger of <job_realtime> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:06:57.6632282 +08:00 星期二 L System.Logging.ScheduleService[0] #21
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_realtime> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: 中文提示 :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，错误信息：Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001".
+      English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.DbType="MySql";ConfigId="1300000000001" 
+         at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-05-28 22:07:57.8586491 +08:00 星期二 L Admin.NET.Core.JuAI.Service.DrawingOpenAIService[0] #36 '00-c5d5ccc5bcc31efe275517f2375f3397-19458d9b10c8387d-00'
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatPromptReq openAiPrompts)
+      openAI聊天出错,错误信息:由于目标计算机积极拒绝，无法连接。 (127.0.0.1:7897)
+fail: 2024-05-28 22:10:58.7900973 +08:00 星期二 L Admin.NET.Core.JuAI.Service.DrawingOpenAIService[0] #35 '00-dcff4c0aa1eb4647c15cc91cb3dc913a-181cb5514909ed5f-00'
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.ChatOpenAiService.ChatAsync(ChatPromptReq openAiPrompts)
+      openAI聊天出错,错误信息:由于目标计算机积极拒绝，无法连接。 (127.0.0.1:7897)

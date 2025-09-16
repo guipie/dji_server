@@ -1,0 +1,494 @@
+fail: 2023-10-17 12:45:23.2862628 +08:00 星期二 L System.Logging.LoggingMonitor[0] #19 '00-c63968fd0bd0c78c657b0f7a72659daf-4e8008c08534de8c-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juAI/home/1?size=20
+      ┣ 来源地址：            http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：            swagger
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-c63968fd0bd0c78c657b0f7a72659daf-4e8008c08534de8c-00
+      ┣ 服务线程 ID：         #19
+      ┣ 执行耗时：            49ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        20
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                System.NullReferenceException
+      ┣ 消息：                Object reference not set to an instance of an object.
+      ┣ 错误堆栈：            at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\JuAIService.cs:line 24
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size) in C:\work\juai\api\Admin.NET.Core.JuAi\Service\JuAIService.cs:line 24
+         at lambda_method91(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-10-17 12:48:28.0549463 +08:00 星期二 L System.Logging.LoggingMonitor[0] #6 '00-10d03671b74a1bf58a9d60816f607bd7-dff13ce40129bca6-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juAI/home/1?size=20
+      ┣ 来源地址：            http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：            swagger
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-10d03671b74a1bf58a9d60816f607bd7-dff13ce40129bca6-00
+      ┣ 服务线程 ID：         #6
+      ┣ 执行耗时：            2ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        20
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                System.NullReferenceException
+      ┣ 消息：                Object reference not set to an instance of an object.
+      ┣ 错误堆栈：            at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method170(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method170(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-10-17 13:02:08.0516376 +08:00 星期二 L System.Logging.LoggingMonitor[0] #8 '00-95c34ba09f755f69faeec15fba8d102c-77504fed96dfeecb-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juAI/home/1?size=20
+      ┣ 来源地址：            http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：            swagger
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-95c34ba09f755f69faeec15fba8d102c-77504fed96dfeecb-00
+      ┣ 服务线程 ID：         #8
+      ┣ 执行耗时：            149323ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Development
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        20
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                System.NullReferenceException
+      ┣ 消息：                Object reference not set to an instance of an object.
+      ┣ 错误堆栈：            at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method163(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method163(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-10-17 13:09:45.5113301 +08:00 星期二 L System.Logging.LoggingMonitor[0] #3 '00-2b19d5de01ccb450d868a65fbcc9533d-0d03d929a281d8af-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/juAI/home/1?size=20
+      ┣ 来源地址：            http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：            swagger
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-2b19d5de01ccb450d868a65fbcc9533d-0d03d929a281d8af-00
+      ┣ 服务线程 ID：         #3
+      ┣ 执行耗时：            382156ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Development
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        20
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                System.NullReferenceException
+      ┣ 消息：                Object reference not set to an instance of an object.
+      ┣ 错误堆栈：            at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.ToPageList(Int32 pageIndex, Int32 pageSize)
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method152(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.ToPageList(Int32 pageIndex, Int32 pageSize)
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method152(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-10-17 13:10:25.6949044 +08:00 星期二 L System.Logging.LoggingMonitor[0] #27 '00-3c8d582ae54bbfe798cd360a109e9431-da8fef82320d57d3-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=3
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-3c8d582ae54bbfe798cd360a109e9431-da8fef82320d57d3-00
+      ┣ 服务线程 ID：         #27
+      ┣ 执行耗时：            36266ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Development
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                System.NullReferenceException
+      ┣ 消息：                Object reference not set to an instance of an object.
+      ┣ 错误堆栈：            at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.ToPageList(Int32 pageIndex, Int32 pageSize)
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method178(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.NullReferenceException: Object reference not set to an instance of an object.
+         at SqlSugar.NewExpressionResolve.Select(NewExpression expression, ExpressionParameter parameter, Boolean isSingle)
+         at SqlSugar.NewExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+         at SqlSugar.BaseResolve.Start()
+         at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+         at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+         at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+         at SqlSugar.MySqlQueryBuilder.ToSqlString()
+         at SqlSugar.QueryableProvider`1._ToSql()
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.ToPageList(Int32 pageIndex, Int32 pageSize)
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method178(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-10-17 13:36:31.4304089 +08:00 星期二 L System.Logging.LoggingMonitor[0] #41 '00-96b716ddf42f7d23a4b3973fd9fc2f6d-50d55d6a7960a161-00'
+      [Microsoft.Extensions.Logging.Abstractions.dll] void Microsoft.Extensions.Logging.LoggerExtensions.LogError(ILogger logger, Exception exception, string message, params object[] args)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.JuAIService.GetHome
+      ┣ 
+      ┣ 控制器名称：          JuAIService
+      ┣ 操作名称：            GetHome
+      ┣ 显示名称：            广场数据
+      ┣ 路由信息：            [area]: ; [controller]: juAI; [action]: home
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            IPv4://localhost:5005/app/api/juai/home/1?size=3
+      ┣ 来源地址：            http://localhost:3000/square
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      127.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-96b716ddf42f7d23a4b3973fd9fc2f6d-50d55d6a7960a161-00
+      ┣ 服务线程 ID：         #8
+      ┣ 执行耗时：            280ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              naive_color_mode_preference=system; i18n_redirected=zh; SECKEY_ABVK=rxCxnkoe4IYPx4r2IDPVemACeJ7X+xEuIFT73uB/n+M=; BMAP_SECKEY=rxCxnkoe4IYPx4r2IDPVeuJRwIS0sXKsqRJK4aJNzyoUIVb4o6YmLniTT4xKGvx2gwijKtdJCDtSMli4hXZ1PDeNlr-E4y2OYdoCGmsZfMLx_zZ6S3TYwDv70U6JcMSQY9xX3RNxebEHGZPAEn-h8XF66n3osn0kEgLH-2RB62mSa_h5fevx8R2o36-Qz8Tc
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19044
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.HomeOutput>>
+      ┣ 最终类型：            
+      ┣ 最终返回值：          null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                MySqlConnector.MySqlException
+      ┣ 消息：                Unknown column 'Image' in 'where clause'
+      ┣ 错误堆栈：            at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method183(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Unknown column 'Image' in 'where clause'
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.JuAIService.GetHome(Int32 page, Int32 size)
+         at lambda_method183(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

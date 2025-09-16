@@ -1,0 +1,749 @@
+fail: 2024-01-08 00:01:01.2825373 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:01:03.4533603 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 00:01:03.8262850 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:01:04.1320175 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 00:01:04.5079191 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:01:04.8142380 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 00:28:39.3595703 +08:00 星期一 L System.Logging.LoggingMonitor[0] #46 '00-e4cef21f272a29cc22f856f3ff7ed49d-8e0f27c7bb3746d4-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.Get
+      ┣ 
+      ┣ 控制器名称：             DrawingImageService
+      ┣ 操作名称：               Get
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: drawingImage; [action]: 
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/DrawingImage/31325892048453
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             node
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-e4cef21f272a29cc22f856f3ff7ed49d-8e0f27c7bb3746d4-00
+      ┣ 服务线程 ID：            #46
+      ┣ 执行耗时：               5474ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             node
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ id (Int64)：             31325892048453
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ChatgptImageDetailRes>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   Newtonsoft.Json.JsonReaderException
+      ┣ 消息：                   Error reading JObject from JsonReader. Current JsonReader item is not an object: String. Path '', line 1, position 438.
+      ┣ 错误堆栈：               at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method267(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: String. Path '', line 1, position 438.
+         at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method267(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 00:28:49.5418583 +08:00 星期一 L System.Logging.LoggingMonitor[0] #51 '00-b911b7715e887ceda8246e1852f321ff-dd560de1a13a7d71-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.Get
+      ┣ 
+      ┣ 控制器名称：             DrawingImageService
+      ┣ 操作名称：               Get
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: drawingImage; [action]: 
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/DrawingImage/31325892048453
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             node
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-b911b7715e887ceda8246e1852f321ff-dd560de1a13a7d71-00
+      ┣ 服务线程 ID：            #51
+      ┣ 执行耗时：               5427ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Production
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             node
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ id (Int64)：             31325892048453
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ChatgptImageDetailRes>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   Newtonsoft.Json.JsonReaderException
+      ┣ 消息：                   Error reading JObject from JsonReader. Current JsonReader item is not an object: String. Path '', line 1, position 438.
+      ┣ 错误堆栈：               at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method267(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: String. Path '', line 1, position 438.
+         at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+         at Newtonsoft.Json.Linq.JObject.Parse(String json)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method267(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 00:30:01.2232395 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:30:03.3809338 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 00:30:03.6681648 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:30:03.9791462 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 00:30:04.2405264 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:30:04.5501103 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #37
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 00:37:04.0688419 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:37:07.2385001 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 00:37:07.5844275 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:37:07.9884303 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 00:37:09.0697188 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:37:09.4678009 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #25
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 00:46:57.9575196 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:47:00.9828537 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 00:47:01.5445268 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:47:02.0753364 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 00:47:02.5026773 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 00:47:02.9413710 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #10
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 00:47:24.9934208 +08:00 星期一 L System.Logging.LoggingMonitor[0] #24 '00-6d53ab15c79507aefb432c1ccaffe6f6-96546f482eb44560-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.Get
+      ┣ 
+      ┣ 控制器名称：             DrawingImageService
+      ┣ 操作名称：               Get
+      ┣ 显示名称：               
+      ┣ 路由信息：               [area]: ; [controller]: drawingImage; [action]: 
+      ┣ 请求方式：               GET
+      ┣ 请求地址：               http://localhost:5005/app/api/DrawingImage/31325892048453
+      ┣ 来源地址：               
+      ┣ 请求端源：               client
+      ┣ 浏览器标识：             node
+      ┣ 客户端区域语言：         *
+      ┣ 客户端 IP 地址：         0.0.0.1
+      ┣ 服务端 IP 地址：         0.0.0.1
+      ┣ 客户端连接 ID：          00-6d53ab15c79507aefb432c1ccaffe6f6-96546f482eb44560-00
+      ┣ 服务线程 ID：            #16
+      ┣ 执行耗时：               10356ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                 
+      ┣ 响应端：                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：               Microsoft Windows 10.0.19045
+      ┣ 系统架构：               X64
+      ┣ 基础框架：               Furion.Pure v1.0.0.0
+      ┣ .NET 架构：              .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：               Development
+      ┣ 启动程序集：             Admin.NET.Web.Entry
+      ┣ 进程名称：               Admin.NET.Web.Entry
+      ┣ 托管程序：               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                 */*
+      ┣ Connection：             keep-alive
+      ┣ Host：                   localhost:5005
+      ┣ User-Agent：             node
+      ┣ Accept-Encoding：        gzip, deflate
+      ┣ Accept-Language：        *
+      ┣ client：                 web
+      ┣ sec-fetch-mode：         cors
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：           
+      ┣ 
+      ┣ id (Int64)：             31325892048453
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：         200
+      ┣ 原始类型：               System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.ChatgptImageDetailRes>
+      ┣ 最终类型：               
+      ┣ 最终返回值：             null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                   Newtonsoft.Json.JsonSerializationException
+      ┣ 消息：                   Deserialized JSON type 'Newtonsoft.Json.Linq.JValue' is not compatible with expected type 'Newtonsoft.Json.Linq.JObject'. Path '', line 1, position 460.
+      ┣ 错误堆栈：               at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateJToken(JsonReader reader, JsonContract contract)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at SqlSugar.SerializeService.DeserializeObject[T](String value)
+         at SqlSugar.IDataRecordExtensions.GetJson[T](IDataReader dr, Int32 i)
+         at SqlSugarEntity(IDataRecord)
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.InSingleAsync(Object pkValue)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method188(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Newtonsoft.Json.JsonSerializationException: Deserialized JSON type 'Newtonsoft.Json.Linq.JValue' is not compatible with expected type 'Newtonsoft.Json.Linq.JObject'. Path '', line 1, position 460.
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateJToken(JsonReader reader, JsonContract contract)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+         at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+         at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+         at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+         at SqlSugar.SerializeService.DeserializeObject[T](String value)
+         at SqlSugar.IDataRecordExtensions.GetJson[T](IDataReader dr, Int32 i)
+         at SqlSugarEntity(IDataRecord)
+         at SqlSugar.IDataReaderEntityBuilder`1.Build(IDataRecord dataRecord)
+         at SqlSugar.DbBindAccessory.GetEntityListAsync[T](SqlSugarProvider context, IDataReader dataReader)
+         at SqlSugar.DbBindProvider.DataReaderToListAsync[T](Type type, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](Boolean isComplexModel, Type entityType, IDataReader dataReader)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at SqlSugar.QueryableProvider`1.InSingleAsync(Object pkValue)
+         at Admin.NET.Core.JuAI.Service.DrawingImageService.Get(Int64 id)
+         at lambda_method188(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 00:54:00.5282239 +08:00 星期一 L Admin.NET.Core.JuAI.Service.DrawingOpenAIService[0] #24 '00-9823b7299818172986b2969bffa13f30-b47cf66df30b1567-00'
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.DrawingYiShuZiService.DrawingAsync(DrawingYiShuZiReq drawingReq)
+      艺术字绘画出错,错误信息:Object serialized to String. JObject instance expected.
+fail: 2024-01-08 01:02:56.8952529 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:02:59.6398761 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 01:03:00.1500008 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:03:00.8001657 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 01:03:02.6457951 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:03:03.0826968 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 01:12:51.3800644 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:12:54.5263983 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 01:12:55.0473032 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:12:55.4985932 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 01:12:56.7254525 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:12:57.1677302 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #15
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 01:30:01.3894342 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:30:03.7832388 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 01:30:04.2046638 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:30:04.6072729 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 01:30:04.8959203 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 01:30:05.2934564 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 03:53:40.8938427 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 03:53:43.5176723 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 03:53:43.9037926 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 03:53:44.3044916 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 03:53:44.7182477 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 03:53:45.1334258 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 03:54:50.4471216 +08:00 星期一 L System.Logging.LoggingMonitor[0] #36 '00-ef3027a8e3e1bd8aec4eb864e90046fb-181bade85af248e8-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.PromptService.Get
+      ┣ 
+      ┣ 控制器名称：                PromptService
+      ┣ 操作名称：                  Get
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: prompt; [action]: 
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://127.0.0.1:5005/app/api/prompt
+      ┣ 来源地址：                  http://localhost:3001/chat/1002
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-ef3027a8e3e1bd8aec4eb864e90046fb-181bade85af248e8-00
+      ┣ 服务线程 ID：               #24
+      ┣ 执行耗时：                  16766ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjlhR1BXU1ZSc0Y3Qml6MEFZWDBQSW9saExoT3ZvSjh1RDBZQXE4d1VCNGMiLCJzIjoyNywibCI6MTEsImsiOiIzT0RjM0xDSlVaVyIsImlhdCI6MTcwNDYxMzA3MywibmJmIjoxNzA0NjEzMDczLCJleHAiOjE3MDU4MjI2NzMsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.VsjHUq-dt-s11oq-XsGAdrXZmsGqkMOJEyMkDxnLNls","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDQ2MTMwNzMsIm5iZiI6MTcwNDYxMzA3MywiZXhwIjoxNzA1MjE3ODczLCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.9aGPWSVRsF7Biz0AYX0PIolhLhOvoJ8uD0YAq8wUB4c","account":"18600766045","nickName":"怪兽来了","avatar":"Upload/Avatar/14244741378757.jpg","phone":"18600766045","email":"","remark":null,"sex":1,"tokenNum":586339,"payType":111}
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Development
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      127.0.0.1:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDQ2MTMwNzMsIm5iZiI6MTcwNDYxMzA3MywiZXhwIjoxNzA1MjE3ODczLCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.9aGPWSVRsF7Biz0AYX0PIolhLhOvoJ8uD0YAq8wUB4c
+      ┣ Cookie：                    userInfo=%7B%22userId%22%3A14213426327877%2C%22refreshToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IjlhR1BXU1ZSc0Y3Qml6MEFZWDBQSW9saExoT3ZvSjh1RDBZQXE4d1VCNGMiLCJzIjoyNywibCI6MTEsImsiOiIzT0RjM0xDSlVaVyIsImlhdCI6MTcwNDYxMzA3MywibmJmIjoxNzA0NjEzMDczLCJleHAiOjE3MDU4MjI2NzMsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.VsjHUq-dt-s11oq-XsGAdrXZmsGqkMOJEyMkDxnLNls%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MDQ2MTMwNzMsIm5iZiI6MTcwNDYxMzA3MywiZXhwIjoxNzA1MjE3ODczLCJpc3MiOiJBZG1pbi5ORVQiLCJhdWQiOiJBZG1pbi5ORVQifQ.9aGPWSVRsF7Biz0AYX0PIolhLhOvoJ8uD0YAq8wUB4c%22%2C%22account%22%3A%2218600766045%22%2C%22nickName%22%3A%22%E6%80%AA%E5%85%BD%E6%9D%A5%E4%BA%86%22%2C%22avatar%22%3A%22Upload%2FAvatar%2F14244741378757.jpg%22%2C%22phone%22%3A%2218600766045%22%2C%22email%22%3A%22%22%2C%22remark%22%3Anull%2C%22sex%22%3A1%2C%22tokenNum%22%3A586339%2C%22payType%22%3A111%7D
+      ┣ Referer：                   http://localhost:3001/chat/1002
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.PromptReponse>>
+      ┣ 最终类型：                  
+      ┣ 最终返回值：                null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                      SqlSugar.SqlSugarException
+      ┣ 消息：                      Connect Timeout expired.
+      ┣ 错误堆栈：                  at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.PromptService.Get() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 29
+         at lambda_method122(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Connect Timeout expired.
+         at SqlSugar.MySqlProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+         at Admin.NET.Core.JuAI.Service.PromptService.Get() in D:\work\juai\api\Admin.NET.Core.JuAi\Service\AICommon\PromptService.cs:line 29
+         at lambda_method122(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 18:08:22.9557738 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:08:25.0915069 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 18:08:25.3971678 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:08:25.7107485 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 18:08:26.2214988 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:08:26.5340245 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #24
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 18:30:01.8925248 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:30:04.0312165 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 18:30:04.2981501 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:30:04.6056670 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 18:30:05.7103623 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 18:30:06.0169288 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #35
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 18:30:06.6162862 +08:00 星期一 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The JobDetail of <job_ossAsync> persist failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.FullRedis.<>c__DisplayClass41_1.<Search>b__0(RedisClient r)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnChanged(PersistenceContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 146
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 447
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 18:30:12.6857626 +08:00 星期一 L System.Logging.ScheduleService[0] #20
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Persistence of <trigger_ossAsync> trigger of <job_ossAsync> job failed.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.IO.IOException: Unable to read data from the transport connection: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+       ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.BufferedStream.ReadByteSlow()
+         at NewLife.Caching.RedisClient.GetResponse(Stream ns, Int32 count)
+         at NewLife.Caching.RedisClient.ExecuteCommand(String cmd, Packet[] args, Object[] oriArgs)
+         at NewLife.Caching.RedisClient.Execute(String cmd, Object[] args)
+         at NewLife.Caching.RedisClient.Execute[TResult](String cmd, Object[] args)
+         at NewLife.Caching.FullRedis.<>c__DisplayClass41_1.<Search>b__0(RedisClient r)
+         at NewLife.Caching.Redis.Execute[TResult](Func`2 func)
+         at NewLife.Caching.FullRedis.Search(SearchModel model)+MoveNext()
+         at System.Linq.Enumerable.SelectEnumerableIterator`2.ToList()
+         at Admin.NET.Core.Service.SysCacheService.GetKeysByPrefixKey(String prefixKey) in D:\work\juai\api\Admin.NET.Core\Service\Cache\SysCacheService.cs:line 126
+         at Admin.NET.Core.SqlSugarCache.GetAllKey[V]() in D:\work\juai\api\Admin.NET.Core\Cache\SqlSugarCache.cs:line 44
+         at SqlSugar.CacheSchemeMain.RemoveCache(ICacheService cacheService, String tableName)
+         at SqlSugar.UpdateableProvider`1.<RemoveDataCache>b__139_0()
+         at SqlSugar.UpdateableProvider`1.After(String sql)
+         at SqlSugar.UpdateableProvider`1.ExecuteCommand()
+         at Admin.NET.Core.Service.DbJobPersistence.OnTriggerChanged(PersistenceTriggerContext context) in D:\work\juai\api\Admin.NET.Core\Service\Job\DbJobPersistence.cs:line 177
+         at Furion.Schedule.SchedulerFactory.ProcessQueue() in D:\work\juai\api\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 444
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2024-01-08 19:01:01.2131059 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:01:03.3645257 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 19:01:03.7371979 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:01:04.0580994 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 19:01:04.3204619 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:01:04.6405236 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #38
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 19:30:01.1018450 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:30:03.1630635 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 19:30:03.4382016 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:30:03.7443034 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 19:30:04.0208467 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 19:30:04.3432055 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #13
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 20:01:01.2097576 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:01:03.3247522 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 20:01:03.6994246 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:01:04.0056974 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 20:01:04.2690326 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:01:04.5733919 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 20:30:01.0263231 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:30:03.2252187 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 20:30:03.5180512 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:30:03.8274824 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 20:30:04.1873443 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 20:30:04.4962187 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #52
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 21:01:01.1343919 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:01:03.2975829 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 21:01:03.5631074 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:01:03.8741690 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 21:01:04.1545398 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:01:04.4633083 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #58
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 21:30:01.1387643 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:30:03.2054093 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 21:30:03.5013366 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:30:03.8248618 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 21:30:04.0803605 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 21:30:04.3855618 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #64
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 22:01:02.6492180 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:01:04.7928910 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 22:01:05.0810341 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:01:05.3967593 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 22:01:06.4922971 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:01:06.8160602 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #79
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 22:30:00.5718674 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:30:02.7733825 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 22:30:03.1455714 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:30:03.4782137 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 22:30:03.8580659 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 22:30:04.1817390 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #46
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 23:01:00.6092193 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:01:02.8139649 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 23:01:03.1738846 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:01:03.5013561 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 23:01:03.7709154 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:01:04.0963632 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #96
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)
+fail: 2024-01-08 23:30:01.1193126 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:30:03.2326491 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-lNrWGsfZbSoLi53A50H6rAMV.png?st=2024-01-04T06%3A21%3A20Z&se=2024-01-04T08%3A21%3A20Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T12%3A57%3A13Z&ske=2024-01-04T12%3A57%3A13Z&sks=b&skv=2021-08-06&sig=sqWSzN2fckp54p3TUeFBR2QS1TFEHWsXlz2DjZpqrCg%3D)
+fail: 2024-01-08 23:30:03.5084378 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:30:03.8335950 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-1292ztuiPpuRRdWt6gRmoTyR.png?st=2024-01-04T06%3A36%3A29Z&se=2024-01-04T08%3A36%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-03T21%3A19%3A52Z&ske=2024-01-04T21%3A19%3A52Z&sks=b&skv=2021-08-06&sig=yeMGgwXmjuyHHSim%2B6VP4/YQ43%2Bj2Am0SjKi4BeXEcQ%3D)
+fail: 2024-01-08 23:30:04.0952948 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task<SysFile> Admin.NET.Core.JuAI.Service.JuFileService.ImageAsync(string ossPath, SysFile item)
+      Fetch同步文件出错478
+fail: 2024-01-08 23:30:04.4128172 +08:00 星期一 L Admin.NET.Core.JuAI.Service.JuFileService[0] #66
+      [Admin.NET.Core.JuAI.dll] async Task Admin.NET.Core.JuAI.Service.JuFileService.GPTImageAsyncToOss(string ossPath)
+      同步ChatgptImage任务出错,One or more errors occurred. (Call failed with status code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.): GET https://oaidalleapiprodscus.blob.core.windows.net/private/org-jVmWXH4GArzEqkk7AHS1ylpK/user-QZFXa5hwMzChNULIWMZr36Hm/img-R5WteHAV7UMy4LgUaksiQZJy.png?st=2024-01-04T06%3A49%3A29Z&se=2024-01-04T08%3A49%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-01-04T00%3A43%3A33Z&ske=2024-01-05T00%3A43%3A33Z&sks=b&skv=2021-08-06&sig=Ket/wV%2BbM8nC53qW43MikCssdy5hpm0XDR9HBeNGqGE%3D)

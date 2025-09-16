@@ -1,0 +1,1923 @@
+info: 2023-11-15 18:56:41.2166714 +08:00 星期三 L System.Logging.LoggingMonitor[0] #67 '00-82e7b7d6b77c493e8eb41e9a27f75889-c6e666aed9ef5142-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.LoginRegister
+      ┣ 
+      ┣ 控制器名称：                    UserLoginService
+      ┣ 操作名称：                      LoginRegister
+      ┣ 显示名称：                      app登录
+      ┣ 路由信息：                      [area]: ; [controller]: userLogin; [action]: loginRegister
+      ┣ 请求方式：                      POST
+      ┣ 请求地址：                      http://localhost:5005/app/api/userLogin/loginRegister
+      ┣ 来源地址：                      http://localhost:3000/
+      ┣ 请求端源：                      client
+      ┣ 浏览器标识：                    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                0.0.0.1
+      ┣ 服务端 IP 地址：                0.0.0.1
+      ┣ 客户端连接 ID：                 00-82e7b7d6b77c493e8eb41e9a27f75889-c6e666aed9ef5142-00
+      ┣ 服务线程 ID：                   #8
+      ┣ 执行耗时：                      1375ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                        
+      ┣ 响应端：                        
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                      Microsoft Windows 10.0.19045
+      ┣ 系统架构：                      X64
+      ┣ 基础框架：                      Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                     .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                      Production
+      ┣ 启动程序集：                    Admin.NET.Web.Entry
+      ┣ 进程名称：                      Admin.NET.Web.Entry
+      ┣ 托管程序：                      Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                  application/json
+      ┣ 
+      ┣ input (AppLoginInput)：         {"account":"18600766045","password":"123456","code":"","u":null}
+      ┣ isRefresh (Nullable`1)：        
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                200
+      ┣ 原始类型：                      System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppLoginOutput>
+      ┣ 最终类型：                      Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                    {"code":200,"type":"success","message":"","result":{"userId":"14213426327877","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 18:56:41.6719289 +08:00 星期三 L System.Logging.LoggingMonitor[0] #8 '00-8371306c28169d09300c02d75c6b3f2f-159bccf030cc0d60-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.ArticleService.GetNewest
+      ┣ 
+      ┣ 控制器名称：                ArticleService
+      ┣ 操作名称：                  GetNewest
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: article; [action]: newest
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/article/newest?minId=&size=3
+      ┣ 来源地址：                  http://localhost:3000/
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            0.0.0.1
+      ┣ 服务端 IP 地址：            0.0.0.1
+      ┣ 客户端连接 ID：             00-8371306c28169d09300c02d75c6b3f2f-159bccf030cc0d60-00
+      ┣ 服务线程 ID：               #44
+      ┣ 执行耗时：                  174ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                 .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：              
+      ┣ 
+      ┣ minId (Nullable`1)：        
+      ┣ size (Int32)：              3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.List<Admin.NET.Core.JuAI.Service.ArticleAppOutput>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"id":"14968142152133","title":"这是一个专栏的文章哈。。","text":"Flexbox & Grid\n\nAlign Items\n\nUtilities for controlling how flex and grid items are positioned along a container's cross ","cover":"http://filetest.guxin.link/article/14968137614405.png","specialId":"14288367223493","specialName":"midjourney","createTime":"2023-11-04","status":1,"createUser":{"id":"14213426327877","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png"},"viewCount":
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 18:56:41.7134006 +08:00 星期三 L System.Logging.LoggingMonitor[0] #67 '00-5e1105d95b15fdffb1285baced2ef244-2a6a517054190689-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.SpecialService.GetRecommand
+      ┣ 
+      ┣ 控制器名称：          SpecialService
+      ┣ 操作名称：            GetRecommand
+      ┣ 显示名称：            
+      ┣ 路由信息：            [area]: ; [controller]: special; [action]: recommand
+      ┣ 请求方式：            GET
+      ┣ 请求地址：            http://localhost:5005/app/api/special/recommand?page=1&size=3
+      ┣ 来源地址：            http://localhost:3000/
+      ┣ 请求端源：            client
+      ┣ 浏览器标识：          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：      zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：      0.0.0.1
+      ┣ 服务端 IP 地址：      0.0.0.1
+      ┣ 客户端连接 ID：       00-5e1105d95b15fdffb1285baced2ef244-2a6a517054190689-00
+      ┣ 服务线程 ID：         #8
+      ┣ 执行耗时：            221ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：              
+      ┣ 响应端：              
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：            Microsoft Windows 10.0.19045
+      ┣ 系统架构：            X64
+      ┣ 基础框架：            Furion.Pure v4.8.8.44
+      ┣ .NET 架构：           .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：            Production
+      ┣ 启动程序集：          Admin.NET.Web.Entry
+      ┣ 进程名称：            Admin.NET.Web.Entry
+      ┣ 托管程序：            Kestrel
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：        
+      ┣ 
+      ┣ page (Int32)：        1
+      ┣ size (Int32)：        3
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：      200
+      ┣ 原始类型：            System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.Service.SpecialOutput>>
+      ┣ 最终类型：            Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：          {"code":200,"type":"success","message":"","result":[{"id":"14213443775685","title":"提问的艺术","text":"提问的艺术 for CHATGPT\nprompt 技术工程高质量答案完全指南\n关于 prompt 技巧的全面指导","cover":"http://appui.guxin.link/Special/2023-08/14213443745221.jpg","coverFileId":"0"},{"id":"14222051915717","title":"每日资讯","text":"这里将发布每天最新的人工智能相关的新闻资讯和语言模型。以及最新的AI产品，功能，和升级。","cover":"http://appui.guxin.link/Special/2023-08/14222051872837.jpg","coverFileId":"0"},{"id":"14288367223493","title":"midjourney","text":"midjourney的玩法，和所有相关功能
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 18:56:53.2815922 +08:00 星期三 L System.Logging.LoggingMonitor[0] #67 '00-04c55d0afd6bcf7d4a3d8a78938cf585-17a317024722915d-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-04c55d0afd6bcf7d4a3d8a78938cf585-17a317024722915d-00
+      ┣ 服务线程 ID：                  #8
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T18:56:53.2789321+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 18:57:51.2686178 +08:00 星期三 L System.Logging.LoggingMonitor[0] #61 '00-e56ea0063810750650d54f2a383effcf-3af097edc1eb412c-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-e56ea0063810750650d54f2a383effcf-3af097edc1eb412c-00
+      ┣ 服务线程 ID：                  #41
+      ┣ 执行耗时：                     59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T18:57:51.2638411+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 19:01:57.7788158 +08:00 星期三 L System.Logging.LoggingMonitor[0] #27 '00-0e90f8d03f32415beec800946b06bde3-be63b625933e0bfb-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-0e90f8d03f32415beec800946b06bde3-be63b625933e0bfb-00
+      ┣ 服务线程 ID：                  #37
+      ┣ 执行耗时：                     377ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T19:01:57.7758936+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 20:43:50.7977074 +08:00 星期三 L System.Logging.LoggingMonitor[0] #50 '00-4587184db26a11e328fc9d3854af3b0d-3df9d75594bd680c-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-4587184db26a11e328fc9d3854af3b0d-3df9d75594bd680c-00
+      ┣ 服务线程 ID：                  #39
+      ┣ 执行耗时：                     423ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T20:43:50.7928879+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 20:59:03.4702639 +08:00 星期三 L System.Logging.LoggingMonitor[0] #50 '00-39852a3693c8e53d3a0de7c43fac160f-2520221783113249-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-39852a3693c8e53d3a0de7c43fac160f-2520221783113249-00
+      ┣ 服务线程 ID：                  #40
+      ┣ 执行耗时：                     665ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T20:59:03.4471+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 20:59:41.5823029 +08:00 星期三 L System.Logging.LoggingMonitor[0] #39 '00-d2ada848e7307545ca58146f2d7da5ec-670fc0f594fa7c71-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-d2ada848e7307545ca58146f2d7da5ec-670fc0f594fa7c71-00
+      ┣ 服务线程 ID：                  #77
+      ┣ 执行耗时：                     65ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T20:59:41.5756253+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:00:08.4823671 +08:00 星期三 L System.Logging.LoggingMonitor[0] #39 '00-fa6e97be43287de3f5ed4d37a9ac123d-7b154ce30aa4002f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-fa6e97be43287de3f5ed4d37a9ac123d-7b154ce30aa4002f-00
+      ┣ 服务线程 ID：                  #87
+      ┣ 执行耗时：                     59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:00:08.4790591+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:00:32.5205638 +08:00 星期三 L System.Logging.LoggingMonitor[0] #55 '00-3b4221f2a326d6d2893b199683b55886-23b9a9a0c979c698-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-3b4221f2a326d6d2893b199683b55886-23b9a9a0c979c698-00
+      ┣ 服务线程 ID：                  #6
+      ┣ 执行耗时：                     62ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:00:32.5155627+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:14:37.6089085 +08:00 星期三 L System.Logging.LoggingMonitor[0] #55 '00-6d23e3011236b4f9282e2040d5fed879-05a5c6fc91651c43-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-6d23e3011236b4f9282e2040d5fed879-05a5c6fc91651c43-00
+      ┣ 服务线程 ID：                  #77
+      ┣ 执行耗时：                     435ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:14:37.6039105+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:15:07.0550754 +08:00 星期三 L System.Logging.LoggingMonitor[0] #55 '00-029b1f29e66cd77626cc3d8b8e6fd0d8-5f1ea2b01a4029b2-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-029b1f29e66cd77626cc3d8b8e6fd0d8-5f1ea2b01a4029b2-00
+      ┣ 服务线程 ID：                  #54
+      ┣ 执行耗时：                     68ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:15:07.0482712+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:16:41.7855158 +08:00 星期三 L System.Logging.LoggingMonitor[0] #77 '00-e4c3dd76539b71b40bfe09bc2ae36f87-ee63fa81d3b8f44f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-e4c3dd76539b71b40bfe09bc2ae36f87-ee63fa81d3b8f44f-00
+      ┣ 服务线程 ID：                  #54
+      ┣ 执行耗时：                     76ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:16:41.780643+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:23:27.0962104 +08:00 星期三 L System.Logging.LoggingMonitor[0] #64 '00-e12b0781f9181cc2d61af199536c8bb0-55070d1e76a87f41-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-e12b0781f9181cc2d61af199536c8bb0-55070d1e76a87f41-00
+      ┣ 服务线程 ID：                  #89
+      ┣ 执行耗时：                     228ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:23:27.0912776+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:34:26.5891853 +08:00 星期三 L System.Logging.LoggingMonitor[0] #93 '00-b7dc6f1b30e4a862d1fba520e5c94fc7-de5880e8f5ca525b-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-b7dc6f1b30e4a862d1fba520e5c94fc7-de5880e8f5ca525b-00
+      ┣ 服务线程 ID：                  #6
+      ┣ 执行耗时：                     500ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:34:26.5849084+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:34:49.6592345 +08:00 星期三 L System.Logging.LoggingMonitor[0] #93 '00-2a01e4e5b8aa86abe42671fe5783b82f-c730fddeb8957773-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-2a01e4e5b8aa86abe42671fe5783b82f-c730fddeb8957773-00
+      ┣ 服务线程 ID：                  #98
+      ┣ 执行耗时：                     59ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:34:49.6550081+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:35:40.9898979 +08:00 星期三 L System.Logging.LoggingMonitor[0] #96 '00-a409a413b611668b98cc26dd18bd1df7-20c16a1f2f059140-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-a409a413b611668b98cc26dd18bd1df7-20c16a1f2f059140-00
+      ┣ 服务线程 ID：                  #98
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:35:40.9876533+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:41:02.0846453 +08:00 星期三 L System.Logging.LoggingMonitor[0] #96 '00-47f48bd1761402461438cd02fb7c00c2-f307bd539bfb6f0f-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-47f48bd1761402461438cd02fb7c00c2-f307bd539bfb6f0f-00
+      ┣ 服务线程 ID：                  #98
+      ┣ 执行耗时：                     227ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:41:02.0823626+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:42:10.7834938 +08:00 星期三 L System.Logging.LoggingMonitor[0] #39 '00-54e8971c5047ad4bb192b0c4b2421fdf-8056fc2578114494-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-54e8971c5047ad4bb192b0c4b2421fdf-8056fc2578114494-00
+      ┣ 服务线程 ID：                  #98
+      ┣ 执行耗时：                     63ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:42:10.7776839+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:42:11.7510364 +08:00 星期三 L System.Logging.LoggingMonitor[0] #78 '00-fb4daead60e7d4f0d3b6e85fa58a757f-fdf8a2572216fecf-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(ref TStateMachine stateMachine)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatGPTController.GetChatGptPrompts
+      ┣ 
+      ┣ 控制器名称：       ChatGPTController
+      ┣ 操作名称：         GetChatGptPrompts
+      ┣ 显示名称：         
+      ┣ 路由信息：         [area]: ; [controller]: ChatGPT; [action]: GetChatGptPrompts
+      ┣ 请求方式：         GET
+      ┣ 请求地址：         http://127.0.0.1:5005/app/api/ChatGPT/chat/prompts
+      ┣ 来源地址：         http://localhost:3001/chat?theme=dark
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   127.0.0.1
+      ┣ 服务端 IP 地址：   127.0.0.1
+      ┣ 客户端连接 ID：    00-fb4daead60e7d4f0d3b6e85fa58a757f-fdf8a2572216fecf-00
+      ┣ 服务线程 ID：      #78
+      ┣ 执行耗时：         141ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Object
+      ┣ 最终类型：         Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：       {"code":200,"type":"success","message":"","result":[{"title":"担任雅思写作考官","id":"1","prompt":"我希望你假定自己是雅思写作考官，根据雅思评判标准，按我给你的雅思考题和对应答案给我评分，并且按照雅思写作评分细则给出打分依据。此外，请给我详细的修改意见并写出满分范文。第一个问题是：It is sometimes argued that too many students go to university, while others claim that a university education should be a universal right.Discuss both sides of the argument and give your own opinion.对于这个问题，我的答案是：In some advanced countries, it is not unusual for more than 50% of young adults to attend college or univ
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:43:54.5336200 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 21:43:54.6000588 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-11-15 21:43:54.6025093 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-11-15 21:43:55.2148597 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 21:43:55.2162044 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 21:43:55.2182059 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 21:43:55.2193662 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 21:46:25.2768019 +08:00 星期三 L System.Logging.LoggingMonitor[0] #21 '00-45e92f4414194eae60e979db493a7d9a-910d817e85272caa-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-45e92f4414194eae60e979db493a7d9a-910d817e85272caa-00
+      ┣ 服务线程 ID：                  #21
+      ┣ 执行耗时：                     99ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:46:25.2133118+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 21:51:34.9554443 +08:00 星期三 L System.Logging.LoggingMonitor[0] #21 '00-0c1cb67bb9cf6847140067babaff7025-2885066bbb2f27d9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-0c1cb67bb9cf6847140067babaff7025-2885066bbb2f27d9-00
+      ┣ 服务线程 ID：                  #39
+      ┣ 执行耗时：                     297ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Production
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T21:51:34.9495557+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:14:14.3694523 +08:00 星期三 L System.Logging.LoggingMonitor[0] #63 '00-ade6255c0d3d3722dba17b1853a5ad46-b5ff09b35979a3a6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-ade6255c0d3d3722dba17b1853a5ad46-b5ff09b35979a3a6-00
+      ┣ 服务线程 ID：      #63
+      ┣ 执行耗时：         21ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:16:08.1390765 +08:00 星期三 L System.Logging.LoggingMonitor[0] #54 '00-f19b5b6d86910d62f8cb76fda9fe880c-b7fa4cda0d4e9d9b-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-f19b5b6d86910d62f8cb76fda9fe880c-b7fa4cda0d4e9d9b-00
+      ┣ 服务线程 ID：      #54
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:16:14.7944503 +08:00 星期三 L System.Logging.LoggingMonitor[0] #38 '00-a952767d94b7e46529f019f2646b65ad-05a77bcb1512e9e9-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-a952767d94b7e46529f019f2646b65ad-05a77bcb1512e9e9-00
+      ┣ 服务线程 ID：      #38
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:16:52.0049755 +08:00 星期三 L System.Logging.LoggingMonitor[0] #43 '00-0dae73db13671cbc4618c8eaa6a9ab0e-7c247815b57b35c6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-0dae73db13671cbc4618c8eaa6a9ab0e-7c247815b57b35c6-00
+      ┣ 服务线程 ID：      #43
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:25:13.5220751 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 22:25:13.5872375 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-11-15 22:25:13.5897813 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-11-15 22:25:14.2115895 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:25:14.2127991 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:25:14.2145549 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:25:14.2155635 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:26:43.6713025 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 22:26:43.7373464 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-11-15 22:26:43.7398205 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-11-15 22:26:44.2718147 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:26:44.2732314 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:26:44.2750231 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:26:44.2761266 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:30:26.4129588 +08:00 星期三 L System.Logging.LoggingMonitor[0] #33 '00-46f45959c567092c8effcc40edafb6d5-a065df8934d694a1-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-46f45959c567092c8effcc40edafb6d5-a065df8934d694a1-00
+      ┣ 服务线程 ID：      #33
+      ┣ 执行耗时：         5ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:34:46.2409406 +08:00 星期三 L System.Logging.LoggingMonitor[0] #39 '00-e2034d0153c8dae52b7cfae856a24f50-b8f9d246cd5c1c98-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-e2034d0153c8dae52b7cfae856a24f50-b8f9d246cd5c1c98-00
+      ┣ 服务线程 ID：      #39
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:39:24.4760932 +08:00 星期三 L System.Logging.LoggingMonitor[0] #39 '00-92f2c02a189ef5d0d5fddff599ee092b-ef991be5c8fe536a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-92f2c02a189ef5d0d5fddff599ee092b-ef991be5c8fe536a-00
+      ┣ 服务线程 ID：      #39
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:39:27.4054857 +08:00 星期三 L System.Logging.LoggingMonitor[0] #27 '00-ac68e81504d3b4c3fc660b4a6910c627-be93def5d84a335a-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-ac68e81504d3b4c3fc660b4a6910c627-be93def5d84a335a-00
+      ┣ 服务线程 ID：      #27
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:40:10.2884477 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 22:40:10.3362436 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is running.
+info: 2023-11-15 22:40:10.3386595 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service is preloading...
+info: 2023-11-15 22:40:10.9199045 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:40:10.9213490 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:40:10.9236703 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:40:10.9249351 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:40:23.2066336 +08:00 星期三 L System.Logging.LoggingMonitor[0] #27 '00-69dc8ecc2291ac12dd8453c7ac2c8087-6ac29f12a8f52b86-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-69dc8ecc2291ac12dd8453c7ac2c8087-6ac29f12a8f52b86-00
+      ┣ 服务线程 ID：      #27
+      ┣ 执行耗时：         5ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:40:47.8239226 +08:00 星期三 L System.Logging.LoggingMonitor[0] #36 '00-0c712ddca4553b0d5bda46326a0adcb0-81d681431fc6bcc2-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html?urls.primaryName=客户端接口(app，web，小程序等)
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-0c712ddca4553b0d5bda46326a0adcb0-81d681431fc6bcc2-00
+      ┣ 服务线程 ID：      #36
+      ┣ 执行耗时：         0ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Production
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:54:03.7195780 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 22:54:03.8044113 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2023-11-15 22:54:03.8093911 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2023-11-15 22:54:04.3185457 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:54:04.3440225 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 22:54:04.3746984 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:54:04.3862771 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 22:54:13.6389985 +08:00 星期三 L System.Logging.LoggingMonitor[0] #11 '00-a35806321dd12e337ba2b060d625f03c-6af0fde8836c3b36-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-a35806321dd12e337ba2b060d625f03c-6af0fde8836c3b36-00
+      ┣ 服务线程 ID：      #11
+      ┣ 执行耗时：         18ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:54:19.5228680 +08:00 星期三 L System.Logging.LoggingMonitor[0] #22 '00-9e1c3605feb36d134b441cee42396054-06b504d77f34da82-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserLoginService.GetInfo
+      ┣ 
+      ┣ 控制器名称：                   UserLoginService
+      ┣ 操作名称：                     GetInfo
+      ┣ 显示名称：                     获取用户信息
+      ┣ 路由信息：                     [area]: ; [controller]: userLogin; [action]: info
+      ┣ 请求方式：                     GET
+      ┣ 请求地址：                     http://localhost:5005/app/api/userLogin/info
+      ┣ 来源地址：                     http://localhost:3000/
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-9e1c3605feb36d134b441cee42396054-06b504d77f34da82-00
+      ┣ 服务线程 ID：                  #7
+      ┣ 执行耗时：                     144ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19045
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：           14213426327877
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             a1114
+      ┣ NickName (string)：            a123
+      ┣ AccountType (integer)：        777
+      ┣ iat (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<Admin.NET.Core.JuAI.Service.AppUserInfo>
+      ┣ 最终类型：                     Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                   {"code":200,"type":"success","message":"","result":{"account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":"11083027","payType":222},"extras":null,"time":"2023-11-15T22:54:19.4779545+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 22:58:06.0571610 +08:00 星期三 L System.Logging.LoggingMonitor[0] #46 '00-e0eefb0793905c68432f57dee55aa903-53e7815940b410c6-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatGPTController.CreateChatAsStreamAsync
+      ┣ 
+      ┣ 控制器名称：                             ChatGPTController
+      ┣ 操作名称：                               CreateChatAsStreamAsync
+      ┣ 显示名称：                               
+      ┣ 路由信息：                               [area]: ; [controller]: ChatGPT; [action]: CreateChatAsStream
+      ┣ 请求方式：                               POST
+      ┣ 请求地址：                               http://127.0.0.1:5005/app/api/ChatGPT/chat/stream
+      ┣ 来源地址：                               http://localhost:3001/chat/1002
+      ┣ 请求端源：                               client
+      ┣ 浏览器标识：                             Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                         zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                         127.0.0.1
+      ┣ 服务端 IP 地址：                         127.0.0.1
+      ┣ 客户端连接 ID：                          00-e0eefb0793905c68432f57dee55aa903-53e7815940b410c6-00
+      ┣ 服务线程 ID：                            #45
+      ┣ 执行耗时：                               30718ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                 userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：                                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                               Microsoft Windows 10.0.19045
+      ┣ 系统架构：                               X64
+      ┣ 基础框架：                               Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                              .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                               Development
+      ┣ 启动程序集：                             Admin.NET.Web.Entry
+      ┣ 进程名称：                               Admin.NET.Web.Entry
+      ┣ 托管程序：                               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                              Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：                     14213426327877
+      ┣ TenantId (integer64)：                   1300000000001
+      ┣ Account (string)：                       a1114
+      ┣ NickName (string)：                      a123
+      ┣ AccountType (integer)：                  777
+      ┣ iat (integer)：                          1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                          1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                          1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                           Admin.NET
+      ┣ aud (string)：                           Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                           application/json
+      ┣ 
+      ┣ openAiPrompts (ChatPromptReq)：          {"prompt":"我想让你充当前端开发专家。我将提供一些关于Js、Node等前端代码问题的具体信息，而你的工作就是想出为我解决问题的策略。这可能包括建议代码、代码逻辑思路策略。我的第一个请求是“我需要能够动态监听某个元素节点距离当前电脑设备屏幕的左上角的X和Y轴，通过拖拽移动位置浏览器窗口和改变大小浏览器窗口。”\n","options":{"rolePrompt":null,"useContext":true,"conversationId":"15090568387269","parentChatId":null,"chatDbId":null},"temperature":0.8,"top_p":1.0,"model":""}
+      ┣ cancelToken (CancellationToken)：        {"isCancellationRequested":false,"canBeCanceled":true,"waitHandle":{"handle":{"value":"728"},"safeWaitHandle":{"isInvalid":false,"isClosed":false}}}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                         200
+      ┣ 原始类型：                               System.Threading.Tasks.Task
+      ┣ 最终类型：                               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                             {"code":200,"type":"success","message":"","result":null,"extras":null,"time":"2023-11-15T22:58:06.0285344+08:00"}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 23:02:55.8892426 +08:00 星期三 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2023-11-15 23:02:55.9548721 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2023-11-15 23:02:55.9601350 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2023-11-15 23:02:56.4606602 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 23:02:56.4900881 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2023-11-15 23:02:56.4989175 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 23:02:56.5348447 +08:00 星期三 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2023-11-15 23:03:05.1940033 +08:00 星期三 L System.Logging.LoggingMonitor[0] #3 '00-269c2efc400568ea54aacf88218f3db6-7776dc35dade385e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysAuthService.SwaggerCheckUrl
+      ┣ 
+      ┣ 控制器名称：       SysAuthService
+      ┣ 操作名称：         SwaggerCheckUrl
+      ┣ 显示名称：         Swagger登录检查
+      ┣ 路由信息：         [area]: ; [controller]: sysAuth; [action]: swaggerCheckUrl
+      ┣ 请求方式：         POST
+      ┣ 请求地址：         http://localhost:5005/swagger/checkUrl
+      ┣ 来源地址：         http://localhost:5005/index.html
+      ┣ 请求端源：         client
+      ┣ 浏览器标识：       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：   zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：   0.0.0.1
+      ┣ 服务端 IP 地址：   0.0.0.1
+      ┣ 客户端连接 ID：    00-269c2efc400568ea54aacf88218f3db6-7776dc35dade385e-00
+      ┣ 服务线程 ID：      #3
+      ┣ 执行耗时：         468ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：           
+      ┣ 响应端：           
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：         Microsoft Windows 10.0.19045
+      ┣ 系统架构：         X64
+      ┣ 基础框架：         Furion.Pure v4.8.8.44
+      ┣ .NET 架构：        .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：         Development
+      ┣ 启动程序集：       Admin.NET.Web.Entry
+      ┣ 进程名称：         Admin.NET.Web.Entry
+      ┣ 托管程序：         Kestrel
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：   200
+      ┣ 原始类型：         System.Int32
+      ┣ 最终类型：         System.Int32
+      ┣ 最终返回值：       200
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2023-11-15 23:03:18.8795924 +08:00 星期三 L System.Logging.LoggingMonitor[0] #23 '00-171a0001d7a07b0472ec8a5de75297d5-b4feb1d5dd2b3189-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Web.Entry.Controllers.ChatGPTController.CreateChatAsStreamAsync
+      ┣ 
+      ┣ 控制器名称：                             ChatGPTController
+      ┣ 操作名称：                               CreateChatAsStreamAsync
+      ┣ 显示名称：                               
+      ┣ 路由信息：                               [area]: ; [controller]: ChatGPT; [action]: CreateChatAsStream
+      ┣ 请求方式：                               POST
+      ┣ 请求地址：                               http://127.0.0.1:5005/app/api/ChatGPT/chat/stream
+      ┣ 来源地址：                               http://localhost:3001/chat/1002
+      ┣ 请求端源：                               client
+      ┣ 浏览器标识：                             Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：                         zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：                         127.0.0.1
+      ┣ 服务端 IP 地址：                         127.0.0.1
+      ┣ 客户端连接 ID：                          00-171a0001d7a07b0472ec8a5de75297d5-b4feb1d5dd2b3189-00
+      ┣ 服务线程 ID：                            #23
+      ┣ 执行耗时：                               16ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                                 userInfo={"userId":14213426327877,"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5IiwiZSI6IlVMTGRnWUFDQllYWkhVSzFwb0pBT0dpMU14T3ljRXdsRkw4N1I1X1dyTXMiLCJzIjo2NCwibCI6MywiayI6Ik1TdyIsImlhdCI6MTcwMDA0NTgwMSwibmJmIjoxNzAwMDQ1ODAxLCJleHAiOjE3MDEyNTU0MDEsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.dHK-6uWDd5vB-nzN705lWWAqyfOhNKG0W1gyQSxS7S8","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs","account":"a1114","nickName":"a123","avatar":"Upload/Avatar/15029096932037.png","phone":"18600766045","email":"chenwei_zq@163.com","remark":null,"sex":2,"tokenNum":11083027,"payType":222}
+      ┣ 响应端：                                 
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                               Microsoft Windows 10.0.19045
+      ┣ 系统架构：                               X64
+      ┣ 基础框架：                               Furion.Pure v4.8.8.44
+      ┣ .NET 架构：                              .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                               Development
+      ┣ 启动程序集：                             Admin.NET.Web.Entry
+      ┣ 进程名称：                               Admin.NET.Web.Entry
+      ┣ 托管程序：                               Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                              Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6ImExMTE0IiwiTmlja05hbWUiOiJhMTIzIiwiQWNjb3VudFR5cGUiOjc3NywiaWF0IjoxNzAwMDQ1ODAxLCJuYmYiOjE3MDAwNDU4MDEsImV4cCI6MTcwMDY1MDYwMSwiaXNzIjoiQWRtaW4uTkVUIiwiYXVkIjoiQWRtaW4uTkVUIn0.ULLdgYACBYXZHUK1poJAOGi1MxOycEwlFL87R5_WrMs
+      ┣ 
+      ┣ UserId (integer64)：                     14213426327877
+      ┣ TenantId (integer64)：                   1300000000001
+      ┣ Account (string)：                       a1114
+      ┣ NickName (string)：                      a123
+      ┣ AccountType (integer)：                  777
+      ┣ iat (integer)：                          1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ nbf (integer)：                          1700045801 (2023-11-15 18:56:41:0000(+08:00) 星期三 L)
+      ┣ exp (integer)：                          1700650601 (2023-11-22 18:56:41:0000(+08:00) 星期三 L)
+      ┣ iss (string)：                           Admin.NET
+      ┣ aud (string)：                           Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                           application/json
+      ┣ 
+      ┣ openAiPrompts (ChatPromptReq)：          {"prompt":"我想让你充当前端开发专家。我将提供一些关于Js、Node等前端代码问题的具体信息，而你的工作就是想出为我解决问题的策略。这可能包括建议代码、代码逻辑思路策略。我的第一个请求是“我需要能够动态监听某个元素节点距离当前电脑设备屏幕的左上角的X和Y轴，通过拖拽移动位置浏览器窗口和改变大小浏览器窗口。”\n","options":{"rolePrompt":null,"useContext":true,"conversationId":null,"parentChatId":null,"chatDbId":null},"temperature":0.8,"top_p":1.0,"model":""}
+      ┣ cancelToken (CancellationToken)：        {"isCancellationRequested":false,"canBeCanceled":true,"waitHandle":{"handle":{"value":"4412"},"safeWaitHandle":{"isInvalid":false,"isClosed":false}}}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                         200
+      ┣ 原始类型：                               System.Threading.Tasks.Task
+      ┣ 最终类型：                               Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                             {"code":400,"type":"error","message":"{\"Model\":[\"会话模型必填\"]}","result":null,"extras":null,"time":"2023-11-15T23:03:18.8322606+08:00"}
+      ┣ ━━━━━━━━━━━━━━━  业务异常 ━━━━━━━━━━━━━━━
+      ┣ 业务码：                                 
+      ┣ 业务码（原）：                           
+      ┣ 业务消息：                               {"model":["会话模型必填"]}
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

@@ -1,0 +1,447 @@
+info: 2024-03-14 13:57:11.8759922 +08:00 星期四 L System.Logging.TaskQueueService[0] #1
+      [Furion.Pure.dll] async Task Furion.TaskQueue.TaskQueueHostedService.ExecuteAsync(CancellationToken stoppingToken)
+      TaskQueue hosted service is running.
+info: 2024-03-14 13:57:11.9293470 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is running.
+info: 2024-03-14 13:57:11.9320490 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      Schedule hosted service is preloading...
+info: 2024-03-14 13:57:12.5755674 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_log> trigger for scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-14 13:57:12.5768495 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_log> successfully appended and updated to the schedule.
+info: 2024-03-14 13:57:12.5839228 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_onlineUser> trigger for scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-14 13:57:12.5851298 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_onlineUser> successfully appended and updated to the schedule.
+info: 2024-03-14 13:57:12.5899205 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The <trigger_ossAsync> trigger for scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-14 13:57:12.5911181 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.LogInformation(string message, params object[] args)
+      The scheduler of <job_ossAsync> successfully appended and updated to the schedule.
+info: 2024-03-14 15:08:57.7221290 +08:00 星期四 L System.Logging.LoggingMonitor[0] #64 '00-ad750c98fc14d9bbd4934a4a8f64a987-8d62b646b8cf42e5-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/home
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-ad750c98fc14d9bbd4934a4a8f64a987-8d62b646b8cf42e5-00
+      ┣ 服务线程 ID：               #64
+      ┣ 执行耗时：                  158ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/home
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              igUdmtUixqJ7n0k3T8EcH
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:01:54.0400418 +08:00 星期四 L System.Logging.LoggingMonitor[0] #41 '00-fec6c04ace974bf29176471d7fbc480f-742562e9a397749d-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/tool/Open Dalle
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-fec6c04ace974bf29176471d7fbc480f-742562e9a397749d-00
+      ┣ 服务线程 ID：               #41
+      ┣ 执行耗时：                  158ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/tool/Open%20Dalle
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              3jCeTl7LA7qPjyH-hDCUr
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:02:27.0925956 +08:00 星期四 L System.Logging.LoggingMonitor[0] #31 '00-5cb3536475f550a288454243728c2eb7-f83888724f714a0a-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/tool/Open Dalle
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-5cb3536475f550a288454243728c2eb7-f83888724f714a0a-00
+      ┣ 服务线程 ID：               #30
+      ┣ 执行耗时：                  58ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/tool/Open%20Dalle
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              exLkniqL-xavZ0kYFQGWP
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:03:52.8760900 +08:00 星期四 L System.Logging.LoggingMonitor[0] #31 '00-958e90de3076a49d38168663189aec6e-ddf6ba6859fd77fc-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/tool/Open Dalle
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-958e90de3076a49d38168663189aec6e-ddf6ba6859fd77fc-00
+      ┣ 服务线程 ID：               #32
+      ┣ 执行耗时：                  67ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/tool/Open%20Dalle
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              lnwnHixheVKKmTZUIJa04
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:04:26.0736957 +08:00 星期四 L System.Logging.LoggingMonitor[0] #30 '00-fcf1caef9f4e75cbdc56ba30fa555c73-50d371ec7e445906-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/tool/Open Dalle
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-fcf1caef9f4e75cbdc56ba30fa555c73-50d371ec7e445906-00
+      ┣ 服务线程 ID：               #30
+      ┣ 执行耗时：                  54ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/tool/Open%20Dalle
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              kpGQX4EnYSdNt0duPMoVJ
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:06:05.9528227 +08:00 星期四 L System.Logging.LoggingMonitor[0] #32 '00-a5b02522be12561de78bfdd31c12da70-2516755c40e113f0-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/tool/Open Dalle
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-a5b02522be12561de78bfdd31c12da70-2516755c40e113f0-00
+      ┣ 服务线程 ID：               #32
+      ┣ 执行耗时：                  58ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/tool/Open%20Dalle
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              FMZx4xT7mqSEC75EHy7Ry
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"中国建筑，古风，山，鸟，荷花，池塘，大树，（厚漆风格：1.3），（广角镜头：1.4），（最佳照明），4K Unity，（超详细CG：1.2）， (8K: 1.2)，辛烷值渲染","url":"
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+info: 2024-03-14 19:47:47.8969468 +08:00 星期四 L System.Logging.LoggingMonitor[0] #58 '00-dfe3925bbd7cf49f060f0bfe0f188e8f-d4836afed2c20cfb-00'
+      [System.Private.CoreLib.dll] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>+AsyncStateMachineBox<TStateMachine>.MoveNext(Thread threadPoolThread)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.DrawingImageService.GetDrawingConfigurations
+      ┣ 
+      ┣ 控制器名称：                DrawingImageService
+      ┣ 操作名称：                  GetDrawingConfigurations
+      ┣ 显示名称：                  
+      ┣ 路由信息：                  [area]: ; [controller]: drawingImage; [action]: drawingConfigurations
+      ┣ 请求方式：                  GET
+      ┣ 请求地址：                  http://localhost:5005/app/api/drawingImage/DrawingConfigurations
+      ┣ 来源地址：                  http://localhost:9527/drawing/home
+      ┣ 请求端源：                  client
+      ┣ 浏览器标识：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：            zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：            127.0.0.1
+      ┣ 服务端 IP 地址：            127.0.0.1
+      ┣ 客户端连接 ID：             00-dfe3925bbd7cf49f060f0bfe0f188e8f-d4836afed2c20cfb-00
+      ┣ 服务线程 ID：               #58
+      ┣ 执行耗时：                  160ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                    
+      ┣ 响应端：                    
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                  Microsoft Windows 10.0.19045
+      ┣ 系统架构：                  X64
+      ┣ 基础框架：                  Furion.Pure v1.0.0.0
+      ┣ .NET 架构：                 .NET 8.0.0
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                  Production
+      ┣ 启动程序集：                Admin.NET.Web.Entry
+      ┣ 进程名称：                  Admin.NET.Web.Entry
+      ┣ 托管程序：                  Kestrel
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                    application/json, text/plain, */*
+      ┣ Connection：                close
+      ┣ Host：                      localhost:5005
+      ┣ User-Agent：                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+      ┣ Accept-Encoding：           gzip, deflate, br, zstd
+      ┣ Accept-Language：           zh-CN,zh;q=0.9
+      ┣ Authorization：             Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MjEzNDI2MzI3ODc3LCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLmgKrlhb3mnaXkuoYiLCJBY2NvdW50VHlwZSI6Nzc3LCJpYXQiOjE3MTAyNTMyNTgsIm5iZiI6MTcxMDI1MzI1OCwiZXhwIjoxNzEwODU4MDU4LCJpc3MiOiJndXhpbi5saW5rIiwiYXVkIjoiZ3V4aW4ubGluayJ9.X5FgdNz4ynxP4PwZFwqyQsOuNX6VPNaJryTM1JM6kPg
+      ┣ Cache-Control：             no-cache
+      ┣ Pragma：                    no-cache
+      ┣ Referer：                   http://localhost:9527/drawing/home
+      ┣ sec-fetch-dest：            empty
+      ┣ sec-fetch-mode：            cors
+      ┣ sec-fetch-site：            same-origin
+      ┣ sec-ch-ua-platform：        "Windows"
+      ┣ x-request-id：              ohlwPDWhd14rN_V5yxXU9
+      ┣ apifoxtoken：               XL299LiMEDZ0H5h3A29PxwQXdMJqWyY2
+      ┣ sec-ch-ua-mobile：          ?0
+      ┣ DNT：                       1
+      ┣ sec-ch-ua：                 "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：            200
+      ┣ 原始类型：                  System.Threading.Tasks.Task<System.Collections.Generic.IList<Admin.NET.Core.JuAI.DrawingConfig>>
+      ┣ 最终类型：                  Admin.NET.Core.AdminResult<System.Object>
+      ┣ 最终返回值：                {"code":200,"type":"success","message":"","result":[{"name":"Open Dalle","desc":"采用开源的图像生成模型Open Dalle，它可以生成高质量的图像，它独特的融合展示了卓越的迅速遵守和语义理解。","tags":"Open Dalle,文生图","request":{"width":"1024","height":"1024","guidance_scale":7.5,"high_noise_frac":0.75,"seed":"151886915","steps":"35","use_refiner":false,"scheduler":"KDPM2Discret","prompt":""},"api":"https://open-dalle.lepton.run/run","example":{"prompt":"日落时分火星上的宇航员\r\n\r\n","url":"http://oss.juai.link/juai/drawing/Open_Dalle.webp"},"sequence":0,"cr
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━

@@ -1,0 +1,621 @@
+fail: 2023-08-27 22:28:43.7363146 +08:00 星期日 L Admin.NET.Core.JuAI.Service.UserTokenService[0] #30
+      [Admin.NET.Core.JuAI.dll] async Task<bool> Admin.NET.Core.JuAI.Service.UserTokenService.PaySuccess(string param)
+      支付成功后出错了Value cannot be null. (Parameter 's')
+fail: 2023-08-27 22:44:43.7376236 +08:00 星期日 L System.Logging.LoggingMonitor[0] #9
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-09cd3a480d69bbf4df9e99541d56d6f1-cafb5e2345d175aa-00
+      ┣ 服务线程 ID：                  #5
+      ┣ 执行耗时：                     1074ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             gUPEpiH0B/Bwlek4J0Qx134mtQfz1JsHFj2iEBec2bOgJOumSw3sSf3GH1HAUAlCOT1soNULXzj6gtObmeXLnQiN4FmOwLYQtMC14tp6iXsxaUbix28u1vwfKnCP1WF7BkCC5/Rl4djgT/ArZmt/9A==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 22:47:10.4896726 +08:00 星期日 L System.Logging.LoggingMonitor[0] #19
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-fe0b5abc37088110dc2c39d8cc3fbe27-153b0ca22c0f62d5-00
+      ┣ 服务线程 ID：                  #19
+      ┣ 执行耗时：                     109ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             gUPEpiH0B/Bwlek4J0Qx134mtQfz1JsHFj2iEBec2bOv+cfXUyv3R+oAUW6n3ShQn1x2itTwuUhyQoJdbVHBJgiN4FmOwLYQtMC14tp6iXsPa6VEl2GvLOgj72ywRjivMEQu4e3MHMn3G/AK8NSa9w==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.FormatException
+      ┣ 消息：                         The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+      ┣ 错误堆栈：                     at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+         at System.Convert.FromBase64String(String s)
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 90
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+         at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+         at System.Convert.FromBase64String(String s)
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 90
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 22:49:20.5716441 +08:00 星期日 L System.Logging.LoggingMonitor[0] #3
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-51f914cfcebc00c94e528c9734232379-c512814a6aea6ce6-00
+      ┣ 服务线程 ID：                  #3
+      ┣ 执行耗时：                     56ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             Z1VQRXBpSDBCL0J3bGVrNEowUXgxMzRtdFFmejFKc0hGajJpRUJlYzJiTmRGUnZqQnBEcXhOVldVWTdVZk1waWQwRkxjY1REL1VYa0ExN1lPQ1ZWdmdpTjRGbU93TFlRdE1DMTR0cDZpWHVpcHhaVXZ4TEd4ekFpOWFXclI3ZHV3MllWMW4xR1JrUkFyVDJ0aU5RMGlBPT0=
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 109
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 22:53:35.7962923 +08:00 星期日 L System.Logging.LoggingMonitor[0] #8
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-c2e0f2b6c0c173eb4a5da2eca1e26eec-165a8766361c10f9-00
+      ┣ 服务线程 ID：                  #8
+      ┣ 执行耗时：                     113ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             gUPEpiH0B/Bwlek4J0Qx134mtQfz1JsHFj2iEBec2bO2q/8tBTgu+D6QmxtcMnYQKGQszWjl38BsSzhnHJqWywiN4FmOwLYQtMC14tp6iXuaZENLpn3MCHstWz0uBalplHDqzxkd3HvrmO4emzVvXg==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method262(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method262(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 22:54:44.6046288 +08:00 星期日 L System.Logging.LoggingMonitor[0] #3
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-608786abae7140640aadbf04f63ebf42-2419855a799db77e-00
+      ┣ 服务线程 ID：                  #3
+      ┣ 执行耗时：                     2890ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             gUPEpiH0B/Bwlek4J0Qx134mtQfz1JsHFj2iEBec2bPY/Z1cZWYyekmYS0xjpgh0eZZXnpsc9rHEjFKbmwRxigiN4FmOwLYQtMC14tp6iXuY0sbDBThIxOE8e1vpHOaTYkM5QUVbaLEPOvAs2lBpzA==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method262(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method262(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 23:09:00.6781853 +08:00 星期日 L System.Logging.LoggingMonitor[0] #45
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-142263192227cfdd1bd0073720113a5d-6f13e93b53103f2b-00
+      ┣ 服务线程 ID：                  #45
+      ┣ 执行耗时：                     2348ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             PDr1nLdPA/UmsSKBIf4QRInmZ4O5vZ4r0Yt61bBbAMacAhs0C6ZOw12sQFGhik0NDYJMPcKWflFZGhTNj7mpYRgebI7VOEls1r2cYidyfx+U8bttQVpWXaTIuaQmrD4qa/kOdoPVGFqhO810TIrSDw==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2023-08-27 23:12:38.5220294 +08:00 星期日 L System.Logging.LoggingMonitor[0] #40
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore
+      ┣ 
+      ┣ 控制器名称：                   UserTokenService
+      ┣ 操作名称：                     PayBefore
+      ┣ 显示名称：                     
+      ┣ 路由信息：                     [area]: ; [controller]: userToken; [action]: payBefore
+      ┣ 请求方式：                     POST
+      ┣ 请求地址：                     http://localhost:5005/api/userToken/pay/before
+      ┣ 来源地址：                     http://localhost:19991/my/token/aitoken
+      ┣ 请求端源：                     client
+      ┣ 浏览器标识：                   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+      ┣ 客户端区域语言：               zh-CN,zh;q=0.9
+      ┣ 客户端 IP 地址：               0.0.0.1
+      ┣ 服务端 IP 地址：               0.0.0.1
+      ┣ 客户端连接 ID：                00-2c96f9ba83fb4b6ffa5d657d704fde86-5f01edacc67dd424-00
+      ┣ 服务线程 ID：                  #40
+      ┣ 执行耗时：                     84867ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                       
+      ┣ 响应端：                       
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                     Microsoft Windows 10.0.19044
+      ┣ 系统架构：                     X64
+      ┣ 基础框架：                     Furion.Pure v4.8.8.41
+      ┣ .NET 架构：                    .NET 6.0.16
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ 运行环境：                     Development
+      ┣ 启动程序集：                   Admin.NET.Web.Entry
+      ┣ 进程名称：                     Admin.NET.Web.Entry
+      ┣ 托管程序：                     Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE0MDA1ODI2MzU4MjEzLCJUZW5hbnRJZCI6MTMwMDAwMDAwMDAwMSwiQWNjb3VudCI6IjE4NjAwNzY2MDQ1IiwiTmlja05hbWUiOiLogZpBSV82MDQ1IiwiQWNjb3VudFR5cGUiOjAsImlhdCI6MTY5MzAzNzg0NiwibmJmIjoxNjkzMDM3ODQ2LCJleHAiOjE2OTM2NDI2NDYsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Pt3OMLor8iLzYQfEoREoKU3AxA0Ja7UX_Q2sCCdnGEw
+      ┣ 
+      ┣ UserId (integer64)：           14005826358213
+      ┣ TenantId (integer64)：         1300000000001
+      ┣ Account (string)：             18600766045
+      ┣ NickName (string)：            聚AI_6045
+      ┣ AccountType (integer)：        0
+      ┣ iat (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ nbf (integer)：                1693037846 (2023-08-26 16:17:26:0000(+08:00) 星期六 L)
+      ┣ exp (integer)：                1693642646 (2023-09-02 16:17:26:0000(+08:00) 星期六 L)
+      ┣ iss (string)：                 Admin.NET
+      ┣ aud (string)：                 Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                 application/json
+      ┣ 
+      ┣ payInfo (String)：             PDr1nLdPA/UmsSKBIf4QRInmZ4O5vZ4r0Yt61bBbAMYljL02+igXshV5/mNUB7K7/i1Tt/eRbZNhcHpKJv45uRnDAxgRao3ZK63z5J9jfAJT042EP9Lbsn+4jz6YAlXkD/nU2XnpEg0o5CytF2k3vA==
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：               200
+      ┣ 原始类型：                     System.Threading.Tasks.Task<System.Boolean>
+      ┣ 最终类型：                     
+      ┣ 最终返回值：                   null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                         System.Security.Cryptography.CryptographicException
+      ┣ 消息：                         Padding is invalid and cannot be removed.
+      ┣ 错误堆栈：                     at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.Security.Cryptography.CryptographicException: Padding is invalid and cannot be removed.
+         at Internal.Cryptography.UniversalCryptoDecryptor.GetPaddingLength(ReadOnlySpan`1 block)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+         at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+         at System.Security.Cryptography.CryptoStream.ReadAsyncCore(Memory`1 buffer, CancellationToken cancellationToken, Boolean useAsync)
+         at System.Security.Cryptography.CryptoStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+         at System.IO.StreamReader.ReadBuffer()
+         at System.IO.StreamReader.ReadToEnd()
+         at Admin.NET.Core.CryptogramUtil.DecryptByAES(String input, String key, String iv) in C:\work\juai\admin.net\Admin.NET.Core\Util\CryptogramUtil.cs:line 102
+         at Admin.NET.Core.JuAI.Service.UserTokenService.PayBefore(String payInfo) in C:\work\juai\admin.net\Admin.NET.Core.JuAi\Service\User\UserTokenService.cs:line 108
+         at lambda_method264(Closure , Object )
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
