@@ -9,7 +9,7 @@
 
 using System.Security.Claims;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 public class IdentityService : ITransient
 {

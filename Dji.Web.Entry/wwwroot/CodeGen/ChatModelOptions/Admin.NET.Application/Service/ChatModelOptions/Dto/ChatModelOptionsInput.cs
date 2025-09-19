@@ -1,7 +1,7 @@
-﻿using Admin.NET.Core;
+﻿using Dji.Core;
 using System.ComponentModel.DataAnnotations;
 
-namespace Admin.NET.Application;
+namespace Dji.Application;
 
     /// <summary>
     /// 模型配置基础输入参数

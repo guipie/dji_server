@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using System.Net.Http;
 using System.Net;
 
-namespace Admin.NET.Application;
+namespace Dji.Application;
 
 [AppStartup(100)]
 public class Startup : AppStartup

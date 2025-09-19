@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.DataProtection;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 public static class SignalRSetup
 {

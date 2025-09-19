@@ -1,4 +1,4 @@
-﻿namespace Admin.NET.Core;
+﻿namespace Dji.Core;
 
 
 [Description("ai模型")]

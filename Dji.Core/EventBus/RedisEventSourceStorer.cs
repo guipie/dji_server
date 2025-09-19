@@ -9,7 +9,7 @@
 
 using System.Threading.Channels;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// Redis自定义事件源存储器

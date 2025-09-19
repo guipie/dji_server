@@ -25,8 +25,14 @@ public static class MqttSetup
 
     public static IServiceCollection AddMqttSetup(this IServiceCollection services)
     {
+        services.AddSingleton<IMqttClient>(sp =>
+        {
+            var mqttFactory = new MqttClientFactory();
+            return mqttFactory.CreateMqttClient();
+        });
+        services.AddSingleton<ITopicRouter, TopicRouter>();
         services.AddSingleton<IMqttService, MqttService>();
-
+        services.AddSingleton<ModuleManager>();
         var baseType = typeof(ModuleBase);
         var types = Assembly.GetExecutingAssembly().GetTypes()
             .Where(t => t.IsClass &&
@@ -41,16 +47,16 @@ public static class MqttSetup
         }
         return services;
     }
-    public static async Task<IApplicationBuilder> UseMqttBuilderAsync(this IApplicationBuilder builder)
+    public static IApplicationBuilder UseMqttBuilder(this IApplicationBuilder builder)
     {
         var modules = builder.ApplicationServices.GetServices<ModuleBase>();
         var mqttService = builder.ApplicationServices.GetRequiredService<IMqttService>();
-        await mqttService.StartAsync();
-        foreach (var module in modules)
-        {
-            await module.StartAsync();
-            Console.WriteLine($"模块已加载: {module.GetType()}");
-        }
+        mqttService.StartAsync();
+        //foreach (var module in modules)
+        //{
+        //    module.Start();
+        //    Console.WriteLine($"模块已加载: {module.GetType()}");
+        //}
         return builder;
     }
 }

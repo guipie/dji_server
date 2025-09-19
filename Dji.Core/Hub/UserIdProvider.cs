@@ -9,7 +9,7 @@
 
 using Microsoft.AspNetCore.SignalR;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 public interface UserIdProvider : IUserIdProvider
 {

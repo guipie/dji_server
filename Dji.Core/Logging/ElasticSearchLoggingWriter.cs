@@ -10,7 +10,7 @@
 using Elastic.Clients.Elasticsearch;
  
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// ES日志写入器

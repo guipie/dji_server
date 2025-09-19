@@ -10,7 +10,7 @@
 using AngleSharp;
 using AngleSharp.Html.Dom;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统行政区域服务

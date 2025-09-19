@@ -1,4 +1,4 @@
-﻿namespace Admin.NET.Application.JuAI;
+﻿namespace Dji.Application.JuAI;
 
     /// <summary>
     /// 聚AI用户输出参数

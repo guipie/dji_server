@@ -11,7 +11,7 @@ using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// GM工具类

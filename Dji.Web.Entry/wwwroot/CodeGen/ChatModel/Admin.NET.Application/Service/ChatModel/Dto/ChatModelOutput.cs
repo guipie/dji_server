@@ -1,4 +1,4 @@
-﻿namespace Admin.NET.Application;
+﻿namespace Dji.Application;
 
 /// <summary>
 /// AIModels输出参数

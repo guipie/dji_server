@@ -10,7 +10,7 @@
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统OAuth服务

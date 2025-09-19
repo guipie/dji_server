@@ -2092,6 +2092,19 @@
           }
         }
       },
+      "MQTTnet/5.0.1.1416": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/MQTTnet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MQTTnet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MySqlConnector/2.2.5": {
         "type": "package",
         "compile": {
@@ -7531,6 +7544,20 @@
         "miniprofiler.shared.nuspec"
       ]
     },
+    "MQTTnet/5.0.1.1416": {
+      "sha512": "ONYieEMaHiIei5dAtHXywnfJGhmrd5Av5sNJSQERp6AtZdPk3xxjCR6Cv0C5RUr/XbLeHO4/HQ0Rc2bQ5NF5Mw==",
+      "type": "package",
+      "path": "mqttnet/5.0.1.1416",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/MQTTnet.dll",
+        "lib/net8.0/MQTTnet.xml",
+        "mqttnet.5.0.1.1416.nupkg.sha512",
+        "mqttnet.nuspec",
+        "nuget.png"
+      ]
+    },
     "MySqlConnector/2.2.5": {
       "sha512": "6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
       "type": "package",
@@ -11933,27 +11960,28 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Dji.Core >= 1.0.0"
+      "Dji.Core >= 1.0.0",
+      "MQTTnet >= 5.0.1.1416"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\YZH\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
+      "projectUniqueName": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
       "projectName": "Dji.Application",
-      "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\obj\\",
+      "projectPath": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
+      "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+      "outputPath": "D:\\chenwei\\dji_server\\Dji.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11968,8 +11996,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj": {
-              "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj"
+            "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj": {
+              "projectPath": "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj"
             }
           }
         }
@@ -11989,6 +12017,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "MQTTnet": {
+            "target": "Package",
+            "version": "[5.0.1.1416, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -12005,7 +12039,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

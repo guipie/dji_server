@@ -9,7 +9,7 @@
 
 using Newtonsoft.Json;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 字符串掩码

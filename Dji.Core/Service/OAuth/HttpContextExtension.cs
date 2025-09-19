@@ -9,7 +9,7 @@
 
 using Microsoft.AspNetCore.Authentication;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 public static class HttpContextExtension
 {

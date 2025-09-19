@@ -10,7 +10,7 @@
 using Furion.InstantMessaging;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 在线用户集线器

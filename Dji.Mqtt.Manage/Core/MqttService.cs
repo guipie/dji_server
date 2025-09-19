@@ -9,8 +9,10 @@
 
 
 
+using Dji.Core;
 using Dji.Mqtt.Manage.Option;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using MQTTnet;
 using MQTTnet.Protocol;
 using System.Text.Json;
@@ -28,17 +30,18 @@ internal class MqttService : IMqttService, IDisposable
     private readonly ITopicRouter _router;
     private readonly MqttOptions _mqttOptions;
     private readonly Dictionary<string, Delegate> _handlers = new();
-
+    private readonly ModuleManager _moduleManager;
     public bool IsConnected => _client.IsConnected;
 
-    public MqttService(ILogger<MqttService> logger, IMqttClient client, ITopicRouter router, MqttOptions mqttOptions)
+    public MqttService(ILogger<MqttService> logger, IMqttClient client, ITopicRouter router, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager)
     {
-        _logger = logger; 
+        _logger = logger;
         _client = client;
         // 注册消息接收回调
         _client.ApplicationMessageReceivedAsync += OnMqttMessageReceived;
         _router = router;
-        _mqttOptions = mqttOptions;
+        _mqttOptions = mqttOptions.Value;
+        _moduleManager = moduleManager;
     }
 
     public async Task StartAsync()
@@ -49,7 +52,19 @@ internal class MqttService : IMqttService, IDisposable
             .WithCredentials(_mqttOptions.Username, _mqttOptions.Password)
             .WithCleanSession(true)
             .Build();
-        await _client.ConnectAsync(options, CancellationToken.None);
+        var result = await _client.ConnectAsync(options, CancellationToken.None);
+        var moduleTypes = AppDomain.CurrentDomain.GetAssemblies()
+       .SelectMany(a => a.GetTypes())
+       .Where(t => typeof(IModule).IsAssignableFrom(t) && t.IsClass && !t.IsAbstract);
+
+        await SubscribeAsync("thing/product/8UUXN4B00A0592/osd");
+        foreach (var type in moduleTypes)
+        {
+            if (Activator.CreateInstance(type) is IModule module)
+            {
+                _moduleManager.AddModule(module);
+            }
+        }
         _logger.LogInformation("MQTT 已连接到 {Host}:{Port}", _mqttOptions.Server, _mqttOptions.Port);
     }
 
@@ -81,7 +96,7 @@ internal class MqttService : IMqttService, IDisposable
     {
         if (_client.IsConnected)
         {
-            var res = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).Build(), ct); 
+            var res = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).Build(), ct);
             _logger.LogDebug("订阅主题: {Topic}", topic);
         }
     }

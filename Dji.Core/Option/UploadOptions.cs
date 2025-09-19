@@ -9,7 +9,7 @@
 
 using OnceMi.AspNetCore.OSS;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 文件上传配置选项

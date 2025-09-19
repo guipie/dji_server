@@ -1,4 +1,4 @@
-﻿namespace Admin.NET.Core;
+﻿namespace Dji.Core;
 /// <summary>
 /// 主页内容数据类型
 /// </summary>

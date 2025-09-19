@@ -1,8 +1,8 @@
-﻿using Admin.NET.Core.Service;
-using Admin.NET.Application.Const;
-using Admin.NET.Application.Entity;
+﻿using Dji.Core.Service;
+using Dji.Application.Const;
+using Dji.Application.Entity;
 using Microsoft.AspNetCore.Http;
-namespace Admin.NET.Application;
+namespace Dji.Application;
 /// <summary>
 /// AIModels服务
 /// </summary>

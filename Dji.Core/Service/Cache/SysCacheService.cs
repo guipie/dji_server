@@ -9,7 +9,7 @@
 
 using NewLife.Caching.Models;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统缓存服务

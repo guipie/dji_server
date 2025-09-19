@@ -10,7 +10,7 @@
 using MailKit.Net.Smtp;
 using MimeKit;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统邮件发送服务

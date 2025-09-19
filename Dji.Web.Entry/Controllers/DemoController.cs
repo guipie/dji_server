@@ -1,7 +1,7 @@
-﻿using Admin.NET.Application.Const;
+﻿using Dji.Application.Const;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Admin.NET.Web.Entry.Controllers
+namespace Dji.Web.Entry.Controllers
 {
 
     [Route("api/demo"), ApiDescriptionSettings(ApplicationConst.DjiCloud, Order = 1000)]

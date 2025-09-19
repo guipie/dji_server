@@ -10,7 +10,7 @@
 //using Microsoft.AspNetCore.Mvc.Controllers;
 //using System.Security.Claims;
 
-//namespace Admin.NET.Core.Logging;
+//namespace Dji.Core.Logging;
 
 ///// <summary>
 ///// 全局异常处理

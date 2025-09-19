@@ -9,7 +9,7 @@
 
 using System.Security.Claims;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 防止重复请求过滤器特性

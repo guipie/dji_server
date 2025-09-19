@@ -1,5 +1,5 @@
 ﻿
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 内容状态枚举

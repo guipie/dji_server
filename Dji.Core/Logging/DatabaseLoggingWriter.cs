@@ -9,7 +9,7 @@
 
 using IPTools.Core;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 数据库日志写入器

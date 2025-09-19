@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 public static class OAuthSetup
 {

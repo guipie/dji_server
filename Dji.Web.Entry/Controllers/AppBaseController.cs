@@ -1,5 +1,5 @@
 ﻿
-namespace Admin.NET.Web.Entry.Controllers
+namespace Dji.Web.Entry.Controllers
 {
     [Route("app/api/[controller]")]
     public class AppBaseController : ControllerBase

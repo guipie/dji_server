@@ -22,9 +22,9 @@ internal class WaylineService : ModuleBase
     {
         _mqttService = mqttService;
     }
-    public override async Task StartAsync(CancellationToken ct = default)
+    public override void Start(CancellationToken ct = default)
     {
-        await _mqttService.SubscribeAsync("wayline", ct);
+         _mqttService.SubscribeAsync("thing/product/8UUXN4B00A0592/osd", ct);
     }
     public override Task StopAsync(CancellationToken ct = default) => Task.CompletedTask;
 

@@ -19,7 +19,7 @@ namespace Dji.Mqtt.Manage.Core;
 /// <summary>
 /// 主题路由
 /// </summary>
-internal class TopicRouter
+internal class TopicRouter: ITopicRouter
 {
     // 支持通配符的主题模式匹配项
     private readonly List<(Regex Pattern, Type MessageType, Delegate Handler)> _routes = new();

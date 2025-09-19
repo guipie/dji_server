@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Admin.NET.Core.JuAI.Entity;
+namespace Dji.Core.JuAI.Entity;
 public class DicItem
 {
     public string Key { get; set; }

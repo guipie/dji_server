@@ -11,7 +11,7 @@ using Aliyun.OSS.Util;
 using Furion.VirtualFileServer;
 using OnceMi.AspNetCore.OSS;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统文件服务

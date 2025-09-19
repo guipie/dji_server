@@ -7,12 +7,14 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-namespace Admin.NET.Core.JuAI;
+namespace Dji.Core.JuAI;
 
 
 /// <summary>
 /// 框架实体基类
 /// </summary>
+
+[Tenant("app")]
 public abstract class EntityAppBase : EntityBaseId, IDeletedFilter
 {
     /// <summary>
@@ -62,6 +64,7 @@ public abstract class EntityAppBase : EntityBaseId, IDeletedFilter
     public virtual bool IsDelete { get; set; } = false;
 }
 
+[Tenant("app")]
 public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
 {
     /// <summary>
@@ -88,6 +91,8 @@ public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
     [SugarColumn(ColumnDescription = "软删除")]
     public virtual bool IsDelete { get; set; } = false;
 }
+
+[Tenant("app")]
 public abstract class EntityAppTenant : EntityAppBase, ITenantIdFilter
 {
     /// <summary>
@@ -96,6 +101,8 @@ public abstract class EntityAppTenant : EntityAppBase, ITenantIdFilter
     [SugarColumn(ColumnDescription = "租户Id", IsOnlyIgnoreUpdate = true)]
     public virtual long? TenantId { get; set; }
 }
+
+[Tenant("app")]
 public abstract class EntityAppTenantIgnoreUpdate : EntityAppBaseIgnoreUpdate, ITenantIdFilter
 {
     /// <summary>

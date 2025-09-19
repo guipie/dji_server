@@ -1,0 +1,140 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "大疆上云接口",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/demo/upload": {
+      "post": {
+        "tags": [
+          "Demo"
+        ],
+        "operationId": "api-demo-upload-Post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/demo/api/sse": {
+      "post": {
+        "tags": [
+          "Demo"
+        ],
+        "operationId": "api-demo-api-sse-Post",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdminResult_Object": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "additionalProperties": false,
+            "description": "数据",
+            "nullable": true
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme.",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Demo"
+    },
+    {
+      "name": "qiNiuFile"
+    },
+    {
+      "name": "appUser"
+    },
+    {
+      "name": "superAdmin"
+    }
+  ]
+}

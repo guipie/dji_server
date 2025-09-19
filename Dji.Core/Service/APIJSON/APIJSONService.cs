@@ -9,7 +9,7 @@
 
 using Newtonsoft.Json.Linq;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// APIJSON服务

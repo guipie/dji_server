@@ -10,7 +10,7 @@
 using Furion;
 using System.Reflection;
 
-namespace Admin.NET.Web.Entry;
+namespace Dji.Web.Entry;
 
 /// <summary>
 /// 解决单文件发布问题
@@ -38,9 +38,9 @@ public class SingleFilePublish : ISingleFilePublish
         // 需要 Furion 框架扫描哪些程序集就写上去即可
         return new[]
         {
-            "Admin.NET.Application",
-            "Admin.NET.Core",
-            "Admin.NET.Web.Core",
+            "Dji.Application",
+            "Dji.Core",
+            "Dji.Web.Core",
         };
     }
 }

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Admin.NET.Core.JuAI;
+namespace Dji.Core.JuAI;
 public class TencentSmsOptions : IConfigurableOptions
 {
     public string SecretId { get; set; } = string.Empty;

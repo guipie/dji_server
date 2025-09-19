@@ -1,10 +1,10 @@
 ﻿
 
-using Admin.NET.Application.Const;
+using Dji.Application.Const;
 using Microsoft.Extensions.Options;
 using OnceMi.AspNetCore.OSS;
 
-namespace Admin.NET.Application.JuAI;
+namespace Dji.Application.JuAI;
 /// <summary>
 /// 七牛文件服务扩展
 /// </summary>

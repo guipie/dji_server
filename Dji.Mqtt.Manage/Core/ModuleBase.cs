@@ -17,6 +17,6 @@ namespace Dji.Mqtt.Manage.Core;
 internal abstract class ModuleBase : IModule
 {
 
-    public abstract Task StartAsync(CancellationToken ct = default);
+    public abstract void Start(CancellationToken ct = default);
     public abstract Task StopAsync(CancellationToken ct = default);
 }

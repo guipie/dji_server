@@ -9,7 +9,7 @@
 
 using Microsoft.AspNetCore.SignalR;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统在线用户服务

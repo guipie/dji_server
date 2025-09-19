@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Furion 程序集扫描和代码分析拓展插件。")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b15782ca19926365eb70597996eee57902f774")]
 [assembly: System.Reflection.AssemblyProductAttribute("Furion.Pure.Extras.DependencyModel.CodeAnalysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Furion.Pure.Extras.DependencyModel.CodeAnalysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

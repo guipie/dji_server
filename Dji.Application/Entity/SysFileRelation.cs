@@ -1,8 +1,7 @@
 ﻿
-namespace Admin.NET.Core.JuAI;
+namespace Dji.Core.JuAI;
 
-[SugarTable("SysFileRelation", "文件关联表"), IncreTable]
-[Tenant("app")]
+[SugarTable("DjiFileRelation", "文件关联表"), IncreTable]
 public class SysFileRelation : EntityAppBase
 {
     [SugarColumn(IsPrimaryKey = true, IsNullable = false)]//中间表可以不是主键

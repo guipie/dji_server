@@ -9,7 +9,7 @@
 
 using Microsoft.AspNetCore.Authentication;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 获取 AccessKey 关联 AccessSecret 方法的上下文

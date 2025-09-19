@@ -26,8 +26,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furion.Pure.Extras.Dependen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dji.Application", "Dji.Application\Dji.Application.csproj", "{0EA7193B-6A77-4143-A4D7-B220107814E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dji.Mqtt.Manage", "Dji.Mqtt.Manage\Dji.Mqtt.Manage.csproj", "{C690D54F-73F4-413C-887F-E8AED724C7D5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,10 +64,6 @@ Global
 		{0EA7193B-6A77-4143-A4D7-B220107814E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA7193B-6A77-4143-A4D7-B220107814E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA7193B-6A77-4143-A4D7-B220107814E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C690D54F-73F4-413C-887F-E8AED724C7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C690D54F-73F4-413C-887F-E8AED724C7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C690D54F-73F4-413C-887F-E8AED724C7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C690D54F-73F4-413C-887F-E8AED724C7D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

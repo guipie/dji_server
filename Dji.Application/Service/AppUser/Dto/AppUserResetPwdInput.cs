@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Admin.NET.Application.JuAI;
+namespace Dji.Application.JuAI;
 
 /// <summary>
 /// 聚AI重置密码输入参数

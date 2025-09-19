@@ -9,7 +9,7 @@
 
 using AlibabaCloud.SDK.Dysmsapi20170525.Models;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统短信服务

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Furion 对象映射 Mapster 插件。")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b15782ca19926365eb70597996eee57902f774")]
 [assembly: System.Reflection.AssemblyProductAttribute("Furion.Extras.ObjectMapper.Mapster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Furion.Extras.ObjectMapper.Mapster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -21,7 +21,7 @@ using Org.BouncyCastle.Utilities;
 using Org.BouncyCastle.Utilities.Encoders;
 using Org.BouncyCastle.X509;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /**
  *

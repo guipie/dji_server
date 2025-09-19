@@ -1,7 +1,7 @@
 ﻿
 
 
-namespace Admin.NET.Web.Entry;
+namespace Dji.Web.Entry;
 
 public class AppResult<T> : AdminResult<T>
 {

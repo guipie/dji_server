@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "Dji.Application/1.0.0": {
         "dependencies": {
-          "Dji.Core": "1.0.0"
+          "Dji.Core": "1.0.0",
+          "MQTTnet": "5.0.1.1416"
         },
         "runtime": {
           "Dji.Application.dll": {}
@@ -1446,6 +1447,14 @@
           "lib/netstandard2.0/MiniProfiler.Shared.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.3.8.8209"
+          }
+        }
+      },
+      "MQTTnet/5.0.1.1416": {
+        "runtime": {
+          "lib/net8.0/MQTTnet.dll": {
+            "assemblyVersion": "5.0.1.1416",
+            "fileVersion": "5.0.1.1416"
           }
         }
       },
@@ -3500,6 +3509,13 @@
       "sha512": "sha512-SfXNX90fmDm373YAla0z06plTCj6YbByQJOm6G8/9kE6Hf4UALJxySyiMB9O4KYeTc6Ha1EFQDs6jLhio+bBFA==",
       "path": "miniprofiler.shared/4.3.8",
       "hashPath": "miniprofiler.shared.4.3.8.nupkg.sha512"
+    },
+    "MQTTnet/5.0.1.1416": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ONYieEMaHiIei5dAtHXywnfJGhmrd5Av5sNJSQERp6AtZdPk3xxjCR6Cv0C5RUr/XbLeHO4/HQ0Rc2bQ5NF5Mw==",
+      "path": "mqttnet/5.0.1.1416",
+      "hashPath": "mqttnet.5.0.1.1416.nupkg.sha512"
     },
     "MySqlConnector/2.2.5": {
       "type": "package",

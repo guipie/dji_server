@@ -4074,7 +4074,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Dji.Core": "1.0.0"
+          "Dji.Core": "1.0.0",
+          "MQTTnet": "5.0.1.1416"
         },
         "compile": {
           "bin/placeholder/Dji.Application.dll": {}
@@ -4125,26 +4126,11 @@
           "bin/placeholder/Dji.Core.dll": {}
         }
       },
-      "Dji.Mqtt.Manage/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Dji.Core": "1.0.0",
-          "MQTTnet": "5.0.1.1416"
-        },
-        "compile": {
-          "bin/placeholder/Dji.Mqtt.Manage.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Dji.Mqtt.Manage.dll": {}
-        }
-      },
       "Dji.Web.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Dji.Application": "1.0.0",
-          "Dji.Mqtt.Manage": "1.0.0",
           "IGeekFan.AspNetCore.Knife4jUI": "0.0.16",
           "System.Security.Cryptography.Pkcs": "8.0.1"
         },
@@ -12024,11 +12010,6 @@
       "path": "../Dji.Core/Dji.Core.csproj",
       "msbuildProject": "../Dji.Core/Dji.Core.csproj"
     },
-    "Dji.Mqtt.Manage/1.0.0": {
-      "type": "project",
-      "path": "../Dji.Mqtt.Manage/Dji.Mqtt.Manage.csproj",
-      "msbuildProject": "../Dji.Mqtt.Manage/Dji.Mqtt.Manage.csproj"
-    },
     "Dji.Web.Core/1.0.0": {
       "type": "project",
       "path": "../Dji.Web.Core/Dji.Web.Core.csproj",
@@ -12061,23 +12042,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\YZH\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Dji.Web.Entry\\Dji.Web.Entry.csproj",
+      "projectUniqueName": "D:\\chenwei\\dji_server\\Dji.Web.Entry\\Dji.Web.Entry.csproj",
       "projectName": "Dji.Web.Entry",
-      "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Web.Entry\\Dji.Web.Entry.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\dji\\Dji.Server\\Dji.Web.Entry\\obj\\",
+      "projectPath": "D:\\chenwei\\dji_server\\Dji.Web.Entry\\Dji.Web.Entry.csproj",
+      "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+      "outputPath": "D:\\chenwei\\dji_server\\Dji.Web.Entry\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12092,8 +12073,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\work\\dji\\Dji.Server\\Dji.Web.Core\\Dji.Web.Core.csproj": {
-              "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Web.Core\\Dji.Web.Core.csproj"
+            "D:\\chenwei\\dji_server\\Dji.Web.Core\\Dji.Web.Core.csproj": {
+              "projectPath": "D:\\chenwei\\dji_server\\Dji.Web.Core\\Dji.Web.Core.csproj"
             }
           }
         }
@@ -12132,7 +12113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,6 +16,6 @@ using System.Threading.Tasks;
 namespace Dji.Mqtt.Manage.Core;
 internal interface IModule
 {
-    Task StartAsync(CancellationToken ct = default);
+    void Start(CancellationToken ct = default);
     Task StopAsync(CancellationToken ct = default);
 }

@@ -10,7 +10,7 @@
 using Furion.SpecificationDocument;
 using Lazy.Captcha.Core;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统登录授权服务

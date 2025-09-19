@@ -9,7 +9,7 @@
 
 using MapsterMapper;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 public static class RepositoryExtension
 {

@@ -1,5 +1,5 @@
 ﻿
-namespace Admin.NET.Core.Extension;
+namespace Dji.Core.Extension;
 
 [SuppressSniffer]
 public static partial class StringExtension

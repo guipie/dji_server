@@ -14,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Admin.NET.Core.Util;
+namespace Dji.Core.Util;
 public static class FileUtil
 {
     private static readonly Dictionary<string, string> MIMETypesDictionary = new()

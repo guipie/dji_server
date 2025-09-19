@@ -1,8 +1,8 @@
 ﻿
 
-using Admin.NET.Application.Const;
+using Dji.Application.Const;
 
-namespace Admin.NET.Application.JuAI;
+namespace Dji.Application.JuAI;
 /// <summary>
 /// 聚AI用户服务
 /// </summary>

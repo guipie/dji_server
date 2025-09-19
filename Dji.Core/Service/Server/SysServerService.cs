@@ -15,7 +15,7 @@ using Magicodes.ExporterAndImporter.Pdf;
 using MailKit.Net.Smtp; 
 using OnceMi.AspNetCore.OSS;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统服务器监控服务

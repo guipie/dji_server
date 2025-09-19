@@ -1,0 +1,20 @@
+fail: 2025-09-18 10:58:37.3580885 +08:00 星期四 L System.Logging.ScheduleService[0] #1
+      [Furion.Pure.dll] void Furion.Schedule.ScheduleLogger.Log(LogLevel logLevel, string message, object[] args, Exception ex)
+      Schedule hosted service preload failed, and a total of <0> schedulers are appended.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: sys_job_detail'.
+         at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+         at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+         at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+         at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+         at SqlSugar.QueryableProvider`1._ToList[TResult]()
+         at SqlSugar.QueryableProvider`1.ToList()
+         at SqlSugar.QueryableProvider`1.Any()
+         at SqlSugar.SimpleClient`1.IsAny(Expression`1 whereExpression)
+         at Dji.Core.Service.DbJobPersistence.Preload() in D:\chenwei\dji_server\Dji.Core\Service\Job\DbJobPersistence.cs:line 38
+         at Furion.Schedule.SchedulerFactory.Preload() in D:\chenwei\dji_server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -9,7 +9,7 @@
 
 using System.Security.Cryptography;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 3DES文件加解密

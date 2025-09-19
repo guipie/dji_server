@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Admin.NET.Core.JuAI;
+namespace Dji.Core.JuAI;
 public enum DrawingTypeEnum
 {
     dalle,

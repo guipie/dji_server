@@ -1,4 +1,4 @@
-﻿using Admin.NET.Application.Const;
+﻿using Dji.Application.Const;
 
 /// <summary>
 /// 超级管理员相关服务

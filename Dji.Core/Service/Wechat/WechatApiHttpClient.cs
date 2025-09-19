@@ -6,7 +6,7 @@
 
 using Newtonsoft.Json;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 微信API客户端

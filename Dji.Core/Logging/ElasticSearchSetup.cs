@@ -11,7 +11,7 @@
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// ES服务注册

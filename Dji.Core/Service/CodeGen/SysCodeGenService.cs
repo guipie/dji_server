@@ -9,7 +9,7 @@
 
 using System.IO.Compression;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统代码生成器服务

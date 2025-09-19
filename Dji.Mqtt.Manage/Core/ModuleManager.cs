@@ -29,13 +29,13 @@ internal class ModuleManager
     public void AddModule(IModule module)
     {
         _modules.Add(module);
-    } 
+    }
 
-    public async Task StartAllAsync(CancellationToken ct = default)
+    public void StartAll(CancellationToken ct = default)
     {
         foreach (var module in _modules)
         {
-            await module.StartAsync(ct);
+            module.Start(ct);
         }
     }
 

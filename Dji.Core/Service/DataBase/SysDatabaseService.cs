@@ -10,7 +10,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Admin.NET.Core.Service;
+namespace Dji.Core.Service;
 
 /// <summary>
 /// 系统数据库管理服务
@@ -214,7 +214,7 @@ public class SysDatabaseService : IDynamicApiController, ITransient
     public void CreateEntity(CreateEntityInput input)
     {
         var config = App.GetOptions<DbConnectionOptions>().ConnectionConfigs.FirstOrDefault(u => u.ConfigId.ToString() == input.ConfigId);
-        input.Position = string.IsNullOrWhiteSpace(input.Position) ? "Admin.NET.Application" : input.Position;
+        input.Position = string.IsNullOrWhiteSpace(input.Position) ? "Dji.Application" : input.Position;
         input.EntityName = string.IsNullOrWhiteSpace(input.EntityName) ? (config.DbSettings.EnableUnderLine ? CodeGenUtil.CamelColumnName(input.TableName, null) : input.TableName) : input.EntityName;
         string[] dbColumnNames = Array.Empty<string>();
         // Entity.cs.vm中是允许创建没有基类的实体的，所以这里也要做出相同的判断
@@ -260,7 +260,7 @@ public class SysDatabaseService : IDynamicApiController, ITransient
     public async void CreateSeedData(CreateSeedDataInput input)
     {
         var config = App.GetOptions<DbConnectionOptions>().ConnectionConfigs.FirstOrDefault(u => u.ConfigId.ToString() == input.ConfigId);
-        input.Position = string.IsNullOrWhiteSpace(input.Position) ? "Admin.NET.Core" : input.Position;
+        input.Position = string.IsNullOrWhiteSpace(input.Position) ? "Dji.Core" : input.Position;
 
         var templatePath = GetSeedDataTemplatePath();
         var db = _db.AsTenant().GetConnectionScope(input.ConfigId);

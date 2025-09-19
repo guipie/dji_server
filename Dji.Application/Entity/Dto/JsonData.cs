@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Admin.NET.Core.JuAI.Entity;
+namespace Dji.Core.JuAI.Entity;
 public class JsonData
 {
     public string Data { get; set; }

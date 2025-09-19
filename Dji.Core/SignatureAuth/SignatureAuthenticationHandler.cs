@@ -12,7 +12,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text.Encodings.Web;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// Signature 身份验证处理

@@ -7,10 +7,9 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Admin.NET.Core;
-using Admin.NET.Core.Service;
+using Dji.Core;
+using Dji.Core.Service;
 using AspNetCoreRateLimit;
-using Dji.Mqtt.Manage.Service;
 using Furion;
 using Furion.SpecificationDocument;
 using Furion.VirtualFileServer;
@@ -27,12 +26,14 @@ using Newtonsoft.Json.Serialization;
 using OnceMi.AspNetCore.OSS;
 using SixLabors.ImageSharp.Web.DependencyInjection;
 using System;
+using System.Threading.Tasks;
+using Dji.Application;
 
-namespace Admin.NET.Web.Core;
+namespace Dji.Web.Core;
 
 public class Startup : AppStartup
 {
-    public void ConfigureServices(IServiceCollection services)
+    public  void ConfigureServices(IServiceCollection services)
     {
         // 配置选项
         services.AddProjectOptions();
@@ -220,6 +221,6 @@ public class Startup : AppStartup
                 pattern: "{controller=Home}/{action=Index}/{id?}");
         });
 
-        app.UseMqttBuilderAsync().ConfigureAwait(false);
+         app.UseMqttBuilder();
     }
 }

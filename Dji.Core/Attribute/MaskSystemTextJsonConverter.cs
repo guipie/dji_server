@@ -10,7 +10,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Admin.NET.Core;
+namespace Dji.Core;
 
 /// <summary>
 /// 字符串掩码

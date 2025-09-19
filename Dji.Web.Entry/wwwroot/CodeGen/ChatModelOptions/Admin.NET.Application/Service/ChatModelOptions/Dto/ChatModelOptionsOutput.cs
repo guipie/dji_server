@@ -1,4 +1,4 @@
-﻿namespace Admin.NET.Application;
+﻿namespace Dji.Application;
 
 /// <summary>
 /// 模型配置输出参数
