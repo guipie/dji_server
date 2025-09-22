@@ -7,19 +7,16 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Dji.Application.Module.Entity;
-using Dji.Application.Module.Wayline.Dto;
-using Newtonsoft.Json.Linq;
+using Dji.Application.Cloud.Core;
 
-namespace Dji.Application.Module.Device;
-internal class DeviceService : BaseModuleService
+namespace Dji.Application.Cloud.Wayline;
+internal class WaylineService : BaseModuleService
 {
-
-    //机场osd数据
-    [MqttSubscribe("thing/product/+/osd")]
-    public async Task HandleDeviceAsync(CloudMqData<DockOsd> data)
+    private readonly IMqttService _mqttService;
+    public WaylineService(IMqttService mqttService)
     {
-        Console.WriteLine("{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
-        await Task.Delay(1);
+        _mqttService = mqttService;
     }
+
+
 }

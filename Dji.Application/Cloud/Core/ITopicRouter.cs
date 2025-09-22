@@ -10,35 +10,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Application.Core;
+namespace Dji.Application.Cloud.Core;
 /// <summary>
-/// 模块生命周期管理
+/// 主题路由
 /// </summary>
-internal class ModuleManager
+internal interface ITopicRouter
 {
-    public readonly List<SubscriptionModel> _modules = [];
-
-    public void AddModule<T>() where T : SubscriptionModel, new()
-    {
-        _modules.Add(new T());
-    }
-
-    public void AddModule(SubscriptionModel module)
-    {
-        _modules.Add(module);
-    }
-
-}
-
-public class SubscriptionModel
-{
-    public string Topic { get; set; } = null!;
-    public MethodInfo MethodInfo { get; set; } = null!;
-    public object Instance { get; set; } = null!;
-    public Type DataType { get; set; } = null!; // T in CloudMqData<T>
-    public Type DeclaringType { get; set; } = null!;
+    void RegisterHandler<T>(string topicPattern, Func<T, Task> handler) where T : class;
+    Task RouteAsync(string topic, string payload, CancellationToken ct = default);
 }

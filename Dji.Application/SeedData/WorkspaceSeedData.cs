@@ -8,11 +8,6 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 using Dji.Application.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dji.Application.SeedData;
 public class WorkspaceSeedData : ISqlSugarEntitySeedData<DjiWorkspace>
@@ -20,9 +15,9 @@ public class WorkspaceSeedData : ISqlSugarEntitySeedData<DjiWorkspace>
     public IEnumerable<DjiWorkspace> HasData()
     {
         return [
-         new DjiWorkspace(){WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228070", WorkspaceName="SZ",PlatformName="苏州",WorkspaceBindCode="sz"},
-         new DjiWorkspace(){WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280qt", WorkspaceName="QT",PlatformName="其他",WorkspaceBindCode="qtcode"},
-         new DjiWorkspace(){WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228069", WorkspaceName="W",PlatformName="武汉",WorkspaceBindCode="qwe"},
+         new DjiWorkspace(){Id=1,TenantId=SqlSugarConst.MainConfigId.ToLong(), WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228070", WorkspaceName="SZ",PlatformName="苏州",WorkspaceBindCode="sz"},
+         new DjiWorkspace(){Id=2,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280qt", WorkspaceName="QT",PlatformName="其他",WorkspaceBindCode="qtcode"},
+         new DjiWorkspace(){Id=3,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228069", WorkspaceName="W",PlatformName="武汉",WorkspaceBindCode="qwe"},
         ];
     }
 }

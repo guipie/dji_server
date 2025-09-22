@@ -13,7 +13,7 @@ public sealed class MqttOptions : IConfigurableOptions
     public string? Username { get; set; }
     public string? Password { get; set; }
     public int KeepAliveSeconds { get; set; } = 60;
-    public List<string> SubscribedTopics { get; set; } = new();
+    public List<string> SubscribedTopics { get; set; } = [];
     public bool CleanSession { get; set; } = true;
 
 }

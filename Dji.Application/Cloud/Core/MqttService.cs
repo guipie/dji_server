@@ -9,7 +9,7 @@
 
 
 
-using Dji.Application.Module.Entity;
+using Dji.Application.Cloud.Entity;
 using Dji.Application.Option;
 using Microsoft.Extensions.Options;
 using MQTTnet;
@@ -17,9 +17,9 @@ using MQTTnet.Protocol;
 using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+using System.Text.RegularExpressions;
 
-namespace Dji.Application.Core;
+namespace Dji.Application.Cloud.Core;
 /// <summary>
 ///  MQTT 客户端管理
 /// </summary>
@@ -50,6 +50,8 @@ internal class MqttService : IMqttService, IDisposable
     {
         _logger = logger;
         _client = client;
+        // 注册连接成功回调
+        _client.ConnectedAsync += OnConnectedAsync;
         // 注册消息接收回调
         _client.ApplicationMessageReceivedAsync += OnMqttMessageReceived;
         _router = router;
@@ -59,15 +61,22 @@ internal class MqttService : IMqttService, IDisposable
 
     public async Task StartAsync()
     {
-        var options = new MqttClientOptionsBuilder()
-            .WithClientId(_mqttOptions.ClientId)
-            .WithTcpServer(_mqttOptions.Server, _mqttOptions.Port)
-            .WithCredentials(_mqttOptions.Username, _mqttOptions.Password)
-            .WithCleanSession(true)
-            .Build();
-        var result = await _client.ConnectAsync(options, CancellationToken.None);
-        await SubscribeAsync("thing/product/+/osd");
-        _logger.LogInformation("MQTT 已连接到 {Host}:{Port},Resutlt:{result}", _mqttOptions.Server, _mqttOptions.Port, result);
+        try
+        {
+            var options = new MqttClientOptionsBuilder()
+                  .WithClientId(_mqttOptions.ClientId)
+                  .WithTcpServer(_mqttOptions.Server, _mqttOptions.Port)
+                  .WithCredentials(_mqttOptions.Username, _mqttOptions.Password)
+                  .WithCleanSession(true)
+                  .Build();
+            var result = await _client.ConnectAsync(options, CancellationToken.None);
+            _logger.LogInformation("MQTT 已连接到 {Host}:{Port},Resutlt:{result}", _mqttOptions.Server, _mqttOptions.Port, result);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "MQTT 启动失败");
+            return;
+        }
     }
 
     public async Task StopAsync()
@@ -80,6 +89,19 @@ internal class MqttService : IMqttService, IDisposable
             };
             await _client.DisconnectAsync(disconnectOptions);
         }
+    }
+    //连接成功后的事件
+    public async Task OnConnectedAsync(MqttClientConnectedEventArgs e)
+    {
+        foreach (var topic in _mqttOptions.SubscribedTopics)
+        {
+            await SubscribeAsync(topic);
+        }
+    }
+    //断开连接后事件
+    public void OnDisconnected(MqttClientDisconnectedEventArgs e)
+    {
+        _logger.LogError("MQTT 断开连接: {Error}", e.Exception);
     }
 
     public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
@@ -111,9 +133,11 @@ internal class MqttService : IMqttService, IDisposable
     private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
     {
         var topic = e.ApplicationMessage.Topic;
-        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload).ToObject<CloudMqData<dynamic>>();
         var matched = _moduleManager._modules
             .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
+            .WhereIF(payload.Method.IsNullOrEmpty(), s => s.Method.Equals(payload.Method))
+            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 10 ? s.Type == 1 : s.Type == 2)
             .ToList();
         if (matched.Count == 0)
             return;
@@ -127,10 +151,9 @@ internal class MqttService : IMqttService, IDisposable
                 // 替换以下两行：
                 // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
                 // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
-                var data =JsonConvert.DeserializeObject(payload, cloudDataType, settings);
-
+                //var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
                 // 调用方法
-                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
+                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [payload])!;
                 await task;
             }
             catch (Exception ex)
@@ -141,10 +164,14 @@ internal class MqttService : IMqttService, IDisposable
         //await _router.RouteAsync(topic, payload, CancellationToken.None);
     }
 
-    private bool IsMatch(string pattern, string topic)
+    private string MatchSn(string topic, string pattern = @"/([^/]+)/(?:osd|state)")
     {
-        return pattern.Replace("{product_id}", "*").Replace("{sn}", "*")
-               .Split('*').All(part => topic.Contains(part));
+        Match match = Regex.Match(topic, pattern);
+        if (match.Success)
+        {
+            return match.Groups[1].Value;
+        }
+        return "";
     }
 
     public void Dispose() => _client?.Dispose();

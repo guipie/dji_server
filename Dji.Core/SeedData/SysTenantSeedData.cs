@@ -1,6 +1,6 @@
 // 麻省理工学院许可证
 //
-// 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
+// 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
 // 特此免费授予获得本软件的任何人以处理本软件的权利，但须遵守以下条件：在所有副本或重要部分的软件中必须包括上述版权声明和本许可声明。
 //
@@ -14,6 +14,7 @@ namespace Dji.Core;
 /// </summary>
 public class SysTenantSeedData : ISqlSugarEntitySeedData<SysTenant>
 {
+
     /// <summary>
     /// 种子数据
     /// </summary>
@@ -24,7 +25,7 @@ public class SysTenantSeedData : ISqlSugarEntitySeedData<SysTenant>
 
         return new[]
         {
-            new SysTenant{ Id=1300000000001, OrgId=1300000000101, UserId=1300000000111, Host="www.dilon.vip", TenantType=TenantTypeEnum.Id, DbType=defaultDbConfig.DbType, Connection=defaultDbConfig.ConnectionString, ConfigId=SqlSugarConst.MainConfigId, Remark="系统默认", CreateTime=DateTime.Parse("2022-02-10 00:00:00") },
+            new SysTenant{ Id=SqlSugarConst.MainConfigId.ToLong(), OrgId=1300000000101, UserId=1300000000111, Host="www.dilon.vip", TenantType=TenantTypeEnum.Id, DbType=defaultDbConfig.DbType, Connection=defaultDbConfig.ConnectionString, ConfigId=SqlSugarConst.MainConfigId, Remark="系统默认", CreateTime=DateTime.Parse("2022-02-10 00:00:00") },
         };
     }
 }

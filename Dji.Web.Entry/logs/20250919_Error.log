@@ -258,3 +258,33 @@ fail: 2025-09-19 17:56:07.8809607 +08:00 星期五 L System.Logging.ScheduleServ
          at Dji.Core.Service.DbJobPersistence.Preload() in D:\chenwei\dji_server\Dji.Core\Service\Job\DbJobPersistence.cs:line 38
          at Furion.Schedule.SchedulerFactory.Preload() in D:\chenwei\dji_server\Plugins\Furion.Pure\Schedule\Factories\SchedulerFactory.Internal.cs:line 153
       ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-09-19 22:07:04.0196513 +08:00 星期五 L Dji.Application.Core.MqttService[0] #9
+      [Dji.Application.dll] async Task Dji.Application.Core.MqttService.StartAsync()
+      MQTT 启动失败      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MQTTnet.Exceptions.MqttCommunicationTimedOutException: The operation has timed out.
+         at MQTTnet.Implementations.CrossPlatformSocket.ConnectAsync(EndPoint endPoint, CancellationToken cancellationToken)
+         at MQTTnet.Implementations.MqttTcpChannel.ConnectAsync(CancellationToken cancellationToken)
+         at MQTTnet.Adapter.MqttChannelAdapter.<>c__DisplayClass30_0.<<ConnectAsync>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at MQTTnet.Adapter.MqttChannelAdapter.ConnectAsync(CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectInternal(IMqttChannelAdapter channelAdapter, CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectAsync(MqttClientOptions options, CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectAsync(MqttClientOptions options, CancellationToken cancellationToken)
+         at Dji.Application.Core.MqttService.StartAsync() in D:\work\dji\Dji.Server\Dji.Application\Core\MqttService.cs:line 71
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-09-19 22:30:53.9505870 +08:00 星期五 L Dji.Application.Core.MqttService[0] #10
+      [Dji.Application.dll] async Task Dji.Application.Core.MqttService.StartAsync()
+      MQTT 启动失败      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MQTTnet.Exceptions.MqttCommunicationTimedOutException: The operation has timed out.
+         at MQTTnet.Implementations.CrossPlatformSocket.ConnectAsync(EndPoint endPoint, CancellationToken cancellationToken)
+         at MQTTnet.Implementations.MqttTcpChannel.ConnectAsync(CancellationToken cancellationToken)
+         at MQTTnet.Adapter.MqttChannelAdapter.<>c__DisplayClass30_0.<<ConnectAsync>b__1>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at MQTTnet.Adapter.MqttChannelAdapter.ConnectAsync(CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectInternal(IMqttChannelAdapter channelAdapter, CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectAsync(MqttClientOptions options, CancellationToken cancellationToken)
+         at MQTTnet.MqttClient.ConnectAsync(MqttClientOptions options, CancellationToken cancellationToken)
+         at Dji.Application.Core.MqttService.StartAsync() in D:\work\dji\Dji.Server\Dji.Application\Core\MqttService.cs:line 71
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

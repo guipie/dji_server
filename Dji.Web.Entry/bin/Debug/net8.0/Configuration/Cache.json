@@ -1,8 +1,8 @@
 {
-  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json", 
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
   "Cache": {
-    "Prefix": "juai_", // 全局缓存前缀
-    "CacheType": "Redis", // Memory、Redis
+    "Prefix": "dji_", // 全局缓存前缀
+    "CacheType": "Memory", // Memory、Redis
     "Redis": {
       "Configuration": "server=localhost:6379;password=CHENwei716!@.;db=5;", // Redis连接字符串
       "Prefix": "juai_", // Redis前缀
