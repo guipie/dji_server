@@ -4,6 +4,857 @@
         <name>Dji.Application</name>
     </assembly>
     <members>
+        <member name="T:Dji.Application.Cloud.Core.IMqttService">
+            <summary>
+             // MQTT 核心接口
+            </summary>
+        </member>
+        <member name="T:Dji.Application.Cloud.Core.ITopicRouter">
+            <summary>
+            主题路由
+            </summary>
+        </member>
+        <member name="T:Dji.Application.Cloud.Core.ModuleManager">
+            <summary>
+            模块生命周期管理
+            </summary>
+        </member>
+        <member name="T:Dji.Application.Cloud.Core.MqttService">
+            <summary>
+             MQTT 客户端管理
+            </summary>
+        </member>
+        <member name="T:Dji.Application.Cloud.Core.TopicRouter">
+            <summary>
+            主题路由
+            </summary>
+        </member>
+        <member name="M:Dji.Application.Cloud.Device.DeviceService.DeviceManageAsync(Dji.Application.Cloud.Entity.CloudMqData{Dji.Application.Cloud.Device.Dto.UpdateTopoDevice})">
+            <summary>
+            设备拓扑更新
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice">
+            <summary>
+            网关设备实体类
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.Domain">
+            <summary>
+            网关设备的命名空间
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.Type">
+            <summary>
+            网关设备的产品类型
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.SubType">
+            <summary>
+            网关子设备的产品子类型
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.DeviceSecret">
+            <summary>
+            网关设备的密钥
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.Nonce">
+            <summary>
+            nonce
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.ThingVersion">
+            <summary>
+            网关设备的物模型版本
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.UpdateTopoDevice.SubDevices">
+            <summary>
+            子设备列表
+            </summary>
+        </member>
+        <member name="T:Dji.Application.Cloud.Device.Dto.SubDevice">
+            <summary>
+            子设备实体类
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.Sn">
+            <summary>
+            子设备序列号（SN）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.Domain">
+            <summary>
+            子设备的命名空间
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.Type">
+            <summary>
+            子设备的产品类型
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.SubType">
+            <summary>
+            子设备的产品子类型
+            参考：https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.Index">
+            <summary>
+            连接网关设备的通道索引
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.DeviceSecret">
+            <summary>
+            子设备的密钥
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.Nonce">
+            <summary>
+            nonce
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Device.Dto.SubDevice.ThingVersion">
+            <summary>
+            子设备的物模型版本
+            </summary>
+        </member>
+        <member name="M:Dji.Application.Cloud.Device.DjiOrgService.AirportBindStatusAsync(Dji.Application.Cloud.Entity.CloudMqData{Dji.Application.Cloud.Org.Dto.AirportBindStatusUp})">
+            <summary>
+            获取设备绑定信息
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dji.Application.Cloud.Wayline.Dto.DockOsd">
+            <summary>
+            机场OSD信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.HomePositionIsValid">
+            <summary>
+            Home 点有效性 (home_position_is_valid) - enum_int: 0=无效, 1=有效
+            </summary> 
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Heading">
+            <summary>
+            机场朝向角 (heading) - double: -180 ~ 180 度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.RtcmInfo">
+            <summary>
+            机场 RTK 标定源 (rtcm_info) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.WirelessLinkTopo">
+            <summary>
+            图传连接拓扑 (wireless_link_topo) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.AirConditioner">
+            <summary>
+            机场空调工作状态信息 (air_conditioner) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.AirTransferEnable">
+            <summary>
+            空中回传 (air_transfer_enable) - bool: 0=关闭, 1=开启
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.SilentMode">
+            <summary>
+            机场静音模式 (silent_mode) - enum_int: 0=非静音, 1=静音模式
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.UserExperienceImprovement">
+            <summary>
+            用户体验改善计划 (user_experience_improvement) - enum_int: 0=初始, 1=拒绝, 2=同意
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.DongleInfos">
+            <summary>
+            4G Dongle信息 (dongle_infos) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.DroneBatteryMaintenanceInfo">
+            <summary>
+            飞行器电池保养信息 (drone_battery_maintenance_info) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.MaintainStatus">
+            <summary>
+            保养信息 (maintain_status) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.PositionState">
+            <summary>
+            搜星状态 (position_state) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.EmergencyStopState">
+            <summary>
+            紧急停止按钮状态 (emergency_stop_state) - enum_int: 0=关闭, 1=开启
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.DroneChargeState">
+            <summary>
+            飞行器充电状态 (drone_charge_state) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.BackupBattery">
+            <summary>
+            机场备用电池信息 (backup_battery) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.AlarmState">
+            <summary>
+            机场声光报警状态 (alarm_state) - enum_int: 0=关闭, 1=开启
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.BatteryStoreMode">
+            <summary>
+            电池运行模式 (battery_store_mode) - enum_int: 1=计划模式, 2=待命模式
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.ActivationTime">
+            <summary>
+            机场激活时间 (activation_time) - int (unix 秒)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Height">
+            <summary>
+            椭球高度 (height) - double (米)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.AlternateLandPoint">
+            <summary>
+            备降点 (alternate_land_point) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.CompatibleStatus">
+            <summary>
+            固件一致性 (compatible_status) - enum_int: 0=不需要升级, 1=需要升级
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.AccTime">
+            <summary>
+            机场累计运行时长 (acc_time) - int (秒)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.FirstPowerOn">
+            <summary>
+            首次上电时间 (first_power_on) - int (毫秒)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Storage">
+            <summary>
+            存储容量 (storage) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.WorkingCurrent">
+            <summary>
+            工作电流 (working_current) - float (毫安)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.WorkingVoltage">
+            <summary>
+            工作电压 (working_voltage) - int (毫伏)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Humidity">
+            <summary>
+            舱内湿度 (humidity) - float (%RH)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Temperature">
+            <summary>
+            舱内温度 (temperature) - float (°C)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.EnvironmentTemperature">
+            <summary>
+            环境温度 (environment_temperature) - float (°C)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.WindSpeed">
+            <summary>
+            风速 (wind_speed) - float (m/s)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Rainfall">
+            <summary>
+            降雨量 (rainfall) - enum_int: 0=无雨, 1=小雨, 2=中雨, 3=大雨
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.LiveCapacity">
+            <summary>
+            网关设备直播能力 (live_capacity) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.LiveStatus">
+            <summary>
+            网关当前整体直播状态推送 (live_status) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.WirelessLink">
+            <summary>
+            图传链路 (wireless_link) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.MediaFileDetail">
+            <summary>
+            媒体文件上传细节 (media_file_detail) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.JobNumber">
+            <summary>
+            机场累计作业次数 (job_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.DroneInDock">
+            <summary>
+            飞行器是否在舱 (drone_in_dock) - enum_int: 0=舱外, 1=舱内
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.NetworkState">
+            <summary>
+            网络状态 (network_state) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.SupplementLightState">
+            <summary>
+            补光灯状态 (supplement_light_state) - enum_int: 0=关闭, 1=打开
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.CoverState">
+            <summary>
+            舱盖状态 (cover_state) - enum_int: 0=关闭, 1=打开, 2=半开, 3=异常
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.SubDevice">
+            <summary>
+            子设备状态 (sub_device) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.FlighttaskStepCode">
+            <summary>
+            机场任务状态 (flighttask_step_code) - enum_int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.ModeCode">
+            <summary>
+            机场状态 (mode_code) - enum_int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.FirmwareUpgradeStatus">
+            <summary>
+            固件升级状态 (firmware_upgrade_status) - enum_int: 0=未升级, 1=升级中
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.FirmwareVersion">
+            <summary>
+            固件版本 (firmware_version) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Latitude">
+            <summary>
+            纬度 (latitude) - double
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DockOsd.Longitude">
+            <summary>
+            经度 (longitude) - double
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.RtcMInfo.MountPoint">
+            <summary>
+            网络 RTK 挂载点信息 (mount_point) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.RtcMInfo.Port">
+            <summary>
+            网络端口信息 (port) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.RtcMInfo.Host">
+            <summary>
+            网络 host 信息 (host) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.RtcMInfo.RtcMDeviceType">
+            <summary>
+            设备类型 (rtcm_device_type) - enum_int: 1=机场
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.RtcMInfo.SourceType">
+            <summary>
+            标定类型 (source_type) - enum_int: 0=未标定, 1=自收敛, 2=手动, 3=网络RTK
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLinkTopo.SecretCode">
+            <summary>
+            加密编码 (secret_code) - array of int (size:28)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLinkTopo.CenterNode">
+            <summary>
+            飞行器对频信息 (center_node) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLinkTopo.LeafNodes">
+            <summary>
+            机场或遥控器对频信息 (leaf_nodes) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CenterNode.SdrId">
+            <summary>
+            扰码信息 (sdr_id) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CenterNode.Sn">
+            <summary>
+            设备sn (sn) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LeafNode.SdrId">
+            <summary>
+            扰码信息 (sdr_id) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LeafNode.Sn">
+            <summary>
+            设备sn (sn) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LeafNode.ControlSourceIndex">
+            <summary>
+            控制源序号 (control_source_index) - int: 1~2
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AirConditioner.AirConditionerState">
+            <summary>
+            机场空调状态 (air_conditioner_state) - enum_int
+            0=空闲, 1=制冷, 2=制热, 3=除湿, 4=制冷退出, 5=制热退出, 6=除湿退出, 7=制冷准备, 8=制热准备, 9=除湿准备
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AirConditioner.SwitchTime">
+            <summary>
+            剩余等待可切换时间 (switch_time) - int (秒)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.Imei">
+            <summary>
+            dongle imei (imei) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.DongleType">
+            <summary>
+            Dongle 类型 (dongle_type) - enum_int: 6=旧, 10=新（eSIM）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.Eid">
+            <summary>
+            dongle eid (eid) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.EsimActivateState">
+            <summary>
+            eSIM 激活状态 (esim_activate_state) - enum_int: 0=未激活, 1=已激活
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.SimCardState">
+            <summary>
+            SIM 卡状态 (sim_card_state) - enum_int: 0=未插入, 1=已插入
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.SimSlot">
+            <summary>
+            SIM 卡槽使能状态 (sim_slot) - enum_int: 0=未知, 1=实体SIM, 2=eSIM
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.EsimInfos">
+            <summary>
+            eSIM 信息 (esim_infos) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DongleInfo.SimInfo">
+            <summary>
+            SIM 卡信息 (sim_info) - struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.EsimInfo.TelecomOperator">
+            <summary>
+            支持的运营商 (telecom_operator) - enum_int: 0=未知, 1=移动, 2=联通, 3=电信
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.EsimInfo.Enabled">
+            <summary>
+            eSIM 使能状态 (enabled) - bool
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.EsimInfo.Iccid">
+            <summary>
+            sim iccid (iccid) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SimInfo.TelecomOperator">
+            <summary>
+            支持的运营商 (telecom_operator) - enum_int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SimInfo.SimType">
+            <summary>
+            SIM 卡类型 (sim_type) - enum_int: 0=未知, 1=普通卡, 2=三网卡
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SimInfo.Iccid">
+            <summary>
+            sim iccid (iccid) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneBatteryMaintenanceInfo.MaintenanceState">
+            <summary>
+            保养状态 (maintenance_state) - enum_int: 0=无需, 1=待保养, 2=正在保养
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneBatteryMaintenanceInfo.MaintenanceTimeLeft">
+            <summary>
+            电池保养剩余时间 (maintenance_time_left) - int (小时)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneBatteryMaintenanceInfo.HeatState">
+            <summary>
+            电池加热保温状态 (heat_state) - enum_int: 0=未加热, 1=加热中, 2=保温中
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneBatteryMaintenanceInfo.Batteries">
+            <summary>
+            电池详细信息 (batteries) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BatteryDetail.CapacityPercent">
+            <summary>
+            电池剩余电量 (capacity_percent) - int: 0~100
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BatteryDetail.Index">
+            <summary>
+            电池序号 (index) - enum_int: 0=左, 1=右
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BatteryDetail.Voltage">
+            <summary>
+            电压 (voltage) - int (mV)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BatteryDetail.Temperature">
+            <summary>
+            温度 (temperature) - float (°C)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MaintainStatus.MaintainStatusArray">
+            <summary>
+            保养信息数组 (maintain_status_array) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MaintainStatusItem.State">
+            <summary>
+            保养状态 (state) - enum_int: 0=无保养, 1=有保养
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MaintainStatusItem.LastMaintainType">
+            <summary>
+            上一次保养类型 (last_maintain_type) - enum_int: 0=无, 17=常规, 18=深度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MaintainStatusItem.LastMaintainTime">
+            <summary>
+            上一次保养时间 (last_maintain_time) - date (秒)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MaintainStatusItem.LastMaintainWorkSorties">
+            <summary>
+            上一次保养时作业架次 (last_maintain_work_sorties) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.PositionState.IsCalibration">
+            <summary>
+            是否标定 (is_calibration) - enum_int: 0=未标定, 1=已标定
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.PositionState.IsFixed">
+            <summary>
+            是否收敛 (is_fixed) - enum_int: 0=未开始, 1=收敛中, 2=成功, 3=失败
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.PositionState.Quality">
+            <summary>
+            搜星档位 (quality) - enum_int: 1~5档, 10=RTK fixed
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.PositionState.GpsNumber">
+            <summary>
+            GPS 搜星数量 (gps_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.PositionState.RtkNumber">
+            <summary>
+            RTK 搜星数量 (rtk_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneChargeState.CapacityPercent">
+            <summary>
+            电量百分比 (capacity_percent) - int: 0~100
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DroneChargeState.State">
+            <summary>
+            充电状态 (state) - enum_int: 0=空闲, 1=充电中
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BackupBattery.Switch">
+            <summary>
+            备用电池开关 (switch) - enum_int: 0=关闭, 1=开启
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BackupBattery.Voltage">
+            <summary>
+            备用电池电压 (voltage) - int (mV)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.BackupBattery.Temperature">
+            <summary>
+            备用电池温度 (temperature) - float (°C)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.Storage.Total">
+            <summary>
+            总容量 (total) - int (KB)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.Storage.Used">
+            <summary>
+            已使用容量 (used) - int (KB)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AlternateLandPoint.Longitude">
+            <summary>
+            经度 (longitude) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AlternateLandPoint.Latitude">
+            <summary>
+            纬度 (latitude) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AlternateLandPoint.SafeLandHeight">
+            <summary>
+            安全高度 (safe_land_height) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AlternateLandPoint.IsConfigured">
+            <summary>
+            是否设置备降点 (is_configured) - enum_int: 0=未设置, 1=已设置
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.AlternateLandPoint.Height">
+            <summary>
+            椭球高度 (height) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveCapacity.AvailableVideoNumber">
+            <summary>
+            可选择推流的码流数量 (available_video_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveCapacity.CoexistVideoNumberMax">
+            <summary>
+            可同时推流的最大码流数量 (coexist_video_number_max) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveCapacity.DeviceList">
+            <summary>
+            可选择的视频设备源 (device_list) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DeviceList.Sn">
+            <summary>
+            飞行器等视频源设备序列号 (sn) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DeviceList.AvailableVideoNumber">
+            <summary>
+            该设备可选择推流的码流数 (available_video_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DeviceList.CoexistVideoNumberMax">
+            <summary>
+            该设备可同时推流的码流数 (coexist_video_number_max) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.DeviceList.CameraList">
+            <summary>
+            该设备上的相机列表 (camera_list) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CameraList.CameraIndex">
+            <summary>
+            相机索引 (camera_index) - text: {type-subtype-gimbalindex}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CameraList.AvailableVideoNumber">
+            <summary>
+            该相机可选择推流的码流数 (available_video_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CameraList.CoexistVideoNumberMax">
+            <summary>
+            该相机可同时推流的码流数 (coexist_video_number_max) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.CameraList.VideoList">
+            <summary>
+            该相机可选择的码流列表 (video_list) - array of struct
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.VideoList.VideoIndex">
+            <summary>
+            码流索引 (video_index) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.VideoList.VideoType">
+            <summary>
+            码流类型 (video_type) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.VideoList.SwitchableVideoTypes">
+            <summary>
+            支持切换的视频镜头类型 (switchable_video_types) - array of text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveStatus.VideoId">
+            <summary>
+            直播码流标识符 (video_id) - text: {sn}/{camera_index}/{video_index}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveStatus.VideoType">
+            <summary>
+            视频类型 (video_type) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveStatus.VideoQuality">
+            <summary>
+            直播码流的质量 (video_quality) - enum_int: 0=自适应, 1=流畅, 2=标清, 3=高清, 4=超清
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveStatus.Status">
+            <summary>
+            直播状态 (status) - enum_int: 0=未直播, 1=在直播
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.LiveStatus.ErrorStatus">
+            <summary>
+            错误码 (error_status) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink.DongleNumber">
+            <summary>
+            飞行器上 Dongle 数量 (dongle_number) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink._4GLinkState">
+            <summary>
+            4G 链路连接状态 (4g_link_state) - enum_int: 0=断开, 1=连接
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink.SdrLinkState">
+            <summary>
+            SDR 链路连接状态 (sdr_link_state) - enum_int: 0=断开, 1=连接
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink.LinkWorkmode">
+            <summary>
+            机场的图传链路模式 (link_workmode) - enum_int: 0=SDR, 1=4G融合
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink.SdrQuality">
+            <summary>
+            SDR 信号质量 (sdr_quality) - int: 0~5
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink._4GQuality">
+            <summary>
+            总体 4G 信号质量 (4g_quality) - int: 0~5
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink._4GUavQuality">
+            <summary>
+            天端 4G 信号质量 (4g_uav_quality) - int: 0~5
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink._4GGndQuality">
+            <summary>
+            地端 4G 信号质量 (4g_gnd_quality) - int: 0~5
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink.SdrFreqBand">
+            <summary>
+            SDR 频段 (sdr_freq_band) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.WirelessLink._4GFreqBand">
+            <summary>
+            4G 频段 (4g_freq_band) - float
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.MediaFileDetail.RemainUpload">
+            <summary>
+            媒体文件上传细节 (remain_upload) - int
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.NetworkState.Type">
+            <summary>
+            网络类型 (type) - enum_int: 1=4G, 2=以太网
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.NetworkState.Quality">
+            <summary>
+            网络质量 (quality) - enum_int: 0~5
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.NetworkState.Rate">
+            <summary>
+            网络速率 (rate) - float (KB/s)
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SubDevice.DeviceSn">
+            <summary>
+            子设备序列号 (device_sn) - text
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SubDevice.DeviceModelKey">
+            <summary>
+            子设备枚举值 (device_model_key) - text: {domain-type-subtype}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SubDevice.DeviceOnlineStatus">
+            <summary>
+            机场停机坪上的飞行器开机状态 (device_online_status) - enum_int: 0=关机, 1=开机
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Wayline.Dto.SubDevice.DevicePaired">
+            <summary>
+            机场停机坪上的飞行器是否与机场对频 (device_paired) - enum_int: 0=未对频, 1=已对频
+            </summary>
+        </member>
         <member name="T:Dji.Application.Const.ApplicationConst">
             <summary>
             业务应用相关常量
@@ -12,748 +863,6 @@
         <member name="F:Dji.Application.Const.ApplicationConst.DjiCloud">
             <summary>
             API分组名称
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Core.IMqttService">
-            <summary>
-             // MQTT 核心接口
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Core.ITopicRouter">
-            <summary>
-            主题路由
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Core.ModuleManager">
-            <summary>
-            模块生命周期管理
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Core.MqttService">
-            <summary>
-             MQTT 客户端管理
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Core.TopicRouter">
-            <summary>
-            主题路由
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "T:Dji.Application.Module.Wayline.Dto.DockOsd" -->
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.HomePositionIsValid">
-            <summary>
-            Home 点有效性 (home_position_is_valid) - enum_int: 0=无效, 1=有效
-            </summary> 
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Heading">
-            <summary>
-            机场朝向角 (heading) - double: -180 ~ 180 度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.RtcmInfo">
-            <summary>
-            机场 RTK 标定源 (rtcm_info) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.WirelessLinkTopo">
-            <summary>
-            图传连接拓扑 (wireless_link_topo) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.AirConditioner">
-            <summary>
-            机场空调工作状态信息 (air_conditioner) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.AirTransferEnable">
-            <summary>
-            空中回传 (air_transfer_enable) - bool: 0=关闭, 1=开启
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.SilentMode">
-            <summary>
-            机场静音模式 (silent_mode) - enum_int: 0=非静音, 1=静音模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.UserExperienceImprovement">
-            <summary>
-            用户体验改善计划 (user_experience_improvement) - enum_int: 0=初始, 1=拒绝, 2=同意
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.DongleInfos">
-            <summary>
-            4G Dongle信息 (dongle_infos) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.DroneBatteryMaintenanceInfo">
-            <summary>
-            飞行器电池保养信息 (drone_battery_maintenance_info) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.MaintainStatus">
-            <summary>
-            保养信息 (maintain_status) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.PositionState">
-            <summary>
-            搜星状态 (position_state) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.EmergencyStopState">
-            <summary>
-            紧急停止按钮状态 (emergency_stop_state) - enum_int: 0=关闭, 1=开启
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.DroneChargeState">
-            <summary>
-            飞行器充电状态 (drone_charge_state) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.BackupBattery">
-            <summary>
-            机场备用电池信息 (backup_battery) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.AlarmState">
-            <summary>
-            机场声光报警状态 (alarm_state) - enum_int: 0=关闭, 1=开启
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.BatteryStoreMode">
-            <summary>
-            电池运行模式 (battery_store_mode) - enum_int: 1=计划模式, 2=待命模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.ActivationTime">
-            <summary>
-            机场激活时间 (activation_time) - int (unix 秒)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Height">
-            <summary>
-            椭球高度 (height) - double (米)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.AlternateLandPoint">
-            <summary>
-            备降点 (alternate_land_point) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.CompatibleStatus">
-            <summary>
-            固件一致性 (compatible_status) - enum_int: 0=不需要升级, 1=需要升级
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.AccTime">
-            <summary>
-            机场累计运行时长 (acc_time) - int (秒)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.FirstPowerOn">
-            <summary>
-            首次上电时间 (first_power_on) - int (毫秒)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Storage">
-            <summary>
-            存储容量 (storage) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.WorkingCurrent">
-            <summary>
-            工作电流 (working_current) - float (毫安)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.WorkingVoltage">
-            <summary>
-            工作电压 (working_voltage) - int (毫伏)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Humidity">
-            <summary>
-            舱内湿度 (humidity) - float (%RH)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Temperature">
-            <summary>
-            舱内温度 (temperature) - float (°C)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.EnvironmentTemperature">
-            <summary>
-            环境温度 (environment_temperature) - float (°C)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.WindSpeed">
-            <summary>
-            风速 (wind_speed) - float (m/s)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Rainfall">
-            <summary>
-            降雨量 (rainfall) - enum_int: 0=无雨, 1=小雨, 2=中雨, 3=大雨
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.LiveCapacity">
-            <summary>
-            网关设备直播能力 (live_capacity) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.LiveStatus">
-            <summary>
-            网关当前整体直播状态推送 (live_status) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.WirelessLink">
-            <summary>
-            图传链路 (wireless_link) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.MediaFileDetail">
-            <summary>
-            媒体文件上传细节 (media_file_detail) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.JobNumber">
-            <summary>
-            机场累计作业次数 (job_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.DroneInDock">
-            <summary>
-            飞行器是否在舱 (drone_in_dock) - enum_int: 0=舱外, 1=舱内
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.NetworkState">
-            <summary>
-            网络状态 (network_state) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.SupplementLightState">
-            <summary>
-            补光灯状态 (supplement_light_state) - enum_int: 0=关闭, 1=打开
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.CoverState">
-            <summary>
-            舱盖状态 (cover_state) - enum_int: 0=关闭, 1=打开, 2=半开, 3=异常
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.SubDevice">
-            <summary>
-            子设备状态 (sub_device) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.FlighttaskStepCode">
-            <summary>
-            机场任务状态 (flighttask_step_code) - enum_int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.ModeCode">
-            <summary>
-            机场状态 (mode_code) - enum_int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.FirmwareUpgradeStatus">
-            <summary>
-            固件升级状态 (firmware_upgrade_status) - enum_int: 0=未升级, 1=升级中
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.FirmwareVersion">
-            <summary>
-            固件版本 (firmware_version) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Latitude">
-            <summary>
-            纬度 (latitude) - double
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DockOsd.Longitude">
-            <summary>
-            经度 (longitude) - double
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.RtcMInfo.MountPoint">
-            <summary>
-            网络 RTK 挂载点信息 (mount_point) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.RtcMInfo.Port">
-            <summary>
-            网络端口信息 (port) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.RtcMInfo.Host">
-            <summary>
-            网络 host 信息 (host) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.RtcMInfo.RtcMDeviceType">
-            <summary>
-            设备类型 (rtcm_device_type) - enum_int: 1=机场
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.RtcMInfo.SourceType">
-            <summary>
-            标定类型 (source_type) - enum_int: 0=未标定, 1=自收敛, 2=手动, 3=网络RTK
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLinkTopo.SecretCode">
-            <summary>
-            加密编码 (secret_code) - array of int (size:28)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLinkTopo.CenterNode">
-            <summary>
-            飞行器对频信息 (center_node) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLinkTopo.LeafNodes">
-            <summary>
-            机场或遥控器对频信息 (leaf_nodes) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CenterNode.SdrId">
-            <summary>
-            扰码信息 (sdr_id) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CenterNode.Sn">
-            <summary>
-            设备sn (sn) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LeafNode.SdrId">
-            <summary>
-            扰码信息 (sdr_id) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LeafNode.Sn">
-            <summary>
-            设备sn (sn) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LeafNode.ControlSourceIndex">
-            <summary>
-            控制源序号 (control_source_index) - int: 1~2
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AirConditioner.AirConditionerState">
-            <summary>
-            机场空调状态 (air_conditioner_state) - enum_int
-            0=空闲, 1=制冷, 2=制热, 3=除湿, 4=制冷退出, 5=制热退出, 6=除湿退出, 7=制冷准备, 8=制热准备, 9=除湿准备
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AirConditioner.SwitchTime">
-            <summary>
-            剩余等待可切换时间 (switch_time) - int (秒)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.Imei">
-            <summary>
-            dongle imei (imei) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.DongleType">
-            <summary>
-            Dongle 类型 (dongle_type) - enum_int: 6=旧, 10=新（eSIM）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.Eid">
-            <summary>
-            dongle eid (eid) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.EsimActivateState">
-            <summary>
-            eSIM 激活状态 (esim_activate_state) - enum_int: 0=未激活, 1=已激活
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.SimCardState">
-            <summary>
-            SIM 卡状态 (sim_card_state) - enum_int: 0=未插入, 1=已插入
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.SimSlot">
-            <summary>
-            SIM 卡槽使能状态 (sim_slot) - enum_int: 0=未知, 1=实体SIM, 2=eSIM
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.EsimInfos">
-            <summary>
-            eSIM 信息 (esim_infos) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DongleInfo.SimInfo">
-            <summary>
-            SIM 卡信息 (sim_info) - struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.EsimInfo.TelecomOperator">
-            <summary>
-            支持的运营商 (telecom_operator) - enum_int: 0=未知, 1=移动, 2=联通, 3=电信
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.EsimInfo.Enabled">
-            <summary>
-            eSIM 使能状态 (enabled) - bool
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.EsimInfo.Iccid">
-            <summary>
-            sim iccid (iccid) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SimInfo.TelecomOperator">
-            <summary>
-            支持的运营商 (telecom_operator) - enum_int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SimInfo.SimType">
-            <summary>
-            SIM 卡类型 (sim_type) - enum_int: 0=未知, 1=普通卡, 2=三网卡
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SimInfo.Iccid">
-            <summary>
-            sim iccid (iccid) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneBatteryMaintenanceInfo.MaintenanceState">
-            <summary>
-            保养状态 (maintenance_state) - enum_int: 0=无需, 1=待保养, 2=正在保养
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneBatteryMaintenanceInfo.MaintenanceTimeLeft">
-            <summary>
-            电池保养剩余时间 (maintenance_time_left) - int (小时)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneBatteryMaintenanceInfo.HeatState">
-            <summary>
-            电池加热保温状态 (heat_state) - enum_int: 0=未加热, 1=加热中, 2=保温中
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneBatteryMaintenanceInfo.Batteries">
-            <summary>
-            电池详细信息 (batteries) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BatteryDetail.CapacityPercent">
-            <summary>
-            电池剩余电量 (capacity_percent) - int: 0~100
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BatteryDetail.Index">
-            <summary>
-            电池序号 (index) - enum_int: 0=左, 1=右
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BatteryDetail.Voltage">
-            <summary>
-            电压 (voltage) - int (mV)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BatteryDetail.Temperature">
-            <summary>
-            温度 (temperature) - float (°C)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MaintainStatus.MaintainStatusArray">
-            <summary>
-            保养信息数组 (maintain_status_array) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MaintainStatusItem.State">
-            <summary>
-            保养状态 (state) - enum_int: 0=无保养, 1=有保养
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MaintainStatusItem.LastMaintainType">
-            <summary>
-            上一次保养类型 (last_maintain_type) - enum_int: 0=无, 17=常规, 18=深度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MaintainStatusItem.LastMaintainTime">
-            <summary>
-            上一次保养时间 (last_maintain_time) - date (秒)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MaintainStatusItem.LastMaintainWorkSorties">
-            <summary>
-            上一次保养时作业架次 (last_maintain_work_sorties) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.PositionState.IsCalibration">
-            <summary>
-            是否标定 (is_calibration) - enum_int: 0=未标定, 1=已标定
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.PositionState.IsFixed">
-            <summary>
-            是否收敛 (is_fixed) - enum_int: 0=未开始, 1=收敛中, 2=成功, 3=失败
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.PositionState.Quality">
-            <summary>
-            搜星档位 (quality) - enum_int: 1~5档, 10=RTK fixed
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.PositionState.GpsNumber">
-            <summary>
-            GPS 搜星数量 (gps_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.PositionState.RtkNumber">
-            <summary>
-            RTK 搜星数量 (rtk_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneChargeState.CapacityPercent">
-            <summary>
-            电量百分比 (capacity_percent) - int: 0~100
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DroneChargeState.State">
-            <summary>
-            充电状态 (state) - enum_int: 0=空闲, 1=充电中
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BackupBattery.Switch">
-            <summary>
-            备用电池开关 (switch) - enum_int: 0=关闭, 1=开启
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BackupBattery.Voltage">
-            <summary>
-            备用电池电压 (voltage) - int (mV)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.BackupBattery.Temperature">
-            <summary>
-            备用电池温度 (temperature) - float (°C)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.Storage.Total">
-            <summary>
-            总容量 (total) - int (KB)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.Storage.Used">
-            <summary>
-            已使用容量 (used) - int (KB)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AlternateLandPoint.Longitude">
-            <summary>
-            经度 (longitude) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AlternateLandPoint.Latitude">
-            <summary>
-            纬度 (latitude) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AlternateLandPoint.SafeLandHeight">
-            <summary>
-            安全高度 (safe_land_height) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AlternateLandPoint.IsConfigured">
-            <summary>
-            是否设置备降点 (is_configured) - enum_int: 0=未设置, 1=已设置
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.AlternateLandPoint.Height">
-            <summary>
-            椭球高度 (height) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveCapacity.AvailableVideoNumber">
-            <summary>
-            可选择推流的码流数量 (available_video_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveCapacity.CoexistVideoNumberMax">
-            <summary>
-            可同时推流的最大码流数量 (coexist_video_number_max) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveCapacity.DeviceList">
-            <summary>
-            可选择的视频设备源 (device_list) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DeviceList.Sn">
-            <summary>
-            飞行器等视频源设备序列号 (sn) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DeviceList.AvailableVideoNumber">
-            <summary>
-            该设备可选择推流的码流数 (available_video_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DeviceList.CoexistVideoNumberMax">
-            <summary>
-            该设备可同时推流的码流数 (coexist_video_number_max) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.DeviceList.CameraList">
-            <summary>
-            该设备上的相机列表 (camera_list) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CameraList.CameraIndex">
-            <summary>
-            相机索引 (camera_index) - text: {type-subtype-gimbalindex}
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CameraList.AvailableVideoNumber">
-            <summary>
-            该相机可选择推流的码流数 (available_video_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CameraList.CoexistVideoNumberMax">
-            <summary>
-            该相机可同时推流的码流数 (coexist_video_number_max) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.CameraList.VideoList">
-            <summary>
-            该相机可选择的码流列表 (video_list) - array of struct
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.VideoList.VideoIndex">
-            <summary>
-            码流索引 (video_index) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.VideoList.VideoType">
-            <summary>
-            码流类型 (video_type) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.VideoList.SwitchableVideoTypes">
-            <summary>
-            支持切换的视频镜头类型 (switchable_video_types) - array of text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveStatus.VideoId">
-            <summary>
-            直播码流标识符 (video_id) - text: {sn}/{camera_index}/{video_index}
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveStatus.VideoType">
-            <summary>
-            视频类型 (video_type) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveStatus.VideoQuality">
-            <summary>
-            直播码流的质量 (video_quality) - enum_int: 0=自适应, 1=流畅, 2=标清, 3=高清, 4=超清
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveStatus.Status">
-            <summary>
-            直播状态 (status) - enum_int: 0=未直播, 1=在直播
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.LiveStatus.ErrorStatus">
-            <summary>
-            错误码 (error_status) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink.DongleNumber">
-            <summary>
-            飞行器上 Dongle 数量 (dongle_number) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink._4GLinkState">
-            <summary>
-            4G 链路连接状态 (4g_link_state) - enum_int: 0=断开, 1=连接
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink.SdrLinkState">
-            <summary>
-            SDR 链路连接状态 (sdr_link_state) - enum_int: 0=断开, 1=连接
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink.LinkWorkmode">
-            <summary>
-            机场的图传链路模式 (link_workmode) - enum_int: 0=SDR, 1=4G融合
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink.SdrQuality">
-            <summary>
-            SDR 信号质量 (sdr_quality) - int: 0~5
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink._4GQuality">
-            <summary>
-            总体 4G 信号质量 (4g_quality) - int: 0~5
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink._4GUavQuality">
-            <summary>
-            天端 4G 信号质量 (4g_uav_quality) - int: 0~5
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink._4GGndQuality">
-            <summary>
-            地端 4G 信号质量 (4g_gnd_quality) - int: 0~5
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink.SdrFreqBand">
-            <summary>
-            SDR 频段 (sdr_freq_band) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.WirelessLink._4GFreqBand">
-            <summary>
-            4G 频段 (4g_freq_band) - float
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.MediaFileDetail.RemainUpload">
-            <summary>
-            媒体文件上传细节 (remain_upload) - int
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.NetworkState.Type">
-            <summary>
-            网络类型 (type) - enum_int: 1=4G, 2=以太网
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.NetworkState.Quality">
-            <summary>
-            网络质量 (quality) - enum_int: 0~5
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.NetworkState.Rate">
-            <summary>
-            网络速率 (rate) - float (KB/s)
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SubDevice.DeviceSn">
-            <summary>
-            子设备序列号 (device_sn) - text
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SubDevice.DeviceModelKey">
-            <summary>
-            子设备枚举值 (device_model_key) - text: {domain-type-subtype}
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SubDevice.DeviceOnlineStatus">
-            <summary>
-            机场停机坪上的飞行器开机状态 (device_online_status) - enum_int: 0=关机, 1=开机
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Module.Wayline.Dto.SubDevice.DevicePaired">
-            <summary>
-            机场停机坪上的飞行器是否与机场对频 (device_paired) - enum_int: 0=未对频, 1=已对频
             </summary>
         </member>
         <member name="T:Dji.Application.JuAI.AppUserService">

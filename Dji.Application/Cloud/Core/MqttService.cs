@@ -133,27 +133,45 @@ internal class MqttService : IMqttService, IDisposable
     private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
     {
         var topic = e.ApplicationMessage.Topic;
-        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload).ToObject<CloudMqData<dynamic>>();
+        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+        var cloudMqData = payload.ToObject<CloudMqData<dynamic>>();
+        Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
         var matched = _moduleManager._modules
             .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
-            .WhereIF(payload.Method.IsNullOrEmpty(), s => s.Method.Equals(payload.Method))
-            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 10 ? s.Type == 1 : s.Type == 2)
+            .WhereIF(!cloudMqData.Method.IsNullOrEmpty(), s => s.Method.Equals(cloudMqData.Method))
+            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 16 ? s.Type == 2 : s.Type == 1)
             .ToList();
         if (matched.Count == 0)
             return;
+        else if (matched.Count > 1)
+        {
+            Console.WriteLine($"[MQTT] 订阅了多个重复的方法 {topic}", topic);
+        }
 
         foreach (var sub in matched)
         {
             try
             {
+                if (topic.IndexOf("1581F6Q8D249V00G12VE") > 0)
+                {
+                    Console.WriteLine("无人机");
+                }
                 // 构造 CloudMqData<T>
                 var cloudDataType = typeof(CloudMqData<>).MakeGenericType(sub.DataType);
                 // 替换以下两行：
                 // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
                 // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
-                //var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
-                // 调用方法
-                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [payload])!;
+                var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
+                if (cloudMqData.Gateway.IsNullOrEmpty())
+                {
+                    var index = topic.LastIndexOf('/');
+                    var secondIndex = topic.Substring(0, index).LastIndexOf("/");
+
+                    cloudMqData.Gateway = topic.Substring(secondIndex + 1, index - secondIndex - 1);
+                    data.GetType().GetProperty("Gateway").SetValue(data, cloudMqData.Gateway);
+                }
+                data.GetType().GetProperty("Topic").SetValue(data, topic);
+                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
                 await task;
             }
             catch (Exception ex)

@@ -10,7 +10,6 @@
 using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Device.Dto;
 using Dji.Application.Cloud.Entity;
-using Dji.Application.Cloud.Wayline.Dto;
 
 namespace Dji.Application.Cloud.Device;
 internal class DeviceService(ILogger<DeviceService> logger) : BaseModuleService
@@ -40,10 +39,10 @@ internal class DeviceService(ILogger<DeviceService> logger) : BaseModuleService
     /// </summary>
     /// <param name="data"></param>
     /// <returns></returns>
-    [MqttSubscribe(Topics.ThingProductOsd)]
+    [MqttSubscribe(Topics.ThingProductStatus, TopicMethods.UpdateTopo)]
     public async Task DeviceManageAsync(CloudMqData<UpdateTopoDevice> data)
     {
-        Console.WriteLine("{0}坐标：{1}，{2}", data.Gateway);
+        Console.WriteLine("{0}", data.Gateway);
         await Task.Delay(1);
     }
 }

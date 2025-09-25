@@ -12,10 +12,13 @@ public static class Topics
 {
     public const string ThingProductOsd = "thing/product/+/osd";
     public const string ThingProductStatus = "sys/product/+/status";
+    public const string ThingProductRequests = "thing/product/+/requests";
+    public const string ThingProductCommand = "thing/product/+/command";
 }
 
 public static class TopicMethods
 {
-
+    public const string UpdateTopo = "update_topo";
+    public const string AirportBindStatus = "airport_bind_status";
 }
 

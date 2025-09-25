@@ -62,8 +62,7 @@ public static class MqttSetup
                 var parameters = method.GetParameters();
 
                 if (parameters.Length != 1)
-                    throw new ArgumentException($"MQTT 处理方法 {method.Name} 必须只接收一个参数：CloudMqData<T>");
-
+                    throw new ArgumentException($"MQTT 处理方法 参数数量不正确");
                 var paramType = parameters[0].ParameterType;
                 if (!paramType.IsGenericType || paramType.GetGenericTypeDefinition() != typeof(CloudMqData<>))
                     throw new ArgumentException($"MQTT 处理方法 {method.Name} 的参数必须是 CloudMqData<T>");
