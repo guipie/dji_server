@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 
 /// <summary>
-/// DJI Dock 2 属性数据模型，用于 CloudMqData&lt;DockOsd&gt;
+/// 机场OSD信息
 /// </summary>
 public class DockOsd
 {

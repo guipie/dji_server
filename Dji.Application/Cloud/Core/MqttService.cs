@@ -103,6 +103,7 @@ internal class MqttService : IMqttService, IDisposable
     {
         _logger.LogError("MQTT 断开连接: {Error}", e.Exception);
     }
+<<<<<<< HEAD
 
     public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
     {
@@ -171,17 +172,96 @@ internal class MqttService : IMqttService, IDisposable
                 //payload.Data = data;
                 // 调用方法
                 var task = (Task)item.MethodInfo.Invoke(item.Instance, [cloudData])!;
+=======
+
+    public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
+    {
+        var json = payload.ToJson();
+        var message = new MqttApplicationMessageBuilder()
+            .WithTopic(topic)
+            .WithPayload(json)
+            .WithQualityOfServiceLevel((MqttQualityOfServiceLevel)qos)
+            .Build();
+
+        await _client.PublishAsync(message, ct);
+    }
+
+    public async Task SubscribeAsync(string topic, CancellationToken ct = default)
+    {
+        if (_client.IsConnected)
+        {
+            var res = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).Build(), ct);
+            _logger.LogDebug("订阅主题: {Topic}", topic);
+        }
+    }
+
+    public void RegisterHandler<T>(string topicPattern, Func<T, Task> handler) where T : class
+    {
+        _handlers[topicPattern] = handler;
+    }
+
+    private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
+    {
+        var topic = e.ApplicationMessage.Topic;
+        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+        var cloudMqData = payload.ToObject<CloudMqData<dynamic>>();
+        Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
+        var matched = _moduleManager._modules
+            .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
+            .WhereIF(!cloudMqData.Method.IsNullOrEmpty(), s => s.Method.Equals(cloudMqData.Method))
+            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 16 ? s.Type == 2 : s.Type == 1)
+            .ToList();
+        if (matched.Count == 0)
+            return;
+        else if (matched.Count > 1)
+        {
+            Console.WriteLine($"[MQTT] 订阅了多个重复的方法 {topic}", topic);
+        }
+
+        foreach (var sub in matched)
+        {
+            try
+            {
+                if (topic.IndexOf("1581F6Q8D249V00G12VE") > 0)
+                {
+                    Console.WriteLine("无人机");
+                }
+                // 构造 CloudMqData<T>
+                var cloudDataType = typeof(CloudMqData<>).MakeGenericType(sub.DataType);
+                // 替换以下两行：
+                // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
+                // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
+                var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
+                if (cloudMqData.Gateway.IsNullOrEmpty())
+                {
+                    var index = topic.LastIndexOf('/');
+                    var secondIndex = topic.Substring(0, index).LastIndexOf("/");
+
+                    cloudMqData.Gateway = topic.Substring(secondIndex + 1, index - secondIndex - 1);
+                    data.GetType().GetProperty("Gateway").SetValue(data, cloudMqData.Gateway);
+                }
+                data.GetType().GetProperty("Topic").SetValue(data, topic);
+                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
+>>>>>>> d2f523d79261c8c09d05866fe056433422042b3e
                 await task;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"[MQTT] 处理失败 {topic}: {ex.InnerException?.Message ?? ex.Message}");
             }
+<<<<<<< HEAD
         }
         //await _router.RouteAsync(topic, payload, CancellationToken.None);
     }
 
     private string MatchSn(string topic, string pattern = @"/([^/]+)/(?:osd|state)")
+=======
+        }
+        //await _router.RouteAsync(topic, payload, CancellationToken.None);
+    }
+
+    private string MatchSn(string topic, string pattern = @"/([^/]+)/(?:osd|state)")
+>>>>>>> d2f523d79261c8c09d05866fe056433422042b3e
     {
         Match match = Regex.Match(topic, pattern);
         if (match.Success)

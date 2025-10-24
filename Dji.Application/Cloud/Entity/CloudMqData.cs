@@ -16,6 +16,7 @@ internal class CloudMqData<T>
     public long TimeStamp { get; set; }
 
     public string Gateway { get; set; }
+    public string Topic { get; set; }
 
     public T Data { get; set; }
 }
