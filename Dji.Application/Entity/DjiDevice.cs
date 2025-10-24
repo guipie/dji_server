@@ -8,6 +8,9 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 namespace Dji.Application.Entity;
+//[SugarIndex("index_Order_Id",nameof(Order.id),OrderByType.Asc)]     //普通索引--非聚集索引
+//[SugarIndex("index_device_sn", nameof(DjiDevice.Sn),OrderByType.Asc, nameof(DjiDevice.Name), OrderByType.Asc,true)]  //复合索引
+[SugarIndex("index_Order_OrderDate", nameof(Sn), OrderByType.Asc, true)]  //唯一索引(true 表示唯一索引)
 [SugarTable("DjiDevice", "设备表")]
 public class DjiDevice : EntityAppBase
 {
@@ -15,27 +18,35 @@ public class DjiDevice : EntityAppBase
     [SugarColumn(ColumnDescription = "sn号", Length = 20)]
     [Required]
     public string Sn { get; set; }
+
+
+
     [SugarColumn(ColumnDescription = "设备推送名称", Length = 20)]
     [Required]
     public string Name { get; set; }
 
+    [SugarColumn(ColumnDescription = "空间ID", Length = 50)]
+    public string WorkspaceId { get; set; }
+
+
+    [SugarColumn(ColumnDescription = "父SN号", Length = 20)]
+    public string ParentSn { get; set; }
+
+
     [SugarColumn(ColumnDescription = "昵称", Length = 20, IsNullable = true)]
     public string Nick { get; set; }
-
-    [SugarColumn(ColumnDescription = "空间ID", Length = 20, IsNullable = true)]
-    public string WorkspaceId { get; set; }
 
     [SugarColumn(ColumnDescription = "网关设备的命名空间", Length = 20, IsNullable = true)]
     public string Domain { get; set; }
 
-    [SugarColumn(ColumnDescription = "网关设备的产品类型\t", Length = 20, IsNullable = true)]
+    [SugarColumn(ColumnDescription = "网关设备的产品类型", Length = 20, IsNullable = true)]
     public int Type { get; set; }
 
     [SugarColumn(ColumnDescription = "网关子设备的产品子类型", Length = 20, IsNullable = true)]
     public int SubType { get; set; }
 
 
-    [SugarColumn(ColumnDescription = "连接网关设备的通道索引\t", Length = 20, IsNullable = true)]
+    [SugarColumn(ColumnDescription = "连接网关设备的通道索引", Length = 20, IsNullable = true)]
     public string Index { get; set; }
 
 

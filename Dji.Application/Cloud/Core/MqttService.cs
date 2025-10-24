@@ -136,24 +136,41 @@ internal class MqttService : IMqttService, IDisposable
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload).ToObject<CloudMqData<dynamic>>();
         var matched = _moduleManager._modules
             .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
-            .WhereIF(payload.Method.IsNullOrEmpty(), s => s.Method.Equals(payload.Method))
-            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 10 ? s.Type == 1 : s.Type == 2)
+            .WhereIF(!payload.Method.IsNullOrEmpty(), s => s.Method.Equals(payload.Method))
+            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 15 ? s.Type == 1 : s.Type == 2)
             .ToList();
         if (matched.Count == 0)
             return;
 
-        foreach (var sub in matched)
+        foreach (var item in matched)
         {
             try
             {
                 // 构造 CloudMqData<T>
-                var cloudDataType = typeof(CloudMqData<>).MakeGenericType(sub.DataType);
+                var cloudDataType = typeof(CloudMqData<>).MakeGenericType(item.DataType);
                 // 替换以下两行：
                 // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
                 // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
-                //var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
+                // 替换此行：
+                // payload.Data.toString().ToObject<cloudDataType>();
+
+                // 使用反射和 JsonConvert 进行反序列化
+                var dataJson = payload.Data.ToString();
+                var data = JsonConvert.DeserializeObject(dataJson, item.DataType, settings);
+
+                // 构造 CloudMqData<T> 实例
+                var cloudData = Activator.CreateInstance(cloudDataType);
+                foreach (var prop in cloudDataType.GetProperties())
+                {
+                    var value = typeof(CloudMqData<dynamic>).GetProperty(prop.Name)?.GetValue(payload);
+                    if (prop.Name == "Data")
+                        prop.SetValue(cloudData, data);
+                    else
+                        prop.SetValue(cloudData, value);
+                }
+                //payload.Data = data;
                 // 调用方法
-                var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [payload])!;
+                var task = (Task)item.MethodInfo.Invoke(item.Instance, [cloudData])!;
                 await task;
             }
             catch (Exception ex)

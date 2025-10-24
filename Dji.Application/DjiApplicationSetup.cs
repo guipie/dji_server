@@ -16,7 +16,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace Dji.Application;
-public static class MqttSetup
+public static class DjiApplicationSetup
 {
 
     public static IServiceCollection AddMqttSetup(this IServiceCollection services)

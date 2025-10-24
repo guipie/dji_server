@@ -17,6 +17,4 @@ internal class WaylineService : BaseModuleService
     {
         _mqttService = mqttService;
     }
-
-
 }

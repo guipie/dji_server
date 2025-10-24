@@ -10,7 +10,6 @@
 using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Device.Dto;
 using Dji.Application.Cloud.Entity;
-using Dji.Application.Cloud.Wayline.Dto;
 
 namespace Dji.Application.Cloud.Device;
 internal class DeviceService(ILogger<DeviceService> logger) : BaseModuleService
@@ -24,14 +23,14 @@ internal class DeviceService(ILogger<DeviceService> logger) : BaseModuleService
     public async Task DockOsdAsync(CloudMqData<DockOsd> data)
     {
         _logger.LogInformation("{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
-        Console.WriteLine("{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
+        Console.WriteLine("机场{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
         await Task.Delay(1);
     }
     //无人机osd数据
     [MqttSubscribe(Topics.ThingProductOsd, 2)]
     public async Task DroneOsdAsync(CloudMqData<DockOsd> data)
     {
-        Console.WriteLine("{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
+        Console.WriteLine("无人机{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
         await Task.Delay(1);
     }
 

@@ -49,13 +49,13 @@ public class UpdateTopoDevice
     /// <summary>
     /// 子设备列表
     /// </summary>
-    public List<SubDevice> SubDevices { get; set; }
+    public List<UpdateTopoSubDevice> SubDevices { get; set; }
 }
 
 /// <summary>
 /// 子设备实体类
 /// </summary>
-public class SubDevice
+public class UpdateTopoSubDevice
 {
     /// <summary>
     /// 子设备序列号（SN）
