@@ -415,7 +415,7 @@ public class SysCodeGenService : IDynamicApiController, ITransient
             var menuType0 = new SysMenu
             {
                 Pid = 0,
-                Title = busName + "管理",
+                Title = busName,
                 Type = MenuTypeEnum.Dir,
                 Icon = "robot",
                 Path = "/" + className.ToLower(),
@@ -448,7 +448,7 @@ public class SysCodeGenService : IDynamicApiController, ITransient
         var menuType1 = new SysMenu
         {
             Pid = pid,
-            Title = busName + "管理",
+            Title = busName,
             Name = className[..1].ToLower() + className[1..],
             Type = MenuTypeEnum.Menu,
             Path = pPath + "/" + className.ToLower(),

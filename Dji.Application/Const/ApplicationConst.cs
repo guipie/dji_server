@@ -18,4 +18,5 @@ public class ApplicationConst
     /// API分组名称
     /// </summary>
     public const string DjiCloud = "大疆上云接口";
+    public const string GroupName = "大疆业务接口";
 }

@@ -71,7 +71,7 @@ public class Startup : AppStartup
             setting.DateTimeZoneHandling = DateTimeZoneHandling.Local;
             setting.DateFormatString = "yyyy-MM-dd HH:mm:ss"; // 时间格式化
             setting.ReferenceLoopHandling = ReferenceLoopHandling.Ignore; // 忽略循环引用
-            setting.Converters.Add(new StringEnumConverter(new CamelCaseNamingStrategy(), true));
+            //setting.Converters.Add(new StringEnumConverter(new CamelCaseNamingStrategy(), true));枚举返回字符串
             // setting.ContractResolver = new CamelCasePropertyNamesContractResolver(); // 解决动态对象属性名大写
             // setting.NullValueHandling = NullValueHandling.Ignore; // 忽略空值
             // setting.Converters.AddLongTypeConverters(); // long转string（防止js精度溢出） 超过16位开启
@@ -147,7 +147,7 @@ public class Startup : AppStartup
         // 控制台logo
         services.AddConsoleLogo();
 
-        services.AddMqttSetup();
+        services.AddMqttSetup(); 
 
     }
 

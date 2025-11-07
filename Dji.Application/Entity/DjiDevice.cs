@@ -15,21 +15,18 @@ namespace Dji.Application.Entity;
 public class DjiDevice : EntityAppBase
 {
 
-    [SugarColumn(ColumnDescription = "sn号", Length = 20)]
+    [SugarColumn(ColumnDescription = "sn号", Length = 20, IsTreeKey = true)]
     [Required]
     public string Sn { get; set; }
 
-
-
-    [SugarColumn(ColumnDescription = "设备推送名称", Length = 20)]
-    [Required]
-    public string Name { get; set; }
-
-    [SugarColumn(ColumnDescription = "空间ID", Length = 50)]
+    [SugarColumn(ColumnDescription = "空间ID", Length = 50, IsNullable = true)]
     public string WorkspaceId { get; set; }
 
+    [SugarColumn(ColumnDescription = "设备模型，型号", Length = 20, IsNullable = true)]
+    public string Model { get; set; }
 
-    [SugarColumn(ColumnDescription = "父SN号", Length = 20)]
+
+    [SugarColumn(ColumnDescription = "父SN号", Length = 20, IsNullable = true)]
     public string ParentSn { get; set; }
 
 
@@ -37,13 +34,13 @@ public class DjiDevice : EntityAppBase
     public string Nick { get; set; }
 
     [SugarColumn(ColumnDescription = "网关设备的命名空间", Length = 20, IsNullable = true)]
-    public string Domain { get; set; }
+    public DomainEnum? Domain { get; set; }
 
     [SugarColumn(ColumnDescription = "网关设备的产品类型", Length = 20, IsNullable = true)]
-    public int Type { get; set; }
+    public int? Type { get; set; }
 
     [SugarColumn(ColumnDescription = "网关子设备的产品子类型", Length = 20, IsNullable = true)]
-    public int SubType { get; set; }
+    public int? SubType { get; set; }
 
 
     [SugarColumn(ColumnDescription = "连接网关设备的通道索引", Length = 20, IsNullable = true)]
@@ -60,13 +57,13 @@ public class DjiDevice : EntityAppBase
     public string Desc { get; set; }
 
     [SugarColumn(ColumnDescription = "经度", IsNullable = true)]
-    public float Longitude { get; set; }
+    public double Longitude { get; set; }
 
     [SugarColumn(ColumnDescription = "维度", IsNullable = true)]
-    public float Latitude { get; set; }
+    public double Latitude { get; set; }
 
     [SugarColumn(ColumnDescription = "高度", IsNullable = true)]
-    public float Altitude { get; set; }
+    public double Altitude { get; set; }
 
 
     [SugarColumn(ColumnDescription = "绑定时间", IsNullable = true)]
@@ -78,4 +75,7 @@ public class DjiDevice : EntityAppBase
     [SugarColumn(ColumnDescription = "头像", Length = 200, IsNullable = true)]
     public string AvatarUrl { get; set; }
 
+
+    [SugarColumn(IsIgnore = true)]
+    public IList<DjiDevice> Children { get; set; }
 }

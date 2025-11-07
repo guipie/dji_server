@@ -82,10 +82,11 @@
 
   <ItemGroup>
     <PackageReference Include="MQTTnet" Version="5.0.1.1416" />
+    <PackageReference Include="NetTopologySuite" Version="2.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Cloud\Wayline\Dto\" />
+    <Folder Include="Cloud\Dto\Wayline\" />
   </ItemGroup>
 
 </Project>

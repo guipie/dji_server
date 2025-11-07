@@ -10,7 +10,7 @@
 using AspNetCoreRateLimit;
 using Dji.Application.Option;
 using Dji.Core;
-using Dji.Core.JuAI;
+using Dji.Application;
 using Furion;
 using Microsoft.Extensions.DependencyInjection;
 

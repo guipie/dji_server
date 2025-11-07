@@ -15,9 +15,11 @@ public class WorkspaceSeedData : ISqlSugarEntitySeedData<DjiWorkspace>
     public IEnumerable<DjiWorkspace> HasData()
     {
         return [
-         new DjiWorkspace(){Id=1,TenantId=SqlSugarConst.MainConfigId.ToLong(), WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228070", WorkspaceName="SZ",PlatformName="苏州",WorkspaceBindCode="sz"},
-         new DjiWorkspace(){Id=2,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280qt", WorkspaceName="QT",PlatformName="其他",WorkspaceBindCode="qtcode"},
-         new DjiWorkspace(){Id=3,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228069", WorkspaceName="W",PlatformName="武汉",WorkspaceBindCode="qwe"},
+         new DjiWorkspace(){Id=1,TenantId=SqlSugarConst.MainConfigId.ToLong(), WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228069", WorkspaceName="W",NickName="武汉",WorkspaceBindCode="qwe"},
+         new DjiWorkspace(){Id=2,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228070", WorkspaceName="QT",NickName="苏州",WorkspaceBindCode="sz"},
+         new DjiWorkspace(){Id=3,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280qt", WorkspaceName="QT",NickName="荆江",WorkspaceBindCode="qtcode"},
+         new DjiWorkspace(){Id=4,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280wh", WorkspaceName="WH",NickName="芜湖",WorkspaceBindCode="whcode"},
+         new DjiWorkspace(){Id=5,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280cq", WorkspaceName="CQ",NickName="重庆",WorkspaceBindCode="cqcode"},
         ];
     }
 }

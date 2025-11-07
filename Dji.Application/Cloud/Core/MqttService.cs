@@ -18,6 +18,7 @@ using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using static SKIT.FlurlHttpClient.Wechat.Api.Models.TCBGetCallbackConfigResponse.Types.Data.Types.FunctionConfig.Types;
 
 namespace Dji.Application.Cloud.Core;
 /// <summary>
@@ -29,10 +30,10 @@ internal class MqttService : IMqttService, IDisposable
 {
     private readonly IMqttClient _client; // 注意类型是 IMqttClient
     private readonly ILogger<MqttService> _logger;
-    private readonly ITopicRouter _router;
     private readonly MqttOptions _mqttOptions;
     private readonly Dictionary<string, Delegate> _handlers = new();
     private readonly ModuleManager _moduleManager;
+    private readonly SysCacheService _cache;
     private static readonly JsonSerializerSettings settings = new JsonSerializerSettings
     {
         ContractResolver = new DefaultContractResolver
@@ -46,7 +47,7 @@ internal class MqttService : IMqttService, IDisposable
 
     public bool IsConnected => _client.IsConnected;
 
-    public MqttService(ILogger<MqttService> logger, IMqttClient client, ITopicRouter router, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager)
+    public MqttService(ILogger<MqttService> logger, IMqttClient client, SysCacheService sysCacheService, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager)
     {
         _logger = logger;
         _client = client;
@@ -54,9 +55,19 @@ internal class MqttService : IMqttService, IDisposable
         _client.ConnectedAsync += OnConnectedAsync;
         // 注册消息接收回调
         _client.ApplicationMessageReceivedAsync += OnMqttMessageReceived;
-        _router = router;
+        _client.DisconnectedAsync += async e =>
+        {
+            while (client == null || client.IsConnected == false)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Error.WriteLine("MQTT 已断开连接，正在尝试重新连接...");
+                Thread.Sleep(5 * 1000);
+                await StartAsync();
+            }
+        };
         _mqttOptions = mqttOptions.Value;
         _moduleManager = moduleManager;
+        _cache = sysCacheService;
     }
 
     public async Task StartAsync()
@@ -70,10 +81,14 @@ internal class MqttService : IMqttService, IDisposable
                   .WithCleanSession(true)
                   .Build();
             var result = await _client.ConnectAsync(options, CancellationToken.None);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("MQTT 已连接到 {0}:{1},Resutlt:{2}", _mqttOptions.Server, _mqttOptions.Port, result);
             _logger.LogInformation("MQTT 已连接到 {Host}:{Port},Resutlt:{result}", _mqttOptions.Server, _mqttOptions.Port, result);
         }
         catch (Exception ex)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Error.WriteLine("MQTT 启动失败,Error:{0}", ex.StackTrace);
             _logger.LogError(ex, "MQTT 启动失败");
             return;
         }
@@ -103,8 +118,6 @@ internal class MqttService : IMqttService, IDisposable
     {
         _logger.LogError("MQTT 断开连接: {Error}", e.Exception);
     }
-<<<<<<< HEAD
-
     public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
     {
         var json = payload.ToJson();
@@ -131,137 +144,68 @@ internal class MqttService : IMqttService, IDisposable
         _handlers[topicPattern] = handler;
     }
 
-    private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
-    {
-        var topic = e.ApplicationMessage.Topic;
-        var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload).ToObject<CloudMqData<dynamic>>();
-        var matched = _moduleManager._modules
-            .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
-            .WhereIF(!payload.Method.IsNullOrEmpty(), s => s.Method.Equals(payload.Method))
-            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 15 ? s.Type == 1 : s.Type == 2)
-            .ToList();
-        if (matched.Count == 0)
-            return;
-
-        foreach (var item in matched)
-        {
-            try
-            {
-                // 构造 CloudMqData<T>
-                var cloudDataType = typeof(CloudMqData<>).MakeGenericType(item.DataType);
-                // 替换以下两行：
-                // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
-                // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
-                // 替换此行：
-                // payload.Data.toString().ToObject<cloudDataType>();
-
-                // 使用反射和 JsonConvert 进行反序列化
-                var dataJson = payload.Data.ToString();
-                var data = JsonConvert.DeserializeObject(dataJson, item.DataType, settings);
-
-                // 构造 CloudMqData<T> 实例
-                var cloudData = Activator.CreateInstance(cloudDataType);
-                foreach (var prop in cloudDataType.GetProperties())
-                {
-                    var value = typeof(CloudMqData<dynamic>).GetProperty(prop.Name)?.GetValue(payload);
-                    if (prop.Name == "Data")
-                        prop.SetValue(cloudData, data);
-                    else
-                        prop.SetValue(cloudData, value);
-                }
-                //payload.Data = data;
-                // 调用方法
-                var task = (Task)item.MethodInfo.Invoke(item.Instance, [cloudData])!;
-=======
-
-    public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
-    {
-        var json = payload.ToJson();
-        var message = new MqttApplicationMessageBuilder()
-            .WithTopic(topic)
-            .WithPayload(json)
-            .WithQualityOfServiceLevel((MqttQualityOfServiceLevel)qos)
-            .Build();
-
-        await _client.PublishAsync(message, ct);
-    }
-
-    public async Task SubscribeAsync(string topic, CancellationToken ct = default)
-    {
-        if (_client.IsConnected)
-        {
-            var res = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).Build(), ct);
-            _logger.LogDebug("订阅主题: {Topic}", topic);
-        }
-    }
-
-    public void RegisterHandler<T>(string topicPattern, Func<T, Task> handler) where T : class
-    {
-        _handlers[topicPattern] = handler;
-    }
 
     private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
     {
         var topic = e.ApplicationMessage.Topic;
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
         var cloudMqData = payload.ToObject<CloudMqData<dynamic>>();
-        Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
+        //Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
         var matched = _moduleManager._modules
             .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
             .WhereIF(!cloudMqData.Method.IsNullOrEmpty(), s => s.Method.Equals(cloudMqData.Method))
-            .WhereIF(topic.EndsWith("state") || topic.EndsWith("osd"), s => MatchSn(topic).Length > 16 ? s.Type == 2 : s.Type == 1)
+            .WhereIF(IsSameTopic(topic), s => s.Domain == (MatchSn(topic).IsDrone() ? DomainEnum.Drone : DomainEnum.Dock))
             .ToList();
         if (matched.Count == 0)
             return;
         else if (matched.Count > 1)
         {
             Console.WriteLine($"[MQTT] 订阅了多个重复的方法 {topic}", topic);
+            _logger.LogError($"[MQTT] 订阅了多个重复的方法 {topic}", topic);
         }
 
         foreach (var sub in matched)
         {
             try
             {
-                if (topic.IndexOf("1581F6Q8D249V00G12VE") > 0)
-                {
-                    Console.WriteLine("无人机");
-                }
                 // 构造 CloudMqData<T>
                 var cloudDataType = typeof(CloudMqData<>).MakeGenericType(sub.DataType);
                 // 替换以下两行：
                 // var data = payload.ToObject<ClientErrorData<cloudDataType>>();
                 // System.Text.Json.JsonSerializer.Deserialize(payload, cloudDataType, JsonOptions);
                 var data = JsonConvert.DeserializeObject(payload, cloudDataType, settings);
-                if (cloudMqData.Gateway.IsNullOrEmpty())
+                if (cloudMqData.Gateway.IsNullOrEmpty() || IsSameTopic(topic))
                 {
                     var index = topic.LastIndexOf('/');
-                    var secondIndex = topic.Substring(0, index).LastIndexOf("/");
+                    var secondIndex = topic[..index].LastIndexOf('/');
 
-                    cloudMqData.Gateway = topic.Substring(secondIndex + 1, index - secondIndex - 1);
-                    data.GetType().GetProperty("Gateway").SetValue(data, cloudMqData.Gateway);
+                    var sn = topic.Substring(secondIndex + 1, index - secondIndex - 1);
+                    if(cloudMqData.Gateway.IsNullOrEmpty())
+                        data.GetType().GetProperty("Gateway").SetValue(data, sn);
+                    if(IsSameTopic(topic))
+                        data.GetType().GetProperty("DroneSn").SetValue(data, sn);
+
                 }
                 data.GetType().GetProperty("Topic").SetValue(data, topic);
                 var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
->>>>>>> d2f523d79261c8c09d05866fe056433422042b3e
+                if (topic.EndsWith("_reply"))
+                {
+                    Console.WriteLine($"[MQTT_REPLY] 缓存回复消息,topic: {topic},result:{data.ToJson()}");
+                    _cache.Set(cloudMqData.Bid.Reply(), data, TimeSpan.FromSeconds(30));
+                }
                 await task;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[MQTT] 处理失败 {topic}: {ex.InnerException?.Message ?? ex.Message}");
+                Console.WriteLine($"[MQTT] 处理失败 {topic}: {ex.InnerException?.Message ?? ex.Message},track:{ex.StackTrace}");
+                _logger.LogError($"[MQTT] 处理失败 {topic}: {ex.InnerException?.Message ?? ex.Message},track:{ex.StackTrace}");
             }
-<<<<<<< HEAD
         }
         //await _router.RouteAsync(topic, payload, CancellationToken.None);
     }
 
-    private string MatchSn(string topic, string pattern = @"/([^/]+)/(?:osd|state)")
-=======
-        }
-        //await _router.RouteAsync(topic, payload, CancellationToken.None);
-    }
 
     private string MatchSn(string topic, string pattern = @"/([^/]+)/(?:osd|state)")
->>>>>>> d2f523d79261c8c09d05866fe056433422042b3e
     {
         Match match = Regex.Match(topic, pattern);
         if (match.Success)
@@ -269,6 +213,10 @@ internal class MqttService : IMqttService, IDisposable
             return match.Groups[1].Value;
         }
         return "";
+    }
+    private bool IsSameTopic(string topic)
+    {
+        return topic.EndsWith("/osd") || topic.EndsWith("/state") || topic.EndsWith("/property/set_reply");
     }
 
     public void Dispose() => _client?.Dispose();

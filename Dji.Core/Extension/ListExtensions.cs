@@ -26,4 +26,13 @@ public static class ListExtensions
             await action(value);
         }
     }
+    public static bool IsEmptyList<T>(this IEnumerable<T> source)
+    {
+        return source == null || !source.Any();
+    }
+    public static IEnumerable<T> IsEmptyDefault<T>(this IEnumerable<T> source)
+    {
+        if (!IsEmptyList(source)) return source;
+        return [];
+    }
 }

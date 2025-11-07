@@ -1,7 +1,7 @@
 ﻿namespace Dji.Application.JuAI;
 
 /// <summary>
-/// 聚AI用户输出参数
+/// 大疆上云用户输出参数
 /// </summary>
 public class AppUserOutput
 {

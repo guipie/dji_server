@@ -23,7 +23,7 @@ public class SqlSugarRepository<T> : SimpleClient<T> where T : class, new()
         base.Context = iTenant.GetConnectionScope(SqlSugarConst.MainConfigId);
 
         // 若实体贴有多库特性，则返回指定库连接
-        if (typeof(T).IsDefined(typeof(TenantAttribute), false))
+        if (typeof(T).IsDefined(typeof(TenantAttribute), true))
         {
             base.Context = iTenant.GetConnectionScopeWithAttr<T>();
             return;

@@ -2118,6 +2118,19 @@
           }
         }
       },
+      "NetTopologySuite/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NewLife.Core/11.0.2024.1101": {
         "type": "package",
         "compile": {
@@ -7585,6 +7598,22 @@
         "mysqlconnector.nuspec"
       ]
     },
+    "NetTopologySuite/2.6.0": {
+      "sha512": "1B1OTacTd4QtFyBeuIOcThwSSLUdRZU3bSFIwM8vk36XiZlBMi3K36u74e4OqwwHRHUuJC1PhbDx4hyI266X1Q==",
+      "type": "package",
+      "path": "nettopologysuite/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "lib/netstandard2.1/NetTopologySuite.dll",
+        "lib/netstandard2.1/NetTopologySuite.xml",
+        "nettopologysuite.2.6.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
     "NewLife.Core/11.0.2024.1101": {
       "sha512": "hZ4dKk7lxOmDG+wZYKSaCSBZphEc+NFTq0crMXdkgdGRIRfvZGsJJ4TXoI7a3Qa22FxeoEDKxbb41qjiJU57CQ==",
       "type": "package",
@@ -11961,7 +11990,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Dji.Core >= 1.0.0",
-      "MQTTnet >= 5.0.1.1416"
+      "MQTTnet >= 5.0.1.1416",
+      "NetTopologySuite >= 2.6.0"
     ]
   },
   "packageFolders": {
@@ -12021,6 +12051,10 @@
           "MQTTnet": {
             "target": "Package",
             "version": "[5.0.1.1416, )"
+          },
+          "NetTopologySuite": {
+            "target": "Package",
+            "version": "[2.6.0, )"
           }
         },
         "imports": [

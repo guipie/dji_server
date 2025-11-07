@@ -19,7 +19,7 @@ global using System;
 global using System.Collections.Generic;
 global using System.ComponentModel.DataAnnotations;
 global using System.Threading.Tasks;
-global using Dji.Core.JuAI;
+global using Dji.Application;
 
 global using Newtonsoft.Json;
 global using System.ComponentModel;
@@ -28,3 +28,10 @@ global using Furion.ConfigurableOptions;
 
 global using Microsoft.Extensions.Logging;
 global using System.Threading;
+global using Mapster;
+
+global using Dji.Application.Entity;
+global using Dji.Application.Util;
+global using Dji.Core.Service;
+global using NewLife;
+global using Dji.Application.Cloud.CloudAttribute;

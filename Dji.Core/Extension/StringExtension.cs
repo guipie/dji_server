@@ -50,4 +50,10 @@ public static partial class StringExtension
         Random random = new(ranInt);
         return random.Next(int.Parse("1".PadRight(length - 1, '0')), int.Parse("9".PadLeft(length - 1, '9')));
     }
+
+    public static string IsNullGet(this string val, string targetVal)
+    {
+        if (val == null || val.Trim().Length == 0) return targetVal;
+        return val;
+    }
 }

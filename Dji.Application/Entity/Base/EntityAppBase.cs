@@ -7,64 +7,19 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-namespace Dji.Core.JuAI;
+namespace Dji.Application;
 
 
 /// <summary>
 /// 框架实体基类
 /// </summary>
 
-[Tenant("app")]
-public abstract class EntityAppBase : EntityBaseId, IDeletedFilter
+[Tenant(SqlSugarConst.DjiConfigId)]
+public abstract class EntityAppBase : EntityBase, IDeletedFilter
 {
-    /// <summary>
-    /// 创建时间
-    /// </summary>
-    [SugarColumn(ColumnDescription = "创建时间", IsOnlyIgnoreUpdate = true)]
-    public virtual DateTime? CreateTime { get; set; }
-
-    /// <summary>
-    /// 更新时间
-    /// </summary>
-    [SugarColumn(ColumnDescription = "更新时间", IsOnlyIgnoreInsert = true)]
-    public virtual DateTime? UpdateTime { get; set; }
-
-    /// <summary>
-    /// 创建者Id
-    /// </summary>
-    [SugarColumn(ColumnDescription = "创建者Id", IsOnlyIgnoreUpdate = true)]
-    public virtual long? CreateUserId { get; set; }
-
-    /// <summary>
-    /// 创建者
-    /// </summary>
-    [Navigate(NavigateType.OneToOne, nameof(CreateUserId), nameof(SysUser.Id))]
-    public virtual SysUser? CreateUser { get; set; }
-
-
-    /// <summary>
-    /// 修改者Id
-    /// </summary>
-    [SugarColumn(ColumnDescription = "修改者Id", IsOnlyIgnoreInsert = true)]
-    public virtual long? UpdateUserId { get; set; }
-
-    /// <summary>
-    /// 修改者
-    /// </summary>
-    [Newtonsoft.Json.JsonIgnore]
-    [System.Text.Json.Serialization.JsonIgnore]
-    [Navigate(NavigateType.OneToOne, nameof(UpdateUserId))]
-    public virtual SysUser? UpdateUser { get; set; }
-
-
-    /// <summary>
-    /// 软删除
-    /// </summary>
-    [SugarColumn(ColumnDescription = "软删除")]
-    public virtual bool IsDelete { get; set; } = false;
 }
 
-[Tenant("app")]
+[Tenant(SqlSugarConst.DjiConfigId)]
 public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
 {
     /// <summary>
@@ -92,17 +47,17 @@ public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
     public virtual bool IsDelete { get; set; } = false;
 }
 
-[Tenant("app")]
-public abstract class EntityAppTenant : EntityAppBase, ITenantIdFilter
+[Tenant(SqlSugarConst.DjiConfigId)]
+public class EntityAppTenant : EntityAppBase, ITenantIdFilter, IDeletedFilter
 {
     /// <summary>
     /// 租户Id
     /// </summary>
     [SugarColumn(ColumnDescription = "租户Id", IsOnlyIgnoreUpdate = true)]
-    public virtual long? TenantId { get; set; }
+    public long? TenantId { get; set; }
 }
 
-[Tenant("app")]
+[Tenant(SqlSugarConst.DjiConfigId)]
 public abstract class EntityAppTenantIgnoreUpdate : EntityAppBaseIgnoreUpdate, ITenantIdFilter
 {
     /// <summary>

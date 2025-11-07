@@ -45,7 +45,7 @@ public class AppEventSubscriber : IEventSubscriber, ISingleton, IDisposable
         //var mailTemp = File.ReadAllText(mailTempPath);
         //var mail = await _serviceScope.ServiceProvider.GetRequiredService<IViewEngine>().RunCompileFromCachedAsync(mailTemp, );
 
-        var title = "Admin.NET 系统异常";
+        var title = "dji server 系统异常";
         await _serviceScope.ServiceProvider.GetRequiredService<SysEmailService>().SendEmail(JSON.Serialize(context.Source.Payload), title);
     }
 

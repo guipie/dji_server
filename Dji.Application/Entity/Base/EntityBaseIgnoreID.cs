@@ -13,9 +13,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Core.JuAI.Entity.Base;
+namespace Dji.Application.Entity.Base;
 
-[Tenant("app")]
+[Tenant("DjiServer")]
 public abstract class EntityBaseIgnoreID : IDeletedFilter
 {
     /// <summary>

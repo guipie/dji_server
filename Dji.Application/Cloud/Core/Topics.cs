@@ -13,12 +13,20 @@ public static class Topics
     public const string ThingProductOsd = "thing/product/+/osd";
     public const string ThingProductStatus = "sys/product/+/status";
     public const string ThingProductRequests = "thing/product/+/requests";
+    public const string ThingProductRequestsReply = "thing/product/+/requests_reply";
     public const string ThingProductCommand = "thing/product/+/command";
+    public const string ThingProductServices = "thing/product/+/services";
+    public const string ThingProductServicesReply = "thing/product/+/services_reply";
 }
 
 public static class TopicMethods
 {
     public const string UpdateTopo = "update_topo";
     public const string AirportBindStatus = "airport_bind_status";
+    public const string AirportOrganizationBind = "airport_organization_bind";
+
+    /**远程调试**/
+    public const string DebugModeOpen = "debug_mode_open";
+    public const string DebugModeClose = "debug_mode_close";
 }
 

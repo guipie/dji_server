@@ -3,7 +3,7 @@
 namespace Dji.Application.JuAI;
 
 /// <summary>
-/// 聚AI重置密码输入参数
+/// 大疆上云重置密码输入参数
 /// </summary>
 public class AppUserResetPwdInput
 {

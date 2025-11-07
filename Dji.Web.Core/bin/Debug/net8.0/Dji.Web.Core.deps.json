@@ -1475,6 +1475,14 @@
           }
         }
       },
+      "NetTopologySuite/2.6.0": {
+        "runtime": {
+          "lib/netstandard2.1/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "NewLife.Core/11.0.2024.1101": {
         "runtime": {
           "lib/net8.0/NewLife.Core.dll": {
@@ -2623,7 +2631,8 @@
       "Dji.Application/1.0.0": {
         "dependencies": {
           "Dji.Core": "1.0.0",
-          "MQTTnet": "5.0.1.1416"
+          "MQTTnet": "5.0.1.1416",
+          "NetTopologySuite": "2.6.0"
         },
         "runtime": {
           "Dji.Application.dll": {
@@ -3551,6 +3560,13 @@
       "sha512": "sha512-6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
       "path": "mysqlconnector/2.2.5",
       "hashPath": "mysqlconnector.2.2.5.nupkg.sha512"
+    },
+    "NetTopologySuite/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1B1OTacTd4QtFyBeuIOcThwSSLUdRZU3bSFIwM8vk36XiZlBMi3K36u74e4OqwwHRHUuJC1PhbDx4hyI266X1Q==",
+      "path": "nettopologysuite/2.6.0",
+      "hashPath": "nettopologysuite.2.6.0.nupkg.sha512"
     },
     "NewLife.Core/11.0.2024.1101": {
       "type": "package",

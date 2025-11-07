@@ -8,7 +8,7 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 namespace Dji.Application.Cloud.Entity;
-internal class CloudMqData<T>
+public class CloudMqData<T>
 {
     public string Tid { get; set; }
     public string Bid { get; set; }
@@ -16,7 +16,17 @@ internal class CloudMqData<T>
     public long TimeStamp { get; set; }
 
     public string Gateway { get; set; }
+    public string DroneSn { get; set; }
     public string Topic { get; set; }
 
     public T Data { get; set; }
+
+ 
+
+}
+
+public class MqOutput<T>
+{
+    public T Output { get; set; }
+    public int Result { get; set; }
 }

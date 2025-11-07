@@ -1,7 +1,7 @@
 ﻿namespace Dji.Application.JuAI;
 
     /// <summary>
-    /// 聚AI用户输出参数
+    ///  用户输出参数
     /// </summary>
     public class AppUserDto
     {

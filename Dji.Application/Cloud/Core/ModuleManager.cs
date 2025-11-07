@@ -32,7 +32,7 @@ internal class ModuleManager
 public class SubscriptionModel
 {
     public string Topic { get; set; } = null!;
-    public int? Type { get; set; } = null;
+    public DomainEnum? Domain { get; set; } = null;
     public string Method { get; set; }
     public MethodInfo MethodInfo { get; set; } = null!;
     public object Instance { get; set; } = null!;

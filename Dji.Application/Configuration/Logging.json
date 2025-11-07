@@ -13,7 +13,7 @@
       "Append": true, // 追加覆盖
       // "MinimumLevel": "Information", // 日志级别
       "FileSizeLimitBytes": 10485760, // 10M=10*1024*1024
-      "MaxRollingFiles": 30 // 只保留30个文件
+      "MaxRollingFiles": 10 // 只保留30个文件
     },
     "Database": {
       "Enabled": true, // 启用数据库日志

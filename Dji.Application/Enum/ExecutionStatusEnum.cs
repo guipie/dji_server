@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Core.JuAI;
+namespace Dji.Application;
 public enum ExecutionStatuseEnum
 {
     executing,

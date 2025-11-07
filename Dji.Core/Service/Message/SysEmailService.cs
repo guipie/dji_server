@@ -32,7 +32,7 @@ public class SysEmailService : IDynamicApiController, ITransient
     /// <param name="title"></param>
     /// <returns></returns>
     [DisplayName("发送邮件")]
-    public async Task SendEmail([Required] string content, string title = "Admin.NET 系统邮件")
+    public async Task SendEmail([Required] string content, string title = "Dji server 系统邮件")
     {
         var message = new MimeMessage();
         message.From.Add(new MailboxAddress(_emailOptions.DefaultFromEmail, _emailOptions.DefaultFromEmail));

@@ -1,10 +1,10 @@
 ﻿
-namespace Dji.Core.JuAI;
+namespace Dji.Application;
 
 /// <summary>
 /// 用户反馈表
 /// </summary>
-[SugarTable("Feedback", "Feedback表"), IncreTable]
+[SugarTable("Feedback", "Feedback表")]
 public class Feedback : EntityAppTenant
 {
     [SugarColumn(ColumnDescription = "内容", Length = 2000)]

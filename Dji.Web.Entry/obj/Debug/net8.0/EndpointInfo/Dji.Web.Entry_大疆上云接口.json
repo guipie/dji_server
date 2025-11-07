@@ -67,10 +67,93 @@
           }
         }
       }
+    },
+    "/api/cloud/bindWorkspace/{gateway}/{sn}": {
+      "post": {
+        "tags": [
+          "djiDeviceCloud"
+        ],
+        "operationId": "api-cloud-bindWorkspace-gateway--sn-Post",
+        "parameters": [
+          {
+            "name": "gateway",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sn",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_AirportBindStatusRequestReply"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_AirportBindStatusRequestReply"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_AirportBindStatusRequestReply"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AdminResult_CloudMqData_MqOutput_AirportBindStatusRequestReply": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/CloudMqData_MqOutput_AirportBindStatusRequestReply"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
       "AdminResult_Object": {
         "type": "object",
         "properties": {
@@ -107,6 +190,100 @@
         },
         "additionalProperties": false,
         "description": "全局返回结果"
+      },
+      "AirportBindStatusRequestReply": {
+        "type": "object",
+        "properties": {
+          "bindStatus": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeviceOrganization"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CloudMqData_MqOutput_AirportBindStatusRequestReply": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bid": {
+            "type": "string",
+            "nullable": true
+          },
+          "method": {
+            "type": "string",
+            "nullable": true
+          },
+          "timeStamp": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "gateway": {
+            "type": "string",
+            "nullable": true
+          },
+          "droneSn": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/MqOutput_AirportBindStatusRequestReply"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeviceOrganization": {
+        "type": "object",
+        "properties": {
+          "deviceCallsign": {
+            "type": "string",
+            "description": "设备组织的Callsign",
+            "nullable": true
+          },
+          "isDeviceBindOrganization": {
+            "type": "boolean",
+            "description": "标识设备是否绑定到某个组织"
+          },
+          "organizationId": {
+            "type": "string",
+            "description": "组织ID",
+            "nullable": true
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "组织名称",
+            "nullable": true
+          },
+          "sn": {
+            "type": "string",
+            "description": "设备序列号(SN)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "设备组织信息"
+      },
+      "MqOutput_AirportBindStatusRequestReply": {
+        "type": "object",
+        "properties": {
+          "output": {
+            "$ref": "#/components/schemas/AirportBindStatusRequestReply"
+          },
+          "result": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
       }
     },
     "securitySchemes": {
@@ -129,6 +306,12 @@
     },
     {
       "name": "qiNiuFile"
+    },
+    {
+      "name": "baseCloud"
+    },
+    {
+      "name": "djiDeviceCloud"
     },
     {
       "name": "appUser"

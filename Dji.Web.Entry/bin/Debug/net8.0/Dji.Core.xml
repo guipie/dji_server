@@ -3947,6 +3947,14 @@
             枚举对象的值
             </summary>
         </member>
+        <member name="M:Dji.Core.Extension.StringExtension.CreateRandStrCode(System.Int32,System.Int32)">
+            <summary>
+            随机生成不重复邀请码
+            </summary>
+            <param name="length">长度</param>
+            <param name="seed">种子</param>
+            <returns></returns>
+        </member>
         <member name="T:Dji.Core.ObjectExtension">
             <summary>
             对象拓展
@@ -4292,14 +4300,6 @@
             <param name="queryable"></param>
             <param name="ignore">是否忽略 默认true</param>
             <returns> </returns>
-        </member>
-        <member name="M:Dji.Core.Extension.StringExtension.CreateRandStrCode(System.Int32,System.Int32)">
-            <summary>
-            随机生成不重复邀请码
-            </summary>
-            <param name="length">长度</param>
-            <param name="seed">种子</param>
-            <returns></returns>
         </member>
         <member name="T:Dji.Core.YitIdHelperExtension">
             <summary>

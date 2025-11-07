@@ -26,6 +26,37 @@
     ]
   },
   {
+    "ContainingType": "Dji.Application.Service.DjiDevice.DjiDeviceCloudService",
+    "Method": "BindWorkspace",
+    "RelativePath": "api/cloud/bindWorkspace/{gateway}/{sn}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gateway",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "sn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Cloud.Entity.CloudMqData\u00601[[Dji.Application.Cloud.Entity.MqOutput\u00601[[Dji.Application.Cloud.Dto.Org.AirportBindStatusRequestReply, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Dji.Web.Entry.Controllers.DemoController",
     "Method": "CreateSseDemo",
     "RelativePath": "api/demo/api/sse",
@@ -63,6 +94,839 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "Add",
+    "RelativePath": "api/djiDevice/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.AddDjiDeviceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "Delete",
+    "RelativePath": "api/djiDevice/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DeleteDjiDeviceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "Detail",
+    "RelativePath": "api/djiDevice/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Entity.DjiDevice, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "DjiDeviceParentSnDropdown",
+    "RelativePath": "api/djiDevice/djiDeviceParentSnDropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "DjiWorkspaceWorkspaceIdDropdown",
+    "RelativePath": "api/djiDevice/djiWorkspaceWorkspaceIdDropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "List",
+    "RelativePath": "api/djiDevice/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nick",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DescStr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.List\u00601[[Dji.Application.DjiDeviceOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "Page",
+    "RelativePath": "api/djiDevice/page",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DjiDeviceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.IList\u00601[[Dji.Application.DjiDeviceOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "Update",
+    "RelativePath": "api/djiDevice/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.UpdateDjiDeviceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceService",
+    "Method": "UploadAvatarUrl",
+    "RelativePath": "api/djiDevice/uploadAvatarUrl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Core.Service.FileOutput, Dji.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "Add",
+    "RelativePath": "api/djiDeviceCameraEnum/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.AddDjiDeviceCameraEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "Delete",
+    "RelativePath": "api/djiDeviceCameraEnum/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DeleteDjiDeviceCameraEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "Detail",
+    "RelativePath": "api/djiDeviceCameraEnum/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Entity.DjiDeviceCameraEnum, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "List",
+    "RelativePath": "api/djiDeviceCameraEnum/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Domain",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TsgIndex",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsMainGimbal",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DescStr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.List\u00601[[Dji.Application.DjiDeviceCameraEnumOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "Page",
+    "RelativePath": "api/djiDeviceCameraEnum/page",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DjiDeviceCameraEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Core.SqlSugarPagedList\u00601[[Dji.Application.DjiDeviceCameraEnumOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceCameraEnumService",
+    "Method": "Update",
+    "RelativePath": "api/djiDeviceCameraEnum/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.UpdateDjiDeviceCameraEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "Add",
+    "RelativePath": "api/djiDeviceEnum/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.AddDjiDeviceEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "Delete",
+    "RelativePath": "api/djiDeviceEnum/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DeleteDjiDeviceEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "Detail",
+    "RelativePath": "api/djiDeviceEnum/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Entity.DjiDeviceEnum, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "List",
+    "RelativePath": "api/djiDeviceEnum/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Domain",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DescStr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.List\u00601[[Dji.Application.DjiDeviceEnumOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "Page",
+    "RelativePath": "api/djiDeviceEnum/page",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DjiDeviceEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Core.SqlSugarPagedList\u00601[[Dji.Application.DjiDeviceEnumOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiDeviceEnumService",
+    "Method": "Update",
+    "RelativePath": "api/djiDeviceEnum/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.UpdateDjiDeviceEnumInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "Add",
+    "RelativePath": "api/djiWorkspace/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.AddDjiWorkspaceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "Delete",
+    "RelativePath": "api/djiWorkspace/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DeleteDjiWorkspaceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "Detail",
+    "RelativePath": "api/djiWorkspace/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Entity.DjiWorkspace, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "List",
+    "RelativePath": "api/djiWorkspace/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NickName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceBindCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceDesc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DescStr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.List\u00601[[Dji.Application.DjiWorkspaceOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "Page",
+    "RelativePath": "api/djiWorkspace/page",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DjiWorkspaceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Core.SqlSugarPagedList\u00601[[Dji.Application.DjiWorkspaceOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceService",
+    "Method": "Update",
+    "RelativePath": "api/djiWorkspace/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.UpdateDjiWorkspaceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

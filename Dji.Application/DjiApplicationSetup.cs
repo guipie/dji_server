@@ -71,7 +71,7 @@ public static class DjiApplicationSetup
                 moduleManage.AddModule(new SubscriptionModel
                 {
                     Topic = attr.Topic,
-                    Type = attr.Type,
+                    Domain = attr.Domain,
                     Method = attr.Method,
                     MethodInfo = method,
                     Instance = instance,

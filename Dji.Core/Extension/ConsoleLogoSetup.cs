@@ -17,10 +17,10 @@ public static class ConsoleLogoSetup
     public static void AddConsoleLogo(this IServiceCollection services)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine(@"聚AI");
+        Console.WriteLine(@"大疆上云");
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(@"聚AI，juai.link");
+        Console.WriteLine(@"大疆上云，https://github.com/guipie/dji_server");
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine(@"工作生活中必备的AI集成助手！");
+        Console.WriteLine(@"大疆上云,更简单，更快速！");
     }
 }

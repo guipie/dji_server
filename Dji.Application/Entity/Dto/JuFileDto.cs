@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Core.JuAI.Entity;
+namespace Dji.Application.Entity;
 public class JuFileDto
 {
     public long Id { get; set; }

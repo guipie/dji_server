@@ -1,4 +1,4 @@
-﻿global using Dji.Core.JuAI;
+﻿global using Dji.Application;
 global using Furion;
 global using Furion.RemoteRequest.Extensions;
 global using Microsoft.AspNetCore.Mvc;

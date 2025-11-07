@@ -3,7 +3,7 @@
 namespace Dji.Application.JuAI;
 
 /// <summary>
-/// 聚AI用户基础输入参数
+/// 大疆上云用户基础输入参数
 /// </summary>
 public class AppUserBaseInput
 {
@@ -105,7 +105,7 @@ public class AppUserBaseInput
 }
 
 /// <summary>
-/// 聚AI用户分页查询输入参数
+/// 大疆上云用户分页查询输入参数
 /// </summary>
 public class AppUserInput : BasePageInput
 {
@@ -133,14 +133,14 @@ public class AppUserInput : BasePageInput
 
 
 /// <summary>
-/// 聚AI用户删除输入参数
+/// 大疆上云用户删除输入参数
 /// </summary>
 public class DeleteAppUserInput : BaseIdInput
 {
 }
 
 /// <summary>
-/// 聚AI用户主键查询输入参数
+/// 大疆上云用户主键查询输入参数
 /// </summary>
 public class QueryByIdAppUserInput : DeleteAppUserInput
 {

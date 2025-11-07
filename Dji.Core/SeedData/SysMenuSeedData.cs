@@ -12,6 +12,7 @@ namespace Dji.Core;
 /// <summary>
 /// 系统菜单表种子数据
 /// </summary>
+[IncreSeed]
 public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
 {
     /// <summary>
@@ -20,13 +21,19 @@ public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
     /// <returns></returns>
     public IEnumerable<SysMenu> HasData()
     {
-        return new[]
-        {
+        return
+        [
             new SysMenu{ Id=1300000000101, Pid=0, Title="工作台", Path="/dashboard", Name="dashboard", Component="Layout", Icon="ele-HomeFilled", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=0 },
             new SysMenu{ Id=1300000000111, Pid=1300000000101, Title="工作台", Path="/dashboard/home", Name="home", Component="/home/index", IsAffix=true, Icon="ele-HomeFilled", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=100 },
             new SysMenu{ Id=1300000000121, Pid=1300000000101, Title="站内信", Path="/dashboard/notice", Name="notice", Component="/home/notice/index", Icon="ele-Bell", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=101 },
 
             // 建议此处Id范围之间放置具体业务应用菜单
+            
+            new SysMenu{ Id=1300000000102, Pid=0, Title="工作空间", Path="/workspace", Name="workspace", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000103, Pid=0, Title="设备管理", Path="/device", Name="device", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=110 },
+
+
+
 
             new SysMenu{ Id=1310000000101, Pid=0, Title="系统管理", Path="/system", Name="system", Component="Layout", Icon="ele-Setting", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=10000 },
 
@@ -182,6 +189,6 @@ public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
             new SysMenu{ Id=1310000000711, Pid=1310000000701, Title="后台教程", Path="/doc/furion", Name="sysFurion", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://furion.baiqian.ltd/", Icon="ele-Promotion", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=100 },
             new SysMenu{ Id=1310000000712, Pid=1310000000701, Title="前端教程", Path="/doc/element", Name="sysElement", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://element-plus.gitee.io/zh-CN/", Icon="ele-Position", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=110 },
             new SysMenu{ Id=1310000000713, Pid=1310000000701, Title="SqlSugar", Path="/doc/SqlSugar", Name="sysSqlSugar", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://www.donet5.com/Home/Doc", Icon="ele-Coin", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=120 },
-        };
+        ];
     }
 }
