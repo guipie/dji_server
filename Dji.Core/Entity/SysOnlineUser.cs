@@ -68,4 +68,8 @@ public class SysOnlineUser : EntityTenantId
     [SugarColumn(ColumnDescription = "操作系统", Length = 128)]
     [MaxLength(128)]
     public string? Os { get; set; }
+
+
+    [SugarColumn(ColumnDescription = "所属空间", Length = 300)]
+    public  string WorkspaceIds { get; set; }
 }

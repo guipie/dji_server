@@ -11,6 +11,7 @@
 
 using Dji.Application.Cloud.Entity;
 using Dji.Application.Option;
+using Dji.Core.Extension;
 using Microsoft.Extensions.Options;
 using MQTTnet;
 using MQTTnet.Protocol;
@@ -18,7 +19,6 @@ using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using static SKIT.FlurlHttpClient.Wechat.Api.Models.TCBGetCallbackConfigResponse.Types.Data.Types.FunctionConfig.Types;
 
 namespace Dji.Application.Cloud.Core;
 /// <summary>
@@ -34,6 +34,7 @@ internal class MqttService : IMqttService, IDisposable
     private readonly Dictionary<string, Delegate> _handlers = new();
     private readonly ModuleManager _moduleManager;
     private readonly SysCacheService _cache;
+    private readonly SysOnlineUserService _onlineUserService;
     private static readonly JsonSerializerSettings settings = new JsonSerializerSettings
     {
         ContractResolver = new DefaultContractResolver
@@ -47,7 +48,7 @@ internal class MqttService : IMqttService, IDisposable
 
     public bool IsConnected => _client.IsConnected;
 
-    public MqttService(ILogger<MqttService> logger, IMqttClient client, SysCacheService sysCacheService, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager)
+    public MqttService(ILogger<MqttService> logger, IMqttClient client, SysCacheService sysCacheService, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager, IServiceScopeFactory scopeFactory)
     {
         _logger = logger;
         _client = client;
@@ -68,6 +69,7 @@ internal class MqttService : IMqttService, IDisposable
         _mqttOptions = mqttOptions.Value;
         _moduleManager = moduleManager;
         _cache = sysCacheService;
+        _onlineUserService = scopeFactory.CreateScope().ServiceProvider.GetRequiredService<SysOnlineUserService>();
     }
 
     public async Task StartAsync()
@@ -149,6 +151,7 @@ internal class MqttService : IMqttService, IDisposable
     {
         var topic = e.ApplicationMessage.Topic;
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+
         var cloudMqData = payload.ToObject<CloudMqData<dynamic>>();
         //Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
         var matched = _moduleManager._modules
@@ -180,13 +183,27 @@ internal class MqttService : IMqttService, IDisposable
                     var secondIndex = topic[..index].LastIndexOf('/');
 
                     var sn = topic.Substring(secondIndex + 1, index - secondIndex - 1);
-                    if(cloudMqData.Gateway.IsNullOrEmpty())
+                    if (cloudMqData.Gateway.IsNullOrEmpty())
+                    {
                         data.GetType().GetProperty("Gateway").SetValue(data, sn);
-                    if(IsSameTopic(topic))
+                        cloudMqData.Gateway = sn;
+                    }
+                    if (IsSameTopic(topic))
                         data.GetType().GetProperty("DroneSn").SetValue(data, sn);
-
                 }
                 data.GetType().GetProperty("Topic").SetValue(data, topic);
+
+                var onlineDevice = _cache.Get<DjiDevice>(cloudMqData.Gateway.Device());
+                if (onlineDevice != null)
+                {
+                    data.GetType().GetProperty("Ext").SetValue(data, onlineDevice.Nick);
+                    if (!onlineDevice.WorkspaceId.IsNullOrWhiteSpace())
+                    {
+                        cloudMqData.Method = cloudMqData.Method.IsNullOrEmpty() ? (MatchSn(topic).IsDrone() ? "droneOsd" : "dockOsd") : cloudMqData.Method;
+                        data.GetType().GetProperty("Method").SetValue(data, cloudMqData.Method);
+                        await _onlineUserService.PublicWorkspaceMqMessage(onlineDevice.WorkspaceId, data);
+                    }
+                }
                 var task = (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
                 if (topic.EndsWith("_reply"))
                 {

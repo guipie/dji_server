@@ -11,6 +11,7 @@ using Furion.Logging.Extensions;
 using Microsoft.AspNetCore.DataProtection;
 using Newtonsoft.Json;
 using StackExchange.Redis;
+using System.Text.Encodings.Web;
 
 namespace Dji.Core;
 
@@ -29,7 +30,16 @@ public static class SignalRSetup
             options.ClientTimeoutInterval = TimeSpan.FromMinutes(2);
             options.KeepAliveInterval = TimeSpan.FromMinutes(1);
             options.MaximumReceiveMessageSize = 1024 * 1024 * 10; // 数据包大小10M，默认最大为32K
-        }).AddNewtonsoftJsonProtocol(options => SetNewtonsoftJsonSetting(options.PayloadSerializerSettings));
+        }).AddNewtonsoftJsonProtocol(options =>
+        {
+            //options.PayloadSerializerSettings.StringEscapeHandling =
+            //  StringEscapeHandling.EscapeNonAscii;
+            SetNewtonsoftJsonSetting(options.PayloadSerializerSettings);
+        }).AddJsonProtocol(options => {
+            // 忽略 null 值（空值不序列化）
+            options.PayloadSerializerOptions.DefaultIgnoreCondition =
+                System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+        });
 
         // 若未启用Redis缓存，直接返回
         var cacheOptions = App.GetConfig<CacheOptions>("Cache", true);

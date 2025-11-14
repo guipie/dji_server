@@ -14,12 +14,11 @@ namespace Dji.Application;
 /// 框架实体基类
 /// </summary>
 
-[Tenant(SqlSugarConst.DjiConfigId)]
 public abstract class EntityAppBase : EntityBase, IDeletedFilter
 {
 }
 
-[Tenant(SqlSugarConst.DjiConfigId)]
+[Tenant(SqlSugarConst.MainConfigId)]
 public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
 {
     /// <summary>
@@ -47,7 +46,7 @@ public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
     public virtual bool IsDelete { get; set; } = false;
 }
 
-[Tenant(SqlSugarConst.DjiConfigId)]
+[Tenant(SqlSugarConst.MainConfigId)]
 public class EntityAppTenant : EntityAppBase, ITenantIdFilter, IDeletedFilter
 {
     /// <summary>
@@ -57,13 +56,4 @@ public class EntityAppTenant : EntityAppBase, ITenantIdFilter, IDeletedFilter
     public long? TenantId { get; set; }
 }
 
-[Tenant(SqlSugarConst.DjiConfigId)]
-public abstract class EntityAppTenantIgnoreUpdate : EntityAppBaseIgnoreUpdate, ITenantIdFilter
-{
-    /// <summary>
-    /// 租户Id
-    /// </summary>
-    [SugarColumn(ColumnDescription = "租户Id", IsOnlyIgnoreUpdate = true)]
-    public virtual long? TenantId { get; set; }
-}
 

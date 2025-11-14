@@ -7467,6 +7467,54 @@
         }
       }
     },
+    "/api/cloud/debugMode/{gateway}/{isOpen}": {
+      "post": {
+        "tags": [
+          "djiDeviceCloud"
+        ],
+        "operationId": "api-cloud-debugMode-gateway--isOpen-Post",
+        "parameters": [
+          {
+            "name": "gateway",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "isOpen",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_DebugModeOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_DebugModeOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_CloudMqData_MqOutput_DebugModeOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/aPIJSON": {
       "post": {
         "tags": [
@@ -8741,6 +8789,381 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/AdminResult_FileOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/page": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "分页查询空间用户",
+        "operationId": "api-djiWorkspaceUser-page-Post",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWorkspaceUserInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWorkspaceUserInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWorkspaceUserInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWorkspaceUserInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWorkspaceUserInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_SqlSugarPagedList_DjiWorkspaceUserOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_SqlSugarPagedList_DjiWorkspaceUserOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_SqlSugarPagedList_DjiWorkspaceUserOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/add": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "增加空间用户",
+        "operationId": "api-djiWorkspaceUser-add-Post",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDjiWorkspaceUserInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDjiWorkspaceUserInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDjiWorkspaceUserInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDjiWorkspaceUserInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDjiWorkspaceUserInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Int64"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Int64"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Int64"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/delete": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "删除空间用户",
+        "operationId": "api-djiWorkspaceUser-delete-Post",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteDjiWorkspaceUserInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteDjiWorkspaceUserInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteDjiWorkspaceUserInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteDjiWorkspaceUserInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteDjiWorkspaceUserInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/update": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "更新空间用户",
+        "operationId": "api-djiWorkspaceUser-update-Post",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDjiWorkspaceUserInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDjiWorkspaceUserInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDjiWorkspaceUserInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDjiWorkspaceUserInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDjiWorkspaceUserInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/detail": {
+      "get": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "获取空间用户",
+        "operationId": "api-djiWorkspaceUser-detail-Get",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "description": "主键Id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWorkspaceUser"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWorkspaceUser"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWorkspaceUser"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/list": {
+      "get": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "获取空间用户列表",
+        "operationId": "api-djiWorkspaceUser-list-Get",
+        "parameters": [
+          {
+            "name": "SearchKey",
+            "in": "query",
+            "description": "关键字查询",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "WorkspaceId",
+            "in": "query",
+            "description": "workspace_name",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "description": "当前页码",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "页码容量",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Field",
+            "in": "query",
+            "description": "排序字段",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方向",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "DescStr",
+            "in": "query",
+            "description": "降序排序",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_DjiWorkspaceUserOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_DjiWorkspaceUserOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_DjiWorkspaceUserOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/sysUserUserIdDropdown": {
+      "get": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "summary": "获取user_id列表",
+        "operationId": "api-djiWorkspaceUser-sysUserUserIdDropdown-Get",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Object"
                 }
               }
             }
@@ -13564,6 +13987,84 @@
         "additionalProperties": false,
         "description": "workspace增加输入参数"
       },
+      "AddDjiWorkspaceUserInput": {
+        "required": [
+          "isDelete",
+          "userId",
+          "userName",
+          "workspaceId",
+          "workspaceName"
+        ],
+        "type": "object",
+        "properties": {
+          "tenantId": {
+            "type": "integer",
+            "description": "tenant_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createTime": {
+            "type": "string",
+            "description": "create_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "update_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "create_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "create_user_name",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "update_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "update_user_name",
+            "nullable": true
+          },
+          "workspaceId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "workspace_id"
+          },
+          "workspaceName": {
+            "minLength": 1,
+            "type": "string",
+            "description": "workspace_name"
+          },
+          "userName": {
+            "minLength": 1,
+            "type": "string",
+            "description": "user_name"
+          },
+          "userId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "user_id"
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "is_delete"
+          }
+        },
+        "additionalProperties": false,
+        "description": "空间用户增加输入参数"
+      },
       "AddJobDetailInput": {
         "required": [
           "jobId"
@@ -15178,6 +15679,41 @@
         "additionalProperties": false,
         "description": "全局返回结果"
       },
+      "AdminResult_CloudMqData_MqOutput_DebugModeOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/CloudMqData_MqOutput_DebugModeOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
       "AdminResult_DataTable": {
         "type": "object",
         "properties": {
@@ -15338,6 +15874,41 @@
           },
           "result": {
             "$ref": "#/components/schemas/DjiWorkspace"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_DjiWorkspaceUser": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DjiWorkspaceUser"
           },
           "extras": {
             "additionalProperties": false,
@@ -15994,6 +16565,46 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DjiWorkspaceOutput"
+            },
+            "description": "数据",
+            "nullable": true
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_List_DjiWorkspaceUserOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DjiWorkspaceUserOutput"
             },
             "description": "数据",
             "nullable": true
@@ -17010,6 +17621,41 @@
           },
           "result": {
             "$ref": "#/components/schemas/SqlSugarPagedList_DjiWorkspaceOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_SqlSugarPagedList_DjiWorkspaceUserOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/SqlSugarPagedList_DjiWorkspaceUserOutput"
           },
           "extras": {
             "additionalProperties": false,
@@ -18441,6 +19087,43 @@
           },
           "data": {
             "$ref": "#/components/schemas/MqOutput_AirportBindStatusRequestReply"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CloudMqData_MqOutput_DebugModeOutput": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bid": {
+            "type": "string",
+            "nullable": true
+          },
+          "method": {
+            "type": "string",
+            "nullable": true
+          },
+          "timeStamp": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "gateway": {
+            "type": "string",
+            "nullable": true
+          },
+          "droneSn": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/MqOutput_DebugModeOutput"
           }
         },
         "additionalProperties": false
@@ -19938,6 +20621,30 @@
         "type": "integer",
         "format": "int32"
       },
+      "DebugModeOutput": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/DebugModeStatusEnum"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DebugModeStatusEnum": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "type": "integer",
+        "description": "<br />&nbsp;取消或终止 Canceled = 0<br />&nbsp;失败 Failed = 1<br />&nbsp;执行中 InProgress = 2<br />&nbsp;执行成功 Ok = 3<br />&nbsp;暂停 Paused = 4<br />&nbsp;拒绝 Rejected = 5<br />&nbsp;已下发 Sent = 6<br />&nbsp;超时 Timeout = 7<br />",
+        "format": "int32"
+      },
       "DeleteCodeGenInput": {
         "required": [
           "id"
@@ -20085,6 +20792,21 @@
         },
         "additionalProperties": false,
         "description": "workspace删除输入参数"
+      },
+      "DeleteDjiWorkspaceUserInput": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "主键Id",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false,
+        "description": "空间用户删除输入参数"
       },
       "DeleteFileInput": {
         "required": [
@@ -21352,6 +22074,204 @@
         },
         "additionalProperties": false,
         "description": "workspace输出参数"
+      },
+      "DjiWorkspaceUser": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "雪花Id",
+            "format": "int64"
+          },
+          "createTime": {
+            "type": "string",
+            "description": "创建时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "更新时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "创建者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "创建者姓名",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "修改者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "修改者姓名",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "软删除"
+          },
+          "tenantId": {
+            "type": "integer",
+            "description": "租户Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "workspaceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "workspaceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "account": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nickName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DjiWorkspaceUserInput": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer",
+            "description": "当前页码",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "description": "页码容量",
+            "format": "int32"
+          },
+          "field": {
+            "type": "string",
+            "description": "排序字段",
+            "nullable": true
+          },
+          "order": {
+            "type": "string",
+            "description": "排序方向",
+            "nullable": true
+          },
+          "descStr": {
+            "type": "string",
+            "description": "降序排序",
+            "nullable": true
+          },
+          "searchKey": {
+            "type": "string",
+            "description": "关键字查询",
+            "nullable": true
+          },
+          "workspaceId": {
+            "type": "string",
+            "description": "workspace_name",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "空间用户分页查询输入参数"
+      },
+      "DjiWorkspaceUserOutput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "id",
+            "format": "int64"
+          },
+          "workspaceId": {
+            "type": "string",
+            "description": "workspace_id",
+            "nullable": true
+          },
+          "workspaceName": {
+            "type": "string",
+            "description": "workspace_name",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "description": "user_name",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "description": "user_id",
+            "format": "int64"
+          },
+          "userIdId": {
+            "type": "integer",
+            "description": "user_id 描述",
+            "format": "int64"
+          },
+          "tenantId": {
+            "type": "integer",
+            "description": "tenant_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createTime": {
+            "type": "string",
+            "description": "create_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "update_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "create_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "create_user_name",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "update_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "update_user_name",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "is_delete"
+          }
+        },
+        "additionalProperties": false,
+        "description": "空间用户输出参数"
       },
       "DomainEnum": {
         "enum": [
@@ -22706,6 +23626,19 @@
         "properties": {
           "output": {
             "$ref": "#/components/schemas/AirportBindStatusRequestReply"
+          },
+          "result": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MqOutput_DebugModeOutput": {
+        "type": "object",
+        "properties": {
+          "output": {
+            "$ref": "#/components/schemas/DebugModeOutput"
           },
           "result": {
             "type": "integer",
@@ -24163,6 +25096,49 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DjiWorkspaceOutput"
+            },
+            "description": "当前页集合",
+            "nullable": true
+          },
+          "hasPrevPage": {
+            "type": "boolean",
+            "description": "是否有上一页"
+          },
+          "hasNextPage": {
+            "type": "boolean",
+            "description": "是否有下一页"
+          }
+        },
+        "additionalProperties": false,
+        "description": "分页泛型集合"
+      },
+      "SqlSugarPagedList_DjiWorkspaceUserOutput": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer",
+            "description": "页码",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "description": "页容量",
+            "format": "int32"
+          },
+          "total": {
+            "type": "integer",
+            "description": "总条数",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "description": "总页数",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DjiWorkspaceUserOutput"
             },
             "description": "当前页集合",
             "nullable": true
@@ -30213,6 +31189,85 @@
         },
         "additionalProperties": false,
         "description": "workspace更新输入参数"
+      },
+      "UpdateDjiWorkspaceUserInput": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "workspaceId": {
+            "type": "string",
+            "description": "workspace_id",
+            "nullable": true
+          },
+          "workspaceName": {
+            "type": "string",
+            "description": "workspace_name",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "description": "user_name",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "description": "user_id",
+            "nullable": true
+          },
+          "tenantId": {
+            "type": "integer",
+            "description": "tenant_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createTime": {
+            "type": "string",
+            "description": "create_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "update_time",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "create_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "create_user_name",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "update_user_id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "update_user_name",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "is_delete"
+          },
+          "id": {
+            "type": "integer",
+            "description": "id",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false,
+        "description": "空间用户更新输入参数"
       },
       "UpdateJobDetailInput": {
         "required": [

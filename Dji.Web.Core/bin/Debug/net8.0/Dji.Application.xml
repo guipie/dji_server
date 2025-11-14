@@ -124,12 +124,12 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.ActivationTime">
             <summary>
-            机场激活时间 (activation_time) - int (unix 秒)
+            机场激活时间 (activation_time) - int? (unix 秒)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.Height">
             <summary>
-            椭球高度 (height) - double (米)
+            椭球高度 (height) - double? (米)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.AlternateLandPoint">
@@ -144,12 +144,12 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.AccTime">
             <summary>
-            机场累计运行时长 (acc_time) - int (秒)
+            机场累计运行时长 (acc_time) - int? (秒)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.FirstPowerOn">
             <summary>
-            首次上电时间 (first_power_on) - int (毫秒)
+            首次上电时间 (first_power_on) - int? (毫秒)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.Storage">
@@ -159,32 +159,32 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.WorkingCurrent">
             <summary>
-            工作电流 (working_current) - float (毫安)
+            工作电流 (working_current) - float?  (毫安)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.WorkingVoltage">
             <summary>
-            工作电压 (working_voltage) - int (毫伏)
+            工作电压 (working_voltage) - int? (毫伏)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.Humidity">
             <summary>
-            舱内湿度 (humidity) - float (%RH)
+            舱内湿度 (humidity) - float?  (%RH)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.Temperature">
             <summary>
-            舱内温度 (temperature) - float (°C)
+            舱内温度 (temperature) - float?  (°C)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.EnvironmentTemperature">
             <summary>
-            环境温度 (environment_temperature) - float (°C)
+            环境温度 (environment_temperature) - float?  (°C)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.WindSpeed">
             <summary>
-            风速 (wind_speed) - float (m/s)
+            风速 (wind_speed) - float?  (m/s)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockOsd.Rainfall">
@@ -299,7 +299,7 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLinkTopo.SecretCode">
             <summary>
-            加密编码 (secret_code) - array of int (size:28)
+            加密编码 (secret_code) - array of int? (size:28)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLinkTopo.CenterNode">
@@ -345,7 +345,7 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AirConditioner.SwitchTime">
             <summary>
-            剩余等待可切换时间 (switch_time) - int (秒)
+            剩余等待可切换时间 (switch_time) - int? (秒)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DongleInfo.Imei">
@@ -425,7 +425,7 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DroneBatteryMaintenanceInfo.MaintenanceTimeLeft">
             <summary>
-            电池保养剩余时间 (maintenance_time_left) - int (小时)
+            电池保养剩余时间 (maintenance_time_left) - int? (小时)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DroneBatteryMaintenanceInfo.HeatState">
@@ -450,12 +450,12 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.BatteryDetail.Voltage">
             <summary>
-            电压 (voltage) - int (mV)
+            电压 (voltage) - int? (mV)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.BatteryDetail.Temperature">
             <summary>
-            温度 (temperature) - float (°C)
+            温度 (temperature) - float?  (°C)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.MaintainStatus.MaintainStatusArray">
@@ -525,37 +525,37 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.BackupBattery.Voltage">
             <summary>
-            备用电池电压 (voltage) - int (mV)
+            备用电池电压 (voltage) - int? (mV)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.BackupBattery.Temperature">
             <summary>
-            备用电池温度 (temperature) - float (°C)
+            备用电池温度 (temperature) - float?  (°C)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.Storage.Total">
             <summary>
-            总容量 (total) - int (KB)
+            总容量 (total) - int? (KB)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.Storage.Used">
             <summary>
-            已使用容量 (used) - int (KB)
+            已使用容量 (used) - int? (KB)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AlternateLandPoint.Longitude">
             <summary>
-            经度 (longitude) - double 
+            经度 (longitude) - double? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AlternateLandPoint.Latitude">
             <summary>
-            纬度 (latitude) - float
+            纬度 (latitude) - float? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AlternateLandPoint.SafeLandHeight">
             <summary>
-            安全高度 (safe_land_height) - float
+            安全高度 (safe_land_height) - float? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AlternateLandPoint.IsConfigured">
@@ -565,7 +565,7 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.AlternateLandPoint.Height">
             <summary>
-            椭球高度 (height) - float
+            椭球高度 (height) - float? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.LiveCapacity.AvailableVideoNumber">
@@ -705,12 +705,12 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLink.SdrFreqBand">
             <summary>
-            SDR 频段 (sdr_freq_band) - float
+            SDR 频段 (sdr_freq_band) - float? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLink._4GFreqBand">
             <summary>
-            4G 频段 (4g_freq_band) - float
+            4G 频段 (4g_freq_band) - float? 
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.MediaFileDetail.RemainUpload">
@@ -730,7 +730,7 @@
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.NetworkState.Rate">
             <summary>
-            网络速率 (rate) - float (KB/s)
+            网络速率 (rate) - float?  (KB/s)
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DockSubDevice.DeviceSn">
@@ -753,14 +753,384 @@
             机场停机坪上的飞行器是否与机场对频 (device_paired) - enum_int: 0=未对频, 1=已对频
             </summary>
         </member>
+        <member name="T:Dji.Application.Cloud.Dto.Device.DroneOsd">
+            <summary>
+            飞行器物模型根对象
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.BestLinkGateway">
+            <summary>
+            蛙跳任务场景下，当飞行器对频了两个机场后，推送连接最好的机场SN
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.WirelessLinkTopo">
+            <summary>
+            图传连接拓扑
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Cameras">
+            <summary>
+            飞行器相机信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.FlysafeDatabaseVersion">
+            <summary>
+            飞行安全数据库版本
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.OfflineMapEnable">
+            <summary>
+            当离线地图关闭后，离线地图同步不再进行自动同步
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.DongleInfos">
+            <summary>
+            4G Dongle信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CurrentRthMode">
+            <summary>
+            大疆机场当前实际使用的返航高度模式
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.RthMode">
+            <summary>
+            智能返航模式下，飞行器将自动规划最佳返航高度。
+            大疆机场当前不支持设置返航高度模式，只能选择'设定高度'模式。
+            当环境，光线不满足视觉系统要求时（譬如傍晚阳光直射、夜间弱光无光），
+            飞行器将使用您设定的返航高度进行直线返航
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.ObstacleAvoidance">
+            <summary>
+            飞行器避障状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.IsNearAreaLimit">
+            <summary>
+            是否接近限飞区
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.IsNearHeightLimit">
+            <summary>
+            是否接近设定的限制高度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.HeightLimit">
+            <summary>
+            飞行器限高（单位：米 / m）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.NightLightsState">
+            <summary>
+            飞行器夜航灯状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.ActivationTime">
+            <summary>
+            飞行器激活时间(unix 时间戳)（单位：秒 / s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.MaintainStatus">
+            <summary>
+            保养信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.TotalFlightSorties">
+            <summary>
+            飞行器累计飞行总架次
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.TypeSubtypeGimbalindex">
+            <summary>
+            负载编号（与字段 payload_index 保持一致）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.TrackId">
+            <summary>
+            航迹 ID
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.PositionState">
+            <summary>
+            搜星状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Storage">
+            <summary>
+            存储容量（单位：KB）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Battery">
+            <summary>
+            飞行器电池信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.TotalFlightDistance">
+            <summary>
+            飞行器累计飞行总里程（单位：米 / m）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.TotalFlightTime">
+            <summary>
+            飞行器累计飞行航时（单位：秒 / s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.SeriousLowBatteryWarningThreshold">
+            <summary>
+            用户设置的电池严重低电量告警百分比
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.LowBatteryWarningThreshold">
+            <summary>
+            用户设置的电池低电量告警百分比
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.ControlSource">
+            <summary>
+            可以为设备，也可以为某个浏览器。设备使用 A/B 表示 A 控，B 控，浏览器以自生成的 uuid 作为标识符
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.WindDirection">
+            <summary>
+            当前风向
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.WindSpeed">
+            <summary>
+            风速估计，该风速是通过飞行器姿态推测出的，有一定的误差，仅供参考，不能作为气象数据使用（单位：0.1 米每秒 / m/s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.HomeDistance">
+            <summary>
+            距离 Home 点的距离
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.HomeLatitude">
+            <summary>
+            Home 点纬度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.HomeLongitude">
+            <summary>
+            Home 点经度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.AttitudeHead">
+            <summary>
+            偏航轴角度与真北角（经线）的角度，0到6点钟方向为正值，6到12点钟方向为负值
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.AttitudeRoll">
+            <summary>
+            横滚轴角度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.AttitudePitch">
+            <summary>
+            俯仰轴角度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Elevation">
+            <summary>
+            相对起飞点高度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Height">
+            <summary>
+            相对地球椭球面高度, 计算：相对起飞点的高度 + 起飞点的椭球高
+            </summary>
+        </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Latitude">
             <summary>
-            纬度 (latitude) - double
+            当前位置纬度
             </summary>
         </member>
         <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Longitude">
             <summary>
-            经度 (longitude) - double
+            当前位置经度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.VerticalSpeed">
+            <summary>
+            垂直速度（单位：米每秒 / m/s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.HorizontalSpeed">
+            <summary>
+            水平速度
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.FirmwareUpgradeStatus">
+            <summary>
+            固件升级状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CompatibleStatus">
+            <summary>
+            一致性升级：指飞行器某些模块的固件版本与系统匹配版本不一致，需要进行升级。
+            常见的情况例如：飞行器与遥控器已经升级至最新版本，但替换电池时发现电池未升级，此时一致性升级将被提示。
+            普通升级：开发者将飞行器所有模块升级至指定固件版本。
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.FirmwareVersion">
+            <summary>
+            固件版本
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.Gear">
+            <summary>
+            档位
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.ModeCodeReason">
+            <summary>
+            飞行器进入当前状态的原因
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CommanderFlightHeight">
+            <summary>
+            指点飞行高度（相对(机场)起飞点的高度，相对高 ALT）（单位：米 / m）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CommanderFlightMode">
+            <summary>
+            指点飞行模式设置值
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CommanderModeLostAction">
+            <summary>
+            执行指点飞行时失控了，选择继续执行完，还是执行普通失控行为
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.CameraWatermarkSettings">
+            <summary>
+            用户对相机拍摄的照片和录像文件进行水印配置, 目前暂不支持直播画面水印
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.ModeCode">
+            <summary>
+            机场选址指飞行器在空中悬停，为机场选址以及检查 RTK 信号质量
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.DistanceLimitStatus">
+            <summary>
+            飞行器限远状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.PsdkUiResource">
+            <summary>
+            psdk ui 资源包
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.DroneOsd.PsdkWidgetValues">
+            <summary>
+            psdk 负载设备属性值
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLinkTopoDrone.SecretCode">
+            <summary>
+            加密编码（固定长度28）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLinkTopoDrone.CenterNode">
+            <summary>
+            飞行器对频信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.WirelessLinkTopoDrone.LeafNodes">
+            <summary>
+            当前连接的机场或遥控器对频信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.SdrNode.SdrId">
+            <summary>
+            扰码信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.SdrNode.Sn">
+            <summary>
+            设备sn
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.SdrNode.ControlSourceIndex">
+            <summary>
+            控制源序号（1~2）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.RemainPhotoNum">
+            <summary>
+            剩余拍照张数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.RemainRecordDuration">
+            <summary>
+            剩余录像时间（单位：秒 / s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.RecordTime">
+            <summary>
+            视频录制时长（单位：秒 / s）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.PayloadIndex">
+            <summary>
+            负载编号，相机枚举值。非标准的 device_mode_key，格式为 {type-subtype-gimbalindex}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.CameraMode">
+            <summary>
+            相机模式
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.PhotoState">
+            <summary>
+            拍照状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.ScreenSplitEnable">
+            <summary>
+            分屏是否使能
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.RecordingState">
+            <summary>
+            录像状态
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.ZoomFactor">
+            <summary>
+            变焦倍数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.IrZoomFactor">
+            <summary>
+            红外变焦倍数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.LiveviewWorldRegion">
+            <summary>
+            变焦相机的视场角相对于广角相机或者红外相机的视场角，在 liveview 中会有所不同。坐标原点为镜头左上角。
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.PhotoStorageSettings">
+            <summary>
+            照片存储设置集合，取值范围{current, vision, ir}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.CameraInfo.VideoStorageSettings">
+            <summary>
+            视频存储设置集合，取值范围{current, vision, ir}
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.IrMeteringPoint.X">
+            <summary>
+            以镜头的左上角为坐标中心点，水平方向为 x（0~1）
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Device.IrMeteringPoint.Y">
+            <summary>
+            以镜头的左上角为坐标中心点，竖直方向为 y（0~1）
             </summary>
         </member>
         <member name="T:Dji.Application.Cloud.Dto.Device.UpdateTopoDevice">
@@ -985,11 +1355,6 @@
             </summary>
         </member>
         <member name="P:Dji.Application.EntityAppTenant.TenantId">
-            <summary>
-            租户Id
-            </summary>
-        </member>
-        <member name="P:Dji.Application.EntityAppTenantIgnoreUpdate.TenantId">
             <summary>
             租户Id
             </summary>
@@ -2655,6 +3020,330 @@
             </summary>
         </member>
         <member name="P:Dji.Application.DjiDeviceOutput.IsDelete">
+            <summary>
+            is_delete
+            </summary>
+        </member>
+        <member name="T:Dji.Application.DjiWorkspaceUserService">
+            <summary>
+            空间用户服务
+            </summary>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.Page(Dji.Application.DjiWorkspaceUserInput)">
+            <summary>
+            分页查询空间用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.Add(Dji.Application.AddDjiWorkspaceUserInput)">
+            <summary>
+            增加空间用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.Delete(Dji.Application.DeleteDjiWorkspaceUserInput)">
+            <summary>
+            删除空间用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.Update(Dji.Application.UpdateDjiWorkspaceUserInput)">
+            <summary>
+            更新空间用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.Detail(Dji.Application.QueryByIdDjiWorkspaceUserInput)">
+            <summary>
+            获取空间用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.List(Dji.Application.DjiWorkspaceUserInput)">
+            <summary>
+            获取空间用户列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dji.Application.DjiWorkspaceUserService.SysUserUserIdDropdown">
+            <summary>
+            获取user_id列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dji.Application.DjiWorkspaceUserDto">
+            <summary>
+            空间用户输出参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UserIdId">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.WorkspaceId">
+            <summary>
+            workspace_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.WorkspaceName">
+            <summary>
+            workspace_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UserName">
+            <summary>
+            user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UserId">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.TenantId">
+            <summary>
+            tenant_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.CreateTime">
+            <summary>
+            create_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UpdateTime">
+            <summary>
+            update_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.CreateUserId">
+            <summary>
+            create_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.CreateUserName">
+            <summary>
+            create_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UpdateUserId">
+            <summary>
+            update_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.UpdateUserName">
+            <summary>
+            update_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserDto.IsDelete">
+            <summary>
+            is_delete
+            </summary>
+        </member>
+        <member name="T:Dji.Application.DjiWorkspaceUserBaseInput">
+            <summary>
+            空间用户基础输入参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.WorkspaceId">
+            <summary>
+            workspace_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.WorkspaceName">
+            <summary>
+            workspace_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.UserName">
+            <summary>
+            user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.UserId">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.TenantId">
+            <summary>
+            tenant_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.CreateTime">
+            <summary>
+            create_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.UpdateTime">
+            <summary>
+            update_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.CreateUserId">
+            <summary>
+            create_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.CreateUserName">
+            <summary>
+            create_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.UpdateUserId">
+            <summary>
+            update_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.UpdateUserName">
+            <summary>
+            update_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserBaseInput.IsDelete">
+            <summary>
+            is_delete
+            </summary>
+        </member>
+        <member name="T:Dji.Application.DjiWorkspaceUserInput">
+            <summary>
+            空间用户分页查询输入参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserInput.SearchKey">
+            <summary>
+            关键字查询
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserInput.WorkspaceId">
+            <summary>
+            workspace_name
+            </summary>
+        </member>
+        <member name="T:Dji.Application.AddDjiWorkspaceUserInput">
+            <summary>
+            空间用户增加输入参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.AddDjiWorkspaceUserInput.WorkspaceId">
+            <summary>
+            workspace_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.AddDjiWorkspaceUserInput.WorkspaceName">
+            <summary>
+            workspace_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.AddDjiWorkspaceUserInput.UserName">
+            <summary>
+            user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.AddDjiWorkspaceUserInput.UserId">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.AddDjiWorkspaceUserInput.IsDelete">
+            <summary>
+            is_delete
+            </summary>
+        </member>
+        <member name="T:Dji.Application.DeleteDjiWorkspaceUserInput">
+            <summary>
+            空间用户删除输入参数
+            </summary>
+        </member>
+        <member name="T:Dji.Application.UpdateDjiWorkspaceUserInput">
+            <summary>
+            空间用户更新输入参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.UpdateDjiWorkspaceUserInput.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="T:Dji.Application.QueryByIdDjiWorkspaceUserInput">
+            <summary>
+            空间用户主键查询输入参数
+            </summary>
+        </member>
+        <member name="T:Dji.Application.DjiWorkspaceUserOutput">
+            <summary>
+            空间用户输出参数
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.WorkspaceId">
+            <summary>
+            workspace_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.WorkspaceNickName">
+            <summary>
+            workspace_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.Account">
+            <summary>
+            user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.UserId">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.TenantId">
+            <summary>
+            tenant_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.CreateTime">
+            <summary>
+            create_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.UpdateTime">
+            <summary>
+            update_time
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.CreateUserId">
+            <summary>
+            create_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.CreateUserName">
+            <summary>
+            create_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.UpdateUserId">
+            <summary>
+            update_user_id
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.UpdateUserName">
+            <summary>
+            update_user_name
+            </summary>
+        </member>
+        <member name="P:Dji.Application.DjiWorkspaceUserOutput.IsDelete">
             <summary>
             is_delete
             </summary>

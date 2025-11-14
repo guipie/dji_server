@@ -7,6 +7,7 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using Dji.Core.Entity;
 using Microsoft.AspNetCore.SignalR;
 
 namespace Dji.Core.Service;
@@ -19,15 +20,18 @@ public class SysOnlineUserService : IDynamicApiController, ITransient
 {
     private readonly SqlSugarRepository<SysOnlineUser> _sysOnlineUerRep;
     private readonly SysConfigService _sysConfigService;
+    private readonly SysCacheService _cache;
     private readonly IHubContext<OnlineUserHub, IOnlineUserHub> _onlineUserHubContext;
 
     public SysOnlineUserService(SqlSugarRepository<SysOnlineUser> sysOnlineUerRep,
-        SysConfigService sysConfigService,
+        SysConfigService sysConfigService, SysCacheService cache,
         IHubContext<OnlineUserHub, IOnlineUserHub> onlineUserHubContext)
     {
         _sysOnlineUerRep = sysOnlineUerRep;
         _sysConfigService = sysConfigService;
+
         _onlineUserHubContext = onlineUserHubContext;
+        _cache = cache;
     }
 
     /// <summary>
@@ -74,6 +78,16 @@ public class SysOnlineUserService : IDynamicApiController, ITransient
         }
     }
 
+    [NonAction]
+    public async Task PublicWorkspaceMqMessage(string spaceId, object msg)
+    {
+        var userList = _cache.GetNoPrefixKeysByPrefixKeyNo(spaceId);
+        if (!userList.Any()) return;
+        foreach (var item in userList)
+        {
+            await _onlineUserHubContext.Clients.Client(item).PublicClientMessage(msg);
+        }
+    }
     /// <summary>
     /// 发布客户端消息
     /// </summary>

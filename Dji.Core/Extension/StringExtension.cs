@@ -1,4 +1,6 @@
 ﻿
+using Dm.parser;
+
 namespace Dji.Core.Extension;
 
 [SuppressSniffer]
@@ -53,7 +55,7 @@ public static partial class StringExtension
 
     public static string IsNullGet(this string val, string targetVal)
     {
-        if (val == null || val.Trim().Length == 0) return targetVal;
+        if (val == null || val == "" || val.Trim().Length == 0) return targetVal;
         return val;
     }
 }

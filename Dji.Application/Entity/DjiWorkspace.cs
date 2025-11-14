@@ -8,7 +8,8 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 namespace Dji.Application.Entity;
-[SugarTable("DjiWorkspace", "工作空间")]
+[SugarIndex("index_DjiWorkspace_WorkspaceId", nameof(WorkspaceId), OrderByType.Asc, true)]  //唯一索引(true 表示唯一索引)
+[SugarTable("DjiWorkspace", "工作空间"), SysTable]
 public class DjiWorkspace : EntityAppTenant
 {
     [SugarColumn(ColumnDescription = "空间id", Length = 20, IsNullable = false)]

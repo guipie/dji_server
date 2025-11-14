@@ -9,18 +9,23 @@
 
 namespace Dji.Application.Entity;
 [SugarTable(null, "工作空间用户")]
-public class DjiWorkspaceUser : EntityAppTenant
+public class DjiWorkspaceUser : EntityAppBase
 {
     [SugarColumn(ColumnDescription = "空间id", Length = 20, IsNullable = false)]
     public string WorkspaceId { get; set; }
 
     [SugarColumn(ColumnDescription = "空间名称", Length = 20, IsNullable = false)]
-    public string WorkspaceName { get; set; }
+    public string WorkspaceNickName { get; set; }
 
     [SugarColumn(ColumnDescription = "用户名", Length = 20, IsNullable = false)]
-    public string UserName { get; set; }
+    public string Account { get; set; }
 
     [SugarColumn(ColumnDescription = "用户ID", Length = 20)]
-    public string UserId { get; set; }
+    public long UserId { get; set; }
+    [SugarColumn(ColumnDescription = "昵称", Length = 20, IsNullable = false)]
+    public string NickName { get; set; }
+
+    [SugarColumn(ColumnDescription = "默认空间")]
+    public bool IsDefault { get; set; }
 
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dji.Web.Entry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be7866b2fcea9dc74d6ae0db92146a46e5e35466")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1beb55fdee403db81c221e3c4f6a94805e4bfb22")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dji.Web.Entry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dji.Web.Entry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,7 +16,7 @@
           "EnableUnderLine": true // 启用驼峰转下划线
         },
         "TableSettings": {
-          "EnableInitTable": false, // 启用表初始化
+          "EnableInitTable": true, // 启用表初始化
           "EnableIncreTable": false // 启用表增量更新 启用表增量更新-特性[IncreTable]
         },
         "SeedSettings": {
@@ -42,28 +42,28 @@
           "EnableInitSeed": false, // 启用种子初始化
           "EnableIncreSeed": false // 启用种子增量更新-特性[IncreSeed]
         }
-      },
-      // 其他数据库配置（可以配置多个）
-      {
-        "ConfigId": "1300000000003",
-        "DbType": "Sqlite",
-        "ConnectionString": "DataSource=./db/dji.server2.db", // 库连接字符串
-        //"DbType": "MySql",
-        //"ConnectionString": "server=localhost;Database=juai.app;Uid=root;Pwd=CHENwei716!@.;Port=3306;Allow User Variables=True;CharSet=UTF8mb4;AllowLoadLocalInfile=true;SslMode=none;AllowPublicKeyRetrieval=True;",
-        "DbSettings": {
-          "EnableInitDb": true, // 启用库初始化
-          "EnableDiffLog": false, // 启用库表差异日志
-          "EnableUnderLine": true // 启用驼峰转下划线
-        },
-        "TableSettings": {
-          "EnableInitTable": true, // 启用表初始化
-          "EnableIncreTable": false // 启用表增量更新
-        },
-        "SeedSettings": {
-          "EnableInitSeed": true, // 启用种子初始化
-          "EnableIncreSeed": false // 启用种子增量更新
-        }
       }
+      // 其他数据库配置（可以配置多个）
+      //{
+      //  "ConfigId": "1300000000003",
+      //  "DbType": "Sqlite",
+      //  "ConnectionString": "DataSource=./db/dji.server2.db", // 库连接字符串
+      //  //"DbType": "MySql",
+      //  //"ConnectionString": "server=localhost;Database=juai.app;Uid=root;Pwd=CHENwei716!@.;Port=3306;Allow User Variables=True;CharSet=UTF8mb4;AllowLoadLocalInfile=true;SslMode=none;AllowPublicKeyRetrieval=True;",
+      //  "DbSettings": {
+      //    "EnableInitDb": true, // 启用库初始化
+      //    "EnableDiffLog": false, // 启用库表差异日志
+      //    "EnableUnderLine": true // 启用驼峰转下划线
+      //  },
+      //  "TableSettings": {
+      //    "EnableInitTable": true, // 启用表初始化
+      //    "EnableIncreTable": false // 启用表增量更新
+      //  },
+      //  "SeedSettings": {
+      //    "EnableInitSeed": true, // 启用种子初始化
+      //    "EnableIncreSeed": false // 启用种子增量更新
+      //  }
+      //}
     ]
   }
 }

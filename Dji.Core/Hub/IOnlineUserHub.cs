@@ -34,6 +34,7 @@ public interface IOnlineUserHub
 
 
     Task PublicClientMessage(ClientMessage message);
+    Task PublicClientMessage(object message);
 
     /// <summary>
     /// 接收消息

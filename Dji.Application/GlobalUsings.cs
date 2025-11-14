@@ -35,3 +35,4 @@ global using Dji.Application.Util;
 global using Dji.Core.Service;
 global using NewLife;
 global using Dji.Application.Cloud.CloudAttribute;
+global using Dji.Core.Extension;

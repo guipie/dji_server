@@ -345,6 +345,41 @@
             默认表主键
             </summary>
         </member>
+        <member name="T:Dji.Core.EntityAppBase">
+            <summary>
+            框架实体基类
+            </summary>
+        </member>
+        <member name="P:Dji.Core.EntityAppBaseIgnoreUpdate.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Dji.Core.EntityAppBaseIgnoreUpdate.CreateUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Dji.Core.EntityAppBaseIgnoreUpdate.CreateUser">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Dji.Core.EntityAppBaseIgnoreUpdate.IsDelete">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="P:Dji.Core.EntityAppTenant.TenantId">
+            <summary>
+            租户Id
+            </summary>
+        </member>
+        <member name="T:Dji.Core.Feedback">
+            <summary>
+            用户反馈表
+            </summary>
+        </member>
         <member name="T:Dji.Core.EntityBaseId">
             <summary>
             框架实体基类Id
@@ -2770,6 +2805,16 @@
             自定义数据
             </summary>
         </member>
+        <member name="T:Dji.Core.PayTypeEnum">
+            <summary>
+            付费类型枚举
+            </summary>
+        </member>
+        <member name="F:Dji.Core.PayTypeEnum.MonthPayed">
+            <summary>
+            月付会员用户
+            </summary>
+        </member>
         <member name="T:Dji.Core.ErrorCodeEnum">
             <summary>
             系统错误码
@@ -3615,9 +3660,9 @@
             socket通知消息消息类型枚举
             </summary>
         </member>
-        <member name="F:Dji.Core.SocketMessageTypeEnum.TaskDetail">
+        <member name="F:Dji.Core.SocketMessageTypeEnum.Mqtt">
             <summary>
-            绘画任务消息
+            mq消息
             </summary>
         </member>
         <member name="T:Dji.Core.StatusEnum">

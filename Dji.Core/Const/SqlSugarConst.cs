@@ -24,7 +24,7 @@ public class SqlSugarConst
     /// </summary>
     public const string LogConfigId = "1300000000002";
 
-    public const string DjiConfigId = "1300000000003";
+    //public const string DjiConfigId = "1300000000003";
 
     /// <summary>
     /// 默认表主键

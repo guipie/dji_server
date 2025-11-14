@@ -48,9 +48,9 @@ public class MqttDataSyncJob : IJob
             var curDockOsd = _cache.Get<DockOsd>(item.Sn.OsdOnline());
             if (curDockOsd != null && curDockOsd.Longitude > 0 && curDockOsd.Latitude > 0)
             {
-                item.Longitude = curDockOsd.Longitude;
-                item.Latitude = curDockOsd.Latitude;
-                item.Altitude = curDockOsd.Height;
+                item.Longitude = curDockOsd.Longitude.Value;
+                item.Latitude = curDockOsd.Latitude.Value;
+                item.Altitude = curDockOsd.Height.Value;
                 item.FirmwareVersion = curDockOsd.FirmwareVersion;
                 await _deviceRes.UpdateAsync(item);
             }

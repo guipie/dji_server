@@ -127,7 +127,13 @@ public class SysCacheService : IDynamicApiController, ISingleton
             ? _cache.Keys.Where(u => u.StartsWith($"{_cacheOptions.Prefix}{prefixKey}")).Select(u => u[_cacheOptions.Prefix.Length..]).ToList()
             : ((FullRedis)_cache).Search($"{_cacheOptions.Prefix}{prefixKey}*", int.MaxValue).Select(u => u[_cacheOptions.Prefix.Length..]).ToList();
     }
-
+    [DisplayName("根据键名前缀获取键名集合,不含前缀")]
+    public List<string> GetNoPrefixKeysByPrefixKeyNo(string prefixKey)
+    {
+        return _cache == Cache.Default
+            ? _cache.Keys.Where(u => u.StartsWith($"{_cacheOptions.Prefix}{prefixKey}")).Select(u => u[_cacheOptions.Prefix.Length..].Replace(prefixKey + ":", "")).ToList()
+            : ((FullRedis)_cache).Search($"{_cacheOptions.Prefix}{prefixKey}*", int.MaxValue).Select(u => u[_cacheOptions.Prefix.Length..].Replace(prefixKey + ":", "")).ToList();
+    }
     /// <summary>
     /// 获取缓存值
     /// </summary>
@@ -187,7 +193,7 @@ public class SysCacheService : IDynamicApiController, ISingleton
     public void HashAdd<T>(string key, string hashKey, T value)
     {
         var hash = GetHashMap<T>(key);
-      
+
         hash.Add(hashKey, value);
     }
 

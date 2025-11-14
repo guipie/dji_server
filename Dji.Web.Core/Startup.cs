@@ -7,9 +7,10 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using AspNetCoreRateLimit;
+using Dji.Application;
 using Dji.Core;
 using Dji.Core.Service;
-using AspNetCoreRateLimit;
 using Furion;
 using Furion.SpecificationDocument;
 using Furion.VirtualFileServer;
@@ -26,8 +27,8 @@ using Newtonsoft.Json.Serialization;
 using OnceMi.AspNetCore.OSS;
 using SixLabors.ImageSharp.Web.DependencyInjection;
 using System;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Dji.Application;
 
 namespace Dji.Web.Core;
 
@@ -71,14 +72,17 @@ public class Startup : AppStartup
             setting.DateTimeZoneHandling = DateTimeZoneHandling.Local;
             setting.DateFormatString = "yyyy-MM-dd HH:mm:ss"; // 时间格式化
             setting.ReferenceLoopHandling = ReferenceLoopHandling.Ignore; // 忽略循环引用
+
             //setting.Converters.Add(new StringEnumConverter(new CamelCaseNamingStrategy(), true));枚举返回字符串
             // setting.ContractResolver = new CamelCasePropertyNamesContractResolver(); // 解决动态对象属性名大写
-            // setting.NullValueHandling = NullValueHandling.Ignore; // 忽略空值
+            setting.NullValueHandling = NullValueHandling.Ignore; // 忽略空值  当属性值为 null 时
+            //options.PayloadSerializerSettings.DefaultValueHandling = Newtonsoft.Json.DefaultValueHandling.Ignore; //当属性值为其类型的默认值（如 0、false、"" 空字符串等）时，不包含该字段
             // setting.Converters.AddLongTypeConverters(); // long转string（防止js精度溢出） 超过16位开启
             // setting.MetadataPropertyHandling = MetadataPropertyHandling.Ignore; // 解决DateTimeOffset异常
             // setting.DateParseHandling = DateParseHandling.None; // 解决DateTimeOffset异常
             // setting.Converters.Add(new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }); // 解决DateTimeOffset异常
-        };
+        }
+        ;
 
         services.AddControllersWithViews()
             .AddAppLocalization()

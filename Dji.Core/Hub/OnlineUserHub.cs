@@ -7,6 +7,7 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using Dji.Core.Entity;
 using Furion.InstantMessaging;
 using Microsoft.AspNetCore.SignalR;
 
@@ -24,9 +25,10 @@ public class OnlineUserHub : Hub<IOnlineUserHub>
     private readonly SysMessageService _sysMessageService;
     private readonly IHubContext<OnlineUserHub, IOnlineUserHub> _onlineUserHubContext;
     private readonly SysCacheService _sysCacheService;
+    private readonly SqlSugarRepository<DjiWorkspaceUser> _spaceUserRep;
 
     public OnlineUserHub(SqlSugarRepository<SysOnlineUser> sysOnlineUerRep,
-        SysMessageService sysMessageService,
+        SysMessageService sysMessageService, SqlSugarRepository<DjiWorkspaceUser> spaceUserRep,
         IHubContext<OnlineUserHub, IOnlineUserHub> onlineUserHubContext,
         SysCacheService sysCacheService)
     {
@@ -34,6 +36,7 @@ public class OnlineUserHub : Hub<IOnlineUserHub>
         _sysMessageService = sysMessageService;
         _onlineUserHubContext = onlineUserHubContext;
         _sysCacheService = sysCacheService;
+        _spaceUserRep = spaceUserRep;
     }
 
     /// <summary>
@@ -47,12 +50,14 @@ public class OnlineUserHub : Hub<IOnlineUserHub>
         var claims = JWTEncryption.ReadJwtToken(token)?.Claims;
         var client = Parser.GetDefault().Parse(httpContext.Request.Headers["User-Agent"]);
 
-        var userId = claims.FirstOrDefault(u => u.Type == ClaimConst.UserId)?.Value;
+        var userIdVal = claims.FirstOrDefault(u => u.Type == ClaimConst.UserId)?.Value;
         var tenantId = claims.FirstOrDefault(u => u.Type == ClaimConst.TenantId)?.Value;
+        var userId = string.IsNullOrWhiteSpace(userIdVal) ? 0 : long.Parse(userIdVal);
+        var userSpaces = _spaceUserRep.GetList(m => m.UserId == userId);
         var user = new SysOnlineUser
         {
             ConnectionId = Context.ConnectionId,
-            UserId = string.IsNullOrWhiteSpace(userId) ? 0 : long.Parse(userId),
+            UserId = userId,
             UserName = claims.FirstOrDefault(u => u.Type == ClaimConst.Account)?.Value ?? "offline",
             RealName = claims.FirstOrDefault(u => u.Type == ClaimConst.RealName)?.Value,
             Time = DateTime.Now,
@@ -61,8 +66,10 @@ public class OnlineUserHub : Hub<IOnlineUserHub>
             Browser = client.UA.Family + client.UA.Major,
             Os = client.OS.Family + client.OS.Major,
             TenantId = string.IsNullOrWhiteSpace(tenantId) ? 0 : Convert.ToInt64(tenantId),
+            WorkspaceIds = userSpaces.Select(m => m.WorkspaceId).Join(","),
         };
         await _sysOnlineUerRep.InsertAsync(user);
+        _sysCacheService.Set(userSpaces.Where(m => m.IsDefault).FirstOrDefault().WorkspaceId + ":" + user.ConnectionId, user.WorkspaceIds);
         _sysCacheService.Set(CacheConst.KeyUserOnline + user.UserId, user);
 
         // 以租户Id进行分组

@@ -16,9 +16,9 @@ namespace Dji.Core;
 public enum SocketMessageTypeEnum
 {
     /// <summary>
-    /// 绘画任务消息
+    /// mq消息
     /// </summary>
-    [Description("绘画任务消息")]
-    TaskDetail = 0,
+    [Description("mq消息")]
+    Mqtt = 0,
 
 }

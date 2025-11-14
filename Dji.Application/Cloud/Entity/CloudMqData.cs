@@ -21,7 +21,7 @@ public class CloudMqData<T>
 
     public T Data { get; set; }
 
- 
+    public string Ext { get; set; }
 
 }
 

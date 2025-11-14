@@ -57,6 +57,37 @@
     ]
   },
   {
+    "ContainingType": "Dji.Application.Service.DjiDevice.DjiDeviceCloudService",
+    "Method": "PutDebugMode",
+    "RelativePath": "api/cloud/debugMode/{gateway}/{isOpen}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gateway",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "isOpen",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Cloud.Entity.CloudMqData\u00601[[Dji.Application.Cloud.Entity.MqOutput\u00601[[Dji.Application.Cloud.Dto.Debug.DebugModeOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Dji.Web.Entry.Controllers.DemoController",
     "Method": "CreateSseDemo",
     "RelativePath": "api/demo/api/sse",
@@ -920,6 +951,204 @@
       {
         "Name": "input",
         "Type": "Dji.Application.UpdateDjiWorkspaceInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "Add",
+    "RelativePath": "api/djiWorkspaceUser/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.AddDjiWorkspaceUserInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "Delete",
+    "RelativePath": "api/djiWorkspaceUser/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DeleteDjiWorkspaceUserInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "Detail",
+    "RelativePath": "api/djiWorkspaceUser/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Application.Entity.DjiWorkspaceUser, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "List",
+    "RelativePath": "api/djiWorkspaceUser/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkspaceId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Field",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DescStr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Collections.Generic.List\u00601[[Dji.Application.DjiWorkspaceUserOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "Page",
+    "RelativePath": "api/djiWorkspaceUser/page",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.DjiWorkspaceUserInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[Dji.Core.SqlSugarPagedList\u00601[[Dji.Application.DjiWorkspaceUserOutput, Dji.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Dji.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "SysUserUserIdDropdown",
+    "RelativePath": "api/djiWorkspaceUser/sysUserUserIdDropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Dji.Core.AdminResult\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dji.Application.DjiWorkspaceUserService",
+    "Method": "Update",
+    "RelativePath": "api/djiWorkspaceUser/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Dji.Application.UpdateDjiWorkspaceUserInput",
         "IsRequired": true
       }
     ],

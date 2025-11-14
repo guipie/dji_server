@@ -27,7 +27,7 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
 {
     private readonly SqlSugarRepository<DjiDevice> _deviceRes = sugarRepository;
     private readonly SqlSugarRepository<DjiDeviceEnum> _domainRes = domainRes;
-    private readonly ISqlSugarClient _db = db.AsTenant().GetConnectionScope(SqlSugarConst.DjiConfigId);
+    private readonly ISqlSugarClient _db = db.AsTenant().GetConnectionScope(SqlSugarConst.MainConfigId);
     private readonly SysCacheService _sysCache = sysCacheService;
     private readonly ILogger<DeviceRepository> _logger = logger;
 
@@ -79,7 +79,7 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         var dock = await GetFullDeviceBySn(dockSn);
         if (dock == null)
         {
-            var entity = new DjiDevice() { Sn = dockSn, Longitude = dockOsd.Longitude, Latitude = dockOsd.Latitude, Altitude = dockOsd.Height };
+            var entity = new DjiDevice() { Sn = dockSn, Longitude = dockOsd.Longitude.Value, Latitude = dockOsd.Latitude.Value, Altitude = dockOsd.Height.Value };
             dock = await _deviceRes.InsertReturnEntityAsync(entity);
         }
         if (dockOsd.SubDevice != null && !dockOsd.SubDevice.DeviceSn.IsNullOrWhiteSpace() && dock.Children.IsEmptyList())
