@@ -29,7 +29,8 @@ internal class MqDeviceService(ILogger<MqDeviceService> logger, DeviceRepository
     [MqttSubscribe(Topics.ThingProductOsd, DomainEnum.Dock)]
     public async Task DockOsdAsync(CloudMqData<DockOsd> data)
     {
-        Console.WriteLine("机场{0}坐标：{1}，{2}"+data.Data.RtcmInfo.ToJson(), data.Gateway, data.Data.Longitude, data.Data.Latitude);
+        //if(data.Gateway== "8UUXN5600A07KY")
+        //Console.WriteLine("机场{0},数据：{1}", data.Gateway, data.Data.AccTime);
         await _deviceRepository.BindDockOsd(data.Gateway, data.Data);
         await Task.Delay(1);
     }

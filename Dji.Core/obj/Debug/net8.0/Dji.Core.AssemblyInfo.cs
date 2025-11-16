@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dji.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1beb55fdee403db81c221e3c4f6a94805e4bfb22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a94482ca349290d6303a97ca940ec26826a7c049")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dji.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dji.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

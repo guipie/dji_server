@@ -124,7 +124,7 @@ public class DockOsd
     /// <summary>
     /// 机场累计运行时长 (acc_time) - int? (秒)
     /// </summary>
-    public int? AccTime { get; set; }
+    public long? AccTime { get; set; }
 
     /// <summary>
     /// 首次上电时间 (first_power_on) - int? (毫秒)

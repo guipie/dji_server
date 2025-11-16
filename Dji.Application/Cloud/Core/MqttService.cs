@@ -15,10 +15,12 @@ using Dji.Core.Extension;
 using Microsoft.Extensions.Options;
 using MQTTnet;
 using MQTTnet.Protocol;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using static SKIT.FlurlHttpClient.Wechat.Api.Models.CgibinTagsMembersGetBlackListResponse.Types;
 
 namespace Dji.Application.Cloud.Core;
 /// <summary>
@@ -153,7 +155,8 @@ internal class MqttService : IMqttService, IDisposable
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
 
         var cloudMqData = payload.ToObject<CloudMqData<dynamic>>();
-        //Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, cloudMqData.Gateway);
+        //if (topic == "thing/product/8UUXN5600A07KY/osd") 
+        //Console.WriteLine("接受消息，topic:{0},method:{1},gateway:{2}", topic, cloudMqData.Method, ((JObject)cloudMqData.Data)["acc_time"]);
         var matched = _moduleManager._modules
             .Where(s => MqttTopicFilterComparer.Compare(topic, s.Topic) == MqttTopicFilterCompareResult.IsMatch)
             .WhereIF(!cloudMqData.Method.IsNullOrEmpty(), s => s.Method.Equals(cloudMqData.Method))
