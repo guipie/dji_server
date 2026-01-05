@@ -30,9 +30,10 @@ global using Microsoft.Extensions.Logging;
 global using System.Threading;
 global using Mapster;
 
-global using Dji.Application.Entity;
 global using Dji.Application.Util;
 global using Dji.Core.Service;
 global using NewLife;
 global using Dji.Application.Cloud.CloudAttribute;
 global using Dji.Core.Extension;
+global using Dji.Core.Entity;
+global using Dji.Core.Entity.DjiEntity;

@@ -49,6 +49,7 @@ internal class MqttService : IMqttService, IDisposable
     };
 
     public bool IsConnected => _client.IsConnected;
+    private bool _IsConnectting=false;
 
     public MqttService(ILogger<MqttService> logger, IMqttClient client, SysCacheService sysCacheService, IOptions<MqttOptions> mqttOptions, ModuleManager moduleManager, IServiceScopeFactory scopeFactory)
     {
@@ -58,16 +59,7 @@ internal class MqttService : IMqttService, IDisposable
         _client.ConnectedAsync += OnConnectedAsync;
         // 注册消息接收回调
         _client.ApplicationMessageReceivedAsync += OnMqttMessageReceived;
-        _client.DisconnectedAsync += async e =>
-        {
-            while (client == null || client.IsConnected == false)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Error.WriteLine("MQTT 已断开连接，正在尝试重新连接...");
-                Thread.Sleep(5 * 1000);
-                await StartAsync();
-            }
-        };
+        _client.DisconnectedAsync += OnDisconnected;
         _mqttOptions = mqttOptions.Value;
         _moduleManager = moduleManager;
         _cache = sysCacheService;
@@ -78,6 +70,7 @@ internal class MqttService : IMqttService, IDisposable
     {
         try
         {
+            _IsConnectting=true;
             var options = new MqttClientOptionsBuilder()
                   .WithClientId(_mqttOptions.ClientId)
                   .WithTcpServer(_mqttOptions.Server, _mqttOptions.Port)
@@ -88,12 +81,15 @@ internal class MqttService : IMqttService, IDisposable
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("MQTT 已连接到 {0}:{1},Resutlt:{2}", _mqttOptions.Server, _mqttOptions.Port, result);
             _logger.LogInformation("MQTT 已连接到 {Host}:{Port},Resutlt:{result}", _mqttOptions.Server, _mqttOptions.Port, result);
+
+            _IsConnectting = false;
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.Error.WriteLine("MQTT 启动失败,Error:{0}", ex.StackTrace);
+            Console.Error.WriteLine("MQTT 启动失败[{1}],Error:{0}", ex.StackTrace,DateTime.Now.ToString());
             _logger.LogError(ex, "MQTT 启动失败");
+            _IsConnectting=false;
             return;
         }
     }
@@ -118,9 +114,17 @@ internal class MqttService : IMqttService, IDisposable
         }
     }
     //断开连接后事件
-    public void OnDisconnected(MqttClientDisconnectedEventArgs e)
+    public async Task OnDisconnected(MqttClientDisconnectedEventArgs e)
     {
         _logger.LogError("MQTT 断开连接: {Error}", e.Exception);
+        if (_client == null || _client.IsConnected == false)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Error.WriteLine("MQTT 已断开连接，正在尝试重新连接...");
+            Thread.Sleep(5 * 1000);
+            if (!_IsConnectting)
+                await StartAsync();
+        }
     }
     public async Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default)
     {

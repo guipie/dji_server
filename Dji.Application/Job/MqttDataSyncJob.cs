@@ -26,20 +26,22 @@ namespace Dji.Application.Job;
 [Minutely(TriggerId = "trigger_syncMqData", Description = "同步mq数据", MaxNumberOfRuns = 0, RunOnStart = true)]
 public class MqttDataSyncJob : IJob
 {
-    private readonly IServiceScopeFactory _scopeFactory;
+    private readonly IServiceScope _serviceScope;
+    private readonly SysCacheService _cache;
+    private readonly ILogger<MqttDataSyncJob> _logger;
+    private readonly SqlSugarRepository<DjiDevice> _deviceRes;
     public MqttDataSyncJob(IServiceScopeFactory scopeFactory)
     {
-        _scopeFactory = scopeFactory;
+        _serviceScope = scopeFactory.CreateScope();
+        _cache = _serviceScope.ServiceProvider.GetRequiredService<SysCacheService>();
+        _logger = _serviceScope.ServiceProvider.GetRequiredService<ILogger<MqttDataSyncJob>>();
+        _deviceRes = _serviceScope.ServiceProvider.GetRequiredService<SqlSugarRepository<DjiDevice>>();
     }
 
     public async Task ExecuteAsync(JobExecutingContext context, CancellationToken stoppingToken)
     {
-        Console.WriteLine("start sync mqtt data..");
-        using var serviceScope = _scopeFactory.CreateScope();
-        var _deviceRes = serviceScope.ServiceProvider.GetRequiredService<SqlSugarRepository<DjiDevice>>();
-        var _publish = serviceScope.ServiceProvider.GetRequiredService<MqttGatewayPublish>();
-        var _cache = serviceScope.ServiceProvider.GetRequiredService<SysCacheService>();
-        var _log = serviceScope.ServiceProvider.GetRequiredService<ILogger<MqttDataSyncJob>>();
+        Console.WriteLine("start sync mqtt data..");  
+        var _publish = _serviceScope.ServiceProvider.GetRequiredService<MqttGatewayPublish>();  
         var allData = await _deviceRes.AsQueryable()
             .OrderBy(u => new { u.Sn }).ToTreeAsync(u => u.Children, u => u.ParentSn, null, u => u.Sn);
         _cache.RemoveByPrefixKey("".Device());
@@ -54,7 +56,7 @@ public class MqttDataSyncJob : IJob
                 item.FirmwareVersion = curDockOsd.FirmwareVersion;
                 await _deviceRes.UpdateAsync(item);
             }
-            if (item.WorkspaceId.IsNullOrWhiteSpace())
+            if (item.WorkspaceId.IsNullOrWhiteSpace()&&item.BindNum<10)
             {
                 var data = new CommonTopicRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = item.Sn }] }, item.Sn);
                 await _publish.PublishAsync<AirportBindStatusRequest>(Topics.ThingProductRequests, data);
@@ -70,7 +72,7 @@ public class MqttDataSyncJob : IJob
                     child.FirmwareVersion = curDevice.FirmwareVersion;
                     await _deviceRes.UpdateAsync(child);
                 }
-                if (child.WorkspaceId.IsNullOrWhiteSpace())
+                if (child.WorkspaceId.IsNullOrWhiteSpace() && child.BindNum < 10)
                 {
                     var data = new CommonTopicRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = child.Sn }] }, item.Sn);
                     await _publish.PublishAsync<AirportBindStatusRequest>(Topics.ThingProductRequests, data);

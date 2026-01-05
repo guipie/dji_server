@@ -20,6 +20,15 @@ public class DjiDeviceEnum : EntityAppBase
     public string Name { get; set; }
 
 
+
+    //[SugarColumn(ColumnDescription = "挂载产品", Length = 20)]
+    //public long ParentId { get; set; }
+
+    //[SugarColumn(ColumnDescription = "挂载产品名称", Length = 20)]
+    //[Required]
+    //public string ParentName { get; set; }
+
+
     [SugarColumn(ColumnDescription = "领域", Length = 20)]
     public DomainEnum Domain { get; set; }
 

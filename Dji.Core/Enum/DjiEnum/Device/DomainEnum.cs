@@ -27,5 +27,5 @@ public enum DomainEnum
     [Description("机场")]
     Dock = 3,
     [Description("中继器")]
-    REPEATER = 6,
+    Repeater = 6,
 }

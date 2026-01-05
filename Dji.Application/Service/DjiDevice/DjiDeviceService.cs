@@ -1,6 +1,5 @@
 ﻿using Dji.Core.Service;
 using Dji.Application.Const;
-using Dji.Application.Entity;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using System.Linq;

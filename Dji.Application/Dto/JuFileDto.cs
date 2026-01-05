@@ -13,22 +13,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Application;
-[Description("相机枚举")]
-public enum CameraPositionEnum
+namespace Dji.Application.Dto;
+public class JuFileDto
 {
-    [Description("舱内")]
-    In = 0,
-    [Description("舱外")]
-    Out = 1,
-    [Description("上侧")]
-    Up = 2,
-
-    [Description("下侧")]
-    Down = 3,
-    [Description("左侧")]
-    Left = 4,
-    [Description("右侧")]
-    Right = 5,
-
+    public long Id { get; set; }
+    public string? Url { get; set; }
+    public DateTime? CreateTime { get; set; }
+    public string? SizeKb { get; set; } = string.Empty;
+    public JuFileDto(long id, string? url, string? sizekb, DateTime? dateTime)
+    {
+        this.Id = id;
+        this.Url = url;
+        this.SizeKb = sizekb;
+        this.CreateTime = dateTime;
+    }
 }

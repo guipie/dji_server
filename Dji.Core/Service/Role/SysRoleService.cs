@@ -238,7 +238,7 @@ public class SysRoleService : IDynamicApiController, ITransient
     [DisplayName("设置角色状态")]
     public async Task<int> SetStatus(RoleInput input)
     {
-        if (!Enum.IsDefined(typeof(StatusEnum), input.Status))
+        if (!System.Enum.IsDefined(typeof(StatusEnum), input.Status))
             throw Oops.Oh(ErrorCodeEnum.D3005);
 
         return await _sysRoleRep.AsUpdateable()

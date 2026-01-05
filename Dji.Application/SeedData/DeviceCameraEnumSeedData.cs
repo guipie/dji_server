@@ -7,7 +7,7 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Dji.Application.Entity;
+
 
 namespace Dji.Application.SeedData;
 public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraEnum>
@@ -16,8 +16,8 @@ public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraE
     {
         return
         [
-            // 飞行器 FPV
-            new DjiDeviceCameraEnum() { Id = 1, Name = "Matrice 300 RTK FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
+        // 飞行器 FPV
+        new DjiDeviceCameraEnum() { Id = 1, Name = "Matrice 300 RTK FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
         new DjiDeviceCameraEnum() { Id = 2, Name = "Matrice 350 RTK FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
         new DjiDeviceCameraEnum() { Id = 3, Name = "Matrice 30 FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
         new DjiDeviceCameraEnum() { Id = 4, Name = "Matrice 30T FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },

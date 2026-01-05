@@ -122,7 +122,7 @@ public class SysDictDataService : IDynamicApiController, ITransient
         if (dictData == null)
             throw Oops.Oh(ErrorCodeEnum.D3004);
 
-        if (!Enum.IsDefined(typeof(StatusEnum), input.Status))
+        if (!System.Enum.IsDefined(typeof(StatusEnum), input.Status))
             throw Oops.Oh(ErrorCodeEnum.D3005);
 
         dictData.Status = input.Status;

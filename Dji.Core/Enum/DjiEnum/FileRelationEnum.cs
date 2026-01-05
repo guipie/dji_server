@@ -16,9 +16,5 @@ using System.Threading.Tasks;
 namespace Dji.Core;
 public enum FileRelationEnum
 {
-    Article,
-    Special,
-    ChatgptImage,
-    Feedback,
-    Drawing
+    Dji
 }

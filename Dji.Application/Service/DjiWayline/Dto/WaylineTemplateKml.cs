@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dji.Application.Entity.Dto
+namespace Dji.Application.Service.DjiWayline.Wayline
 {
     /// <summary>
     /// WPML KML 模板根对象
@@ -48,7 +48,7 @@ namespace Dji.Application.Entity.Dto
         /// 航线模板列表（至少一个）
         /// </summary>
         [Required]
-        public List<WaypointTemplate> Templates { get; set; } = new List<WaypointTemplate>();
+        public List<WaypointTemplate> Folder { get; set; } = new List<WaypointTemplate>();
     }
 
     /// <summary>
@@ -122,41 +122,6 @@ namespace Dji.Application.Entity.Dto
         /// </summary>
         [Required]
         public PayloadInfo PayloadInfo { get; set; } = new PayloadInfo();
-    }
-
-    /// <summary>
-    /// 无人机信息
-    /// </summary>
-    public class DroneInfo
-    {
-        /// <summary>
-        /// 无人机型号（如 M300RTK、Mavic3E 等）
-        /// </summary>
-        [Required]
-        public string DroneType { get; set; } = "M300RTK";
-
-        /// <summary>
-        /// 固件版本（可选）
-        /// </summary>
-        public string? FirmwareVersion { get; set; }
-    }
-
-    /// <summary>
-    /// 载荷信息
-    /// </summary>
-    public class PayloadInfo
-    {
-        /// <summary>
-        /// 载荷位置索引（从 0 开始）
-        /// </summary>
-        [Required]
-        public int PayloadPositionIndex { get; set; } = 0;
-
-        /// <summary>
-        /// 载荷类型（如 P1、Zenmuse H20T、XT2 等）
-        /// </summary>
-        [Required]
-        public string PayloadType { get; set; } = "P1";
     }
 
     /// <summary>
@@ -354,72 +319,7 @@ namespace Dji.Application.Entity.Dto
         public List<Action>? Actions { get; set; }
     }
 
-    /// <summary>
-    /// 航点动作
-    /// </summary>
-    public class Action
-    {
-        /// <summary>
-        /// 动作唯一 ID
-        /// </summary>
-        [Required]
-        public int ActionId { get; set; }
+  
 
-        /// <summary>
-        /// 动作执行器功能类型
-        /// </summary>
-        /// <remarks>
-        /// - takePhoto：拍照  
-        /// - startRecord：开始录像  
-        /// - stopRecord：停止录像  
-        /// - gimbalRotate：云台旋转  
-        /// - hover：悬停
-        /// </remarks>
-        [Required]
-        [RegularExpression("^(takePhoto|startRecord|stopRecord|gimbalRotate|hover)$")]
-        public string ActionActuatorFunc { get; set; } = "takePhoto";
-
-        /// <summary>
-        /// 动作参数
-        /// </summary>
-        [Required]
-        public ActionActuatorFuncParam ActionActuatorFuncParam { get; set; } = new ActionActuatorFuncParam();
-    }
-
-    /// <summary>
-    /// 动作执行器参数
-    /// </summary>
-    public class ActionActuatorFuncParam
-    {
-        /// <summary>
-        /// 云台俯仰旋转角度（单位：度）
-        /// </summary>
-        /// <remarks>仅当 ActionActuatorFunc = gimbalRotate 时有效</remarks>
-        [Range(-90.0, 30.0)]
-        public double? GimbalPitchRotateAngle { get; set; }
-
-        /// <summary>
-        /// 云台横滚旋转角度（单位：度）
-        /// </summary>
-        [Range(-45.0, 45.0)]
-        public double? GimbalRollRotateAngle { get; set; }
-
-        /// <summary>
-        /// 云台偏航旋转角度（单位：度）
-        /// </summary>
-        [Range(-360.0, 360.0)]
-        public double? GimbalYawRotateAngle { get; set; }
-
-        /// <summary>
-        /// 云台旋转时间（单位：秒）
-        /// </summary>
-        [Range(0.1, 60.0)]
-        public double? GimbalRotateTime { get; set; }
-
-        /// <summary>
-        /// 载荷位置索引（从 0 开始）
-        /// </summary>
-        [Required]
-        public int PayloadPositionIndex { get; set; } = 0;
-    }
+   
 }

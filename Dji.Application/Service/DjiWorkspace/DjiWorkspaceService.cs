@@ -1,6 +1,5 @@
 ﻿using Dji.Core.Service;
 using Dji.Application.Const;
-using Dji.Application.Entity;
 using Microsoft.AspNetCore.Http;
 
 namespace Dji.Application;
@@ -105,11 +104,7 @@ public class DjiWorkspaceService : IDynamicApiController, ITransient
     public async Task<List<DjiWorkspaceOutput>> List([FromQuery] DjiWorkspaceInput input)
     {
         return await _rep.AsQueryable().Select<DjiWorkspaceOutput>().ToListAsync();
-    }
-
-
-
-
+    } 
 
 }
 

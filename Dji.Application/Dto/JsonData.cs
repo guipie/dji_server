@@ -13,19 +13,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Application;
-
-[Description("Domain枚举")]
-public enum DomainEnum
+namespace Dji.Application.Dto;
+public class JsonData
 {
-    [Description("无人机")]
-    Drone = 0,
-    [Description("负载")]
-    Payload = 1,
-    [Description("远程遥控")]
-    RemoteControl = 2,
-    [Description("机场")]
-    Dock = 3,
-    [Description("中继器")]
-    REPEATER = 6,
+    public string Data { get; set; }
 }

@@ -1,6 +1,6 @@
 ﻿// 麻省理工学院许可证
 //
-// 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
+// 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
 // 特此免费授予获得本软件的任何人以处理本软件的权利，但须遵守以下条件：在所有副本或重要部分的软件中必须包括上述版权声明和本许可声明。
 //
@@ -13,32 +13,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Application;
+namespace Dji.Core.Enum.DjiEnum.Wayline;
 
-[Description("Domain枚举")]
-public enum DebugModeStatusEnum
+public enum TaskTypeCodeEnum
 {
-    [Description("取消或终止")]
-    Canceled = 0,
-
-    [Description("失败")]
-    Failed = 1,
-
-    [Description("执行中")]
-    InProgress = 2,
-
-    [Description("执行成功")]
-    Ok = 3,
-
-    [Description("暂停")]
-    Paused = 4,
-
-    [Description("拒绝")]
-    Rejected = 5,
-
-    [Description("已下发")]
-    Sent = 6,
-
-    [Description("超时")]
-    Timeout = 7,
+    Immediate = 0,
+    Scheduled = 1,
+    Conditional = 2,
 }

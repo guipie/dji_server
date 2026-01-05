@@ -1,6 +1,5 @@
 ﻿using Dji.Core.Service;
 using Dji.Application.Const;
-using Dji.Application.Entity;
 using Microsoft.AspNetCore.Http;
 namespace Dji.Application;
 /// <summary>

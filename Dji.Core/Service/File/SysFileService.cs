@@ -36,7 +36,7 @@ public class SysFileService : IDynamicApiController, ITransient
         _OSSProviderOptions = oSSProviderOptions.Value;
         _uploadOptions = uploadOptions.Value;
         if (_OSSProviderOptions.IsEnable)
-            _OSSService = ossServiceFactory.Create(Enum.GetName(_OSSProviderOptions.Provider));
+            _OSSService = ossServiceFactory.Create(System.Enum.GetName(_OSSProviderOptions.Provider));
     }
 
     /// <summary>
@@ -278,7 +278,7 @@ public class SysFileService : IDynamicApiController, ITransient
         var finalName = newFile.Id + suffix; // 文件最终名称
         if (_OSSProviderOptions.IsEnable)
         {
-            newFile.Provider = Enum.GetName(_OSSProviderOptions.Provider);
+            newFile.Provider = System.Enum.GetName(_OSSProviderOptions.Provider);
             var filePath = string.Concat(path, "/", finalName);
             var uploaded = await _OSSService.PutObjectAsync(newFile.BucketName, filePath, file.OpenReadStream());
             if (!uploaded) throw Oops.Oh(ErrorCodeEnum.D8005);

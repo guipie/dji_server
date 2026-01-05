@@ -17,7 +17,11 @@ namespace Dji.Core;
 public abstract class EntityAppBase : EntityBase, IDeletedFilter
 {
 }
-
+public abstract class EntityWorkspaceBase : EntityBase, IDeletedFilter
+{
+    [SugarColumn(ColumnDescription = "空间", Length = 40, IsNullable = false)]
+    public virtual string WorkspaceId { get; set; }
+}
 [Tenant(SqlSugarConst.MainConfigId)]
 public abstract class EntityAppBaseIgnoreUpdate : EntityBaseId, IDeletedFilter
 {

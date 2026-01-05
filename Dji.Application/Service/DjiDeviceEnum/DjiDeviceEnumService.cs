@@ -1,7 +1,8 @@
-﻿using Dji.Core.Service;
+﻿using AngleSharp.Dom;
 using Dji.Application.Const;
-using Dji.Application.Entity;
+using Dji.Core.Service;
 using Microsoft.AspNetCore.Http;
+using System.Linq;
 namespace Dji.Application;
 /// <summary>
 /// 设备枚举服务
@@ -15,6 +16,15 @@ public class DjiDeviceEnumService : IDynamicApiController, ITransient
         _rep = rep;
     }
 
+    /// <summary>
+    /// 无人机型号列表
+    /// </summary>
+    /// <returns></returns>
+    [ApiDescriptionSettings(Name = "DroneModels")]
+    public async Task<IList<DjiDeviceEnumOutput>> GetDroneModels()
+    {
+        return await _rep.AsQueryable().Where(m=>m.Domain==DomainEnum.Drone).OrderBy(m=>m.Name).Select<DjiDeviceEnumOutput>().ToListAsync();
+    }
     /// <summary>
     /// 分页查询设备枚举
     /// </summary>

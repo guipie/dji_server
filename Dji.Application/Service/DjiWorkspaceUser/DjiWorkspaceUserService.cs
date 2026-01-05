@@ -1,6 +1,5 @@
 ﻿using Dji.Core.Service;
 using Dji.Application.Const;
-using Dji.Application.Entity;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
 using Furion.DatabaseAccessor;

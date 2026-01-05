@@ -143,7 +143,7 @@ public class SysDictTypeService : IDynamicApiController, ITransient
         if (dictType == null)
             throw Oops.Oh(ErrorCodeEnum.D3000);
 
-        if (!Enum.IsDefined(typeof(StatusEnum), input.Status))
+        if (!System.Enum.IsDefined(typeof(StatusEnum), input.Status))
             throw Oops.Oh(ErrorCodeEnum.D3005);
 
         dictType.Status = input.Status;

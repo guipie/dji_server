@@ -13,11 +13,7 @@
 using AngleSharp.Dom;
 using Dji.Application.Cloud.Dto.Device;
 using Dji.Application.Cloud.Dto.Org;
-using Dji.Core.Extension;
-using NetTopologySuite.Geometries;
 using System.Linq;
-using System.Threading.Tasks;
-using static Elastic.Clients.Elasticsearch.JoinField;
 
 namespace Dji.Application.CloudRepository;
 
@@ -122,7 +118,9 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         if (fullDevice.Domain == null)
         {
             var model = await _domainRes.GetFirstAsync(m => m.Domain == data.Domain && m.Type == data.Type && m.SubType == data.SubType);
-            fullDevice.Domain = data.Domain;
+            // 将 fullDevice.Domain = data.Domain; 修改为强制类型转换
+            fullDevice.Domain =data.Domain;
+                fullDevice.Domain = data.Domain;
             fullDevice.Type = data.Type;
             fullDevice.SubType = data.SubType;
             fullDevice.ThingVersion = data.ThingVersion;
@@ -147,6 +145,7 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         }
         else
         {
+            entity.BindNum = entity.BindNum+1;
             entity.WorkspaceId = data.OrganizationId;
             entity.Nick = data.DeviceCallsign;
             entity.Binded = data.IsDeviceBindOrganization;

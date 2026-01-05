@@ -1,6 +1,6 @@
 ﻿// 麻省理工学院许可证
 //
-// 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
+// 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
 // 特此免费授予获得本软件的任何人以处理本软件的权利，但须遵守以下条件：在所有副本或重要部分的软件中必须包括上述版权声明和本许可声明。
 //
@@ -13,8 +13,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Core.Entity;
-public class JsonData
+namespace Dji.Core.Enum.DjiEnum.Wayline;
+
+public enum WaylineType
 {
-    public string Data { get; set; }
+//waypoint：航点飞行
+//mapping2d：建图航拍
+//mapping3d：倾斜摄影
+//mappingStrip：航带飞行
+  WayPoint,
+  Mapping2D, Mapping3D, MappingStrip
 }

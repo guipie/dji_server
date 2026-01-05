@@ -117,31 +117,6 @@ public class DjiDeviceOutput
     public DateTime? CreateTime { get; set; }
 
     /// <summary>
-    /// 修改时间
-    /// </summary>
-    public DateTime? UpdateTime { get; set; }
-
-    /// <summary>
-    /// create_user_id
-    /// </summary>
-    public long? CreateUserId { get; set; }
-
-    /// <summary>
-    /// create_user_name
-    /// </summary>
-    public string? CreateUserName { get; set; }
-
-    /// <summary>
-    /// update_user_id
-    /// </summary>
-    public long? UpdateUserId { get; set; }
-
-    /// <summary>
-    /// update_user_name
-    /// </summary>
-    public string? UpdateUserName { get; set; }
-
-    /// <summary>
     /// is_delete
     /// </summary>
     public bool IsDelete { get; set; }

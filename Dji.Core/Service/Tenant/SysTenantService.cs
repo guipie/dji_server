@@ -141,7 +141,7 @@ public class SysTenantService : IDynamicApiController, ITransient
         if (tenant == null || tenant.ConfigId == SqlSugarConst.MainConfigId)
             throw Oops.Oh(ErrorCodeEnum.Z1001);
 
-        if (!Enum.IsDefined(typeof(StatusEnum), input.Status))
+        if (!System.Enum.IsDefined(typeof(StatusEnum), input.Status))
             throw Oops.Oh(ErrorCodeEnum.D3005);
 
         tenant.Status = input.Status;

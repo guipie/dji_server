@@ -199,7 +199,7 @@ public class SysUserService : IDynamicApiController, ITransient
         if (user.AccountType == AccountTypeEnum.SuperAdmin)
             throw Oops.Oh(ErrorCodeEnum.D1015);
 
-        if (!Enum.IsDefined(typeof(StatusEnum), input.Status))
+        if (!System.Enum.IsDefined(typeof(StatusEnum), input.Status))
             throw Oops.Oh(ErrorCodeEnum.D3005);
 
         // 账号禁用则增加黑名单，账号启用则移除黑名单

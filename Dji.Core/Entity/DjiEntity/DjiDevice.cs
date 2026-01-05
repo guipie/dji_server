@@ -12,7 +12,7 @@ namespace Dji.Core.Entity;
 //[SugarIndex("index_device_sn", nameof(DjiDevice.Sn),OrderByType.Asc, nameof(DjiDevice.Name), OrderByType.Asc,true)]  //复合索引
 [SugarIndex("index_Order_OrderDate", nameof(Sn), OrderByType.Asc, true)]  //唯一索引(true 表示唯一索引)
 [SugarTable("DjiDevice", "设备表")]
-public class DjiDevice : EntityAppBase
+public class DjiDevice : EntityWorkspaceBase
 {
 
     [SugarColumn(ColumnDescription = "sn号", Length = 20, IsTreeKey = true)]
@@ -20,7 +20,7 @@ public class DjiDevice : EntityAppBase
     public string Sn { get; set; }
 
     [SugarColumn(ColumnDescription = "空间ID", Length = 50, IsNullable = true)]
-    public string WorkspaceId { get; set; }
+    public override string WorkspaceId { get; set; }
 
     [SugarColumn(ColumnDescription = "设备模型，型号", Length = 20, IsNullable = true)]
     public string Model { get; set; }
@@ -71,6 +71,9 @@ public class DjiDevice : EntityAppBase
 
     [SugarColumn(ColumnDescription = "是否绑定", IsNullable = true)]
     public bool Binded { get; set; }
+
+    [SugarColumn(ColumnDescription = "绑定次数",DefaultValue ="0")]
+    public int BindNum { get; set; }
 
     [SugarColumn(ColumnDescription = "头像", Length = 200, IsNullable = true)]
     public string AvatarUrl { get; set; }
