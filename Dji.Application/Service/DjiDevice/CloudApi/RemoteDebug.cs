@@ -24,7 +24,7 @@ public partial class DjiDeviceCloudService
     [HttpPost]
     public async Task<CloudMqData<MqOutput<DebugModeOutput>>> PutDebugMode(string gateway, bool isOpen)
     {
-        var data = new CommonTopicRequest<object>(isOpen ? TopicMethods.DebugModeOpen : TopicMethods.DebugModeClose, gateway);
+        var data = new CloudMqRequest<object>(isOpen ? TopicMethods.DebugModeOpen : TopicMethods.DebugModeClose, gateway);
         return await _publish.PublishWithReplyAsync<object, DebugModeOutput>(Topics.ThingProductServices, data);
     }
 }

@@ -320,6 +320,10 @@
           },
           "data": {
             "$ref": "#/components/schemas/MqOutput_AirportBindStatusRequestReply"
+          },
+          "ext": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -357,6 +361,10 @@
           },
           "data": {
             "$ref": "#/components/schemas/MqOutput_DebugModeOutput"
+          },
+          "ext": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -23,7 +23,7 @@ public partial class DjiDeviceCloudService
     [HttpPost]
     public async Task<CloudMqData<MqOutput<AirportBindStatusRequestReply>>> BindWorkspace(string gateway, string sn)
     {
-        var data = new CommonTopicRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = sn }] }, gateway);
+        var data = new CloudMqRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = sn }] }, gateway);
         return await _publish.PublishWithReplyAsync<AirportBindStatusRequest, AirportBindStatusRequestReply>(Topics.ThingProductRequests, data);
     }
 }

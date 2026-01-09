@@ -19,10 +19,11 @@ namespace Dji.Application.CloudRepository;
 
 
 internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, SqlSugarRepository<DjiDeviceEnum> domainRes, ILogger<DeviceRepository> logger, SysCacheService sysCacheService,
-    ISqlSugarClient db) : BaseRepository
+    ISqlSugarClient db, WorkspaceRepository workspaceRepository) : BaseRepository
 {
     private readonly SqlSugarRepository<DjiDevice> _deviceRes = sugarRepository;
     private readonly SqlSugarRepository<DjiDeviceEnum> _domainRes = domainRes;
+    private readonly WorkspaceRepository _workspaceRepository = workspaceRepository;
     private readonly ISqlSugarClient _db = db.AsTenant().GetConnectionScope(SqlSugarConst.MainConfigId);
     private readonly SysCacheService _sysCache = sysCacheService;
     private readonly ILogger<DeviceRepository> _logger = logger;
@@ -72,6 +73,7 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
     public async Task BindDockOsd(string dockSn, DockOsd dockOsd)
     {
         //if (DeviceExists(dockSn)) return;
+        if (dockOsd.Longitude == null || dockOsd.Latitude == null) return;
         var dock = await GetFullDeviceBySn(dockSn);
         if (dock == null)
         {
@@ -119,8 +121,8 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         {
             var model = await _domainRes.GetFirstAsync(m => m.Domain == data.Domain && m.Type == data.Type && m.SubType == data.SubType);
             // 将 fullDevice.Domain = data.Domain; 修改为强制类型转换
-            fullDevice.Domain =data.Domain;
-                fullDevice.Domain = data.Domain;
+            fullDevice.Domain = data.Domain;
+            fullDevice.Domain = data.Domain;
             fullDevice.Type = data.Type;
             fullDevice.SubType = data.SubType;
             fullDevice.ThingVersion = data.ThingVersion;
@@ -136,20 +138,23 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         }
         _sysCache.Set(sn.DeviceTopo(), data);
     }
-    public async Task UpdateDeviceAirportBind(DeviceOrganization data)
+    public async Task<bool> UpdateDeviceAirportBind(DeviceOrganization data)
     {
         var entity = await GetFullDeviceBySn(data.SN);
+        if (data.IsDeviceBindOrganization && !data.OrganizationId.IsNullOrWhiteSpace())
+            await _workspaceRepository.SaveWorkspace(data);
         if (entity == null)
         {
-            await Insert(new DjiDevice() { Sn = data.SN, WorkspaceId = data.OrganizationId, Nick = data.DeviceCallsign, Binded = data.IsDeviceBindOrganization, BindTime = DateTime.Now });
+            var device = await Insert(new DjiDevice() { Sn = data.SN, WorkspaceId = data.OrganizationId, Nick = data.DeviceCallsign, Binded = data.IsDeviceBindOrganization, BindTime = DateTime.Now });
+            return device.Id > 0;
         }
         else
         {
-            entity.BindNum = entity.BindNum+1;
+            entity.BindNum = entity.BindNum + 1;
             entity.WorkspaceId = data.OrganizationId;
             entity.Nick = data.DeviceCallsign;
             entity.Binded = data.IsDeviceBindOrganization;
-            await _deviceRes.UpdateAsync(entity);
+            return await _deviceRes.UpdateAsync(entity);
         }
     }
 }

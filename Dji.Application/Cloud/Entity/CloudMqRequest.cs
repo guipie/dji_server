@@ -17,7 +17,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Dji.Application.Cloud.Entity;
-public class CommonTopicRequest<T>
+public class CloudMqRequest<T>
 {
     public string Tid { get; set; }
 
@@ -26,9 +26,17 @@ public class CommonTopicRequest<T>
     public long Timestamp { get; set; }
     public string Method { get; set; }
     public string Gateway { get; set; }
-    public T Data { get; set; }
-
-    public CommonTopicRequest(string method, T data, string gateway)
+    public virtual T Data { get; set; }
+    public CloudMqRequest(string method, T data, string gateway, string tid, string bid)
+    {
+        Tid = tid;
+        Bid = bid;
+        Method = method;
+        Data = data;
+        Timestamp = DateTimeUtil.ToUnixTimestampByMilliseconds(DateTime.Now);
+        Gateway = gateway;
+    }
+    public CloudMqRequest(string method, T data, string gateway)
     {
         Tid = Guid.NewGuid().ToString();
         Bid = Guid.NewGuid().ToString();
@@ -37,7 +45,8 @@ public class CommonTopicRequest<T>
         Timestamp = DateTimeUtil.ToUnixTimestampByMilliseconds(DateTime.Now);
         Gateway = gateway;
     }
-    public CommonTopicRequest(string method,  string gateway)
+
+    public CloudMqRequest(string method, string gateway)
     {
         Tid = Guid.NewGuid().ToString();
         Bid = Guid.NewGuid().ToString();
@@ -47,3 +56,5 @@ public class CommonTopicRequest<T>
         Gateway = gateway;
     }
 }
+
+

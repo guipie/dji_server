@@ -58,7 +58,7 @@ public class MqttDataSyncJob : IJob
             }
             if (item.WorkspaceId.IsNullOrWhiteSpace()&&item.BindNum<10)
             {
-                var data = new CommonTopicRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = item.Sn }] }, item.Sn);
+                var data = new CloudMqRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = item.Sn }] }, item.Sn);
                 await _publish.PublishAsync<AirportBindStatusRequest>(Topics.ThingProductRequests, data);
             }
             foreach (var child in item.Children.IsEmptyDefault())
@@ -74,7 +74,7 @@ public class MqttDataSyncJob : IJob
                 }
                 if (child.WorkspaceId.IsNullOrWhiteSpace() && child.BindNum < 10)
                 {
-                    var data = new CommonTopicRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = child.Sn }] }, item.Sn);
+                    var data = new CloudMqRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = child.Sn }] }, item.Sn);
                     await _publish.PublishAsync<AirportBindStatusRequest>(Topics.ThingProductRequests, data);
                 }
             }

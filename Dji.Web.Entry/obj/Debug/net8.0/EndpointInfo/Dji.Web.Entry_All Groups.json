@@ -2707,6 +2707,46 @@
         }
       }
     },
+    "/api/sysCache/noPrefixKeysByPrefixKeyNo/{prefixKey}": {
+      "get": {
+        "tags": [
+          "sysCache"
+        ],
+        "operationId": "api-sysCache-noPrefixKeysByPrefixKeyNo-prefixKey-Get",
+        "parameters": [
+          {
+            "name": "prefixKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/sysCache/value/{key}": {
       "get": {
         "tags": [
@@ -7515,6 +7555,65 @@
         }
       }
     },
+    "/api/djiWayline/wayline": {
+      "post": {
+        "tags": [
+          "djiWayline"
+        ],
+        "operationId": "api-djiWayline-wayline-Post",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWaylineAddInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWaylineAddInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWaylineAddInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWaylineAddInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/DjiWaylineAddInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWaylineOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWaylineOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DjiWaylineOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/aPIJSON": {
       "post": {
         "tags": [
@@ -7953,6 +8052,37 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/AdminResult_List_DjiDeviceCameraEnumOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiDeviceEnum/droneModels": {
+      "get": {
+        "tags": [
+          "djiDeviceEnum"
+        ],
+        "summary": "无人机型号列表",
+        "operationId": "api-djiDeviceEnum-droneModels-Get",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_DjiDeviceEnumOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_DjiDeviceEnumOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_DjiDeviceEnumOutput"
                 }
               }
             }
@@ -8850,6 +8980,135 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/AdminResult_SqlSugarPagedList_DjiWorkspaceUserOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/my": {
+      "get": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "operationId": "api-djiWorkspaceUser-my-Get",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_UserWorkspace"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_UserWorkspace"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_IList_UserWorkspace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/set": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "operationId": "api-djiWorkspaceUser-set-Post",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDjiWorkspaceUserInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDjiWorkspaceUserInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDjiWorkspaceUserInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDjiWorkspaceUserInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDjiWorkspaceUserInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/djiWorkspaceUser/set/Default/{workspaceId}": {
+      "post": {
+        "tags": [
+          "djiWorkspaceUser"
+        ],
+        "operationId": "api-djiWorkspaceUser-set-Default-workspaceId-Post",
+        "parameters": [
+          {
+            "name": "workspaceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_Boolean"
                 }
               }
             }
@@ -13204,6 +13463,123 @@
         "description": "账号类型枚举<br />&nbsp;会员 Member = 666<br />&nbsp;普通账号 NormalUser = 777<br />&nbsp;系统管理员 SysAdmin = 888<br />&nbsp;超级管理员 SuperAdmin = 999<br />",
         "format": "int32"
       },
+      "Action": {
+        "type": "object",
+        "properties": {
+          "actionId": {
+            "type": "integer",
+            "description": "动作ID",
+            "format": "int32"
+          },
+          "actionActuatorFunc": {
+            "type": "string",
+            "description": "动作执行器功能",
+            "nullable": true
+          },
+          "actionActuatorFuncParam": {
+            "$ref": "#/components/schemas/ActionActuatorFuncParam"
+          }
+        },
+        "additionalProperties": false,
+        "description": "动作"
+      },
+      "ActionActuatorFuncParam": {
+        "type": "object",
+        "properties": {
+          "aircraftHeading": {
+            "type": "number",
+            "description": "飞行器目标偏航角（相对于地理北）",
+            "format": "double"
+          },
+          "aircraftPathMode": {
+            "type": "string",
+            "description": "飞行路径模式",
+            "nullable": true
+          },
+          "gimbalPitchRotateAngle": {
+            "type": "number",
+            "description": "云台俯仰角度",
+            "format": "double"
+          },
+          "gimbalYawRotateAngle": {
+            "type": "number",
+            "description": "云台旋转角度",
+            "format": "double"
+          },
+          "gimbalRotateTime": {
+            "type": "number",
+            "description": "云台旋转时间",
+            "format": "double"
+          },
+          "focalLength": {
+            "type": "number",
+            "description": "变焦焦距",
+            "format": "double"
+          },
+          "isUseFocalFactor": {
+            "type": "integer",
+            "description": "是否使用焦距因子",
+            "format": "int32"
+          },
+          "payloadPositionIndex": {
+            "type": "integer",
+            "description": "负载挂载位置",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "动作执行器功能参数"
+      },
+      "ActionGroup": {
+        "type": "object",
+        "properties": {
+          "actionGroupId": {
+            "type": "integer",
+            "description": "动作组ID",
+            "format": "int32"
+          },
+          "actionGroupStartIndex": {
+            "type": "integer",
+            "description": "动作组起始索引",
+            "format": "int32"
+          },
+          "actionGroupEndIndex": {
+            "type": "integer",
+            "description": "动作组结束索引",
+            "format": "int32"
+          },
+          "actionGroupMode": {
+            "type": "string",
+            "description": "动作组模式",
+            "nullable": true
+          },
+          "actionTrigger": {
+            "$ref": "#/components/schemas/ActionTrigger"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Action"
+            },
+            "description": "动作列表",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "航点初始动作"
+      },
+      "ActionTrigger": {
+        "type": "object",
+        "properties": {
+          "actionTriggerType": {
+            "type": "string",
+            "description": "触发类型",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "动作触发条件"
+      },
       "AddCodeGenInput": {
         "required": [
           "authorName",
@@ -15854,6 +16230,41 @@
         "additionalProperties": false,
         "description": "全局返回结果"
       },
+      "AdminResult_DjiWaylineOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DjiWaylineOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
       "AdminResult_DjiWorkspace": {
         "type": "object",
         "properties": {
@@ -16029,6 +16440,46 @@
         "additionalProperties": false,
         "description": "全局返回结果"
       },
+      "AdminResult_IList_DjiDeviceEnumOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DjiDeviceEnumOutput"
+            },
+            "description": "数据",
+            "nullable": true
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
       "AdminResult_IList_DjiDeviceOutput": {
         "type": "object",
         "properties": {
@@ -16051,6 +16502,46 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/DjiDeviceOutput"
+            },
+            "description": "数据",
+            "nullable": true
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_IList_UserWorkspace": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserWorkspace"
             },
             "description": "数据",
             "nullable": true
@@ -19087,6 +19578,10 @@
           },
           "data": {
             "$ref": "#/components/schemas/MqOutput_AirportBindStatusRequestReply"
+          },
+          "ext": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -19124,6 +19619,10 @@
           },
           "data": {
             "$ref": "#/components/schemas/MqOutput_DebugModeOutput"
+          },
+          "ext": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -20794,14 +21293,10 @@
         "description": "workspace删除输入参数"
       },
       "DeleteDjiWorkspaceUserInput": {
-        "required": [
-          "id"
-        ],
         "type": "object",
         "properties": {
-          "id": {
+          "userId": {
             "type": "integer",
-            "description": "主键Id",
             "format": "int64"
           }
         },
@@ -21227,6 +21722,10 @@
           },
           "binded": {
             "type": "boolean"
+          },
+          "bindNum": {
+            "type": "integer",
+            "format": "int32"
           },
           "avatarUrl": {
             "type": "string",
@@ -21824,34 +22323,6 @@
             "format": "date-time",
             "nullable": true
           },
-          "updateTime": {
-            "type": "string",
-            "description": "修改时间",
-            "format": "date-time",
-            "nullable": true
-          },
-          "createUserId": {
-            "type": "integer",
-            "description": "create_user_id",
-            "format": "int64",
-            "nullable": true
-          },
-          "createUserName": {
-            "type": "string",
-            "description": "create_user_name",
-            "nullable": true
-          },
-          "updateUserId": {
-            "type": "integer",
-            "description": "update_user_id",
-            "format": "int64",
-            "nullable": true
-          },
-          "updateUserName": {
-            "type": "string",
-            "description": "update_user_name",
-            "nullable": true
-          },
           "isDelete": {
             "type": "boolean",
             "description": "is_delete"
@@ -21866,6 +22337,153 @@
         },
         "additionalProperties": false,
         "description": "设备输出参数"
+      },
+      "DjiWaylineAddInput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "雪花Id",
+            "format": "int64"
+          },
+          "createTime": {
+            "type": "string",
+            "description": "创建时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "更新时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "创建者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "创建者姓名",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "修改者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "修改者姓名",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "软删除"
+          },
+          "workspaceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "waylineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "waylineType": {
+            "$ref": "#/components/schemas/WaylineType"
+          },
+          "drone": {
+            "type": "string",
+            "nullable": true
+          },
+          "droneModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "acc": {
+            "type": "string",
+            "nullable": true
+          },
+          "templateKml": {
+            "$ref": "#/components/schemas/WaylinesWpml"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DjiWaylineOutput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "雪花Id",
+            "format": "int64"
+          },
+          "createTime": {
+            "type": "string",
+            "description": "创建时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "更新时间",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createUserId": {
+            "type": "integer",
+            "description": "创建者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "createUserName": {
+            "type": "string",
+            "description": "创建者姓名",
+            "nullable": true
+          },
+          "updateUserId": {
+            "type": "integer",
+            "description": "修改者Id",
+            "format": "int64",
+            "nullable": true
+          },
+          "updateUserName": {
+            "type": "string",
+            "description": "修改者姓名",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean",
+            "description": "软删除"
+          },
+          "workspaceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "waylineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "waylineType": {
+            "$ref": "#/components/schemas/WaylineType"
+          },
+          "drone": {
+            "type": "string",
+            "nullable": true
+          },
+          "droneModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "acc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "DjiWorkspace": {
         "type": "object",
@@ -22121,17 +22739,11 @@
             "type": "boolean",
             "description": "软删除"
           },
-          "tenantId": {
-            "type": "integer",
-            "description": "租户Id",
-            "format": "int64",
-            "nullable": true
-          },
           "workspaceId": {
             "type": "string",
             "nullable": true
           },
-          "workspaceName": {
+          "workspaceNickName": {
             "type": "string",
             "nullable": true
           },
@@ -22146,6 +22758,9 @@
           "nickName": {
             "type": "string",
             "nullable": true
+          },
+          "isDefault": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -22195,34 +22810,35 @@
       "DjiWorkspaceUserOutput": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "description": "id",
-            "format": "int64"
-          },
           "workspaceId": {
             "type": "string",
             "description": "workspace_id",
             "nullable": true
           },
-          "workspaceName": {
+          "workspaceNickName": {
             "type": "string",
             "description": "workspace_name",
             "nullable": true
           },
-          "userName": {
+          "workspaces": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserWorkspace"
+            },
+            "nullable": true
+          },
+          "account": {
             "type": "string",
             "description": "user_name",
+            "nullable": true
+          },
+          "nickName": {
+            "type": "string",
             "nullable": true
           },
           "userId": {
             "type": "integer",
             "description": "user_id",
-            "format": "int64"
-          },
-          "userIdId": {
-            "type": "integer",
-            "description": "user_id 描述",
             "format": "int64"
           },
           "tenantId": {
@@ -22282,8 +22898,32 @@
           6
         ],
         "type": "integer",
-        "description": "<br />&nbsp;无人机 Drone = 0<br />&nbsp;负载 Payload = 1<br />&nbsp;远程遥控 RemoteControl = 2<br />&nbsp;机场 Dock = 3<br />&nbsp;中继器 REPEATER = 6<br />",
+        "description": "<br />&nbsp;无人机 Drone = 0<br />&nbsp;负载 Payload = 1<br />&nbsp;远程遥控 RemoteControl = 2<br />&nbsp;机场 Dock = 3<br />&nbsp;中继器 Repeater = 6<br />",
         "format": "int32"
+      },
+      "DroneInfo": {
+        "required": [
+          "droneEnumValue"
+        ],
+        "type": "object",
+        "properties": {
+          "droneEnumValue": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "无人机枚举值（如 M30=67）",
+            "format": "int32"
+          },
+          "droneSubEnumValue": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "无人机子型号枚举值",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "无人机机型信息"
       },
       "EnumEntity": {
         "type": "object",
@@ -22606,6 +23246,64 @@
           }
         },
         "additionalProperties": false
+      },
+      "Folder": {
+        "required": [
+          "autoFlightSpeed",
+          "executeHeightMode",
+          "templateId",
+          "waylineId"
+        ],
+        "type": "object",
+        "properties": {
+          "templateId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "模板ID",
+            "format": "int32"
+          },
+          "executeHeightMode": {
+            "minLength": 1,
+            "pattern": "^(WGS84|relativeToStartPoint|realTimeFollowSurface)$",
+            "type": "string",
+            "description": "执行高度模式"
+          },
+          "waylineId": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "航线ID",
+            "format": "int32"
+          },
+          "autoFlightSpeed": {
+            "maximum": 15,
+            "minimum": 1,
+            "type": "number",
+            "description": "全局航线飞行速度",
+            "format": "double"
+          },
+          "realTimeFollowSurfaceByFov": {
+            "type": "integer",
+            "description": "实时仿地模式是否根据FOV",
+            "format": "int32"
+          },
+          "distance": {
+            "type": "number",
+            "description": "距离",
+            "format": "double"
+          },
+          "duration": {
+            "type": "number",
+            "description": "持续时间",
+            "format": "double"
+          },
+          "placemark": {
+            "$ref": "#/components/schemas/Placemark"
+          }
+        },
+        "additionalProperties": false,
+        "description": "航线信息"
       },
       "GenAuthUrlInput": {
         "type": "object",
@@ -23559,6 +24257,65 @@
           }
         },
         "additionalProperties": false
+      },
+      "MissionConfig": {
+        "required": [
+          "droneInfo",
+          "exitOnRCLost",
+          "finishAction",
+          "flyToWaylineMode",
+          "payloadInfo"
+        ],
+        "type": "object",
+        "properties": {
+          "flyToWaylineMode": {
+            "minLength": 1,
+            "pattern": "^(safely|pointToPoint)$",
+            "type": "string",
+            "description": "飞行模式：飞往航线的方式"
+          },
+          "finishAction": {
+            "minLength": 1,
+            "pattern": "^(goHome|noAction|autoLand|gotoFirstWaypoint)$",
+            "type": "string",
+            "description": "任务结束后的动作"
+          },
+          "exitOnRCLost": {
+            "minLength": 1,
+            "pattern": "^(goContinue|executeLostAction)$",
+            "type": "string",
+            "description": "遥控器信号丢失时的行为"
+          },
+          "takeOffSecurityHeight": {
+            "maximum": 500,
+            "minimum": 1,
+            "type": "number",
+            "description": "起飞安全高度（单位：米）",
+            "format": "double"
+          },
+          "globalTransitionalSpeed": {
+            "maximum": 20,
+            "minimum": 1,
+            "type": "number",
+            "description": "全局过渡速度（单位：m/s）",
+            "format": "double"
+          },
+          "globalRTHHeight": {
+            "maximum": 500,
+            "minimum": 20,
+            "type": "number",
+            "description": "全局返航高度（单位：米）",
+            "format": "double"
+          },
+          "droneInfo": {
+            "$ref": "#/components/schemas/DroneInfo"
+          },
+          "payloadInfo": {
+            "$ref": "#/components/schemas/PayloadInfo"
+          }
+        },
+        "additionalProperties": false,
+        "description": "航线任务配置信息"
       },
       "Module": {
         "type": "object",
@@ -24645,6 +25402,89 @@
         },
         "additionalProperties": false
       },
+      "PayloadInfo": {
+        "required": [
+          "payloadEnumValue",
+          "payloadPositionIndex"
+        ],
+        "type": "object",
+        "properties": {
+          "payloadEnumValue": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "载荷枚举值（如 P1=52）",
+            "format": "int32"
+          },
+          "payloadPositionIndex": {
+            "maximum": 10,
+            "minimum": 0,
+            "type": "integer",
+            "description": "载荷位置索引（从 0 开始）",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "载荷信息"
+      },
+      "Placemark": {
+        "required": [
+          "executeHeight",
+          "index",
+          "waypointSpeed"
+        ],
+        "type": "object",
+        "properties": {
+          "point": {
+            "$ref": "#/components/schemas/Point"
+          },
+          "index": {
+            "maximum": 65535,
+            "minimum": 0,
+            "type": "integer",
+            "description": "航点序号",
+            "format": "int32"
+          },
+          "executeHeight": {
+            "type": "number",
+            "description": "航点执行高度",
+            "format": "double"
+          },
+          "waypointSpeed": {
+            "maximum": 15,
+            "minimum": 1,
+            "type": "number",
+            "description": "航点飞行速度，当前航点飞向下一个航点的速度",
+            "format": "double"
+          },
+          "waypointHeadingParam": {
+            "$ref": "#/components/schemas/WaypointHeadingParam"
+          },
+          "waypointTurnParam": {
+            "$ref": "#/components/schemas/WaypointTurnParam"
+          },
+          "useStraightLine": {
+            "type": "integer",
+            "description": "该航段是否贴合直线",
+            "format": "int32"
+          },
+          "actionGroup": {
+            "$ref": "#/components/schemas/ActionGroup"
+          },
+          "isRisky": {
+            "type": "integer",
+            "description": "是否危险点",
+            "format": "int32"
+          },
+          "waypointWorkType": {
+            "type": "integer",
+            "description": "航点工作类型",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "航点信息"
+      },
       "PlatformTypeEnum": {
         "enum": [
           1,
@@ -24656,6 +25496,18 @@
         "type": "integer",
         "description": "平台类型枚举<br />&nbsp;微信公众号 微信公众号 = 1<br />&nbsp;微信小程序 微信小程序 = 2<br />&nbsp;QQ QQ = 3<br />&nbsp;支付宝 Alipay = 4<br />&nbsp;Gitee Gitee = 5<br />",
         "format": "int32"
+      },
+      "Point": {
+        "type": "object",
+        "properties": {
+          "coordinates": {
+            "type": "string",
+            "description": "经纬度坐标",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "航点经纬度"
       },
       "PropertyAttributes": {
         "enum": [
@@ -24936,6 +25788,27 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "SetDjiWorkspaceUserInput": {
+        "type": "object",
+        "properties": {
+          "userIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "nullable": true
+          },
+          "workspaceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "SetNickNameInput": {
         "required": [
@@ -28036,6 +28909,10 @@
             "maxLength": 128,
             "type": "string",
             "description": "操作系统",
+            "nullable": true
+          },
+          "workspaceIds": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -33148,6 +34025,111 @@
         },
         "additionalProperties": false,
         "description": "授权用户角色"
+      },
+      "UserWorkspace": {
+        "type": "object",
+        "properties": {
+          "workspaceNickName": {
+            "type": "string",
+            "nullable": true
+          },
+          "workspaceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDefault": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WaylineType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "description": "<br />&nbsp; WayPoint = 0<br />&nbsp; Mapping2D = 1<br />&nbsp; Mapping3D = 2<br />&nbsp; MappingStrip = 3<br />",
+        "format": "int32"
+      },
+      "WaylinesDocument": {
+        "type": "object",
+        "properties": {
+          "missionConfig": {
+            "$ref": "#/components/schemas/MissionConfig"
+          },
+          "folder": {
+            "$ref": "#/components/schemas/Folder"
+          }
+        },
+        "additionalProperties": false,
+        "description": "航线文档（包含任务配置和多条可执行航线）"
+      },
+      "WaylinesWpml": {
+        "type": "object",
+        "properties": {
+          "document": {
+            "$ref": "#/components/schemas/WaylinesDocument"
+          }
+        },
+        "additionalProperties": false,
+        "description": "可执行航线文件（waylines.wpml）根对象"
+      },
+      "WaypointHeadingParam": {
+        "type": "object",
+        "properties": {
+          "waypointHeadingMode": {
+            "type": "string",
+            "description": "偏航角模式",
+            "nullable": true
+          },
+          "waypointHeadingAngle": {
+            "type": "number",
+            "description": "偏航角",
+            "format": "double"
+          },
+          "waypointPoiPoint": {
+            "type": "string",
+            "description": "POI点",
+            "nullable": true
+          },
+          "waypointHeadingAngleEnable": {
+            "type": "integer",
+            "description": "偏航角角度是否启用",
+            "format": "int32"
+          },
+          "waypointHeadingPathMode": {
+            "type": "string",
+            "description": "航道路径模式",
+            "nullable": true
+          },
+          "waypointHeadingPoiIndex": {
+            "type": "integer",
+            "description": "POI索引",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "偏航角模式参数"
+      },
+      "WaypointTurnParam": {
+        "type": "object",
+        "properties": {
+          "waypointTurnMode": {
+            "type": "string",
+            "description": "航点转弯模式",
+            "nullable": true
+          },
+          "waypointTurnDampingDist": {
+            "type": "number",
+            "description": "转弯阻尼距离",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": "航点类型（航点转弯模式）"
       },
       "WechatPayOutput": {
         "type": "object",

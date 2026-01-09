@@ -11995,23 +11995,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\YZH\\.nuget\\packages\\": {},
     "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
+      "projectUniqueName": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
       "projectName": "Dji.Application",
-      "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\obj\\",
+      "projectPath": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
+      "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+      "outputPath": "D:\\chenwei\\dji_server\\Dji.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12020,15 +12020,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj": {
-              "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj"
+            "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj": {
+              "projectPath": "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj"
             }
           }
         }
@@ -12069,12 +12068,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

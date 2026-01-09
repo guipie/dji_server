@@ -21,7 +21,7 @@ public class DjiWorkspace : EntityAppTenant
     [SugarColumn(ColumnDescription = "平台名称", Length = 20, IsNullable = false)]
     public string NickName { get; set; }
 
-    [SugarColumn(ColumnDescription = "绑定码", Length = 20)]
+    [SugarColumn(ColumnDescription = "绑定码", Length = 20, IsNullable = true)]
     public string WorkspaceBindCode { get; set; }
 
     [SugarColumn(IsNullable = true)]

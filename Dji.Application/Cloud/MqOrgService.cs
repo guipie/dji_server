@@ -13,11 +13,13 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 
 namespace Dji.Application.Cloud;
-internal class MqOrgService(ILogger<MqOrgService> logger, DeviceRepository deviceRepository) : BaseModuleService
+internal class MqOrgService(ILogger<MqOrgService> logger, DeviceRepository deviceRepository, WorkspaceRepository workspaceRepository, MqttGatewayPublish gatewayPublish) : BaseModuleService
 {
     //日志
     private readonly ILogger<MqOrgService> _logger = logger;
     private readonly DeviceRepository _deviceRepository = deviceRepository;
+    private readonly WorkspaceRepository _workspaceRepository = workspaceRepository;
+    private readonly MqttGatewayPublish _gatewayPublish = gatewayPublish;
     /// <summary>
     /// 获取设备绑定信息
     /// </summary>
@@ -33,25 +35,40 @@ internal class MqOrgService(ILogger<MqOrgService> logger, DeviceRepository devic
         }
         await Task.Delay(1);
     }
+
+
     /// <summary>
     /// 设备绑定到组织
     /// </summary>
-    /// <param name="data"></param>
+    /// <param name="from"></param>
     /// <returns></returns>
     [MqttSubscribe(Topics.ThingProductRequests, TopicMethods.AirportOrganizationBind)]
-    public async Task AirportOrganizationBindAsync(CloudMqData<AirportOrganizationBindRequest> data)
+    public async Task AirportOrganizationBindAsync(CloudMqData<AirportOrganizationBindRequest> from)
     {
-        _logger.LogInformation("收到机场组织绑定请求,请求时间:{0},请求数据:{1}", data.TimeStamp, data.ToJson());
-        foreach (var item in data.Data.BindDevices)
+        _logger.LogInformation("收到机场组织绑定请求,请求时间:{0},请求数据:{1}", from.TimeStamp, from.ToJson());
+        List<ErrInfo> errors = [];
+        foreach (var item in from.Data.BindDevices)
         {
-            await _deviceRepository.UpdateDeviceAirportBind(new DeviceOrganization()
+            var result = await _deviceRepository.UpdateDeviceAirportBind(new DeviceOrganization()
             {
                 DeviceCallsign = item.DeviceCallsign,
                 IsDeviceBindOrganization = true,
                 OrganizationId = item.OrganizationId,
                 SN = item.SN,
             });
+            errors.Add(new ErrInfo(item.SN, result));
         }
-        await Task.Delay(1);
+        await _gatewayPublish.PublishAsync(Topics.ThingProductRequestsReply, ToPublishOutputData(new AirportOrganizationBindRequestReply(errors), from));
     }
+
+    [MqttSubscribe(Topics.ThingProductRequests, TopicMethods.AirportOrganizationGet)]
+    public async Task AirportOrganizationGetAsync(CloudMqData<AirportOrganizationGetRe> data)
+    {
+        var result = await _workspaceRepository.UpdateWorkspaceBindCode(data.Data.OrganizationId, data.Data.DeviceBindingCode);
+        if (!result)
+            await _gatewayPublish.PublishAsync(Topics.ThingProductRequestsReply, ToPublishOutputDataError(data, Enum.DjiReplyErrorEnum.GET_ORGANIZATION_FAILED));
+        var curWorkspace = await _workspaceRepository.GetWorkspaceBySpaceId(data.Data.OrganizationId);
+        await _gatewayPublish.PublishAsync(Topics.ThingProductRequestsReply, ToPublishOutputData(new AirportOrganizationGetReply(curWorkspace.WorkspaceName), data));
+    }
+
 }
