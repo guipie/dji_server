@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj": {}
+    "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj": {}
   },
   "projects": {
-    "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj": {
+    "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
         "projectName": "Dji.Application",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\Dji.Application.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Dji.Application\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Dji.Application\\Dji.Application.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Dji.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj": {
-                "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj"
+              "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj": {
+                "projectPath": "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj"
               }
             }
           }
@@ -75,29 +74,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     },
-    "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj": {
+    "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj",
         "projectName": "Dji.Core",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Dji.Core\\Dji.Core.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Dji.Core\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Dji.Core\\Dji.Core.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Dji.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -106,21 +123,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj": {
-                "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj"
+              "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj": {
+                "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj"
               },
-              "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj": {
-                "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj"
+              "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj": {
+                "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj"
               },
-              "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\Furion.Pure.csproj": {
-                "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\Furion.Pure.csproj"
+              "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\Furion.Pure.csproj": {
+                "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\Furion.Pure.csproj"
               }
             }
           }
@@ -261,29 +277,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     },
-    "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj": {
+    "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj",
         "projectName": "Furion.Extras.Authentication.JwtBearer",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\Furion.Extras.Authentication.JwtBearer.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.Authentication.JwtBearer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -292,7 +326,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -333,29 +366,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     },
-    "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj": {
+    "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj",
         "projectName": "Furion.Extras.ObjectMapper.Mapster",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Extras.ObjectMapper.Mapster\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -364,7 +415,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -413,29 +463,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     },
-    "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj": {
+    "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj",
         "projectName": "Furion.Pure.Extras.DependencyModel.CodeAnalysis",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -444,7 +512,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -505,29 +572,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     },
-    "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\Furion.Pure.csproj": {
+    "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\Furion.Pure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\Furion.Pure.csproj",
+        "projectUniqueName": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\Furion.Pure.csproj",
         "projectName": "Furion.Pure",
-        "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\Furion.Pure.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure\\obj\\",
+        "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\Furion.Pure.csproj",
+        "packagesPath": "C:\\Users\\YZH\\.nuget\\packages\\",
+        "outputPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YZH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -536,15 +621,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj": {
-                "projectPath": "D:\\work\\dji\\Dji.Server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj"
+              "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj": {
+                "projectPath": "D:\\chenwei\\dji_server\\Plugins\\Furion.Pure.Extras.DependencyModel.CodeAnalysis\\Furion.Pure.Extras.DependencyModel.CodeAnalysis.csproj"
               }
             }
           }
@@ -585,6 +669,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -593,7 +691,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
         }
       }
     }

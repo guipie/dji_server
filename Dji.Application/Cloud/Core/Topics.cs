@@ -24,6 +24,8 @@ public static class TopicMethods
     public const string UpdateTopo = "update_topo";
     public const string AirportBindStatus = "airport_bind_status";
     public const string AirportOrganizationBind = "airport_organization_bind";
+    public const string AirportOrganizationGet = "airport_organization_get";
+
 
     /**远程调试**/
     public const string DebugModeOpen = "debug_mode_open";

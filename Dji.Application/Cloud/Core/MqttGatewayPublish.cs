@@ -23,7 +23,7 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
     private readonly IMqttClient _mqttClient = client;
     private readonly SysCacheService _sysCache = sysCache;
 
-    public async Task<int> PublishAsync<T>(string topic, CommonTopicRequest<T> request, int qos = DEFAULT_QOS, int publishCount = 0, CancellationToken ct = default)
+    public async Task<int> PublishAsync<T>(string topic, CloudMqRequest<T> request, int qos = DEFAULT_QOS, int publishCount = 0, CancellationToken ct = default)
     {
         try
         {
@@ -55,13 +55,13 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
             return -1;
         }
     }
-    public async Task<int> PublishAsync<T>(string topic, CommonTopicRequest<T> request)
+    public async Task<int> PublishAsync<T>(string topic, CloudMqRequest<T> request)
     {
         return await PublishAsync(topic.BindGateway(request.Gateway), request, DEFAULT_QOS);
     }
 
 
-    public async Task<CloudMqData<MqOutput<R>>> PublishWithReplyAsync<T,R>(string topic, CommonTopicRequest<T> request, int timeout = 10)
+    public async Task<CloudMqData<MqOutput<R>>> PublishWithReplyAsync<T,R>(string topic, CloudMqRequest<T> request, int timeout = 10)
     {
         _logger.LogInformation("send topic: {Topic}, payload: {Payload}", topic, request.ToJson());
 

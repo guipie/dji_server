@@ -1,7 +1,12 @@
 ﻿
 
 namespace Dji.Application.Option;
-public sealed class MqttOptions : IConfigurableOptions
+
+public sealed class DjiOptions : IConfigurableOptions
+{
+
+}
+public sealed class MqttOptions: IConfigurableOptions
 {
 
     public string ClientId { get; set; } = Guid.NewGuid().ToString();

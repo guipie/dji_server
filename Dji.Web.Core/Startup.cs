@@ -9,6 +9,7 @@
 
 using AspNetCoreRateLimit;
 using Dji.Application;
+using Dji.Application.Option;
 using Dji.Core;
 using Dji.Core.Service;
 using Furion;

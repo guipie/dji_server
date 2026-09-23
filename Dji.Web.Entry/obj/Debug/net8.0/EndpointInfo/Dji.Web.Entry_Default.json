@@ -2644,6 +2644,46 @@
         }
       }
     },
+    "/api/sysCache/noPrefixKeysByPrefixKeyNo/{prefixKey}": {
+      "get": {
+        "tags": [
+          "sysCache"
+        ],
+        "operationId": "api-sysCache-noPrefixKeysByPrefixKeyNo-prefixKey-Get",
+        "parameters": [
+          {
+            "name": "prefixKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_List_String"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/sysCache/value/{key}": {
       "get": {
         "tags": [
@@ -23240,6 +23280,10 @@
             "maxLength": 128,
             "type": "string",
             "description": "操作系统",
+            "nullable": true
+          },
+          "workspaceIds": {
+            "type": "string",
             "nullable": true
           }
         },

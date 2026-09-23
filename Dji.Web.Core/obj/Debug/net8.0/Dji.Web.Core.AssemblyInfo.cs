@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dji.Web.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5944d1d84734bfdf5d16f1f57e67d195199a7bd1")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7c7441882e6fd12aea95b85c691e7dadf5594a1")]
+>>>>>>> 918038bc43f76624dcf354985d7e1bdcd30a8754
 [assembly: System.Reflection.AssemblyProductAttribute("Dji.Web.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dji.Web.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

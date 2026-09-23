@@ -7,9 +7,30 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using Dji.Application.Cloud.Entity;
+using Dji.Application.Enum;
+
 namespace Dji.Application.Cloud;
 
 [MqttController]
 public abstract class BaseModuleService
 {
+    public CloudMqRequest<MqOutput<T>> ToPublishOutputData<T, F>(T data, CloudMqData<F> from, int result = 0)
+    {
+        var mqOutput = new MqOutput<T>()
+        {
+            Output = data,
+            Result = result
+        };
+        return new CloudMqRequest<MqOutput<T>>(from.Method, mqOutput, from.Gateway, from.Tid, from.Bid);
+    }
+    public CloudMqRequest<MqOutput<object>> ToPublishOutputDataError<F>(CloudMqData<F> from, DjiReplyErrorEnum error)
+    {
+        var mqOutput = new MqOutput<object>()
+        {
+            Output = null,
+            Result = (int)error
+        };
+        return new CloudMqRequest<MqOutput<object>>(from.Method, mqOutput, from.Gateway, from.Tid, from.Bid);
+    }
 }

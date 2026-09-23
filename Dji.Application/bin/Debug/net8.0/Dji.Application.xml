@@ -1284,6 +1284,31 @@
             设备序列号(SN)
             </summary>
         </member>
+        <member name="T:Dji.Application.Cloud.Dto.Org.ErrInfo">
+            <summary>
+            设备绑定信息
+            </summary>
+        </member>
+        <member name="M:Dji.Application.Cloud.Dto.Org.ErrInfo.#ctor(System.String,System.Boolean)">
+            <summary>
+            设备绑定信息
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Org.AirportOrganizationGetRe.DeviceBindingCode">
+            <summary>
+            设备绑定代码
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Org.AirportOrganizationGetRe.OrganizationId">
+            <summary>
+            组织ID，标识所属组织
+            </summary>
+        </member>
+        <member name="P:Dji.Application.Cloud.Dto.Org.AirportOrganizationGetReply.OrganizationName">
+            <summary>
+            组织名称
+            </summary>
+        </member>
         <member name="M:Dji.Application.Cloud.MqDeviceService.DockOsdAsync(Dji.Application.Cloud.Entity.CloudMqData{Dji.Application.Cloud.Dto.Device.DockOsd})">
             <summary>
             机场osd数据
@@ -1316,7 +1341,7 @@
             <summary>
             设备绑定到组织
             </summary>
-            <param name="data"></param>
+            <param name="from"></param>
             <returns></returns>
         </member>
         <member name="T:Dji.Application.Const.ApplicationConst">

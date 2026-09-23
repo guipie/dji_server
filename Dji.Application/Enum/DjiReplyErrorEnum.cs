@@ -7,23 +7,21 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Dji.Application.Cloud.Core;
-using Dji.Application.Cloud.Dto.Org;
-using Dji.Application.Cloud.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dji.Application.Service.DjiDevice;
-public partial class DjiDeviceCloudService
+namespace Dji.Application.Enum;
+public enum DjiReplyErrorEnum
 {
-
-    [HttpPost]
-    public async Task<CloudMqData<MqOutput<AirportBindStatusRequestReply>>> BindWorkspace(string gateway, string sn)
-    {
-        var data = new CloudMqRequest<AirportBindStatusRequest>(TopicMethods.AirportBindStatus, new AirportBindStatusRequest() { Devices = [new DeviceSn() { Sn = sn }] }, gateway);
-        return await _publish.PublishWithReplyAsync<AirportBindStatusRequest, AirportBindStatusRequestReply>(Topics.ThingProductRequests, data);
-    }
+    [Description("Failed to bind device.")]
+    DEVICE_BINDING_FAILED = 210231,
+    [Description("Illegal argument")]
+    ILLEGAL_ARGUMENT = 200001,
+    [Description("Failed to get organization.")]
+    GET_ORGANIZATION_FAILED = 210230,
 }
+
+
