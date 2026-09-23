@@ -20,6 +20,14 @@ public class DjiDeviceEnum : EntityAppBase
     public string Name { get; set; }
 
 
+    [SugarColumn(ColumnDescription = "型号", Length = 20)]
+    [Required]
+    public string Model { get; set; }
+
+    //[SugarColumn(ColumnDescription = "分组所属", Length = 20)]
+    //[Required]
+    //public string GroupName { get; set; }
+
 
     //[SugarColumn(ColumnDescription = "挂载产品", Length = 20)]
     //public long ParentId { get; set; }

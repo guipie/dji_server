@@ -20,10 +20,16 @@ public class DjiDeviceEnumService : IDynamicApiController, ITransient
     /// 无人机型号列表
     /// </summary>
     /// <returns></returns>
-    [ApiDescriptionSettings(Name = "DroneModels")]
-    public async Task<IList<DjiDeviceEnumOutput>> GetDroneModels()
+    [ApiDescriptionSettings(Name = "DroneDeviceEnums")]
+    public async Task<IList<DjiDeviceEnumOutput>> GetDroneDeviceEnums()
     {
         return await _rep.AsQueryable().Where(m=>m.Domain==DomainEnum.Drone).OrderBy(m=>m.Name).Select<DjiDeviceEnumOutput>().ToListAsync();
+    }
+
+    [ApiDescriptionSettings(Name = "DeviceEnum")]
+    public DjiDeviceEnumOutput GetDeviceEnum(string domain_type_subtype)
+    {
+        return _rep.AsQueryable().Where(m => $"{m.Domain}_{m.Type}_{m.SubType}" == domain_type_subtype).First().Adapt<DjiDeviceEnumOutput>();
     }
     /// <summary>
     /// 分页查询设备枚举

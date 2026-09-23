@@ -7,7 +7,6 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Dji.Application.Service.DjiWayline.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Dji.Application.Service.DjiWayline.Wayline
+namespace Dji.Application.Service.DjiWayline.Dto.Temp
 {
     /// <summary>
     /// 可执行航线文件（waylines.wpml）根对象
@@ -39,13 +38,13 @@ namespace Dji.Application.Service.DjiWayline.Wayline
         /// 任务全局配置
         /// </summary>
         [XmlElement(Namespace = "http://www.dji.com/wpmz/1.0.2")]
-        public MissionConfig MissionConfig { get; set; } = new MissionConfig();
+        public WaylineMissionConfig MissionConfig { get; set; } = new WaylineMissionConfig();
 
         /// <summary>
         /// 可执行航线列表（每个 Folder 对应一条航线）
         /// </summary>
         [XmlElement("Folder")]
-        public Folder Folder { get; set; } = new Folder();
+        public WaylineFolder Folder { get; set; } = new WaylineFolder();
     }
 
     /// <summary>
@@ -151,7 +150,7 @@ namespace Dji.Application.Service.DjiWayline.Wayline
     /// <summary>
     /// 可执行航线（对应一个 Folder）
     /// </summary>
-    public class ExecutableWayline
+    public class WaylineFolder
     {
         /// <summary>
         /// 模板 ID（与 template.kml 中的 templateId 关联）

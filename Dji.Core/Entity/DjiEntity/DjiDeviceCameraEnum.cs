@@ -19,6 +19,9 @@ public class DjiDeviceCameraEnum : EntityAppBase
     [Required]
     public string Name { get; set; }
 
+    [SugarColumn(ColumnDescription = "挂载设备ID", Length = 20,IsNullable =true)]
+    public long DeviceEnumId { get; set; }
+
     [SugarColumn(ColumnDescription = "产品类型", Length = 20)]
     public string ProductType { get; set; }
 

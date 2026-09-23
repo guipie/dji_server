@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Dji.Application.Service.DjiWayline.Wayline;
+namespace Dji.Application.Service.DjiWayline.Dto.Temp;
 
 /// <summary>
 /// 无人机机型信息

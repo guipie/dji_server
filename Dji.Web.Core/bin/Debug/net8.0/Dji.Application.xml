@@ -2352,7 +2352,7 @@
             设备枚举服务
             </summary>
         </member>
-        <member name="M:Dji.Application.DjiDeviceEnumService.GetDroneModels">
+        <member name="M:Dji.Application.DjiDeviceEnumService.GetDroneDeviceEnums">
             <summary>
             无人机型号列表
             </summary>
@@ -2695,517 +2695,57 @@
             飞行器
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.MissionConfig">
-            <summary>
-            任务配置
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.FlyToWaylineMode">
-            <summary>
-            飞向首航点模式
-            </summary>
-            <remarks>
-            - safely：安全模式（M300）飞行器起飞，上升至首航点高度，再平飞至首航点。如果首航点低于起飞点，则起飞后平飞至首航点上方再下降。（M30）飞行器起飞，上升至首航点高度，再平飞至首航点。如果首航点低于"安全起飞高度"，则起飞至"安全起飞高度"后，平飞至首航点上方再下降。注意"安全起飞高度"仅在飞行器未起飞时生效。
-            - pointToPoint：倾斜飞行模式（M300）飞行器起飞后，倾斜飞到首航点。 （M30）飞行器起飞至"安全起飞高度"，再倾斜爬升至首航点。如果首航点高度低于"安全起飞高度"，则先平飞后下降。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.FinishAction">
-            <summary>
-            航线结束动作
-            </summary>
-            <remarks>
-            - goHome：飞行器完成航线任务后，退出航线模式并返航。
-            - noAction：飞行器完成航线任务后，退出航线模式。
-            - autoLand：飞行器完成航线任务后，退出航线模式并原地降落。
-            - gotoFirstWaypoint：飞行器完成航线任务后，立即飞向航线起始点，到达后退出航线模式。
-            * 注：以上动作执行过程，若飞行器退出了航线模式且进入失控状态，则会优先执行失控动作。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.ExitOnRCLost">
-            <summary>
-            失控是否继续执行航线
-            </summary>
-            <remarks>
-            - goContinue：继续执行
-            - executeLostAction：退出航线，执行失控动作
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.ExecuteRCLostAction">
-            <summary>
-            失控动作类型
-            </summary>
-            <remarks>
-            - goBack：返航。飞行器从失控位置飞向起飞点
-            - landing：降落。飞行器从失控位置原地降落
-            - hover：悬停。飞行器从失控位置悬停
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.TakeOffSecurityHeight">
-            <summary>
-            安全起飞高度
-            </summary>
-            <remarks>
-            遥控器场景 [1.2,1500]，机场场景 [8,1500] （高度模式：相对起飞点高度）
-            * 注：飞行器起飞后，先爬升至该高度，再根据"飞向首航点模式"的设置飞至首航点。该元素仅在飞行器未起飞时生效。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.GlobalTransitionalSpeed">
-            <summary>
-            全局航线过渡速度
-            </summary>
-            <remarks>
-            飞行器飞往每条航线首航点的速度。航线任务中断时，飞行器从当前位置恢复至断点的速度。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.GlobalRTHHeight">
-            <summary>
-            全局返航高度
-            </summary>
-            <remarks>
-            飞行器返航时，先爬升至该高度，再进行返航
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.DroneInfo">
-            <summary>
-            飞行器机型信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.AutoRerouteInfo">
-            <summary>
-            航线绕行信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.WaylineAvoidLimitAreaMode">
-            <summary>
-            航线避限飞区模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.MissionConfig.PayloadInfo">
-            <summary>
-            负载机型信息
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.DroneInfo">
-            <summary>
-            飞行器机型信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.DroneInfo.DroneEnumValue">
-            <summary>
-            飞行器机型主类型
-            </summary>
-            <remarks>
-            飞行器主类型枚举值请参考[产品支持](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html)页面中的飞行器/遥控器/机场枚举值中的主类型(type)
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.DroneInfo.DroneSubEnumValue">
-            <summary>
-            飞行器机型子类型
-            </summary>
-            <remarks>
-            飞行器子类型枚举值请参考[产品支持](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html)页面中的飞行器/遥控器/机场枚举值中的子类型(sub_type)
-            </remarks>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.PayloadInfo">
-            <summary>
-            负载机型信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.PayloadInfo.PayloadEnumValue">
-            <summary>
-            负载机型主类型
-            </summary>
-            <remarks>
-            负载机型类型枚举值请参考[产品支持](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html)页面中的相机枚举值中type-subtype-gimbalindex中的type字段
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.PayloadInfo.PayloadSubEnumValue">
-            <summary>
-            负载机型子类型
-            </summary>
-            <remarks>
-            负载机型子类型枚举值请参考[产品支持](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html)页面中的相机枚举值中type-subtype-gimbalindex中的subtype字段
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.PayloadInfo.PayloadPositionIndex">
-            <summary>
-            负载挂载位置
-            </summary>
-            <remarks>
-            负载挂载位置枚举值请参考[产品支持](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html)页面中的相机枚举值中type-subtype-gimbalindex中的gimbalindex字段
-            </remarks>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.AutoRerouteInfo">
-            <summary>
-            航线绕行信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.AutoRerouteInfo.TransitionalAutoRerouteMode">
-            <summary>
-            过渡航线自动绕行模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.AutoRerouteInfo.MissionAutoRerouteMode">
-            <summary>
-            任务航线自动绕行模式
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.Folder">
-            <summary>
-            航线信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.TemplateId">
-            <summary>
-            模板ID
-            </summary>
-            <remarks>
-            在一个kmz文件内该ID唯一。建议从0开始单调连续递增。在template.kml和waylines.wpml文件中，将使用该id将模板与所生成的可执行航线进行关联。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.ExecuteHeightMode">
-            <summary>
-            执行高度模式
-            </summary>
-            <remarks>
-            WGS84：椭球高模式
-            relativeToStartPoint：相对起飞点高度模式
-            realTimeFollowSurface: 使用实时仿地模式，仅支持M3E/M3T/M3M
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.WaylineId">
-            <summary>
-            航线ID
-            </summary>
-            <remarks>
-            在一条航线中该ID唯一。建议从0开始单调连续递增。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.AutoFlightSpeed">
-            <summary>
-            全局航线飞行速度
-            </summary>
-            <remarks>
-            该元素定义了此模板生成的整段航线中，飞行器的目标飞行速度。如果额外定义了某航点的该元素，则局部定义会覆盖全局定义。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.RealTimeFollowSurfaceByFov">
-            <summary>
-            实时仿地模式是否根据FOV
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.Distance">
-            <summary>
-            距离
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.Duration">
-            <summary>
-            持续时间
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Folder.Placemark">
-            <summary>
-            航点信息
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.Placemark">
-            <summary>
-            航点信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.Point">
-            <summary>
-            航点经纬度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.Index">
-            <summary>
-            航点序号
-            </summary>
-            <remarks>
-            在一条航线内该ID唯一。该序号必须从0开始单调连续递增。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.ExecuteHeight">
-            <summary>
-            航点执行高度
-            </summary>
-            <remarks>
-            该元素仅在waylines.wpml中使用。具体高程参考平面在"wpml:executeHeightMode"中声明。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.WaypointSpeed">
-            <summary>
-            航点飞行速度，当前航点飞向下一个航点的速度
-            </summary>
-            <remarks>
-            当且仅当"wpml:useGlobalSpeed"为"0"时必需
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.WaypointHeadingParam">
-            <summary>
-            偏航角模式参数
-            </summary>
-            <remarks>
-            当且仅当"wpml:useGlobalHeadingParam"为"0"时必需
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.WaypointTurnParam">
-            <summary>
-            航点类型（航点转弯模式）
-            </summary>
-            <remarks>
-            当且仅当"wpml:useGlobalTurnParam"为"0"时必需
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.UseStraightLine">
-            <summary>
-            该航段是否贴合直线
-            </summary>
-            <remarks>
-            当且仅当"wpml:waypointTurnParam"内"waypointTurnMode"被设置为"toPointAndStopWithContinuityCurvature"或"toPointAndPassWithContinuityCurvature"时必需。如果此元素被设置，则局部定义会覆盖全局定义。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.ActionGroup">
-            <summary>
-            航点初始动作
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.IsRisky">
-            <summary>
-            是否危险点
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Placemark.WaypointWorkType">
-            <summary>
-            航点工作类型
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.Point">
-            <summary>
-            航点经纬度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Point.Coordinates">
-            <summary>
-            经纬度坐标
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam">
-            <summary>
-            偏航角模式参数
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointHeadingMode">
-            <summary>
-            偏航角模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointHeadingAngle">
-            <summary>
-            偏航角
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointPoiPoint">
-            <summary>
-            POI点
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointHeadingAngleEnable">
-            <summary>
-            偏航角角度是否启用
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointHeadingPathMode">
-            <summary>
-            航道路径模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointHeadingParam.WaypointHeadingPoiIndex">
-            <summary>
-            POI索引
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.WaypointTurnParam">
-            <summary>
-            航点类型（航点转弯模式）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointTurnParam.WaypointTurnMode">
-            <summary>
-            航点转弯模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.WaypointTurnParam.WaypointTurnDampingDist">
-            <summary>
-            转弯阻尼距离
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.ActionGroup">
-            <summary>
-            航点初始动作
-            </summary>
-            <remarks>
-            该元素用于规划一系列初始动作，在航线开始前执行。航线中断恢复时，先执行初始动作，再执行航点动作。
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.ActionGroupId">
-            <summary>
-            动作组ID
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.ActionGroupStartIndex">
-            <summary>
-            动作组起始索引
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.ActionGroupEndIndex">
-            <summary>
-            动作组结束索引
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.ActionGroupMode">
-            <summary>
-            动作组模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.ActionTrigger">
-            <summary>
-            动作触发条件
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionGroup.Actions">
-            <summary>
-            动作列表
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.ActionTrigger">
-            <summary>
-            动作触发条件
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionTrigger.ActionTriggerType">
-            <summary>
-            触发类型
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.Action">
-            <summary>
-            动作
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Action.ActionId">
-            <summary>
-            动作ID
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Action.ActionActuatorFunc">
-            <summary>
-            动作执行器功能
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.Action.ActionActuatorFuncParam">
-            <summary>
-            动作执行器功能参数
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam">
-            <summary>
-            动作执行器功能参数
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.AircraftHeading">
-            <summary>
-            飞行器目标偏航角（相对于地理北）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.AircraftPathMode">
-            <summary>
-            飞行路径模式
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.GimbalPitchRotateAngle">
-            <summary>
-            云台俯仰角度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.GimbalYawRotateAngle">
-            <summary>
-            云台旋转角度
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.GimbalRotateTime">
-            <summary>
-            云台旋转时间
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.FocalLength">
-            <summary>
-            变焦焦距
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.IsUseFocalFactor">
-            <summary>
-            是否使用焦距因子
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Dto.ActionActuatorFuncParam.PayloadPositionIndex">
-            <summary>
-            负载挂载位置
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.DroneInfo">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.DroneInfo">
             <summary>
             无人机机型信息
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.DroneInfo.DroneEnumValue">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.DroneInfo.DroneEnumValue">
             <summary>
             无人机枚举值（如 M30=67）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.DroneInfo.DroneSubEnumValue">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.DroneInfo.DroneSubEnumValue">
             <summary>
             无人机子型号枚举值
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.PayloadInfo">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.PayloadInfo">
             <summary>
             载荷信息
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.PayloadInfo.PayloadEnumValue">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.PayloadInfo.PayloadEnumValue">
             <summary>
             载荷枚举值（如 P1=52）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.PayloadInfo.PayloadPositionIndex">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.PayloadInfo.PayloadPositionIndex">
             <summary>
             载荷位置索引（从 0 开始）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.ActionGroup">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup">
             <summary>
             动作组
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.ActionGroupId">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.ActionGroupId">
             <summary>
             动作组 ID
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.ActionGroupStartIndex">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.ActionGroupStartIndex">
             <summary>
             动作组起始航点索引
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.ActionGroupEndIndex">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.ActionGroupEndIndex">
             <summary>
             动作组结束航点索引
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.ActionGroupMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.ActionGroupMode">
             <summary>
             动作组执行模式
             </summary>
@@ -3214,27 +2754,27 @@
             - parallel：并行执行
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.ActionTrigger">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.ActionTrigger">
             <summary>
             动作触发器
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionGroup.Actions">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionGroup.Actions">
             <summary>
             动作列表
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.Action">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.Action">
             <summary>
             航点动作
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Action.ActionId">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Action.ActionId">
             <summary>
             动作唯一 ID
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Action.ActionActuatorFunc">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Action.ActionActuatorFunc">
             <summary>
             动作执行器功能类型
             </summary>
@@ -3246,17 +2786,17 @@
             - hover：悬停
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Action.ActionActuatorFuncParam">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Action.ActionActuatorFuncParam">
             <summary>
             动作参数
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam">
             <summary>
             动作执行器参数
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalRotateMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalRotateMode">
             <summary>
             云台旋转模式
             </summary>
@@ -3265,87 +2805,87 @@
             - relativeAngle：相对角度
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalPitchRotateEnable">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalPitchRotateEnable">
             <summary>
             是否启用俯仰轴旋转
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalPitchRotateAngle">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalPitchRotateAngle">
             <summary>
             俯仰旋转角度（单位：度）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalRollRotateEnable">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalRollRotateEnable">
             <summary>
             是否启用横滚轴旋转
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalRollRotateAngle">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalRollRotateAngle">
             <summary>
             横滚旋转角度（单位：度）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalYawRotateEnable">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalYawRotateEnable">
             <summary>
             是否启用偏航轴旋转
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalYawRotateAngle">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalYawRotateAngle">
             <summary>
             偏航旋转角度（单位：度）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalRotateTimeEnable">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalRotateTimeEnable">
             <summary>
             是否启用旋转时间控制
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.GimbalRotateTime">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.GimbalRotateTime">
             <summary>
             云台旋转时间（单位：秒）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.FileSuffix">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.FileSuffix">
             <summary>
             文件后缀（仅 takePhoto 有效）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionActuatorFuncParam.PayloadPositionIndex">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionActuatorFuncParam.PayloadPositionIndex">
             <summary>
             载荷位置索引
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaylinesWpml">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaylinesWpml">
             <summary>
             可执行航线文件（waylines.wpml）根对象
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylinesWpml.Document">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylinesWpml.Document">
             <summary>
             航线文档
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaylinesDocument">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaylinesDocument">
             <summary>
             航线文档（包含任务配置和多条可执行航线）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylinesDocument.MissionConfig">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylinesDocument.MissionConfig">
             <summary>
             任务全局配置
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylinesDocument.Folder">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylinesDocument.Folder">
             <summary>
             可执行航线列表（每个 Folder 对应一条航线）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig">
             <summary>
             任务全局配置（与 template.kml 类似，但用于执行阶段）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.FlyToWaylineMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.FlyToWaylineMode">
             <summary>
             飞向首航点模式
             </summary>
@@ -3354,7 +2894,7 @@
             - pointToPoint：倾斜飞行模式：直接斜飞向首航点
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.FinishAction">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.FinishAction">
             <summary>
             航线结束动作
             </summary>
@@ -3365,7 +2905,7 @@
             - gotoFirstWaypoint：飞回第一个航点
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.ExitOnRCLost">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.ExitOnRCLost">
             <summary>
             遥控器信号丢失时是否继续执行航线
             </summary>
@@ -3374,7 +2914,7 @@
             - executeLostAction：退出航线并执行失控动作
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.ExecuteRCLostAction">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.ExecuteRCLostAction">
             <summary>
             失控动作类型（仅当 exitOnRCLost = executeLostAction 时生效）
             </summary>
@@ -3384,7 +2924,7 @@
             - hover：悬停
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.TakeOffSecurityHeight">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.TakeOffSecurityHeight">
             <summary>
             安全起飞高度（单位：米）
             </summary>
@@ -3393,40 +2933,40 @@
             仅在未起飞时生效
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.GlobalTransitionalSpeed">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.GlobalTransitionalSpeed">
             <summary>
             全局航线过渡速度（单位：m/s）
             </summary>
             <remarks>范围：[1, 15]</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.GlobalRTHHeight">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.GlobalRTHHeight">
             <summary>
             全局返航高度（单位：米）
             </summary>
             <remarks>范围：[2, 1500]</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.DroneInfo">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.DroneInfo">
             <summary>
             无人机信息
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineMissionConfig.PayloadInfo">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineMissionConfig.PayloadInfo">
             <summary>
             载荷信息
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder">
             <summary>
             可执行航线（对应一个 Folder）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.TemplateId">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.TemplateId">
             <summary>
             模板 ID（与 template.kml 中的 templateId 关联）
             </summary>
             <remarks>建议从 0 开始单调递增</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.ExecuteHeightMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.ExecuteHeightMode">
             <summary>
             执行高度模式
             </summary>
@@ -3436,103 +2976,103 @@
             - realTimeFollowSurface：实时仿地（仅 M3E/M3T/M3M 支持）
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.WaylineId">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.WaylineId">
             <summary>
             航线 ID（唯一）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.AutoFlightSpeed">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.AutoFlightSpeed">
             <summary>
             全局航线飞行速度（单位：m/s）
             </summary>
             <remarks>范围：[1, 15]</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.Waypoints">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.Waypoints">
             <summary>
             航点列表
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ExecutableWayline.StartActionGroup">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaylineFolder.StartActionGroup">
             <summary>
             航线初始动作组（可选）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.Waypoint">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint">
             <summary>
             航点（Placemark）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.Point">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.Point">
             <summary>
             航点经纬度坐标（格式：经度,纬度）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.Index">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.Index">
             <summary>
             航点序号（从 0 开始，必须连续）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.ExecuteHeight">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.ExecuteHeight">
             <summary>
             航点执行高度（单位：米）
             </summary>
             <remarks>参考平面由 executeHeightMode 决定</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.WaypointSpeed">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.WaypointSpeed">
             <summary>
             航点飞行速度（当前点飞向下一点的速度，单位：m/s）
             </summary>
             <remarks>仅当 useGlobalSpeed=false 时必填</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.WaypointHeadingParam">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.WaypointHeadingParam">
             <summary>
             航点偏航角参数
             </summary>
             <remarks>仅当 useGlobalHeadingParam=false 时必填</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.WaypointTurnParam">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.WaypointTurnParam">
             <summary>
             航点转弯参数
             </summary>
             <remarks>仅当 useGlobalTurnParam=false 时必填</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.UseGlobalSpeed">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.UseGlobalSpeed">
             <summary>
             是否使用全局速度（默认 true）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.UseGlobalHeadingParam">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.UseGlobalHeadingParam">
             <summary>
             是否使用全局航向参数（默认 true）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.UseGlobalTurnParam">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.UseGlobalTurnParam">
             <summary>
             是否使用全局转弯参数（默认 true）
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Waypoint.ActionGroups">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.Waypoint.ActionGroups">
             <summary>
             动作组列表（可选）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.PointCoordinates">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.PointCoordinates">
             <summary>
             经纬度坐标
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.PointCoordinates.Coordinates">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.PointCoordinates.Coordinates">
             <summary>
             坐标字符串（格式：经度,纬度）
             </summary>
             <example>"120.123456,30.123456"</example>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaypointHeadingParam">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointHeadingParam">
             <summary>
             航点偏航角参数
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointHeadingParam.WaypointHeadingMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointHeadingParam.WaypointHeadingMode">
             <summary>
             航点朝向模式
             </summary>
@@ -3542,23 +3082,23 @@
             - poi：朝向兴趣点
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointHeadingParam.WaypointHeadingAngle">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointHeadingParam.WaypointHeadingAngle">
             <summary>
             固定航向角（单位：度）
             </summary>
             <remarks>范围：[-180, 180]</remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointHeadingParam.WaypointPoiPoint">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointHeadingParam.WaypointPoiPoint">
             <summary>
             兴趣点坐标（格式：纬度,经度）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaypointTurnParam">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointTurnParam">
             <summary>
             航点转弯参数
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTurnParam.WaypointTurnMode">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointTurnParam.WaypointTurnMode">
             <summary>
             航点转弯模式
             </summary>
@@ -3568,17 +3108,17 @@
             - curvedTrajectory：曲线轨迹（不停止）
             </remarks>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTurnParam.WaypointTurnDampingDist">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.WaypointTurnParam.WaypointTurnDampingDist">
             <summary>
             转弯阻尼距离（单位：米）
             </summary>
         </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.ActionTrigger">
+        <member name="T:Dji.Application.Service.DjiWayline.Dto.Temp.ActionTrigger">
             <summary>
             动作触发器
             </summary>
         </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.ActionTrigger.ActionTriggerType">
+        <member name="P:Dji.Application.Service.DjiWayline.Dto.Temp.ActionTrigger.ActionTriggerType">
             <summary>
             触发类型
             </summary>
@@ -3586,263 +3126,6 @@
             - reachPoint：到达航点时触发（最常用）  
             - leavePoint：离开航点时触发
             </remarks>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaylineTemplateKml">
-            <summary>
-            WPML KML 模板根对象
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineTemplateKml.Document">
-            <summary>
-            航线文档信息
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.Document">
-            <summary>
-            航线文档
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Document.Name">
-            <summary>
-            文档标题（可选，用于显示）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Document.MissionConfig">
-            <summary>
-            任务配置信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Document.Folder">
-            <summary>
-            航线模板列表（至少一个）
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.MissionConfig">
-            <summary>
-            航线任务配置信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.FlyToWaylineMode">
-            <summary>
-            飞行模式：飞往航线的方式
-            </summary>
-            <remarks>
-            - safely：安全模式（默认），沿路径平滑飞行，避障生效  
-            - pointToPoint：点对点模式，直接飞向目标点，可能忽略障碍物
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.FinishAction">
-            <summary>
-            任务结束后的动作
-            </summary>
-            <remarks>
-            - goHome：返航  
-            - noAction：无动作  
-            - autoLand：自动降落  
-            - gotoFirstWaypoint：返回第一个航点
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.ExitOnRCLost">
-            <summary>
-            遥控器信号丢失时的行为
-            </summary>
-            <remarks>
-            - goContinue：继续执行任务  
-            - executeLostAction：执行预设的失控动作（通常为返航）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.TakeOffSecurityHeight">
-            <summary>
-            起飞安全高度（单位：米）
-            </summary>
-            <remarks>必须 ≥1 米，建议 ≥20 米以确保安全</remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.GlobalTransitionalSpeed">
-            <summary>
-            全局过渡速度（单位：m/s）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.GlobalRTHHeight">
-            <summary>
-            全局返航高度（单位：米）
-            </summary>
-            <remarks>必须 ≥20 米，确保避开障碍物</remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.DroneInfo">
-            <summary>
-            无人机信息
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.MissionConfig.PayloadInfo">
-            <summary>
-            载荷信息
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate">
-            <summary>
-            航线模板定义
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.TemplateType">
-            <summary>
-            预定义模板类型
-            </summary>
-            <remarks>
-            模板为用户提供了快速生成航线的方案。用户填充模板元素，再导入大疆支持客户端（如 DJI Pilot），
-            即可快速生成可执行的测绘/巡检航线。
-            <para>取值定义：</para>
-            <list type="bullet">
-              <item><description><c>waypoint</c>：航点飞行</description></item>
-              <item><description><c>mapping2d</c>：建图航拍（正射影像）</description></item>
-              <item><description><c>mapping3d</c>：倾斜摄影（多角度建模）</description></item>
-              <item><description><c>mappingStrip</c>：航带飞行（长条带状区域）</description></item>
-            </list>
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.CoordinateSysParam">
-            <summary>
-            坐标系参数
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.AutoFlightSpeed">
-            <summary>
-            自动飞行速度（单位：m/s）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.GimbalPitchMode">
-            <summary>
-            云台俯仰控制模式
-            </summary>
-            <remarks>
-            - manual：手动指定角度（由每个航点的 GimbalPitchAngle 决定）  
-            - usePointSetting：使用航点设置（同 manual，但语义更明确）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.GlobalWaypointHeadingParam">
-            <summary>
-            全局航向参数（可选）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.GlobalWaypointTurnMode">
-            <summary>
-            全局转弯模式
-            </summary>
-            <remarks>
-            - toPointAndStopWithDiscontinuityCurvature：到达航点后停止，转弯不连续（默认）  
-            - toPointAndStopWithContinuityCurvature：平滑停止  
-            - curvedTrajectory：曲线轨迹（不停止）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaypointTemplate.Placemarks">
-            <summary>
-            航点列表
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.WaylineCoordinateSysParam">
-            <summary>
-            坐标系参数
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineCoordinateSysParam.CoordinateSystem">
-            <summary>
-            坐标系类型
-            </summary>
-            <remarks>
-            - WGS84：经纬度坐标系（十进制度）  
-            - UTM：通用横轴墨卡托投影（较少用）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.WaylineCoordinateSysParam.HeightReference">
-            <summary>
-            高度参考系
-            </summary>
-            <remarks>
-            - WGS84：椭球高  
-            - AGL：离地高度（Above Ground Level）
-            </remarks>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.GlobalWaypointHeadingParam">
-            <summary>
-            全局航向参数
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.GlobalWaypointHeadingParam.WaypointHeadingMode">
-            <summary>
-            航点朝向模式
-            </summary>
-            <remarks>
-            <list type="bullet">
-              <item><description><c>followWayline</c>：沿航线方向自动调整机头朝向（默认）</description></item>
-              <item><description><c>fixedAngle</c>：固定角度，需配合 WaypointHeadingAngle 使用</description></item>
-              <item><description><c>poi</c>：朝向兴趣点（POI），需提供 WaypointPoiPoint 坐标</description></item>
-            </list>
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.GlobalWaypointHeadingParam.WaypointHeadingAngle">
-            <summary>
-            固定航向角（仅当 WaypointHeadingMode = fixedAngle 时有效）
-            </summary>
-            <remarks>
-            单位：度，范围 [-180, 180]  
-            正北为 0°，顺时针为正（东为 90°，南为 180°/-180°，西为 -90°）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.GlobalWaypointHeadingParam.WaypointPoiPoint">
-            <summary>
-            兴趣点坐标（仅当 WaypointHeadingMode = poi 时必填）
-            </summary>
-            <remarks>
-            格式："{latitude},{longitude}"，例如 "30.123456,120.123456"
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.GlobalWaypointHeadingParam.WaypointHeadingPathMode">
-            <summary>
-            航向路径模式（可选）
-            </summary>
-        </member>
-        <member name="T:Dji.Application.Service.DjiWayline.Wayline.Placemark">
-            <summary>
-            航点（Placemark）定义
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.Index">
-            <summary>
-            航点索引（从 0 开始，必须连续）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.Longitude">
-            <summary>
-            经度（十进制度）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.Latitude">
-            <summary>
-            纬度（十进制度）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.EllipsoidHeight">
-            <summary>
-            椭球高（单位：米，WGS84 椭球面起算）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.Height">
-            <summary>
-            相对起飞点高度（单位：米）
-            </summary>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.GimbalPitchAngle">
-            <summary>
-            云台俯仰角（单位：度）
-            </summary>
-            <remarks>
-            范围通常为 [-90, 30]：  
-            -90° 为垂直向下，0° 为水平，30° 为略微上仰（部分机型支持）
-            </remarks>
-        </member>
-        <member name="P:Dji.Application.Service.DjiWayline.Wayline.Placemark.Actions">
-            <summary>
-            动作列表（可选）
-            </summary>
         </member>
         <member name="T:Dji.Application.DjiDeviceService">
             <summary>
@@ -4386,6 +3669,11 @@
             </summary>
         </member>
         <member name="T:Dji.Application.DjiWaylineService">
+            <summary>
+            设备服务
+            </summary>
+        </member>
+        <member name="M:Dji.Application.DjiWaylineService.#ctor(Dji.Core.SqlSugarRepository{Dji.Core.Entity.DjiEntity.DjiWaylineEntity},Dji.Application.DjiDeviceEnumService,Dji.Application.DjiDeviceCameraEnumService)">
             <summary>
             设备服务
             </summary>

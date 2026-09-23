@@ -23,12 +23,12 @@ public class DjiDeviceEnumOutput
     /// <summary>
     /// 主类型
     /// </summary>
-    public long Type { get; set; }
+    public int Type { get; set; }
     
     /// <summary>
     /// 子类型
     /// </summary>
-    public long SubType { get; set; }
+    public int SubType { get; set; }
     
     /// <summary>
     /// desc

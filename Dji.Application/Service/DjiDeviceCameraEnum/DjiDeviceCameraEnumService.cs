@@ -100,7 +100,10 @@ public class DjiDeviceCameraEnumService : IDynamicApiController, ITransient
         return await _rep.AsQueryable().Select<DjiDeviceCameraEnumOutput>().ToListAsync();
     }
 
-
+    public DjiDeviceCameraEnum? GetCameraEnum(long deviceId)
+    {
+        return _rep.GetFirst(m => m.DeviceEnumId == deviceId);
+    }
 
 
 

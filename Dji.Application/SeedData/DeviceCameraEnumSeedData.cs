@@ -17,14 +17,14 @@ public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraE
         return
         [
         // 飞行器 FPV
-        new DjiDeviceCameraEnum() { Id = 1, Name = "Matrice 300 RTK FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 2, Name = "Matrice 350 RTK FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 3, Name = "Matrice 30 FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 4, Name = "Matrice 30T FPV", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 5, Name = "Matrice 3D 辅助影像", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 6, Name = "Matrice 3TD 辅助影像", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 7, Name = "Matrice 4D 辅助影像", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
-        new DjiDeviceCameraEnum() { Id = 8, Name = "Matrice 4TD 辅助影像", ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 1, Name = "Matrice 300 RTK FPV",DeviceEnumId=3, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 2, Name = "Matrice 350 RTK FPV",DeviceEnumId=2, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 3, Name = "Matrice 30 FPV",DeviceEnumId=4, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 4, Name = "Matrice 30T FPV",DeviceEnumId=5, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "39-0-7", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 5, Name = "Matrice 3D 辅助影像",DeviceEnumId=9, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 6, Name = "Matrice 3TD 辅助影像",DeviceEnumId=10, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 7, Name = "Matrice 4D 辅助影像",DeviceEnumId=11, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 8, Name = "Matrice 4TD 辅助影像",DeviceEnumId=12, ProductType = "飞行器 FPV", Domain = DomainEnum.Payload, TsgIndex = "176-0-0", CameraPosition = null, Desc = "" },
 
         // 相机 - 禅思 Z30
         new DjiDeviceCameraEnum() { Id = 9, Name = "禅思 Z30", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "20-0-0", CameraPosition = CameraPositionEnum.Left, IsMainGimbal = true, Desc = "" },
@@ -32,7 +32,7 @@ public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraE
         new DjiDeviceCameraEnum() { Id = 11, Name = "禅思 Z30", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "20-0-2", CameraPosition = CameraPositionEnum.Up, Desc = "" },
 
         // 禅思 XT2
-        new DjiDeviceCameraEnum() { Id = 12, Name = "禅思 XT2", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "26-0-0", CameraPosition = CameraPositionEnum.Left, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 12, Name = "禅思 XT2", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "26-0-0", CameraPosition = CameraPositionEnum.Left, IsMainGimbal = true, Desc = "左舷侧（主云台）" },
         new DjiDeviceCameraEnum() { Id = 13, Name = "禅思 XT2", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "26-0-1", CameraPosition = CameraPositionEnum.Right, Desc = "" },
         new DjiDeviceCameraEnum() { Id = 14, Name = "禅思 XT2", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "26-0-2", CameraPosition = CameraPositionEnum.Up, Desc = "" },
 
@@ -67,10 +67,10 @@ public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraE
         new DjiDeviceCameraEnum() { Id = 32, Name = "禅思 H30T", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "83-0-2", CameraPosition = CameraPositionEnum.Up, Desc = "" },
 
         // Matrice 30 Camera
-        new DjiDeviceCameraEnum() { Id = 33, Name = "Matrice 30 Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "52-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 33, Name = "Matrice 30 Camera",DeviceEnumId=4, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "52-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // Matrice 30T Camera
-        new DjiDeviceCameraEnum() { Id = 34, Name = "Matrice 30T Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "53-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 34, Name = "Matrice 30T Camera",DeviceEnumId=5, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "53-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // DJI Matrice 4E Camera
         new DjiDeviceCameraEnum() { Id = 35, Name = "DJI Matrice 4E Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "88-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
@@ -88,23 +88,23 @@ public class DeviceCameraEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceCameraE
         new DjiDeviceCameraEnum() { Id = 39, Name = "Mavic 3TA Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "129-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // Matrice 3D Camera
-        new DjiDeviceCameraEnum() { Id = 40, Name = "Matrice 3D Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "80-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 40, Name = "Matrice 3D Camera",DeviceEnumId=9, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "80-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // Matrice 3TD Camera
-        new DjiDeviceCameraEnum() { Id = 41, Name = "Matrice 3TD Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "81-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 41, Name = "Matrice 3TD Camera",DeviceEnumId=10, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "81-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // Matrice 4D Camera
-        new DjiDeviceCameraEnum() { Id = 42, Name = "Matrice 4D Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "98-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 42, Name = "Matrice 4D Camera",DeviceEnumId=11, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "98-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // Matrice 4TD Camera
-        new DjiDeviceCameraEnum() { Id = 43, Name = "Matrice 4TD Camera", ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "99-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
+        new DjiDeviceCameraEnum() { Id = 43, Name = "Matrice 4TD Camera",DeviceEnumId=12, ProductType = "相机", Domain = DomainEnum.Payload, TsgIndex = "99-0-0", CameraPosition = null, IsMainGimbal = true, Desc = "" },
 
         // 机场相机
-        new DjiDeviceCameraEnum() { Id = 44, Name = "DJI Dock 舱外相机", ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场\ncamera_position: 1" },
-        new DjiDeviceCameraEnum() { Id = 45, Name = "DJI Dock 2 舱内相机", ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.In, Desc = "大疆机场 2\ncamera_position: 0" },
-        new DjiDeviceCameraEnum() { Id = 46, Name = "DJI Dock 2 舱外相机", ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场 2\ncamera_position: 1" },
-        new DjiDeviceCameraEnum() { Id = 47, Name = "DJI Dock 3 舱内相机", ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.In, Desc = "大疆机场 3\ncamera_position: 0" },
-        new DjiDeviceCameraEnum() { Id = 48, Name = "DJI Dock 3 舱外相机", ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场 3\ncamera_position: 1" },
+        new DjiDeviceCameraEnum() { Id = 44, Name = "DJI Dock 舱外相机",DeviceEnumId=19, ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场\ncamera_position: 1" },
+        new DjiDeviceCameraEnum() { Id = 45, Name = "DJI Dock 2 舱内相机", DeviceEnumId=20,ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.In, Desc = "大疆机场 2\ncamera_position: 0" },
+        new DjiDeviceCameraEnum() { Id = 46, Name = "DJI Dock 2 舱外相机",DeviceEnumId=20, ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场 2\ncamera_position: 1" },
+        new DjiDeviceCameraEnum() { Id = 47, Name = "DJI Dock 3 舱内相机",DeviceEnumId=21, ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.In, Desc = "大疆机场 3\ncamera_position: 0" },
+        new DjiDeviceCameraEnum() { Id = 48, Name = "DJI Dock 3 舱外相机",DeviceEnumId=21, ProductType = "机场相机", Domain = DomainEnum.Payload, TsgIndex = "165-0-7", CameraPosition = CameraPositionEnum.Out, Desc = "大疆机场 3\ncamera_position: 1" },
     ];
     }
 }

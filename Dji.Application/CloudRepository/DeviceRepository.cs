@@ -114,7 +114,6 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
     {
         var fullDevice = await GetFullDeviceBySn(sn);
         if (fullDevice == null) return;
-        var sns = fullDevice.Children.Where(m => m.Domain != null).Select(m => m.Sn);
         if (fullDevice.Domain == null)
         {
             var model = await _domainRes.GetFirstAsync(m => m.Domain == data.Domain && m.Type == data.Type && m.SubType == data.SubType);
@@ -127,9 +126,10 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
             fullDevice.Model = model.Name;
             await _deviceRes.UpdateAsync(fullDevice);
         }
+        var sns = fullDevice.Children==null?[]: fullDevice.Children.Where(m => m.Domain != null).Select(m => m.Sn);
         foreach (var child in data.SubDevices)
         {
-            if (sns.Contains(child.Sn)) continue;
+            if (sns.Any()&&sns.Contains(child.Sn)) continue;
             var model = await _domainRes.GetFirstAsync(m => m.Domain == child.Domain && m.Type == child.Type && m.SubType == child.SubType);
             var entity = new DjiDevice() { Sn = child.Sn, ParentSn = sn, Domain = child.Domain, Type = child.Type, SubType = child.SubType, ThingVersion = child.ThingVersion, Index = child.Index, Model = model.Name };
             await _db.Storageable(entity).WhereColumns(m => m.Sn).ToStorage().AsInsertable.ExecuteCommandAsync();
