@@ -1,15 +1,20 @@
+# ===== IDE / 编辑器 / 系统 =====
 .idea
 .vs
 .vscode
 .DS_Store
-.DS_Store
-Dji.Application/bin
-Dji.Application/obj
+
+# ===== .NET 构建产物（全项目通用，已覆盖 Plugins/*/bin、Plugins/*/obj）=====
+[Bb]in/
+[Oo]bj/
+*.cache
+*.user
+*.suo
+*.userosscache
+
+# ===== 日志 =====
+logs/
+*.log
+
+# ===== 本地 / 私有配置 =====
 Dji.Application/Configuration
-Dji.Core/bin
-Dji.Core/obj
-Dji.Web.Core/bin
-Dji.Web.Core/obj
-Dji.Web.Entry/bin
-Dji.Web.Entry/obj
-Dji.Web.Entry/logs
