@@ -40,7 +40,7 @@ public class DjiDeviceService : IDynamicApiController, ITransient
             .LeftJoin<DjiWorkspace>((u, workspaceid) => u.WorkspaceId == workspaceid.WorkspaceId)
             .Select((u, workspaceid) => new DjiDeviceOutput()
             {
-                WorkspaceIdNickName = workspaceid.NickName
+                WorkspaceIdNickName = workspaceid.WorkspaceNickName
             }, true)
             .OrderBy(u => new { u.Sn }).ToTreeAsync(u => u.Children, u => u.ParentSn, null, u => u.Sn); 
         return query;
@@ -121,7 +121,7 @@ public class DjiDeviceService : IDynamicApiController, ITransient
         return await _rep.Context.Queryable<DjiWorkspace>()
                 .Select(u => new
                 {
-                    Label = u.NickName,
+                    Label = u.WorkspaceNickName,
                     Value = u.WorkspaceId
                 }
                 ).ToListAsync();

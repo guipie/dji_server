@@ -7,22 +7,34 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-
-
 using MQTTnet;
 
 namespace Dji.Application.Cloud.Core;
+
 /// <summary>
-///  // MQTT 核心接口
+/// MQTT 客户端核心接口。
 /// </summary>
+/// <remarks>
+/// 上行报文的业务分发由 <see cref="ModuleManager"/> 配合 <c>MqttSubscribeAttribute</c> 完成，
+/// 无需在此注册回调（历史上存在的 <c>RegisterHandler</c> 注册后从未被调用，已移除）。
+/// </remarks>
 internal interface IMqttService
 {
-
+    /// <summary>当前是否已连接</summary>
     bool IsConnected { get; }
+
+    /// <summary>启动并连接</summary>
     Task StartAsync();
+
+    /// <summary>断开连接</summary>
     Task StopAsync();
+
+    /// <summary>连接成功回调（内部按配置订阅主题）</summary>
     Task OnConnectedAsync(MqttClientConnectedEventArgs e);
+
+    /// <summary>直接向指定主题发布消息</summary>
     Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default);
+
+    /// <summary>订阅主题</summary>
     Task SubscribeAsync(string topic, CancellationToken ct = default);
-    void RegisterHandler<T>(string topicPattern, Func<T, Task> handler) where T : class;
 }

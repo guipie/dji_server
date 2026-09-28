@@ -28,13 +28,13 @@ public class DjiWorkspaceService : IDynamicApiController, ITransient
             .WhereIF(!string.IsNullOrWhiteSpace(input.SearchKey), u =>
                 u.WorkspaceId.Contains(input.SearchKey.Trim())
                 || u.WorkspaceName.Contains(input.SearchKey.Trim())
-                || u.NickName.Contains(input.SearchKey.Trim())
+                || u.WorkspaceNickName.Contains(input.SearchKey.Trim())
                 || u.WorkspaceBindCode.Contains(input.SearchKey.Trim())
                 || u.WorkspaceDesc.Contains(input.SearchKey.Trim())
             )
             .WhereIF(!string.IsNullOrWhiteSpace(input.WorkspaceId), u => u.WorkspaceId.Contains(input.WorkspaceId.Trim()))
             .WhereIF(!string.IsNullOrWhiteSpace(input.WorkspaceName), u => u.WorkspaceName.Contains(input.WorkspaceName.Trim()))
-            .WhereIF(!string.IsNullOrWhiteSpace(input.NickName), u => u.NickName.Contains(input.NickName.Trim()))
+            .WhereIF(!string.IsNullOrWhiteSpace(input.WorkspaceNickName), u => u.WorkspaceNickName.Contains(input.WorkspaceNickName.Trim()))
             .WhereIF(!string.IsNullOrWhiteSpace(input.WorkspaceBindCode), u => u.WorkspaceBindCode.Contains(input.WorkspaceBindCode.Trim()))
             .WhereIF(!string.IsNullOrWhiteSpace(input.WorkspaceDesc), u => u.WorkspaceDesc.Contains(input.WorkspaceDesc.Trim()))
             .Select<DjiWorkspaceOutput>();

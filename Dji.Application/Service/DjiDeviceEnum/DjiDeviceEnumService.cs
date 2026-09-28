@@ -26,10 +26,27 @@ public class DjiDeviceEnumService : IDynamicApiController, ITransient
         return await _rep.AsQueryable().Where(m=>m.Domain==DomainEnum.Drone).OrderBy(m=>m.Name).Select<DjiDeviceEnumOutput>().ToListAsync();
     }
 
+    /// <summary>
+    /// 按“Domain-Type-SubType”标识获取设备枚举
+    /// </summary>
+    /// <remarks>
+    /// 标识分隔符同时兼容下划线与短横线（前端统一使用短横线），
+    /// 并按字段查询而非字符串拼接，避免格式差异导致匹配失败。
+    /// </remarks>
     [ApiDescriptionSettings(Name = "DeviceEnum")]
     public DjiDeviceEnumOutput GetDeviceEnum(string domain_type_subtype)
     {
-        return _rep.AsQueryable().Where(m => $"{m.Domain}_{m.Type}_{m.SubType}" == domain_type_subtype).First().Adapt<DjiDeviceEnumOutput>();
+        var parts = (domain_type_subtype ?? string.Empty).Split(['_', '-'], StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length < 3
+            || !int.TryParse(parts[0], out var domain)
+            || !int.TryParse(parts[1], out var type)
+            || !int.TryParse(parts[2], out var subType))
+            throw Oops.Oh($"设备枚举标识格式不正确：{domain_type_subtype}，应形如“Domain-Type-SubType”");
+
+        return _rep.AsQueryable()
+            .Where(m => m.Domain == (DomainEnum)domain && m.Type == type && m.SubType == subType)
+            .Select<DjiDeviceEnumOutput>()
+            .First();
     }
     /// <summary>
     /// 分页查询设备枚举

@@ -1,325 +1,265 @@
-﻿//// 麻省理工学院许可证
-////
-//// 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
-////
-//// 特此免费授予获得本软件的任何人以处理本软件的权利，但须遵守以下条件：在所有副本或重要部分的软件中必须包括上述版权声明和本许可声明。
-////
-//// 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
-//// 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
+﻿// 麻省理工学院许可证
+//
+// 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
+//
+// 特此免费授予获得本软件的任何人以处理本软件的权利，但须遵守以下条件：在所有副本或重要部分的软件中必须包括上述版权声明和本许可声明。
+//
+// 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
+// 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using System.ComponentModel.DataAnnotations;
+using System.Xml.Serialization;
 
-//namespace Dji.Application.Service.DjiWayline.Dto.Temp
-//{
-//    /// <summary>
-//    /// WPML KML 模板根对象
-//    /// </summary>
-//    public class WaylineTemplateKml
-//    {
-//        /// <summary>
-//        /// 航线文档信息
-//        /// </summary>
-//        [Required]
-//        public Document Document { get; set; } = new Document();
-//    }
+namespace Dji.Application.Service.DjiWayline.Dto.Temp;
 
-//    /// <summary>
-//    /// 航线文档
-//    /// </summary>
-//    public class Document
-//    {
-//        /// <summary>
-//        /// 文档标题（可选，用于显示）
-//        /// </summary>
-//        public string? Name { get; set; }
+/// <summary>
+/// 模板文件 template.kml 根对象
+/// </summary>
+/// <remarks>
+/// 结构对齐大疆官方导出的 KMZ 文件：
+/// kml(KML 命名空间) → Document(无命名空间) → missionConfig + Folder。
+/// </remarks>
+[XmlRoot("kml", Namespace = WpmlNamespaces.Kml)]
+public class WaylineTemplateKml
+{
+    /// <summary>文档节点</summary>
+    [XmlElement("Document", Namespace = "")]
+    public TemplateDocument Document { get; set; } = new();
+}
 
-//        /// <summary>
-//        /// 任务配置信息
-//        /// </summary>
-//        [Required]
-//        public MissionConfig MissionConfig { get; set; } = new MissionConfig();
+/// <summary>
+/// template.kml 的 Document
+/// </summary>
+public class TemplateDocument
+{
+    /// <summary>文件创建作者</summary>
+    [XmlElement("author", Namespace = WpmlNamespaces.Wpml)]
+    public string? Author { get; set; }
 
-//        /// <summary>
-//        /// 航线模板列表（至少一个）
-//        /// </summary>
-//        [Required]
-//        public List<WaypointTemplate> Folder { get; set; } = new List<WaypointTemplate>();
-//    }
+    /// <summary>文件创建时间（毫秒级 Unix 时间戳）</summary>
+    [XmlElement("createTime", Namespace = WpmlNamespaces.Wpml)]
+    public long? CreateTime { get; set; }
 
-//    /// <summary>
-//    /// 航线任务配置信息
-//    /// </summary>
-//    public class MissionConfig
-//    {
-//        /// <summary>
-//        /// 飞行模式：飞往航线的方式
-//        /// </summary>
-//        /// <remarks>
-//        /// - safely：安全模式（默认），沿路径平滑飞行，避障生效  
-//        /// - pointToPoint：点对点模式，直接飞向目标点，可能忽略障碍物
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(safely|pointToPoint)$", ErrorMessage = "FlyToWaylineMode 必须为 'safely' 或 'pointToPoint'")]
-//        public string FlyToWaylineMode { get; set; } = "safely";
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeCreateTime() => CreateTime.HasValue;
 
-//        /// <summary>
-//        /// 任务结束后的动作
-//        /// </summary>
-//        /// <remarks>
-//        /// - goHome：返航  
-//        /// - noAction：无动作  
-//        /// - autoLand：自动降落  
-//        /// - gotoFirstWaypoint：返回第一个航点
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(goHome|noAction|autoLand|gotoFirstWaypoint)$")]
-//        public string FinishAction { get; set; } = "goHome";
+    /// <summary>文件更新时间（毫秒级 Unix 时间戳）</summary>
+    [XmlElement("updateTime", Namespace = WpmlNamespaces.Wpml)]
+    public long? UpdateTime { get; set; }
 
-//        /// <summary>
-//        /// 遥控器信号丢失时的行为
-//        /// </summary>
-//        /// <remarks>
-//        /// - goContinue：继续执行任务  
-//        /// - executeLostAction：执行预设的失控动作（通常为返航）
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(goContinue|executeLostAction)$")]
-//        public string ExitOnRCLost { get; set; } = "goContinue";
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeUpdateTime() => UpdateTime.HasValue;
 
-//        /// <summary>
-//        /// 起飞安全高度（单位：米）
-//        /// </summary>
-//        /// <remarks>必须 ≥1 米，建议 ≥20 米以确保安全</remarks>
-//        [Range(1.0, 500.0, ErrorMessage = "TakeOffSecurityHeight 必须在 1 ~ 500 米之间")]
-//        public double TakeOffSecurityHeight { get; set; } = 20.0;
+    /// <summary>任务全局配置</summary>
+    [XmlElement("missionConfig", Namespace = WpmlNamespaces.Wpml)]
+    public WpmlMissionConfig MissionConfig { get; set; } = new();
 
-//        /// <summary>
-//        /// 全局过渡速度（单位：m/s）
-//        /// </summary>
-//        [Range(1.0, 20.0)]
-//        public double GlobalTransitionalSpeed { get; set; } = 8.0;
+    /// <summary>模板信息（本项目一条航线一个 Folder）</summary>
+    [XmlElement("Folder", Namespace = "")]
+    public TemplateFolder Folder { get; set; } = new();
+}
 
-//        /// <summary>
-//        /// 全局返航高度（单位：米）
-//        /// </summary>
-//        /// <remarks>必须 ≥20 米，确保避开障碍物</remarks>
-//        [Range(20.0, 500.0)]
-//        public double GlobalRTHHeight { get; set; } = 100.0;
+/// <summary>
+/// 任务全局配置（template.kml 与 waylines.wpml 共用）
+/// </summary>
+public class WpmlMissionConfig
+{
+    /// <summary>飞向首航点模式：safely / pointToPoint</summary>
+    [XmlElement("flyToWaylineMode", Namespace = WpmlNamespaces.Wpml)]
+    public string FlyToWaylineMode { get; set; } = "safely";
 
-//        /// <summary>
-//        /// 无人机信息
-//        /// </summary>
-//        [Required]
-//        public DroneInfo DroneInfo { get; set; } = new DroneInfo();
+    /// <summary>航线结束动作：goHome / noAction / autoLand / gotoFirstWaypoint</summary>
+    [XmlElement("finishAction", Namespace = WpmlNamespaces.Wpml)]
+    public string FinishAction { get; set; } = "goHome";
 
-//        /// <summary>
-//        /// 载荷信息
-//        /// </summary>
-//        [Required]
-//        public PayloadInfo PayloadInfo { get; set; } = new PayloadInfo();
-//    }
+    /// <summary>失控是否继续执行航线：goContinue / executeLostAction</summary>
+    [XmlElement("exitOnRCLost", Namespace = WpmlNamespaces.Wpml)]
+    public string ExitOnRCLost { get; set; } = "goContinue";
 
-//    /// <summary>
-//    /// 航线模板定义
-//    /// </summary>
-//    public class WaypointTemplate
-//    {
-//        /// <summary>
-//        /// 预定义模板类型
-//        /// </summary>
-//        /// <remarks>
-//        /// 模板为用户提供了快速生成航线的方案。用户填充模板元素，再导入大疆支持客户端（如 DJI Pilot），
-//        /// 即可快速生成可执行的测绘/巡检航线。
-//        /// <para>取值定义：</para>
-//        /// <list type="bullet">
-//        ///   <item><description><c>waypoint</c>：航点飞行</description></item>
-//        ///   <item><description><c>mapping2d</c>：建图航拍（正射影像）</description></item>
-//        ///   <item><description><c>mapping3d</c>：倾斜摄影（多角度建模）</description></item>
-//        ///   <item><description><c>mappingStrip</c>：航带飞行（长条带状区域）</description></item>
-//        /// </list>
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(waypoint|mapping2d|mapping3d|mappingStrip)$",
-//            ErrorMessage = "TemplateType 必须为 waypoint / mapping2d / mapping3d / mappingStrip")]
-//        public string TemplateType { get; set; } = "waypoint";
+    /// <summary>失控动作类型：goBack / landing / hover（exitOnRCLost=executeLostAction 时必需）</summary>
+    [XmlElement("executeRCLostAction", Namespace = WpmlNamespaces.Wpml)]
+    public string? ExecuteRCLostAction { get; set; }
 
-//        /// <summary>
-//        /// 坐标系参数
-//        /// </summary>
-//        [Required]
-//        public WaylineCoordinateSysParam CoordinateSysParam { get; set; } = new WaylineCoordinateSysParam();
+    /// <summary>参考起飞点，格式“纬度,经度,高度（椭球高）”</summary>
+    [XmlElement("takeOffRefPoint", Namespace = WpmlNamespaces.Wpml)]
+    public string? TakeOffRefPoint { get; set; }
 
-//        /// <summary>
-//        /// 自动飞行速度（单位：m/s）
-//        /// </summary>
-//        [Range(0.1, 15.0, ErrorMessage = "AutoFlightSpeed 必须在 0.1 ~ 15 m/s 之间")]
-//        public double AutoFlightSpeed { get; set; } = 7.0;
+    /// <summary>参考起飞点海拔高度（米）</summary>
+    [XmlElement("takeOffRefPointAGLHeight", Namespace = WpmlNamespaces.Wpml)]
+    public double? TakeOffRefPointAGLHeight { get; set; }
 
-//        /// <summary>
-//        /// 云台俯仰控制模式
-//        /// </summary>
-//        /// <remarks>
-//        /// - manual：手动指定角度（由每个航点的 GimbalPitchAngle 决定）  
-//        /// - usePointSetting：使用航点设置（同 manual，但语义更明确）
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(manual|usePointSetting)$")]
-//        public string GimbalPitchMode { get; set; } = "usePointSetting";
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeTakeOffRefPointAGLHeight() => TakeOffRefPointAGLHeight.HasValue;
 
-//        /// <summary>
-//        /// 全局航向参数（可选）
-//        /// </summary>
-//        public GlobalWaypointHeadingParam? GlobalWaypointHeadingParam { get; set; }
+    /// <summary>安全起飞高度（米）</summary>
+    [XmlElement("takeOffSecurityHeight", Namespace = WpmlNamespaces.Wpml)]
+    public double TakeOffSecurityHeight { get; set; } = 20;
 
-//        /// <summary>
-//        /// 全局转弯模式
-//        /// </summary>
-//        /// <remarks>
-//        /// - toPointAndStopWithDiscontinuityCurvature：到达航点后停止，转弯不连续（默认）  
-//        /// - toPointAndStopWithContinuityCurvature：平滑停止  
-//        /// - curvedTrajectory：曲线轨迹（不停止）
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(toPointAndStopWithDiscontinuityCurvature|toPointAndStopWithContinuityCurvature|curvedTrajectory)$")]
-//        public string GlobalWaypointTurnMode { get; set; } = "toPointAndStopWithDiscontinuityCurvature";
+    /// <summary>全局航线过渡速度（米/秒）</summary>
+    [XmlElement("globalTransitionalSpeed", Namespace = WpmlNamespaces.Wpml)]
+    public double GlobalTransitionalSpeed { get; set; } = 10;
 
-//        /// <summary>
-//        /// 航点列表
-//        /// </summary>
-//        [Required]
-//        public List<Placemark> Placemarks { get; set; } = new List<Placemark>();
-//    }
+    /// <summary>全局返航高度（米）</summary>
+    [XmlElement("globalRTHHeight", Namespace = WpmlNamespaces.Wpml)]
+    public double GlobalRTHHeight { get; set; } = 100;
 
-//    /// <summary>
-//    /// 坐标系参数
-//    /// </summary>
-//    public class WaylineCoordinateSysParam
-//    {
-//        /// <summary>
-//        /// 坐标系类型
-//        /// </summary>
-//        /// <remarks>
-//        /// - WGS84：经纬度坐标系（十进制度）  
-//        /// - UTM：通用横轴墨卡托投影（较少用）
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(WGS84|UTM)$")]
-//        public string CoordinateSystem { get; set; } = "WGS84";
+    /// <summary>飞行器机型信息</summary>
+    [XmlElement("droneInfo", Namespace = WpmlNamespaces.Wpml)]
+    public DroneInfo DroneInfo { get; set; } = new();
 
-//        /// <summary>
-//        /// 高度参考系
-//        /// </summary>
-//        /// <remarks>
-//        /// - WGS84：椭球高  
-//        /// - AGL：离地高度（Above Ground Level）
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(WGS84|AGL)$")]
-//        public string HeightReference { get; set; } = "WGS84";
-//    }
+    /// <summary>负载机型信息</summary>
+    [XmlElement("payloadInfo", Namespace = WpmlNamespaces.Wpml)]
+    public PayloadInfo PayloadInfo { get; set; } = new();
 
-//    /// <summary>
-//    /// 全局航向参数
-//    /// </summary>
-//    public class GlobalWaypointHeadingParam
-//    {
-//        /// <summary>
-//        /// 航点朝向模式
-//        /// </summary>
-//        /// <remarks>
-//        /// <list type="bullet">
-//        ///   <item><description><c>followWayline</c>：沿航线方向自动调整机头朝向（默认）</description></item>
-//        ///   <item><description><c>fixedAngle</c>：固定角度，需配合 WaypointHeadingAngle 使用</description></item>
-//        ///   <item><description><c>poi</c>：朝向兴趣点（POI），需提供 WaypointPoiPoint 坐标</description></item>
-//        /// </list>
-//        /// </remarks>
-//        [Required]
-//        [RegularExpression("^(followWayline|fixedAngle|poi)$",
-//            ErrorMessage = "WaypointHeadingMode 必须为 followWayline / fixedAngle / poi")]
-//        public string WaypointHeadingMode { get; set; } = "followWayline";
+    /// <summary>航线绕行配置（仅 M3D / M4D / M4E 系列机型支持，未开启时不输出）</summary>
+    [XmlElement("autoRerouteInfo", Namespace = WpmlNamespaces.Wpml)]
+    public WpmlAutoRerouteInfo? AutoRerouteInfo { get; set; }
+}
 
-//        /// <summary>
-//        /// 固定航向角（仅当 WaypointHeadingMode = fixedAngle 时有效）
-//        /// </summary>
-//        /// <remarks>
-//        /// 单位：度，范围 [-180, 180]  
-//        /// 正北为 0°，顺时针为正（东为 90°，南为 180°/-180°，西为 -90°）
-//        /// </remarks>
-//        [Range(-180.0, 180.0, ErrorMessage = "WaypointHeadingAngle 必须在 -180 到 180 度之间")]
-//        public double WaypointHeadingAngle { get; set; } = 0.0;
+/// <summary>
+/// template.kml 的 Folder（航点飞行模板）
+/// </summary>
+public class TemplateFolder
+{
+    /// <summary>预定义模板类型：waypoint / mapping2d / mapping3d / mappingStrip</summary>
+    [XmlElement("templateType", Namespace = WpmlNamespaces.Wpml)]
+    public string TemplateType { get; set; } = "waypoint";
 
-//        /// <summary>
-//        /// 兴趣点坐标（仅当 WaypointHeadingMode = poi 时必填）
-//        /// </summary>
-//        /// <remarks>
-//        /// 格式："{latitude},{longitude}"，例如 "30.123456,120.123456"
-//        /// </remarks>
-//        public string? WaypointPoiPoint { get; set; }
+    /// <summary>模板 ID，同一 KMZ 内唯一，建议从 0 开始</summary>
+    [XmlElement("templateId", Namespace = WpmlNamespaces.Wpml)]
+    public int TemplateId { get; set; }
 
-//        /// <summary>
-//        /// 航向路径模式（可选）
-//        /// </summary>
-//        public string? WaypointHeadingPathMode { get; set; }
-//    }
+    /// <summary>全局航线飞行速度（米/秒）</summary>
+    [XmlElement("autoFlightSpeed", Namespace = WpmlNamespaces.Wpml)]
+    public double AutoFlightSpeed { get; set; } = 10;
 
-//    /// <summary>
-//    /// 航点（Placemark）定义
-//    /// </summary>
-//    public class Placemark
-//    {
-//        /// <summary>
-//        /// 航点索引（从 0 开始，必须连续）
-//        /// </summary>
-//        [Required]
-//        public int Index { get; set; }
+    /// <summary>全局航点转弯模式</summary>
+    [XmlElement("globalWaypointTurnMode", Namespace = WpmlNamespaces.Wpml)]
+    public string GlobalWaypointTurnMode { get; set; } = "toPointAndStopWithDiscontinuityCurvature";
 
-//        /// <summary>
-//        /// 经度（十进制度）
-//        /// </summary>
-//        [Range(-180.0, 180.0, ErrorMessage = "经度必须在 -180 到 180 之间")]
-//        public double Longitude { get; set; }
+    /// <summary>全局航段轨迹是否尽量贴合直线（0/1）</summary>
+    [XmlElement("globalUseStraightLine", Namespace = WpmlNamespaces.Wpml)]
+    public int GlobalUseStraightLine { get; set; }
 
-//        /// <summary>
-//        /// 纬度（十进制度）
-//        /// </summary>
-//        [Range(-90.0, 90.0, ErrorMessage = "纬度必须在 -90 到 90 之间")]
-//        public double Latitude { get; set; }
+    /// <summary>云台俯仰角控制模式：manual / usePointSetting</summary>
+    [XmlElement("gimbalPitchMode", Namespace = WpmlNamespaces.Wpml)]
+    public string GimbalPitchMode { get; set; } = "manual";
 
-//        /// <summary>
-//        /// 椭球高（单位：米，WGS84 椭球面起算）
-//        /// </summary>
-//        [Range(-1000.0, 10000.0)]
-//        public double EllipsoidHeight { get; set; }
+    /// <summary>全局航线高度</summary>
+    [XmlElement("globalHeight", Namespace = WpmlNamespaces.Wpml)]
+    public double GlobalHeight { get; set; }
 
-//        /// <summary>
-//        /// 相对起飞点高度（单位：米）
-//        /// </summary>
-//        [Range(0.0, 500.0)]
-//        public double Height { get; set; }
+    /// <summary>负载设置</summary>
+    [XmlElement("payloadParam", Namespace = WpmlNamespaces.Wpml)]
+    public TemplatePayloadParam PayloadParam { get; set; } = new();
 
-//        /// <summary>
-//        /// 云台俯仰角（单位：度）
-//        /// </summary>
-//        /// <remarks>
-//        /// 范围通常为 [-90, 30]：  
-//        /// -90° 为垂直向下，0° 为水平，30° 为略微上仰（部分机型支持）
-//        /// </remarks>
-//        [Required]
-//        [Range(-90.0, 30.0, ErrorMessage = "GimbalPitchAngle 必须在 -90 到 30 度之间")]
-//        public double GimbalPitchAngle { get; set; } = 0.0;
+    /// <summary>全局偏航角模式参数</summary>
+    [XmlElement("globalWaypointHeadingParam", Namespace = WpmlNamespaces.Wpml)]
+    public WpmlWaypointHeadingParam GlobalWaypointHeadingParam { get; set; } = new();
 
-//        /// <summary>
-//        /// 动作列表（可选）
-//        /// </summary>
-//        public List<Action>? Actions { get; set; }
-//    }
+    /// <summary>坐标系参数</summary>
+    [XmlElement("waylineCoordinateSysParam", Namespace = WpmlNamespaces.Wpml)]
+    public WaylineCoordinateSysParam WaylineCoordinateSysParam { get; set; } = new();
 
-  
+    /// <summary>航点列表</summary>
+    [XmlElement("Placemark", Namespace = "")]
+    public List<TemplatePlacemark> Placemarks { get; set; } = [];
+}
 
-   
-//}
+/// <summary>
+/// template.kml 的负载设置
+/// </summary>
+public class TemplatePayloadParam
+{
+    /// <summary>图片格式列表，多个以英文逗号分隔，如 “wide,ir”</summary>
+    [XmlElement("imageFormat", Namespace = WpmlNamespaces.Wpml)]
+    public string? ImageFormat { get; set; }
+
+    /// <summary>负载扫描模式：repetitive / nonRepetitive</summary>
+    [XmlElement("scanningMode", Namespace = WpmlNamespaces.Wpml)]
+    public string? ScanningMode { get; set; }
+
+    /// <summary>负载挂载位置索引</summary>
+    [XmlElement("payloadPositionIndex", Namespace = WpmlNamespaces.Wpml)]
+    public int PayloadPositionIndex { get; set; }
+}
+
+/// <summary>
+/// template.kml 的航点
+/// </summary>
+public class TemplatePlacemark
+{
+    /// <summary>航点序号，从 0 开始单调连续递增</summary>
+    [XmlElement("index", Namespace = WpmlNamespaces.Wpml)]
+    public int Index { get; set; }
+
+    /// <summary>是否危险点（0/1）</summary>
+    [XmlElement("isRisky", Namespace = WpmlNamespaces.Wpml)]
+    public int IsRisky { get; set; }
+
+    /// <summary>是否使用全局高度（0/1）</summary>
+    [XmlElement("useGlobalHeight", Namespace = WpmlNamespaces.Wpml)]
+    public int UseGlobalHeight { get; set; } = 1;
+
+    /// <summary>航点高度（WGS84 椭球高）</summary>
+    [XmlElement("ellipsoidHeight", Namespace = WpmlNamespaces.Wpml)]
+    public double? EllipsoidHeight { get; set; }
+
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeEllipsoidHeight() => EllipsoidHeight.HasValue;
+
+    /// <summary>航点高度（EGM96 海拔高 / 相对起飞点高度 / AGL 相对地面高度）</summary>
+    [XmlElement("height", Namespace = WpmlNamespaces.Wpml)]
+    public double? Height { get; set; }
+
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeHeight() => Height.HasValue;
+
+    /// <summary>航点飞行速度（米/秒），useGlobalSpeed=0 时必需</summary>
+    [XmlElement("waypointSpeed", Namespace = WpmlNamespaces.Wpml)]
+    public double? WaypointSpeed { get; set; }
+
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeWaypointSpeed() => WaypointSpeed.HasValue;
+
+    /// <summary>是否使用全局飞行速度（0/1）</summary>
+    [XmlElement("useGlobalSpeed", Namespace = WpmlNamespaces.Wpml)]
+    public int UseGlobalSpeed { get; set; } = 1;
+
+    /// <summary>是否使用全局偏航角参数（0/1）</summary>
+    [XmlElement("useGlobalHeadingParam", Namespace = WpmlNamespaces.Wpml)]
+    public int UseGlobalHeadingParam { get; set; } = 1;
+
+    /// <summary>是否使用全局转弯参数（0/1）</summary>
+    [XmlElement("useGlobalTurnParam", Namespace = WpmlNamespaces.Wpml)]
+    public int UseGlobalTurnParam { get; set; } = 1;
+
+    /// <summary>航点云台俯仰角，gimbalPitchMode=usePointSetting 时必需</summary>
+    [XmlElement("gimbalPitchAngle", Namespace = WpmlNamespaces.Wpml)]
+    public double? GimbalPitchAngle { get; set; }
+
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeGimbalPitchAngle() => GimbalPitchAngle.HasValue;
+
+    /// <summary>该航段是否贴合直线（0/1）</summary>
+    [XmlElement("useStraightLine", Namespace = WpmlNamespaces.Wpml)]
+    public int? UseStraightLine { get; set; }
+
+    /// <summary>值为空时不输出该元素</summary>
+    public bool ShouldSerializeUseStraightLine() => UseStraightLine.HasValue;
+
+    /// <summary>航点偏航角参数，useGlobalHeadingParam=0 时必需</summary>
+    [XmlElement("waypointHeadingParam", Namespace = WpmlNamespaces.Wpml)]
+    public WpmlWaypointHeadingParam? WaypointHeadingParam { get; set; }
+
+    /// <summary>航点转弯参数，useGlobalTurnParam=0 时必需</summary>
+    [XmlElement("waypointTurnParam", Namespace = WpmlNamespaces.Wpml)]
+    public WpmlWaypointTurnParam? WaypointTurnParam { get; set; }
+
+    /// <summary>航点坐标</summary>
+    [XmlElement("Point", Namespace = "")]
+    public PointCoordinates Point { get; set; } = new();
+
+    /// <summary>航点动作组</summary>
+    [XmlElement("actionGroup", Namespace = WpmlNamespaces.Wpml)]
+    public List<WpmlActionGroup> ActionGroups { get; set; } = [];
+}

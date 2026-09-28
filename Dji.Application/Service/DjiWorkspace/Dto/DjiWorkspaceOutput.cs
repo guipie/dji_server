@@ -23,7 +23,7 @@ public class DjiWorkspaceOutput
     /// <summary>
     /// platform_name
     /// </summary>
-    public string NickName { get; set; }
+    public string WorkspaceNickName { get; set; }
     
     /// <summary>
     /// workspace_bind_code

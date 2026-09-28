@@ -11,6 +11,7 @@ using Dji.Application.Cloud;
 using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Entity;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
 using MQTTnet;
 using System.Linq;
 using System.Reflection;
@@ -26,7 +27,6 @@ public static class DjiApplicationSetup
             var mqttFactory = new MqttClientFactory();
             return mqttFactory.CreateMqttClient();
         });
-        services.AddSingleton<ITopicRouter, TopicRouter>();
         services.AddSingleton<IMqttService, MqttService>();
         services.AddSingleton<ModuleManager>();
         var baseType = typeof(BaseModuleService);
@@ -50,15 +50,26 @@ public static class DjiApplicationSetup
             .Where(t => t.IsClass && t.GetCustomAttribute<MqttControllerAttribute>() != null &&
                         t.IsSubclassOf(typeof(BaseModuleService)));
         var moduleManage = builder.ApplicationServices.GetRequiredService<ModuleManager>();
+
+        // MQTT 处理器需要长期存活，而其依赖（仓储等）注册为 Scoped，
+        // 因此显式创建一个与应用同生命周期的作用域，并在应用停止时释放，
+        // 而不是像历史实现那样在循环里反复 CreateScope() 且从不释放。
+        var handlerScope = builder.ApplicationServices.CreateScope();
+        builder.ApplicationServices.GetRequiredService<IHostApplicationLifetime>()
+            .ApplicationStopping.Register(handlerScope.Dispose);
+
         foreach (var type in controllerTypes)
         {
-            var instance = builder.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService(type);
+            var instance = handlerScope.ServiceProvider.GetRequiredService(type);
             var methods = type.GetMethods(BindingFlags.Public | BindingFlags.Instance)
-                .Where(m => m.GetCustomAttribute<MqttSubscribeAttribute>() != null);
+                .Where(m => m.GetCustomAttributes<MqttSubscribeAttribute>().Any());
 
             foreach (var method in methods)
             {
-                var attr = method.GetCustomAttribute<MqttSubscribeAttribute>()!;
+                // 特性可叠加：同一个处理方法上挂多个 MqttSubscribe 会注册成多条订阅记录。
+                // 机场控制类指令（开合舱盖 / 充电 / 重启 / 格式化 …）的进度报文结构完全一致，
+                // 叠加特性可让一个方法统一处理，避免写几十个只做转发的样板方法。
+                var attrs = method.GetCustomAttributes<MqttSubscribeAttribute>().ToList();
                 var parameters = method.GetParameters();
 
                 if (parameters.Length != 1)
@@ -68,16 +79,20 @@ public static class DjiApplicationSetup
                     throw new ArgumentException($"MQTT 处理方法 {method.Name} 的参数必须是 CloudMqData<T>");
 
                 var dataType = paramType.GetGenericArguments()[0]; // T 
-                moduleManage.AddModule(new SubscriptionModel
+
+                foreach (var attr in attrs)
                 {
-                    Topic = attr.Topic,
-                    Domain = attr.Domain,
-                    Method = attr.Method,
-                    MethodInfo = method,
-                    Instance = instance,
-                    DataType = dataType,
-                    DeclaringType = type
-                });
+                    moduleManage.AddModule(new SubscriptionModel
+                    {
+                        Topic = attr.Topic,
+                        Domain = attr.Domain,
+                        Method = attr.Method,
+                        MethodInfo = method,
+                        Instance = instance,
+                        DataType = dataType,
+                        DeclaringType = type
+                    });
+                }
             }
         }
 

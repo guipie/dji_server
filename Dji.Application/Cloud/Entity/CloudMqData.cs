@@ -8,6 +8,8 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 namespace Dji.Application.Cloud.Entity;
+
+/// <summary>上行报文信封（<c>bid</c>/<c>tid</c>/<c>method</c>/<c>timestamp</c> + <c>data</c>）</summary>
 public class CloudMqData<T>
 {
     public string Tid { get; set; }
@@ -22,11 +24,31 @@ public class CloudMqData<T>
     public T Data { get; set; }
 
     public string Ext { get; set; }
-
 }
 
+/// <summary>
+/// 带 <c>result</c> 的应答体。
+/// </summary>
+/// <remarks>
+/// 适用于 <c>requests_reply</c> / <c>services_reply</c>（载荷形如 <c>data: { output, result }</c>）
+/// 以及 <c>events_reply</c>（载荷形如 <c>data: { result }</c>，此时不填 <see cref="Output"/>）
+/// —— 两者结构一致，用同一个类型即可。
+/// </remarks>
 public class MqOutput<T>
 {
     public T Output { get; set; }
+    public int Result { get; set; }
+}
+
+/// <summary>
+/// 事件应答体（<c>events_reply</c>）。
+/// </summary>
+/// <remarks>
+/// 与 <see cref="MqOutput{T}"/> 的区别：事件应答的载荷只有 <c>result</c>，没有 <c>output</c>，
+/// 因此单独定义以避免多输出一个空对象字段。
+/// </remarks>
+public class MqEventReply
+{
+    /// <summary>返回码，0 表示成功</summary>
     public int Result { get; set; }
 }

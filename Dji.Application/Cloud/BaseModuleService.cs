@@ -33,4 +33,16 @@ public abstract class BaseModuleService
         };
         return new CloudMqRequest<MqOutput<object>>(from.Method, mqOutput, from.Gateway, from.Tid, from.Bid);
     }
+
+    /// <summary>
+    /// 构造 <c>events_reply</c> 应答。
+    /// </summary>
+    /// <remarks>
+    /// 协议规定带 <c>need_reply = 1</c> 的上行事件（HMS 告警、媒体回调、飞行区同步进度、AirSense 告警等）
+    /// <b>必须应答</b>，否则设备会不断重发同一条报文。
+    /// 应答体的结构比 <c>requests_reply</c> 简单得多（只有一个 <c>result</c>，没有 <c>output</c>），
+    /// 且要沿用原报文的 <c>tid</c> / <c>bid</c> 以便设备侧做请求应答配对，故单独提供此辅助方法。
+    /// </remarks>
+    public CloudMqRequest<MqEventReply> ToEventReply<F>(CloudMqData<F> from, int result = 0)
+        => new(from.Method, new MqEventReply { Result = result }, from.Gateway, from.Tid, from.Bid);
 }

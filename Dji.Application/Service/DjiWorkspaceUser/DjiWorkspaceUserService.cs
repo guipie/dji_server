@@ -74,7 +74,7 @@ public class DjiWorkspaceUserService : IDynamicApiController, ITransient
         for (var i = 0; i < spaces.Count; i++)
         {
             var s = spaces[i];
-            data.AddRange(users.Select(x => new DjiWorkspaceUser() { UserId = x.Id, Account = x.Account, NickName = x.NickName, WorkspaceId = s.WorkspaceId, WorkspaceNickName = s.NickName, IsDefault = i == 0 }));
+            data.AddRange(users.Select(x => new DjiWorkspaceUser() { UserId = x.Id, Account = x.Account, NickName = x.NickName, WorkspaceId = s.WorkspaceId, WorkspaceNickName = s.WorkspaceNickName, IsDefault = i == 0 }));
         }
         return await _rep.InsertRangeAsync(data);
     }
@@ -161,7 +161,6 @@ public class DjiWorkspaceUserService : IDynamicApiController, ITransient
     /// <summary>
     /// 获取user_id列表
     /// </summary>
-    /// <param name="input"></param>
     /// <returns></returns>
     [ApiDescriptionSettings(Name = "SysUserUserIdDropdown"), HttpGet]
     public async Task<dynamic> SysUserUserIdDropdown()

@@ -14,11 +14,15 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 
 namespace Dji.Application.Cloud;
-internal class MqDeviceService(ILogger<MqDeviceService> logger, DeviceRepository deviceRepository) : BaseModuleService
+internal class MqDeviceService(
+    ILogger<MqDeviceService> logger,
+    DeviceRepository deviceRepository,
+    DjiDockStateRepository dockStateRepository) : BaseModuleService
 {
     //日志
     private readonly ILogger<MqDeviceService> _logger = logger;
     private readonly DeviceRepository _deviceRepository = deviceRepository;
+    private readonly DjiDockStateRepository _dockStateRepository = dockStateRepository;
 
 
     /// <summary>
@@ -32,6 +36,12 @@ internal class MqDeviceService(ILogger<MqDeviceService> logger, DeviceRepository
         //if(data.Gateway== "8UUXN5600A07KY")
         //Console.WriteLine("机场{0},数据：{1}", data.Gateway, data.Data.AccTime);
         await _deviceRepository.BindDockOsd(data.Gateway, data.Data);
+
+        // 同一帧 OSD 另外存一份到「机场状态快照」表，供机场控制面板读取设备当前状态
+        // （舱盖/推杆/充电/空调/电量…）。历史上这些字段只更新到设备表的在线与位置，
+        // 导致控制面板无处取数；快照表内部有变化检测，不会因 0.5Hz 定频上报而写爆库。
+        await _dockStateRepository.SaveOsdAsync(data.Gateway, data.Data, data.TimeStamp);
+
         await Task.Delay(1);
     }
     /// <summary>
@@ -50,15 +60,28 @@ internal class MqDeviceService(ILogger<MqDeviceService> logger, DeviceRepository
     }
 
     /// <summary>
-    /// 设备拓扑更新
+    /// 设备拓扑更新（设备上线时由机场上报）
     /// </summary>
     /// <param name="data"></param>
     /// <returns></returns>
     [MqttSubscribe(Topics.ThingProductStatus, TopicMethods.UpdateTopo)]
     public async Task DeviceManageAsync(CloudMqData<UpdateTopoDevice> data)
     {
-        Console.WriteLine("UpdateTop:{0} , data:{1}", data.Gateway, data.Data.ToJson());
+        _logger.LogInformation("设备拓扑更新，gateway:{Gateway}，data:{Data}", data.Gateway, data.Data.ToJson());
         await _deviceRepository.BindTopo(data.Gateway, data.Data);
-        await Task.Delay(1);
+    }
+
+    /// <summary>
+    /// 设备离线通知。
+    /// </summary>
+    /// <remarks>
+    /// 历史实现未处理 <c>offline</c>，在线状态只能靠 OSD 缓存过期推断，且服务重启后全部失真；
+    /// 这里显式落库，前端在线列表可据此稳定展示。
+    /// </remarks>
+    [MqttSubscribe(Topics.ThingProductStatus, TopicMethods.Offline)]
+    public async Task DeviceOfflineAsync(CloudMqData<object> data)
+    {
+        _logger.LogInformation("设备离线，gateway:{Gateway}", data.Gateway);
+        await _deviceRepository.SetOffline(data.Gateway);
     }
 }

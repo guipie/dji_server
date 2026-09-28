@@ -32,6 +32,32 @@ public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
             new SysMenu{ Id=1300000000102, Pid=0, Title="工作空间", Path="/workspace", Name="workspace", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=100 },
             new SysMenu{ Id=1300000000103, Pid=0, Title="设备管理", Path="/device", Name="device", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=110 },
 
+            // 航线任务：父级与「创建航线 / 航线管理」先前是在「菜单管理」界面手工建的，
+            // 这里纳入种子数据，使整套菜单在全新库上可复现（种子按主键 insert-or-update，
+            // CreateTime 带 IsOnlyIgnoreUpdate 不会被回写，对既有库仅刷新 UpdateTime）。
+            new SysMenu{ Id=46369739414597, Pid=0, Title="航线任务", Path="/wayline", Name="wayline", Component="Layout", Icon="ele-Link", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2025-11-16 20:43:16"), OrderNo=120 },
+            new SysMenu{ Id=46369800267590, Pid=46369739414597, Title="航线管理", Path="/wayline/list", Name="waylineList", Component="/main/djiWayline/index", Icon="ele-List", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-24 00:40:33"), OrderNo=90 },
+            new SysMenu{ Id=46369800267591, Pid=46369739414597, Title="任务中心", Path="/wayline/task", Name="waylineTask", Component="/main/djiWayline/task/index", Icon="ele-AlarmClock", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 00:00:00"), OrderNo=95 },
+            new SysMenu{ Id=46369800267589, Pid=46369739414597, Title="创建航线", Path="/wayline/create", Name="createWayline", Component="/main/djiWayline/create", Redirect="/wayline/create", Icon="ele-AddLocation", Type=MenuTypeEnum.Menu, IsAffix=true, IsKeepAlive=true, CreateTime=DateTime.Parse("2025-11-16 20:47:14"), OrderNo=100 },
+
+            // 媒体中心（P2）：媒体库 + 直播中心同属「机场所产内容的消费侧」，共用一个父级目录。
+            // 媒体只在机场回传时产生、直播只在平台下发时产生，两个页面都是「查看 + 控制」而非增删改。
+            new SysMenu{ Id=46369910000001, Pid=0, Title="媒体中心", Path="/media", Name="media", Component="Layout", Icon="ele-VideoCamera", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-09-28 21:00:00"), OrderNo=130 },
+            new SysMenu{ Id=46369910000011, Pid=46369910000001, Title="媒体库", Path="/media/library", Name="mediaLibrary", Component="/main/djiMedia/index", Icon="ele-Picture", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 21:00:00"), OrderNo=100 },
+            new SysMenu{ Id=46369910000012, Pid=46369910000001, Title="直播中心", Path="/media/live", Name="mediaLive", Component="/main/djiLive/index", Icon="ele-VideoPlay", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 21:00:00"), OrderNo=110 },
+
+            // 运维中心（P3）：HMS / 机场控制 / 固件升级 / 远程日志 / 自定义飞行区 / AirSense。
+            // 这六项的共同点是「都在回答『设备现在到底怎么样』」——发现故障（HMS）、处置故障（控制、升级）、
+            // 取证（日志、飞行区、AirSense），因此合在一个目录下，而不是散落到设备管理里。
+            // 排序衔接既有顶级菜单的 100/110/120/130，本模块取 140。
+            new SysMenu{ Id=46369910000002, Pid=0, Title="运维中心", Path="/ops", Name="ops", Component="Layout", Icon="ele-Tools", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=140 },
+            new SysMenu{ Id=46369910000021, Pid=46369910000002, Title="HMS 告警中心", Path="/ops/hms", Name="opsHms", Component="/main/djiHms/index", Icon="ele-Warning", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=100 },
+            new SysMenu{ Id=46369910000022, Pid=46369910000002, Title="机场控制", Path="/ops/dock", Name="opsDock", Component="/main/djiDock/index", Icon="ele-Setting", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=110 },
+            new SysMenu{ Id=46369910000023, Pid=46369910000002, Title="固件升级", Path="/ops/ota", Name="opsOta", Component="/main/djiOta/index", Icon="ele-Upload", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=120 },
+            new SysMenu{ Id=46369910000024, Pid=46369910000002, Title="远程日志", Path="/ops/log", Name="opsLog", Component="/main/djiLog/index", Icon="ele-Document", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=130 },
+            new SysMenu{ Id=46369910000025, Pid=46369910000002, Title="自定义飞行区", Path="/ops/flightArea", Name="opsFlightArea", Component="/main/djiFlightArea/index", Icon="ele-MapLocation", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=140 },
+            new SysMenu{ Id=46369910000026, Pid=46369910000002, Title="AirSense", Path="/ops/airSense", Name="opsAirSense", Component="/main/djiAirSense/index", Icon="ele-Aim", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-28 22:00:00"), OrderNo=150 },
+
 
 
 

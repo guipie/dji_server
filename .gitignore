@@ -18,3 +18,8 @@ logs/
 
 # ===== 本地 / 私有配置 =====
 Dji.Application/Configuration
+
+# ===== 本地 SQLite 运行时数据库与备份（数据库结构由 CodeFirst 生成，不入库）=====
+Dji.Web.Entry/db/
+*.db
+*.db.bak-*

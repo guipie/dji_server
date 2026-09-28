@@ -16,6 +16,10 @@ using System.Threading.Tasks;
 namespace Dji.Application.Enum;
 public enum DjiReplyErrorEnum
 {
+    /// <summary>未知错误（上云协议约定的通用失败码）</summary>
+    [Description("Unknown error")]
+    UNKNOWN_ERROR = -1,
+
     [Description("Failed to bind device.")]
     DEVICE_BINDING_FAILED = 210231,
     [Description("Illegal argument")]

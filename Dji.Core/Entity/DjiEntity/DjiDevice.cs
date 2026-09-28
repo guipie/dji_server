@@ -10,7 +10,7 @@
 namespace Dji.Core.Entity;
 //[SugarIndex("index_Order_Id",nameof(Order.id),OrderByType.Asc)]     //普通索引--非聚集索引
 //[SugarIndex("index_device_sn", nameof(DjiDevice.Sn),OrderByType.Asc, nameof(DjiDevice.Name), OrderByType.Asc,true)]  //复合索引
-[SugarIndex("index_Order_OrderDate", nameof(Sn), OrderByType.Asc, true)]  //唯一索引(true 表示唯一索引)
+[SugarIndex("index_DjiDevice_Sn", nameof(Sn), OrderByType.Asc, true)]  //唯一索引(true 表示唯一索引)
 [SugarTable("DjiDevice", "设备表")]
 public class DjiDevice : EntityWorkspaceBase
 {
@@ -56,14 +56,30 @@ public class DjiDevice : EntityWorkspaceBase
     [SugarColumn(ColumnDescription = "描述", Length = 2000, IsNullable = true)]
     public string Desc { get; set; }
 
+    /// <summary>经度（未知时为 null，避免用 0 表达“未知”——(0,0) 是几内亚湾的合法坐标）</summary>
     [SugarColumn(ColumnDescription = "经度", IsNullable = true)]
-    public double Longitude { get; set; }
+    public double? Longitude { get; set; }
 
-    [SugarColumn(ColumnDescription = "维度", IsNullable = true)]
-    public double Latitude { get; set; }
+    /// <summary>纬度（未知时为 null）</summary>
+    [SugarColumn(ColumnDescription = "纬度", IsNullable = true)]
+    public double? Latitude { get; set; }
 
+    /// <summary>高度（未知时为 null）</summary>
     [SugarColumn(ColumnDescription = "高度", IsNullable = true)]
-    public double Altitude { get; set; }
+    public double? Altitude { get; set; }
+
+
+    /// <summary>是否在线（由 update_topo / offline 事件维护，服务重启后按 LastOnlineTime 判定）</summary>
+    [SugarColumn(ColumnDescription = "是否在线", IsNullable = true, DefaultValue = "0")]
+    public bool IsOnline { get; set; }
+
+    /// <summary>最近一次在线时间</summary>
+    [SugarColumn(ColumnDescription = "最近在线时间", IsNullable = true)]
+    public DateTime? LastOnlineTime { get; set; }
+
+    /// <summary>最近一次收到 OSD 的时间</summary>
+    [SugarColumn(ColumnDescription = "最近OSD时间", IsNullable = true)]
+    public DateTime? LastOsdTime { get; set; }
 
 
     [SugarColumn(ColumnDescription = "绑定时间", IsNullable = true)]
@@ -79,6 +95,7 @@ public class DjiDevice : EntityWorkspaceBase
     public string AvatarUrl { get; set; }
 
 
+    /// <summary>子设备（飞行器），非数据库字段，按 ParentSn 装配</summary>
     [SugarColumn(IsIgnore = true)]
-    public IList<DjiDevice> Children { get; set; }
+    public IList<DjiDevice> Children { get; set; } = [];
 }

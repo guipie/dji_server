@@ -147,6 +147,15 @@ public class DockOsd
     public int? WorkingVoltage { get; set; }
 
     /// <summary>
+    /// 市电电压 (electric_supply_voltage) - int? (伏特)。
+    /// </summary>
+    /// <remarks>
+    /// 与 <see cref="WorkingVoltage"/>（工作电压，毫伏）不是一回事：这里反映的是外部供电，
+    /// 掉电或电压异常是机场无法作业的常见根因，机场控制面板需要单独展示。
+    /// </remarks>
+    public int? ElectricSupplyVoltage { get; set; }
+
+    /// <summary>
     /// 舱内湿度 (humidity) - float?  (%RH)
     /// </summary>
     public float? Humidity { get; set; }
@@ -215,6 +224,15 @@ public class DockOsd
     /// 舱盖状态 (cover_state) - enum_int: 0=关闭, 1=打开, 2=半开, 3=异常
     /// </summary>
     public int? CoverState { get; set; }
+
+    /// <summary>
+    /// 推杆状态 (putter_state) - enum_int: 0=闭合, 1=展开, 2=半开, 3=异常。
+    /// </summary>
+    /// <remarks>
+    /// 官方物模型里有该属性，随 OSD 定频上报。注意 Dock 2 / Dock 3 已<b>不再提供</b>
+    /// 推杆开关指令（putter_open / putter_close 仅 Dock 1 章节列出），故本字段仅作状态展示。
+    /// </remarks>
+    public int? PutterState { get; set; }
 
     /// <summary>
     /// 子设备状态 (sub_device) - struct

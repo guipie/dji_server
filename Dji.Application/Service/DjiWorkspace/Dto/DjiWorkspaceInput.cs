@@ -21,7 +21,7 @@ namespace Dji.Application;
         /// <summary>
         /// platform_name
         /// </summary>
-        public virtual string NickName { get; set; }
+        public virtual string WorkspaceNickName { get; set; }
         
         /// <summary>
         /// workspace_bind_code
@@ -88,7 +88,7 @@ namespace Dji.Application;
         /// <summary>
         /// platform_name
         /// </summary>
-        public string? NickName { get; set; }
+        public string? WorkspaceNickName { get; set; }
         
         /// <summary>
         /// workspace_bind_code
@@ -123,7 +123,7 @@ namespace Dji.Application;
         /// platform_name
         /// </summary>
         [Required(ErrorMessage = "platform_name不能为空")]
-        public override string NickName { get; set; }
+        public override string WorkspaceNickName { get; set; }
         
         /// <summary>
         /// workspace_bind_code

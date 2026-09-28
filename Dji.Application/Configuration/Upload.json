@@ -23,7 +23,7 @@
     "EnableMd5": true // 启用文件MDF5验证-防止重复上传
   },
   "OSSProvider": {
-    "IsEnable": true,
+    "IsEnable": false,
     "Provider": "Minio", // Invalid/Minio/Aliyun/QCloud/Qiniu/HuaweiCloud
     "Endpoint": "oss.dji.server",
     "Region": "CN_South",

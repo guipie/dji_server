@@ -39,7 +39,7 @@ internal class WorkspaceRepository(SqlSugarRepository<DjiWorkspace> rep, ILogger
                 {
                     WorkspaceName = data.OrganizationName,
                     //WorkspaceBindCode = data,
-                    NickName = data.OrganizationName,
+                    WorkspaceNickName = data.OrganizationName,
                     WorkspaceDesc = "自动绑定",
                     WorkspaceId = data.OrganizationId,
                     TenantId = SqlSugarConst.MainConfigId.ToLong(),

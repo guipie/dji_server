@@ -1,7 +1,23 @@
 {
-  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
   "Dji": {
-
+    "//": "以下参数会通过 MQTT 的 config 应答下发给机场，地址必须是【机场侧可达】的地址，不能用 localhost",
+    "AppId": "", // 大疆开发者 App ID，https://developer.dji.com/user/apps/
+    "AppKey": "", // 大疆开发者 App Key
+    "AppLicense": "", // 大疆开发者 App License
+    "NtpServerHost": "", // NTP 服务器地址；机场与云端时钟偏差过大会导致立即任务（30s 容差）被拒绝，强烈建议配置
+    "NtpServerPort": 123, // NTP 服务端口
+    "FileBaseUrl": "", // KMZ 对外访问前缀，如 http://192.168.1.10:5005；留空则用本机地址（仅适合本机联调）
+    "Live": {
+      "//": "自建 SRS。RtmpPushBaseUrl 由【机场】访问（推流），Flv/Hls 由【浏览器】访问（拉流），生产环境可能不是同一个域名",
+      "//2": "⚠️ 下面三个地址按「与 MQTT Broker 同机 + SRS 默认端口(1935 / 8080)」预填，部署前请按实际 SRS 核对；改错只会导致推流/拉流失败，不会影响其它功能",
+      "Enabled": true, // 置为 true 后才允许开播；否则开播接口直接返回「未配置」
+      "RtmpPushBaseUrl": "rtmp://172.18.100.38:1935/live", // SRS RTMP 入口，如 rtmp://192.168.1.10:1935/live（末尾不要带斜杠）
+      "FlvPlayBaseUrl": "http://172.18.100.38:8080/live", // SRS HTTP-FLV 出口，如 http://192.168.1.10:8080/live（低延迟首选）
+      "HlsPlayBaseUrl": "http://172.18.100.38:8080/live", // SRS HLS 出口，如 http://192.168.1.10:8080/live（兼容性兜底）
+      "StreamPrefix": "dji_", // 流名前缀，用于区分大疆的流与其他业务的流
+      "MaxConcurrentPerDock": 1, // 单机场并发路数兜底值；设备上报 live_capacity 后以设备为准
+      "MaxSessionMinutes": 120 // 单次直播最长时长（分钟），超时自动停播；0 表示不限制
+    }
   },
   "Mqtt": {
     "ClientId": "webapp_client_01",
@@ -12,6 +28,16 @@
     "Password": "B88a4a98$4_d492@8c8#738dC00b#5C4",
     "KeepAliveSeconds": 60,
     "CleanSession": true,
-    "SubscribedTopics": [ "thing/product/+/osd", "sys/product/+/status", "thing/product/+/requests", "thing/product/+/requests_reply" ]
+    "SubscribedTopics": [
+      "sys/product/+/status",
+      "thing/product/+/osd",
+      "thing/product/+/state",
+      "thing/product/+/requests",
+      "thing/product/+/requests_reply",
+      "thing/product/+/services_reply",
+      "thing/product/+/property/set_reply",
+      "thing/product/+/events",
+      "thing/product/+/drc/up"
+    ]
   }
 }

@@ -12,7 +12,18 @@ using Dji.Application.Cloud.Dto.Org;
 using Dji.Application.Cloud.Entity;
 
 namespace Dji.Application.Service.DjiDevice;
-public partial class DjiDeviceCloudService(MqttGatewayPublish gatewayPublish) : BaseCloudService
+
+/// <summary>
+/// 机场云 API 服务（对设备侧 / 运营后台的 HTTP 入口）。
+/// </summary>
+// 注意：命名空间 Dji.Application.Service.DjiDevice 与实体类型 Dji.Core.Entity.DjiDevice 同名，
+// 此处必须使用完全限定名，否则会被解析为命名空间。
+public partial class DjiDeviceCloudService(
+    MqttGatewayPublish gatewayPublish,
+    SqlSugarRepository<Dji.Core.Entity.DjiDevice> deviceRepository,
+    SysCacheService cache) : BaseCloudService
 {
     private readonly MqttGatewayPublish _publish = gatewayPublish;
+    private readonly SqlSugarRepository<Dji.Core.Entity.DjiDevice> _deviceRes = deviceRepository;
+    private readonly SysCacheService _cache = cache;
 }

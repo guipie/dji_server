@@ -7,220 +7,291 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace Dji.Application.Service.DjiWayline.Dto;
 
+/// <summary>
+/// 创建/保存航点航线请求
+/// </summary>
+/// <remarks>
+/// 结构与前端 <c>WaylineCreateParams</c> 一一对应；后端据此生成 template.kml 与 waylines.wpml，
+/// 并打包为大疆机场可识别的 KMZ 文件。
+/// </remarks>
 public class CreateWaypointWaylineRequest
 {
-    [JsonPropertyName("waylineName")]
+    /// <summary>航线名称（同一空间内唯一）</summary>
     public string WaylineName { get; set; } = string.Empty;
 
-    [JsonPropertyName("domainTypeSubType")]
+    /// <summary>模板中文名称，如“航点航线”</summary>
+    public string TemplateStr { get; set; }
+
+    /// <summary>模板类型：1=waypoint 2=mapping2d 3=mapping3d 4=mappingStrip</summary>
+    public int TemplateType { get; set; } = 1;
+
+    /// <summary>飞行器显示名称</summary>
+    public string DroneModel { get; set; }
+
+    /// <summary>设备枚举标识（Domain_Type_SubType）</summary>
     public string DomainTypeSubType { get; set; }
 
-    [JsonPropertyName("acc")]
+    /// <summary>配件</summary>
     public string Acc { get; set; }
 
-    [JsonPropertyName("templateType")]
-    public int TemplateType { get; set; }
+    /// <summary>所属空间；为空时取当前用户的默认空间</summary>
+    public string WorkspaceId { get; set; }
 
-    [JsonPropertyName("templateStr")]
-    public string TemplateStr { get; set; } = string.Empty;
-
-    [JsonPropertyName("missionConfig")]
+    /// <summary>任务全局配置</summary>
     public MissionConfig MissionConfig { get; set; } = new();
 
-    [JsonPropertyName("folder")]
+    /// <summary>航线（模板）配置</summary>
     public Folder Folder { get; set; } = new();
+
+    /// <summary>前端扩展参数（高度模式、定向拍照模式、参考起飞点坐标）</summary>
+    public WaylineExt Ext { get; set; } = new();
 }
 
+/// <summary>
+/// 前端扩展参数
+/// </summary>
+public class WaylineExt
+{
+    /// <summary>
+    /// 航点高度模式：
+    /// hb=海拔高度(EGM96) / xdqfd=相对起飞点高度 / xddm=相对地面高度(AGL)
+    /// </summary>
+    public string WaylinePointHeightMode { get; set; } = "xdqfd";
+
+    /// <summary>定向拍照模式：normalPhoto / lowLightSmartShooting</summary>
+    public string OrientedPhotoMode { get; set; } = "normalPhoto";
+
+    /// <summary>参考起飞点坐标</summary>
+    public HomeCoordinate HomeCoordinate { get; set; }
+}
+
+/// <summary>
+/// 参考起飞点坐标
+/// </summary>
+public class HomeCoordinate
+{
+    public double Longitude { get; set; }
+
+    public double Latitude { get; set; }
+
+    public double? Height { get; set; }
+}
+
+/// <summary>
+/// 任务全局配置（对应 wpml:missionConfig）
+/// </summary>
 public class MissionConfig
 {
-    [JsonPropertyName("flyToWaylineMode")]
-    public string FlyToWaylineMode { get; set; } = string.Empty;
+    /// <summary>飞向首航点模式：safely（垂直爬升）/ pointToPoint（倾斜爬升）</summary>
+    public string FlyToWaylineMode { get; set; } = "safely";
 
-    [JsonPropertyName("takeOffSecurityHeight")]
-    public float TakeOffSecurityHeight { get; set; } = 100; // 注意：JSON 中是字符串 "100"
+    /// <summary>安全起飞高度（米）</summary>
+    public double TakeOffSecurityHeight { get; set; } = 20;
 
-    [JsonPropertyName("takeOffRefPointAGLHeight")]
-    public int TakeOffRefPointAGLHeight { get; set; }
+    /// <summary>参考起飞点海拔高度（米）</summary>
+    public double TakeOffRefPointAGLHeight { get; set; } = 60;
 
-    [JsonPropertyName("globalTransitionalSpeed")]
-    public int GlobalTransitionalSpeed { get; set; }
+    /// <summary>全局航线过渡速度（米/秒）</summary>
+    public double GlobalTransitionalSpeed { get; set; } = 14;
 
-    [JsonPropertyName("finishAction")]
-    public string FinishAction { get; set; } = string.Empty;
+    /// <summary>结束动作：goHome / noAction / autoLand / gotoFirstWaypoint</summary>
+    public string FinishAction { get; set; } = "goHome";
 
-    [JsonPropertyName("autoRerouteInfoVal")]
+    /// <summary>是否开启航线绕行</summary>
     public bool AutoRerouteInfoVal { get; set; }
+
+    /// <summary>全局返航高度（米），未指定时默认 100</summary>
+    public double? GlobalRTHHeight { get; set; }
+
+    /// <summary>失控是否继续执行航线：goContinue / executeLostAction</summary>
+    public string ExitOnRCLost { get; set; }
+
+    /// <summary>失控动作：goBack / landing / hover</summary>
+    public string ExecuteRCLostAction { get; set; }
 }
 
+/// <summary>
+/// 航线（模板）配置（对应 template.kml 的 wpml:Folder）
+/// </summary>
 public class Folder
 {
-    [JsonPropertyName("autoFlightSpeed")]
-    public int AutoFlightSpeed { get; set; }
+    /// <summary>全局航线飞行速度（米/秒）</summary>
+    public double AutoFlightSpeed { get; set; } = 10;
 
-    [JsonPropertyName("globalWaypointTurnMode")]
-    public string GlobalWaypointTurnMode { get; set; } = string.Empty;
+    /// <summary>全局航点转弯模式</summary>
+    public string GlobalWaypointTurnMode { get; set; } = "toPointAndStopWithDiscontinuityCurvature";
 
-    [JsonPropertyName("gimbalPitchMode")]
-    public string GimbalPitchMode { get; set; } = string.Empty;
+    /// <summary>云台俯仰角控制模式：manual / usePointSetting</summary>
+    public string GimbalPitchMode { get; set; } = "manual";
 
-    [JsonPropertyName("globalWaypointHeadingParam")]
+    /// <summary>全局航线高度（米），未指定时取首个航点高度</summary>
+    public double? GlobalHeight { get; set; }
+
+    /// <summary>全局偏航角模式参数</summary>
     public GlobalWaypointHeadingParam GlobalWaypointHeadingParam { get; set; } = new();
 
-    [JsonPropertyName("payloadParam")]
+    /// <summary>负载设置</summary>
     public PayloadParam PayloadParam { get; set; } = new();
 
-    [JsonPropertyName("placemarks")]
-    public List<Placemark> Placemarks { get; set; } = new();
+    /// <summary>航点列表</summary>
+    public List<Placemark> Placemarks { get; set; } = [];
 }
 
+/// <summary>
+/// 全局偏航角模式参数
+/// </summary>
 public class GlobalWaypointHeadingParam
 {
-    [JsonPropertyName("waypointHeadingMode")]
-    public string WaypointHeadingMode { get; set; } = string.Empty;
+    /// <summary>followWayline / manually / fixed / smoothTransition</summary>
+    public string WaypointHeadingMode { get; set; } = "followWayline";
 
-    [JsonPropertyName("waypointHeadingPathMode")]
-    public string WaypointHeadingPathMode { get; set; } = string.Empty;
+    /// <summary>clockwise / counterClockwise / followBadArc</summary>
+    public string WaypointHeadingPathMode { get; set; } = "followBadArc";
+
+    /// <summary>目标偏航角</summary>
+    public double? WaypointHeadingAngle { get; set; }
+
+    /// <summary>朝向兴趣点，格式“纬度,经度,高度”</summary>
+    public string WaypointPoiPoint { get; set; }
 }
 
+/// <summary>
+/// 负载参数（对应 wpml:payloadParam）
+/// </summary>
 public class PayloadParam
 {
-    [JsonPropertyName("imageFormat")]
-    public List<string> ImageFormat { get; set; } = new();
+    /// <summary>图片格式，如 wide,ir,zoom</summary>
+    public List<string> ImageFormat { get; set; } = [];
+
+    /// <summary>负载扫描模式：repetitive / nonRepetitive</summary>
+    public string ScanningMode { get; set; } = "repetitive";
+
+    /// <summary>负载挂载位置索引</summary>
+    public int? PayloadPositionIndex { get; set; }
 }
 
+/// <summary>
+/// 航点
+/// </summary>
 public class Placemark
 {
-    [JsonPropertyName("point")]
+    /// <summary>前端生成的航点唯一标识，仅用于前端列表 key，不写入 KMZ</summary>
+    public string Guid { get; set; }
+
+    /// <summary>航点坐标，格式“经度,纬度,高度”</summary>
     public string Point { get; set; } = string.Empty;
 
-    [JsonPropertyName("executeHeight")]
-    public int ExecuteHeight { get; set; }
+    /// <summary>航点高度（按高度模式解释）</summary>
+    public double ExecuteHeight { get; set; }
 
-    [JsonPropertyName("num")]
-    public int? Num { get; set; } // 可能不存在
+    /// <summary>是否使用全局高度</summary>
+    public bool? UseGlobalHeight { get; set; }
 
-    [JsonPropertyName("actionsGroup")]
-    public List<ActionGroup> ActionsGroup { get; set; } = new();
+    /// <summary>WGS84 椭球高，与 executeHeight 同时存在时优先使用</summary>
+    public double? EllipsoidHeight { get; set; }
 
-    [JsonPropertyName("guid")]
-    public string? Guid { get; set; }
+    /// <summary>是否使用全局飞行速度</summary>
+    public bool? UseGlobalSpeed { get; set; }
+
+    /// <summary>航点飞行速度（米/秒），useGlobalSpeed=false 时必需</summary>
+    public double? FlyToPointSpeed { get; set; }
+
+    /// <summary>是否使用全局转弯参数</summary>
+    public bool UseGlobalTurnParam { get; set; } = true;
+
+    /// <summary>转弯参数，useGlobalTurnParam=false 时必需</summary>
+    public WaypointTurnParam WaypointTurnParam { get; set; }
+
+    /// <summary>是否使用全局偏航角参数</summary>
+    public bool UseGlobalHeadingParam { get; set; } = true;
+
+    /// <summary>偏航角参数，useGlobalHeadingParam=false 时必需</summary>
+    public WaypointHeadingParam WaypointHeadingParam { get; set; }
+
+    /// <summary>云台俯仰角，gimbalPitchMode=usePointSetting 时必需</summary>
+    public double? GimbalPitchAngle { get; set; }
+
+    /// <summary>航段是否贴合直线</summary>
+    public bool? UseStraightLine { get; set; }
+
+    /// <summary>是否危险点</summary>
+    public bool? IsRisky { get; set; }
+
+    /// <summary>航点工作类型（0=正常）</summary>
+    public int? WaypointWorkType { get; set; }
+
+    /// <summary>航点动作列表</summary>
+    public List<ActionGroup> ActionsGroup { get; set; } = [];
 }
 
+/// <summary>
+/// 航点转弯参数
+/// </summary>
+public class WaypointTurnParam
+{
+    /// <summary>航点转弯模式</summary>
+    public string WaypointTurnMode { get; set; }
+
+    /// <summary>航点转弯截距（米）</summary>
+    public double? WaypointTurnDampingDist { get; set; }
+}
+
+/// <summary>
+/// 航点偏航角参数
+/// </summary>
+public class WaypointHeadingParam
+{
+    /// <summary>followWayline / manually / fixed / smoothTransition</summary>
+    public string WaypointHeadingMode { get; set; }
+
+    /// <summary>目标偏航角，smoothTransition / fixed 时必需</summary>
+    public double? WaypointHeadingAngle { get; set; }
+
+    /// <summary>朝向兴趣点，格式“纬度,经度,高度”</summary>
+    public string WaypointPoiPoint { get; set; }
+
+    /// <summary>clockwise / counterClockwise / followBadArc</summary>
+    public string WaypointHeadingPathMode { get; set; }
+}
+
+/// <summary>
+/// 航点动作（前端一个航点的每个动作为一条记录）
+/// </summary>
+/// <remarks>
+/// <see cref="ActionActuatorFuncParam"/> 采用弱类型对象：不同动作的参数集合差异极大，
+/// 且大疆会持续新增字段，因此这里保留前端提交的原始键值对，
+/// 生成 KMZ 时逐个输出为 &lt;wpml:key&gt;value&lt;/wpml:key&gt;，避免因后端枚举不全而丢字段。
+/// </remarks>
 public class ActionGroup
 {
-    [JsonPropertyName("actionTrigger")]
-    public ActionTrigger? ActionTrigger { get; set; }
+    /// <summary>动作触发器</summary>
+    public ActionTrigger ActionTrigger { get; set; }
 
-    [JsonPropertyName("actionId")]
+    /// <summary>动作ID，同一动作组内唯一</summary>
     public int ActionId { get; set; }
 
-    [JsonPropertyName("actionActuatorFunc")]
+    /// <summary>动作执行器类型，如 takePhoto / gimbalRotate / hover</summary>
     public string ActionActuatorFunc { get; set; } = string.Empty;
 
-    [JsonPropertyName("actionValue")]
-    public string ActionValue { get; set; } = string.Empty;
+    /// <summary>前端动作标识（如 takePhotoMultipleTiming），仅用于前端展示</summary>
+    public string ActionValue { get; set; }
 
-    [JsonPropertyName("actionActuatorFuncParam")]
-    public ActionActuatorFuncParam? ActionActuatorFuncParam { get; set; }
+    /// <summary>动作参数，键名即 WPML 元素名</summary>
+    public JObject ActionActuatorFuncParam { get; set; }
 }
 
+/// <summary>
+/// 动作触发器
+/// </summary>
 public class ActionTrigger
 {
-    [JsonPropertyName("_custom")]
-    public CustomWrapper? Custom { get; set; }
+    /// <summary>reachPoint / betweenAdjacentPoints / multipleTiming / multipleDistance</summary>
+    public string ActionTriggerType { get; set; } = "reachPoint";
 
-    // 兼容非 _custom 结构（如 panoShot 中的直接 actionTriggerType）
-    [JsonPropertyName("actionTriggerType")]
-    public string? ActionTriggerType { get; set; }
-}
-
-public class CustomWrapper
-{
-    [JsonPropertyName("type")]
-    public string Type { get; set; } = string.Empty;
-
-    [JsonPropertyName("stateTypeName")]
-    public string StateTypeName { get; set; } = string.Empty;
-
-    [JsonPropertyName("value")]
-    public TriggerValue Value { get; set; } = new();
-}
-
-public class TriggerValue
-{
-    [JsonPropertyName("actionTriggerType")]
-    public string ActionTriggerType { get; set; } = string.Empty;
-
-    [JsonPropertyName("actionTriggerParam")]
-    public object? ActionTriggerParam { get; set; } // 可能是 int 或其他，用 object 更安全
-
-    // 以下字段按需添加（因为不同 action 类型包含不同字段）
-    [JsonPropertyName("payloadLensIndex")]
-    public string? PayloadLensIndex { get; set; }
-
-    [JsonPropertyName("fileSuffix")]
-    public string? FileSuffix { get; set; }
-
-    [JsonPropertyName("useGlobalPayloadLensIndex")]
-    public bool? UseGlobalPayloadLensIndex { get; set; }
-
-    [JsonPropertyName("focalLength")]
-    public int? FocalLength { get; set; }
-
-    [JsonPropertyName("aircraftHeading")]
-    public int? AircraftHeading { get; set; }
-
-    [JsonPropertyName("aircraftPathMode")]
-    public string? AircraftPathMode { get; set; }
-
-    [JsonPropertyName("gimbalHeadingYawBase")]
-    public int? GimbalHeadingYawBase { get; set; }
-
-    [JsonPropertyName("gimbalRotateMode")]
-    public string? GimbalRotateMode { get; set; }
-
-    [JsonPropertyName("gimbalPitchRotateEnable")]
-    public bool? GimbalPitchRotateEnable { get; set; }
-
-    [JsonPropertyName("gimbalPitchRotateAngle")]
-    public int? GimbalPitchRotateAngle { get; set; }
-
-    [JsonPropertyName("gimbalRollRotateEnable")]
-    public bool? GimbalRollRotateEnable { get; set; }
-
-    [JsonPropertyName("gimbalRollRotateAngle")]
-    public int? GimbalRollRotateAngle { get; set; }
-
-    [JsonPropertyName("gimbalYawRotateEnable")]
-    public bool? GimbalYawRotateEnable { get; set; }
-
-    [JsonPropertyName("gimbalYawRotateAngle")]
-    public int? GimbalYawRotateAngle { get; set; }
-
-    [JsonPropertyName("gimbalRotateTimeEnable")]
-    public bool? GimbalRotateTimeEnable { get; set; }
-
-    [JsonPropertyName("gimbalRotateTime")]
-    public int? GimbalRotateTime { get; set; }
-
-    [JsonPropertyName("hoverTime")]
-    public int? HoverTime { get; set; }
-
-    [JsonPropertyName("directoryName")]
-    public string? DirectoryName { get; set; }
-}
-
-public class ActionActuatorFuncParam
-{
-    [JsonPropertyName("_custom")]
-    public CustomWrapper Custom { get; set; } = new();
+    /// <summary>间隔时间（秒）或间隔距离（米）</summary>
+    public double? ActionTriggerParam { get; set; }
 }
