@@ -1,4 +1,7 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+# 注意：运行时镜像必须与项目目标框架一致。
+# 本项目目标框架为 net10.0，此前这里的 aspnet:6.0 会导致容器启动即
+# "You must install or update .NET to run this application"。
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 5005
 

@@ -1,7 +1,7 @@
-﻿global using Dji.Application;
-global using Furion;
-global using Furion.RemoteRequest.Extensions;
+global using Dji.Application;
+global using Dji;
+global using Dji.RemoteRequest.Extensions;
 global using Microsoft.AspNetCore.Mvc;
-global using Furion.JsonSerialization;
+global using Dji.JsonSerialization;
 global using Newtonsoft.Json;
 global using Dji.Core;
