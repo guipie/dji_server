@@ -35,6 +35,12 @@ internal interface IMqttService
     /// <summary>直接向指定主题发布消息</summary>
     Task PublishAsync(string topic, object payload, int qos = 1, CancellationToken ct = default);
 
-    /// <summary>订阅主题</summary>
-    Task SubscribeAsync(string topic, CancellationToken ct = default);
+    /// <summary>
+    /// 订阅主题。
+    /// </summary>
+    /// <remarks>
+    /// 不返回 bool 是因为必须区分「broker 明确拒绝」（配置问题，重试无意义）
+    /// 与「瞬时失败」（可重试）—— 两者在协议层是完全不同的结果码。
+    /// </remarks>
+    Task<SubscribeOutcome> SubscribeAsync(string topic, CancellationToken ct = default);
 }

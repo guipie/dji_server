@@ -282,6 +282,9 @@ public static class SqlSugarSetup
     {
         SqlSugarScopeProvider dbProvider = db.GetConnectionScope(config.ConfigId);
 
+        // 确保 Sqlite 数据库文件所在目录存在（SqlSugar 对相对路径不会自动创建目录）
+        EnsureSqliteDbDirectory(config);
+
         // 初始化/创建数据库
         if (config.DbSettings.EnableInitDb)
         {
@@ -371,6 +374,9 @@ public static class SqlSugarSetup
         if (!iTenant.IsAnyConnection(config.ConfigId.ToString()))
             iTenant.AddConnection(config);
         var db = iTenant.GetConnectionScope(config.ConfigId.ToString());
+
+        // 确保 Sqlite 数据库文件所在目录存在（同主库，租户库也可能是 Sqlite）
+        EnsureSqliteDbDirectory(config);
         db.DbMaintenance.CreateDatabase();
 
         // 获取所有业务表-初始化租户库表结构（排除系统表、日志表、特定库表）
@@ -385,6 +391,62 @@ public static class SqlSugarSetup
                 db.CodeFirst.InitTables(entityType);
             else
                 db.CodeFirst.SplitTables().InitTables(entityType);
+        }
+    }
+
+    /// <summary>
+    /// 确保 Sqlite 数据库文件所在目录存在
+    /// </summary>
+    /// <remarks>
+    /// Sqlite 是文件型数据库：底层 sqlite3_open 只会创建数据库文件，不会创建父目录。
+    /// SqlSugar 的 SqliteDbMaintenance.CreateDatabase() 仅当连接字符串里能提取出「Windows 盘符绝对路径」时才会顺带建目录，
+    /// 相对路径（如 Database.json 里的 DataSource=./db/dji.admin.db）会被直接 Open，
+    /// 父目录不存在时报 SqliteException: SQLite Error 14: 'unable to open database file'。
+    /// 因此这里在初始化库表之前先把目录补齐。
+    /// </remarks>
+    /// <param name="config"></param>
+    private static void EnsureSqliteDbDirectory(DbConnectionConfig config)
+    {
+        if (config.DbType != SqlSugar.DbType.Sqlite || string.IsNullOrWhiteSpace(config.ConnectionString))
+            return;
+
+        var dataSource = ResolveSqliteDataSource(config.ConnectionString);
+        if (string.IsNullOrWhiteSpace(dataSource))
+            return;
+
+        dataSource = dataSource.Trim();
+        if (":memory:".Equals(dataSource, StringComparison.OrdinalIgnoreCase))
+            return; // 内存库无需目录
+
+        if (dataSource.StartsWith("file:", StringComparison.OrdinalIgnoreCase))
+            return; // URI 形式（如 file:memdb1?mode=memory）交给 Sqlite 自行解析
+
+        // 相对路径保持相对形式创建，与 Microsoft.Data.Sqlite 打开连接时的解析基准（当前工作目录）保持一致
+        var directory = Path.GetDirectoryName(dataSource);
+        if (!string.IsNullOrWhiteSpace(directory) && !Directory.Exists(directory))
+            Directory.CreateDirectory(directory);
+    }
+
+    /// <summary>
+    /// 从 Sqlite 连接字符串中解析出 DataSource（数据库文件路径）
+    /// </summary>
+    /// <param name="connectionString"></param>
+    /// <returns></returns>
+    private static string ResolveSqliteDataSource(string connectionString)
+    {
+        try
+        {
+            // 使用官方解析器，兼容 DataSource / Data Source / Filename 等别名与引号
+            return new Microsoft.Data.Sqlite.SqliteConnectionStringBuilder(connectionString).DataSource;
+        }
+        catch
+        {
+            // 连接字符串含官方不识别（但被其他 Sqlite 提供程序支持）的关键字时，退化为手工解析
+            return connectionString.Split(';', StringSplitOptions.RemoveEmptyEntries)
+                .Select(u => u.Split('=', 2))
+                .Where(u => u.Length == 2 && u[0].Trim().Replace(" ", string.Empty).Equals("datasource", StringComparison.OrdinalIgnoreCase))
+                .Select(u => u[1].Trim().Trim('\'', '"'))
+                .FirstOrDefault();
         }
     }
 }

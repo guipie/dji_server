@@ -28,15 +28,16 @@ public class ApplicationConst
     /// 兜底到「当前用户的默认空间」。为保证任何一个用户（含初始化账号与后来新建的账号）都能拿到
     /// 这个兜底值，初始化时会建一个默认空间，并把所有用户挂进去 —— 这里就是它的唯一标识。
     /// </remarks>
-    public const string DefaultWorkspaceId = "default";
+    public const string DefaultWorkspaceId = "e3dea0f5-37f2-4d79-ae58-490af3228069";
 
     /// <summary>
-    /// 系统默认空间的名称/昵称
+    /// 系统默认空间的名称
     /// </summary>
-    public const string DefaultWorkspaceName = "d";
+    public const string DefaultWorkspaceName = "W";
+    public const string DefaultNickWorkspaceName = "武汉空间";
 
     /// <summary>
     /// 系统默认空间的绑定码
     /// </summary>
-    public const string DefaultWorkspaceBindCode = "dcode";
+    public const string DefaultWorkspaceBindCode = "qwe";
 }

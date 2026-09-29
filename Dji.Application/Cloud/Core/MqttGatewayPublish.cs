@@ -105,6 +105,15 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
         => await WaitReplyAsync<TData, T>(topic, request, timeoutSeconds);
 
     /// <summary>公共的「下发 + 按 bid 轮询回包」实现</summary>
+    /// <remarks>
+    /// 回包在 <see cref="MqttService"/> 收包时以「原始 JSON 字符串」存入缓存（缓存键 = <c>bid</c>），
+    /// 这里必须先把字符串取出来、再用与收包侧同一套 <see cref="MqttJson"/> 配置反序列化。
+    ///
+    /// 不能直接 <c>_sysCache.Get&lt;CloudMqData&lt;TData&gt;&gt;(key)</c>：NewLife 缓存的泛型 <c>Get&lt;T&gt;</c>
+    /// 只在「值本身就是 T」或「简单类型可转换」时成功，把 string 转成 <c>CloudMqData&lt;T&gt;</c> 这类复杂类型会静默
+    /// 返回 <c>null</c>（不抛异常），表现为「设备明明回包了却一直等到超时」。
+    /// 另外上云协议字段是 snake_case，只有 Newtonsoft + SnakeCaseNamingStrategy 才能正确映射。
+    /// </remarks>
     private async Task<CloudMqData<TData>> WaitReplyAsync<TData, T>(string topic, CloudMqRequest<T> request, int timeoutSeconds)
     {
         ArgumentNullException.ThrowIfNull(request);
@@ -114,16 +123,50 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
         request.Timestamp = DateTimeUtil.ToUnixTimestampByMilliseconds(DateTime.Now);
 
         var replyKey = request.Bid.Reply();
-        await PublishAsync(topic, request);
+        var fullTopic = topic.BindGateway(request.Gateway);
+
+        // bid 是本次请求与回包的唯一关联键：必须打进日志，否则无法与 mqtt 抓包/mqttx 里的回包对照
+        var repliesBefore = ReplyDiagnostics.ReceivedCount;
+        _logger.LogInformation("MQTT 下发并等待回包 topic:{Topic} bid:{Bid}", fullTopic, request.Bid);
+
+        var publishResult = await PublishAsync(topic, request);
+        if (publishResult != 0)
+        {
+            // 不直接抛错：部分 broker 在「主题当前无订阅者」时也会返回非 0，此时仍可能收到回包
+            _logger.LogWarning("MQTT 下发返回非 0（{Reason}），继续等待回包 topic:{Topic} bid:{Bid}", publishResult, fullTopic, request.Bid);
+        }
 
         for (var waited = 0; waited < timeoutSeconds; waited++)
         {
             await Task.Delay(1000);
-            // 用模式匹配而非 ?. ：TData 是开放泛型参数（可能是值类型），空传播运算符在泛型参数上会报 CS8978
-            var reply = _sysCache.Get<CloudMqData<TData>>(replyKey);
-            if (reply is not null && reply.Data is not null) return reply;
+
+            var payload = _sysCache.Get<string>(replyKey);
+            if (payload.IsNullOrWhiteSpace()) continue;
+
+            try
+            {
+                var reply = MqttJson.Deserialize<CloudMqData<TData>>(payload);
+                // 用模式匹配而非 ?. ：TData 是开放泛型参数（可能是值类型），空传播运算符在泛型参数上会报 CS8978
+                if (reply is not null && reply.Data is not null)
+                {
+                    _logger.LogInformation("MQTT 回包匹配成功 topic:{Topic} bid:{Bid} 耗时:{Seconds}秒", fullTopic, request.Bid, waited + 1);
+                    return reply;
+                }
+            }
+            catch (Exception ex)
+            {
+                // 单个坏报文不应打断整个等待流程，记录后继续等（超时仍会抛出统一的友好异常）
+                _logger.LogError(ex, "回包反序列化失败 topic:{Topic} payload:{Payload}", fullTopic, payload);
+            }
         }
 
-        throw Oops.Oh($"设备未在 {timeoutSeconds} 秒内回包，topic:{request.Gateway}");
+        // 超时时把「应答有没有进到本进程」一并打出来：
+        // 收到 0 条 ⇒ 故障在订阅/broker 侧；收到若干条但 bid 对不上 ⇒ 故障在关联键
+        var received = ReplyDiagnostics.ReceivedCount - repliesBefore;
+        _logger.LogError("等待回包超时 topic:{Topic} bid:{Bid} 下发返回码:{Code} 等待期间收到应答:{Received}条 最近一条:{Last}",
+            fullTopic, request.Bid, publishResult, received, ReplyDiagnostics.DescribeLast());
+
+        throw Oops.Oh($"设备未在 {timeoutSeconds} 秒内回包，topic:{fullTopic}，bid:{request.Bid}"
+                      + $"（下发返回码:{publishResult}，等待期间收到 {received} 条应答报文）");
     }
 }

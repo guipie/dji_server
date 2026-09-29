@@ -52,7 +52,7 @@ public class WorkspaceUserSeedData : ISqlSugarEntitySeedData<DjiWorkspaceUser>
             Account = user.Account,
             NickName = user.NickName,
             WorkspaceId = ApplicationConst.DefaultWorkspaceId,
-            WorkspaceNickName = ApplicationConst.DefaultWorkspaceName,
+            WorkspaceNickName = ApplicationConst.DefaultNickWorkspaceName,
             IsDefault = true,
         }).ToList();
     }
