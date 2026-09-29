@@ -155,7 +155,7 @@ dji_server/
 │   ├── Entity/DjiEntity/   #   21 张业务表
 │   └── Util/GM/            #   SM2 国密加解密
 └── Plugins/
-    ├── Dji.Pure/                               # Furion 源码（内联，命名空间已改为 Dji.*）
+    ├── Dji.Pure/                               # Pure 源码
     ├── Dji.Pure.Extras.DependencyModel.CodeAnalysis/
     ├── Dji.Extras.Authentication.JwtBearer/
     ├── Dji.Extras.ObjectMapper.Mapster/
