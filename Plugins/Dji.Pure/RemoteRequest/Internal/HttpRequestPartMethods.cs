@@ -12,20 +12,20 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.ClayObject;
-using Furion.ClayObject.Extensions;
-using Furion.DataValidation;
-using Furion.Extensions;
-using Furion.FriendlyException;
-using Furion.JsonSerialization;
-using Furion.Templates.Extensions;
-using Furion.VirtualFileServer;
+using Dji.ClayObject;
+using Dji.ClayObject.Extensions;
+using Dji.DataValidation;
+using Dji.Extensions;
+using Dji.FriendlyException;
+using Dji.JsonSerialization;
+using Dji.Templates.Extensions;
+using Dji.VirtualFileServer;
 using System.IO.Compression;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Furion.RemoteRequest;
+namespace Dji.RemoteRequest;
 
 /// <summary>
 /// HttpClient 对象组装部件

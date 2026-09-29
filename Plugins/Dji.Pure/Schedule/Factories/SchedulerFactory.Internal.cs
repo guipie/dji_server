@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -16,7 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Concurrent;
 using System.Diagnostics;
 
-namespace Furion.Schedule;
+namespace Dji.Schedule;
 
 /// <summary>
 /// 作业计划工厂默认实现类（内部服务）

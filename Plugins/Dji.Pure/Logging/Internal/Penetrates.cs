@@ -16,7 +16,7 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Text;
 
-namespace Furion.Logging;
+namespace Dji.Logging;
 
 /// <summary>
 /// 常量、公共方法配置类

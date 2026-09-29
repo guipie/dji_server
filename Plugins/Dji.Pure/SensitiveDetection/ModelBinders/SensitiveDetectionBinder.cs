@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -17,7 +17,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.Extensions.DependencyInjection;
 using System.ComponentModel.DataAnnotations;
 
-namespace Furion.SensitiveDetection;
+namespace Dji.SensitiveDetection;
 
 /// <summary>
 /// 脱敏词汇（脱敏）模型绑定器

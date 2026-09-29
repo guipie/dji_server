@@ -12,7 +12,7 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.FriendlyException;
+using Dji.FriendlyException;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using System.Text;
 
@@ -174,7 +174,7 @@ public static class HttpContextExtensions
         using var reader = new StreamReader(request.Body, Encoding.UTF8, true, 1024, true);
         var body = await reader.ReadToEndAsync();
 
-        // 回到顶部，解决此类问题 https://gitee.com/dotnetchina/Furion/issues/I6NX9E
+        // 回到顶部，解决此类问题 https://gitee.com/dotnetchina/Dji/issues/I6NX9E
         request.Body.Seek(0, SeekOrigin.Begin);
         return body;
     }

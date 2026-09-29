@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace Furion.Schedule;
+namespace Dji.Schedule;
 
 /// <summary>
 /// 作业触发器运行记录

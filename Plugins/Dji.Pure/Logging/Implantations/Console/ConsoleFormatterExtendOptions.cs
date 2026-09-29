@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 
-namespace Furion.Logging;
+namespace Dji.Logging;
 
 /// <summary>
 /// 控制台默认格式化选项拓展

@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using Microsoft.AspNetCore.Mvc.Controllers;
 using System.Reflection;
 
-namespace Furion.DynamicApiController;
+namespace Dji.DynamicApiController;
 
 /// <summary>
 /// 动态接口控制器特性提供器

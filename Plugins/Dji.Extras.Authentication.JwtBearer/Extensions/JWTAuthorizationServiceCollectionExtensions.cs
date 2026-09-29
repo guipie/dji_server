@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,8 +12,8 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Authorization;
-using Furion.DataEncryption;
+using Dji.Authorization;
+using Dji.DataEncryption;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -113,7 +113,7 @@ public static class JWTAuthorizationServiceCollectionExtensions
     public static AuthenticationBuilder AddJwt<TAuthorizationHandler>(this IServiceCollection services, Action<AuthenticationOptions> authenticationConfigure = null, object tokenValidationParameters = default, Action<JwtBearerOptions> jwtBearerConfigure = null, bool enableGlobalAuthorize = false)
         where TAuthorizationHandler : class, IAuthorizationHandler
     {
-        // 植入 Furion 框架
+        // 植入 Dji 框架
         var furionAssembly = JWTEncryption.GetFrameworkContext(Assembly.GetCallingAssembly());
 
         // 获取添加授权类型

@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,10 +12,10 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Extensions;
-using Furion.Reflection;
+using Dji.Extensions;
+using Dji.Reflection;
 
-namespace Furion.ViewEngine;
+namespace Dji.ViewEngine;
 
 /// <summary>
 /// 视图引擎模板（编译后）
@@ -40,7 +40,7 @@ public class ViewEngineTemplate : IViewEngineTemplate
     internal ViewEngineTemplate(MemoryStream assemblyByteCode)
     {
         this.assemblyByteCode = assemblyByteCode;
-        templateType = Reflect.GetType(assemblyByteCode, "Furion.ViewEngine.Template");
+        templateType = Reflect.GetType(assemblyByteCode, "Dji.ViewEngine.Template");
     }
 
     /// <summary>
@@ -202,7 +202,7 @@ public class ViewEngineTemplate<T> : IViewEngineTemplate<T>
     internal ViewEngineTemplate(MemoryStream assemblyByteCode)
     {
         this.assemblyByteCode = assemblyByteCode;
-        templateType = Reflect.GetType(assemblyByteCode, "Furion.ViewEngine.Template");
+        templateType = Reflect.GetType(assemblyByteCode, "Dji.ViewEngine.Template");
     }
 
     /// <summary>

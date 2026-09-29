@@ -13,7 +13,7 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Option;
 using Dji.Core.Enum.DjiEnum.Live;
-using Furion.Schedule;
+using Dji.Schedule;
 using Microsoft.Extensions.Options;
 
 namespace Dji.Application.Job;

@@ -32,6 +32,51 @@ public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
             new SysMenu{ Id=1300000000102, Pid=0, Title="工作空间", Path="/workspace", Name="workspace", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=100 },
             new SysMenu{ Id=1300000000103, Pid=0, Title="设备管理", Path="/device", Name="device", Component="Layout", Icon="ele-Files", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2026-02-10 00:00:00"), OrderNo=110 },
 
+            // -------------------------------------------------------------------------------------------
+            // 上面两个目录的子菜单此前是在「菜单管理」界面手工建的，删库后连同目录下的东西一起丢了。
+            // 这里连同按钮权限行一并回填进种子，保证全新库拉起来就是一套完整菜单。
+            //
+            // 权限码刻意用前端六个 CRUD 页面里 `v-auth` 的写法（例如 djiDevice:edit 而不是 djiDevice:update）：
+            // JwtHandler 与前端 `authBtnList` 的权限集合都直接取自 sys_menu.permission，
+            // 名字跟前端对不上时，超管也会因为 GetOwnBtnPermList 里查不到该字符串而看不到（自动隐藏的）按钮。
+            // -------------------------------------------------------------------------------------------
+
+            // 工作空间 ── 空间本身的管理 + 成员授权，两块都属于「谁来划分权力」，放在同一目录下。
+            new SysMenu{ Id=1300000000211, Pid=1300000000102, Title="空间管理", Path="/workspace/list", Name="workspaceList", Component="/main/djiWorkspace/index", Icon="ele-Files", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000212, Pid=1300000000211, Title="查询", Permission="djiWorkspace:page", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000213, Pid=1300000000211, Title="增加", Permission="djiWorkspace:add", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000214, Pid=1300000000211, Title="编辑", Permission="djiWorkspace:edit", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000215, Pid=1300000000211, Title="删除", Permission="djiWorkspace:delete", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+
+            new SysMenu{ Id=1300000000221, Pid=1300000000102, Title="空间成员", Path="/workspace/user", Name="workspaceUser", Component="/main/djiWorkspaceUser/index", Icon="ele-User", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=110 },
+            new SysMenu{ Id=1300000000222, Pid=1300000000221, Title="查询", Permission="djiWorkspaceUser:page", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000223, Pid=1300000000221, Title="增加", Permission="djiWorkspaceUser:add", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000224, Pid=1300000000221, Title="编辑", Permission="djiWorkspaceUser:edit", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000225, Pid=1300000000221, Title="删除", Permission="djiWorkspaceUser:delete", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+
+            // 设备管理 ── 设备台账（列表/绑定）、型号字典、在线状态，按「静态档案 → 字典 → 实时」排序。
+            new SysMenu{ Id=1300000000311, Pid=1300000000103, Title="设备列表", Path="/device/list", Name="deviceList", Component="/main/djiDevice/index", Icon="ele-Monitor", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000312, Pid=1300000000311, Title="查询", Permission="djiDevice:page", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000313, Pid=1300000000311, Title="增加", Permission="djiDevice:add", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000314, Pid=1300000000311, Title="编辑", Permission="djiDevice:edit", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000315, Pid=1300000000311, Title="删除", Permission="djiDevice:delete", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000316, Pid=1300000000311, Title="绑定空间", Permission="djiDevice:bind", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+
+            new SysMenu{ Id=1300000000321, Pid=1300000000103, Title="设备型号", Path="/device/enum", Name="deviceEnum", Component="/main/djiDeviceEnum/index", Icon="ele-Collection", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=110 },
+            new SysMenu{ Id=1300000000322, Pid=1300000000321, Title="查询", Permission="djiDeviceEnum:page", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000323, Pid=1300000000321, Title="增加", Permission="djiDeviceEnum:add", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000324, Pid=1300000000321, Title="编辑", Permission="djiDeviceEnum:edit", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000325, Pid=1300000000321, Title="删除", Permission="djiDeviceEnum:delete", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+
+            new SysMenu{ Id=1300000000331, Pid=1300000000103, Title="载荷型号", Path="/device/cameraEnum", Name="deviceCameraEnum", Component="/main/djiDeviceCameraEnum/index", Icon="ele-Picture", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=120 },
+            new SysMenu{ Id=1300000000332, Pid=1300000000331, Title="查询", Permission="djiDeviceCameraEnum:page", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000333, Pid=1300000000331, Title="增加", Permission="djiDeviceCameraEnum:add", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000334, Pid=1300000000331, Title="编辑", Permission="djiDeviceCameraEnum:edit", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+            new SysMenu{ Id=1300000000335, Pid=1300000000331, Title="删除", Permission="djiDeviceCameraEnum:delete", Type=MenuTypeEnum.Btn, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=100 },
+
+            // 在线设备：走的是实时快照（cloudDevice.getDockOnlineSnapshots），不需要增删改所以一个按钮都没有。
+            new SysMenu{ Id=1300000000341, Pid=1300000000103, Title="在线设备", Path="/device/online", Name="deviceOnline", Component="/main/djiDeviceOnline/indexOnline", Icon="ele-Connection", Type=MenuTypeEnum.Menu, IsKeepAlive=true, CreateTime=DateTime.Parse("2026-09-29 15:40:00"), OrderNo=130 },
+
             // 航线任务：父级与「创建航线 / 航线管理」先前是在「菜单管理」界面手工建的，
             // 这里纳入种子数据，使整套菜单在全新库上可复现（种子按主键 insert-or-update，
             // CreateTime 带 IsOnlyIgnoreUpdate 不会被回写，对既有库仅刷新 UpdateTime）。
@@ -212,7 +257,6 @@ public class SysMenuSeedData : ISqlSugarEntitySeedData<SysMenu>
             new SysMenu{ Id=1310000000641, Pid=1310000000601, Title="系统接口", Path="/develop/api", Name="sysApi", Component="layout/routerView/iframe", IsIframe=true, OutLink="http://localhost:5005", Icon="ele-Help", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=130 },
 
             new SysMenu{ Id=1310000000701, Pid=0, Title="帮助文档", Path="/doc", Name="doc", Component="Layout", Icon="ele-Notebook", Type=MenuTypeEnum.Dir, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=14000 },
-            new SysMenu{ Id=1310000000711, Pid=1310000000701, Title="后台教程", Path="/doc/furion", Name="sysFurion", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://furion.baiqian.ltd/", Icon="ele-Promotion", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=100 },
             new SysMenu{ Id=1310000000712, Pid=1310000000701, Title="前端教程", Path="/doc/element", Name="sysElement", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://element-plus.gitee.io/zh-CN/", Icon="ele-Position", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=110 },
             new SysMenu{ Id=1310000000713, Pid=1310000000701, Title="SqlSugar", Path="/doc/SqlSugar", Name="sysSqlSugar", Component="layout/routerView/link", IsIframe=false, IsKeepAlive=false, OutLink="https://www.donet5.com/Home/Doc", Icon="ele-Coin", Type=MenuTypeEnum.Menu, CreateTime=DateTime.Parse("2022-02-10 00:00:00"), OrderNo=120 },
         ];

@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
@@ -11,7 +11,7 @@ using AspNetCoreRateLimit;
 using Dji.Application.Option;
 using Dji.Core;
 using Dji.Application;
-using Furion;
+using Dji;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Dji.Web.Core;

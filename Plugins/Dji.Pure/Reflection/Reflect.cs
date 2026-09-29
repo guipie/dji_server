@@ -15,7 +15,7 @@
 using System.Reflection;
 using System.Runtime.Loader;
 
-namespace Furion.Reflection;
+namespace Dji.Reflection;
 
 /// <summary>
 /// 内部反射静态类

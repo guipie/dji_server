@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -18,7 +18,7 @@ using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
 
-namespace Furion.Schedule;
+namespace Dji.Schedule;
 
 /// <summary>
 /// Schedule 模块 UI 中间件

@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using Microsoft.Extensions.Logging;
 using System.Collections.Concurrent;
 
-namespace Furion.Logging;
+namespace Dji.Logging;
 
 /// <summary>
 /// 空日志记录器提供程序

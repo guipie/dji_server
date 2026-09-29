@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Text.Json;
 
-namespace Furion.JsonSerialization;
+namespace Dji.JsonSerialization;
 
 /// <summary>
 /// System.Text.Json 序列化提供器（默认实现）

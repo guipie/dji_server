@@ -10,7 +10,7 @@
 using Dji.Application.CloudRepository;
 using Dji.Application.Service.DjiWayline;
 using Dji.Core.Enum.DjiEnum.Wayline;
-using Furion.Schedule;
+using Dji.Schedule;
 
 namespace Dji.Application.Job;
 

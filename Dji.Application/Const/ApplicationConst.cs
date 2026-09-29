@@ -19,4 +19,24 @@ public class ApplicationConst
     /// </summary>
     public const string DjiCloud = "大疆上云接口";
     public const string GroupName = "大疆业务接口";
+
+    /// <summary>
+    /// 系统默认空间的 WorkspaceId
+    /// </summary>
+    /// <remarks>
+    /// 设备/航线/飞行区等实体上的 <c>WorkspaceId</c> 是 NOT NULL，业务侧保存时会把没传空间的请求
+    /// 兜底到「当前用户的默认空间」。为保证任何一个用户（含初始化账号与后来新建的账号）都能拿到
+    /// 这个兜底值，初始化时会建一个默认空间，并把所有用户挂进去 —— 这里就是它的唯一标识。
+    /// </remarks>
+    public const string DefaultWorkspaceId = "default";
+
+    /// <summary>
+    /// 系统默认空间的名称/昵称
+    /// </summary>
+    public const string DefaultWorkspaceName = "d";
+
+    /// <summary>
+    /// 系统默认空间的绑定码
+    /// </summary>
+    public const string DefaultWorkspaceBindCode = "dcode";
 }

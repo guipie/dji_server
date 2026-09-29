@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -18,7 +18,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace Furion.Schedule;
+namespace Dji.Schedule;
 
 /// <summary>
 /// 常量、公共方法配置类

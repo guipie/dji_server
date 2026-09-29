@@ -14,7 +14,7 @@
 
 using Microsoft.Extensions.Logging;
 
-namespace Furion.Logging;
+namespace Dji.Logging;
 
 /// <summary>
 /// 数据库日志配置类

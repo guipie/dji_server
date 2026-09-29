@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Furion.JsonSerialization;
+namespace Dji.JsonSerialization;
 
 /// <summary>
 /// 解决 long 精度问题

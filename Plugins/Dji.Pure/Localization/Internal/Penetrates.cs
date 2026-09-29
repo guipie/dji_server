@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 
-namespace Furion.Localization;
+namespace Dji.Localization;
 
 /// <summary>
 /// 常量、公共方法配置类
@@ -41,7 +41,7 @@ internal static class Penetrates
         // 自动根据客户端浏览器的语言实现多语言机制
         requestLocalization.ApplyCurrentCultureToResponseHeaders = true;
 
-        // 修复 DateTime 问题 https://gitee.com/dotnetchina/Furion/issues/I6RUOU
+        // 修复 DateTime 问题 https://gitee.com/dotnetchina/Dji/issues/I6RUOU
         if (!string.IsNullOrWhiteSpace(localizationSettings.DateTimeFormatCulture))
         {
             var standardCulture = new CultureInfo(localizationSettings.DateTimeFormatCulture);

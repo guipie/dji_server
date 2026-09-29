@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -16,7 +16,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Furion.JsonSerialization;
+namespace Dji.JsonSerialization;
 
 /// <summary>
 /// DateOnly 类型序列化

@@ -31,9 +31,11 @@ public class DeviceEnumSeedData : ISqlSugarEntitySeedData<DjiDeviceEnum>
         new DjiDeviceEnum() { Id = 13, Name = "DJI Matrice 4 系列（M4E 相机）",Model="M4E", Domain = DomainEnum.Drone, Type = 99, SubType = 0, Desc = "" },
         new DjiDeviceEnum() { Id = 14, Name = "DJI Matrice 4 系列（M4T 相机）",Model="M4T", Domain = DomainEnum.Drone, Type = 99, SubType = 1, Desc = "" },
         new DjiDeviceEnum() { Id = 15, Name = "DJI 带屏遥控器行业版",Model="", Domain = DomainEnum.RemoteControl, Type = 56, SubType = 0, Desc = "搭配 Matrice 300 RTK" },
-        new DjiDeviceEnum() { Id = 16, Name = "DJI RC Plus", Domain = DomainEnum.RemoteControl, Type = 119, SubType = 0, Desc = "搭配 Matrice 350 RTK\nMatrice 300 RTK\nMatrice 30/30T" },
-        new DjiDeviceEnum() { Id = 17, Name = "DJI RC Plus 2", Domain = DomainEnum.RemoteControl, Type = 174, SubType = 0, Desc = "搭配 DJI Matrice 4 系列" },
-        new DjiDeviceEnum() { Id = 18, Name = "DJI RC Pro 行业版", Domain =DomainEnum.RemoteControl, Type = 144, SubType = 0, Desc = "搭配 Mavic 3 行业系列" },
+        // Model 是 NOT NULL（实体上标了 [Required]）：遥控器没有像 M350 RTK / Dock3 那样的短型号码，
+        // 也必须给值 —— 漏了会让整批种子插入撞 SQLite Error 19，服务直接起不来。
+        new DjiDeviceEnum() { Id = 16, Name = "DJI RC Plus", Model = "RC Plus", Domain = DomainEnum.RemoteControl, Type = 119, SubType = 0, Desc = "搭配 Matrice 350 RTK\nMatrice 300 RTK\nMatrice 30/30T" },
+        new DjiDeviceEnum() { Id = 17, Name = "DJI RC Plus 2", Model = "RC Plus 2", Domain = DomainEnum.RemoteControl, Type = 174, SubType = 0, Desc = "搭配 DJI Matrice 4 系列" },
+        new DjiDeviceEnum() { Id = 18, Name = "DJI RC Pro 行业版", Model = "RC Pro", Domain = DomainEnum.RemoteControl, Type = 144, SubType = 0, Desc = "搭配 Mavic 3 行业系列" },
         new DjiDeviceEnum() { Id = 19, Name = "大疆机场",Model="Dock", Domain = DomainEnum.Dock, Type = 1, SubType = 0, Desc = "" },
         new DjiDeviceEnum() { Id = 20, Name = "大疆机场 2",Model="Dock2", Domain = DomainEnum.Dock, Type = 2, SubType = 0, Desc = "" },
         new DjiDeviceEnum() { Id = 21, Name = "大疆机场 3",Model="Dock3", Domain = DomainEnum.Dock, Type = 3, SubType = 0, Desc = "" },

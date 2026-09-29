@@ -12,12 +12,12 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Reflection;
-using Furion.Templates.Extensions;
+using Dji.Reflection;
+using Dji.Templates.Extensions;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text;
 
-namespace Furion.SensitiveDetection;
+namespace Dji.SensitiveDetection;
 
 /// <summary>
 /// 脱敏词汇（脱敏）提供器（默认实现）

@@ -12,9 +12,9 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.ConfigurableOptions;
-using Furion.Reflection;
-using Furion.Templates;
+using Dji.ConfigurableOptions;
+using Dji.Reflection;
+using Dji.Templates;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.CodeAnalysis;
@@ -32,7 +32,7 @@ using System.Reflection;
 using System.Reflection.Metadata;
 using System.Security.Claims;
 
-namespace Furion;
+namespace Dji;
 
 /// <summary>
 /// 全局应用类
@@ -40,6 +40,14 @@ namespace Furion;
 [SuppressSniffer]
 public static class App
 {
+    /// <summary>
+    /// 框架根命名空间。
+    /// 本框架内联自 Furion 并整体更名为 Dji 前缀，
+    /// 运行时需要按根命名空间裁剪类型全名（如拼装内嵌资源路径、过滤待扫描的包），
+    /// 因此此处统一维护该常量，避免各处硬编码。
+    /// </summary>
+    public const string ROOT_NAMESPACE = "Dji";
+
     /// <summary>
     /// 私有设置，避免重复解析
     /// </summary>
@@ -510,11 +518,11 @@ public static class App
         {
             var dependencyContext = DependencyContext.Default;
 
-            // 读取项目程序集或 Furion 官方发布的包，或手动添加引用的dll，或配置特定的包前缀
+            // 读取项目程序集或 Dji 官方发布的包，或手动添加引用的dll，或配置特定的包前缀
             scanAssemblies = dependencyContext.RuntimeLibraries
                .Where(u =>
                       (u.Type == "project" && !excludeAssemblyNames.Any(j => u.Name.EndsWith(j))) ||
-                      (u.Type == "package" && (u.Name.StartsWith(nameof(Furion)) || supportPackageNamePrefixs.Any(p => u.Name.StartsWith(p)))) ||
+                      (u.Type == "package" && (u.Name.StartsWith("Dji") || supportPackageNamePrefixs.Any(p => u.Name.StartsWith(p)))) ||
                       (Settings.EnabledReferenceAssemblyScan == true && u.Type == "reference"))    // 判断是否启用引用程序集扫描
                .Select(u => Reflect.GetAssembly(u.Name));
         }
@@ -538,7 +546,7 @@ public static class App
                 fixedSingleFileAssemblies = fixedSingleFileAssemblies.Concat(nativeAssemblies)
                                                             .Concat(loadAssemblies);
 
-                // 解决 Furion.Extras.ObjectMapper.Mapster 程序集不能加载问题
+                // 解决 Dji.Extras.ObjectMapper.Mapster 程序集不能加载问题
                 try
                 {
                     if (!fixedSingleFileAssemblies.Any(u => u.GetName().Name.Equals(ObjectMapperServiceCollectionExtensions.ASSEMBLY_NAME)))
@@ -561,7 +569,7 @@ public static class App
                 Console.ResetColor();
             }
 
-            // 通过 AppDomain.CurrentDomain 扫描，默认为延迟加载，正常只能扫描到 Furion 和 入口程序集（启动层）
+            // 通过 AppDomain.CurrentDomain 扫描，默认为延迟加载，正常只能扫描到 Dji 和 入口程序集（启动层）
             scanAssemblies = AppDomain.CurrentDomain.GetAssemblies()
                                     .Where(ass =>
                                             // 排除 System，Microsoft，netstandard 开头的程序集

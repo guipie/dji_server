@@ -12,13 +12,13 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.ConfigurableOptions;
-using Furion.Reflection;
+using Dji.ConfigurableOptions;
+using Dji.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace Furion.SpecificationDocument;
+namespace Dji.SpecificationDocument;
 
 /// <summary>
 /// 规范化文档配置选项

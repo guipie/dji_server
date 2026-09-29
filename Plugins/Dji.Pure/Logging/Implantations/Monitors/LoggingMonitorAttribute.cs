@@ -12,13 +12,13 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion;
-using Furion.DataValidation;
-using Furion.Extensions;
-using Furion.FriendlyException;
-using Furion.Logging;
-using Furion.Templates;
-using Furion.UnifyResult;
+using Dji;
+using Dji.DataValidation;
+using Dji.Extensions;
+using Dji.FriendlyException;
+using Dji.Logging;
+using Dji.Templates;
+using Dji.UnifyResult;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -1028,7 +1028,7 @@ public sealed class LoggingMonitorAttribute : Attribute, IAsyncActionFilter, IAs
         using var scope = logger.ScopeContext(logContext);
 
         // 获取最终写入日志消息格式
-        var finalMessage = GetJsonBehavior(JsonBehavior, monitorMethod) == Furion.Logging.JsonBehavior.OnlyJson ? jsonString : monitorMessage;
+        var finalMessage = GetJsonBehavior(JsonBehavior, monitorMethod) == Dji.Logging.JsonBehavior.OnlyJson ? jsonString : monitorMessage;
 
         // 写入日志，如果没有异常默认使用 LogInformation，否则使用 LogError
         if (exception == null)

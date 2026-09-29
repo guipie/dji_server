@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Furion.Schedule;
+namespace Dji.Schedule;
 
 /// <summary>
 /// HTTP 请求作业处理程序

@@ -20,9 +20,17 @@ public class DjiDeviceEnum : EntityAppBase
     public string Name { get; set; }
 
 
+    /// <summary>
+    /// 型号（短码，如 <c>M350 RTK</c> / <c>Dock3</c>）。
+    /// </summary>
+    /// <remarks>
+    /// 标了 <see cref="RequiredAttribute"/>，因此列是 <b>NOT NULL</b>。
+    /// 给默认空串是为了兜底：新增种子数据时漏填只会得到一个空串，
+    /// 而不会让整批种子插入撞 <c>NOT NULL constraint failed</c> 把启动流程打断。
+    /// </remarks>
     [SugarColumn(ColumnDescription = "型号", Length = 20)]
     [Required]
-    public string Model { get; set; }
+    public string Model { get; set; } = string.Empty;
 
     //[SugarColumn(ColumnDescription = "分组所属", Length = 20)]
     //[Required]

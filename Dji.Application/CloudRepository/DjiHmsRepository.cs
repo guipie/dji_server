@@ -11,7 +11,7 @@ using System.Linq;
 using Dji.Application.Cloud.Dto.Hms;
 using Dji.Application.Service.Common;
 using Dji.Core.Enum.DjiEnum.Hms;
-using Furion.JsonSerialization;
+using Dji.JsonSerialization;
 
 namespace Dji.Application.CloudRepository;
 

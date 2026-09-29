@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.FileProviders;
 using System.Reflection;
 
-namespace Furion.VirtualFileServer;
+namespace Dji.VirtualFileServer;
 
 /// <summary>
 /// 虚拟文件服务静态类

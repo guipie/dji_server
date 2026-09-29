@@ -14,7 +14,7 @@
 
 using System.Linq.Expressions;
 
-namespace Furion.LinqBuilder;
+namespace Dji.LinqBuilder;
 
 /// <summary>
 /// 表达式拓展类

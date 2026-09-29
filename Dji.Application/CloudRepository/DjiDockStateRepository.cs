@@ -9,7 +9,7 @@
 
 using System.Collections.Concurrent;
 using Dji.Application.Cloud.Dto.Device;
-using Furion.JsonSerialization;
+using Dji.JsonSerialization;
 
 namespace Dji.Application.CloudRepository;
 

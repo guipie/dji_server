@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,9 +12,9 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.DynamicApiController;
-using Furion.FriendlyException;
-using Furion.UnifyResult;
+using Dji.DynamicApiController;
+using Dji.FriendlyException;
+using Dji.UnifyResult;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
@@ -22,7 +22,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Options;
 using System.Reflection;
 
-namespace Furion.DataValidation;
+namespace Dji.DataValidation;
 
 /// <summary>
 /// 数据验证拦截器

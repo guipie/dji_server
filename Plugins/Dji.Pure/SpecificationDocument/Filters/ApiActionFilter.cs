@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -17,7 +17,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 
-namespace Furion.SpecificationDocument;
+namespace Dji.SpecificationDocument;
 
 /// <summary>
 /// 规范化文档自定义更多功能

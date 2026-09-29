@@ -15,7 +15,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 
-namespace Furion.Authorization;
+namespace Dji.Authorization;
 
 /// <summary>
 /// 授权策略执行程序

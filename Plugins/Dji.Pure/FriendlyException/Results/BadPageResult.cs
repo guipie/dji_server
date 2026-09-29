@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,12 +12,12 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Reflection;
+using Dji.Reflection;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 
-namespace Furion.FriendlyException;
+namespace Dji.FriendlyException;
 
 /// <summary>
 /// 错误页面
@@ -137,7 +137,7 @@ public class BadPageResult : StatusCodeResult
         var thisAssembly = thisType.Assembly;
 
         // 读取嵌入式页面路径
-        var errorhtml = $"{Reflect.GetAssemblyName(thisAssembly)}{thisType.Namespace.Replace(nameof(Furion), string.Empty)}.Assets.error.html";
+        var errorhtml = $"{Reflect.GetAssemblyName(thisAssembly)}{thisType.Namespace.Replace(App.ROOT_NAMESPACE, string.Empty)}.Assets.error.html";
 
         // 解析嵌入式文件流
         byte[] buffer;

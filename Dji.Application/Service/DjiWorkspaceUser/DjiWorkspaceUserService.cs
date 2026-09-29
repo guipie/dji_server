@@ -1,8 +1,8 @@
-﻿using Dji.Core.Service;
+using Dji.Core.Service;
 using Dji.Application.Const;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
-using Furion.DatabaseAccessor;
+using Dji.DatabaseAccessor;
 namespace Dji.Application;
 /// <summary>
 /// 空间用户服务
@@ -59,8 +59,44 @@ public class DjiWorkspaceUserService : IDynamicApiController, ITransient
     [ApiDescriptionSettings(Name = "My")]
     public async Task<IList<UserWorkspace>> My()
     {
-        var spaces = await _rep.GetListAsync(m => m.UserId == _userManager.UserId);
+        var spaces = await EnsureDefaultWorkspaceAsync(_userManager.UserId);
         return spaces.Select(m => new UserWorkspace() { IsDefault = m.IsDefault, WorkspaceId = m.WorkspaceId, WorkspaceNickName = m.WorkspaceNickName }).ToList();
+    }
+
+    /// <summary>
+    /// 兜底：用户尚未归属任何空间时，自动把他挂到默认空间上。
+    /// </summary>
+    /// <remarks>
+    /// 种子数据只覆盖了初始化账号，之后新建的账号不会自动进空间；而 <c>DjiFlyZoneService</c> /
+    /// <c>DjiWaylineService</c> 里的 <c>ResolveWorkspaceIdAsync</c> 又依赖「当前用户的默认空间」，
+    /// 取不到时只能抛错，错误还是「NOT NULL constraint failed」这种用户自己根本修不了的形式。
+    /// 与其让每个新账号都先去「工作空间用户」页面手工配一遍，不如在取本人空间列表时顺手补齐：
+    /// 没有空间记录时才写，有记录时不改动任何既有数据。
+    /// </remarks>
+    private async Task<List<DjiWorkspaceUser>> EnsureDefaultWorkspaceAsync(long userId)
+    {
+        var spaces = await _rep.GetListAsync(m => m.UserId == userId);
+        if (spaces.Count > 0) return spaces;
+
+        // 优先默认空间；连默认空间都没有（例如手工删空过表）就退回任意一个空间，总之不能返回空
+        var workspace = await _spaceRep.GetFirstAsync(m => m.WorkspaceId == ApplicationConst.DefaultWorkspaceId)
+                        ?? await _spaceRep.GetFirstAsync(m => m.Id > 0);
+        var user = await _userRep.GetFirstAsync(u => u.Id == userId);
+        if (workspace == null || user == null) return spaces;
+
+        var entity = new DjiWorkspaceUser
+        {
+            UserId = user.Id,
+            Account = user.Account,
+            NickName = user.NickName,
+            WorkspaceId = workspace.WorkspaceId,
+            WorkspaceNickName = workspace.WorkspaceNickName,
+            IsDefault = true,
+        };
+        await _rep.InsertAsync(entity);
+
+        spaces.Add(entity);
+        return spaces;
     }
     [HttpPost]
     [UnitOfWork]

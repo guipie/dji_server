@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -13,7 +13,7 @@
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
 #if !NET5_0
-using Furion;
+using Dji;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

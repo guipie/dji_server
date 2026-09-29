@@ -15,6 +15,12 @@ public class WorkspaceSeedData : ISqlSugarEntitySeedData<DjiWorkspace>
     public IEnumerable<DjiWorkspace> HasData()
     {
         return [
+         // 默认空间：初始化时必须存在。
+         // 一是归档颗粒度——新增设备/航线/飞行区若没指定空间，就落到这里；
+         // 二是兜底运行时——用户不属于任何空间时会被自动挂进来（见 WorkspaceUserSeedData 与 DjiWorkspaceUserService.My），
+         // 否则保存会因 WorkspaceId 的 NOT NULL 约束直接失败。
+         new DjiWorkspace(){Id=6,TenantId=SqlSugarConst.MainConfigId.ToLong(), WorkspaceId=ApplicationConst.DefaultWorkspaceId, WorkspaceName=ApplicationConst.DefaultWorkspaceName, WorkspaceNickName="默认空间", WorkspaceBindCode=ApplicationConst.DefaultWorkspaceBindCode, WorkspaceDesc="系统默认空间，初始化时所有用户都会归属到该空间"},
+
          new DjiWorkspace(){Id=1,TenantId=SqlSugarConst.MainConfigId.ToLong(), WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228069", WorkspaceName="W",WorkspaceNickName="武汉",WorkspaceBindCode="qwe"},
          new DjiWorkspace(){Id=2,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af3228070", WorkspaceName="QT", WorkspaceNickName="苏州",WorkspaceBindCode="sz"},
          new DjiWorkspace(){Id=3,TenantId=SqlSugarConst.MainConfigId.ToLong(),WorkspaceId="e3dea0f5-37f2-4d79-ae58-490af32280qt", WorkspaceName="QT",WorkspaceNickName="荆江",WorkspaceBindCode="qtcode"},

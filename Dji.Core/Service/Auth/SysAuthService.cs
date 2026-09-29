@@ -7,7 +7,7 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
-using Furion.SpecificationDocument;
+using Dji.SpecificationDocument;
 using Lazy.Captcha.Core;
 
 namespace Dji.Core.Service;
@@ -80,8 +80,11 @@ public class SysAuthService : IDynamicApiController, ITransient
         if (tenant != null && tenant.Status == StatusEnum.Disable)
             throw Oops.Oh(ErrorCodeEnum.Z1003);
 
-        // 国密SM2解密（前端密码传输SM2加密后的）
-        input.Password = CryptogramUtil.SM2Decrypt(input.Password);
+        // 国密SM2解密（前端密码传输SM2加密后的）。
+        // 兼容处理：dji_vue 等前端当前直接传明文，因此仅当入参确为 SM2 密文（十六进制、以 04 开头且长度足够）时才解密，
+        // 否则按明文处理，避免对明文调用 SM2Decrypt 触发 "Offset and length were out of bounds" 异常。
+        if (CryptogramUtil.CryptoType == CryptogramEnum.SM2.ToString() && IsSm2CipherText(input.Password))
+            input.Password = CryptogramUtil.SM2Decrypt(input.Password);
 
         // 密码是否正确
         if (CryptogramUtil.CryptoType == CryptogramEnum.MD5.ToString())
@@ -96,6 +99,22 @@ public class SysAuthService : IDynamicApiController, ITransient
         }
 
         return await CreateToken(user);
+    }
+
+    /// <summary>
+    /// 判断字符串是否为合法的 SM2 密文。
+    /// 合法的 SM2 密文为十六进制、以 04 开头（未带前缀时按补齐后判断），
+    /// 且长度足以容纳 C1(65B)+C3(32B) 至少约 194 个十六进制字符。
+    /// 据此区分「前端传来的 SM2 密文」与「明文密码」，避免对明文做 SM2 解密。
+    /// </summary>
+    private static bool IsSm2CipherText(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return false;
+        var hex = s.StartsWith("04", StringComparison.OrdinalIgnoreCase) ? s : "04" + s;
+        if (hex.Length < 194) return false;
+        foreach (var c in hex)
+            if (!Uri.IsHexDigit(c)) return false;
+        return true;
     }
 
     /// <summary>

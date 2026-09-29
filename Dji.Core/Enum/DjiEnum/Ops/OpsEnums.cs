@@ -429,3 +429,48 @@ public enum RtkCalibrationTypeEnum
 }
 
 #endregion
+
+#region 飞行区 / 禁飞区（平台侧自绘）
+
+/// <summary>
+/// 自定义飞行区类型。
+/// </summary>
+/// <remarks>
+/// 对应下发文件里的 <c>geofence_type</c>：
+/// <list type="bullet">
+/// <item><c>dfence</c> —— 自定义作业区（圈内可飞，飞机会被约束在边界内，越界即返航）</item>
+/// <item><c>nfz</c> —— 自定义禁飞区（圈外可飞，飞机进入前会自动绕行）</item>
+/// </list>
+/// <b>两者的边界条件是不对称的</b>：机场必须落在所有 dfence 内部、落在所有 nfz 外部，
+/// 且距任一区域边界 ≥ 10m。这正是保存前必须做校验的原因，否则文件下发到设备会被直接拒绝。
+/// </remarks>
+public enum FlyZoneTypeEnum
+{
+    /// <summary>自定义作业区（geofence，圈内可飞）</summary>
+    [Description("作业区")]
+    CustomFlyZone = 0,
+
+    /// <summary>自定义禁飞区（no-fly zone，圈外可飞）</summary>
+    [Description("禁飞区")]
+    NoFlyZone = 1
+}
+
+/// <summary>
+/// 飞行区的几何形状。
+/// </summary>
+/// <remarks>
+/// GeoJSON 原生没有圆，所以圆形区域在文件里是一个 <c>Point</c> + <c>properties.radius</c>
+/// 的组合表达，绘制与预览时由前端按中心点与半径临时生成。
+/// </remarks>
+public enum FlyZoneShapeEnum
+{
+    /// <summary>多边形（首尾顶点需重合形成闭合环）</summary>
+    [Description("多边形")]
+    Polygon = 0,
+
+    /// <summary>圆形（中心点 + 半径）</summary>
+    [Description("圆形")]
+    Circle = 1
+}
+
+#endregion

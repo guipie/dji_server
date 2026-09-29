@@ -15,7 +15,7 @@
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 
-namespace Furion.DataValidation;
+namespace Dji.DataValidation;
 
 /// <summary>
 /// 验证类型

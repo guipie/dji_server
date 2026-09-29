@@ -15,7 +15,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Furion.SpecificationDocument;
+namespace Dji.SpecificationDocument;
 
 /// <summary>
 /// 修正 规范化文档 object schema，统一显示为 any

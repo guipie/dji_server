@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
 //
@@ -42,7 +42,7 @@ public class SysJobTrigger : EntityBaseId
     /// </summary>
     [SugarColumn(ColumnDescription = "程序集", Length = 128)]
     [MaxLength(128)]
-    public string? AssemblyName { get; set; } = "Furion.Pure";
+    public string? AssemblyName { get; set; } = "Dji.Pure";
 
     /// <summary>
     /// 参数

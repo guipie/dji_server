@@ -14,7 +14,7 @@
 
 using Microsoft.AspNetCore.SignalR;
 
-namespace Furion.InstantMessaging;
+namespace Dji.InstantMessaging;
 
 /// <summary>
 /// 即时通信静态类

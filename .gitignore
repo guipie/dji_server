@@ -17,7 +17,13 @@ logs/
 *.log
 
 # ===== 本地 / 私有配置 =====
+# Configuration 目录整体不入库，避免真实凭证泄露。
+# 开源用户请从 docs/config/ 复制脱敏模板到这里后再填自己的值。
 Dji.Application/Configuration
+
+# ===== 脱敏前的原始凭证备份（仅本机存在，禁止入库）=====
+LOCAL_SECRETS.private.md
+*.private.md
 
 # ===== 本地 SQLite 运行时数据库与备份（数据库结构由 CodeFirst 生成，不入库）=====
 Dji.Web.Entry/db/

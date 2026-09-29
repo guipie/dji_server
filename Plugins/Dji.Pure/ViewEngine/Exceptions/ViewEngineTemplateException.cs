@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using Microsoft.CodeAnalysis;
 using System.Runtime.Serialization;
 
-namespace Furion.ViewEngine;
+namespace Dji.ViewEngine;
 
 /// <summary>
 /// 视图引擎模板编译异常类

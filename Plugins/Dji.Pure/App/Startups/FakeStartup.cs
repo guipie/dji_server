@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -15,7 +15,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Furion;
+namespace Dji;
 
 /// <summary>
 /// 模拟 Startup，解决 .NET5 下不设置 UseStartup 时出现异常问题

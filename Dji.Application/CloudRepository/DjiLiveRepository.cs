@@ -9,7 +9,7 @@
 
 using Dji.Application.Cloud.Dto.Live;
 using Dji.Core.Enum.DjiEnum.Live;
-using Furion.JsonSerialization;
+using Dji.JsonSerialization;
 using System.Linq;
 
 namespace Dji.Application.CloudRepository;

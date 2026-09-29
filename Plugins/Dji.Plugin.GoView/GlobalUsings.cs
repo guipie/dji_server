@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
 //
@@ -13,13 +13,13 @@ global using Admin.NET.Plugin.GoView.Const;
 global using Admin.NET.Plugin.GoView.Entity;
 global using Admin.NET.Plugin.GoView.Enum;
 global using Admin.NET.Plugin.GoView.Service.Dto;
-global using Furion;
-global using Furion.DatabaseAccessor;
-global using Furion.DataValidation;
-global using Furion.DynamicApiController;
-global using Furion.FriendlyException;
-global using Furion.JsonSerialization;
-global using Furion.UnifyResult;
+global using Dji;
+global using Dji.DatabaseAccessor;
+global using Dji.DataValidation;
+global using Dji.DynamicApiController;
+global using Dji.FriendlyException;
+global using Dji.JsonSerialization;
+global using Dji.UnifyResult;
 global using Mapster;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Http;

@@ -16,7 +16,7 @@ using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
 using Dji.Core.Enum.DjiEnum.Dock;
 using Dji.Core.Enum.DjiEnum.Ops;
-using Furion.JsonSerialization;
+using Dji.JsonSerialization;
 
 namespace Dji.Application.Service.DjiOps;
 

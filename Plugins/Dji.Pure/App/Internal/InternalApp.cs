@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -18,7 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileSystemGlobbing;
 using Microsoft.Extensions.Hosting;
 
-namespace Furion;
+namespace Dji;
 
 /// <summary>
 /// 内部 App 副本
@@ -51,7 +51,7 @@ internal static class InternalApp
     internal static IHostEnvironment HostEnvironment;
 
     /// <summary>
-    /// 配置 Furion 框架（Web）
+    /// 配置 Dji 框架（Web）
     /// </summary>
     /// <remarks>此次添加 <see cref="HostBuilder"/> 参数是为了兼容 .NET 5 直接升级到 .NET 6 问题</remarks>
     /// <param name="builder"></param>
@@ -100,7 +100,7 @@ internal static class InternalApp
     }
 
     /// <summary>
-    /// 配置 Furion 框架（非 Web）
+    /// 配置 Dji 框架（非 Web）
     /// </summary>
     /// <param name="builder"></param>
     /// <param name="autoRegisterBackgroundService"></param>

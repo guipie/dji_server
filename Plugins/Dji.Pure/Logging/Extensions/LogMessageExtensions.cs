@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -16,7 +16,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
-namespace Furion.Logging;
+namespace Dji.Logging;
 
 /// <summary>
 /// <see cref="LogMessage"/> 拓展

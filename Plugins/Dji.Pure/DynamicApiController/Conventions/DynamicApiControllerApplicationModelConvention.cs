@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,8 +12,8 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Extensions;
-using Furion.UnifyResult;
+using Dji.Extensions;
+using Dji.UnifyResult;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
@@ -25,7 +25,7 @@ using System.Collections.Concurrent;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace Furion.DynamicApiController;
+namespace Dji.DynamicApiController;
 
 /// <summary>
 /// 动态接口控制器应用模型转换器
@@ -190,7 +190,7 @@ internal sealed class DynamicApiControllerApplicationModelConvention : IApplicat
     /// <param name="controllerApiDescriptionSettings"></param>
     private void ConfigureControllerRouteAttribute(ControllerModel controller, ApiDescriptionSettingsAttribute controllerApiDescriptionSettings)
     {
-        // 解决 Gitee 该 Issue：https://gitee.com/dotnetchina/Furion/issues/I59B74
+        // 解决 Gitee 该 Issue：https://gitee.com/dotnetchina/Dji/issues/I59B74
         if (CheckIsForceWithDefaultRoute(controllerApiDescriptionSettings)
             && !string.IsNullOrWhiteSpace(_dynamicApiControllerSettings.DefaultRoutePrefix)
             && controller.Selectors[0] != null

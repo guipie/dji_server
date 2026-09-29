@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
 //
@@ -8,22 +8,22 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 global using Dji.Core.Service;
-global using Furion;
-global using Furion.ClayObject;
-global using Furion.ConfigurableOptions;
-global using Furion.DatabaseAccessor;
-global using Furion.DataEncryption;
-global using Furion.DataValidation;
-global using Furion.DependencyInjection;
-global using Furion.DynamicApiController;
-global using Furion.EventBus;
-global using Furion.FriendlyException;
-global using Furion.JsonSerialization;
-global using Furion.Logging;
-global using Furion.RemoteRequest.Extensions;
-global using Furion.Schedule;
-global using Furion.UnifyResult;
-global using Furion.ViewEngine;
+global using Dji;
+global using Dji.ClayObject;
+global using Dji.ConfigurableOptions;
+global using Dji.DatabaseAccessor;
+global using Dji.DataEncryption;
+global using Dji.DataValidation;
+global using Dji.DependencyInjection;
+global using Dji.DynamicApiController;
+global using Dji.EventBus;
+global using Dji.FriendlyException;
+global using Dji.JsonSerialization;
+global using Dji.Logging;
+global using Dji.RemoteRequest.Extensions;
+global using Dji.Schedule;
+global using Dji.UnifyResult;
+global using Dji.ViewEngine;
 global using Magicodes.ExporterAndImporter.Core;
 global using Magicodes.ExporterAndImporter.Core.Extension;
 global using Magicodes.ExporterAndImporter.Excel;

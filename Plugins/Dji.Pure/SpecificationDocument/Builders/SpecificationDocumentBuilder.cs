@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,9 +12,9 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.DynamicApiController;
-using Furion.Extensions;
-using Furion.Reflection;
+using Dji.DynamicApiController;
+using Dji.Extensions;
+using Dji.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +36,7 @@ using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace Furion.SpecificationDocument;
+namespace Dji.SpecificationDocument;
 
 /// <summary>
 /// 规范化文档构建器
@@ -484,7 +484,7 @@ public static class SpecificationDocumentBuilder
                         var memberName = inheritdocElement.Parent.Attribute("name").Value;
 
                         // 处理隐式实现接口的注释
-                        // 注释格式：M:Furion.Application.TestInheritdoc.Furion#Application#ITestInheritdoc#Abc(System.String)
+                        // 注释格式：M:Dji.Application.TestInheritdoc.Furion#Application#ITestInheritdoc#Abc(System.String)
                         // 匹配格式：[A-Z]:[a-zA-Z_@\.]+\.
                         // 处理逻辑：直接替换匹配为空，然后讲 # 替换为 . 查找即可
                         if (memberName.Contains('#'))
@@ -492,7 +492,7 @@ public static class SpecificationDocumentBuilder
                             value = $"{memberName[..2]}{regex2.Replace(memberName, "").Replace('#', '.')}";
                         }
                         // 处理带参数的注释
-                        // 注释格式：M:Furion.Application.TestInheritdoc.WithParams(System.String)
+                        // 注释格式：M:Dji.Application.TestInheritdoc.WithParams(System.String)
                         // 匹配格式：[A-Z]:[a-zA-Z_@\.]+
                         // 处理逻辑：匹配出不带参数的部分，然后获取类型命名空间，最后调用 GenerateInheritdocCref 进行生成
                         else if (memberName.Contains('('))
@@ -502,7 +502,7 @@ public static class SpecificationDocumentBuilder
                             value = GenerateInheritdocCref(xmlDoc, memberName, className);
                         }
                         // 处理不带参数的注释
-                        // 注释格式：M:Furion.Application.TestInheritdoc.WithParams
+                        // 注释格式：M:Dji.Application.TestInheritdoc.WithParams
                         // 匹配格式：无
                         // 处理逻辑：获取类型命名空间，最后调用 GenerateInheritdocCref 进行生成
                         else
@@ -609,7 +609,7 @@ public static class SpecificationDocumentBuilder
         var thisAssembly = thisType.Assembly;
 
         // 判断是否启用 MiniProfile
-        var customIndex = $"{Reflect.GetAssemblyName(thisAssembly)}{thisType.Namespace.Replace(nameof(Furion), string.Empty)}.Assets.{(_appSettings.InjectMiniProfiler != true ? "index" : "index-mini-profiler")}.html";
+        var customIndex = $"{Reflect.GetAssemblyName(thisAssembly)}{thisType.Namespace.Replace(App.ROOT_NAMESPACE, string.Empty)}.Assets.{(_appSettings.InjectMiniProfiler != true ? "index" : "index-mini-profiler")}.html";
         swaggerUIOptions.IndexStream = () =>
         {
             StringBuilder htmlBuilder;

@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using System.Collections.Concurrent;
 
-namespace Furion.IPCChannel;
+namespace Dji.IPCChannel;
 
 /// <summary>
 /// 提供线程异步流共享数据上下文（尽量在项目需要该操作的类中使用 AsyncLocal 方式使用，而不是调用 CallContext

@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -19,7 +19,7 @@ using System.Reflection.Metadata;
 using System.Runtime.Loader;
 using System.Text;
 
-namespace Furion.Reflection;
+namespace Dji.Reflection;
 
 /// <summary>
 /// Class 代理类生成器

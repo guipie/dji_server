@@ -17,7 +17,7 @@ using Dji.Application.Service.DjiDock.Dto;
 using Dji.Core.Enum.DjiEnum.Dock;
 using Dji.Core.Enum.DjiEnum.Hms;
 using Dji.Core.Enum.DjiEnum.Ops;
-using Furion.JsonSerialization;
+using Dji.JsonSerialization;
 
 namespace Dji.Application.Service.DjiDock;
 

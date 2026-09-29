@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using System.Linq.Expressions;
 
-namespace Furion.LinqBuilder;
+namespace Dji.LinqBuilder;
 
 /// <summary>
 /// EF Core Linq 拓展

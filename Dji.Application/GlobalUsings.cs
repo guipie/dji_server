@@ -8,10 +8,10 @@
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 global using Dji.Core;
-global using Furion;
-global using Furion.DependencyInjection;
-global using Furion.DynamicApiController;
-global using Furion.FriendlyException;
+global using Dji;
+global using Dji.DependencyInjection;
+global using Dji.DynamicApiController;
+global using Dji.FriendlyException;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.DependencyInjection;
 global using SqlSugar;
@@ -24,7 +24,7 @@ global using Dji.Application;
 global using Newtonsoft.Json;
 global using System.ComponentModel;
 global using Dji.Application.Const;
-global using Furion.ConfigurableOptions;
+global using Dji.ConfigurableOptions;
 
 global using Microsoft.Extensions.Logging;
 global using System.Threading;

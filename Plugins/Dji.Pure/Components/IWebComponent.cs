@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,7 +12,7 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Components;
+using Dji.Components;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
@@ -21,14 +21,14 @@ namespace System;
 /// <summary>
 /// Web 组件依赖接口
 /// </summary>
-/// <remarks>注意，此时 Furion 还未载入</remarks>
+/// <remarks>注意，此时 Dji 还未载入</remarks>
 public interface IWebComponent : IComponent
 {
 #if !NET5_0
     /// <summary>
     /// 装置 Web 应用构建器
     /// </summary>
-    /// <remarks>注意，此时 Furion 还未载入</remarks>
+    /// <remarks>注意，此时 Dji 还未载入</remarks>
     /// <param name="builder"><see cref="WebApplicationBuilder"/></param>
     /// <param name="componentContext">组件上下文</param>
     void Load(WebApplicationBuilder builder, ComponentContext componentContext);
@@ -37,7 +37,7 @@ public interface IWebComponent : IComponent
     /// <summary>
     /// 装置 Web 应用构建器
     /// </summary>
-    /// <remarks>注意，此时 Furion 还未载入</remarks>
+    /// <remarks>注意，此时 Dji 还未载入</remarks>
     /// <param name="builder"><see cref="IWebHostBuilder"/></param>
     /// <param name="componentContext">组件上下文</param>
     void Load(IWebHostBuilder builder, ComponentContext componentContext);

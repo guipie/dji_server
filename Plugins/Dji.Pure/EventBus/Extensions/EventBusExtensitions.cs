@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using System.Reflection;
 
-namespace Furion.Extensitions.EventBus;
+namespace Dji.Extensitions.EventBus;
 
 /// <summary>
 /// 事件总线拓展类

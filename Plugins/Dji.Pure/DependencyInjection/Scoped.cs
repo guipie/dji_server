@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Furion.DependencyInjection;
+namespace Dji.DependencyInjection;
 
 /// <summary>
 /// 创建作用域静态类

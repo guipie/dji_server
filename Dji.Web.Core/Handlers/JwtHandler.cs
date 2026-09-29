@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023 yanyi  联系电话/微信：18600766045  QQ：15100305
 //
@@ -9,9 +9,9 @@
 
 using Dji.Core;
 using Dji.Core.Service;
-using Furion;
-using Furion.Authorization;
-using Furion.DataEncryption;
+using Dji;
+using Dji.Authorization;
+using Dji.DataEncryption;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;

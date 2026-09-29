@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -12,11 +12,11 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Reflection;
+using Dji.Reflection;
 using Microsoft.CodeAnalysis;
 using System.Reflection;
 
-namespace Furion.ViewEngine;
+namespace Dji.ViewEngine;
 
 /// <summary>
 /// 视图引擎编译选项
@@ -56,12 +56,12 @@ public class ViewEngineOptions
     /// <summary>
     /// 模板命名空间
     /// </summary>
-    public string TemplateNamespace { get; set; } = "Furion.ViewEngine";
+    public string TemplateNamespace { get; set; } = "Dji.ViewEngine";
 
     /// <summary>
     /// 继承
     /// </summary>
-    public string Inherits { get; set; } = "Furion.ViewEngine.Template.Models";
+    public string Inherits { get; set; } = "Dji.ViewEngine.Template.Models";
 
     /// <summary>
     /// 默认 Using

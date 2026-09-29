@@ -1,4 +1,4 @@
-﻿// MIT 许可证
+// MIT 许可证
 //
 // 版权 © 2020-present 百小僧, 百签科技（广东）有限公司
 //
@@ -14,7 +14,7 @@
 
 using System.Xml.Linq;
 
-namespace Furion.ClayObject;
+namespace Dji.ClayObject;
 
 /// <summary>
 /// 粘土对象对象类型枚举器实现类

@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
@@ -11,7 +11,7 @@ using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Dto.Device;
 using Dji.Application.Cloud.Dto.Org;
 using Dji.Application.Cloud.Entity;
-using Furion.Schedule;
+using Dji.Schedule;
 using System.Linq;
 
 namespace Dji.Application.Job;

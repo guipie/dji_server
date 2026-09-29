@@ -12,7 +12,7 @@
 // 在任何情况下，作者或版权持有人都不对任何索赔、损害或其他责任负责，无论这些追责来自合同、侵权或其它行为中，
 // 还是产生于、源于或有关于本软件以及本软件的使用或其它处置。
 
-using Furion.Authorization;
+using Dji.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -35,7 +35,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
-namespace Furion.DataEncryption;
+namespace Dji.DataEncryption;
 
 /// <summary>
 /// JWT 加解密
@@ -470,7 +470,7 @@ public class JWTEncryption
         options.ValidateAudience ??= true;
         if (options.ValidateAudience == true)
         {
-            options.ValidAudience ??= "powerby Furion";
+            options.ValidAudience ??= "powerby Dji";
         }
         options.ValidateLifetime ??= true;
         if (options.ValidateLifetime == true)
@@ -510,16 +510,16 @@ public class JWTEncryption
     {
         if (FrameworkApp != null) return FrameworkApp.Assembly;
 
-        // 获取 Furion 程序集名称
+        // 获取 Dji 程序集名称
         var furionAssemblyName = callAssembly.GetReferencedAssemblies()
-                                                   .FirstOrDefault(u => u.Name == "Furion" || u.Name == "Furion.Pure")
-                                                   ?? throw new InvalidOperationException("No `Furion` assembly installed in the current project was detected.");
+                                                   .FirstOrDefault(u => u.Name == "Dji" || u.Name == "Dji.Pure")
+                                                   ?? throw new InvalidOperationException("No `Dji` assembly installed in the current project was detected.");
 
-        // 加载 Furion 程序集
+        // 加载 Dji 程序集
         var furionAssembly = AssemblyLoadContext.Default.LoadFromAssemblyName(furionAssemblyName);
 
-        // 获取 Furion.App 静态类
-        FrameworkApp = furionAssembly.GetType("Furion.App");
+        // 获取 Dji.App 静态类
+        FrameworkApp = furionAssembly.GetType("Dji.App");
 
         return furionAssembly;
     }
