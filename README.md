@@ -38,8 +38,8 @@
 
 | 仓库 | 定位 |
 |---|---|
-| [dji_vue](../dji_vue) | 后台运维管理端（飞行区绘制、航线管理、设备台账、机库监控） |
-| [dji-cloud-console](../dji-cloud-console) | 桌面 / 实时指挥端（Tauri + Vue3，实时态势与 DRC 指令飞行） |
+| [dji_vue](https://github.com/guipie/dji_vue) | 后台运维管理端（飞行区绘制、航线管理、设备台账、机库监控） |
+| [dji-cloud-console](https://github.com/guipie/dji-cloud-console) | 桌面 / 实时指挥端（Tauri + Vue3，实时态势与 DRC 指令飞行） |
 
 ---
 
