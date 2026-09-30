@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
@@ -46,7 +46,10 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
 
         // 主题绑定放在 try 之外会因网关 SN 为空而把异常抛给调用方，这里显式校验
         var fullTopic = topic.BindGateway(request.Gateway);
-        var payload = request.ToJson();
+        // 必须用 MqttJson（snake_case）序列化：全局 ToJson() 的 ContractResolver 在 Startup 中被注释，
+        // 默认输出 PascalCase（Bid/Tid/Method/Data），DJI 设备按协议只认 snake_case（bid/tid/method/data），
+        // 解析不了 PascalCase 时回包的 bid 为空，后端按 bid 关联回包会全部超时。
+        var payload = MqttJson.Serialize(request);
         var message = new MqttApplicationMessageBuilder()
             .WithTopic(fullTopic)
             .WithPayload(payload)

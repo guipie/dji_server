@@ -28,6 +28,12 @@ internal static class MqttJson
         NullValueHandling = NullValueHandling.Ignore,
     };
 
+    /// <summary>按上云协议（snake_case）序列化对象为 JSON 字符串</summary>
+    public static string Serialize(object value)
+    {
+        return value is null ? null : JsonConvert.SerializeObject(value, Settings);
+    }
+
     /// <summary>把原始报文反序列化为指定类型</summary>
     public static T Deserialize<T>(string payload)
     {

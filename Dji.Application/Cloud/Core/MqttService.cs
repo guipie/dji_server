@@ -1,4 +1,4 @@
-﻿// 麻省理工学院许可证
+// 麻省理工学院许可证
 //
 // 版权所有 (c) 2021-2023  联系电话/微信：15100305  QQ：15100305
 //
@@ -110,6 +110,13 @@ internal class MqttService : IMqttService, IDisposable
             }
 
             _logger.LogInformation("MQTT 已连接 {Host}:{Port}，结果:{Result}", _mqttOptions.Server, _mqttOptions.Port, result.ResultCode);
+
+            // 关键修复：MQTTnet 5.x 在断线重连场景下，ConnectedAsync 事件不一定会被触发
+            // （特别是在 OnDisconnected → StartAsync → ConnectAsync 的重连路径中）。
+            // 如果只依赖 ConnectedAsync 事件来订阅，断线重连后主题订阅会永久丢失，
+            // 表现为 OSD 能收到（EMQX 内部缓存推送）但 reply 收不到（一次性消息错过即丢失）。
+            // 因此在 StartAsync 连接成功后直接调用 OnConnectedAsync，确保每次连接都执行订阅。
+            await OnConnectedAsync(new MqttClientConnectedEventArgs(result));
         }
         catch (Exception ex)
         {
@@ -216,6 +223,12 @@ internal class MqttService : IMqttService, IDisposable
             var items = result?.Items ?? [];
 
             // 结果码 > 2 即为明确拒绝（授权、通配符不支持等），属于配置问题，重试没有意义
+            foreach (var item in items)
+            {
+                // 记录订阅结果（包括被拒绝的，方便诊断 ACL 问题）
+                MqttDiagnostics.OnSubscribeResult(item.TopicFilter.Topic, (int)item.ResultCode);
+            }
+
             foreach (var item in items.Where(m => IsSubscribeDenied(m.ResultCode)))
             {
                 _logger.LogError("MQTT 订阅被 broker 拒绝 topic:{Topic} 结果码:{Code}({Reason})，请检查 broker 的授权（ACL）配置",
@@ -359,6 +372,11 @@ internal class MqttService : IMqttService, IDisposable
     private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
     {
         var topic = e.ApplicationMessage.Topic;
+        if (topic.EndsWith("reply")) {
+            _logger.LogWarning("reply:消息" + Encoding.UTF8.GetString(e.ApplicationMessage.Payload));
+        }
+        MqttDiagnostics.OnMessageReceived(topic);
+        _logger.LogInformation("[MQTT-RX] topic:{Topic}", topic);
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
         if (payload.IsNullOrWhiteSpace()) return;
 

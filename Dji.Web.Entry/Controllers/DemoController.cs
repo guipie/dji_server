@@ -1,5 +1,9 @@
-﻿using Dji.Application.Const;
+using Dji.Application.Cloud.Core;
+using Dji.Application.Const;
+using Dji.Application.Option;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
+using MQTTnet;
 
 namespace Dji.Web.Entry.Controllers
 {
@@ -7,7 +11,34 @@ namespace Dji.Web.Entry.Controllers
     [Route("api/demo"), ApiDescriptionSettings(ApplicationConst.DjiCloud, Order = 1000)]
     public class DemoController : AppBaseController
     {
+        private readonly IMqttClient _mqttClient;
+        private readonly IOptions<MqttOptions> _mqttOptions;
 
+        public DemoController(IMqttClient mqttClient, IOptions<MqttOptions> mqttOptions)
+        {
+            _mqttClient = mqttClient;
+            _mqttOptions = mqttOptions;
+        }
+
+        /// <summary>MQTT 诊断端点：检查连接状态、订阅、收到的应答数</summary>
+        [HttpGet("mqtt-diag"), AllowAnonymous]
+        public object MqttDiag()
+        {
+            return new
+            {
+                connected = _mqttClient.IsConnected,
+                server = $"{_mqttOptions.Value.Server}:{_mqttOptions.Value.Port}",
+                clientId = _mqttOptions.Value.ClientId,
+                subscribedTopics = _mqttOptions.Value.SubscribedTopics,
+                totalMessageCount = MqttDiagnostics.TotalMessageCount,
+                replyReceivedCount = MqttDiagnostics.ReplyMessageCount,
+                lastMessageTopic = MqttDiagnostics.LastTopic,
+                lastMessageTime = MqttDiagnostics.LastMessageTime,
+                lastReply = MqttDiagnostics.LastReply,
+                subscribeResults = MqttDiagnostics.SubscribeResults,
+                uniqueTopics = MqttDiagnostics.UniqueTopics,
+            };
+        }
 
         [HttpPost("upload"), RequestSizeLimit(100000000000000)]
         public async Task<dynamic> Demo(IFormFile file)
@@ -35,5 +66,6 @@ namespace Dji.Web.Entry.Controllers
             }
             await HttpContext.Response.CompleteAsync();
         }
+
     }
 }
