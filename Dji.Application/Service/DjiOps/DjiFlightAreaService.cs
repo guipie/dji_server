@@ -13,6 +13,8 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
+using Dji.Application.Util;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Ops;
 
 namespace Dji.Application.Service.DjiOps;
@@ -36,21 +38,21 @@ namespace Dji.Application.Service.DjiOps;
 /// </remarks>
 [ApiDescriptionSettings(ApplicationConst.GroupName, Order = 170)]
 public class DjiFlightAreaService(
-    SqlSugarRepository<Dji.Core.Entity.DjiDevice> deviceRep,
     SqlSugarRepository<DjiFlightArea> areaRep,
     DjiFlightAreaRepository areaRepository,
     DjiStorageService storageService,
-    MqttGatewayPublish publish,
+    DockQueryService dockQuery,
+    CommandPublisher commandPublisher,
     ILogger<DjiFlightAreaService> logger) : IDynamicApiController, ITransient
 {
     /// <summary>下发指令的应答等待时长</summary>
     private const int CommandReplyTimeoutSeconds = 15;
 
-    private readonly SqlSugarRepository<Dji.Core.Entity.DjiDevice> _deviceRep = deviceRep;
     private readonly SqlSugarRepository<DjiFlightArea> _areaRep = areaRep;
     private readonly DjiFlightAreaRepository _areaRepository = areaRepository;
     private readonly DjiStorageService _storageService = storageService;
-    private readonly MqttGatewayPublish _publish = publish;
+    private readonly DockQueryService _dockQuery = dockQuery;
+    private readonly CommandPublisher _commandPublisher = commandPublisher;
     private readonly ILogger<DjiFlightAreaService> _logger = logger;
 
     #region 查询
@@ -121,23 +123,19 @@ public class DjiFlightAreaService(
     /// <summary>机场下拉</summary>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
-    public async Task<List<OpsDockOptionOutput>> DockOptions(OpsDockOptionInput input)
+    public async Task<List<OpsDockOptionOutput>> DockOptions(DockOptionInput input)
     {
-        input ??= new OpsDockOptionInput();
+        input ??= new DockOptionInput();
 
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!input.WorkspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == input.WorkspaceId)
-            .OrderBy(m => m.Nick)
-            .ToListAsync();
+        var bases = await _dockQuery.GetDockOptionsAsync(input.WorkspaceId);
 
-        return docks.Select(m => new OpsDockOptionOutput
+        return bases.Select(m => new OpsDockOptionOutput
         {
             Sn = m.Sn,
             Nick = m.Nick,
             WorkspaceId = m.WorkspaceId,
             IsOnline = m.IsOnline,
-            Label = $"{m.Nick ?? m.Sn}（{m.Sn}）",
+            Label = m.Label,
         }).ToList();
     }
 
@@ -276,7 +274,7 @@ public class DjiFlightAreaService(
         if (!confirm)
             throw Oops.Oh("该操作会让设备重新加载作业区域，请确认后再执行");
 
-        if (!dock.IsOnline) throw Oops.Oh("机场离线，无法下发飞行区同步指令");
+        if (!_dockQuery.IsDockOnline(dock.Sn)) throw Oops.Oh("机场离线，无法下发飞行区同步指令");
 
         var files = await _areaRepository.GetByDockAsync(dock.Sn);
         if (files.Count == 0 || files.All(m => m.ObjectKey.IsNullOrWhiteSpace()))
@@ -287,24 +285,12 @@ public class DjiFlightAreaService(
 
         var request = new CloudMqRequest<object>(TopicMethods.FlightAreasUpdate, dock.Sn);
 
-        int result;
-        try
-        {
-            var reply = await _publish.PublishWithReplyAsync<object, object>(
-                Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-
-            result = reply?.Data?.Result ?? -1;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "下发飞行区同步指令无应答：gateway:{Gateway}", dock.Sn);
-            throw Oops.Oh("设备未在超时时间内回包（指挥链路可能中断），请确认机场在线后重试");
-        }
+        var result = await _commandPublisher.SendRequestAsync(dock.Sn, request, CommandReplyTimeoutSeconds, "飞行区同步");
 
         if (result != 0)
         {
             _logger.LogWarning("飞行区同步指令被拒：gateway:{Gateway}，result:{Result}", dock.Sn, result);
-            throw Oops.Oh($"设备拒绝执行飞行区同步，{(result == -1 ? "未在超时时间内回包" : $"错误码：{result}")}");
+            throw Oops.Oh($"设备拒绝执行飞行区同步，{CommandPublisher.DescribeResult(result)}");
         }
 
         _logger.LogInformation("已下发飞行区同步指令：gateway:{Gateway}（等待设备上报同步进度）", dock.Sn);
@@ -317,19 +303,18 @@ public class DjiFlightAreaService(
 
         foreach (var item in items)
         {
-            item.SyncStatusName = Desc(item.SyncStatus);
+            item.SyncStatusName = EnumExtension.Desc(item.SyncStatus);
             // 只有同步失败时原因码才有意义，其余状态一律不展示，避免出现「已同步 + 原因：无错误」的噪音
             item.SyncReasonName = item.SyncStatus is FlightAreaSyncStatusEnum.Fail or FlightAreaSyncStatusEnum.SwitchFail
-                ? Desc(item.SyncReason)
+                ? EnumExtension.Desc(item.SyncReason)
                 : null;
-            item.FileSizeText = FormatSize(item.FileSize);
+            item.FileSizeText = item.FileSize.FormatSize();
         }
 
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         if (dockSns.Count == 0) return;
 
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-        var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
 
         foreach (var item in items) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
     }
@@ -357,31 +342,8 @@ public class DjiFlightAreaService(
         return output;
     }
 
-    /// <summary>字节数转可读文本</summary>
-    private static string FormatSize(long? size)
-    {
-        if (size is null or <= 0) return "-";
-
-        var value = size.Value;
-        if (value < 1024) return $"{value} B";
-        if (value < 1024 * 1024) return $"{value / 1024.0:0.#} KB";
-        return $"{value / 1024.0 / 1024:0.#} MB";
-    }
-
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn) ?? throw Oops.Oh($"未找到机场：{dockSn}");
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间");
-
-        return dock;
-    }
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
+        => await _dockQuery.ResolveDockAsync(dockSn);
 
     #endregion
 }

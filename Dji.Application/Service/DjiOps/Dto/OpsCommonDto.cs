@@ -7,6 +7,8 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using Dji.Application.Service.Common;
+
 namespace Dji.Application.Service.DjiOps.Dto;
 
 /// <summary>运维模块共用的枚举字典项</summary>
@@ -33,35 +35,7 @@ public class OpsBatchOptionOutput
     public string Label { get; set; }
 }
 
-/// <summary>运维模块共用的机场下拉查询入参</summary>
-public class OpsDockOptionInput
+/// <summary>运维模块共用的机场下拉项（继承公共基础字段，无额外业务字段）</summary>
+public class OpsDockOptionOutput : DockOptionBase
 {
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-}
-
-/// <summary>
-/// 运维模块共用的机场下拉项。
-/// </summary>
-/// <remarks>
-/// 现有各模块（直播 / 媒体 / HMS / 航线）各自维护了一份同构的 DTO，这是历史原因。
-/// 新模块统一用这一份：字段完全一致，重复定义只会让「同一个机场在不同页面显示的名称不一样」这类
-/// 不一致问题更容易出现。
-/// </remarks>
-public class OpsDockOptionOutput
-{
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场昵称</summary>
-    public string Nick { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
-    /// <summary>下拉显示文本</summary>
-    public string Label { get; set; }
 }

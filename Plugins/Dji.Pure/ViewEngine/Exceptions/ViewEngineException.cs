@@ -34,7 +34,7 @@ public class ViewEngineException : Exception
     /// </summary>
     /// <param name="info"></param>
     /// <param name="context"></param>
-    protected ViewEngineException(SerializationInfo info, StreamingContext context) : base(info, context)
+    protected ViewEngineException(SerializationInfo info, StreamingContext context) 
     {
     }
 

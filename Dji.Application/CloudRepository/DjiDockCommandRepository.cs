@@ -178,16 +178,50 @@ public class DjiDockCommandRepository(
         return true;
     }
 
+    /// <summary>
+    /// 把某机场所有「在途」的指令记录收口为「取消」（运维手动清除，用于解除按钮互斥）。
+    /// </summary>
+    /// <remarks>
+    /// 与 <see cref="CloseStaleAsync"/> 的「超时」语义不同：这是运维主动清场，
+    /// 标记为 <see cref="DockTaskStatusEnum.Canceled"/> 更贴切 —— 用户明确放弃了等待这些指令的结果。
+    /// </remarks>
+    public async Task<int> ClearRunningAsync(string dockSn)
+    {
+        if (dockSn.IsNullOrWhiteSpace()) return 0;
+
+        return await _commandRes.AsUpdateable()
+            .SetColumns(m => new DjiDockCommand
+            {
+                Status = DockTaskStatusEnum.Canceled,
+                FinishTime = DateTime.Now,
+                ErrorMessage = "运维手动清除",
+            })
+            .Where(m => m.DockSn == dockSn
+                && m.Status != DockTaskStatusEnum.Ok && m.Status != DockTaskStatusEnum.Failed
+                && m.Status != DockTaskStatusEnum.Canceled && m.Status != DockTaskStatusEnum.Rejected
+                && m.Status != DockTaskStatusEnum.Timeout)
+            .ExecuteCommandAsync();
+    }
+
     /// <summary>把某机场所有「下发中」的僵死记录收口为超时（服务重启后清理，避免前端一直转圈）</summary>
+    /// <remarks>
+    /// <para>覆盖两段空窗：</para>
+    /// <list type="number">
+    /// <item><c>Sending</c>：连 <c>services_reply</c> 都没等到；</item>
+    /// <item><c>Sent</c>：回包已到但一直没等到任何 <c>events</c> 进度 —— 正常指令几秒内就会推进度；
+    /// 无进度指令（调试模式开关）在新链路下回包即终态，不会落到这里，落到这里的都是设备未按约定的异常。</item>
+    /// </list>
+    /// </remarks>
     public async Task<int> CloseStaleAsync(DateTime before)
         => await _commandRes.AsUpdateable()
             .SetColumns(m => new DjiDockCommand
             {
                 Status = DockTaskStatusEnum.Timeout,
                 FinishTime = DateTime.Now,
-                ErrorMessage = "指令下发后未收到设备回包",
+                ErrorMessage = "指令下发后未收到设备回包或进度上报",
             })
-            .Where(m => m.Status == DockTaskStatusEnum.Sending && m.CreateTime != null && m.CreateTime < before)
+            .Where(m => (m.Status == DockTaskStatusEnum.Sending || m.Status == DockTaskStatusEnum.Sent)
+                && m.CreateTime != null && m.CreateTime < before)
             .ExecuteCommandAsync();
 
     #endregion

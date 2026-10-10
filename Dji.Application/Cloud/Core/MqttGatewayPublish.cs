@@ -50,6 +50,7 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
         // 默认输出 PascalCase（Bid/Tid/Method/Data），DJI 设备按协议只认 snake_case（bid/tid/method/data），
         // 解析不了 PascalCase 时回包的 bid 为空，后端按 bid 关联回包会全部超时。
         var payload = MqttJson.Serialize(request);
+        Console.WriteLine("发布,topic:{0}，消息：{1}", fullTopic, payload);
         var message = new MqttApplicationMessageBuilder()
             .WithTopic(fullTopic)
             .WithPayload(payload)
@@ -150,9 +151,14 @@ public class MqttGatewayPublish(ILogger<MqttGatewayPublish> logger, IMqttClient 
             {
                 var reply = MqttJson.Deserialize<CloudMqData<TData>>(payload);
                 // 用模式匹配而非 ?. ：TData 是开放泛型参数（可能是值类型），空传播运算符在泛型参数上会报 CS8978
-                if (reply is not null && reply.Data is not null)
+                //
+                // 只判「信封按 bid 匹配回来」即可：部分控制指令（如 debug_mode_open / debug_mode_close）
+                // 机场的 services_reply 只回信封字段（bid/tid/method/gateway/timestamp），不带 data/result，
+                // 即「已确认收到」。真正执行结果由后续 events 进度报文驱动。若在这里要求 data 非空，
+                // 这类无 data 回包会被当成「没等到」一直耗到超时，把成功下发误判为失败。
+                if (reply is not null)
                 {
-                    _logger.LogInformation("MQTT 回包匹配成功 topic:{Topic} bid:{Bid} 耗时:{Seconds}秒", fullTopic, request.Bid, waited + 1);
+                    _logger.LogInformation("MQTT 回包匹配成功 topic:{Topic} bid:{Bid} 耗时:{Seconds}秒 带data:{HasData}", fullTopic, request.Bid, waited + 1, reply.Data is not null);
                     return reply;
                 }
             }

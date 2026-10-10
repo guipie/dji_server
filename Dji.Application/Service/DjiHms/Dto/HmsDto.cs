@@ -9,6 +9,8 @@
 
 using Dji.Core.Enum.DjiEnum.Hms;
 
+using Dji.Application.Service.Common;
+
 namespace Dji.Application.Service.DjiHms.Dto;
 
 /// <summary>告警中心查询条件</summary>
@@ -194,37 +196,11 @@ public class HmsDockStatOutput
     public int WarningCount { get; set; }
 }
 
-/// <summary>HMS 机场下拉查询入参</summary>
-/// <remarks>
-/// 单独定义而不是复用 <c>DjiOps</c> 的同类 DTO：两个模块的 VO 各自演进
-/// （HMS 的下拉还带活跃告警数），共用一个入参类型会让耦合方向反过来。
-/// </remarks>
-public class HmsDockOptionInput
+/// <summary>机场下拉项（继承公共基础字段，仅补充告警计数）</summary>
+public class HmsDockOptionOutput : DockOptionBase
 {
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-}
-
-/// <summary>机场下拉项</summary>
-public class HmsDockOptionOutput
-{
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场昵称</summary>
-    public string Nick { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
     /// <summary>活跃告警数（下拉框内直接提示风险）</summary>
     public int ActiveCount { get; set; }
-
-    /// <summary>显示文本</summary>
-    public string Label { get; set; }
 }
 
 /// <summary>字典项（等级 / 模块 / 状态）</summary>

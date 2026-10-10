@@ -9,14 +9,18 @@
 
 using System.Linq;
 using Dji.Application.Cloud.Core;
+using Dji.Application.Cloud.Dto.Device;
 using Dji.Application.Cloud.Dto.Dock;
 using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiDock.Dto;
+using Dji.Application.Util;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Dock;
 using Dji.Core.Enum.DjiEnum.Hms;
 using Dji.Core.Enum.DjiEnum.Ops;
+using Dji.Core.Service;
 using Dji.JsonSerialization;
 
 namespace Dji.Application.Service.DjiDock;
@@ -51,8 +55,10 @@ public class DjiDockService(
     DjiDockStateRepository dockStateRepository,
     DjiDockCommandRepository commandRepository,
     DjiHmsRepository hmsRepository,
-    MqttGatewayPublish publish,
     UserManager userManager,
+    SysCacheService cache,
+    DockQueryService dockQuery,
+    CommandPublisher commandPublisher,
     ILogger<DjiDockService> logger) : IDynamicApiController, ITransient
 {
     /// <summary>控制指令回包等待时长（机场要在本地执行动作，比普通查询慢）</summary>
@@ -63,8 +69,10 @@ public class DjiDockService(
     private readonly DjiDockStateRepository _dockStateRepository = dockStateRepository;
     private readonly DjiDockCommandRepository _commandRepository = commandRepository;
     private readonly DjiHmsRepository _hmsRepository = hmsRepository;
-    private readonly MqttGatewayPublish _publish = publish;
     private readonly UserManager _userManager = userManager;
+    private readonly SysCacheService _cache = cache;
+    private readonly DockQueryService _dockQuery = dockQuery;
+    private readonly CommandPublisher _commandPublisher = commandPublisher;
     private readonly ILogger<DjiDockService> _logger = logger;
 
     #region 枚举与分组常量
@@ -97,14 +105,16 @@ public class DjiDockService(
     private static readonly List<ActionMeta> ActionMetas =
     [
         // ── 舱盖 ──
-        new(TopicMethods.CoverOpen, "打开舱盖", GroupCover, DockCommandRiskEnum.Normal, ParamKind.None,
-            RequireIdle: true, Current: s => s.CoverState,
+        new(TopicMethods.CoverOpen, "舱盖", GroupCover, DockCommandRiskEnum.Normal, ParamKind.None,
+            RequireIdle: true, RequireDebugMode: true, Current: s => s.CoverState,
+            Toggle: ToggleMeta.OnOff("cover", false, s => s.CoverState == (int)DockCoverStateEnum.Opened),
             Rule: s => s.CoverState == (int)DockCoverStateEnum.Opened ? "舱盖已处于打开状态" : null),
         new(TopicMethods.CoverClose, "关闭舱盖", GroupCover, DockCommandRiskEnum.Normal, ParamKind.None,
-            RequireIdle: true, Current: s => s.CoverState,
+            RequireIdle: true, RequireDebugMode: true, Current: s => s.CoverState,
+            Toggle: ToggleMeta.OnOff("cover", true),
             Rule: s => s.CoverState == (int)DockCoverStateEnum.Closed ? "舱盖已处于关闭状态" : null),
         new(TopicMethods.CoverForceClose, "强制关闭舱盖", GroupCover, DockCommandRiskEnum.Caution, ParamKind.None,
-            Current: s => s.CoverState,
+            RequireDebugMode: true, Current: s => s.CoverState,
             Rule: s => s.DroneInDock == null
                 ? "尚未获取到「飞行器是否在舱」的状态，无法确认能否强制关舱盖"
                 : s.DroneInDock == (int)DroneInDockEnum.Inside
@@ -112,52 +122,64 @@ public class DjiDockService(
                     : null),
 
         // ── 供电 ──
-        new(TopicMethods.ChargeOpen, "打开充电", GroupPower, DockCommandRiskEnum.Normal, ParamKind.None,
-            RequireIdle: true, Current: s => s.DroneChargeState,
+        new(TopicMethods.ChargeOpen, "充电", GroupPower, DockCommandRiskEnum.Normal, ParamKind.None,
+            RequireIdle: true, RequireDebugMode: true, Current: s => s.DroneChargeState,
+            Toggle: ToggleMeta.OnOff("charge", false, s => s.DroneChargeState == (int)DroneChargeStateEnum.Charging),
             Rule: s => s.DroneChargeState == (int)DroneChargeStateEnum.Charging ? "飞行器正在充电" : null),
         new(TopicMethods.ChargeClose, "关闭充电", GroupPower, DockCommandRiskEnum.Normal, ParamKind.None,
-            RequireIdle: true, Current: s => s.DroneChargeState,
+            RequireIdle: true, RequireDebugMode: true, Current: s => s.DroneChargeState,
+            Toggle: ToggleMeta.OnOff("charge", true),
             Rule: s => s.DroneChargeState == (int)DroneChargeStateEnum.Idle ? "飞行器当前未在充电" : null),
 
-        // ── 飞行器 ──
+        // ── 飞行器 ──（开关机没有可靠的 OSD 状态字段，无法回读，保留为触发式按钮）
         new(TopicMethods.DroneOpen, "飞行器开机", GroupDrone, DockCommandRiskEnum.Caution, ParamKind.None,
-            RequireIdle: true),
+            RequireIdle: true, RequireDebugMode: true),
         new(TopicMethods.DroneClose, "飞行器关机", GroupDrone, DockCommandRiskEnum.Caution, ParamKind.None,
-            RequireIdle: true),
+            RequireIdle: true, RequireDebugMode: true),
 
         // ── 环境 ──
         new(TopicMethods.AirConditionerModeSwitch, "空调工作模式", GroupEnv, DockCommandRiskEnum.Normal,
-            ParamKind.AirConditioner, Current: s => s.AirConditionerState,
+            ParamKind.AirConditioner, RequireDebugMode: true, Current: s => s.AirConditionerState,
             Rule: s => s.AirConditionerSwitchTime > 0
                 ? $"空调正在切换中，请等待 {s.AirConditionerSwitchTime} 秒后再操作"
                 : null),
-        new(TopicMethods.SupplementLightOpen, "打开补光灯", GroupEnv, DockCommandRiskEnum.Normal, ParamKind.None,
-            Current: s => s.SupplementLightState,
+        new(TopicMethods.SupplementLightOpen, "补光灯", GroupEnv, DockCommandRiskEnum.Normal, ParamKind.None,
+            RequireDebugMode: true, Current: s => s.SupplementLightState,
+            Toggle: ToggleMeta.OnOff("light", false, s => s.SupplementLightState == (int)SwitchStateEnum.On),
             Rule: s => s.SupplementLightState == (int)SwitchStateEnum.On ? "补光灯已开启" : null),
         new(TopicMethods.SupplementLightClose, "关闭补光灯", GroupEnv, DockCommandRiskEnum.Normal, ParamKind.None,
-            Current: s => s.SupplementLightState,
+            RequireDebugMode: true, Current: s => s.SupplementLightState,
+            Toggle: ToggleMeta.OnOff("light", true),
             Rule: s => s.SupplementLightState == (int)SwitchStateEnum.Off ? "补光灯已关闭" : null),
         new(TopicMethods.AlarmStateSwitch, "声光报警", GroupEnv, DockCommandRiskEnum.Caution,
-            ParamKind.Switch, Current: s => s.AlarmState),
+            ParamKind.Switch, RequireDebugMode: true, Current: s => s.AlarmState,
+            Toggle: ToggleMeta.OnOffSingle("alarm", "action", 1, 0, s => s.AlarmState == (int)SwitchStateEnum.On)),
         new(TopicMethods.BatteryMaintenanceSwitch, "电池保养", GroupEnv, DockCommandRiskEnum.Caution,
-            ParamKind.Switch),
+            ParamKind.Switch, RequireDebugMode: true,
+            Toggle: ToggleMeta.OnOffSingle("battery_maintenance", "action", 1, 0)),
         new(TopicMethods.BatteryStoreModeSwitch, "电池运行模式", GroupEnv, DockCommandRiskEnum.Caution,
-            ParamKind.BatteryStore, Current: s => s.BatteryStoreMode),
+            ParamKind.BatteryStore, RequireDebugMode: true, Current: s => s.BatteryStoreMode),
 
         // ── 通信 ──
         new(TopicMethods.SdrWorkmodeSwitch, "增强图传", GroupLink, DockCommandRiskEnum.Normal,
-            ParamKind.LinkWorkmode, Current: s => s.SdrLinkWorkmode),
-        new(TopicMethods.EsimActivate, "eSIM 激活", GroupLink, DockCommandRiskEnum.Caution, ParamKind.Esim),
-        new(TopicMethods.SimSlotSwitch, "SIM 卡槽切换", GroupLink, DockCommandRiskEnum.Caution, ParamKind.SimSlot),
+            ParamKind.LinkWorkmode, RequireDebugMode: true, Current: s => s.SdrLinkWorkmode,
+            Toggle: ToggleMeta.OnOffSingle("sdr", "linkWorkmode", 1, 0, s => s.SdrLinkWorkmode == (int)SdrLinkWorkmodeEnum.Enhanced4G)),
+        new(TopicMethods.EsimActivate, "eSIM 激活", GroupLink, DockCommandRiskEnum.Caution, ParamKind.Esim,
+            RequireDebugMode: true),
+        new(TopicMethods.SimSlotSwitch, "SIM 卡槽切换", GroupLink, DockCommandRiskEnum.Caution, ParamKind.SimSlot,
+            RequireDebugMode: true),
         new(TopicMethods.EsimOperatorSwitch, "eSIM 运营商切换", GroupLink, DockCommandRiskEnum.Caution,
-            ParamKind.EsimOperator),
+            ParamKind.EsimOperator, RequireDebugMode: true),
 
         // ── 维护 ──
-        new(TopicMethods.DebugModeOpen, "开启远程调试", GroupMaintain, DockCommandRiskEnum.Caution, ParamKind.None,
-            RequireIdle: true),
-        new(TopicMethods.DebugModeClose, "关闭远程调试", GroupMaintain, DockCommandRiskEnum.Normal, ParamKind.None),
+        new(TopicMethods.DebugModeOpen, "远程调试", GroupMaintain, DockCommandRiskEnum.Caution, ParamKind.None,
+            RequireIdle: true, SettleOnReply: true,
+            Toggle: ToggleMeta.OnOff("debug", false, s => s.ModeCode == (int)DockModeCodeEnum.RemoteDebug)),
+        new(TopicMethods.DebugModeClose, "关闭远程调试", GroupMaintain, DockCommandRiskEnum.Normal, ParamKind.None,
+            SettleOnReply: true,
+            Toggle: ToggleMeta.OnOff("debug", true)),
         new(TopicMethods.RtkCalibration, "一键标定", GroupMaintain, DockCommandRiskEnum.Caution, ParamKind.Rtk,
-            Api: nameof(RtkCalibration), RequireIdle: true,
+            Api: nameof(RtkCalibration), RequireIdle: true, RequireDebugMode: true,
             // 官方文档仅在「机场 2」章节列出该指令；机型未知时不做拦截，交给设备判断
             Rule: s => s.Model == "Dock3"
                 ? "该机型暂不支持一键标定（官方文档仅在机场 2 章节提供该指令）"
@@ -165,11 +187,11 @@ public class DjiDockService(
 
         // ── 危险（放最后，避免误点） ──
         new(TopicMethods.DeviceReboot, "机场重启", GroupDanger, DockCommandRiskEnum.Dangerous, ParamKind.None,
-            RequireIdle: true),
+            RequireIdle: true, RequireDebugMode: true),
         new(TopicMethods.DeviceFormat, "机场数据格式化", GroupDanger, DockCommandRiskEnum.Dangerous, ParamKind.None,
-            RequireIdle: true),
+            RequireIdle: true, RequireDebugMode: true),
         new(TopicMethods.DroneFormat, "飞行器数据格式化", GroupDanger, DockCommandRiskEnum.Dangerous, ParamKind.None,
-            RequireIdle: true),
+            RequireIdle: true, RequireDebugMode: true),
     ];
 
     #endregion
@@ -186,9 +208,16 @@ public class DjiDockService(
     }
 
     /// <summary>
-    /// 可取的操作列表（前端据此渲染按钮，服务端算好可用性与禁用原因）。
+    /// 可取的操作列表（前端据此渲染按钮/开关，服务端算好可用性与禁用原因）。
     /// </summary>
-    /// <remarks>传 <paramref name="dockSn"/> 时会结合该机场的实时状态计算；不传则返回「全部可选」的模板。</remarks>
+    /// <remarks>
+    /// <para>传 <paramref name="dockSn"/> 时会结合该机场的实时状态计算；不传则返回「全部可选」的模板。</para>
+    /// <para>
+    /// <b>开关类指令的合并</b>：舱盖开/关、充电开/关等「一对 method 表达同一状态」的指令，
+    /// 在这里合并成一个带 <see cref="DockActionOptionOutput.Toggle"/> 的项（开、关各映射到一个 method），
+    /// 前端据此渲染一个 el-switch，其初始/实时状态由 <c>CurrentOn</c> 驱动。合并后「关」指令不再单独返回。
+    /// </para>
+    /// </remarks>
     [HttpGet]
     [ApiDescriptionSettings(Name = "Actions")]
     public async Task<List<DockActionOptionOutput>> Actions([FromQuery] string dockSn)
@@ -204,25 +233,39 @@ public class DjiDockService(
                 .Select(m => m.Method).ToHashSet();
         }
 
-        return ActionMetas.Select(m =>
-        {
-            var reason = state == null ? null : Evaluate(m, state, runningMethods);
+        var result = new List<DockActionOptionOutput>();
 
-            return new DockActionOptionOutput
+        foreach (var m in ActionMetas)
+        {
+            // 开关对的「关」指令不单独产出：它已合并进「开」那一项的 Toggle.OffMethod
+            if (m.Toggle is { Kind: ToggleKind.OnOff, IsOffSide: true })
+                continue;
+
+            var reason = state == null ? null : Evaluate(m, state, runningMethods);
+            var output = BuildActionOutput(m, state, reason);
+
+            // 开关类指令：补上开关语义（开/关映射、当前态、参数值）
+            if (m.Toggle is { Kind: ToggleKind.OnOff } tOn)
             {
-                Method = m.Method,
-                Name = m.Name,
-                Group = m.Group,
-                RiskLevel = m.Risk,
-                RiskName = Desc(m.Risk),
-                NeedConfirm = m.Risk != DockCommandRiskEnum.Normal,
-                Available = reason == null,
-                DisabledReason = reason,
-                Api = m.Api,
-                CurrentValue = state == null ? null : m.Current?.Invoke(state),
-                RequiredFields = FieldsOf(m),
-            };
-        }).ToList();
+                // 双 method（成对指令）找关侧；单 method（同 method 不同参数）找不到关侧
+                var offMeta = ActionMetas.FirstOrDefault(x => x.Toggle is { Kind: ToggleKind.OnOff } to
+                                                               && to.PairKey == tOn.PairKey && to.IsOffSide);
+                output.Toggle = BuildToggleOutput(m, offMeta, state);
+
+                // 开关的「在途」要同时看开、关两个 method：任一在途即整体禁用，防止来回切换
+                var offMethod = offMeta?.Method ?? m.Method;
+                if (reason == null && runningMethods.Count > 0
+                    && (runningMethods.Contains(m.Method) || runningMethods.Contains(offMethod)))
+                {
+                    output.Available = false;
+                    output.DisabledReason = "该开关正在切换中，请等待完成后再试";
+                }
+            }
+
+            result.Add(output);
+        }
+
+        return result;
     }
 
     /// <summary>指令记录分页</summary>
@@ -274,6 +317,28 @@ public class DjiDockService(
         return output;
     }
 
+    /// <summary>
+    /// 清除某机场所有「在途」指令（收口为取消）。
+    /// </summary>
+    /// <remarks>
+    /// <para>解决两类卡死：</para>
+    /// <list type="number">
+    /// <item>指令「回包成功但设备一直不推 <c>events</c> 进度」，永远停在「已下发/执行中」；</item>
+    /// <item>下发后设备迟迟不回包，僵死在「下发中」。</item>
+    /// </list>
+    /// <para>
+    /// 这些记录会让 <see cref="Evaluate"/> 里的「该指令正在执行中」互斥一直生效，
+    /// 用户想重发同类指令也点不动。清除后前端按钮即可恢复可点。
+    /// </para>
+    /// </remarks>
+    [HttpPost]
+    [ApiDescriptionSettings(Name = "ClearRunning")]
+    public async Task<int> ClearRunning([FromBody] DockClearRunningInput input)
+    {
+        var dock = await ResolveDockAsync(input?.DockSn);
+        return await _commandRepository.ClearRunningAsync(dock.Sn);
+    }
+
     /// <summary>机场下拉（含状态与是否有在途指令）</summary>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
@@ -281,13 +346,9 @@ public class DjiDockService(
     {
         input ??= new DockOptionInput();
 
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!input.WorkspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == input.WorkspaceId)
-            .OrderBy(m => m.Nick)
-            .ToListAsync();
+        var bases = await _dockQuery.GetDockOptionsAsync(input.WorkspaceId);
 
-        var dockSns = docks.Select(m => m.Sn).ToList();
+        var dockSns = bases.Select(m => m.Sn).ToList();
         var states = await _dockStateRepository.GetByDockSnsAsync(dockSns);
         var stateMap = states.ToDictionary(m => m.DockSn);
 
@@ -299,10 +360,10 @@ public class DjiDockService(
             .Select(m => m.DockSn)
             .ToListAsync();
 
-        return docks.Select(m =>
+        return bases.Select(m =>
         {
             var modeCode = stateMap.GetValueOrDefault(m.Sn)?.ModeCode;
-            var label = modeCode.HasValue ? Name(modeCode, typeof(DockModeCodeEnum)) : null;
+            var label = modeCode.HasValue ? EnumExtension.Name(modeCode, typeof(DockModeCodeEnum)) : null;
             return new DockOptionOutput
             {
                 Sn = m.Sn,
@@ -312,7 +373,7 @@ public class DjiDockService(
                 ModeCode = modeCode,
                 ModeName = label,
                 HasRunningCommand = runningDocks.Contains(m.Sn),
-                Label = m.Nick.IsNullOrWhiteSpace() ? m.Sn : $"{m.Nick}（{m.Sn}）",
+                Label = m.Label,
             };
         }).ToList();
     }
@@ -386,7 +447,7 @@ public class DjiDockService(
         if (reason != null) throw Oops.Oh(reason);
 
         if (meta.Risk != DockCommandRiskEnum.Normal && !input.Confirm)
-            throw Oops.Oh($"【{meta.Name}】属于「{Desc(meta.Risk)}」操作，请确认后再下发");
+            throw Oops.Oh($"【{meta.Name}】属于「{EnumExtension.Desc(meta.Risk)}」操作，请确认后再下发");
 
         var payload = BuildPayload(meta, input);
 
@@ -482,24 +543,17 @@ public class DjiDockService(
             ? new CloudMqRequest<T>(meta.Method, dock.Sn)
             : new CloudMqRequest<T>(meta.Method, payload, dock.Sn);
 
-        int result;
-        try
-        {
-            var reply = await _publish.PublishWithReplyAsync<T, object>(
-                Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-            result = reply?.Data?.Result ?? -1;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "机场指令无应答：method:{Method}，gateway:{Gateway}", meta.Method, dock.Sn);
-            result = -1;
-        }
+        var result = await _commandPublisher.SendRequestAsync(dock.Sn, request, CommandReplyTimeoutSeconds, meta.Name);
 
         if (result != 0)
         {
             _logger.LogWarning("机场拒绝指令：method:{Method}，gateway:{Gateway}，result:{Result}",
                 meta.Method, dock.Sn, result);
         }
+
+        // 无进度指令（调试模式开关等）没有 events 推送，services_reply 即终态；
+        // 实际是否生效以 OSD mode_code 为准（前端调试标签实时读 OSD，可立即看到）。
+        var settleOnReply = result == 0 && meta.SettleOnReply;
 
         var record = await _commandRepository.CreateAsync(new DjiDockCommand
         {
@@ -510,18 +564,20 @@ public class DjiDockService(
             // 协议要求 bid 唯一且由发送方生成，生成发生在发送方法内部，只能回包后取
             Bid = request.Bid,
             RiskLevel = meta.Risk,
-            Status = result == 0 ? DockTaskStatusEnum.Sent : DockTaskStatusEnum.Failed,
+            Status = result == 0
+                ? (settleOnReply ? DockTaskStatusEnum.Ok : DockTaskStatusEnum.Sent)
+                : DockTaskStatusEnum.Failed,
             PayloadJson = payloadJson,
             Result = result,
-            ErrorMessage = result == 0 ? null : DescribeResult(result),
+            ErrorMessage = result == 0 ? null : CommandPublisher.DescribeResult(result),
             OperatorId = _userManager.UserId,
             OperatorName = _userManager.RealName ?? _userManager.Account,
             CreateTime = DateTime.Now,
-            FinishTime = result == 0 ? null : DateTime.Now,
+            FinishTime = result != 0 || settleOnReply ? DateTime.Now : null,
         });
 
         if (result != 0)
-            throw Oops.Oh($"机场拒绝执行【{meta.Name}】，{DescribeResult(result)}");
+            throw Oops.Oh($"机场拒绝执行【{meta.Name}】，{CommandPublisher.DescribeResult(result)}");
 
         _logger.LogInformation("已下发机场指令：method:{Method}，gateway:{Gateway}，bid:{Bid}，operator:{Operator}",
             meta.Method, dock.Sn, request.Bid, record.OperatorName);
@@ -530,17 +586,6 @@ public class DjiDockService(
         output.DockNick = dock.Nick;
         return output;
     }
-
-    /// <summary>
-    /// 把 <c>services_reply</c> 的返回码翻译成可读说明。
-    /// </summary>
-    /// <remarks>
-    /// 官方对控制类指令的 <c>result</c> 只约定「非 0 代表错误」，<b>没有给出逐指令的错误码字典</b>
-    /// （错误码由设备侧定义、且随固件变化）。因此这里不做猜测式翻译，
-    /// 只在超时（平台内部约定为 -1）时给出明确解释，其余原样带出码值供运维比对。
-    /// </remarks>
-    private static string DescribeResult(int result)
-        => result == -1 ? "设备未在超时时间内回包（指挥链路可能中断）" : $"错误码：{result}";
 
     /// <summary>组装无参 / 带参指令的下发载荷；无参指令返回 null（协议要求 <c>data = null</c>）</summary>
     private static DockCommandPayload BuildPayload(ActionMeta meta, DockCommandExecuteInput input)
@@ -644,11 +689,20 @@ public class DjiDockService(
         if (state.ModeCode == (int)DockModeCodeEnum.FirmwareUpgrading)
             return "机场正在固件升级，升级完成前不可下发任何指令";
 
+        // 远程控制指令要求机场处于「远程调试」模式（设备侧执行时也会先校验 check_work_mode），
+        // 未开启时前置拦截，避免用户白点一次后被设备拒绝。
+        if (meta.RequireDebugMode && state.ModeCode != (int)DockModeCodeEnum.RemoteDebug)
+            return $"机场未开启远程调试（当前为「{state.ModeName ?? "未知"}」），请先「开启远程调试」后再操作";
+
         if (meta.RequireIdle && state.ModeCode != (int)DockModeCodeEnum.Idle)
             return $"机场当前处于「{state.ModeName ?? "非空闲"}」，该操作会打断作业，请等待机场空闲后再试";
 
         if (runningMethods.Contains(meta.Method))
             return "该指令正在执行中，请等待完成后再试";
+
+        // 开关类指令可以双向切换，「已打开/已关闭」这类 Rule 只是按钮时代的防重复提示，
+        // 对开关不构成禁用（当前是开就切到关，反之亦然）；一次性动作按钮仍按 Rule 判断。
+        if (meta.Toggle != null) return null;
 
         return meta.Rule?.Invoke(state);
     }
@@ -661,7 +715,15 @@ public class DjiDockService(
     private async Task<DockStateOutput> BuildStateAsync(Dji.Core.Entity.DjiDevice dock)
     {
         var state = await _dockStateRepository.GetAsync(dock.Sn);
-        var output = MapState(dock, state);
+        // 在线状态统一走 OnlineStateExtension：以 OSD 缓存是否命中为准（0.5Hz 定频、5 秒未上报即离线），
+        // 不依赖分钟级落库的 IsOnline 字段。
+        var output = MapState(dock, state, _cache.IsDockOnline(dock.Sn));
+
+        // 落库快照是分钟级同步的，而控制面板的开关回显与指令门槛都依赖实时状态
+        // （否则「开启远程调试」成功后面板要等落库任务跑完才刷新）。
+        // OSD 缓存命中时，用 0.5Hz 的实时值覆盖快照中的同名字段。
+        var osd = _cache.Get<DockOsd>(dock.Sn.OsdOnline());
+        if (osd != null) ApplyOsd(output, osd);
 
         var alarms = await _hmsRepository.GetActiveAsync(dock.Sn);
         output.ActiveAlarmCount = alarms.Count;
@@ -680,7 +742,7 @@ public class DjiDockService(
     /// 快照可能整行为空（新接入的机场还没上报过 OSD），此时只返回设备侧的基础信息，
     /// 各个状态列留空 —— 前端据 <c>OsdReceivedTime</c> 为空即可提示「尚未上报状态」。
     /// </remarks>
-    private static DockStateOutput MapState(Dji.Core.Entity.DjiDevice dock, DjiDockState state)
+    private static DockStateOutput MapState(Dji.Core.Entity.DjiDevice dock, DjiDockState state, bool isOnline)
     {
         var output = new DockStateOutput
         {
@@ -688,36 +750,36 @@ public class DjiDockService(
             DockNick = dock.Nick,
             Model = dock.Model,
             WorkspaceId = dock.WorkspaceId,
-            IsOnline = dock.IsOnline,
+            IsOnline = isOnline,
         };
 
         if (state == null) return output;
 
         output.ModeCode = state.ModeCode;
-        output.ModeName = Name(state.ModeCode, typeof(DockModeCodeEnum));
+        output.ModeName = EnumExtension.Name(state.ModeCode, typeof(DockModeCodeEnum));
         output.IsIdle = state.ModeCode == (int)DockModeCodeEnum.Idle;
 
         output.FlighttaskStepCode = state.FlighttaskStepCode;
-        output.FlighttaskStepName = Name(state.FlighttaskStepCode, typeof(DockTaskStepEnum));
+        output.FlighttaskStepName = EnumExtension.Name(state.FlighttaskStepCode, typeof(DockTaskStepEnum));
 
         output.CoverState = state.CoverState;
-        output.CoverStateName = Name(state.CoverState, typeof(DockCoverStateEnum));
+        output.CoverStateName = EnumExtension.Name(state.CoverState, typeof(DockCoverStateEnum));
 
         output.PutterState = state.PutterState;
-        output.PutterStateName = Name(state.PutterState, typeof(DockPutterStateEnum));
+        output.PutterStateName = EnumExtension.Name(state.PutterState, typeof(DockPutterStateEnum));
 
         output.DroneInDock = state.DroneInDock;
-        output.DroneInDockName = Name(state.DroneInDock, typeof(DroneInDockEnum));
+        output.DroneInDockName = EnumExtension.Name(state.DroneInDock, typeof(DroneInDockEnum));
 
         output.SupplementLightState = state.SupplementLightState;
         output.AlarmState = state.AlarmState;
 
         output.BatteryStoreMode = state.BatteryStoreMode;
-        output.BatteryStoreModeName = Name(state.BatteryStoreMode, typeof(DockBatteryStoreModeEnum));
+        output.BatteryStoreModeName = EnumExtension.Name(state.BatteryStoreMode, typeof(DockBatteryStoreModeEnum));
 
         output.AirConditionerState = state.AirConditionerState;
         // 注意用「状态」枚举而不是「下发模式」枚举：上报值含 4~15 的过渡态
-        output.AirConditionerStateName = Name(state.AirConditionerState, typeof(DockAirConditionerStateEnum));
+        output.AirConditionerStateName = EnumExtension.Name(state.AirConditionerState, typeof(DockAirConditionerStateEnum));
         output.AirConditionerSwitchTime = state.AirConditionerSwitchTime;
 
         output.DroneChargeState = state.DroneChargeState;
@@ -726,7 +788,7 @@ public class DjiDockService(
         output.SilentMode = state.SilentMode;
 
         output.SdrLinkWorkmode = state.SdrLinkWorkmode;
-        output.SdrLinkWorkmodeName = Name(state.SdrLinkWorkmode, typeof(SdrLinkWorkmodeEnum));
+        output.SdrLinkWorkmodeName = EnumExtension.Name(state.SdrLinkWorkmode, typeof(SdrLinkWorkmodeEnum));
 
         output.FirmwareVersion = state.FirmwareVersion;
         output.FirmwareUpgradeStatus = state.FirmwareUpgradeStatus;
@@ -750,6 +812,93 @@ public class DjiDockService(
         return output;
     }
 
+    /// <summary>
+    /// 用 OSD 缓存的实时值覆盖落库快照（仅覆盖控制面板用到的实时字段，值缺失时保留快照）。
+    /// </summary>
+    /// <remarks>
+    /// 落库快照由分钟级任务同步，直接用它回显开关会出现「指令已成功、面板迟迟不变」的滞后；
+    /// OSD 是 0.5Hz 定频上报的实时真值，命中缓存时以它为准。
+    /// </remarks>
+    private static void ApplyOsd(DockStateOutput output, Cloud.Dto.Device.DockOsd osd)
+    {
+        if (osd.ModeCode.HasValue)
+        {
+            output.ModeCode = osd.ModeCode;
+            output.ModeName = EnumExtension.Name(osd.ModeCode, typeof(DockModeCodeEnum));
+            output.IsIdle = osd.ModeCode == (int)DockModeCodeEnum.Idle;
+        }
+
+        if (osd.FlighttaskStepCode.HasValue)
+        {
+            output.FlighttaskStepCode = osd.FlighttaskStepCode;
+            output.FlighttaskStepName = EnumExtension.Name(osd.FlighttaskStepCode, typeof(DockTaskStepEnum));
+        }
+
+        if (osd.CoverState.HasValue)
+        {
+            output.CoverState = osd.CoverState;
+            output.CoverStateName = EnumExtension.Name(osd.CoverState, typeof(DockCoverStateEnum));
+        }
+
+        if (osd.PutterState.HasValue)
+        {
+            output.PutterState = osd.PutterState;
+            output.PutterStateName = EnumExtension.Name(osd.PutterState, typeof(DockPutterStateEnum));
+        }
+
+        if (osd.DroneInDock.HasValue)
+        {
+            output.DroneInDock = osd.DroneInDock;
+            output.DroneInDockName = EnumExtension.Name(osd.DroneInDock, typeof(DroneInDockEnum));
+        }
+
+        if (osd.SupplementLightState.HasValue) output.SupplementLightState = osd.SupplementLightState;
+        if (osd.AlarmState.HasValue) output.AlarmState = osd.AlarmState;
+
+        if (osd.BatteryStoreMode.HasValue)
+        {
+            output.BatteryStoreMode = osd.BatteryStoreMode;
+            output.BatteryStoreModeName = EnumExtension.Name(osd.BatteryStoreMode, typeof(DockBatteryStoreModeEnum));
+        }
+
+        if (osd.AirConditioner?.AirConditionerState.HasValue == true)
+        {
+            output.AirConditionerState = osd.AirConditioner.AirConditionerState;
+            // 注意用「状态」枚举而不是「下发模式」枚举：上报值含 4~15 的过渡态
+            output.AirConditionerStateName = EnumExtension.Name(osd.AirConditioner.AirConditionerState, typeof(DockAirConditionerStateEnum));
+        }
+        if (osd.AirConditioner?.SwitchTime.HasValue == true) output.AirConditionerSwitchTime = osd.AirConditioner.SwitchTime;
+
+        if (osd.DroneChargeState?.State.HasValue == true) output.DroneChargeState = osd.DroneChargeState.State;
+        if (osd.DroneChargeState?.CapacityPercent.HasValue == true) output.DroneChargePercent = osd.DroneChargeState.CapacityPercent;
+
+        if (osd.EmergencyStopState.HasValue) output.EmergencyStopState = osd.EmergencyStopState;
+        if (osd.SilentMode.HasValue) output.SilentMode = osd.SilentMode;
+
+        if (osd.WirelessLink?.LinkWorkmode.HasValue == true)
+        {
+            output.SdrLinkWorkmode = osd.WirelessLink.LinkWorkmode;
+            output.SdrLinkWorkmodeName = EnumExtension.Name(osd.WirelessLink.LinkWorkmode, typeof(SdrLinkWorkmodeEnum));
+        }
+
+        if (osd.FirmwareUpgradeStatus.HasValue) output.FirmwareUpgradeStatus = osd.FirmwareUpgradeStatus;
+        if (osd.JobNumber.HasValue) output.JobNumber = osd.JobNumber;
+        if (osd.AccTime.HasValue) output.AccTime = osd.AccTime;
+
+        if (osd.Storage?.Total.HasValue == true) output.StorageTotal = osd.Storage.Total;
+        if (osd.Storage?.Used.HasValue == true) output.StorageUsed = osd.Storage.Used;
+
+        if (osd.Temperature.HasValue) output.Temperature = osd.Temperature;
+        if (osd.Humidity.HasValue) output.Humidity = osd.Humidity;
+        if (osd.EnvironmentTemperature.HasValue) output.EnvironmentTemperature = osd.EnvironmentTemperature;
+        if (osd.WindSpeed.HasValue) output.WindSpeed = osd.WindSpeed;
+        if (osd.Rainfall.HasValue) output.Rainfall = osd.Rainfall;
+        if (osd.ElectricSupplyVoltage.HasValue) output.ElectricSupplyVoltage = osd.ElectricSupplyVoltage;
+
+        if (osd.Longitude.HasValue) output.Longitude = osd.Longitude;
+        if (osd.Latitude.HasValue) output.Latitude = osd.Latitude;
+    }
+
     /// <summary>补齐指令记录的可读字段（机场昵称、枚举名、是否进行中）</summary>
     private async Task FillRecordsAsync(List<DockCommandRecordOutput> items)
     {
@@ -757,17 +906,54 @@ public class DjiDockService(
 
         foreach (var item in items)
         {
-            item.RiskName = Desc(item.RiskLevel);
-            item.StatusName = Desc(item.Status);
+            item.RiskName = EnumExtension.Desc(item.RiskLevel);
+            item.StatusName = EnumExtension.Desc(item.Status);
             item.IsRunning = !item.Status.IsFinal();
         }
 
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         if (dockSns.Count == 0) return;
 
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-        var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
         foreach (var item in items) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
+    }
+
+    /// <summary>把一条指令元数据组装成输出项（不含开关语义，开关由调用方补充）</summary>
+    private static DockActionOptionOutput BuildActionOutput(ActionMeta m, DockStateOutput state, string reason)
+        => new()
+        {
+            Method = m.Method,
+            Name = m.Name,
+            Group = m.Group,
+            RiskLevel = m.Risk,
+            RiskName = EnumExtension.Desc(m.Risk),
+            NeedConfirm = m.Risk != DockCommandRiskEnum.Normal,
+            Available = reason == null,
+            DisabledReason = reason,
+            Api = m.Api,
+            CurrentValue = state == null ? null : m.Current?.Invoke(state),
+            RequiredFields = FieldsOf(m),
+        };
+
+    /// <summary>把开/关指令的语义组装成 <see cref="DockToggleOutput"/>。</summary>
+    /// <remarks>
+    /// <paramref name="offMeta"/> 为 null 表示单 method 开关（开、关是同一 method 的不同参数值），
+    /// 此时 <c>OffMethod</c> 与 <c>OnMethod</c> 相同，靠 <c>PayloadField + OnValue/OffValue</c> 区分方向。
+    /// </remarks>
+    private static DockToggleOutput BuildToggleOutput(ActionMeta onMeta, ActionMeta offMeta, DockStateOutput state)
+    {
+        var t = onMeta.Toggle;
+
+        return new DockToggleOutput
+        {
+            Kind = "onOff",
+            OnMethod = onMeta.Method,
+            OffMethod = offMeta?.Method ?? onMeta.Method,
+            CurrentOn = state == null ? null : t.CurrentOn?.Invoke(state),
+            PayloadField = t.PayloadField,
+            OnValue = t.OnValue,
+            OffValue = t.OffValue,
+        };
     }
 
     private static DockCommandRecordOutput ToRecordOutput(DjiDockCommand entity) => new()
@@ -786,36 +972,17 @@ public class DjiDockService(
         OperatorName = entity.OperatorName,
         CreateTime = entity.CreateTime,
         FinishTime = entity.FinishTime,
-        RiskName = Desc(entity.RiskLevel),
-        StatusName = Desc(entity.Status),
+        RiskName = EnumExtension.Desc(entity.RiskLevel),
+        StatusName = EnumExtension.Desc(entity.Status),
         IsRunning = !entity.Status.IsFinal(),
     };
 
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn) ?? throw Oops.Oh($"未找到机场：{dockSn}");
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间");
-
-        return dock;
-    }
+        => await _dockQuery.ResolveDockAsync(dockSn);
 
     #endregion
 
     #region 私有实现 —— 小工具
-
-    /// <summary>取枚举描述；未知取值返回 null 而不是数字串，便于前端判断「设备给了没见过的值」</summary>
-    private static string Name(int? value, Type enumType)
-    {
-        if (!value.HasValue) return null;
-        return enumType.GetEnumDescDictionary().TryGetValue(value.Value, out var label) ? label : null;
-    }
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
 
     /// <summary>把指令所需的额外参数名转成前端可直接识别的 camelCase 列表</summary>
     private static List<string> FieldsOf(ActionMeta meta) => meta.Kind switch
@@ -873,6 +1040,10 @@ public class DjiDockService(
     /// <param name="Risk">风险等级</param>
     /// <param name="Kind">参数形态</param>
     /// <param name="RequireIdle">是否要求机场空闲（true 表示会打断作业）</param>
+    /// <param name="RequireDebugMode">是否要求机场处于「远程调试」模式（远程控制指令的共性前提）</param>
+    /// <param name="SettleOnReply">回包即终态：该指令没有 events 进度推送（如调试模式开关），
+    /// services_reply 按 bid 回来就是机场的最终确认；实际生效以 OSD mode_code 为准</param>
+    /// <param name="Toggle">开关语义（onOff 型填开/关配对）；为 null 表示一次性动作按钮</param>
     /// <param name="Api">命中的接口名（特殊指令走独立接口）</param>
     /// <param name="Current">取当前值（用于前端回显）</param>
     /// <param name="Rule">专属可用性规则，返回禁用原因或 null</param>
@@ -883,9 +1054,57 @@ public class DjiDockService(
         DockCommandRiskEnum Risk,
         ParamKind Kind,
         bool RequireIdle = false,
+        bool RequireDebugMode = false,
+        bool SettleOnReply = false,
+        ToggleMeta Toggle = null,
         string Api = "Execute",
         Func<DockStateOutput, int?> Current = null,
         Func<DockStateOutput, string> Rule = null);
+
+    /// <summary>开关类型</summary>
+    private enum ToggleKind
+    {
+        /// <summary>二态开关（开/关）</summary>
+        OnOff,
+    }
+
+    /// <summary>
+    /// 开关类指令的语义描述（内部元数据）。
+    /// </summary>
+    /// <remarks>
+    /// <para>两种形态：</para>
+    /// <list type="bullet">
+    /// <item><b>双 method</b>（<see cref="OnOff(string,bool,Func{DockStateOutput,bool?})"/>）：
+    /// 开、关是两个独立 method（如 cover_open / cover_close），无参下发；</item>
+    /// <item><b>单 method + 参数</b>（<see cref="OnOffSingle"/>）：
+    /// 开、关是同一个 method 的不同参数值（如 alarm_state_switch 的 action=1/0）。</item>
+    /// </list>
+    /// </remarks>
+    /// <param name="Kind">开关类型</param>
+    /// <param name="PairKey">配对键：开/关两条指令共用同一键，用于在字典里互相查找</param>
+    /// <param name="IsOffSide">是否为「关」那一侧（关侧不单独产出，合并进开侧）</param>
+    /// <param name="PayloadField">单 method 开关要携带的参数字段名（如 <c>action</c> / <c>linkWorkmode</c>）；双 method 为 null</param>
+    /// <param name="OnValue">「开」对应的参数字段值</param>
+    /// <param name="OffValue">「关」对应的参数字段值</param>
+    /// <param name="CurrentOn">由 OSD 状态判定当前是否「开」（null = 状态未知，前端置灰）</param>
+    private sealed record ToggleMeta(
+        ToggleKind Kind,
+        string PairKey,
+        bool IsOffSide,
+        string PayloadField,
+        int? OnValue,
+        int? OffValue,
+        Func<DockStateOutput, bool?> CurrentOn)
+    {
+        /// <summary>双 method 开/关开关（无参下发）</summary>
+        public static ToggleMeta OnOff(string pairKey, bool isOffSide, Func<DockStateOutput, bool?> currentOn = null)
+            => new(ToggleKind.OnOff, pairKey, isOffSide, null, null, null, currentOn);
+
+        /// <summary>单 method + 参数值的开关</summary>
+        public static ToggleMeta OnOffSingle(string pairKey, string payloadField, int onValue, int offValue,
+            Func<DockStateOutput, bool?> currentOn = null)
+            => new(ToggleKind.OnOff, pairKey, false, payloadField, onValue, offValue, currentOn);
+    }
 
     #endregion
 }

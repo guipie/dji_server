@@ -82,6 +82,7 @@ public static class DjiApplicationSetup
 
                 foreach (var attr in attrs)
                 {
+                    Console.WriteLine($"[MQTT] 订阅Topic： {attr.Topic}， 方法：{attr.Method}");
                     moduleManage.AddModule(new SubscriptionModel
                     {
                         Topic = attr.Topic,

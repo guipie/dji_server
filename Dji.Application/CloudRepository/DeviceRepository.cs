@@ -33,8 +33,19 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
     /// <summary>设备档案缓存时长</summary>
     private static readonly TimeSpan DeviceCacheTtl = TimeSpan.FromSeconds(60);
 
-    /// <summary>机场 OSD 缓存时长；超过该时长未上报即视为离线</summary>
-    private static readonly TimeSpan DockOsdTtl = TimeSpan.FromSeconds(60);
+    /// <summary>
+    /// 机场 OSD 缓存时长。
+    /// </summary>
+    /// <remarks>
+    /// OSD 为 0.5Hz 定频上报（每 2 秒一帧）。历史上设 5 秒用于「超过 5 秒未上报即离线」，
+    /// 但 5 秒与 2 秒周期之间的余量只有 3 秒，叠加后台 OSD 队列串行消费 + 全局分发锁 +
+    /// 快照写库的延迟后，会频繁撞上「缓存刚过期、新帧尚未写入」的空窗：
+    /// 此时控制面板回读拿不到 OSD，退回分钟级落库快照里的旧 mode_code（如 idle=0），
+    /// 造成「刷新 10 次，有时是调试模式、有时是空闲」的随机跳变。
+    /// 放宽到 15 秒（约 7.5 个上报周期），离线判定的容错依然足够（连续 7 个周期无上报才判离线），
+    /// 同时几乎消除空窗。真正的离线仍由 <c>offline</c> 事件即时落库，不依赖此 TTL。
+    /// </remarks>
+    private static readonly TimeSpan DockOsdTtl = TimeSpan.FromSeconds(15);
 
     /// <summary>飞行器 OSD 缓存时长（上报频率远高于机场）</summary>
     private static readonly TimeSpan DroneOsdTtl = TimeSpan.FromSeconds(10);
@@ -107,7 +118,11 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
     /// <summary>
     /// 按 SN 幂等写入设备。
     /// </summary>
-    /// <remarks>用 Storageable + WhereColumns(Sn) 代替裸 Insert，避免设备并发上线时撞唯一索引。</remarks>
+    /// <remarks>
+    /// 用 Storageable + WhereColumns(Sn) 代替裸 Insert，避免设备并发上线时撞唯一索引。
+    /// SQLite 是单写者模型，连接串已开启 Default Timeout=30 让写锁忙时等待；
+    /// 这里再做一次降级重试，避免极端并发下撞锁后降级更新又撞一次锁。
+    /// </remarks>
     private async Task UpsertDeviceAsync(DjiDevice device)
     {
         if (device == null || device.Sn.IsNullOrWhiteSpace()) return;
@@ -119,7 +134,17 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         {
             // 并发场景下可能仍撞唯一索引，此处降级为更新，保证不因重复上报而丢数据
             _logger.LogWarning(ex, "设备写入冲突，降级为更新，sn:{Sn}", device.Sn);
-            await _deviceRes.AsUpdateable(device).Where(m => m.Sn == device.Sn).ExecuteCommandAsync();
+            try
+            {
+                await _deviceRes.AsUpdateable(device).Where(m => m.Sn == device.Sn).ExecuteCommandAsync();
+            }
+            catch (Exception updateEx)
+            {
+                // 极端并发下更新也可能撞写锁，等 300ms 再试一次
+                _logger.LogWarning(updateEx, "设备更新冲突，300ms 后重试，sn:{Sn}", device.Sn);
+                await Task.Delay(300);
+                await _deviceRes.AsUpdateable(device).Where(m => m.Sn == device.Sn).ExecuteCommandAsync();
+            }
         }
     }
 
@@ -230,6 +255,11 @@ internal class DeviceRepository(SqlSugarRepository<DjiDevice> sugarRepository, S
         MarkOnline(dock, DateTime.Now);
         _sysCache.Set(dockSn.OsdOnline(), dockOsd, DockOsdTtl);
         CacheDevice(dock);
+
+        // 诊断：打印每帧 OSD 的 mode_code，用于排查「刷新时有时调试模式有时空闲」的随机跳变。
+        // 若此处 mode_code 稳定为 2（远程调试）而前端仍随机跳变，则问题在缓存/读取链路；反之则是设备上报本身在波动。
+        _logger.LogDebug("机场 OSD 收到，sn:{DockSn}，mode_code:{ModeCode}，cover_state:{CoverState}",
+            dockSn, dockOsd.ModeCode, dockOsd.CoverState);
     }
 
     /// <summary>

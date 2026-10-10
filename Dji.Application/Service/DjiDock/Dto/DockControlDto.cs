@@ -7,6 +7,7 @@
 // 软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、适用性和非侵权的保证。
 // 在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
+using Dji.Application.Service.Common;
 using Dji.Core.Enum.DjiEnum.Dock;
 
 namespace Dji.Application.Service.DjiDock.Dto;
@@ -95,6 +96,14 @@ public class DockRtkCalibrationInput
     public bool Confirm { get; set; }
 }
 
+/// <summary>清除某机场在途指令入参</summary>
+public class DockClearRunningInput
+{
+    /// <summary>目标机场 SN</summary>
+    [Required(ErrorMessage = "机场 SN 不能为空")]
+    public string DockSn { get; set; }
+}
+
 /// <summary>机场控制指令记录查询</summary>
 public class DockCommandSearchInput : BasePageInput
 {
@@ -115,13 +124,6 @@ public class DockCommandSearchInput : BasePageInput
 
     /// <summary>时间范围终点</summary>
     public DateTime? EndTime { get; set; }
-}
-
-/// <summary>机场下拉查询</summary>
-public class DockOptionInput
-{
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
 }
 
 /// <summary>机场控制面板状态输出</summary>
@@ -316,6 +318,42 @@ public class DockActionOptionOutput
 
     /// <summary>需要用户额外填写的参数名（如 <c>action</c> / <c>imei</c>），为空表示无参</summary>
     public List<string> RequiredFields { get; set; } = [];
+
+    /// <summary>
+    /// 开关语义描述；为 null 表示该指令是一次性动作（按钮形态），非开关。
+    /// </summary>
+    /// <remarks>
+    /// 开关类指令（舱盖 / 充电 / 补光灯 / 声光报警 / 电池保养 / 调试模式 / 飞行器开关机 / 增强图传）
+    /// 用一对 method 表达开与关，前端据此渲染一个 el-switch，初始/实时状态由 <see cref="CurrentOn"/> 驱动。
+    /// </remarks>
+    public DockToggleOutput Toggle { get; set; }
+}
+
+/// <summary>
+/// 开关类指令的语义描述（供前端渲染 switch）。
+/// </summary>
+public class DockToggleOutput
+{
+    /// <summary>开关类型：<c>onOff</c> 二态开关 / <c>enum</c> 多档选择</summary>
+    public string Kind { get; set; }
+
+    /// <summary>当前「关」时，切到「开」要下发的 method（onOff 用）</summary>
+    public string OnMethod { get; set; }
+
+    /// <summary>当前「开」时，切到「关」要下发的 method（onOff 用）</summary>
+    public string OffMethod { get; set; }
+
+    /// <summary>当前是否处于「开」（onOff 用；null 表示 OSD 尚未上报、状态未知，前端置灰）</summary>
+    public bool? CurrentOn { get; set; }
+
+    /// <summary>切换开关时要携带的参数字段名与值（如声光报警/电池保养的 <c>action</c>）</summary>
+    public string PayloadField { get; set; }
+
+    /// <summary>「开」对应的参数字段值（onOff 且需带参时用，如 <c>action=1</c>）</summary>
+    public int? OnValue { get; set; }
+
+    /// <summary>「关」对应的参数字段值（onOff 且需带参时用，如 <c>action=0</c>）</summary>
+    public int? OffValue { get; set; }
 }
 
 /// <summary>
@@ -383,21 +421,9 @@ public class DockCommandRecordOutput
     public DateTime? FinishTime { get; set; }
 }
 
-/// <summary>机场下拉项</summary>
-public class DockOptionOutput
+/// <summary>机场下拉项（继承公共基础字段，仅补充控制面板特有的状态列）</summary>
+public class DockOptionOutput : DockOptionBase
 {
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场昵称</summary>
-    public string Nick { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
     /// <summary>机场状态码</summary>
     public int? ModeCode { get; set; }
 
@@ -406,9 +432,6 @@ public class DockOptionOutput
 
     /// <summary>是否正在执行指令</summary>
     public bool HasRunningCommand { get; set; }
-
-    /// <summary>显示文本</summary>
-    public string Label { get; set; }
 }
 
 /// <summary>通用枚举字典项（状态 / 风险等级等下拉用）</summary>

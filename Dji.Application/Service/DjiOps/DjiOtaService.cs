@@ -14,6 +14,7 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Dock;
 using Dji.Core.Enum.DjiEnum.Ops;
 using Dji.JsonSerialization;
@@ -46,8 +47,9 @@ public class DjiOtaService(
     SqlSugarRepository<DjiOtaTask> taskRep,
     DjiOtaRepository otaRepository,
     DjiDockStateRepository dockStateRepository,
-    MqttGatewayPublish publish,
     UserManager userManager,
+    DockQueryService dockQuery,
+    CommandPublisher commandPublisher,
     ILogger<DjiOtaService> logger) : IDynamicApiController, ITransient
 {
     /// <summary>下发回包等待时长（固件升级指令要先做本地一致性检查，响应偏慢）</summary>
@@ -57,8 +59,9 @@ public class DjiOtaService(
     private readonly SqlSugarRepository<DjiOtaTask> _taskRep = taskRep;
     private readonly DjiOtaRepository _otaRepository = otaRepository;
     private readonly DjiDockStateRepository _dockStateRepository = dockStateRepository;
-    private readonly MqttGatewayPublish _publish = publish;
     private readonly UserManager _userManager = userManager;
+    private readonly DockQueryService _dockQuery = dockQuery;
+    private readonly CommandPublisher _commandPublisher = commandPublisher;
     private readonly ILogger<DjiOtaService> _logger = logger;
 
     #region 查询
@@ -304,7 +307,7 @@ public class DjiOtaService(
                 if (item.FileUrl.IsNullOrWhiteSpace() || item.Md5.IsNullOrWhiteSpace()
                     || item.FileSize is null or <= 0 || item.FileName.IsNullOrWhiteSpace())
                 {
-                    throw Oops.Oh($"设备 {sn} 选择「{Desc(item.UpgradeType)}」时，必须提供固件包的下载地址、MD5、大小与文件名");
+                    throw Oops.Oh($"设备 {sn} 选择「{EnumExtension.Desc(item.UpgradeType)}」时，必须提供固件包的下载地址、MD5、大小与文件名");
                 }
             }
 
@@ -350,7 +353,7 @@ public class DjiOtaService(
             DevicesJson = JSON.Serialize(devices),
             Status = result == 0 ? OtaTaskStatusEnum.Sending : OtaTaskStatusEnum.Failed,
             Result = result,
-            ErrorMessage = result == 0 ? null : DescribeResult(result),
+            ErrorMessage = result == 0 ? null : CommandPublisher.DescribeResult(result),
             OperatorId = _userManager.UserId,
             OperatorName = _userManager.RealName ?? _userManager.Account,
             CreateTime = DateTime.Now,
@@ -358,7 +361,7 @@ public class DjiOtaService(
         });
 
         if (result != 0)
-            throw Oops.Oh($"机场拒绝固件升级，{DescribeResult(result)}");
+            throw Oops.Oh($"机场拒绝固件升级，{CommandPublisher.DescribeResult(result)}");
 
         _logger.LogInformation("已下发固件升级：gateway:{Gateway}，devices:{Devices}，version:{Version}，bid:{Bid}",
             dock.Sn, task.DeviceSns, task.TargetVersion, request.Bid);
@@ -373,9 +376,9 @@ public class DjiOtaService(
     #region 私有实现
 
     /// <summary>升级前置条件校验（不满足则抛业务异常，异常文案即可直接展示给运维）</summary>
-    private static void EnsureUpgradable(Dji.Core.Entity.DjiDevice dock, DjiDockState state)
+    private void EnsureUpgradable(Dji.Core.Entity.DjiDevice dock, DjiDockState state)
     {
-        if (!dock.IsOnline) throw Oops.Oh("机场离线，无法下发固件升级");
+        if (!_dockQuery.IsDockOnline(dock.Sn)) throw Oops.Oh("机场离线，无法下发固件升级");
 
         if (state == null)
             throw Oops.Oh("尚未收到机场上报的状态，暂时无法判断能否升级，请稍后重试");
@@ -387,40 +390,11 @@ public class DjiOtaService(
             throw Oops.Oh("机场当前正在固件升级中，请等待完成");
 
         if (state.ModeCode != (int)DockModeCodeEnum.Idle)
-            throw Oops.Oh($"机场当前处于「{Name(state.ModeCode, typeof(DockModeCodeEnum)) ?? "非空闲"}」，固件升级需要机场空闲");
+            throw Oops.Oh($"机场当前处于「{EnumExtension.Name(state.ModeCode, typeof(DockModeCodeEnum)) ?? "非空闲"}」，固件升级需要机场空闲");
     }
 
     private async Task<int> SendAsync<T>(string dockSn, CloudMqRequest<T> request)
-    {
-        try
-        {
-            var reply = await _publish.PublishWithReplyAsync<T, object>(
-                Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-
-            var result = reply?.Data?.Result ?? -1;
-            if (result != 0)
-            {
-                _logger.LogWarning("机场拒绝固件升级：gateway:{Gateway}，result:{Result}", dockSn, result);
-            }
-
-            return result;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "固件升级指令无应答：gateway:{Gateway}", dockSn);
-            return -1;
-        }
-    }
-
-    /// <summary>
-    /// 把 <c>services_reply</c> 的返回码翻译成可读说明。
-    /// </summary>
-    /// <remarks>
-    /// 官方对 <c>ota_create</c> 只约定「非 0 代表错误」，未公开逐错误码的字典，
-    /// 因此不做猜测式翻译；超时（平台内部约定为 -1）单独给出明确解释。
-    /// </remarks>
-    private static string DescribeResult(int result)
-        => result == -1 ? "设备未在超时时间内回包（指挥链路可能中断）" : $"错误码：{result}";
+        => await _commandPublisher.SendRequestAsync(dockSn, request, CommandReplyTimeoutSeconds, "固件升级");
 
     /// <summary>填充派生字段（机场昵称、枚举名、设备明细）</summary>
     private async Task FillAsync(List<OtaTaskOutput> items)
@@ -429,8 +403,8 @@ public class DjiOtaService(
 
         foreach (var item in items)
         {
-            item.StatusName = Desc(item.Status);
-            item.UpgradeTypeName = Desc(item.UpgradeType);
+            item.StatusName = EnumExtension.Desc(item.Status);
+            item.UpgradeTypeName = EnumExtension.Desc(item.UpgradeType);
             item.CurrentStepName = OtaStepResolver.Label(item.CurrentStep);
             item.IsRunning = !item.Status.IsFinal();
             item.ScopeName = (item.IncludeDock, item.IncludeDrone) switch
@@ -542,33 +516,14 @@ public class DjiOtaService(
         OperatorName = entity.OperatorName,
         CreateTime = entity.CreateTime,
         FinishTime = entity.FinishTime,
-        StatusName = Desc(entity.Status),
-        UpgradeTypeName = Desc(entity.UpgradeType),
+        StatusName = EnumExtension.Desc(entity.Status),
+        UpgradeTypeName = EnumExtension.Desc(entity.UpgradeType),
         CurrentStepName = OtaStepResolver.Label(entity.CurrentStep),
         IsRunning = !entity.Status.IsFinal(),
     };
 
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn) ?? throw Oops.Oh($"未找到机场：{dockSn}");
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间");
-
-        return dock;
-    }
-
-    /// <summary>取枚举描述；未知取值返回 null</summary>
-    private static string Name(int? value, Type enumType)
-    {
-        if (!value.HasValue) return null;
-        return enumType.GetEnumDescDictionary().TryGetValue(value.Value, out var label) ? label : null;
-    }
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
+        => await _dockQuery.ResolveDockAsync(dockSn);
 
     #endregion
 }

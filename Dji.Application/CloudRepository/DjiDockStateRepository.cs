@@ -35,9 +35,11 @@ namespace Dji.Application.CloudRepository;
 /// </remarks>
 public class DjiDockStateRepository(
     SqlSugarRepository<DjiDockState> stateRes,
+    ISqlSugarClient db,
     ILogger<DjiDockStateRepository> logger) : BaseRepository
 {
     private readonly SqlSugarRepository<DjiDockState> _stateRes = stateRes;
+    private readonly ISqlSugarClient _db = db.AsTenant().GetConnectionScope(SqlSugarConst.MainConfigId);
     private readonly ILogger<DjiDockStateRepository> _logger = logger;
 
     /// <summary>
@@ -82,114 +84,94 @@ public class DjiDockStateRepository(
         var positionStateJson = SafeSerialize(osd.PositionState);
         var networkStateJson = SafeSerialize(osd.NetworkState);
 
-        var existing = await _stateRes.GetFirstAsync(m => m.DockSn == dockSn);
-        if (existing == null)
-        {
-            var entity = new DjiDockState
-            {
-                DockSn = dockSn,
-                OsdJson = json,
-                ModeCode = osd.ModeCode,
-                FlighttaskStepCode = osd.FlighttaskStepCode,
-                CoverState = osd.CoverState,
-                PutterState = osd.PutterState,
-                DroneInDock = osd.DroneInDock,
-                SupplementLightState = osd.SupplementLightState,
-                BatteryStoreMode = osd.BatteryStoreMode,
-                AlarmState = osd.AlarmState,
-                AirConditionerState = osd.AirConditioner?.AirConditionerState,
-                AirConditionerSwitchTime = osd.AirConditioner?.SwitchTime,
-                DroneChargeState = osd.DroneChargeState?.State,
-                DroneChargePercent = osd.DroneChargeState?.CapacityPercent,
-                EmergencyStopState = osd.EmergencyStopState,
-                SilentMode = osd.SilentMode,
-                SdrLinkWorkmode = osd.WirelessLink?.LinkWorkmode,
-                FirmwareVersion = osd.FirmwareVersion,
-                FirmwareUpgradeStatus = osd.FirmwareUpgradeStatus,
-                SubDeviceJson = subDeviceJson,
-                PositionStateJson = positionStateJson,
-                NetworkStateJson = networkStateJson,
-                JobNumber = osd.JobNumber,
-                AccTime = osd.AccTime,
-                StorageTotal = osd.Storage?.Total,
-                StorageUsed = osd.Storage?.Used,
-                Temperature = osd.Temperature,
-                Humidity = osd.Humidity,
-                EnvironmentTemperature = osd.EnvironmentTemperature,
-                WindSpeed = osd.WindSpeed,
-                Rainfall = osd.Rainfall,
-                ElectricSupplyVoltage = osd.ElectricSupplyVoltage,
-                WorkingVoltage = osd.WorkingVoltage,
-                WorkingCurrent = osd.WorkingCurrent,
-                Longitude = osd.Longitude,
-                Latitude = osd.Latitude,
-                Height = osd.Height,
-                OsdTimestamp = timestamp,
-                OsdReceivedTime = now,
-            };
+        // 先取到局部变量：SqlSugar 的表达式树对 ?. 的翻译不可靠，
+        // 而 OSD 的子结构（空调 / 充电 / 图传 / 存储）在部分固件上确实可能整段缺失。
+        var airState = osd.AirConditioner?.AirConditionerState;
+        var airSwitchTime = osd.AirConditioner?.SwitchTime;
+        var chargeState = osd.DroneChargeState?.State;
+        var chargePercent = osd.DroneChargeState?.CapacityPercent;
+        var linkWorkmode = osd.WirelessLink?.LinkWorkmode;
+        var storageTotal = (long?)osd.Storage?.Total;
+        var storageUsed = (long?)osd.Storage?.Used;
 
-            await _stateRes.InsertAsync(entity);
-        }
-        else
+        var entity = new DjiDockState
         {
-            // 先取到局部变量：SqlSugar 的表达式树对 ?. 的翻译不可靠，
-            // 而 OSD 的子结构（空调 / 充电 / 图传 / 存储）在部分固件上确实可能整段缺失。
-            var airState = osd.AirConditioner?.AirConditionerState;
-            var airSwitchTime = osd.AirConditioner?.SwitchTime;
-            var chargeState = osd.DroneChargeState?.State;
-            var chargePercent = osd.DroneChargeState?.CapacityPercent;
-            var linkWorkmode = osd.WirelessLink?.LinkWorkmode;
-            var storageTotal = (long?)osd.Storage?.Total;
-            var storageUsed = (long?)osd.Storage?.Used;
+            DockSn = dockSn,
+            OsdJson = json,
+            ModeCode = osd.ModeCode,
+            FlighttaskStepCode = osd.FlighttaskStepCode,
+            CoverState = osd.CoverState,
+            PutterState = osd.PutterState,
+            DroneInDock = osd.DroneInDock,
+            SupplementLightState = osd.SupplementLightState,
+            BatteryStoreMode = osd.BatteryStoreMode,
+            AlarmState = osd.AlarmState,
+            AirConditionerState = airState,
+            AirConditionerSwitchTime = airSwitchTime,
+            DroneChargeState = chargeState,
+            DroneChargePercent = chargePercent,
+            EmergencyStopState = osd.EmergencyStopState,
+            SilentMode = osd.SilentMode,
+            SdrLinkWorkmode = linkWorkmode,
+            FirmwareVersion = osd.FirmwareVersion,
+            FirmwareUpgradeStatus = osd.FirmwareUpgradeStatus,
+            SubDeviceJson = subDeviceJson,
+            PositionStateJson = positionStateJson,
+            NetworkStateJson = networkStateJson,
+            JobNumber = osd.JobNumber,
+            AccTime = osd.AccTime,
+            StorageTotal = storageTotal,
+            StorageUsed = storageUsed,
+            Temperature = osd.Temperature,
+            Humidity = osd.Humidity,
+            EnvironmentTemperature = osd.EnvironmentTemperature,
+            WindSpeed = osd.WindSpeed,
+            Rainfall = osd.Rainfall,
+            ElectricSupplyVoltage = osd.ElectricSupplyVoltage,
+            WorkingVoltage = osd.WorkingVoltage,
+            WorkingCurrent = osd.WorkingCurrent,
+            Longitude = osd.Longitude,
+            Latitude = osd.Latitude,
+            Height = osd.Height,
+            OsdTimestamp = timestamp,
+            OsdReceivedTime = now,
+        };
 
-            await _stateRes.AsUpdateable()
-                .SetColumns(m => new DjiDockState
-                {
-                    OsdJson = json,
-                    ModeCode = osd.ModeCode,
-                    FlighttaskStepCode = osd.FlighttaskStepCode,
-                    CoverState = osd.CoverState,
-                    PutterState = osd.PutterState,
-                    DroneInDock = osd.DroneInDock,
-                    SupplementLightState = osd.SupplementLightState,
-                    BatteryStoreMode = osd.BatteryStoreMode,
-                    AlarmState = osd.AlarmState,
-                    AirConditionerState = airState,
-                    AirConditionerSwitchTime = airSwitchTime,
-                    DroneChargeState = chargeState,
-                    DroneChargePercent = chargePercent,
-                    EmergencyStopState = osd.EmergencyStopState,
-                    SilentMode = osd.SilentMode,
-                    SdrLinkWorkmode = linkWorkmode,
-                    FirmwareVersion = osd.FirmwareVersion,
-                    FirmwareUpgradeStatus = osd.FirmwareUpgradeStatus,
-                    SubDeviceJson = subDeviceJson,
-                    PositionStateJson = positionStateJson,
-                    NetworkStateJson = networkStateJson,
-                    JobNumber = osd.JobNumber,
-                    AccTime = osd.AccTime,
-                    StorageTotal = storageTotal,
-                    StorageUsed = storageUsed,
-                    Temperature = osd.Temperature,
-                    Humidity = osd.Humidity,
-                    EnvironmentTemperature = osd.EnvironmentTemperature,
-                    WindSpeed = osd.WindSpeed,
-                    Rainfall = osd.Rainfall,
-                    ElectricSupplyVoltage = osd.ElectricSupplyVoltage,
-                    WorkingVoltage = osd.WorkingVoltage,
-                    WorkingCurrent = osd.WorkingCurrent,
-                    Longitude = osd.Longitude,
-                    Latitude = osd.Latitude,
-                    Height = osd.Height,
-                    OsdTimestamp = timestamp,
-                    OsdReceivedTime = now,
-                })
-                .Where(m => m.DockSn == dockSn)
-                .ExecuteCommandAsync();
-        }
+        await UpsertStateAsync(entity);
 
         _fingerprints[dockSn] = (fingerprint, now);
         return true;
+    }
+
+    /// <summary>
+    /// 按 DockSn 幂等写入快照（存在则更新、不存在则插入）。
+    /// </summary>
+    /// <remarks>
+    /// 用 Storageable + WhereColumns(DockSn) 代替「先查后插」，避免并发首次上报时
+    /// 多个线程同时判定不存在、都走 Insert 撞唯一索引（TOCTOU），也避免 SQLite 单写者模型下的写锁竞争。
+    /// 连接串已开启 Default Timeout=30 让写锁忙时等待，这里再兜底一层重试。
+    /// </remarks>
+    private async Task UpsertStateAsync(DjiDockState entity)
+    {
+        try
+        {
+            await _db.Storageable(entity).WhereColumns(m => m.DockSn).ToStorage().AsInsertable.ExecuteCommandAsync();
+        }
+        catch (Exception ex)
+        {
+            // 极端并发下仍可能撞唯一索引或写锁，降级为更新，再失败则短重试一次
+            _logger.LogWarning(ex, "机场快照写入冲突，降级为更新，dockSn:{DockSn}", entity.DockSn);
+            try
+            {
+                await _stateRes.AsUpdateable(entity).Where(m => m.DockSn == entity.DockSn).ExecuteCommandAsync();
+            }
+            catch (Exception updateEx)
+            {
+                _logger.LogWarning(updateEx, "机场快照更新冲突，300ms 后重试，dockSn:{DockSn}", entity.DockSn);
+                await Task.Delay(300);
+                await _stateRes.AsUpdateable(entity).Where(m => m.DockSn == entity.DockSn).ExecuteCommandAsync();
+            }
+        }
     }
 
     /// <summary>取机场快照（控制面板用）</summary>

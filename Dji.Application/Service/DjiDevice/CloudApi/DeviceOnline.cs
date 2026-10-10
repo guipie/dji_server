@@ -39,6 +39,8 @@ public partial class DjiDeviceCloudService
         var snapshots = new List<DockOnlineSnapshot>(docks.Count);
         foreach (var dock in docks)
         {
+            // 在线状态统一走 OnlineStateExtension（以 OSD 缓存命中为准）
+            var osd = _cache.Get<DockOsd>(dock.Sn.OsdOnline());
             snapshots.Add(new DockOnlineSnapshot
             {
                 Sn = dock.Sn,
@@ -47,10 +49,9 @@ public partial class DjiDeviceCloudService
                 WorkspaceId = dock.WorkspaceId,
                 Longitude = dock.Longitude,
                 Latitude = dock.Latitude,
-                IsOnline = dock.IsOnline,
+                IsOnline = _cache.IsDockOnline(dock.Sn),
                 LastOnlineTime = dock.LastOnlineTime,
-                // OSD 缓存 TTL 为 60 秒，命中即视为在线并返回实时快照
-                Osd = _cache.Get<DockOsd>(dock.Sn.OsdOnline()),
+                Osd = osd,
             });
         }
 

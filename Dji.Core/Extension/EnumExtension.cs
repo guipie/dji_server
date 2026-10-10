@@ -159,6 +159,40 @@ public static class EnumExtension
     }
 
     /// <summary>
+    /// 获取枚举的 <c>[Description]</c>。
+    /// </summary>
+    /// <remarks>
+    /// <para>
+    /// 统一入口：项目同时引入 <c>Dji.Core.EnumExtension</c> 与 <c>NewLife.EnumHelper</c>，
+    /// 两者都提供同名 <c>GetDescription</c> 扩展方法，直接写扩展语法会触发 CS0121 二义性。
+    /// 各 Service 因此各自抄了一份 <c>Desc&lt;T&gt;</c> 私有包装 —— 现收敛为这一处静态方法，
+    /// 业务代码调用 <c>EnumExtension.Desc(value)</c> 即可，不再各自维护。
+    /// </para>
+    /// </remarks>
+    public static string Desc<T>(T value) where T : struct, System.Enum
+        => value.GetDescription();
+
+    /// <summary>
+    /// 取枚举描述；无描述时回退到枚举名（用于希望「永远有可读文本」的场景，如直播清晰度标签）。
+    /// </summary>
+    public static string DescOrName<T>(T value) where T : struct, System.Enum
+        => value.GetDescription() ?? value.ToString();
+
+    /// <summary>
+    /// 按枚举<b>数值</b>取描述；未知取值返回 <c>null</c> 而不是数字串。
+    /// </summary>
+    /// <remarks>
+    /// 返回 null 是为了让前端区分「设备给了没见过的值」与「本身就是空」——
+    /// 设备上报的枚举值可能领先于本平台的枚举定义（固件更新后新增取值）。
+    /// 收敛各 Service 里重复的 <c>Name(int?, Type)</c> 私有方法。
+    /// </remarks>
+    public static string Name(int? value, Type enumType)
+    {
+        if (!value.HasValue) return null;
+        return enumType.GetEnumDescDictionary().TryGetValue(value.Value, out var label) ? label : null;
+    }
+
+    /// <summary>
     /// 获取枚举的Description
     /// </summary>
     /// <param name="value"></param>

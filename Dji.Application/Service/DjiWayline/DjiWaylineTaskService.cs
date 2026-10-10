@@ -11,6 +11,7 @@ using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Dto.Wayline;
 using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiWayline.Dto;
 using Dji.Core.Enum.DjiEnum.Wayline;
 using System.Linq;
@@ -57,6 +58,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
     private readonly WaylineKmzResolver _kmzResolver;
     private readonly MqttGatewayPublish _publish;
     private readonly UserManager _userManager;
+    private readonly DockQueryService _dockQuery;
     private readonly ILogger<DjiWaylineTaskService> _logger;
 
     public DjiWaylineTaskService(
@@ -67,6 +69,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
         WaylineKmzResolver kmzResolver,
         MqttGatewayPublish publish,
         UserManager userManager,
+        DockQueryService dockQuery,
         ILogger<DjiWaylineTaskService> logger)
     {
         _taskRep = taskRep;
@@ -76,6 +79,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
         _kmzResolver = kmzResolver;
         _publish = publish;
         _userManager = userManager;
+        _dockQuery = dockQuery;
         _logger = logger;
     }
 
@@ -210,15 +214,11 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
     [ApiDescriptionSettings(Name = "DockOptions")]
     public async Task<List<DockOptionOutput>> DockOptions([FromQuery] string workspaceId)
     {
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!workspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == workspaceId)
-            .OrderBy(m => m.Sn)
-            .ToListAsync();
-        if (docks.Count == 0) return [];
+        var bases = await _dockQuery.GetDockOptionsAsync(workspaceId);
+        if (bases.Count == 0) return [];
 
         // 一次性取出这些机场的未结束任务，避免逐个机场查库产生 N+1
-        var dockSns = docks.Select(m => m.Sn).ToList();
+        var dockSns = bases.Select(m => m.Sn).ToList();
         string[] active =
         [
             WaylineJobStatus.Sent, WaylineJobStatus.Ready,
@@ -228,7 +228,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
             .Where(m => dockSns.Contains(m.DockSn) && active.Contains(m.Status))
             .ToListAsync();
 
-        return docks.Select(dock =>
+        return bases.Select(dock =>
         {
             var busy = busyTasks.FirstOrDefault(m => m.DockSn == dock.Sn);
             return new DockOptionOutput
@@ -416,17 +416,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
 
     /// <summary>校验机场</summary>
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("执行机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn)
-                   ?? throw Oops.Oh($"未找到机场：{dockSn}");
-
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备，无法执行航线任务");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间，请先在设备管理中完成绑定");
-
-        return dock;
-    }
+        => await _dockQuery.ResolveDockAsync(dockSn, "无法执行航线任务");
 
     /// <summary>
     /// 计算协议要求的 <c>execute_time</c>。
@@ -489,7 +479,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
     private async Task<string> GetDockNickAsync(string dockSn)
     {
         if (dockSn.IsNullOrWhiteSpace()) return null;
-        return await _deviceRep.AsQueryable().Where(m => m.Sn == dockSn).Select(m => m.Nick).FirstAsync();
+        return (await _dockQuery.ResolveDockNickMapAsync([dockSn])).GetValueOrDefault(dockSn);
     }
 
     /// <summary>控制指令的前置状态校验</summary>
@@ -519,11 +509,7 @@ public partial class DjiWaylineTaskService : IDynamicApiController, ITransient
         var dockSns = paged.Items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         if (dockSns.Count == 0) return paged;
 
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => dockSns.Contains(m.Sn))
-            .Select(m => new { m.Sn, m.Nick })
-            .ToListAsync();
-        var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
 
         foreach (var item in paged.Items)
             if (!item.DockSn.IsNullOrWhiteSpace()) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);

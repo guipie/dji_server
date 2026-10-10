@@ -10,6 +10,8 @@
 
 using Dji.Core.Enum.DjiEnum.Media;
 
+using Dji.Application.Service.Common;
+
 namespace Dji.Application.Service.DjiMedia.Dto;
 
 /// <summary>媒体列表项</summary>
@@ -178,23 +180,8 @@ public class MediaTypeOptionOutput
 /// 只列出 <c>Domain = Dock</c> 的设备；带上 <see cref="MediaCount"/> 是为了让用户
 /// 在筛选前就知道「哪些机场真的回传过媒体」，避免点进空列表反复排查。
 /// </remarks>
-public class MediaDockOptionOutput
+public class MediaDockOptionOutput : DockOptionBase
 {
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场别名</summary>
-    public string Nick { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
     /// <summary>该机场已回传的媒体数量</summary>
     public int MediaCount { get; set; }
-
-    /// <summary>展示名（别名优先）</summary>
-    public string Label { get; set; }
 }

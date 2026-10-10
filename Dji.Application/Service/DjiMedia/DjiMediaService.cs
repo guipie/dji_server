@@ -12,7 +12,10 @@ using Dji.Application.Cloud.Core;
 using Dji.Application.Cloud.Dto.Media;
 using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiMedia.Dto;
+using Dji.Application.Util;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Media;
 using System.Linq;
 
@@ -45,6 +48,7 @@ public class DjiMediaService : IDynamicApiController, ITransient
     private readonly SqlSugarRepository<DjiWaylineTask> _taskRep;
     private readonly DjiMediaRepository _mediaRepository;
     private readonly MqttGatewayPublish _publish;
+    private readonly DockQueryService _dockQuery;
     private readonly ILogger<DjiMediaService> _logger;
 
     public DjiMediaService(
@@ -53,6 +57,7 @@ public class DjiMediaService : IDynamicApiController, ITransient
         SqlSugarRepository<DjiWaylineTask> taskRep,
         DjiMediaRepository mediaRepository,
         MqttGatewayPublish publish,
+        DockQueryService dockQuery,
         ILogger<DjiMediaService> logger)
     {
         _mediaRep = mediaRep;
@@ -60,6 +65,7 @@ public class DjiMediaService : IDynamicApiController, ITransient
         _taskRep = taskRep;
         _mediaRepository = mediaRepository;
         _publish = publish;
+        _dockQuery = dockQuery;
         _logger = logger;
     }
 
@@ -254,15 +260,10 @@ public class DjiMediaService : IDynamicApiController, ITransient
     /// </remarks>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
-    public async Task<List<MediaDockOptionOutput>> DockOptions(MediaDockOptionInput input)
+    public async Task<List<MediaDockOptionOutput>> DockOptions(DockOptionInput input)
     {
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!input.WorkspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == input.WorkspaceId)
-            .OrderBy(m => m.Nick)
-            .ToListAsync();
-
-        if (docks.Count == 0) return [];
+        var bases = await _dockQuery.GetDockOptionsAsync(input.WorkspaceId);
+        if (bases.Count == 0) return [];
 
         var counts = await _mediaRep.AsQueryable()
             .Where(m => m.DockSn != null && m.DockSn != "")
@@ -270,14 +271,14 @@ public class DjiMediaService : IDynamicApiController, ITransient
             .Select(m => new { m.DockSn, Count = SqlFunc.AggregateCount(m.Id) })
             .ToListAsync();
 
-        return docks.Select(m => new MediaDockOptionOutput
+        return bases.Select(m => new MediaDockOptionOutput
         {
             Sn = m.Sn,
             Nick = m.Nick,
             WorkspaceId = m.WorkspaceId,
             IsOnline = m.IsOnline,
             MediaCount = counts.FirstOrDefault(c => c.DockSn == m.Sn)?.Count ?? 0,
-            Label = m.Nick.IsNullOrWhiteSpace() ? m.Sn : $"{m.Nick}（{m.Sn}）",
+            Label = m.Label,
         }).ToList();
     }
 
@@ -325,7 +326,8 @@ public class DjiMediaService : IDynamicApiController, ITransient
 
             var reply = await _publish.PublishWithReplyAsync<UploadFlighttaskMediaPrioritizeInput, object>(
                 Topics.ThingProductServices, request, 15);
-            var result = reply?.Data?.Result ?? -1;
+            // 回包已按 bid 匹配回来即代表机场已确认收到；无 data/result 时视为成功（0）。
+            var result = reply?.Data?.Result ?? 0;
 
             if (result != 0) _logger.LogWarning("调整媒体上传优先级被拒绝，flight_id:{FlightId}，result:{Result}",
                 input.FlightId, result);
@@ -352,7 +354,7 @@ public class DjiMediaService : IDynamicApiController, ITransient
         foreach (var item in items) FillDerived(item);
 
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
 
         var flightIds = items.Select(m => m.FlightId).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         var tasks = flightIds.Count == 0
@@ -361,7 +363,7 @@ public class DjiMediaService : IDynamicApiController, ITransient
 
         foreach (var item in items)
         {
-            item.DockNick = docks.FirstOrDefault(m => m.Sn == item.DockSn)?.Nick;
+            item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
             item.FlightJobName = tasks.FirstOrDefault(m => m.FlightId == item.FlightId)?.JobName;
         }
 
@@ -373,29 +375,13 @@ public class DjiMediaService : IDynamicApiController, ITransient
     {
         item.FileTypeName = DescribeFileType(item.FileType);
         item.Previewable = MediaFileTypeResolver.IsPreviewable(item.FileType);
-        item.SizeText = FormatSize(item.FileSize);
+        item.SizeText = item.FileSize.FormatSize();
     }
 
     private static string DescribeFileType(MediaFileTypeEnum type)
     {
-        var text = EnumExtension.GetDescription(type);
+        var text = EnumExtension.Desc(type);
         return text ?? (type == MediaFileTypeEnum.Unknown ? "其他" : type.ToString());
-    }
-
-    /// <summary>字节数转可读文本</summary>
-    private static string FormatSize(long bytes)
-    {
-        if (bytes <= 0) return "-";
-        string[] units = ["B", "KB", "MB", "GB", "TB"];
-        double value = bytes;
-        var unit = 0;
-        while (value >= 1024 && unit < units.Length - 1)
-        {
-            value /= 1024;
-            unit++;
-        }
-
-        return unit == 0 ? $"{value:0} {units[unit]}" : $"{value:0.##} {units[unit]}";
     }
 
     #endregion

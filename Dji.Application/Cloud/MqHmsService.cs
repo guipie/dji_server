@@ -19,15 +19,13 @@ namespace Dji.Application.Cloud;
 /// </summary>
 /// <remarks>
 /// 整个 HMS 功能只有这一条上行消息，云端不需要下发任何指令，因此实现非常薄：
-/// 落库（由仓储完成状态演算）+ 按协议要求回 <c>events_reply</c>。
+/// 只做落库（由仓储完成状态演算），协议未要求回包。
 /// </remarks>
 internal class MqHmsService(
     ILogger<MqHmsService> logger,
-    MqttGatewayPublish gatewayPublish,
-    DjiHmsRepository hmsRepository) : BaseModuleService
+    DjiHmsRepository hmsRepository)
 {
     private readonly ILogger<MqHmsService> _logger = logger;
-    private readonly MqttGatewayPublish _gatewayPublish = gatewayPublish;
     private readonly DjiHmsRepository _hmsRepository = hmsRepository;
 
     /// <summary>
@@ -39,8 +37,10 @@ internal class MqHmsService(
     /// 因此即使 <c>list</c> 为空也必须走一次同步，否则「告警全部解除」这一状态变化会丢失。
     /// </para>
     /// <para>
-    /// 该报文带 <c>need_reply = 1</c>，无论落库成败都要应答：
-    /// 落库失败（如设备未建档）是本平台侧的问题，让设备重发并不能解决，只会放大日志量。
+    /// <b>不回 <c>events_reply</c></b>：官方协议里 HMS 报文没有 <c>need_reply</c> 字段
+    /// （字段只有 <c>bid / data / tid / timestamp / method</c>），无需应答；
+    /// 与媒体回调 / 飞行区同步进度等「带 <c>need_reply = 1</c>」的事件不同。
+    /// 回一条多余的 <c>events_reply</c> 只会持续占用下行主题。
     /// </para>
     /// </remarks>
     [MqttSubscribe(Topics.ThingProductEvents, TopicMethods.Hms)]
@@ -55,7 +55,5 @@ internal class MqHmsService(
         else
             _logger.LogInformation("机场 {Gateway} 上报 HMS 告警 {Count} 条（新增 {Added} 条）",
                 data.Gateway, list.Count, added < 0 ? 0 : added);
-
-        await _gatewayPublish.PublishAsync(Topics.ThingProductEventsReply, ToEventReply(data));
     }
 }

@@ -9,7 +9,9 @@
 
 using System.Linq;
 using Dji.Application.CloudRepository;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Ops;
 
 namespace Dji.Application.Service.DjiOps;
@@ -35,17 +37,17 @@ namespace Dji.Application.Service.DjiOps;
 /// </remarks>
 [ApiDescriptionSettings(ApplicationConst.GroupName, Order = 180)]
 public class DjiAirSenseService(
-    SqlSugarRepository<Dji.Core.Entity.DjiDevice> deviceRep,
     SqlSugarRepository<DjiAirSenseAlarm> alarmRep,
     DjiAirSenseRepository airSenseRepository,
+    DockQueryService dockQuery,
     ILogger<DjiAirSenseService> logger) : IDynamicApiController, ITransient
 {
     /// <summary>「建议避让」的等级阈值（官方口径：≥ 3）</summary>
     private const int AlertWarningLevel = (int)AirSenseWarningLevelEnum.Level3;
 
-    private readonly SqlSugarRepository<Dji.Core.Entity.DjiDevice> _deviceRep = deviceRep;
     private readonly SqlSugarRepository<DjiAirSenseAlarm> _alarmRep = alarmRep;
     private readonly DjiAirSenseRepository _airSenseRepository = airSenseRepository;
+    private readonly DockQueryService _dockQuery = dockQuery;
     private readonly ILogger<DjiAirSenseService> _logger = logger;
 
     #region 查询
@@ -126,7 +128,7 @@ public class DjiAirSenseService(
             .Select(g => new AirSenseLevelStatOutput
             {
                 Level = g.Key,
-                LevelName = Desc((AirSenseWarningLevelEnum)g.Key),
+                LevelName = EnumExtension.Desc((AirSenseWarningLevelEnum)g.Key),
                 Count = g.Count(),
             })
             .ToList();
@@ -148,23 +150,19 @@ public class DjiAirSenseService(
     /// <summary>机场下拉</summary>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
-    public async Task<List<OpsDockOptionOutput>> DockOptions(OpsDockOptionInput input)
+    public async Task<List<OpsDockOptionOutput>> DockOptions(DockOptionInput input)
     {
-        input ??= new OpsDockOptionInput();
+        input ??= new DockOptionInput();
 
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!input.WorkspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == input.WorkspaceId)
-            .OrderBy(m => m.Nick)
-            .ToListAsync();
+        var bases = await _dockQuery.GetDockOptionsAsync(input.WorkspaceId);
 
-        return docks.Select(m => new OpsDockOptionOutput
+        return bases.Select(m => new OpsDockOptionOutput
         {
             Sn = m.Sn,
             Nick = m.Nick,
             WorkspaceId = m.WorkspaceId,
             IsOnline = m.IsOnline,
-            Label = $"{m.Nick ?? m.Sn}（{m.Sn}）",
+            Label = m.Label,
         }).ToList();
     }
 
@@ -212,17 +210,16 @@ public class DjiAirSenseService(
 
         foreach (var item in items)
         {
-            item.WarningLevelName = Desc(item.WarningLevel);
-            item.AltitudeTypeName = Desc(item.AltitudeType);
-            item.VertTrendName = Desc(item.VertTrend);
+            item.WarningLevelName = EnumExtension.Desc(item.WarningLevel);
+            item.AltitudeTypeName = EnumExtension.Desc(item.AltitudeType);
+            item.VertTrendName = EnumExtension.Desc(item.VertTrend);
             item.IsAlert = (int)item.WarningLevel >= AlertWarningLevel;
         }
 
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         if (dockSns.Count == 0) return;
 
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-        var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
 
         foreach (var item in items) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
     }
@@ -247,10 +244,6 @@ public class DjiAirSenseService(
         ReportTimestamp = entity.ReportTimestamp,
         CreateTime = entity.CreateTime,
     };
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
 
     #endregion
 }

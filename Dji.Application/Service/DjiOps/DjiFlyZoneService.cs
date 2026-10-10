@@ -8,6 +8,7 @@
 // 在任何情况下，作者或版权持有人不对任何索赔、损害或其他责任负责，无论是因合同、侵权或其他方式引起的，与软件或其使用或其他交易有关。
 
 using System.Linq;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
 using Dji.Core.Enum.DjiEnum.Ops;
 using Newtonsoft.Json.Linq;
@@ -37,13 +38,11 @@ namespace Dji.Application.Service.DjiOps;
 [ApiDescriptionSettings(ApplicationConst.GroupName, Order = 171)]
 public class DjiFlyZoneService(
     SqlSugarRepository<DjiFlyZone> zoneRep,
-    SqlSugarRepository<DjiWorkspaceUser> workspaceUserRep,
-    UserManager userManager,
+    WorkspaceResolver workspaceResolver,
     ILogger<DjiFlyZoneService> logger) : IDynamicApiController, ITransient
 {
     private readonly SqlSugarRepository<DjiFlyZone> _zoneRep = zoneRep;
-    private readonly SqlSugarRepository<DjiWorkspaceUser> _workspaceUserRep = workspaceUserRep;
-    private readonly UserManager _userManager = userManager;
+    private readonly WorkspaceResolver _workspaceResolver = workspaceResolver;
     private readonly ILogger<DjiFlyZoneService> _logger = logger;
 
     #region 查询
@@ -151,7 +150,7 @@ public class DjiFlyZoneService(
         {
             // 工作空间是 NOT NULL：运营端的选择器允许为空（=「全部」，便于跨空间查看），
             // 此时退回当前用户的默认空间，而不是把 null 丢给数据库去撞 SQLite 的约束。
-            WorkspaceId = await ResolveWorkspaceIdAsync(input.WorkspaceId),
+            WorkspaceId = await _workspaceResolver.ResolveWorkspaceIdAsync(input.WorkspaceId, "保存"),
             Name = input.Name.Trim(),
             ZoneType = input.ZoneType,
             Shape = input.Shape,
@@ -279,25 +278,6 @@ public class DjiFlyZoneService(
     #endregion
 
     #region 内部辅助
-
-    /// <summary>
-    /// 解析工作空间：未指定时使用当前用户的默认空间。
-    /// </summary>
-    /// <remarks>
-    /// 与 <c>DjiWaylineService</c> 保持同一套口径。这里必须兜底的原因很直接：
-    /// <c>EntityWorkspaceBase.WorkspaceId</c> 是 <b>NOT NULL</b>，而运营端的空间选择器是「可空 = 全部」，
-    /// 直接拿 <c>input.WorkspaceId</c> 落库会在没选空间时抛出
-    /// <c>SQLite Error 19: NOT NULL constraint failed</c> —— 一个用户完全看不懂、也无从自行修复的错。
-    /// </remarks>
-    private async Task<string> ResolveWorkspaceIdAsync(string workspaceId)
-    {
-        if (!string.IsNullOrWhiteSpace(workspaceId)) return workspaceId.Trim();
-
-        var spaces = await _workspaceUserRep.GetListAsync(m => m.UserId == _userManager.UserId);
-        var current = spaces.FirstOrDefault(m => m.IsDefault) ?? spaces.FirstOrDefault();
-        if (current == null) throw Oops.Oh("当前用户未分配工作空间，请先在“工作空间用户”中配置，或在页面上选择一个空间后再保存");
-        return current.WorkspaceId;
-    }
 
     /// <summary>
     /// 把扁平的点列表还原成 GeoJSON 的 <c>coordinates</c> 结构后落库。

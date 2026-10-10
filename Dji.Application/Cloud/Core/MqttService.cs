@@ -10,12 +10,15 @@
 using Dji.Application.Cloud.Entity;
 using Dji.Application.Option;
 using Dji.Core.Extension;
+using Elastic.Clients.Elasticsearch;
 using Microsoft.Extensions.Options;
 using MQTTnet;
 using MQTTnet.Protocol;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Channels;
 
 namespace Dji.Application.Cloud.Core;
 
@@ -47,6 +50,20 @@ internal class MqttService : IMqttService, IDisposable
     /// <summary>串行化连接与重连，避免断线回调并发触发多次连接</summary>
     private readonly SemaphoreSlim _connectLock = new(1, 1);
 
+    /// <summary>
+    /// 串行化 MQTT 业务消息的处理器分发。
+    /// </summary>
+    /// <remarks>
+    /// <c>ISqlSugarClient</c> 是单例（<c>SqlSugarScope</c>），其内部实体映射缓存（<c>InitMappingInfo</c>）
+    /// 与连接管理在<b>多线程并发访问时不是线程安全的</b>，会抛「Collection was modified」、
+    /// 「ExecuteReader can only be called when the connection is open」等竞态异常。
+    /// OSD 虽已走后台队列串行，但 /events、/state、/requests、_reply 等主题仍走内联路径、
+    /// 由 MQTTnet 多线程回调并发执行，与 OSD 队列消费并发撞上同一个单例 client。
+    /// 因此这里用一把锁把所有处理器分发串行化，从源头消除并发访问。
+    /// MQTT 消息处理是 IO 密集、非高吞吐场景，几十台设备串行处理完全够用，锁的开销可忽略。
+    /// </remarks>
+    private readonly SemaphoreSlim _dispatchLock = new(1, 1);
+
     /// <summary>订阅重试的串行锁（同一时刻只跑一轮）</summary>
     private readonly SemaphoreSlim _subscribeRetryLock = new(1, 1);
 
@@ -59,6 +76,24 @@ internal class MqttService : IMqttService, IDisposable
     private Timer _subscribeRetryTimer;
 
     private volatile bool _isConnecting;
+
+    /// <summary>
+    /// OSD 高频报文的后台处理队列。
+    /// </summary>
+    /// <remarks>
+    /// OSD 是唯一的高频洪流（每台设备 0.5Hz 定频）。若在收包回调里逐条 await 处理，
+    /// 后端会变成慢消费者，EMQX 的消息队列（max_mqueue_len）打满后会把稀有的 reply 报文直接丢弃。
+    /// 因此 OSD 丢进本队列、接收回调立即返回；队列满时丢最旧的（OSD 是 0.5Hz 遥测，丢帧可接受）。
+    /// </remarks>
+    private readonly Channel<(string Topic, string Payload)> _osdQueue =
+        Channel.CreateBounded<(string, string)>(new BoundedChannelOptions(1000)
+        {
+            FullMode = BoundedChannelFullMode.DropOldest,
+            SingleReader = true,
+            SingleWriter = false,
+        });
+
+    private readonly CancellationTokenSource _lifetimeCts = new();
 
     public MqttService(
         ILogger<MqttService> logger,
@@ -77,6 +112,8 @@ internal class MqttService : IMqttService, IDisposable
         _moduleManager = moduleManager;
         _cache = sysCacheService;
         _scopeFactory = scopeFactory;
+
+        _ = DrainOsdQueueAsync(_lifetimeCts.Token);
     }
 
     public bool IsConnected => _client.IsConnected;
@@ -88,16 +125,14 @@ internal class MqttService : IMqttService, IDisposable
         {
             if (_client.IsConnected) return;
 
-            _isConnecting = true;
-            var options = new MqttClientOptionsBuilder()
-                .WithClientId(_mqttOptions.ClientId)
+            var connectOptions = new MqttClientOptionsBuilder()
+                .WithClientId($"{_mqttOptions.ClientId}_dji_{Guid.NewGuid():N}")
                 .WithTcpServer(_mqttOptions.Server, _mqttOptions.Port)
                 .WithCredentials(_mqttOptions.Username, _mqttOptions.Password)
                 .WithCleanSession(_mqttOptions.CleanSession)
-                .WithKeepAlivePeriod(TimeSpan.FromSeconds(_mqttOptions.KeepAliveSeconds))
+                .WithKeepAlivePeriod(TimeSpan.FromSeconds(_mqttOptions.KeepAliveSeconds < 60 ? 60 : _mqttOptions.KeepAliveSeconds))
                 .Build();
-
-            var result = await _client.ConnectAsync(options, CancellationToken.None);
+            var result = await _client.ConnectAsync(connectOptions, CancellationToken.None);
 
             // CONNACK 被拒时 ConnectAsync 同样是正常返回（不抛异常），必须自己检查结果码。
             // 历史实现无条件打印「已连接」，于是「被 broker 拒绝 + 一条主题都订不上」
@@ -110,13 +145,14 @@ internal class MqttService : IMqttService, IDisposable
             }
 
             _logger.LogInformation("MQTT 已连接 {Host}:{Port}，结果:{Result}", _mqttOptions.Server, _mqttOptions.Port, result.ResultCode);
+            _isConnecting = true;
 
             // 关键修复：MQTTnet 5.x 在断线重连场景下，ConnectedAsync 事件不一定会被触发
             // （特别是在 OnDisconnected → StartAsync → ConnectAsync 的重连路径中）。
             // 如果只依赖 ConnectedAsync 事件来订阅，断线重连后主题订阅会永久丢失，
             // 表现为 OSD 能收到（EMQX 内部缓存推送）但 reply 收不到（一次性消息错过即丢失）。
             // 因此在 StartAsync 连接成功后直接调用 OnConnectedAsync，确保每次连接都执行订阅。
-            await OnConnectedAsync(new MqttClientConnectedEventArgs(result));
+            //await OnConnectedAsync(new MqttClientConnectedEventArgs(result));
         }
         catch (Exception ex)
         {
@@ -146,6 +182,10 @@ internal class MqttService : IMqttService, IDisposable
     /// </remarks>
     public async Task OnConnectedAsync(MqttClientConnectedEventArgs e)
     {
+        //var r = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic("thing/product/+/requests_reply").WithAtMostOnceQoS().Build());
+        //foreach (var item in r.Items)
+        //    Console.WriteLine($"  订阅 {item.TopicFilter.Topic} → code={(int)item.ResultCode}");
+        //return;
         var topics = _mqttOptions.SubscribedTopics;
         _logger.LogInformation("MQTT 连接成功，开始订阅 {Count} 个主题", topics.Count);
 
@@ -219,7 +259,7 @@ internal class MqttService : IMqttService, IDisposable
 
         try
         {
-            var result = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).Build(), ct);
+            var result = await _client.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(topic).WithAtMostOnceQoS().Build());
             var items = result?.Items ?? [];
 
             // 结果码 > 2 即为明确拒绝（授权、通配符不支持等），属于配置问题，重试没有意义
@@ -243,7 +283,7 @@ internal class MqttService : IMqttService, IDisposable
                 _logger.LogWarning("MQTT 订阅未取得结果 topic:{Topic}，将安排重试", topic);
                 return SubscribeOutcome.Failed;
             }
-
+            Console.WriteLine("MQTT 已订阅 topic:{" + topic + "} 授予QoS:{" + string.Join("/", granted) + "}");
             _logger.LogInformation("MQTT 已订阅 topic:{Topic} 授予QoS:{Qos}", topic, string.Join("/", granted));
             return SubscribeOutcome.Granted;
         }
@@ -372,14 +412,29 @@ internal class MqttService : IMqttService, IDisposable
     private async Task OnMqttMessageReceived(MqttApplicationMessageReceivedEventArgs e)
     {
         var topic = e.ApplicationMessage.Topic;
-        if (topic.EndsWith("reply")) {
-            _logger.LogWarning("reply:消息" + Encoding.UTF8.GetString(e.ApplicationMessage.Payload));
-        }
         MqttDiagnostics.OnMessageReceived(topic);
-        _logger.LogInformation("[MQTT-RX] topic:{Topic}", topic);
+
         var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
         if (payload.IsNullOrWhiteSpace()) return;
 
+        // OSD 是唯一的高频洪流（每台设备 0.5Hz 定频）。在收包回调里串行处理它会拖慢整个
+        // MQTT 接收回路，让后端成为慢消费者，EMQX 队列打满后把稀有的 reply 丢掉。
+        // 所以 OSD 丢给后台队列，回调立即返回；reply 及其它低频上行仍走内联快路径。
+        if (topic.EndsWith("/osd"))
+        {
+            await _osdQueue.Writer.WriteAsync((topic, payload));
+            return;
+        }
+        if (!payload.Contains("\"method\":\"hms\"")&&!topic.EndsWith("/events"))
+            Console.WriteLine("接收消息: " + topic + "，内容: " + payload);
+        // reply / events / state / status / requests 等：低频、关键，必须即时处理，
+        // 尤其 reply 要立刻按 bid 写缓存，供 PublishWithReplyAsync 在超时窗口内取到。
+        await ProcessMessageAsync(topic, payload);
+    }
+
+    /// <summary>解析并分发一条上行业务报文（供内联快路径与后台 OSD 队列共用）</summary>
+    private async Task ProcessMessageAsync(string topic, string payload)
+    {
         CloudMqData<dynamic> cloudMqData;
         try
         {
@@ -426,20 +481,47 @@ internal class MqttService : IMqttService, IDisposable
             cloudMqData.Gateway = sn;
         }
 
-        foreach (var sub in matched)
+        // 处理器分发统一串行化：ISqlSugarClient 是单例（SqlSugarScope），其映射缓存与连接管理
+        // 在多线程并发访问下不是线程安全的（会抛 Collection was modified 等竞态异常）。
+        // 这里加锁确保同一时刻只有一个处理器在执行数据库操作，从源头消除并发竞态。
+        await _dispatchLock.WaitAsync();
+        try
+        {
+            foreach (var sub in matched)
+            {
+                try
+                {
+                    var data = MqttJson.Deserialize(payload, typeof(CloudMqData<>).MakeGenericType(sub.DataType));
+                    if (data == null) continue;
+
+                    await PrepareForDispatchAsync(data, cloudMqData, topic, sn);
+
+                    await (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "[MQTT] 处理失败 topic:{Topic} handler:{Handler}", topic, sub.MethodInfo.Name);
+                }
+            }
+        }
+        finally
+        {
+            _dispatchLock.Release();
+        }
+    }
+
+    /// <summary>后台消费 OSD 队列（单消费者，串行处理，失败不影响后续消息）</summary>
+    private async Task DrainOsdQueueAsync(CancellationToken ct)
+    {
+        await foreach (var (topic, payload) in _osdQueue.Reader.ReadAllAsync(ct))
         {
             try
             {
-                var data = MqttJson.Deserialize(payload, typeof(CloudMqData<>).MakeGenericType(sub.DataType));
-                if (data == null) continue;
-
-                await PrepareForDispatchAsync(data, cloudMqData, topic, sn);
-
-                await (Task)sub.MethodInfo.Invoke(sub.Instance, [data])!;
+                await ProcessMessageAsync(topic, payload);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "[MQTT] 处理失败 topic:{Topic} handler:{Handler}", topic, sub.MethodInfo.Name);
+                _logger.LogError(ex, "[MQTT] OSD 后台处理失败 topic:{Topic}", topic);
             }
         }
     }
@@ -531,10 +613,13 @@ internal class MqttService : IMqttService, IDisposable
 
     public void Dispose()
     {
+        _lifetimeCts.Cancel();
+        _lifetimeCts.Dispose();
         _client.ConnectedAsync -= OnConnectedAsync;
         _client.ApplicationMessageReceivedAsync -= OnMqttMessageReceived;
         _client.DisconnectedAsync -= OnDisconnected;
         _connectLock.Dispose();
+        _dispatchLock.Dispose();
         _subscribeRetryTimer?.Dispose();
         _subscribeRetryLock.Dispose();
         _client?.Dispose();

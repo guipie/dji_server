@@ -125,7 +125,9 @@ public partial class DjiWaylineTaskService
         try
         {
             var reply = await _publish.PublishWithReplyAsync<T, object>(Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-            var result = reply?.Data?.Result ?? -1;
+            // 回包已按 bid 匹配回来即代表机场已确认收到；无 data/result 时视为成功（0），
+            // 只有 data 里明确带非 0 result 才按「拒绝」处理。
+            var result = reply?.Data?.Result ?? 0;
 
             if (result != 0)
                 _logger.LogWarning("机场拒绝航线任务指令：{Action}，method:{Method}，gateway:{Gateway}，result:{Result}",

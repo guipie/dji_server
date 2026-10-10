@@ -9,6 +9,8 @@
 
 using Dji.Core.Enum.DjiEnum.Wayline;
 
+using Dji.Application.Service.Common;
+
 namespace Dji.Application.Service.DjiWayline.Dto;
 
 /// <summary>
@@ -194,23 +196,8 @@ public class FlightTaskStepOption
 /// 不复用设备分页接口：后者返回的是「网关 + 子设备」树且无分页、无域过滤，
 /// 前端要拿到机场列表还得自己遍历拆树，且拿不到「是否被任务占用」这一关键信息。
 /// </remarks>
-public class DockOptionOutput
+public class DockOptionOutput : DockOptionBase
 {
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场昵称</summary>
-    public string Nick { get; set; }
-
-    /// <summary>设备型号</summary>
-    public string Model { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
     /// <summary>当前是否有未结束任务（有则不可再下发）</summary>
     public bool Busy { get; set; }
 

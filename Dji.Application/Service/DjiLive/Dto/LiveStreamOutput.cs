@@ -9,6 +9,8 @@
 
 using Dji.Core.Enum.DjiEnum.Live;
 
+using Dji.Application.Service.Common;
+
 namespace Dji.Application.Service.DjiLive.Dto;
 
 /// <summary>
@@ -155,26 +157,11 @@ public class LiveSessionOutput
     public DateTime? CreateTime { get; set; }
 }
 
-/// <summary>可直播机场下拉项</summary>
-public class LiveDockOptionOutput
+/// <summary>可直播机场下拉项（继承公共基础字段，仅补充在途会话标记）</summary>
+public class LiveDockOptionOutput : DockOptionBase
 {
-    /// <summary>机场 SN</summary>
-    public string Sn { get; set; }
-
-    /// <summary>机场别名</summary>
-    public string Nick { get; set; }
-
-    /// <summary>所属工作空间</summary>
-    public string WorkspaceId { get; set; }
-
-    /// <summary>是否在线</summary>
-    public bool IsOnline { get; set; }
-
     /// <summary>是否有在途会话（用于在前端提示「该机场已有直播」）</summary>
     public bool HasActiveSession { get; set; }
-
-    /// <summary>展示名（别名优先）</summary>
-    public string Label { get; set; }
 }
 
 /// <summary>清晰度字典项</summary>

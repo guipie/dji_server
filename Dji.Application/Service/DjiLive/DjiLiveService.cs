@@ -14,9 +14,13 @@ using Dji.Application.Cloud.Dto.Live;
 using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Option;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiLive.Dto;
+using Dji.Application.Util;
+using Dji.Core;
 using Dji.Core.Entity.DjiEntity;
 using Dji.Core.Enum.DjiEnum.Live;
+using Dji.Core.Service;
 using Microsoft.Extensions.Options;
 using System.Linq;
 
@@ -50,28 +54,31 @@ public class DjiLiveService : IDynamicApiController, ITransient
     private const int CommandReplyTimeoutSeconds = 20;
 
     private readonly SqlSugarRepository<DjiLiveStream> _streamRep;
-    private readonly SqlSugarRepository<Dji.Core.Entity.DjiDevice> _deviceRep;
     private readonly DjiLiveRepository _liveRepository;
-    private readonly MqttGatewayPublish _publish;
     private readonly UserManager _userManager;
     private readonly LiveOptions _liveOptions;
+    private readonly SysCacheService _cache;
+    private readonly DockQueryService _dockQuery;
+    private readonly CommandPublisher _commandPublisher;
     private readonly ILogger<DjiLiveService> _logger;
 
     public DjiLiveService(
         SqlSugarRepository<DjiLiveStream> streamRep,
-        SqlSugarRepository<Dji.Core.Entity.DjiDevice> deviceRep,
         DjiLiveRepository liveRepository,
-        MqttGatewayPublish publish,
         UserManager userManager,
         IOptions<DjiOptions> options,
+        SysCacheService cache,
+        DockQueryService dockQuery,
+        CommandPublisher commandPublisher,
         ILogger<DjiLiveService> logger)
     {
         _streamRep = streamRep;
-        _deviceRep = deviceRep;
         _liveRepository = liveRepository;
-        _publish = publish;
         _userManager = userManager;
         _liveOptions = options.Value.Live ?? new LiveOptions();
+        _cache = cache;
+        _dockQuery = dockQuery;
+        _commandPublisher = commandPublisher;
         _logger = logger;
     }
 
@@ -145,7 +152,7 @@ public class DjiLiveService : IDynamicApiController, ITransient
         {
             DockSn = dock.Sn,
             DockNick = dock.Nick,
-            IsOnline = dock.IsOnline,
+            IsOnline = _cache.IsDockOnline(dock.Sn),
         };
 
         var (enabled, reason) = CheckLiveConfigured();
@@ -174,13 +181,9 @@ public class DjiLiveService : IDynamicApiController, ITransient
     /// <summary>可直播机场下拉（含是否有在途直播）</summary>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
-    public async Task<List<LiveDockOptionOutput>> DockOptions(LiveDockOptionInput input)
+    public async Task<List<LiveDockOptionOutput>> DockOptions(DockOptionInput input)
     {
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.Domain == DomainEnum.Dock)
-            .WhereIF(!input.WorkspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == input.WorkspaceId)
-            .OrderBy(m => m.Nick)
-            .ToListAsync();
+        var bases = await _dockQuery.GetDockOptionsAsync(input.WorkspaceId);
 
         LiveStreamStatusEnum[] active = [LiveStreamStatusEnum.Starting, LiveStreamStatusEnum.Live];
         var activeDocks = await _streamRep.AsQueryable()
@@ -188,14 +191,14 @@ public class DjiLiveService : IDynamicApiController, ITransient
             .Select(m => m.DockSn)
             .ToListAsync();
 
-        return docks.Select(m => new LiveDockOptionOutput
+        return bases.Select(m => new LiveDockOptionOutput
         {
             Sn = m.Sn,
             Nick = m.Nick,
             WorkspaceId = m.WorkspaceId,
             IsOnline = m.IsOnline,
             HasActiveSession = activeDocks.Contains(m.Sn),
-            Label = m.Nick.IsNullOrWhiteSpace() ? m.Sn : $"{m.Nick}（{m.Sn}）",
+            Label = m.Label,
         }).ToList();
     }
 
@@ -518,15 +521,7 @@ public class DjiLiveService : IDynamicApiController, ITransient
     }
 
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn) ?? throw Oops.Oh($"未找到机场：{dockSn}");
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备，无法直播");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间");
-
-        return dock;
-    }
+        => await _dockQuery.ResolveDockAsync(dockSn, "无法直播");
 
     private async Task<DjiLiveStream> GetSessionAsync(long id)
     {
@@ -549,25 +544,7 @@ public class DjiLiveService : IDynamicApiController, ITransient
     /// </summary>
     /// <returns>0 表示机场接受；非 0 为错误码；-1 表示超时 / 异常</returns>
     private async Task<int> SendAsync<T>(string dockSn, string method, T payload, string actionName)
-    {
-        try
-        {
-            var request = new CloudMqRequest<T>(method, payload, dockSn);
-            var reply = await _publish.PublishWithReplyAsync<T, object>(Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-            var result = reply?.Data?.Result ?? -1;
-
-            if (result != 0)
-                _logger.LogWarning("机场拒绝{Action}：method:{Method}，gateway:{Gateway}，result:{Result}",
-                    actionName, method, dockSn, result);
-
-            return result;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "{Action}指令无应答：method:{Method}，gateway:{Gateway}", actionName, method, dockSn);
-            return -1;
-        }
-    }
+        => await _commandPublisher.SendAsync(dockSn, method, payload, CommandReplyTimeoutSeconds, actionName);
 
     /// <summary>批量补全可读名与机场别名（DockNick 不落库，按 SN 现查）</summary>
     private async Task<SqlSugarPagedList<LiveSessionOutput>> FillNamesAsync(SqlSugarPagedList<LiveSessionOutput> paged)
@@ -590,13 +567,13 @@ public class DjiLiveService : IDynamicApiController, ITransient
         }
 
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-        foreach (var item in items) item.DockNick = docks.FirstOrDefault(m => m.Sn == item.DockSn)?.Nick;
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
+        foreach (var item in items) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
 
         return items;
     }
 
-    private static string GetStatusText(LiveStreamStatusEnum status) => DescribeEnum(status);
+    private static string GetStatusText(LiveStreamStatusEnum status) => EnumExtension.Desc(status);
 
     /// <summary>
     /// 取枚举的 <c>[Description]</c>。
@@ -607,7 +584,7 @@ public class DjiLiveService : IDynamicApiController, ITransient
     /// 直接用扩展语法会触发 CS0121 二义性错误。
     /// </remarks>
     private static string DescribeEnum<T>(T value) where T : struct, System.Enum
-        => EnumExtension.GetDescription(value) ?? value.ToString();
+        => EnumExtension.DescOrName(value);
 
     /// <summary>把协议镜头取值转成可读中文（协议里红外同时有 ir / infrared 两种写法）</summary>
     private static string DescribeLens(string videoType)

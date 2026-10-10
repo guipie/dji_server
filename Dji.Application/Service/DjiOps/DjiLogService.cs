@@ -14,6 +14,8 @@ using Dji.Application.Cloud.Entity;
 using Dji.Application.CloudRepository;
 using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiOps.Dto;
+using Dji.Application.Util;
+using Dji.Core;
 using Dji.Core.Enum.DjiEnum.Ops;
 using Dji.JsonSerialization;
 
@@ -51,6 +53,8 @@ public class DjiLogService(
     DjiStorageService storageService,
     MqttGatewayPublish publish,
     UserManager userManager,
+    DockQueryService dockQuery,
+    CommandPublisher commandPublisher,
     ILogger<DjiLogService> logger) : IDynamicApiController, ITransient
 {
     /// <summary>列举回包等待时长（设备要遍历本地日志目录，比普通指令慢）</summary>
@@ -65,6 +69,8 @@ public class DjiLogService(
     private readonly DjiStorageService _storageService = storageService;
     private readonly MqttGatewayPublish _publish = publish;
     private readonly UserManager _userManager = userManager;
+    private readonly DockQueryService _dockQuery = dockQuery;
+    private readonly CommandPublisher _commandPublisher = commandPublisher;
     private readonly ILogger<DjiLogService> _logger = logger;
 
     #region 查询
@@ -293,7 +299,7 @@ public class DjiLogService(
         var result = await SendAsync(dock.Sn, request, "发起日志上传");
 
         if (result != 0)
-            throw Oops.Oh($"设备拒绝日志上传，{DescribeResult(result)}");
+            throw Oops.Oh($"设备拒绝日志上传，{CommandPublisher.DescribeResult(result)}");
 
         var operatorName = _userManager.RealName ?? _userManager.Account;
         var count = await _logRepository.MarkUploadingAsync(selected.Select(m => m.Id).ToList(), operatorName);
@@ -331,7 +337,7 @@ public class DjiLogService(
         var result = await SendAsync(dock.Sn, request, "取消日志上传");
 
         if (result != 0)
-            throw Oops.Oh($"设备拒绝取消日志上传，{DescribeResult(result)}");
+            throw Oops.Oh($"设备拒绝取消日志上传，{CommandPublisher.DescribeResult(result)}");
 
         var pending = await _logRepository.GetPendingAsync(dock.Sn, input.Modules);
         var uploading = (await _logRep.AsQueryable()
@@ -406,30 +412,7 @@ public class DjiLogService(
         => $"{(workspaceId.IsNullOrWhiteSpace() ? "default" : workspaceId)}/log/{(int)module}";
 
     private async Task<int> SendAsync<T>(string dockSn, CloudMqRequest<T> request, string actionName)
-    {
-        try
-        {
-            var reply = await _publish.PublishWithReplyAsync<T, object>(
-                Topics.ThingProductServices, request, CommandReplyTimeoutSeconds);
-
-            var result = reply?.Data?.Result ?? -1;
-            if (result != 0)
-            {
-                _logger.LogWarning("{Action}被拒：gateway:{Gateway}，method:{Method}，result:{Result}",
-                    actionName, dockSn, request.Method, result);
-            }
-
-            return result;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "{Action}无应答：gateway:{Gateway}，method:{Method}", actionName, dockSn, request.Method);
-            return -1;
-        }
-    }
-
-    private static string DescribeResult(int result)
-        => result == -1 ? "设备未在超时时间内回包（指挥链路可能中断）" : $"错误码：{result}";
+        => await _commandPublisher.SendRequestAsync(dockSn, request, CommandReplyTimeoutSeconds, actionName);
 
     /// <summary>填充派生字段（机场昵称、设备名、枚举名、大小文本）</summary>
     private async Task FillAsync(List<LogFileOutput> items)
@@ -438,10 +421,10 @@ public class DjiLogService(
 
         foreach (var item in items)
         {
-            item.ModuleName = Desc(item.Module);
-            item.StatusName = Desc(item.Status);
+            item.ModuleName = EnumExtension.Desc(item.Module);
+            item.StatusName = EnumExtension.Desc(item.Status);
             item.IsRunning = !item.Status.IsFinalState();
-            item.FileSizeText = FormatSize(item.FileSize);
+            item.FileSizeText = item.FileSize.FormatSize();
         }
 
         var sns = items.Select(m => m.DockSn).Concat(items.Select(m => m.DeviceSn))
@@ -462,37 +445,13 @@ public class DjiLogService(
         }
     }
 
-    /// <summary>字节数转可读文本（日志文件从几十 KB 到几十 MB，用固定单位会让列表难扫读）</summary>
-    private static string FormatSize(long? size)
+    private void EnsureOnline(Dji.Core.Entity.DjiDevice dock)
     {
-        if (size is null or <= 0) return "-";
-
-        var value = size.Value;
-        if (value < 1024) return $"{value} B";
-        if (value < 1024 * 1024) return $"{value / 1024.0:0.#} KB";
-        if (value < 1024L * 1024 * 1024) return $"{value / 1024.0 / 1024:0.#} MB";
-        return $"{value / 1024.0 / 1024 / 1024:0.##} GB";
-    }
-
-    private static void EnsureOnline(Dji.Core.Entity.DjiDevice dock)
-    {
-        if (!dock.IsOnline) throw Oops.Oh("机场离线，无法操作日志");
+        if (!_dockQuery.IsDockOnline(dock.Sn)) throw Oops.Oh("机场离线，无法操作日志");
     }
 
     private async Task<Dji.Core.Entity.DjiDevice> ResolveDockAsync(string dockSn)
-    {
-        if (dockSn.IsNullOrWhiteSpace()) throw Oops.Oh("机场不能为空");
-
-        var dock = await _deviceRep.GetFirstAsync(m => m.Sn == dockSn) ?? throw Oops.Oh($"未找到机场：{dockSn}");
-        if (dock.Domain != DomainEnum.Dock) throw Oops.Oh($"{dockSn} 不是机场设备");
-        if (dock.WorkspaceId.IsNullOrWhiteSpace()) throw Oops.Oh($"机场【{dock.Nick ?? dock.Sn}】尚未绑定工作空间");
-
-        return dock;
-    }
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
+        => await _dockQuery.ResolveDockAsync(dockSn);
 
     #endregion
 }

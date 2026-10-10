@@ -54,7 +54,7 @@ internal class MqDeviceService(
     {
 
         await _deviceRepository.BindDroneOsd(data.Gateway, data.DroneSn, data.Data);
-        Console.WriteLine("机场{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
+        Console.WriteLine("无人机{0}坐标：{1}，{2}", data.Gateway, data.Data.Longitude, data.Data.Latitude);
         //await _deviceRepository.BindSn(data.Gateway);
         await Task.Delay(1);
     }

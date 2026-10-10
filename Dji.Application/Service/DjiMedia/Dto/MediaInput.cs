@@ -69,13 +69,6 @@ public class MediaStatsInput
     public string DockSn { get; set; }
 }
 
-/// <summary>机场下拉输入（媒体筛选用）</summary>
-public class MediaDockOptionInput
-{
-    /// <summary>所属工作空间（留空返回全部）</summary>
-    public string WorkspaceId { get; set; }
-}
-
 /// <summary>调整上传优先级输入</summary>
 public class MediaPrioritizeInput
 {

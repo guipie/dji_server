@@ -10,6 +10,7 @@
 
 using System.Linq;
 using Dji.Application.CloudRepository;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiHms.Dto;
 using Dji.Core.Enum.DjiEnum.Hms;
 
@@ -37,11 +38,11 @@ namespace Dji.Application.Service.DjiHms;
 public class DjiHmsService(
     DjiHmsRepository hmsRepository,
     SqlSugarRepository<DjiHmsAlarm> alarmRep,
-    SqlSugarRepository<Dji.Core.Entity.DjiDevice> deviceRep) : IDynamicApiController, ITransient
+    DockQueryService dockQuery) : IDynamicApiController, ITransient
 {
     private readonly DjiHmsRepository _hmsRepository = hmsRepository;
     private readonly SqlSugarRepository<DjiHmsAlarm> _alarmRep = alarmRep;
-    private readonly SqlSugarRepository<Dji.Core.Entity.DjiDevice> _deviceRep = deviceRep;
+    private readonly DockQueryService _dockQuery = dockQuery;
 
     #region 查询
 
@@ -169,8 +170,7 @@ public class DjiHmsService(
         var dockSns = byDock.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).ToList();
         if (dockSns.Count > 0)
         {
-            var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-            var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+            var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
             foreach (var item in result.ByDock)
                 item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
         }
@@ -181,17 +181,14 @@ public class DjiHmsService(
     /// <summary>机场下拉（带各机场的活跃告警数）</summary>
     [HttpPost]
     [ApiDescriptionSettings(Name = "DockOptions")]
-    public async Task<List<HmsDockOptionOutput>> DockOptions(HmsDockOptionInput input)
+    public async Task<List<HmsDockOptionOutput>> DockOptions(DockOptionInput input)
     {
-        input ??= new HmsDockOptionInput();
+        input ??= new DockOptionInput();
         var workspaceId = input.WorkspaceId;
 
-        var docks = await _deviceRep.AsQueryable()
-            .Where(m => m.ParentSn == null || m.ParentSn == "")
-            .WhereIF(!workspaceId.IsNullOrWhiteSpace(), m => m.WorkspaceId == workspaceId)
-            .ToListAsync();
+        var bases = await _dockQuery.GetDockOptionsAsync(workspaceId, m => m.ParentSn == null || m.ParentSn == "");
 
-        var dockSns = docks.Select(m => m.Sn).ToList();
+        var dockSns = bases.Select(m => m.Sn).ToList();
         var actives = await _alarmRep.AsQueryable()
             .Where(m => m.Status == HmsAlarmStatusEnum.Active && dockSns.Contains(m.DockSn))
             .Select(m => new { m.DockSn, m.Id })
@@ -199,14 +196,14 @@ public class DjiHmsService(
 
         var countMap = actives.GroupBy(m => m.DockSn).ToDictionary(g => g.Key, g => g.Count());
 
-        return docks.Select(m => new HmsDockOptionOutput
+        return bases.Select(m => new HmsDockOptionOutput
         {
             Sn = m.Sn,
             Nick = m.Nick,
             WorkspaceId = m.WorkspaceId,
             IsOnline = m.IsOnline,
             ActiveCount = countMap.GetValueOrDefault(m.Sn),
-            Label = $"{m.Nick ?? m.Sn}（{m.Sn}）",
+            Label = m.Label,
         }).ToList();
     }
 
@@ -264,9 +261,9 @@ public class DjiHmsService(
 
         foreach (var item in items)
         {
-            item.LevelName = Desc(item.Level);
-            item.ModuleName = Desc(item.Module);
-            item.StatusName = Desc(item.Status);
+            item.LevelName = EnumExtension.Desc(item.Level);
+            item.ModuleName = EnumExtension.Desc(item.Module);
+            item.StatusName = EnumExtension.Desc(item.Status);
             item.Text = item.TextZh.IsNullOrWhiteSpace() ? item.TextEn : item.TextZh;
             item.DurationText = BuildDuration(item);
         }
@@ -274,8 +271,7 @@ public class DjiHmsService(
         var dockSns = items.Select(m => m.DockSn).Where(m => !m.IsNullOrWhiteSpace()).Distinct().ToList();
         if (dockSns.Count == 0) return;
 
-        var docks = await _deviceRep.AsQueryable().Where(m => dockSns.Contains(m.Sn)).ToListAsync();
-        var nickMap = docks.ToDictionary(m => m.Sn, m => m.Nick);
+        var nickMap = await _dockQuery.ResolveDockNickMapAsync(dockSns);
         foreach (var item in items) item.DockNick = nickMap.GetValueOrDefault(item.DockSn);
     }
 
@@ -330,10 +326,6 @@ public class DjiHmsService(
 
         return item.Status == HmsAlarmStatusEnum.Active ? $"已持续 {text}" : $"共持续 {text}";
     }
-
-    /// <summary>取枚举的 <c>[Description]</c>；显式写全限定名以避免与 NewLife 的同名扩展二义</summary>
-    private static string Desc<T>(T value) where T : struct, System.Enum
-        => Dji.Core.EnumExtension.GetDescription(value);
 
     #endregion
 }

@@ -89,10 +89,3 @@ public class LiveSessionSearchInput : BasePageInput
     /// <summary>仅看进行中的会话</summary>
     public bool? OnlyActive { get; set; }
 }
-
-/// <summary>可直播机场下拉输入</summary>
-public class LiveDockOptionInput
-{
-    /// <summary>工作空间（留空返回全部）</summary>
-    public string WorkspaceId { get; set; }
-}

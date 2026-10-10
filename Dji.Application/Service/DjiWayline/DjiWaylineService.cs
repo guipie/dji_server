@@ -13,6 +13,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using Dji.Application.Service.Common;
 using Dji.Application.Service.DjiWayline;
 using Dji.Application.Service.DjiWayline.Dto;
 using Dji.Application.Service.DjiWayline.Dto.Temp;
@@ -43,22 +44,19 @@ public class DjiWaylineService : IDynamicApiController, ITransient
 
     private readonly SqlSugarRepository<DjiWaylineEntity> _rep;
     private readonly SqlSugarRepository<DjiDeviceCameraEnum> _cameraRep;
-    private readonly SqlSugarRepository<DjiWorkspaceUser> _workspaceUserRep;
     private readonly DjiDeviceEnumService _deviceEnumService;
-    private readonly UserManager _userManager;
+    private readonly WorkspaceResolver _workspaceResolver;
 
     public DjiWaylineService(
         SqlSugarRepository<DjiWaylineEntity> rep,
         SqlSugarRepository<DjiDeviceCameraEnum> cameraRep,
-        SqlSugarRepository<DjiWorkspaceUser> workspaceUserRep,
         DjiDeviceEnumService deviceEnumService,
-        UserManager userManager)
+        WorkspaceResolver workspaceResolver)
     {
         _rep = rep;
         _cameraRep = cameraRep;
-        _workspaceUserRep = workspaceUserRep;
         _deviceEnumService = deviceEnumService;
-        _userManager = userManager;
+        _workspaceResolver = workspaceResolver;
     }
 
     #region 接口
@@ -74,7 +72,7 @@ public class DjiWaylineService : IDynamicApiController, ITransient
     {
         ValidateRequest(request);
 
-        var workspaceId = await ResolveWorkspaceIdAsync(request.WorkspaceId);
+        var workspaceId = await _workspaceResolver.ResolveWorkspaceIdAsync(request.WorkspaceId, "创建航线");
         var waylineName = request.WaylineName.Trim();
         await EnsureNameUniqueAsync(workspaceId, waylineName, null);
 
@@ -129,7 +127,7 @@ public class DjiWaylineService : IDynamicApiController, ITransient
         var entity = await GetEntityAsync(input.Id);
         ValidateRequest(input);
 
-        var workspaceId = await ResolveWorkspaceIdAsync(string.IsNullOrWhiteSpace(input.WorkspaceId) ? entity.WorkspaceId : input.WorkspaceId);
+        var workspaceId = await _workspaceResolver.ResolveWorkspaceIdAsync(string.IsNullOrWhiteSpace(input.WorkspaceId) ? entity.WorkspaceId : input.WorkspaceId, "保存航线");
         var waylineName = input.WaylineName.Trim();
         await EnsureNameUniqueAsync(workspaceId, waylineName, entity.Id);
 
@@ -184,7 +182,7 @@ public class DjiWaylineService : IDynamicApiController, ITransient
 
         var workspaceId = string.IsNullOrWhiteSpace(input.WorkspaceId)
             ? source.WorkspaceId
-            : await ResolveWorkspaceIdAsync(input.WorkspaceId);
+            : await _workspaceResolver.ResolveWorkspaceIdAsync(input.WorkspaceId, "复制航线");
 
         var waylineName = await BuildCopyNameAsync(workspaceId, input.NewName, source.WaylineName);
         request.WaylineName = waylineName;
@@ -326,17 +324,6 @@ public class DjiWaylineService : IDynamicApiController, ITransient
         var name = App.User?.FindFirst(ClaimConst.RealName)?.Value
                    ?? App.User?.FindFirst(ClaimConst.Account)?.Value;
         return string.IsNullOrWhiteSpace(name) ? "航线规划平台" : name;
-    }
-
-    /// <summary>解析空间：未指定时使用当前用户的默认空间</summary>
-    private async Task<string> ResolveWorkspaceIdAsync(string workspaceId)
-    {
-        if (!string.IsNullOrWhiteSpace(workspaceId)) return workspaceId.Trim();
-
-        var spaces = await _workspaceUserRep.GetListAsync(m => m.UserId == _userManager.UserId);
-        var current = spaces.FirstOrDefault(m => m.IsDefault) ?? spaces.FirstOrDefault();
-        if (current == null) throw Oops.Oh("当前用户未分配工作空间，请先在“工作空间用户”中配置后再创建航线");
-        return current.WorkspaceId;
     }
 
     /// <summary>同一空间内航线名称唯一（软删除数据不参与校验）</summary>
